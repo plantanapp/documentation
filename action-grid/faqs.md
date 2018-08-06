@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # FAQs
 
 ## Problem with `DnnSharp.Common.dll`

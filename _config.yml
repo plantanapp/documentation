@@ -1,11 +1,10 @@
 theme: jekyll-theme-cayman
-title: DnnSharp Product Documentation
+title: Welcome to the DNN Sharp Documentation Center 
 github: [metadata]
 
 email: support@dnnsharp.com
 description: >- # this means to ignore newlines until "baseurl:"
   The brand new site that hosts the DnnSharp Product Documentation.<br />
-  You can find here documentation for all DnnSharp products.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://docs.dnnsharp.com" # the base hostname & protocol for your site, e.g. http://example.com
 github_username: dnnsharp
@@ -14,15 +13,15 @@ github_username: dnnsharp
 markdown: kramdown
 plugins:
   - jekyll-feed
-
+  - octopress-debugger
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/

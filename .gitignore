@@ -15,7 +15,10 @@ _book
 *.mobi
 *.pdf
 
+# vscode
+.history
 
+#jekyll
 _site
 .sass-cache
 .jekyll-metadata

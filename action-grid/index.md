@@ -10,6 +10,7 @@ The table style of a data grid allows viewing data in a modern looking responsiv
 <img style="max-width: 28%" src="images/action-grid-300x388w.png" />
 
 # Key Features:
+
 * **Seamlessly Integrated with Action Form**
 
   Action Grid enables the management of the submitted Action Form entries from different forms. It allows filtering, sorting, searching for records, editing or deleting records. 
@@ -23,6 +24,7 @@ The table style of a data grid allows viewing data in a modern looking responsiv
   The most trending topics in web are with Action Grid. The data grid fits to any screen size and are swipe able on touch capable devices.
 
 # Support
+
 Our support staff is friendly and always available to help you. Engage us on our [community platform](http://www.dnnsharp.com/Support#opturl=%2Faction-grid).
 
 You can download the latest version of Action Grid from [www.dnnsharp.com](http://www.dnnsharp.com/dnn/modules/action-grid-table-data). 

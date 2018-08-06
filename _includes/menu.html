@@ -1,0 +1,26 @@
+<ul role="group" aria-expanded="false">
+{% for page in include.pages %}
+    {% if page.subpages.size == 0 %}
+        {% assign itemRole = "none" %}
+    {% endif %}
+    {% if page.url %}
+        {% assign itemRole = "treeitem" %}
+    {% endif %}
+    <li role="{{itemRole}}" aria-expanded="false">
+        {%if page.url%}
+            <a role="treeitem" href="{{page.url | relative_url}}">{{page.title}}</a>
+        {%else%}
+            <span>{{page.title}}</span>
+            {% if page.ref %}
+                {%assign module_pages = site.data.menu[page.ref] %}
+                {% include menu.html pages=module_pages %}
+            {% else %}
+                {% if page.subpages %}
+                    {% include menu.html pages=page.subpages %}
+                {% endif %}
+            {% endif %}
+        {%endif%}
+
+    </li>
+{% endfor %}
+</ul>

@@ -1,4 +1,6 @@
-
+---
+layout: default
+---
 
 # Item Picker \(Tree View\) field
 

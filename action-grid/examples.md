@@ -1,13 +1,16 @@
+---
+layout: default
+---
 # Examples
 
 ## How to display biography token in a computed field
-
 
 The biography token is being pulled from the user profile info, the user profile biography is a rich text editor field with html. Here's how you can use a computed field to display several user profile tokens in a template - notice that when the biography info is displayed, the html should be correctly rendered in the computed field:
 
 1. add as data source on the grid the SQL Query option;
 
 2. add a statement like this in SQL Query box:
+
 ``` sql
 select U.UserID,
 U.DisplayName,
@@ -29,9 +32,10 @@ left join Files F on F.FileId = UP.Photo
 left join Folders D on D.FolderID = F.FolderID
 ```
 
-3. set UserID on ID Column;
+1. set UserID on ID Column;
 
-4. add a computed field on the grid, check the Allow HTML option and use the following content:
+2. add a computed field on the grid, check the Allow HTML option and use the following content:
+
 ``` html
 <img id="irc_mi" src="http://static.comicvine.com/uploads/original/13/134858/2779331-the-witchers-geralt.jpg" width="230" height="130" style="margin-top: 0px;">
 <div><h3>[DisplayName]</h3></div>
@@ -39,9 +43,9 @@ left join Folders D on D.FolderID = F.FolderID
 <div>[Biography]</div>
 ```
 
-5. set in Template section the Listing option and select a number of columns;
+1. set in Template section the Listing option and select a number of columns;
 
-6. save and back on the page.
+2. save and back on the page.
 
 ## How to use the WHERE Clause in a Data Source
 
@@ -51,35 +55,37 @@ In order to have WHERE clause displayed, you need to select as Data Source the D
 
 ![](images/userId.png)
 
-
 ## Use query string to populate form with items from grid
 
-
 1. add Action Grid on a page
-  * go in Manage grid 
-  * set a Data Source to SQL Query 
-  * on the SQL Query box add:
+    * go in Manage grid
+    * set a Data Source to SQL Query
+    * on the SQL Query box add:
+
 ``` sql
    Select * from Auctions
 ```
-  * Define a column in ID Column box
-  * add an Item button with Redirect to URL action 
-  * set the link to the form which you want to populate with grid's items like this: 
-```
+
+    * Define a column in ID Column box
+    * add an Item button with Redirect to URL action 
+    * set the link to the form which you want to populate with grid's items like this:
+
+``` html
 www.example.com/form-page?AuctionID=[AuctionID]
 ```
 
-2. on another page add an Action Form module 
-  * add On Init section a Run SQL Query with SQL Query:
+1. on another page add an Action Form module 
+    * add On Init section a Run SQL Query with SQL Query:
+
 ``` sql
    select * from VehicleInfo where VehicleID=[QueryString:VehicleID=-1]
 ```
-  * and Extract Columns with the info you need to retrieve from the table and store in form fields
+
+    * and Extract Columns with the info you need to retrieve from the table and store in form fields
 
 **Result:** when you click on the grid item button, the id of the item will be checked and the redirect will be made to the form page where the form fields will be auto-populated with items values.  
 
 **Info note:** We have a client who wanted to help us and posted this info on our support forum - it's more detailed and provides explanation on each action which needs to be made, so if you want to see it, please click [here](http://www.dnnsharp.com/Support.aspx#opturl=%2Faction-grid%2Fusing-action-grid--forms-to-manage-your-own-data). 
-
 
 We've made a video tutorial where we provide a practical sample on how you can integrate Google Charts into your DNN website by using My Tokens (to feed data), Action Grid and Google Charts modules. The purpose of our example is to make a Pie Chart to show different types of errors that exist in DNN Log errors. To see how this can be made, click [here](https://www.youtube.com/watch?v=UqCDxRC3IIw).
 
@@ -114,19 +120,22 @@ If you would like to apply CSS to specific columns, you can use the nth child se
 In this scenario we'll use the Files table:
 
 1. add as data source on a grid SQL Query with 
+
 ``` sql
 select * from Files f
 inner join Folders d on d.FolderID=f.FolderID
 where ContentType='image/png' and d.FolderPath='Images/'
 ```
-2. set ID Column to `FileId > update`
-3. add a template field with Allow HTML checked and `/portals/0/images/[FileName]`
-4. set Template of grid to Carousel
+
+1. set ID Column to `FileId > update`
+2. add a template field with Allow HTML checked and `/portals/0/images/[FileName]`
+3. set Template of grid to Carousel
 
 ## How to display a column's total on client side in a new row inside Grid with JavaScript
 
 In this scenario we'll use a Grid Button that calculate the Price & ProductQuantity column's total and display the result on a new row.
 We'll insert our custom code inside the button's Javascript Code field:
+
 ``` js
 var total = 0,
       products = 0,
@@ -150,6 +159,6 @@ var totalRow = {
 data[data.length] = totalRow;
 scope.source.data = data;
 ```
+
 The result will be:
 ![](images/grid-total.png)
-

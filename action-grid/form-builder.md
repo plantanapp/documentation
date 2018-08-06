@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Form Builder
 
 Beginning with Action Grid 2.0, form elements will be integrated inside the grid fields, by using the Add form button a list with form elements will be displayed from which you can choose Multiple choice fields, date picker fields, text fields and so on.
