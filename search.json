@@ -4,8 +4,10 @@ layout: null
 [
   {% for page in site.pages %}
     {
-      "title"    : "{{ page.title}}",
-      "url"      : "{{ site.baseurl }}{{ page.url }}"
+      "title"      : "{{ page.title}}",
+      "url"        : "{{ site.baseurl }}{{ page.url }}",
+      "content"    : {{page.content | jsonify}},
+      "cateogires" : "{{page.categories}}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
 ]
