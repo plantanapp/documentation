@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Formatting
 
 Lately, beginning with version 2.0.30, we've implement the formatting option for grid fields, it's a mechanism easily extendable with new types of formatting, as initial version, we've implemented formatting options for Custom Date, Date, Money and Numbers. The formatting is specified in the settings of each grid field.

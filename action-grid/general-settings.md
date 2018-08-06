@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # General Settings
 
 To sum up, the general settings allow you to configure the appearance of the grid.
