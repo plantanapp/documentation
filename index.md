@@ -18,8 +18,6 @@ layout: default
 - [Need Help for implementation][implementation]?
 - Use our cloud [hosting][hosting] service for increased performance, security and reliability
 
-[ag-docs]: {{ "/ActionGrid/" | relative_url }}
-[af-docs]: {{ "/action-form/" | relative_url }}
 [youtube]: <https://www.youtube.com/user/dnnsharp/videos>
 [facebook]: <https://www.facebook.com/DnnSharp/>
 [twitter]: <https://twitter.com/DnnSharp>
