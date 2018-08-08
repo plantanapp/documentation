@@ -80,31 +80,32 @@ The result should be something like this:
 
 ![](assets/4e4079e584[1].png)
 
-### Fields:
+## Fields
 
-**Text: ** This will be displayed for the user to select and/or expand.
+**Text:** This will be displayed for the user to select and/or expand.
 
 **Value:** This will be the value that for further processing, if you have any, this field will return as token.
 
-**Path & ParentPath**_\(!\)_**: ** Those Fields are used create the logic behind the arborescent view where the **Path **is the whole path to item including him and the **ParrentPath ** is only the parent path if the item. _\(Use only one of those two\)\(!\)_
+**Path & ParentPath**_\(!\)_**: **Those Fields are used create the logic behind the arborescent view where the **Path**is the whole path to item including him and the **ParrentPath** is only the parent path if the item. _\(Use only one of those two\)\(!\)_
 
-**ItemId & ParentId**_\(!\)_**: ** Those Fields are used create the logic behind the arborescent view where the **ItemId **is the whole path to item including him and the **ParrentId ** is only the parent path if the item. _\(Use only one of those two\)\(!\)_
+**ItemId & ParentId**_\(!\)_**:** Those Fields are used create the logic behind the arborescent view where the **ItemId**is the whole path to item including him and the **ParrentId** is only the parent path if the item. _\(Use only one of those two\)\(!\)_
 
 **HasChildren: **Tell the fields if it has children there for is expandable. We need this info because this control has lazy loading so we can keep the traffic and the database at a minimum.
 
 **IsSelectable: **Tell the item if it can be selectable _\(can be a leaf or a node\)_
 
-### Notes:
+### Notes
 
 **If the columns name is not provided as above the control will not work. **
 
 **It is only necessary to provide only one of the two combinations of Path/ParentPath or ItemId/ParentId. **
 
-### SQL Conditions:
+### SQL Conditions
 
 For all the featues of this field to work properly specific conditions must be set on the SQL based on @parentId/@parentPath and @searchText, their values are automatically set by our code. In our example we used @parentId.
 
 Different values are set for these parameters based on the action executed:
+
 - on page initialization (searchText is empty, itemPath is /, itemId is -1)
 - on search (searchText is the provided value, itemPath is /, itemId is -1)
 - on expanding an item (searchText is empty, itemPath/itemId is the value of the selected field)

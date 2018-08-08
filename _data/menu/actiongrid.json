@@ -24,5 +24,104 @@
                 }]
             }
         ]
+    },
+    {
+        "title": "Capabilities",
+        "subpages": [{
+                "title": "Getting Started",
+                "url": "/action-grid/capabilities/index.html"
+            },
+            {
+                "title": "Filter",
+                "url": "/action-grid/capabilities/filter.html"
+            }, {
+                "title": "Localization",
+                "url": "/action-grid/capabilities/localization.html"
+            }, {
+                "title": "Pagination",
+                "url": "/action-grid/capabilities/pagination.html"
+            }, {
+                "title": "Search",
+                "url": "/action-grid/capabilities/search.html"
+            }, {
+                "title": "Sort",
+                "url": "/action-grid/capabilities/sort.html"
+            }, {
+                "title": "Update Datasource",
+                "url": "/action-grid/capabilities/update-datasource-without-postback.html"
+            }
+        ]
+    },
+    {
+        "title": "Data Sources",
+        "subpages": [{
+                "title": "Getting Started",
+                "url": "/action-grid/capabilities/index.html"
+            },
+            {
+                "title": "Filter",
+                "url": "/action-grid/data-sources/action_form.html"
+            }, {
+                "title": "Localization",
+                "url": "/action-grid/data-sources/custom-data-sources.html"
+            }, {
+                "title": "Pagination",
+                "url": "/action-grid/data-sources/database-table.html"
+            }, {
+                "title": "Search",
+                "url": "/action-grid/data-sources/sql-query.html"
+            }
+        ]
+    }, {
+        "title": "Grid Template",
+        "subpages": [{
+                "title": "Getting Started",
+                "url": "/action-grid/grid-template/index.html"
+            },
+            {
+                "title": "Grid View",
+                "subpages":[
+                    {
+                        "title":"Getting Started",
+                        "url": "/action-grid/grid-template/grid-view/index.html"
+                    },
+                    {
+                        "title":"Getting Started",
+                        "url": "/action-grid/grid-template/grid-view/filtering.html"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "title": "Breaking Changes",
+        "url": "/action-grid/breaking-changes.html"
+    },
+    {
+        "title": "Debug",
+        "url": "/action-grid/debug.html"
+    },
+    {
+        "title": "Faqs",
+        "url": "/action-grid/faqs.html"
+    },
+    {
+        "title": "Form Builder",
+        "url": "/action-grid/form-builder.html"
+    },
+    {
+        "title": "General Settings",
+        "url": "/action-grid/general-settings.html"
+    }, {
+        "title": "Formatting",
+        "url": "/action-grid/formatting.html"
+    },
+    {
+        "title": "Item picker tree view",
+        "url": "/action-grid/item-picker-tree-view.html"
+    },
+    {
+        "title": "Star Rating",
+        "url": "/action-grid/star-rating.html"
     }
 ]

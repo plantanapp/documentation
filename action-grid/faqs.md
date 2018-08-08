@@ -5,9 +5,10 @@ layout: default
 
 ## Problem with `DnnSharp.Common.dll`
 
-
 **Exception:**
+
 ```
+
 DotNetNuke.Services.Exceptions.PageLoadException: Method not found: 'System.String DnnSharp.Common.TokenUtil.TokenizeWithCollection(System.String, System.Data.IDataReader, Boolean)'. ---> System.MissingMethodException: Method not found: 'System.String DnnSharp.Common.TokenUtil.TokenizeWithCollection(System.String, System.Data.IDataReader, Boolean)'.
    at DnnSharp.ActionGrid.Core.DataSource.Providers.DbTableDataSource.ConvertResult(ComponentConfiguration settings, IDataReader dr, String idColumn)
    at DnnSharp.ActionGrid.Core.DataSource.Providers.DbTableDataSource.GetData(ComponentConfiguration settings, DataQuery query, Boolean cache, Boolean clearCache)
@@ -17,6 +18,7 @@ DotNetNuke.Services.Exceptions.PageLoadException: Method not found: 'System.Stri
    at System.Web.UI.Control.RenderChildrenInternal(HtmlTextWriter writer, ICollection children)
    ....
 ```
+
 **Cause:** Was Kept a DnnSharp.Common.dll old version on your website in bin folder
 
 **Solution:** Copy DnnSharp.Common.dll from zip package file to your website /bin folder
