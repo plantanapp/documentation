@@ -21,6 +21,39 @@
                 "subpages": [{
                     "title": "Getting Started",
                     "url": "/action-grid/buttons/actions/index.html"
+                }, {
+                    "title": "Context",
+                    "url": "/action-grid/buttons/actions/context.html"
+                }, {
+                    "title": "Data",
+                    "url": "/action-grid/buttons/actions/data.html"
+                }, {
+                    "title": "Datasource",
+                    "url": "/action-grid/buttons/actions/datasource.html"
+                }, {
+                    "title": "Email",
+                    "url": "/action-grid/buttons/actions/email.html"
+                }, {
+                    "title": "Entities",
+                    "url": "/action-grid/buttons/actions/entities.html"
+                }, {
+                    "title": "Parsing",
+                    "url": "/action-grid/buttons/actions/parsing.html"
+                }, {
+                    "title": "Payments",
+                    "url": "/action-grid/buttons/actions/payments.html"
+                }, {
+                    "title": "Redirect",
+                    "url": "/action-grid/buttons/actions/redirect.html"
+                }, {
+                    "title": "Security",
+                    "url": "/action-grid/buttons/actions/security.html"
+                }, {
+                    "title": "Serialization",
+                    "url": "/action-grid/buttons/actions/serialization.html"
+                }, {
+                    "title": "User",
+                    "url": "/action-grid/buttons/actions/user.html"
                 }]
             }
         ]
@@ -80,13 +113,12 @@
             },
             {
                 "title": "Grid View",
-                "subpages":[
-                    {
-                        "title":"Getting Started",
+                "subpages": [{
+                        "title": "Getting Started",
                         "url": "/action-grid/grid-template/grid-view/index.html"
                     },
                     {
-                        "title":"Getting Started",
+                        "title": "Filtering",
                         "url": "/action-grid/grid-template/grid-view/filtering.html"
                     }
                 ]
