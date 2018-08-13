@@ -2,7 +2,7 @@
 
 Other important feature which comes with Action Grid 1.1 is the ability to add your own buttons, and here we talk about two types of buttons, the Item buttons which are displayed besides each item, usually on the right side on the items and the Grid buttons, displayed on top of the grid or under the grid.
 
-### Creating a Button
+## Creating a Button
 
 No matter the type of button used, the fields are common and useful when the appropriate action is well set. In the ID field, the value should be unique and not contain spaces, usually the ID is equivalent with the title of the button, and since we talk about the title, if you want to display the button only with an icon on it without text, it's advised to leave the Title box empty and to set the icon according to the action the button will execute. Another important field is the Style, from where you can select the style which suits the actions of the button. The Ask for Confirmation box when is enabled, Action Grid will ask for user confirmation before executing the actions set on the button and last in line, the [Actions](actions.md) field where you can define an action or a list of actions to execute when the button is clicked, do not forget that the actions are executed in the precise order set here.
 
@@ -34,6 +34,3 @@ In this section you have access to settings and rows \(only for item buttons\), 
 2. `console.log(row)`  - should bring the current row in F12 Console for Items only;
 3. `row.SomeProperty = "edited"` - should reflect instantly on the screen \(replace SomePropety with a field that actually exists in the grid\);
 4. `return false;` - will prevent the button actions from executing.
-
-
-
