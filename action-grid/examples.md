@@ -63,7 +63,7 @@ In order to have WHERE clause displayed, you need to select as Data Source the D
     * on the SQL Query box add:
 
 ``` sql
-   Select * from Auctions
+   Select * from Actions
 ```
 
     * Define a column in ID Column box

@@ -52,17 +52,17 @@ And that's pretty much all about the installation, the next step is to activate 
 
 In the steps below, we are going to show you how to add a the Action Grid module on a page. 
 
-1. When the page you work on is opened, select the Modules option from the top menu, click on the Add New Module option. 
+1. When the page you work on is opened, select the Modules option from the top menu, click on the Add New Module option.
 
 ![](images/ad-new-module.png)
 
-2.Find avt.ActionGrid and with Drag&Drop option add the module to your page. 
+2.Find avt.ActionGrid and with Drag&Drop option add the module to your page.
 
 ![add new Action Grid module](images/grid.module.png)
 
-3.Now that you have installed Action Grid Module on you page, you will need to configure it by clicking on Manage Form option. 
+3.Now that you have installed Action Grid Module on you page, you will need to configure it by clicking on Manage Form option.
 
-Important: Note that you will need to unlock the 30 Day trial or Activate for Production before you are able to see this screen. 
+Important: Note that you will need to unlock the 30 Day trial or Activate for Production before you are able to see this screen.
 
 ## How to configure Action Grid
 

@@ -1,4 +1,4 @@
-# **Sync with URL **
+# Sync with URL
 
 The **Sync URL **option is available under General Settings and comes enabled by default. Basically, it synchronizes the URL with the current state of the grid without causing a page reload. The sates includes sorting, pagination, search and filters. It is useful for navigating back using browser button, bookmarking, sharing and integrating with other modules.
 

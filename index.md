@@ -14,9 +14,9 @@ layout: default
 - [Where to get latests builds][builds]
 - Follow us on [YouTube][youtube], [Facebook][facebook], [Twitter][twitter], [LinkedIn][linkedin] for product and company updates
 - [YouTube video tutorials][tutorials]
-- [Suggesting new features][features] and funding them
-- [Need Help for implementation][implementation]?
-- Use our cloud [hosting][hosting] service for increased performance, security and reliability
+- [Suggesting new features and funding them][features]
+- [Need Help for implementation ?][implementation]
+- [Use our cloud hosting service for increased performance, security and reliability][hosting]
 
 [youtube]: <https://www.youtube.com/user/dnnsharp/videos>
 [facebook]: <https://www.facebook.com/DnnSharp/>

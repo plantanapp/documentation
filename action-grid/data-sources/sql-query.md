@@ -69,8 +69,3 @@ select 'All Hotes' as HotelName, SUM(RoomCount) as RoomCount from Hotels
 ```
 
 If you want to determine the table 'from' name when your data source is an action form, you should go with a custom template and sum up the results from the angular directive. You can take a look at templates under `\DesktopModules\DnnSharp\ActionGrid\static\angrid\views\`. You can start by cloning one of the templates and use it in the admin console.
-
-### 
-
-
-

@@ -1,12 +1,13 @@
 # Custom Data Sources
 
-Data sources in Action Grid are defined via configuration files. This makes it very easy to plug in new custom data sources. For this, you would need to implement your data source in a .NET class, then create a configuration file to let Action Grid know how to use your data source. 
+Data sources in Action Grid are defined via configuration files. This makes it very easy to plug in new custom data sources. For this, you would need to implement your data source in a .NET class, then create a configuration file to let Action Grid know how to use your data source.
 
 ## Configuration
 
 Let's start with the configuration. All configuration files live in at `/DesktopModules/DnnSharp/ActionGrid/Config/DataSource`. There is a `.defaults.json.config` file already in there that ships with Action Grid. This contains all the prebuilt data sources described in this documentation. You shouldn't make changes to this file, since it will get overwritten on updates. Instead, create your own config file and follow the same structure as the default configuration file. Action Grid knows to watch this folder for modifications. So your configuration will be picked up real time. 
 
-The config file is in JSON format. The root element is an array, which means you can have multiple definitions in the same file. The most simple configuration file would look like this: 
+The config file is in JSON format. The root element is an array, which means you can have multiple definitions in the same file. The most simple configuration file would look like this:
+
 ``` json
 [
   {
@@ -20,7 +21,7 @@ The config file is in JSON format. The root element is an array, which means you
 ]
 ```
 
-Here's the explanation: 
+Here's the explanation:
 
 * Id
 
@@ -28,12 +29,13 @@ Here's the explanation:
 
 * Title
 
-  This is used for displaying purposes. It can be localized from the config file or from DNN localization. The "default" key is the fall back point if no localization is found. Use locale codes to specify localization, like this: 
+  This is used for displaying purposes. It can be localized from the config file or from DNN localization. The "default" key is the fall back point if no localization is found. Use locale codes to specify localization, like this:
+
 ``` json
 "Title": { "default": "My Provider", "en-US": "English title", "es-ES ": "Spanish title" }
 ```
 
-* HelpText 
+* HelpText
 
   This is used to provide a description about the provider. The same localization rules as above apply.
 
@@ -47,8 +49,7 @@ Here's the explanation:
 
 ## Implementation
 
-
-A data source in Action Grid is a class that implements the `DnnSharp.ActionGrid.Core.DataSource.IDataSource` interface and has the corresponding configuration file. The data source provides the following bits of information: 
+A data source in Action Grid is a class that implements the `DnnSharp.ActionGrid.Core.DataSource.IDataSource` interface and has the corresponding configuration file. The data source provides the following bits of information:
 
 * **Available Fields**
 

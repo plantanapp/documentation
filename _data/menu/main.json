@@ -9,5 +9,8 @@
     }, {
         "title": "Action Form",
         "ref": "actionform"
+    }, {
+        "title": "Common",
+        "ref": "common"
     }]
 }]
