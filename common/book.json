@@ -1,0 +1,7 @@
+{
+    "variables": {
+        "code": "FAKE",
+        "name": "Fake Product",
+        "productPage": "http://dnnsharp.com/"
+    }
+}

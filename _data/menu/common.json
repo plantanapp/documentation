@@ -1,0 +1,43 @@
+[{
+    "title": "Actions",
+    "subpages": [{
+        "title": "Getting Started",
+        "url": "/common/index.html"
+    }, {
+        "title": "Context",
+        "url": "/common/context.html"
+    }, {
+        "title": "Data",
+        "url": "/common/data.html"
+    }, {
+        "title": "Datasource",
+        "url": "/common/datasource.html"
+    }, {
+        "title": "DNN Sharp",
+        "url": "/common/dnn-sharp.html"
+    }, {
+        "title": "Email",
+        "url": "/common/email.html"
+    }, {
+        "title": "Entities",
+        "url": "/common/entities.html"
+    }, {
+        "title": "Parsing",
+        "url": "/common/parsing.html"
+    }, {
+        "title": "Payments",
+        "url": "/common/payments.html"
+    }, {
+        "title": "Redirect",
+        "url": "/common/redirect.html"
+    }, {
+        "title": "Security",
+        "url": "/common/security.html"
+    }, {
+        "title": "Serialization",
+        "url": "/common/serialization.html"
+    }, {
+        "title": "User",
+        "url": "/common/user.html"
+    }]
+}]

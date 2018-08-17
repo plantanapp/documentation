@@ -41,4 +41,3 @@
 * [Grid Template](grid-template/README.md)
   * [Grid View](grid-template/grid-view/README.md)
     * [Filter](grid-template/grid-view/filtering.md)
-

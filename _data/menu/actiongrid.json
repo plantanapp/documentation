@@ -15,46 +15,6 @@
             {
                 "title": "Special Buttons",
                 "url": "/action-grid/buttons/special-buttons.html"
-            },
-            {
-                "title": "Actions",
-                "subpages": [{
-                    "title": "Getting Started",
-                    "url": "/action-grid/buttons/actions/index.html"
-                }, {
-                    "title": "Context",
-                    "url": "/action-grid/buttons/actions/context.html"
-                }, {
-                    "title": "Data",
-                    "url": "/action-grid/buttons/actions/data.html"
-                }, {
-                    "title": "Datasource",
-                    "url": "/action-grid/buttons/actions/datasource.html"
-                }, {
-                    "title": "Email",
-                    "url": "/action-grid/buttons/actions/email.html"
-                }, {
-                    "title": "Entities",
-                    "url": "/action-grid/buttons/actions/entities.html"
-                }, {
-                    "title": "Parsing",
-                    "url": "/action-grid/buttons/actions/parsing.html"
-                }, {
-                    "title": "Payments",
-                    "url": "/action-grid/buttons/actions/payments.html"
-                }, {
-                    "title": "Redirect",
-                    "url": "/action-grid/buttons/actions/redirect.html"
-                }, {
-                    "title": "Security",
-                    "url": "/action-grid/buttons/actions/security.html"
-                }, {
-                    "title": "Serialization",
-                    "url": "/action-grid/buttons/actions/serialization.html"
-                }, {
-                    "title": "User",
-                    "url": "/action-grid/buttons/actions/user.html"
-                }]
             }
         ]
     },
@@ -80,7 +40,7 @@
                 "title": "Sort",
                 "url": "/action-grid/capabilities/sort.html"
             }, {
-                "title": "Update Datasource",
+                "title": "Sync with URL",
                 "url": "/action-grid/capabilities/update-datasource-without-postback.html"
             }
         ]
@@ -92,17 +52,20 @@
                 "url": "/action-grid/capabilities/index.html"
             },
             {
-                "title": "Filter",
+                "title": "Action Form",
                 "url": "/action-grid/data-sources/action_form.html"
             }, {
-                "title": "Localization",
+                "title": "Custom data sources",
                 "url": "/action-grid/data-sources/custom-data-sources.html"
             }, {
-                "title": "Pagination",
+                "title": "Database Table",
                 "url": "/action-grid/data-sources/database-table.html"
             }, {
-                "title": "Search",
+                "title": "SQL Advanced Query",
                 "url": "/action-grid/data-sources/sql-query.html"
+            }, {
+                "title": "SQL Select",
+                "url": "/action-grid/data-sources/sql-query-cte.html"
             }
         ]
     }, {
@@ -120,7 +83,50 @@
                     {
                         "title": "Filtering",
                         "url": "/action-grid/grid-template/grid-view/filtering.html"
+                    },
+                    {
+                        "title": "Selection",
+                        "url": "/action-grid/grid-template/grid-view/Selection.html"
+                    },
+                    {
+                        "title": "Sort",
+                        "url": "/action-grid/grid-template/grid-view/Sort.html"
                     }
+                ]
+            }, {
+                "title": "Listing View",
+                "subpages": [{
+                        "title": "Filter",
+                        "url": "/action-grid/grid-template/listing-view/Filter.html"
+                    }, {
+                        "title": "Sort",
+                        "url": "/action-grid/grid-template/listing-view/Sort.html"
+                    }
+
+                ]
+            },
+            {
+                "title": "Calendar View",
+                "subpages": [{
+                        "title": "Filter",
+                        "url": "/action-grid/grid-template/listing-view/Filter.html"
+                    }, {
+                        "title": "Sort",
+                        "url": "/action-grid/grid-template/listing-view/Sort.html"
+                    }
+
+                ]
+            },
+            {
+                "title": "Carousel View",
+                "subpages": [{
+                        "title": "Filter",
+                        "url": "/action-grid/grid-template/listing-view/Filter.html"
+                    }, {
+                        "title": "Sort",
+                        "url": "/action-grid/grid-template/listing-view/Sort.html"
+                    }
+
                 ]
             }
         ]
@@ -139,7 +145,15 @@
     },
     {
         "title": "Form Builder",
-        "url": "/action-grid/form-builder.html"
+        "subpages": [{
+                "title": "Star Rating",
+                "url": "/action-grid/star-rating.html"
+            },
+            {
+                "title": "Item picker tree view",
+                "url": "/action-grid/item-picker-tree-view.html"
+            }
+        ]
     },
     {
         "title": "General Settings",
@@ -147,13 +161,5 @@
     }, {
         "title": "Formatting",
         "url": "/action-grid/formatting.html"
-    },
-    {
-        "title": "Item picker tree view",
-        "url": "/action-grid/item-picker-tree-view.html"
-    },
-    {
-        "title": "Star Rating",
-        "url": "/action-grid/star-rating.html"
     }
 ]
