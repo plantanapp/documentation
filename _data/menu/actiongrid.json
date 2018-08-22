@@ -1,6 +1,6 @@
 [{
-        "title": "Getting Started",
-        "url": "/action-grid/getting-started.html"
+        "title": "Overview",
+        "url": "/action-grid/index.html"
     },
     {
         "title": "Examples",
@@ -8,8 +8,9 @@
     },
     {
         "title": "Buttons",
+        "url": "/action-grid/buttons/index.html",
         "subpages": [{
-                "title": "Getting Started",
+                "title": "Overview",
                 "url": "/action-grid/buttons/index.html"
             },
             {
@@ -20,8 +21,9 @@
     },
     {
         "title": "Capabilities",
+        "url": "/action-grid/capabilities/index.html",
         "subpages": [{
-                "title": "Getting Started",
+                "title": "Overview",
                 "url": "/action-grid/capabilities/index.html"
             },
             {
@@ -47,8 +49,9 @@
     },
     {
         "title": "Data Sources",
+        "url": "/action-grid/capabilities/index.html",
         "subpages": [{
-                "title": "Getting Started",
+                "title": "Overview",
                 "url": "/action-grid/capabilities/index.html"
             },
             {
@@ -70,14 +73,15 @@
         ]
     }, {
         "title": "Grid Template",
+        "url": "/action-grid/grid-template/index.html",
         "subpages": [{
-                "title": "Getting Started",
+                "title": "Overview",
                 "url": "/action-grid/grid-template/index.html"
             },
             {
                 "title": "Grid View",
                 "subpages": [{
-                        "title": "Getting Started",
+                        "title": "Overview",
                         "url": "/action-grid/grid-template/grid-view/index.html"
                     },
                     {
@@ -145,6 +149,7 @@
     },
     {
         "title": "Form Builder",
+        "url": "/action-grid/star-rating.html",
         "subpages": [{
                 "title": "Star Rating",
                 "url": "/action-grid/star-rating.html"
