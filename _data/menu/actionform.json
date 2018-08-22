@@ -1,9 +1,63 @@
 [{
+    "title": "Are you using Action Form 2.X?",
+    "url": "http://action-form-v2.dnnsharp.com/"
+}, {
     "title": "Introduction",
     "url": "/action-form/getting-started.html"
 }, {
-    "title": "First Steps",
+    "title": "Breaking Changes",
+    "url": "/action-form/breaking-changes.html"
+}, {
+    "title": "Examples & Troubleshooting",
+    "url": "/action-form/exemples-troubleshooting.html"
+}, {
+    "title": "FAQ",
+    "url": "/action-form/FAQ.html"
+}, {
+    "title": "Video Tutorials",
+    "url": "/action-form/video-tutorials.html"
+}, {
+    "title": "Getting Started",
     "url": "/action-form/first-steps.html"
+}, {
+    "title": "Apperance",
+    "url": "/action-form/Apperance.html"
+}, {
+    "title": "Apperance Fields",
+    "subpages": [{
+        "title": "jQuery Theme",
+        "url": "/action-form/apperance/jQuery-theme.html"
+    }, {
+        "title": "Template",
+        "url": "/action-form/apperance/Template.html"
+    }]
+}, {
+    "title": "Bindings (aka Dynamic Forms)",
+    "url": "/action-form/bindings.html"
+}, {
+    "title": "Creating a New Form",
+    "url": "/action-form/new-form-creation.html"
+}, {
+    "title": "New Form Templates",
+    "subpages": [{
+        "title": "Blank Form",
+        "url": "/action-form/templates/blank.html"
+    }, {
+        "title": "Contact Form",
+        "url": "/action-form/templates/contact.html"
+    }, {
+        "title": "Login Form",
+        "url": "/action-form/templates/login.html"
+    }, {
+        "title": "Registration Form",
+        "url": "/action-form/templates/registration.html"
+    }]
+}, {
+    "title": "Debugging",
+    "url": "/action-form/debugging.html"
+}, {
+    "title": "Display Mode",
+    "url": "/action-form/display-mode.html"
 }, {
     "title": "Form Fields",
     "subpages": [{
@@ -230,7 +284,11 @@
         }]
     }]
 }, {
+    "title": "Form Events",
+    "url": "/action-form/form-events.html"
+}, {
     "title": "Form Actions",
+    "url":"https://action-form.guide.dnnsharp.com/",
     "subpages": [{
         "title": "Code",
         "url": "/action-form/form-actions/code.html"
@@ -521,8 +579,11 @@
         }]
     }]
 }, {
-    "title": "Validation",
-    "url": "/action-form/validation.html"
+    "title": "Lifecycle",
+    "url": "/action-form/lifecycle.html"
+}, {
+    "title": "Validations",
+    "url": "/action-form/validations.html"
 }, {
     "title": "How to",
     "url": "/action-form/how-to.html"
