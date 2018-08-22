@@ -6,6 +6,7 @@ layout: null
     {
       "title"      : "{{ page.title}}",
       "url"        : "{{ site.baseurl }}{{ page.url }}",
+      "path"       : "{{ site.baseurl }}{{ page.url }}",
       "content"    : {{page.content | jsonify}},
       "categories" : "{{page.categories}}"
     } {% unless forloop.last %},{% endunless %}

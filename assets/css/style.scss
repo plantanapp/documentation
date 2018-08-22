@@ -5,4 +5,43 @@
 
 .main-content{
     margin: initial;
+    padding-left: 4em;
+}
+
+.page-header{
+    width: 100%;
+    padding: 35px 0 15px 0;
+}
+
+.page-header > .form-group{
+    margin-bottom:0;
+    color:white;
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white;
+        opacity: 1; /* Firefox */
+    }
+    
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: white;
+    }
+    
+    ::-ms-input-placeholder { /* Microsoft Edge */
+        color: white;
+    }
+
+    .form-control{
+        color:inherit;
+    }
+
+    ul {
+        position:absolute;
+        top:50px;
+        left:0;
+        right:0;
+        z-index:9999;
+    }
+}
+
+.main-tree > ul{
+    padding-left: 0;
 }
