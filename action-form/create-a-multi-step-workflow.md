@@ -16,11 +16,11 @@ Features:
 
 # ![](https://puu.sh/xs3Zz/33e78a691f.png)
 
-* **Navigation** - it** **can be defined in Action Form or Action Grid by creating buttons, labeled \(Next, Previous, etc\) within Change TabsPro Tab actions. The following JavaScript method dnnsf.api.tabspro.changeTab\({mid:421,done}\); is available to reference it from external modules.
+* **Navigation** - it can be defined in Action Form or Action Grid by creating buttons, labeled \(Next, Previous, etc\) within Change TabsPro Tab actions. The following JavaScript method dnnsf.api.tabspro.changeTab\({mid:421,done}\); is available to reference it from external modules.
 
-* **Validation **- it can be set in Tabs Pro \(Items Section\) by using Boolean expressions in one of the options: Show Conditionally or Enable Conditionally. These conditions are evaluated on server side. A common example is \[QueryString:Key\] == "Value". These fields support [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens). See [More examples](http://action-form.dnnsharp.com/conditions).![](https://puu.sh/xs9gX/e3cd2a6dfd.png)
+* **Validation** - it can be set in Tabs Pro \(Items Section\) by using Boolean expressions in one of the options: Show Conditionally or Enable Conditionally. These conditions are evaluated on server side. A common example is \[QueryString:Key\] == "Value". These fields support [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens). See [More examples](http://action-form.dnnsharp.com/conditions).![](https://puu.sh/xs9gX/e3cd2a6dfd.png)
 
-* **Open as Modal **- this option is available in TabsPro under Settings Section. Basically, it displays the entire Multi-Step system in PopUp. This can be triggered from external modules \(a HTML module, a DNN Skin, etc\) by calling the following javascript functions:
+* **Open as Modal** - this option is available in TabsPro under Settings Section. Basically, it displays the entire Multi-Step system in PopUp. This can be triggered from external modules \(a HTML module, a DNN Skin, etc\) by calling the following javascript functions:
 
   * dnnsf.api.tabspro.openModal\({mid:436}\); -  open the PopUp
   * dnnsf.api.tabspro.closeModal\({mid:436}\); - close the PopUp
@@ -32,10 +32,10 @@ Features:
 
 ![](https://puu.sh/xx6LY/880cce960b.png)
 
-* **TabsPro Integration with Action Form on Form Events **- these options work only if you already have a TabsPro version higher than 02.01.76 installed
+* **TabsPro Integration with Action Form on Form Events** - these options work only if you already have a TabsPro version higher than 02.01.76 installed
 
   * **Tab Enter Section** - where it can be defined a list of actions to be executed after the TabsPro's Tab containing an Action Form is entered.
-  * **Tab Leave Section **- where it can be defined a list of actions to be executed after the TabsPro's Tab containing an Action Form is left.
+  * **Tab Leave Section** - where it can be defined a list of actions to be executed after the TabsPro's Tab containing an Action Form is left.
 
     * Refresh tab state - this setting enables all tabs' conditions to be reevaluated when a TabsPro's Tab is changed.
 
@@ -43,25 +43,22 @@ Features:
 
     * Save To Reports - this setting enables Action Form to save data to reports table.
 
-* **TabsPro Integration with Action Grid on General Settings - **These options work only if you already have a [TabsPro](http://www.dnnsharp.com/dnn/modules/tabs-pro) version higher than 02.01.40 installed.
+* **TabsPro Integration with Action Grid on General Settings** These options work only if you already have a [TabsPro](http://www.dnnsharp.com/dnn/modules/tabs-pro) version higher than 02.01.40 installed.
 
-  * **Load When Tab Is Activated **- if this setting is enabled the grid will be initialized when the tab is active.
+  * **Load When Tab Is Activated** - if this setting is enabled the grid will be initialized when the tab is active.
 
-  * **Refresh Grid When Tab Is Activated **- if this setting is enabled the grid will be refreshed when the tab is active.
+  * **Refresh Grid When Tab Is Activated** - if this setting is enabled the grid will be refreshed when the tab is active.
 
-* **TabsPro Actions available in Action Form and Action Grid **
+* **TabsPro Actions available in Action Form and Action Grid**
 
-  * **Open Action Form Popup And Continue / Stop Execution** -- it opens a selected Action Form module in modal. It can **Reinitialize Action Form ** when opening the popup.** **The **QueryString Parameters** set in this action will be sent to the Action Form module and they will be available in the Init and PreInit actions as values of the 'QueryString:' token namespace. Can be used as regular action where the stack actions will continue or as final action that will stop the execution of the below actions. This action provides the following javascript functions: _**dnnsf.api.actionForm.openPopupById\("497"\) **or **dnnsf.api.actionForm.openPopupByName\("popupName"\)** or **dnnsf.api.actionForm.isFormPopupOpen  or dnnsf.api.actionForm.isFormPopupOpen \("497"\). **_
+  * **Open Action Form Popup And Continue / Stop Execution** -- it opens a selected Action Form module in modal. It can **Reinitialize Action Form when opening the popup.** The **QueryString Parameters** set in this action will be sent to the Action Form module and they will be available in the Init and PreInit actions as values of the 'QueryString:' token namespace. Can be used as regular action where the stack actions will continue or as final action that will stop the execution of the below actions. This action provides the following javascript functions: **dnnsf.api.actionForm.openPopupById\("497"\)** or **dnnsf.api.actionForm.openPopupByName\("popupName"\)** or **dnnsf.api.actionForm.isFormPopupOpen**  or **dnnsf.api.actionForm.isFormPopupOpen \("497"\).**
 
-  * **Close Action Form Popup And Continue / Stop Execution** - it closes the modal through a selected Action Form module. Can be used as regular action where the stack actions will **continue **or as final action that will **stop **the execution of the below actions. This can be triggered from external modules by calling the following javascript function: _**closePopupById\("497"\). **_
+  * **Close Action Form Popup And Continue / Stop Execution** - it closes the modal through a selected Action Form module. Can be used as regular action where the stack actions will **continue** or as final action that will **stop** the execution of the below actions. This can be triggered from external modules by calling the following javascript function: **closePopupById\("497"\).**
 
-  * **Initialize Action Form And Continue / Stop Execution **-** **it initializes a selected Action Form Module. The **QueryString Parameters **set in this action will be sent to the Action Form module and they will be available in the Init and PreInit actions as values of the 'QueryString:' token namespace. Can be used as regular action where the stack actions will **continue **or as final action that will **stop **the execution of the below actions. This action provides the following javascript functions: **dnnsf.api.actionForm.initForm\("497",{"param":"diana"}\),  **_**initForm\("497"\)**_\(to manually initialize the form on the page\), _**showFormInline\("497"\) **_\(open form in text mode\), _**hideFormInline\("497"\) **_\(hide form in text mode\)
+  * **Initialize Action Form And Continue / Stop Execution** -it initializes a selected Action Form Module. The **QueryString Parameters** set in this action will be sent to the Action Form module and they will be available in the Init and PreInit actions as values of the 'QueryString:' token namespace. Can be used as regular action where the stack actions will **continue** or as final action that will **stop** the execution of the below actions. This action provides the following javascript functions: **dnnsf.api.actionForm.initForm\("497",{"param":"diana"}\)**,  **initForm\("497"\)**\(to manually initialize the form on the page\), showFormInline\("497"\) **\(open form in text mode\)**, **hideFormInline\("497"\)**\(hide form in text mode\)
+  
+  * **Open TabsPro Popup And Continue / Stop Execution**- it opens a selected TabsPro module in modal, requires **Open as modal**option enabled. This action provides the following javascript functions: **dnnsf.api.tabspro.openModal\({mid:421}\); **or** dnnsf.api.tabspro.isModalOpen **or** dnnsf.api.tabspro.refreshTabPro\({"mid":"421"}\)**
 
-  * **Open TabsPro Popup And Continue / Stop Execution **- it opens a selected TabsPro module in modal, requires **Open as modal **option enabled. This action provides the following javascript functions: **dnnsf.api.tabspro.openModal\({mid:421}\); **or** dnnsf.api.tabspro.isModalOpen **or **dnnsf.api.tabspro.refreshTabPro\({"mid":"421"}\)**
+  * **Close Tabs Pro Popup And Continue / Stop Execution**-it closes the modal through a selected Tabs Pro module. This action provides the following javascript function: **dnnsf.api.tabspro.closeModal\("421"\)**
 
-  * **Close Tabs Pro Popup And Continue / Stop Execution **-** **it closes the modal through a selected Tabs Pro module. This action provides the following javascript function: **dnnsf.api.tabspro.closeModal\("421"\)**
-
-  * **Tabs Pro Change Tab And Continue / Stop Execution **- it changes the tab of a selected Tabs Pro Module. The **Evaluate state **checkbox** **evaluates the state of the TabsPro's Tabs before changing the tab.This action provides the following javascript function: **dnnsf.api.tabspro.changeTab\({"mid":"421","tabId":"25"}\)**
-
-
-
+  * **Tabs Pro Change Tab And Continue / Stop Execution**- it changes the tab of a selected Tabs Pro Module. The Evaluate state **checkbox**evaluates the state of the TabsPro's Tabs before changing the tab.This action provides the following javascript function: **dnnsf.api.tabspro.changeTab\({"mid":"421","tabId":"25"}\)**
