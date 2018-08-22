@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US " }}">
+<html lang="{{ site.lang | default: 'en-US' }}">
 
 <head>
     <meta charset="UTF-8"> {% seo %}
@@ -7,8 +7,8 @@
     <meta name="theme-color" content="#157878">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/treeLinks.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/simple-sidebar.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/icons.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
 
@@ -18,33 +18,32 @@
             <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
             <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2>
             <div class="form-group col-md-6">
-                    <input type="text" class="form-control" id="search-input" placeholder="Search...">
-                    <ul class="list-group list-unstyled" id="results-container"></ul>
+                <input type="text" class="form-control" id="search-input" placeholder="Search...">
+                <ul class="list-group list-unstyled" id="results-container"></ul>
             </div>
         </header>
     </div>
     <div class="row">
-        <div class="col-sm-2">
-            <ul role="tree" class="main-tree">
+        <div class="col-sm-3">
+            <div class="tree">
                 {% include menu.html pages = site.data.menu.main %}
-            </ul>
+            </div>
         </div>
-        <div class="col-sm-10">
+        <div class="col-sm-9">
             <main id="content" class="main-content" role="main">
-                {{ content }} 
+                {{ content }}
             </main>
         </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
-    <script src="{{'/assets/js/treeLinks.js?v='|append: site.github.build_revision | relative_url }}'"></script>
-    <script src="{{'/assets/js/treeitemLinks.js?v='|append: site.github.build_revision | relative_url }}'"></script>
     <script src="{{'/assets/js/simple-jekyll-search.js?v='|append: site.github.build_revision | relative_url }}'"></script>
+    <script src="{{'/assets/js/tree-menu.js?v='|append: site.github.build_revision | relative_url }}'"></script>
     <script src="{{'/assets/js/script.js?v='|append: site.github.build_revision | relative_url }}'"></script>
 
 </body>

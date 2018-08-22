@@ -1,17 +1,12 @@
-<ul role="group" aria-expanded="false">
+<ul>
     {% for treepage in include.pages %}
-        {% if treepage.subpages.size == 0 %}
-            {% assign itemRole = "none" %}
-        {% endif %}
-        {% if treepage.url %}
-            {% if treepage.subpages.size > 0 %}
-                {% assign itemRole = "treeitem" %}
-            {%endif%}
-        {% endif %}
-        <li role="{{itemRole}}" aria-expanded="false">
-            <span class="d-flex align-items-center">
+        <li>
+            <span class="d-inline-flex align-items-center">
                 <a href="{{treepage.url | relative_url}}">
                 {{treepage.title}}</a>
+                {%if treepage.subpages.size > 0 or treepage.ref%}
+                    <i class="icon-plus-sign" style="margin-left:3px"></i>
+                {%endif%}
             </span>
             {% if treepage.ref %}
                 {%assign module_pages = site.data.menu[treepage.ref] %}

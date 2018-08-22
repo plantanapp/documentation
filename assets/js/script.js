@@ -1,3 +1,5 @@
+'use strict';
+
 (function () {
     //EVENTS
     $('#search-input').on('click', function (e) {
@@ -24,17 +26,21 @@
     }
 
     function expandTreeToElement(element) {
-        do {
-            element = element.parentElement;
-            element.setAttribute("aria-expanded", true);
-        } while (element.parentElement)
+        while (!element.parent().hasClass('tree') && !element.is('body')) {
+            element = element.parent();
+            if (element.hasClass('parent_li')) {
+                element.find(' > span > i').addClass('icon-minus-sign').removeClass('icon-plus-sign')
+                element.find(' > ul > li').show();
+            }
+        }
     }
 
     function parseUrlForSearchResults(url) {
         const replaceObject = {
             "/": " -> ",
             "-": " ",
-            ".html": ""
+            ".html": "",
+            "_": " "
         }
         //need to eliminate the first slash and then replace the other strings
         return url.substring(1).replace(/\/|-|.html/gi, function (matched) {
@@ -42,7 +48,7 @@
         });
     }
 
-    function searchResults(prop, value, template) {
+    function searchResults(prop, value) {
         if (prop === 'path') {
             let parseResult = parseUrlForSearchResults(value);
             return toTitleCase(parseResult);
@@ -56,19 +62,20 @@
         resultsContainer: document.getElementById('results-container'),
         json: '/search.json',
         success: Function.prototype,
-        searchResultTemplate: '<li><a class="list-group-item list-group-item-action" href="{url}">{title}<br><span class="search-result-location">{path}</span></a></li>',
+        searchResultTemplate: '<li><a class="list-group-item list-group-item-action text-left" href="{url}"><span class="search-result-title">{title}</span><br><span class="search-result-path">{path}</span></a></li>',
         templateMiddleware: searchResults,
         sortMiddleware: function () {
             return 0;
         },
         noResultsText: 'No results found',
-        limit: 5,
+        limit: 10,
         fuzzy: false
     });
 
     if (location.pathname !== '/' && location.pathname !== '/index.html') {
-        let element = document.querySelector("a[href='" + location.pathname + "']");
+        let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);
+        element.parent('span').addClass('tree-current-item');
     }
 
-})()
+})();
