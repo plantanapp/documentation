@@ -12,5 +12,8 @@
     }, {
         "title": "Common",
         "ref": "common"
+    }, {
+        "title": "Sharp Scheduler",
+        "ref": "sharpscheduler"
     }]
 }]
