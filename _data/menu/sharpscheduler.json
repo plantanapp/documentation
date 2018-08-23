@@ -5,9 +5,13 @@
     "title": "FAQ",
     "url": "/sharp-scheduler/faq.html"
 }, {
+    "title":"Video Tutorials",
+    "url": "/sharp-scheduler/videos.html"
+}, {
     "title": "Actions",
+    "url": "/sharp-scheduler/actions.html",
     "subpages": [{
-        "title": "Actions (General)",
+        "title": "Overview",
         "url": "/sharp-scheduler/actions.html"
     }, {
         "title": "Execute Method",
@@ -32,7 +36,7 @@
         "url": "/sharp-scheduler/run-dnn-job.html"
     }, {
         "title": "Run Executable",
-        "url": "/sharp-scheduler/cant_find.html"
+        "url": "/sharp-scheduler/run-executable.html"
     }, {
         "title": "Run PowerShell Script",
         "url": "/sharp-scheduler/run-powershell-script.html"
@@ -48,11 +52,15 @@
     }, {
         "title": "Search Boost",
         "url": "/sharp-scheduler/search-boost.html"
+    }, {
+        "title": "Backup Files",
+        "url": "/sharp-scheduler/backup-files.html"
     }]
 }, {
     "title": "Triggers",
+    "url": "/sharp-scheduler/triggers1.html",
     "subpages": [{
-        "title": "Triggers (General)",
+        "title": "Overview",
         "url": "/sharp-scheduler/triggers1.html"
     }, {
         "title":"App Events Triggers",
@@ -81,6 +89,7 @@
     "url": "/sharp-scheduler/extending-sharp-scheduler.html"
 }, {
     "title": "Extensions",
+    "url": "/sharp-scheduler/clickatell.html",
     "subpages": [{
         "title": "Clickatell",
         "url": "/sharp-scheduler/clickatell.html"
@@ -95,11 +104,14 @@
     "title": "Jobs",
     "url": "/sharp-scheduler/jobs.html"
 }, {
+    "title": "Disabling jobs ",
+    "url":"/sharp-scheduler/disable.html"
+}, {
     "title": "Migrate from DNN Scheduler",
     "url": "/sharp-scheduler/migrate-from-dnn-scheduler.html"
 }, {
     "title": "MyTokens Support",
-    "url": "/sharp-scheduler/not-found-yet.html"
+    "url": "/sharp-scheduler/my-tokens-support.html"
 }, {
     "title": "Services",
     "url":"/sharp-scheduler/services.html"
