@@ -15,3 +15,5 @@ Serialize to CSV
     - Store in Relative URL, let's say csvtest
 5. add a Send Email action
     - on Attach from Token add the token stored in relative url
+
+For more information on *Serialization*, check the Common Actions documentation [page](../common/serialization.html) 
