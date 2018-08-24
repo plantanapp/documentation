@@ -16,7 +16,7 @@ layout: default
 * [... customize Action Form using CSS Styles and Classes](#8)
 * [... develop a reporting system using Action Form](#9)
 * [... display a text box only when the user clicks on a check box](#10)
-* [... display images depending of the selected value from DropDown/RadioBoxes field](#11)
+* [... display assets depending of the selected value from DropDown/RadioBoxes field](#11)
 * [... display Profile fields with Action Form and MyTokens](#12)
 * [... display User Accounts (role specific)](#13)
 * [... display the system date and time](#14)
@@ -136,7 +136,7 @@ The easiest way to do it would be via jQuery. Alternatively, you can use DNN API
 
 To call the button ID of the other form via jQuery, you can use the Inspector from F12 Developer Tools to identify the button and grab its ID.
 
-<img style="max-width:100%" src="images/Grab-ID.png" /><br>
+<img style="max-width:100%" src="assets/Grab-ID.png" /><br>
 
 ### <a name="6"></a> ... color a button based on a hidden value
 
@@ -247,9 +247,9 @@ The first thing is you'll need to design your database architecture independentl
 
 First you have to add a Multiple choice field in the form where you determine the Items the user will select from, then simply add a text box field where you can add the [YourCheckboxFieldId] in the Show Binding box.
 
-### <a name="12"></a> ... display images depending of the selected value from DropDown/RadioBoxes field
+### <a name="12"></a> ... display assets depending of the selected value from DropDown/RadioBoxes field
 
-Add a Multiple Choice with DropDown and in Item add your list so than add for each item from list the path to the image that corresponds (e.g. Item1|/Portals/0/images1.jpg)
+Add a Multiple Choice with DropDown and in Item add your list so than add for each item from list the path to the image that corresponds (e.g. Item1|/Portals/0/assets1.jpg)
 Add a Static Text and in Bind Expressions at Value add this expression:
 
 ```html
@@ -262,13 +262,13 @@ Say you have a custom profile field called BirthMonth and one called BirthDay an
 
 To do this, Create the BirthMoth profile entry and set Data Type to List. The next step is to add an entry for each of the months of the year, as illustrated below:
 
-<img style="max-width:100%" src="images/Birth-month-entries.png" /><br>
+<img style="max-width:100%" src="assets/Birth-month-entries.png" /><br>
 
 Click Next, and in the Property Name field write BirthMonth: .
 
 Repeat the process for BirthDay, and in the end it should look like this when you try to update the profile:
 
-<img style="max-width:100%" src="images/birth-month-list.png" /><br>
+<img style="max-width:100%" src="assets/birth-month-list.png" /><br>
 
 In Action Form, create a form with a Static Text box and in the Content box input
 
@@ -332,7 +332,7 @@ If you would like to export all rows in the SQL query data source (not just thos
 
 There are several ways to align the Label in Action Form, but what if you wanted to hide it altogether? This can be achieved by writing <b>display:none;border-top:0px;</b> in the Label Styles field.
 
-<img style="max-width:100%" src="images/Hide-label.png" /><br>
+<img style="max-width:100%" src="assets/Hide-label.png" /><br>
 
 ### <a name="18"></a> ... implement an action in Action Form
 
@@ -348,11 +348,11 @@ More details can be found in these 2 videos:
 
 If you wish to render out a JavaScript method and custom hidden input fields on the fly and insert them into the existing form, can use the Binding > On Change field to wire some JavaScript code when the value in a control changes.
 
-<img style="max-width:100%" src="images/On-change-click.png" /><br>
+<img style="max-width:100%" src="assets/On-change-click.png" /><br>
 
 You can also place your code in the General > Initialization Script.  
 
-<img style="max-width:100%" src="images/init-scripts.png" /><br>
+<img style="max-width:100%" src="assets/init-scripts.png" /><br>
 
 Do a console.log(form) to see the entire module in the F12 Developer tools. You'll also have access the the control IDs.
 
@@ -705,7 +705,7 @@ When you configure the action grid you can create a Template Field with [HiddenF
 
 In order to remove the uploaded files, click on Change, and the respective folders containing the files and the files themselves will be highlighted - click on each of them again to deselect, and Update when done.
 
-<img style="max-width:100%" src="images/Portal-files.png" /><br>
+<img style="max-width:100%" src="assets/Portal-files.png" /><br>
 
 ### <a name="40"></a> ... save the country name (e.g. Australia) and not the country code (e.g. AU) to Reports
 

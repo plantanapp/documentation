@@ -8,7 +8,7 @@ This feature provides the ability to build dynamic forms through the use of bind
 
 Behind the scenes, Action Form uses the popular Angular JS library, but we've implemented a layer that would provide the more familiar syntax which is the field name between square brackets (eq <i>[FieldId]</i>).
 
-<img style="max-width:100%" src="images/bind-expressions.png"/> <br>
+<img style="max-width:100%" src="assets/bind-expressions.png"/> <br>
 
 ## More on Expressions
 
@@ -52,7 +52,7 @@ And then, just invoke the function from an expression just as you'd invoke any f
 
 This binding dynamically shows or hides fields based on a Boolean expression. Access field values by their name between square brackets and use standard JavaScript Boolean operators (==, !=, <, >, !). For example, use <b>[PaymentMethod] == 'CreditCard'</b> to show the credit card field only when the Payment Method is set accordingly. More complex expressions are possible by using the logical and operator (&&) and the or operator (\|\|).
 
-<img style="max-width:100%" src="images/show.png"/> <br>
+<img style="max-width:100%" src="assets/show.png"/> <br>
 
 Here are a few different scenarios that use this binding.
 
@@ -69,7 +69,7 @@ The default radio box is called Yes/No. So the expression must check the field v
 
 * <b> Based on Multiple Choice fields </b>
 
-The multiple choice field allows administrators to provide a list of items. The expression need to compare against the item value. You have to pay attention to this only when using the pipe syntax to provide both a text and a value for an item (for example Item Text|value here). Here's an example: <b> [MultpleChoiceFieldID] == 'Some Value'. </b>
+The multiple choice field allows administrators to provide a list of items. The expression need to compare against the item value. You have to pay attention to this only when using the pipe syntax to provide both a text and a value for an item (for example Item Text\|value here). Here's an example: <b> [MultpleChoiceFieldID] == 'Some Value'. </b>
 
 * <b> Complex Expressions </b>
 
@@ -87,7 +87,7 @@ Hidden fields do not get submitted to the server. This is because the show bindi
 This binding is used to auto-populate a field based on values in other fields. Let's take the most natural example in DNN:
     <b>     [FirstName] + ' ' + [LastName] </b>
 
-![Value](/action-form/images/value.png "Value")
+![Value](/action-form/assets/value.png "Value")
 
 This is the expression that you would bind to the Display Name field. It simply concatenates the First Name with Last Name and separate them with a white space. The field will update automatically every time first name or last name fields change. But there is a catch. Once the user "touches" the Display Name field the value is no longer updated automatically. Currently there is no way to reactivate the binding once that happens. If you do need to do this, then take a look at creating the binding manually in the On Click/Change section further down on this page.
 
@@ -111,7 +111,7 @@ All this does is take parts of the ID fields and concatenate them together but i
 ## On Click/Change
 
 This binding is used to bind some code to be executed when a button is clicked or a field value changes. This allows for more advanced scenarios compared to the other bindings and you can use the full JavaScript capabilities, including conditions and loops and so on. In this context, this refers to the field that raised the event, more specifically to the jQuery object built with this DOM object.
-![Value](/action-form/images/onClickChange.png "Value")
+![Value](/action-form/assets/onClickChange.png "Value")
 
 Here are some common scenarios:
 

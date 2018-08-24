@@ -12,10 +12,10 @@ Execute a stored procedure that calculates commissions paid through a referral p
 SELECT FirstName + ‘ ‘ + LastName from Users where UserId = [UserId].
 ```
 
-![](images/run-sql-query.png)
+![](assets/run-sql-query.png)
 
 ## Server Request
 
 This action has the purpose of posting the grid data to a different server, you can use the URL field to determine the location for where the data will be posted (you can use DNN API Endpoint module to generate the URL), in this box you can also use tokens, and there's another useful box, the Post Data box, where you can put `key=value` pairs on separate lines and you can also add additional HTTP headers, in case you need it, and you can specify the HTTP method by selecting it from the "Choose an HTTP Method" drop down list.
 
-![](images/server-request.png)
+![](assets/server-request.png)

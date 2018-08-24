@@ -2,7 +2,7 @@
 
 The SQL Query data source fills the need of managing data that comes from multiple tables or built using complex statements. Note that this data source is not currently heavily optimized and should be used with care, especially with large data sets. It doesn't use a Lucene index nor CTE \(Common Table Expressions\).
 
-![](images/sql.png)
+![](assets/sql.png)
 
 Once the SQL Query data source is selected, additional configuration options will appear.
 

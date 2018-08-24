@@ -13,7 +13,7 @@ It is a fast form validation; if the user is filling the form in a wrong way, th
 It sets up to display only one error at a time and focus on the wrong field; this way you help and ensure that the user is filling in correctly all the form fields.
 In Action Form we've set-up an option to enable or disable the client side validation. Why? So that you can treat the Event on Validation Failed or maybe you want to implement your own validation logic.
 
-![client side validation](/action-form/images/client-side-validation.png "client side validation")
+![client side validation](/action-form/assets/client-side-validation.png "client side validation")
 
 ## Validate form before submit
 

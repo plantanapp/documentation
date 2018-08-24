@@ -2,7 +2,7 @@
 
 Each field can be set to be sortable, searchable and filterable, and according to the view template of the grid, the layout on front end will differ.
 
-![](images/filter.png)
+![](assets/filter.png)
 
 ### How to setup the filter
 

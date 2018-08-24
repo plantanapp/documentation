@@ -16,4 +16,4 @@ Action Grid ships with the following pre built data sources:
 
   This data source fills the need of managing data that comes from multiple tables or built using complex statements. Note that this data source is not currently heavily optimized and should be used with care, especially with large data sets.
   
-  ![](images/data.png)
+  ![](assets/data.png)

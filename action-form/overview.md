@@ -23,7 +23,7 @@ Once you begin collecting results, it provides functionality of powerful functio
 <div style="float: left; max-width: 70%;">
 With regular updates, enjoy an even faster and more lightweight builder, providing you with all the modern features.
 </div>
-<img style="max-width: 28%" src="images/action-form-builder-300x388w.jpg" />
+<img style="max-width: 28%" src="assets/action-form-builder-300x388w.jpg" />
 
 ## Key Features
 

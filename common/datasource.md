@@ -17,7 +17,7 @@ As for grids with SQL Query or Datasource table, you need to add a Run SQL query
 
 **Datasource Inline Edit** - action used to update the existing items from the grid, directly in the grid. One of the most important steps here is to define the grid fields for Inline Edit with the option needed:
 
-![](images/inline.jpg)
+![](assets/inline.jpg)
 
 * On Item buttons:
 
@@ -34,10 +34,10 @@ An information panel will display below a selected grid item. This detail view c
 
 Here's a sample of a Datasource Detail View Template which uses a token and stylized text with HTML:
 
-![](images/7.jpg)
+![](assets/7.jpg)
 
 * On Listing Template
 
 An information panel will open in a Pop Up.
 
-![](images/8.jpg)
+![](assets/8.jpg)
