@@ -26,11 +26,13 @@
     }
 
     function expandTreeToElement(element) {
-        while (!element.parent().hasClass('tree') && !element.is('body')) {
-            element = element.parent();
-            if (element.hasClass('parent_li')) {
-                element.find(' > span > i').addClass('icon-minus-sign').removeClass('icon-plus-sign')
-                element.find(' > ul > li').show();
+        if (element.length) {
+            while (!element.parent().hasClass('tree') && !element.is('body')) {
+                element = element.parent();
+                if (element.hasClass('parent_li')) {
+                    element.find(' > span > i').addClass('icon-minus-sign').removeClass('icon-plus-sign')
+                    element.find(' > ul > li').show();
+                }
             }
         }
     }
