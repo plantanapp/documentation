@@ -2,11 +2,15 @@
     {% for treepage in include.pages %}
         <li>
             <span class="d-inline-flex align-items-center">
-                <a href="{{treepage.url | relative_url}}">
-                {{treepage.title}}</a>
-                {%if treepage.subpages.size > 0 or treepage.ref%}
+                {% if treepage.url %}
+                    <a href="{{treepage.url | relative_url}}">
+                    {{treepage.title}}</a>
+                    {%if treepage.subpages.size > 0 or treepage.ref%}
                     <i class="icon-plus-sign" style="margin-left:3px"></i>
-                {%endif%}
+                    {%endif%}
+                {% else %}
+                    {{treepage.title}}
+                {% endif %}
             </span>
             {% if treepage.ref %}
                 {%assign module_pages = site.data.menu[treepage.ref] %}

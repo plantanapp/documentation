@@ -5,17 +5,21 @@
     "title": "Modules",
     "subpages": [{
         "title": "Action Grid",
-        "ref": "actiongrid"
+        "ref": "actiongrid",
+        "url": "/action-grid/index.html"
     }, {
         "title": "Action Form",
-        "ref": "actionform"
+        "ref": "actionform",
+        "url": "/action-form/index.html"
     }, {
         "title": "Search Boost",
-        "ref": "searchboost"
+        "ref": "searchboost",
+        "url": "/search-boost/index.html"
     },
     {
         "title": "Common",
-        "ref": "common"
+        "ref": "common",
+        "url": "/common/index.html"
     }, {
         "title": "Sharp Scheduler",
         "url": "/sharp-scheduler/index.html",
