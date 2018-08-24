@@ -1,6 +1,6 @@
 #### Sorting Results
 
-![](Sort_Results_Search_Boost.png)
+![](/search-boost/miscellaneous/assets/Sort_Results_Search_Boost.png)
 
 Select how results should be sorted. By default they are ordered by Relevance but this can be changed to better reflect the particular setup. Available options are:
   * **By Relevance**
@@ -17,13 +17,13 @@ This will sort results alphabetically by their title. This is particularly neede
 
 **Sort when no search terms**
 
-![](Sort_When_No_Search_Term.png)
+![](/search-boost/miscellaneous/assets/Sort_When_No_Search_Term.png)
 
 This option determines the sort of the search results when no search terms have been provided (for example, when only filters determine the results).
 
 **Allow User Sort**
 
-![](Allow_User_Sort_Search_Boost.png)
+![](/search-boost/miscellaneous/assets/Allow_User_Sort_Search_Boost.png)
 
 Allow User Sort Option in Search Boost
 When enabled, this option to allow users to override the sorting of results at search time.

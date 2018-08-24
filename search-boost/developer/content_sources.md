@@ -8,7 +8,9 @@ According to the Architecture a content source is responsible to get new content
  return new GenericUrlResolver(searchResult, searchContext).GetUrlForSearchResult();
 
 Here is a sample (works with SearchBoost >= 3.1.43):
-```using avt.SearchBoost.Core.ContentSource;
+
+```
+using avt.SearchBoost.Core.ContentSource;
 using avt.SearchBoost.Core.Indexing;
 using avt.SearchBoost.Core.Search;
 using DnnSharp.Common.Logging;
@@ -74,4 +76,5 @@ namespace avt.SearchBoost.TestPlugin.ContentSources
             return new GenericUrlResolver(searchResult, searchContext).GetUrlForSearchResult();
         }
     }
-}```
+}
+```

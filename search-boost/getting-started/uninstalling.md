@@ -5,10 +5,17 @@ Asdf.
 
   1. Remove/Comment all Skin Objects:
 Search the skin folder (/Portals/_default/Skins and /Portals/[Number]/Skins) for references to SearchBoost (in one word). For each file that you find make sure to remove/comment the following two lines: 
-```<%@ Register TagPrefix="avt" TagName="SB" Src="~/DesktopModules/DnnSharp/SearchBoost/SearchInput.ascx" %>```
+
+```
+<%@ Register TagPrefix="avt" TagName="SB" Src="~/DesktopModules/DnnSharp/SearchBoost/SearchInput.ascx" %>
+```
+
 and
-```<avt:SB runat="server" />
+
+```
+<avt:SB runat="server" />
 ```  
+
   2. Uninstall avt.SearchBoost.Results module from Admin > Extensions screen.
   3. Uninstall avt.SearchBoost.Input module from Admin > Extensions screen.
   4. Restart the DNN Indexer from Host > Schedule.
@@ -16,22 +23,28 @@ and
 
 ```
 Search: Site Crawler Starting. Content change start time 6/16/2014 2:45 PM 
-EXCEPTION: Could not load file or assembly 'Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181' or one of its dependencies. The system cannot find the file specified.```
+EXCEPTION: Could not load file or assembly 'Lucene.Net, Version=3.0.3.0, Culture=neutral, PublicKeyToken=85089178b9ac3181' or one of its dependencies. The system cannot find the file specified.
+```
 
 If you want to uninstall manually then you have to change:
 
-  ```
+```html
   <searchDataStore defaultProvider="AvtLuceneDataStoreProvider">
       <providers>
         <clear />
         <add name="SearchDataStoreProvider" type="DotNetNuke.Services.Search.SearchDataStore, DotNetNuke.Search.DataStore" providerPath="~\Providers\SearchProviders\SearchDataStore\" />
         <add name="AvtLuceneDataStoreProvider" type="avt.SearchBoost.Core.Indexing.LuceneDataStore, avt.SearchBoost.Core" providerPath="~\DesktopModules\DnnSharp\SearchBoost\" />
       </providers>
-    </searchDataStore>```
+    </searchDataStore>
+```
+
 to
-    ```<searchDataStore defaultProvider="SearchDataStoreProvider">
+
+```html
+    <searchDataStore defaultProvider="SearchDataStoreProvider">
       <providers>
         <clear />
         <add name="SearchDataStoreProvider" type="DotNetNuke.Services.Search.SearchDataStore, DotNetNuke.Search.DataStore" providerPath="~\Providers\SearchProviders\SearchDataStore\" />
       </providers>
-    </searchDataStore>```
+    </searchDataStore>
+```

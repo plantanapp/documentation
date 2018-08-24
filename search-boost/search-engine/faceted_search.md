@@ -6,7 +6,7 @@ So basically the task to enable Faceted Search consists of setting the right cat
 
 A classic example is show in the image below:
 
-![](sb-faceted-search.png)
+![](/search-boost/search-engine/assets/sb-faceted-search.png)
 Read sections below for more information on how to create categories.
 
 #### Subcategories
@@ -22,7 +22,7 @@ By putting a search item in a subcategory it will automatically be included in a
 
 Content from modules that implement ISearchable can be placed under specific categories by using the built-in tags from DNN. Search Boost will take into account tags specified both under page settings and module settings.
 
-![](SearchBoost modules tags.png)
+![](/search-boost/search-engine/assets/SearchBoost_modules_tags.png)
 
 Also additional categories can be specified from the Search Target tree in SB Administration console by clicking the settings icon next to each page or module from the tree. The principle is the same - categories can be specified for pages in which case they will apply for all modules, or they can be specified per module.
 
@@ -30,22 +30,24 @@ Besides categories you also get to specify custom fields (that are available in 
 
 The categories are saved at indexing time, so changes will not reflect immediately. You can use the manual indexing functions in SB Admin if you need the content to reindex right away.
 
-####Categories for documents
+#### Categories for documents
 
 For documents, categories can be easily added through the metadata feature.
 You can specify the metadata per folder - in which case it will apply for all documents indexed from that particular folder - or for an individual document. If both are specified, they are merged but the metadata per document takes priority.
 
 Here is an example of metadata that adds 4 categories to the document(s):
 
-```    <metadata>
+```html
+<metadata>
  <categories>
      <cat>Places</cat>
      <cat>Articles</cat>
      <cat>Websites</cat>
  </categories>
-    </metadata>```
-    
-    Categories for Custom Database Rules
+    </metadata>
+```
+
+##### Categories for Custom Database Rules
 
 Custom rules have been extended to allow a list of categories for each row. This can be achieved two ways:
 * **By using a database column**

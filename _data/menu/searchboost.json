@@ -1,14 +1,11 @@
 [{
+    "title": "Overview",
+    "url": "/search-boost/getting-started/index.html"
+},
+{
     "title": "Getting Started",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/getting-started/index.html"
-        },
-        {
-            "title": "Getting Started",
-            "url": "/search-boost/getting-started/getting_started_with_searchboost_3.html"
-        },
-        {
+    "url": "/search-boost/getting-started/getting_started_with_searchboost_3.html",
+    "subpages":[{
             "title": "Installation",
             "url": "/search-boost/getting-started/installation.html" 
         },
@@ -41,6 +38,10 @@
             "url": "/search-boost/getting-started/known_issues.html" 
         },
         {
+            "title": "Tips",
+            "url": "/search-boost/getting-started/tips.html" 
+        },
+        {
             "title": "Video Tutorials",
             "url": "/search-boost/getting-started/video_tutorials.html"
         },
@@ -51,10 +52,8 @@
  },
  {
     "title": "Customize Appearance",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/customize-appearance/index.html"
-        },
+    "url":"/search-boost/customize-appearance/custom_appearance.html",
+    "subpages": [
         {
         "title": "Creating New Templates",
         "url": "/search-boost/customize-appearance/create_new_templates.html"
@@ -74,10 +73,8 @@
  },
  {
     "title": "Developer",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/developer/index.html"
-        },
+    "url":"/search-boost/developer/developer.html",
+    "subpages": [
         {
         "title": "Advanced Tips",
         "url": "/search-boost/developer/advanced_tips.html"           
@@ -104,7 +101,7 @@
         },       
         {
         "title": "Debug Process Crashes",
-        "url": "/search-boost/developer/debug_index.html"                 
+        "url": "/search-boost/developer/debug_process_crashes.html"                 
         }, 
         {
         "title": "Logging",
@@ -121,18 +118,112 @@
  },
  {
     "title": "Custom Indexers (Old Version SearchBoost 2.X)",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/custom_indexes/custom_indexers_old_version_searchboost_2x.html"
-        },
+    "url": "/search-boost/custom_indexes/custom_indexers_old_version_searchboost_2x.html",
+    "subpages": [
         {
         "title": "Fluent API",
-        "url": "/search-boost/custom_indexes/.html"
+        "url": "/search-boost/custom_indexes/custom_indexers_fluent_api.html"
         },
         {
         "title": "Sample Custom LiveContent Indexer",
-        "url": "/search-boost/custom_indexes/.html"
+        "url": "/search-boost/custom_indexes/custom_indexers_Sample_Custom_LiveContent_Indexer.html"
         }]
- }
-      
+ },
+ {
+    "title": "Indexing",
+    "url": "/search-boost/indexing/indexing.html",
+    "subpages": [
+        {
+        "title": "Custom Search Rules",
+        "url": "/search-boost/indexing/custom_search_rules.html"
+        },
+        {
+        "title": "Easy DNN News Articles",
+        "url": "/search-boost/indexing/easy_dnn_news_articles.html"
+        },
+        {
+        "title": "Index Custom Modules",
+        "url": "/search-boost/indexing/index_custom_modules.html"
+        },
+        {
+        "title": "Indexing Modules and Tabs",
+        "url": "/search-boost/indexing/indexing_modules_and_tabs.html"
+        },
+        {
+        "title": "Targets",
+        "url": "/search-boost/indexing/targets.html"
+        }]
+ },
+ {
+    "title": "Indexing Documents",
+    "url": "/search-boost/indexing-documents/indexing_documents.html",
+    "subpages": [
+        {
+        "title": "Install Filter",
+        "url": "/search-boost/indexing-documents/install_ifilter.html"
+        },
+        {
+        "title": "Metadata",
+        "url": "/search-boost/indexing-documents/metadata.html"
+        },
+        {
+        "title": "Search Other Formats",
+        "url": "/search-boost/indexing-documents/search_other_formats.html"
+        }]
+ },
+ {
+    "title": "Miscellaneous",
+    "url": "/search-boost/miscellaneous/miscellaneous.html",
+    "subpages": [
+        {
+        "title": "Advanced Search Syntax",
+        "url": "/search-boost/miscellaneous/advanced_search_syntax.html"
+        },
+        {
+        "title": "Integrate with Standard DNN Results Module",
+        "url": "/search-boost/miscellaneous/integrate_with_standard_dnn_results_module.html"
+        },
+        {
+        "title": "Sorting Results",
+        "url": "/search-boost/miscellaneous/sorting_results.html"
+        }]
+ },
+ {
+    "title": "SearchBoost Addons",
+    "url": "/search-boost/searchboost-addons/searchboost_addons.html"
+ },
+ {
+    "title": "Reports",
+    "url": "/search-boost/reports/reports.html",
+    "subpages": [
+        {
+        "title": "CSV File",
+        "url": "/search-boost/reports/csv_file.html"
+        },
+        {
+        "title": "Reports Example",
+        "url": "/search-boost/reports/reports_example.html"
+        }]
+ },
+ {
+    "title": "Search Engine",
+    "url": "/search-boost/search-engine/search_engine.html",
+    "subpages": [
+        {
+        "title": "Configuration and Capabilities",
+        "url": "/search-boost/search-engine/configuration_and_capabilities.html"
+        },
+        {
+        "title": "Faceted Search",
+        "url": "/search-boost/search-engine/faceted_search.html"
+        }]
+ },
+ {
+    "title": "Web Services",
+    "url": "/search-boost/web-services/web_services.html"
+ },
+ {
+    "title": "Debugging",
+    "url": "/search-boost/debugging/debugging.html"
+ }      
 ]

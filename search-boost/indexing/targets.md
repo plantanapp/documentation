@@ -12,7 +12,7 @@ Search Target allows you to have a Search Instance return results specific to th
 
 **Search Target Main Page**
 
-![](2016-08-12_1802.png)
+![](/search-boost/indexing/assets/2016-08-12_1802.png)
 
 On the search target main page you can select specific pages and folders for displaying search results. It allows different Search Boost Instances to be configured for different results. 
 
@@ -26,7 +26,7 @@ You can also filter the pages and folders using the Further filter search result
 
 1. To define which modules and folders a Search Boost instance should search go to the Portal menu on the main page. It looks like the following image.
 
-![](2016-08-12_1803.png)
+![](/search-boost/indexing/assets/2016-08-12_1803.png)
 
 2. Then select the pages and folders you want to bring the search results from. Your selection depends on the Module Security and Folder Permission. 
 

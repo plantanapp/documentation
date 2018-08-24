@@ -5,12 +5,13 @@ You may realize that though Search Boost provides many features, you will need t
 Custom Indexers are classes that implement ISearchBoostIndexer interface. Through this interface the class receives calls to index content. From this class you will need to call the Search Boost API to index content items.
 
 1. First, reference avt.SearchBoost.Core.dll assembly that comes with the Search Boost zip package.
-2. Once the reference has been added to your project, create a class and implement the avt.SearchBoost.Core.Indexing.ISearchBoostIndexer interface.
+2. Once the reference has been added to your project, create a class and implement the *avt.SearchBoost.Core.Indexing.ISearchBoostIndexer* interface.
 
   * Follow the example below for more info:
 It's recommended that you use the Fluent API for indexing content.
 
-``` namespace avt.SearchBoost.TestPlugin
+``` 
+namespace avt.SearchBoost.TestPlugin
 {
     public class TestIndexer : ISearchBoostIndexer
     {
@@ -51,20 +52,23 @@ It's recommended that you use the Fluent API for indexing content.
                 );
         }
     }
-} ```
+}
+```
 
 3. Once you have your class ready, compile it and copy the resulting assembly in the website /bin folder.
 4. Next, you will need to instruct Search Boost to use this custom indexer. 
-To do this, go to the \DesktopModules\SearchBoost\Config\ContentIndexers folder and create a new XML file that should look like the example below.
+To do this, go to the *\DesktopModules\SearchBoost\Config\ContentIndexers* folder and create a new XML file that should look like the example below.
 
-``` <indexers>
+```
+<indexers>
     <indexer>
  <title>Test Indexer</title>
         <type>avt.SearchBoost.TestPlugin.TestIndexer, avt.SearchBoost.TestPlugin</type>
     </indexer>
-</indexers> ```
+</indexers> 
+```
 
-  * Note that you will need to put the actual name of your class, assemble and give this XML file a relevant name. The way it is designed, you do not need to worry about this file being lost on upgrades. Only .defaults.xml will be overwritten on updates. This is why it is not a good idea to modify it directly and create new config files as suggested.
+  * Note that you will need to put the actual name of your class, assemble and give this XML file a relevant name. The way it is designed, you do not need to worry about this file being lost on upgrades. Only *.defaults.xml* will be overwritten on updates. This is why it is not a good idea to modify it directly and create new config files as suggested.
 
 5. Once the config is done, go to the Search Boost Control Panel and click Index Content. If everything went well you should be able to see the results if you search for the content you provided.
 As you can see, there are many parameters going into the StoreSingleItem API, and most of them are not specified. We will provide a simpler API in the next release. Also, this section will be updated in the future (as developers show interest in this feature) with more examples and details.
