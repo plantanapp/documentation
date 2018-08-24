@@ -57,9 +57,6 @@
     "title": "Triggers",
     "url": "/sharp-scheduler/triggers/triggers1.html",
     "subpages": [{
-        "title": "Overview",
-        "url": "/sharp-scheduler/triggers/triggers1.html"
-    }, {
         "title":"App Events Triggers",
         "url":"/sharp-scheduler/triggers/app-events.html"    
     }, {
