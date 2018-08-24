@@ -12,7 +12,7 @@ Action Grid enables the integration of powerful tables from multiple sources int
 <div style="float: left; max-width: 70%;">
 The table style of a data grid allows viewing data in a modern looking responsive table completed by headers, sorting, filtering, searching and more actions.
 </div>
-<img style="max-width: 28%" src="images/action-grid-300x388w.png" />
+<img style="max-width: 28%" src="assets/action-grid-300x388w.png" />
 
 ## Key Features
 
@@ -54,11 +54,11 @@ In the steps below, we are going to show you how to add a the Action Grid module
 
 1. When the page you work on is opened, select the Modules option from the top menu, click on the Add New Module option.
 
-![](images/ad-new-module.png)
+![](assets/ad-new-module.png)
 
 2.Find avt.ActionGrid and with Drag&Drop option add the module to your page.
 
-![add new Action Grid module](images/grid.module.png)
+![add new Action Grid module](assets/grid.module.png)
 
 3.Now that you have installed Action Grid Module on you page, you will need to configure it by clicking on Manage Form option.
 
@@ -67,7 +67,7 @@ Important: Note that you will need to unlock the 30 Day trial or Activate for Pr
 ## How to configure Action Grid
 
 To manage Action Grid you have to access the management page of the module, either by clicking on the Manage Grid text displayed on the module after it was added on the page, either you have to click on the right edit menu on Manage Grid options. 
-![manage screenshot](images/manage.png)
+![manage screenshot](assets/manage.png)
 
 On the management page of the module, there are the following options, which are displayed and available for admins only: the [General Settings](general-settings.md) section, the [Data Source](data-sources.md) section, the [Template](template.md) section, the [Item Buttons and the Grid Buttons](buttons.md) section.
 

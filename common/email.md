@@ -9,7 +9,7 @@ This action does exactly what it says. It sends an email using the SMTP server t
 * **Subject.** Used as email subject. For best experience, choose something not too short but not too long either. This field supports context tokens and My Tokens.
 * **Body.** This is the email content. If you need custom data then use other actions, for example the Run SQL action, to fetch it and store it in the job context. Then access it through the context tokens. This field also supports My Tokens.
 
-![](images/send-email.png)
+![](assets/send-email.png)
 
 ## Troubleshooting
 
@@ -19,7 +19,7 @@ Before starting everything, test that the form is working perfectly. Go to `Admi
 * Test that the Username and Password used to connect to the Server are correct. You can do this by clicking on the Test SMTP Settings button.
 * Make sure that the email address used to send the form is allowed to send emails. Action Form uses the system default (site email) which is the Administrator's email. Some servers like Amazon needs that the email address used to send the form, to be verified. Only specific email addresses are allowed to send emails. In Event Viewer, you might get the next error:
 
-![](images/send-email-with-action-form-8.png)
+![](assets/send-email-with-action-form-8.png)
 
 
 So, if in Event Viewer you get the Email address not verified error, you need to set-up in the From field, the Host email address. The host email could be found under the `Host > Host Settings > Basic Settings`. 
@@ -39,5 +39,5 @@ You can set up this action to a button so when the form is submitted it subscrib
 
 If you are not sure what [MailChimp](http://www.mailchimp.com/features/full_list/) is or if it will be helpful, signup up for a [FREE Trial Account](http://www.mailchimp.com/signup/) and see for yourself!
 
-![](images/subscribe-to-mailchimp.png)
+![](assets/subscribe-to-mailchimp.png)
 

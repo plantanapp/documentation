@@ -94,8 +94,8 @@ There are 3 ways to see the entries:
 
 3) in Edit Mode, there is the Reports button, which downloads the data as CSV (illustrated below).
 
-<img style="max-width:100%" src="images/Reports.png" /><br>
-<img style="max-width:100%" src="images/Reports-csv.png" /><br>
+<img style="max-width:100%" src="assets/Reports.png" /><br>
+<img style="max-width:100%" src="assets/Reports-csv.png" /><br>
 
 ### <a name="7"></a> How do I change the Display/Error Message text and background color ?
 

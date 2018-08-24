@@ -10,8 +10,8 @@ Check out the Getting Started guide to find more details on how to add Action Fo
 
 To use a default form template or creating a new one, click on the <b>Start</b> button.
 
-![addnew](/action-form/images/addnew.png "addnew")
+![addnew](/action-form/assets/addnew.png "addnew")
 
 Note: After installing the Action Form add-on modules, they will be displayed as Actions on the button fields in the On Click Handler list:
 
-![handler](/action-form/images/handler.png "handler")
+![handler](/action-form/assets/handler.png "handler")

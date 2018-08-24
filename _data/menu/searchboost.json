@@ -1,138 +1,142 @@
 [{
-    "title": "Getting Started",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/getting-started/index.html"
-        },
-        {
-            "title": "Getting Started",
-            "url": "/search-boost/getting-started/getting_started_with_searchboost_3.html"
-        },
-        {
-            "title": "Installation",
-            "url": "/search-boost/getting-started/installation.html" 
-        },
-        {
-            "title": "Important Things to Check and Set",
-            "url": "/search-boost/getting-started/important_things_to_check_and_set.html" 
-        },
-        {
-            "title": "Easily Download Debug Information",
-            "url": "/search-boost/getting-started/easily_download_debug_information.html"
-        },
-        {
-            "title": "Breaking changes (Custom CSS or Templates)",
-            "url": "/search-boost/getting-started/breaking_changes_custom_css_or_templates.html" 
-        },
-        {
-            "title": "Breaking Changes When Upgrading from SearchBoost 2",
-            "url": "/search-boost/getting-started/breaking_changes_when_upgrading_from_searchboost_2.html" 
-        },
-        {
-            "title": "Delete Instance",
-            "url": "/search-boost/getting-started/delete_instance.html" 
-        },
-        {
-            "title": "Run in Web Farm",
-            "url": "/search-boost/getting-started/run_in_web_farm.html" 
-        },
-        {
-            "title": "Known Issues",
-            "url": "/search-boost/getting-started/known_issues.html" 
-        },
-        {
-            "title": "Video Tutorials",
-            "url": "/search-boost/getting-started/video_tutorials.html"
-        },
-        {
-            "title": "Uninstalling",
-            "url": "/search-boost/getting-started/uninstalling.html" 
-        }]
- },
- {
-    "title": "Customize Appearance",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/customize-appearance/index.html"
-        },
-        {
-        "title": "Creating New Templates",
-        "url": "/search-boost/customize-appearance/create_new_templates.html"
-        },
-        {
-        "title": "Search Input Box",
-        "url": "/search-boost/customize-appearance/search_input_box.html"
-        },
-        {
-        "title": "Replace DNN Search Box",
-        "url": "/search-boost/customize-appearance/replacednnsearch.html"
-        },
-        {
-        "title": "Search Results",
-        "url": "/search-boost/customize-appearance/search_results.html"
-        }]
- },
- {
-    "title": "Developer",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/developer/index.html"
-        },
-        {
-        "title": "Advanced Tips",
-        "url": "/search-boost/developer/advanced_tips.html"           
-        },
-        {
-        "title": "Architecture",
-        "url": "/search-boost/developer/architecture.html"           
-        },
-        {
-        "title": "Content Clients",
-        "url": "/search-boost/developer/content_clients.html"           
-        },
-        {
-        "title": "Content Parsers",
-        "url": "/search-boost/developer/content_parsers.html"                 
-        },
-        {
-        "title": "Content Sources",
-        "url": "/search-boost/developer/content_sources.html"                 
-        },
-        {
-        "title": "Debug Index",
-        "url": "/search-boost/developer/debug_index.html"                 
-        },       
-        {
-        "title": "Debug Process Crashes",
-        "url": "/search-boost/developer/debug_index.html"                 
-        }, 
-        {
-        "title": "Logging",
-        "url": "/search-boost/developer/logging.html"           
-        }] 
- },
- {
-    "title": "Filters",
-    "url": "/search-boost/filters/filters.html"      
- },
- {
-    "title": "FAQ",
-    "url": "/search-boost/faq/faq.html"      
- },
- {
-    "title": "Custom Indexers (Old Version SearchBoost 2.X)",
-    "subpages": [{
-        "title": "Overview",
-        "url": "/search-boost/custom_indexes/custom_indexers_old_version_searchboost_2x.html"
-        },
-        {
-        "title": "Fluent API",
-        "url": "/search-boost/custom_indexes/.html"
-        },
-        {
-        "title": "Sample Custom LiveContent Indexer",
-        "url": "/search-boost/custom_indexes/.html"
-        }]
- }
-      
+        "title": "Getting Started",
+        "subpages": [{
+                "title": "Overview",
+                "url": "/search-boost/getting-started/index.html"
+            },
+            {
+                "title": "Getting Started",
+                "url": "/search-boost/getting-started/getting_started_with_searchboost_3.html"
+            },
+            {
+                "title": "Installation",
+                "url": "/search-boost/getting-started/installation.html"
+            },
+            {
+                "title": "Important Things to Check and Set",
+                "url": "/search-boost/getting-started/important_things_to_check_and_set.html"
+            },
+            {
+                "title": "Easily Download Debug Information",
+                "url": "/search-boost/getting-started/easily_download_debug_information.html"
+            },
+            {
+                "title": "Breaking changes (Custom CSS or Templates)",
+                "url": "/search-boost/getting-started/breaking_changes_custom_css_or_templates.html"
+            },
+            {
+                "title": "Breaking Changes When Upgrading from SearchBoost 2",
+                "url": "/search-boost/getting-started/breaking_changes_when_upgrading_from_searchboost_2.html"
+            },
+            {
+                "title": "Delete Instance",
+                "url": "/search-boost/getting-started/delete_instance.html"
+            },
+            {
+                "title": "Run in Web Farm",
+                "url": "/search-boost/getting-started/run_in_web_farm.html"
+            },
+            {
+                "title": "Known Issues",
+                "url": "/search-boost/getting-started/known_issues.html"
+            },
+            {
+                "title": "Video Tutorials",
+                "url": "/search-boost/getting-started/video_tutorials.html"
+            },
+            {
+                "title": "Uninstalling",
+                "url": "/search-boost/getting-started/uninstalling.html"
+            }
+        ]
+    },
+    {
+        "title": "Customize Appearance",
+        "subpages": [{
+                "title": "Overview",
+                "url": "/search-boost/customize-appearance/index.html"
+            },
+            {
+                "title": "Creating New Templates",
+                "url": "/search-boost/customize-appearance/create_new_templates.html"
+            },
+            {
+                "title": "Search Input Box",
+                "url": "/search-boost/customize-appearance/search_input_box.html"
+            },
+            {
+                "title": "Replace DNN Search Box",
+                "url": "/search-boost/customize-appearance/replacednnsearch.html"
+            },
+            {
+                "title": "Search Results",
+                "url": "/search-boost/customize-appearance/search_results.html"
+            }
+        ]
+    },
+    {
+        "title": "Developer",
+        "subpages": [{
+                "title": "Overview",
+                "url": "/search-boost/developer/index.html"
+            },
+            {
+                "title": "Advanced Tips",
+                "url": "/search-boost/developer/advanced_tips.html"
+            },
+            {
+                "title": "Architecture",
+                "url": "/search-boost/developer/architecture.html"
+            },
+            {
+                "title": "Content Clients",
+                "url": "/search-boost/developer/content_clients.html"
+            },
+            {
+                "title": "Content Parsers",
+                "url": "/search-boost/developer/content_parsers.html"
+            },
+            {
+                "title": "Content Sources",
+                "url": "/search-boost/developer/content_sources.html"
+            },
+            {
+                "title": "Debug Index",
+                "url": "/search-boost/developer/debug_index.html"
+            },
+            {
+                "title": "Debug Process Crashes",
+                "url": "/search-boost/developer/debug_index.html"
+            },
+            {
+                "title": "Logging",
+                "url": "/search-boost/developer/logging.html"
+            }
+        ]
+    },
+    {
+        "title": "Filters",
+        "url": "/search-boost/filters/filters.html"
+    },
+    {
+        "title": "FAQ",
+        "url": "/search-boost/faq/faq.html"
+    },
+    {
+        "title": "Custom Indexers (Old Version SearchBoost 2.X)",
+        "subpages": [{
+                "title": "Overview",
+                "url": "/search-boost/custom_indexes/custom_indexers_old_version_searchboost_2x.html"
+            },
+            {
+                "title": "Fluent API",
+                "url": "/search-boost/custom_indexes/.html"
+            },
+            {
+                "title": "Sample Custom LiveContent Indexer",
+                "url": "/search-boost/custom_indexes/.html"
+            }
+        ]
+    }
+
 ]

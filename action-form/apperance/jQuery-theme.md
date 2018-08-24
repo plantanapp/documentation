@@ -6,18 +6,18 @@ layout: default
 
 The jQuery Theme property is used for rendering controls such as dialogs or date pickers. Each theme gives a different appearance, some themes apply simple changes while others are prominent, so when you select a theme, ensure that it blends with your page and website design. Use the drop-down menu to specify a theme for your Action Form controls and then click on the save button.
 
-<img style="max-width:100%" src="/action-form/apperance/images/jquery-theme.png"/> <br>
+<img style="max-width:100%" src="/action-form/apperance/assets/jquery-theme.png"/> <br>
 
 Here are some examples applied on a calendar field:
 
 <b>Blitzer</b> <br>
-<img style="max-width:100%" src="/action-form/apperance/images/blitzer.png"/> <br>
+<img style="max-width:100%" src="/action-form/apperance/assets/blitzer.png"/> <br>
 <b>Smoothness</b> <br>
-<img style="max-width:100%" src="/action-form/apperance/images/smoothness.png"/> <br>
+<img style="max-width:100%" src="/action-form/apperance/assets/smoothness.png"/> <br>
 <b>UI-Lightness</b> <br>
-<img style="max-width:100%" src="/action-form/apperance/images/ui-lightness.png"/> <br>
+<img style="max-width:100%" src="/action-form/apperance/assets/ui-lightness.png"/> <br>
 <b>Cupertino</b> <br>
-<img style="max-width:100%" src="/action-form/apperance/images/cupertino.png"/> <br>
+<img style="max-width:100%" src="/action-form/apperance/assets/cupertino.png"/> <br>
 
 ## Building Custom Themes
 

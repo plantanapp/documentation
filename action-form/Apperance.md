@@ -12,7 +12,7 @@ Your forms do not need to be boring, you can be sure that they are attractive an
 
 The General Settings, along with the <a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/form-layout">Layout</a> settings, give you the ability to set up the forms exactly the way you want so they match with your website design and to also be attractive.
 
-<img style="max-width:100%" src="images/settings.png" /><br>
+<img style="max-width:100%" src="assets/settings.png" /><br>
 
 Bellow we'll list all the general settings options which can be found on the forms with a short description which will cover the functionality of each option - these settings can be used in order to configure the form at the level of template of display.
 
@@ -32,47 +32,47 @@ The form background can be solid color, pattern or cover image and these options
 
 The Label Align property allows you to align the labels on the action forms. The labels are the title names for the text boxes, for example "Last Name" and "First Name". You can position the labels to the Left, Right, Center, Top, Inside. Note that the position is displayed on the space allocated in the <b>Label Width</b>. To select a position for your labels, select from the Label Align drop down box and specify the position.
 
-<img style="max-width:100%" src="images/label-align.png"/> <br>
+<img style="max-width:100%" src="assets/label-align.png"/> <br>
 
-<b>Below are several images which exemplify the front end layout after setting different Label Alignments on the forms:</b>
+<b>Below are several assets which exemplify the front end layout after setting different Label Alignments on the forms:</b>
 
 <div style="display:flex">
     <div style="float: left; width: 300px;"><b>Align Label to Left</b>
-        <img style="max-width:100%" src="images/left.png"/></div>
+        <img style="max-width:100%" src="assets/left.png"/></div>
     <div style="float: left; width: 300px;"><b>Align Label to Center</b>
-        <img style="max-width:100%" src="images/center.png"/></div>
+        <img style="max-width:100%" src="assets/center.png"/></div>
     <div style="float: left; width: 300px;"><b>Align Label to Right</b>
-        <img style="max-width:100%" src="images/right.png"/></div>
+        <img style="max-width:100%" src="assets/right.png"/></div>
 </div>
 
 <div style="display:flex">
     <div style="float: left; width: 300px;"><b>Align Label Inside</b>
-        <img style="max-width:100%" src="images/inside.png"/></div>
+        <img style="max-width:100%" src="assets/inside.png"/></div>
     <div style="float: left; width: 300px;"><b>Align Label to Top</b>
-        <img style="max-width:100%" src="images/top.png"/> <br></div>
+        <img style="max-width:100%" src="assets/top.png"/> <br></div>
 </div>
 
 ## Label Width
 
 The Label Width property allows you to specify the width of the label columns on the action form. It controls the space allocated for labels, so it can display the labels closer or farther from the controls. This option ensures the responsive layout according to each setting. Make sure that you select an option which provides sufficient space, does not overlap the labels or insert a wide space between the labels and the text box.
 
-<img style="max-width:100%" src="images/width.png"/> <br>
+<img style="max-width:100%" src="assets/width.png"/> <br>
 
 ## Field Spacing
 
 The Field Spacing determines the spacing between controls. You can chose from 3 options: Loose, Normal, Compact. This is a good option to be used when you have a big complex form because you need to save some space.
 
-<img style="max-width:100%" src="images/field-spacing.png"/> <br>
+<img style="max-width:100%" src="assets/field-spacing.png"/> <br>
 
 <b>Here are listed several layouts where the Field Spacing options were used:</b>
 
 <div style="display:flex">
     <div style="float: left; width: 300px;"> <b> Field Spacing - Loose</b>
-        <img style="max-width:100%" src="images/label-spacing-loose.jpg"/></div>
+        <img style="max-width:100%" src="assets/label-spacing-loose.jpg"/></div>
     <div style="float: left; width: 300px;"> <b> Field Spacing - Normal</b>
-        <img style="max-width:100%" src="images/label-spacing-normal.jpg"/></div>
+        <img style="max-width:100%" src="assets/label-spacing-normal.jpg"/></div>
     <div style="float: left; width: 300px;"> <b> Field Spacing - Compact</b>
-        <img style="max-width:100%" src="images/label-spacing-compact.jpg"/></div>
+        <img style="max-width:100%" src="assets/label-spacing-compact.jpg"/></div>
 </div>
 
 ## Manual Layout

@@ -2,8 +2,8 @@
     "title": "Are you using Action Form 2.X?",
     "url": "http://action-form-v2.dnnsharp.com/"
 }, {
-    "title": "Introduction",
-    "url": "/action-form/getting-started.html"
+    "title": "Overview",
+    "url": "/action-form/overview.html"
 }, {
     "title": "Breaking Changes",
     "url": "/action-form/breaking-changes.html"
@@ -17,13 +17,11 @@
     "title": "Video Tutorials",
     "url": "/action-form/video-tutorials.html"
 }, {
-    "title": "Getting Started",
+    "title": "First steps",
     "url": "/action-form/first-steps.html"
 }, {
     "title": "Apperance",
-    "url": "/action-form/Apperance.html"
-}, {
-    "title": "Apperance Fields",
+    "url": "/action-form/Apperance.html",
     "subpages": [{
         "title": "jQuery Theme",
         "url": "/action-form/apperance/jQuery-theme.html"
@@ -36,9 +34,7 @@
     "url": "/action-form/bindings.html"
 }, {
     "title": "Creating a New Form",
-    "url": "/action-form/new-form-creation.html"
-}, {
-    "title": "New Form Templates",
+    "url": "/action-form/new-form-creation.html",
     "subpages": [{
         "title": "Blank Form",
         "url": "/action-form/templates/blank.html"
@@ -61,13 +57,11 @@
 }, {
     "title": "Form Fields",
     "subpages": [{
-        "title": "Getting Started",
+        "title": "Overview",
         "url": "/action-form/form-fields.html"
     }, {
         "title": "Address",
-        "url": "/action-form/form-fields/form-fields-types/address/country.html"
-    }, {
-        "title": "Address Fields",
+        "url": "/action-form/form-fields/form-fields-types/address/country.html",
         "subpages": [{
             "title": "Country",
             "url": "/action-form/form-fields/form-fields-types/address/country.html"
@@ -80,9 +74,7 @@
         }]
     }, {
         "title": "Buttons",
-        "url": "/action-form/form-fields/form-fields-types/buttons.html"
-    }, {
-        "title": "Button Fields",
+        "url": "/action-form/form-fields/form-fields-types/buttons.html",
         "subpages": [{
             "title:": "Button",
             "url": "/action-form/form-fields/form-fields-types/button.html"
@@ -95,9 +87,7 @@
         }]
     }, {
         "title": "Date & Time",
-        "url": "/action-form/form-fields/form-fields-types/date-and-time.html"
-    }, {
-        "title": "Date & Time Fields",
+        "url": "/action-form/form-fields/form-fields-types/date-and-time.html",
         "subpages": [{
             "title": "Date (with jQuery DatePicker)",
             "url": "/action-form/form-fields/form-fields-types/date-and-time/date-with-jquery-datepicker.html"
@@ -110,9 +100,7 @@
         }]
     }, {
         "title": "DotNetNuke",
-        "url": "/action-form/form-fields/form-fields-types/dotnetnuke.html"
-    }, {
-        "title": "DotNetNuke Fields",
+        "url": "/action-form/form-fields/form-fields-types/dotnetnuke.html",
         "subpages": [{
             "title": "Pages from Current Portal",
             "url": "/action-form/form-fields/form-fields-types/dotnetnuke/pages-from-current-portal.html"
@@ -125,9 +113,7 @@
         }]
     }, {
         "title": "Files",
-        "url": "/action-form/form-fields/form-fields-types/files.html"
-    }, {
-        "title": "Files Fields",
+        "url": "/action-form/form-fields/form-fields-types/files.html",
         "subpages": [{
             "title": "Multi File Upload",
             "url": "/action-form/form-fields/form-fields-types/files/multi-file-upload.html"
@@ -143,9 +129,7 @@
         "url": "/action-form/form-fields/form-fields-types/image.html"
     }, {
         "title": "Multiple Choice",
-        "url": "/action-form/form-fields/form-fields-types/multiple-choice.html"
-    }, {
-        "title": "Multiple Choice Fields",
+        "url": "/action-form/form-fields/form-fields-types/multiple-choice.html",
         "subpages": [{
             "title": "Agree to Terms",
             "url": "/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms.html"
@@ -194,9 +178,7 @@
         "url": "/action-form/form-fields/form-fields-types/progress-bar.html"
     }, {
         "title": "Security",
-        "url": "/action-form/form-fields/form-fields-types/security.html"
-    }, {
-        "title": "Security Fields",
+        "url": "/action-form/form-fields/form-fields-types/security.html",
         "subpages": [{
             "title": "CAPTCHA",
             "url": "/action-form/form-fields/form-fields-types/captcha.html"
@@ -215,9 +197,7 @@
         }]
     }, {
         "title": "Statistics",
-        "url": "/action-form/form-fields/form-fields-types/statistics.html"
-    }, {
-        "title": "Statistics Fields",
+        "url": "/action-form/form-fields/form-fields-types/statistics.html",
         "subpages": [{
             "title": "Google Charts",
             "url": "/action-form/form-fields/form-fields-types/statistics/google-charts.html"
@@ -236,9 +216,7 @@
         "url": "/action-form/form-fields/form-fields-types/star-rating.html"
     }, {
         "title": "Text",
-        "url": "/action-form/form-fields/form-fields-types/text.html"
-    }, {
-        "title": "Text Fields",
+        "url": "/action-form/form-fields/form-fields-types/text.html",
         "subpages": [{
             "title": "Color Picker",
             "url": "/action-form/form-fields/form-fields-types/text/color-picker.html"
@@ -272,12 +250,10 @@
         }]
     }, {
         "title": "User",
-        "url": "/action-form/form-fields/form-fields-types/user.html"
-    }, {
-        "title": "User Fields",
+        "url": "/action-form/form-fields/form-fields-types/user.html",
         "subpages": [{
             "title": "Email",
-            "url": "/action-form/form-fields/form-fields-types/user.html"
+            "url": "/action-form/form-fields/form-fields-types/user/email.html"
         }, {
             "title": "Username",
             "url": "/action-form/form-fields/form-fields-types/user/username.html"
@@ -287,13 +263,27 @@
     "title": "Form Events",
     "url": "/action-form/form-events.html"
 }, {
+    "title": "Form Layout",
+    "url": "/action-form/form-layout.html"
+}, {
+    "title": "Form Settings",
+    "url": "/action-form/form-settings.html",
+    "subpages": [{
+        "title": "Import/Export Settings",
+        "url": "/action-form/import-export-settings.html"
+    }, {
+        "title": "Initialization Scripts",
+        "url": "/action-form/initialization-scripts.html"
+    }, {
+        "title": "Localization",
+        "url": "/action-form/localization.html"
+    }]
+}, {
     "title": "Form Actions",
-    "url":"https://action-form.guide.dnnsharp.com/",
+    "url": "https://action-form.guide.dnnsharp.com/",
     "subpages": [{
         "title": "Code",
-        "url": "/action-form/form-actions/code.html"
-    }, {
-        "title": "Code Fields",
+        "url": "/action-form/form-actions/code.html",
         "subpages": [{
             "title": "Apply Tokens",
             "url": "/action-form/form-actions/code/apply-tokens.html"
@@ -306,9 +296,7 @@
         }]
     }, {
         "title": "Context",
-        "url": "/action-form/form-actions/apply-tokens.html"
-    }, {
-        "title": "Context Fields",
+        "url": "/action-form/form-actions/apply-tokens.html",
         "subpages": [{
             "title": "Inject Form Data",
             "url": "/action-form/form-actions/apply-tokens/inject-form-data.html"
@@ -327,9 +315,7 @@
         }]
     }, {
         "title": "Credentials Store",
-        "url": "/action-form/form-actions/credential-store.html"
-    }, {
-        "title": "Credentials Store Fields",
+        "url": "/action-form/form-actions/credential-store.html",
         "subpages": [{
             "title": "Delete Credentials",
             "url": "/action-form/form-actions/credential-store/delete-credential.html"
@@ -339,9 +325,7 @@
         }]
     }, {
         "title": "Data",
-        "url": "/action-form/form-actions/data.html"
-    }, {
-        "title": "Data Fields",
+        "url": "/action-form/form-actions/data.html",
         "subpages": [{
             "title": "Clear Cache (by Key)",
             "url": "/action-form/form-actions/data/clear-cache-by-key.html"
@@ -366,9 +350,7 @@
         }]
     }, {
         "title": "Dnn",
-        "url": "/action-form/form-actions/dnn.html"
-    }, {
-        "title": "Dnn Fields",
+        "url": "/action-form/form-actions/dnn.html",
         "subpages": [{
             "title": "Clear Cache Item",
             "url": "/action-form/form-actions/dnn/clear-cache-item.html"
@@ -384,9 +366,7 @@
         }]
     }, {
         "title": "DNN Sharp",
-        "url": "/action-form/form-actions/dnn-sharp.html"
-    }, {
-        "title": "DNN Sharp Fields",
+        "url": "/action-form/form-actions/dnn-sharp.html",
         "subpages": [{
             "title": "Browse Data from Action Grid",
             "url": "/action-form/form-actions/dnn-sharp/browse-data-from-action-grid.html"
@@ -411,9 +391,7 @@
         "url": "/action-form/form-actions/email.html"
     }, {
         "title": "Entities",
-        "url": "/action-form/form-actions/entities.html"
-    }, {
-        "title": "Entities Fields",
+        "url": "/action-form/form-actions/entities.html",
         "subpages": [{
             "title": "Create Entity",
             "url": "/action-form/form-actions/entities/create-entity.html"
@@ -438,9 +416,7 @@
         }]
     }, {
         "title": "Form State",
-        "url": "/action-form/form-actions/form-state.html"
-    }, {
-        "title": "Form State Fields",
+        "url": "/action-form/form-actions/form-state.html",
         "subpages": [{
             "title": "Save State",
             "url": "/action-form/form-actions/form-state/save-state.html"
@@ -456,9 +432,7 @@
         }]
     }, {
         "title": "Logging",
-        "url": "/action-form/form-actions/logging.html"
-    }, {
-        "title": "Logging Fields",
+        "url": "/action-form/form-actions/logging.html",
         "subpages": [{
             "title": "Log Debug Message",
             "url": "/action-form/form-actions/logging/log-debug-message.html"
@@ -468,9 +442,7 @@
         }]
     }, {
         "title": "Message",
-        "url": "/action-form/form-actions/message.html"
-    }, {
-        "title": "Message Fields",
+        "url": "/action-form/form-actions/message.html",
         "subpages": [{
             "title": "Display Message",
             "url": "/action-form/form-actions/message/display-message.html"
@@ -486,9 +458,7 @@
         }]
     }, {
         "title": "Output",
-        "url": "/action-form/form-actions/output.html"
-    }, {
-        "title": "Output Fields",
+        "url": "/action-form/form-actions/output.html",
         "subpages": [{
             "title": "JSON Entity",
             "url": "/action-form/form-actions/json-entity.html"
@@ -498,9 +468,7 @@
         }]
     }, {
         "title": "Parsing",
-        "url": "/action-form/form-actions/parsing.html"
-    }, {
-        "title": "Parsing Fields",
+        "url": "/action-form/form-actions/parsing.html",
         "subpages": [{
             "title": "Regex",
             "url": "/action-form/form-actions/regex.html"
@@ -510,9 +478,7 @@
         }]
     }, {
         "title": "Redirect",
-        "url": "/action-form/form-actions/redirect.html"
-    }, {
-        "title": "Redirect Fields",
+        "url": "/action-form/form-actions/redirect.html",
         "subpages": [{
             "title": "Redirect to Portal Page",
             "url": "/action-form/form-actions/redirect/redirect-to-portal-page.html"
@@ -525,9 +491,7 @@
         }]
     }, {
         "title": "Security",
-        "url": "/action-form/form-actions/security.html"
-    }, {
-        "title": "Security Fields",
+        "url": "/action-form/form-actions/security.html",
         "subpages": [{
             "title": "AES Decrypt",
             "url": "/action-form/form-actions/security/aes-decrypt.html"
@@ -543,18 +507,14 @@
         }]
     }, {
         "title": "Serialization",
-        "url": "/action-form/form-actions/serialization.html"
-    }, {
-        "title": "Serialization Fields",
+        "url": "/action-form/form-actions/serialization.html",
         "subpages": [{
             "title": "Serialize to CSV",
             "url": "/action-form/form-actions/serialization/serialize-to-csv.html"
         }]
     }, {
         "title": "User",
-        "url": "/action-form/form-actions/user.html"
-    }, {
-        "title": "User Fields",
+        "url": "/action-form/form-actions/user.html",
         "subpages": [{
             "title": "Authorize User",
             "url": "/action-form/form-actions/user/authorie-user.html"

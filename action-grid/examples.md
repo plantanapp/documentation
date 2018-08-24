@@ -53,7 +53,7 @@ In order to have WHERE clause displayed, you need to select as Data Source the D
 
 `UserID = [GET:uid=1] or UserID = [GET:userId=1]`
 
-![](images/userId.png)
+![](assets/userId.png)
 
 ## Use query string to populate form with items from grid
 
@@ -93,7 +93,7 @@ We've made a video tutorial where we provide a practical sample on how you can i
 
 If for example you use a form in order to insert records in the database, on ActionGrid, after you set the datasource as SQL Query, you can place in View URL the link of the page where the form is. 
 
-![](images/View URL.png)
+![](assets/View URL.png)
 
 ## Load State on Pre-Init
 
@@ -124,11 +124,11 @@ In this scenario we'll use the Files table:
 ``` sql
 select * from Files f
 inner join Folders d on d.FolderID=f.FolderID
-where ContentType='image/png' and d.FolderPath='Images/'
+where ContentType='image/png' and d.FolderPath='assets/'
 ```
 
 1. set ID Column to `FileId > update`
-2. add a template field with Allow HTML checked and `/portals/0/images/[FileName]`
+2. add a template field with Allow HTML checked and `/portals/0/assets/[FileName]`
 3. set Template of grid to Carousel
 
 ## How to display a column's total on client side in a new row inside Grid with JavaScript
@@ -161,4 +161,4 @@ scope.source.data = data;
 ```
 
 The result will be:
-![](images/grid-total.png)
+![](assets/grid-total.png)

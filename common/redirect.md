@@ -5,19 +5,19 @@ Action Form allows you to redirect the user to a specified location after the us
 
 This option redirects the user to an external link after the user submits the form. Input your URL in the URL field, you also you have the ability to use tokens, to see an example go to Buttons page to Item Buttons section. 
 
-![](images/redirect-to-url.png)
+![](assets/redirect-to-url.png)
 
 ## Redirect to Portal Page
 
 This option redirects the user to another page in the portal after the user submits the form. Chose a portal page from the drop down menu, on the Page field.
 
-![](images/redirect-to-portal-page.png)
+![](assets/redirect-to-portal-page.png)
 
 ## Send file for download
 
 This option redirects the user to a file in the portal to be downloaded after the user submits the form. Before you setup this action, you will need to upload your file to your portal folder. After this, you will find the file just by selecting it from the drop down list on the File field.
 
-![](images/send-file-for-download.png)
+![](assets/send-file-for-download.png)
 
 
 
