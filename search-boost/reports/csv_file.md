@@ -6,7 +6,6 @@ The CSV file stores a report of all searches conducted in the Search Boost porta
 
 1. Click on the Download as CSV link, identified on Figure 1, to download the CSV file. 
 
-
 2. After the CSV file is completely downloaded, open it with Microsoft Excel or a CSV compatible application.
 
   * The CSV file provides details about searches performed by users in the Search Boost portal. It includes several columns with specific details relevant to the each search.
@@ -15,8 +14,7 @@ The CSV file stores a report of all searches conducted in the Search Boost porta
 
 The CSV file, displayed in Figure 2, provides specifications about each search, such as the search term, url id and the date of the search. The bullet list below Figure 2 specifies a description of each column.
 
-![](CSVFile.png)
-
+![](/search-boost/reports/assets/CSVFile.png)
 
   * **Id**
   
@@ -56,10 +54,7 @@ The TotalResults column specifies the number of results returned for the search.
   
 The RawURL column specifies the search URL generated at the time of the search. The RawURL, displayed on Figure 3 specifies the Search Page, Search Term, Instance id, id or logid and Url id.
 
-
-![](RawURL.png)
-
-
+![](/search-boost/reports/assets/RawURL.png)
 
   * **MaxPageViewed**
   

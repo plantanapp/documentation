@@ -12,7 +12,7 @@ In Search Boost, the Query String default name for the parameter is avtSearch (a
 
 **To change the name of the Query String parameter that transports the search terms:**
 
-![](search-query-string-param.png)
+![](/search-boost/miscellaneous/assets/search-query-string-param.png)
 
 1. Click Manage on the Search Input module and then click Search Settings. This takes you to the Search Boost Administration Console.
 2. Go to the UI Settings tab.
@@ -27,6 +27,6 @@ Now, we have to point the Search Boost input box to the DotNetNuke Results page.
 5. In the Type TabId box put the ID of the Search Results page you found out at step 2
 6. Save and go back to the front-end
 
-![](search-results-page-byid.png)
+![](/search-boost/miscellaneous/assets/search-results-page-byid.png)
 
 Initiate a search from the Search Boost input module to demonstrate the setup is complete.

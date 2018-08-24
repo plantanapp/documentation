@@ -1,4 +1,4 @@
-<span style="color:red"><b>This page is outdated. Use this instead: </b></span>[http://search-boost.guide.dnnsharp.com/install_ifilter.html](http://search-boost.guide.dnnsharp.com/install_ifilter.html)
+<span style="color:red"><b>This page is outdated. Use this instead: </b></span>[/search-boost/indexing-documents/install_ifilter.html](/search-boost/indexing-documents/install_ifilter.html)
 #### Search Other Formats
 
 The file formats that came with Search Boost will cover 90% of the cases as they're the most popular formats out there.  But sometimes you'll want to extend the documents that can be searched with new types, either plain text formats, other binary formats based on IFilters or other libraries, or even your own binary formats. Each of these cases will be explained below.

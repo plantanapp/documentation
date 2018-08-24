@@ -10,7 +10,7 @@ Custom Search Rules allow you to define rules for indexing content directly from
 
 3. The create rule page is opened which will collect general information, data queries, indexing rules and optional parameters. 
 
-![](rule1.jpg)
+![](/search-boost/indexing/assets/rule1.jpg)
 **Step1: General Information**
 
 There are fields which collect basic information and parameters relevant to the search rule. You will need to input relevant data in the Title, Description, and Connection String fields. You will also need to choose a Boost parameter for the search. 
@@ -31,7 +31,7 @@ In this example search rules are created for users with user profiles.
 2. Then Search for User Profiles is inputted in the Description text box to describe the purpose of the search.
 3. No Boost is selected from the Boost drop down box to determine the rank for the search results.
 
-![](rule2.jpg)
+![](/search-boost/indexing/assets/rule2.jpg)
 
 **Step 2: Data Source**
 
@@ -41,7 +41,7 @@ In this example search rules are created for users with user profiles.
 
 3. If no errors are generated, then you can proceed to the next step by selecting the column(s) you need to use.
 
-![](rule3.jpg)
+![](/search-boost/indexing/assets/rule3.jpg)
 
 **Step 3: Indexing Rules**
 
@@ -72,7 +72,7 @@ In this example specific columns are selected to be indexed, a tab id is inputte
 
  I'll specify a tab ID option is specified in Link results and 61 is inputted as the tab ID for page results. Users.[UserID] is specified as the unique id in Select Id Column.
  
- ![](rule5.jpg)
+ ![](/_site/search-boost/indexing/assets/rule5.jpg)
  
 
 ** Step 4: Optional Parameters**

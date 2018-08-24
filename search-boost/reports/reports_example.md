@@ -2,7 +2,7 @@
 
 In this Reports example, a CMS page is created in the Search Boost portal, then a search is performed for "Content Management Systems". After the search, the CSV file is downloaded to view the report generated for this search.
 
-####Create Target Page
+#### Create Target Page
 
 In the following steps, a CMS page is created that simply defines Content Management Systems:
 
@@ -13,14 +13,14 @@ In the following steps, a CMS page is created that simply defines Content Manage
 4. Now return to the **Pages** menu and select **Page Settings** to open the **Page Settings** window.
 
 
-![](createcmspage.png)
+![](/search-boost/reports/assets/createcmspage.png)
 
 * In the **Page Settings** window select **Page Details** and enter Content Management Systems in the **Page Title** field, identified with the blue arrow on figure below:
 
-![](entertitle.png)
+![](/search-boost/reports/assets/entertitle.png)
 * On the CMS page module, select **Manage** then **Edit Content**, specified on the figure below to open the Editor:
 
-![](editcontent.png)
+![](/search-boost/reports/assets/editcontent.png)
 
 * In the Editor enter the following information:
 
@@ -30,7 +30,7 @@ Content Management Systems implement features to store, manage and retrieve data
 
 * When you are done, scroll down and click on the **Save** button identified with the blue arrow:
 
-![](savecms.png)
+![](/search-boost/reports/assets/savecms.png)
 
 #### Perform Search
 
@@ -39,12 +39,12 @@ In the following steps a search is performed for "Content Management Systems". T
 In the input module, identified on image below, enter Content Management Systems, then enter to perform the search.
   *  If you have other pages or content with this search term, then it will take some time to load the results. 
   
-![](cmssearch.png)
+![](/search-boost/reports/assets/cmssearch.png)
 
 In the results module, you will see the results from the CMS page created previously. In image below, only 1 result is found. Notice all occurrences of the search term is highlighted.
   * If you have more than one pages with this search term you should see them listed. Here only one page exists with this search term.
 
-![](CMSresults.png)
+![](/search-boost/reports/assets/CMSresults.png)
 
 * Click on the CMS title, identified with the blue arrow on Figure 6. This will open the CMS page created previously. 
 
@@ -57,14 +57,14 @@ In this section, the CSV file is downloaded to view the report generated for the
 2. In the **Control Panel**, click on the **Reports** button to open the Reports page.
 * On the Reports page, notice the updated searches in the Latest Searches section, identified on image below. The "content management systems" search term should appear at the top as the latest search. 
 
-![](cmssearches.png)
+![](/search-boost/reports/assets/cmssearches.png)
 
 You can also view the number of searches for "content management systems",  by scrolling down to the Popular Searches section, identified on Figure 8. Here 8 searches were performed.
 
-![](popcms.png)
+![](/search-boost/reports/assets/popcms.png)
 
 * Then click on the Download as CSV link to download the CSV file. It may take awhile to download. The CSV File should open in a CSV compatible application, such as Microsoft Excel. 
 * When the CSV file is completely downloaded, scroll down to the bottom to view the search for "content management systems". 
   * Recent searches are located at the bottom of the file. It should look similar to image below. For an explanation of the columns, go to the CSV File page. 
   
-![](CSVCMS.png)
+![](/search-boost/reports/assets/CSVCMS.png)

@@ -28,10 +28,12 @@ If you need to do it manually, follow the steps below:
 
 3. Before declaring our tag, we need to register our control. Now add the following line right after the ```<%@Control..>``` declaration the ascx file:
 
-  ```html
+```html
 <%@ Register TagPrefix="avt" TagName="SearchBoost" Src="~/DesktopModules/DnnSharp/SearchBoost/SearchInput.ascx"%>
 ```
+
 4. Now, you are ready to use SearchBoost.  Just add the following line to the place you want it to show up:
+
 ```html
 <avt:SearchBoost runat = "server" id = "avtSearch" />
 ```

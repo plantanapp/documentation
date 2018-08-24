@@ -4,8 +4,7 @@
 
 **Search Boost** is a **DotNetNuke** component that extends search functionalities with powerful new ones such as document search, fully customize appearance or chose one from many available templates, restrict results to specific sets of modules and so on. Everything is made easy through powerful **AJAX** based **Administration Console**.
 
-**Key Features: 
-**    
+**Key Features:**    
 * Fully Customize Appearance (based on XSL+CSS templates);
 * Restrict search results to specific portals/tabs/modules;
 * Search documents;

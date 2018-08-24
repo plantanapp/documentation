@@ -6,7 +6,8 @@ To accomplish this you need to create metadata which are XML files that sit next
 
 Below is an example of a metadata file:
 
-```<?xml version="1.0" encoding="utf-8"?>
+```
+<?xml version="1.0" encoding="utf-8"?>
 <metadata>
     <title>Friendly Document Title</title>
     <titleToken>Some:Token</titleToken>
@@ -25,7 +26,8 @@ Below is an example of a metadata file:
         <item id="MyCustomField2">Other custom value</item>
     </data>
     <ignoreSecurity>true</ignoreSecurity>
-</metadata>```
+</metadata>
+```
 
 All fields are optional. If not specified, they behave same as when the metadata file is not specified.
 
@@ -33,7 +35,7 @@ Here is a short explanation of the metadata fields:
 
   * **title**
  
-Normally, Search Boost uses the file name to display as title in the search results. Specify another text here to instruct Search Boost to use this instead. Search Boost integrates with My Tokens here so it can fetch the title of the document from a different data source, for example from the DNN documents module. Just create a database token in My Tokens. You will receive 2 parameters TknParams: Name and RelativePath. So this is the same as invoking token [Some:Token(Name='mydoc',RelativePath='/mydoc.pdf', FileName='mydoc.pdf')]
+Normally, Search Boost uses the file name to display as title in the search results. Specify another text here to instruct Search Boost to use this instead. Search Boost integrates with My Tokens here so it can fetch the title of the document from a different data source, for example from the DNN documents module. Just create a database token in My Tokens. You will receive 2 parameters TknParams: Name and RelativePath. So this is the same as invoking token *[Some:Token(Name='mydoc',RelativePath='/mydoc.pdf', FileName='mydoc.pdf')]*
 
   * **desc**
   

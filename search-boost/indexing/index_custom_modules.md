@@ -3,16 +3,14 @@
 **Index Custom Modules
 **If you have a custom module that is not searchable it means it doesn't implement the ISearchable interface from DNN. This article will cover all options.
 
-**If you own the Source Code
-**
+**If you own the Source Code**
 
 If you own the module then you can implement the search interface called ISearchable in your business controller class. Then, go into Host > Extension screen and update your module to have DNN pickup the changes. If you've done everything right, the Searchable option should appear checked. 
 
 Note that DNN 7.1 comes with a new mechanism to index content, which is better because it allows for incremental indexing. You'll need to derive your controller from ModuleSearchBase.
 
 
-**Otherwise...
-**
+**Otherwise...**
 
 Do not panic. You still have lots of options. 
 
