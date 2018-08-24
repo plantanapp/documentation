@@ -42,7 +42,7 @@ _**Drawing AddOn required:**_ When a create thumbnail action is used it also cre
 
 ### ![](https://s3.amazonaws.com/static.dnnsharp.com/documentation/2017/07/chrome_2017-07-07_13-23-04.png)
 
-### How to edit the uploaded images
+### How to edit the uploaded assets
 
 * add a for on a page;
 
@@ -60,8 +60,8 @@ _**Drawing AddOn required:**_ When a create thumbnail action is used it also cre
 
 * save
 
-* upload multiple images and click on the button  
-   =&gt; as an expected result, the redirect is made to an "edit" page where a query string is loaded into the url and you have the possibility to remove existing images to upload new ones.
+* upload multiple assets and click on the button  
+   =&gt; as an expected result, the redirect is made to an "edit" page where a query string is loaded into the url and you have the possibility to remove existing assets to upload new ones.
 
 ![](https://s3.amazonaws.com/static.dnnsharp.com/documentation/2017/07/chrome_2017-07-07_15-01-34.png)
 

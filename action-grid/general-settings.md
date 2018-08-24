@@ -16,7 +16,7 @@ The **General Settings** section is displayed for admins only and here you can c
 
 Other options are the **Enable Search** and **Enable Filters** boxes - if they are not checked, then the search box and the filters will not be displayed on the grid even though there are fields marked as filterable or searchable. The Include jQuery and the Include Bootstrap options are checked by default, their purpose is to include their own versions of jQuery and Bootstrap libraries in order to avoid conflicts.
 
-![settings page](images/settings.png)
+![settings page](assets/settings.png)
 
 ## Grid Row Selection
 

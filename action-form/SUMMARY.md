@@ -1,7 +1,7 @@
 # Summary
 
 * [Introduction](README.md)
-* [Getting Started](chapter1.md)
+* [Overview](chapter1.md)
 * [Form Fields ](form-fields/form-fields-types.md)
   * [Address](form-fields/form-fields-types/address.md)
     * [Country](form-fields/form-fields-types/address/country.md)

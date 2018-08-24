@@ -23,20 +23,20 @@ layout: default
 ### <a name="1"></a> Create a store-like form with HTML content
 
 In order to create a store-like form, from the Modules drop-down menu select Add Module and choose the Blank template.
-Add the desired fields as follows: in Add Field select Text, and there Static Text. In Content field insert the product description in HTML format. Also there you can add images and other info, like price, for example.
-<img style="max-width:100%" src="images/Content.png" /><br>
+Add the desired fields as follows: in Add Field select Text, and there Static Text. In Content field insert the product description in HTML format. Also there you can add assets and other info, like price, for example.
+<img style="max-width:100%" src="assets/Content.png" /><br>
 Scrolling down to UI Settings, you can define a maximum text width so that the text doesn’t take too much of the page.  Under UI Settings, in the second Control CSS Classes field write <b>max-width: 350px;</b> .
-<img style="max-width:100%" src="images/UI-Settings.png" /><br>
+<img style="max-width:100%" src="assets/UI-Settings.png" /><br>
 From Add Field select Multiple Choice, then Multiple Choice (with Checkboxes). Here you can define whatever items you want associated with the above-described product. In the Items box write Item 1, Item 2, Item 3, etc – one per row.
 
 Add another Field by going to Add Field and selecting Text, and from there Number. This is where customers can select how many of a specific item they want to purchase.
 
 The last step is to add a Buy button by selecting Add Field – from Button choose Button. Click on the newly-created button to customize it. Scroll down to On Click Handler and click on Add Action, and from there select Authorize.Net and Add a Simple Check Out to a Button.
-<img style="max-width:100%" src="images/checkout-button.png" /><br>
+<img style="max-width:100%" src="assets/checkout-button.png" /><br>
 In Layout Mode drag and resize the fields to your liking – in our case 4/12.
-<img style="max-width:100%" src="images/layout.png" /><br>
+<img style="max-width:100%" src="assets/layout.png" /><br>
 Final form:
-<img style="max-width:100%" src="images/final.png" />
+<img style="max-width:100%" src="assets/final.png" />
 
 ### <a name="2"></a> Evoq 8 and DNN 740 compatibility
 

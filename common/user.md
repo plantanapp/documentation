@@ -4,7 +4,7 @@
 
 Action Grid allows you to require the user to be logged in to view and edit the grid. You also can use this action on a grid button to log in a user when clicks on the button - this is a simple form with username and password fields. Note that the form must contain the Username and Password fields so the User Login action applied to the button to work.
 
-![](images/user-login.png)
+![](assets/user-login.png)
 
 ## User Registration
 
@@ -19,7 +19,7 @@ Action Grid allows you to specify an action for creating user account when the u
 
   When this option is enabled DNN Api Endpoint will use the standard registration email from DNN. For custom emails, disable this option and add Email actions.
 
-![](images/user-registration.png)
+![](assets/user-registration.png)
 
 ## Update User Profile
 
@@ -31,7 +31,7 @@ Action Grid allows you to setup some actions so that the users can update their 
   
   In this drop down list you can select a corresponding field which were previously added as data source and which will be called when the buttons action is executed. 
 
-![](images/update-user-profile.png)
+![](assets/update-user-profile.png)
 
 ## Grant User Role
 
@@ -46,16 +46,16 @@ Action Grid allows you to assign additional roles to the user as well as to appl
 
   In this field you can input after how many days the role expires. It you leave it blank, it will never expire.
 
-![](images/grant-user-role.png)
+![](assets/grant-user-role.png)
 
 ## Revoke User Role
 
 This action is used with the purpose to revoke the specified security role from the current user.
 
-![](images/revoke-user-role.png)
+![](assets/revoke-user-role.png)
 
 ## Clear User Cache
 
 This action requires an email or username field and a password field to be present in the fields which are linked to the action in order to login the user. On successful login, access user info using the `[User:*]` tokens (for example `[User:UserID]` or `[User:FirstName]`).
 
-![](images/clear-user-cache.png)
+![](assets/clear-user-cache.png)

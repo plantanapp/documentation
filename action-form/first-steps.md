@@ -1,6 +1,6 @@
-# Getting Started
+# First steps
 
-### How to Use Action Form
+## How to Use Action Form
 
 Basically, you can have an Action Form module fully functional simply by going to the Manage Form main page, choosing a predefined template form \(Contact, Log in, Registration, Subscribe to MailChimp\), and clicking the Back button. This adds on the page a form with default settings, or you can start with a new form from scratch by selecting the Blank form template so that you can configure it according to your needs.
 

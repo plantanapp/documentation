@@ -6,7 +6,7 @@ Action Form allows you to set a PayPal payment requirement when the user submits
 
 The Collect Paypal Payment action allows you to set the requirement before giving the user access to specific resources or rights. When the users submits the form, they are redirected to the PayPal website, where they are able to complete the payment process. The user is required to log in to complete the payment process, but if he does not have a Paypal account, is required to open one.
 
-![](images/collect-paypal-payment.png)
+![](assets/collect-paypal-payment.png)
 
 * **Sandbox Account Email**
 

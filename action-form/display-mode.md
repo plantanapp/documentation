@@ -19,7 +19,7 @@ You will need to specify one of these options to define how you want the form to
 
 You can access these options by clicking on the drop down box on the <b>Display Mode</b> option (<b>see the image below</b>).
 
-![display-mode](/action-form/images/display-mode.png "display-mode")
+![display-mode](/action-form/assets/display-mode.png "display-mode")
 
 ## Initially Visible
 
@@ -34,7 +34,7 @@ When the form is completely saved, click on Back button and while the Manage Act
 
 The In <b>Separate Page</b> option will instruct Action Form to redirect to a new page for actual page submission. You can create a text that is the main content, which also contains a special link that will get replaced with the actual URL where the form is located.
 
-![separate-page](/action-form/images/separate-page.png "separate-page")
+![separate-page](/action-form/assets/separate-page.png "separate-page")
 
 1. Select the In <b>Separate Page</b> option from the <b>Show Form</b> drop down box.
 2. Click on <b>Edit Templates</b>.

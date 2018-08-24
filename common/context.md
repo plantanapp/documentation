@@ -16,10 +16,10 @@ On the second Inject Data action set as condition: `[HasRole:Administrators|fals
 
 Set the Send Email action accordingly and in the Body field use the token predefined in Data Name: `[body]`. And all that remains to do is to test it.
 
-![](images/inject-form-data.png)
+![](assets/inject-form-data.png)
 
 ## Load User
 
 This action once set on a button lets you manually set a user, it could be the current user performing the submit or it could be the result of other actions.
 
-![](images/load-user.png)
+![](assets/load-user.png)
