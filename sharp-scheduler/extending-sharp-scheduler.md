@@ -6,4 +6,4 @@ As part of the architecture we’ve addressed a few hot topics that frameworks u
 
 * **Extensibility.** Sharp Scheduler implements a decoupled interface where components (such as triggers, actions and trigger services) are created at runtime via reflection based on the XML configuration.
 
-* **Continuous Updates.** Custom components are not added directly to the main configuration file that comes with Sharp Scheduler. 
+* **Continuous Updates.** Custom components are not added directly to the main configuration file that comes with Sharp Scheduler.

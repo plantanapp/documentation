@@ -21,6 +21,6 @@ The time-based triggers can be missed if the module is not running (it happens i
 
 ## How to add a new trigger
 
-![](assets/2016-04-15_1645.png)
+![](../assets/2016-04-15_1645.png)
 
 As you can see, the triggers can be added from the "Add new trigger" dropdown button, where the triggers are grouped by their category. The triggers can be disabled or even deleted from the right little buttons (no text, only the nice icons). The modifications will be applied only after saving them by using the "Save" button (it can be find at the bottom of the page, but also in the top right corner). You can even delete the entire job if you want by clicking the "Delete job" button, a confirmation dialog will follow. The triggers cannot be reordered for the moment, we see no use for this right now.

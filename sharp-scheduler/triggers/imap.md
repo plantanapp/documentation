@@ -69,5 +69,5 @@ The tokens below are generated:
 
 * **Custom Headers Filters** - If your emails have other headers than the ones above, add custom Header and Filter.
 
-![](/assets/imap.jpg)
+![](../assets/imap.jpg)
 

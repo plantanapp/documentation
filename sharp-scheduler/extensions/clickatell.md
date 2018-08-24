@@ -68,7 +68,7 @@ It creates an empty form so you build everything from scratch.
 Add three Form Fields: two Texts and a Button.
 For example:
 
-![](assets/Clickatell.png)
+![](../assets/Clickatell.png)
 
 Add an Action Form with Clickatell; 
 

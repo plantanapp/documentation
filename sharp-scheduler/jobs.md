@@ -1,9 +1,9 @@
 # Jobs
 
-A job represents a set of instructions (called [Actions](actions.html)) to execute when certain events occur (named [Triggers](triggers.html)).
+A job represents a set of instructions (called [Actions](actions/actions.html)) to execute when certain events occur (named [Triggers](triggers/triggers1.html)).
 There is no limit on how many actions and triggers a job can have.
 
-When you add a Sharp Scheduler module to the page, the first thing you will see is the list of existing jobs and the buttons to create new jobs or [import them from DNN](migrate-from-dnn-scheduler).
+When you add a Sharp Scheduler module to the page, the first thing you will see is the list of existing jobs and the buttons to create new jobs or [import them from DNN](migrate-from-dnn-scheduler.html).
 
 ![](assets/Jobs.png)
 

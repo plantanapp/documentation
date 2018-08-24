@@ -15,4 +15,4 @@ This action runs an executable on the server, optionally capturing the output. T
   Notes:
   + You should use Output token for console applications (Not for graphical applications).
 
-![](assets/Run executable.png)
+![](../assets/Run executable.png)

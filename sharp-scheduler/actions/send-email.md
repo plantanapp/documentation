@@ -14,5 +14,5 @@ This action does exactly what its name says. It sends an email using the SMTP se
 
 **Attachments** This action allows you to add up to 5 email attachments to the email. If a Portal Context is specified, then the file picker will show files that belong to that portal; otherwise, files from the Host folder are listed.
 
-![](assets/Send Email 1.png)
-![](assets/Send Email 2.png)
+![](../assets/Send Email 1.png)
+![](../assets/Send Email 2.png)

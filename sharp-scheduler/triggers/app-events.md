@@ -14,4 +14,4 @@ The application events are those related to the Dot Net Nuke instance. While the
 
 The App events can be added through the "Add new trigger" drop-down button (see screenshot below). 
 
-![](assets/app-events.png)
+![](../assets/app-events.png)
