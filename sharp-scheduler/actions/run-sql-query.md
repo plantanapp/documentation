@@ -11,5 +11,4 @@ Flush old temporary data using a DELETE statement.
 
 Execute a **stored procedure** that calculates commissions paid through a referral program. 
 
-
-![](assets/Run SQL Query.png)
+![](../assets/Run SQL Query.png)

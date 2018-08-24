@@ -10,6 +10,6 @@ This actions copies or moves files on the server's current portal
 
 * If you want to copy a cartain type of files, mention them in a comma-separated list of values, like this: ``.pdf,.txt,.docx``.
 
-![](assets/backup files 1.png)
-![](assets/backup files 2.png)
+![](../assets/backup files 1.png)
+![](../assets/backup files 2.png)
 

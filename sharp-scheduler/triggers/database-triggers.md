@@ -14,7 +14,7 @@ The supported database events are:
   - triggers when data is deleted from a table. The job is fired once for every deleted row.
 
 Notice that the tokens are built automatically using column names, so you can reference inserted, updated or deleted values inside actions using [ColumnName] token syntax. You also get the original value using the [ColumnName:Before] syntax.
-![](assets/database-triggers.png)
+![](../assets/database-triggers.png)
 
 Notes:
 * You can not use text/ntext/image sql columns for Database Update Column ( they are actually [deprecated](http://stackoverflow.com/a/1935709/443379){:target="_blank"} since SQL Server 2005)

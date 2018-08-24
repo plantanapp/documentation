@@ -8,4 +8,4 @@ Note that folder will still be subject to all Search Boost settings and DNN perm
 
 Search Boost indexes documents incrementally, so usually there’s no need to worry about performances of this action.
 
-![](Index folder.png)
+![](../assets/Index folder.png)

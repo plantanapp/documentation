@@ -40,6 +40,3 @@ By default Gmail makes the email available to the first POP client that accesses
 6. Set Check Interval and Start date ;
 7. Set a subject and a sender ;
 8. Set a cron action which will be executed when an email which matches the filters set on the trigger is send .
-
-
-

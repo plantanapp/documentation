@@ -9,74 +9,71 @@
     "url": "/sharp-scheduler/videos.html"
 }, {
     "title": "Actions",
-    "url": "/sharp-scheduler/actions.html",
+    "url": "/sharp-scheduler/actions/actions.html",
     "subpages": [{
-        "title": "Overview",
-        "url": "/sharp-scheduler/actions.html"
-    }, {
         "title": "Execute Method",
-        "url": "/sharp-scheduler/execute-method.html"
+        "url": "/sharp-scheduler/actions/execute-method.html"
     }, {
         "title": "Index Custom Rules",
-        "url": "/sharp-scheduler/index-custom-rules.html"
+        "url": "/sharp-scheduler/actions/index-custom-rules.html"
     }, {
         "title": "Index Folders",
-        "url": "/sharp-scheduler/index-folders.html"
+        "url": "/sharp-scheduler/actions/index-folders.html"
     }, {
         "title": "Index Modules",
-        "url": "/sharp-scheduler/index-modules.html"
+        "url": "/sharp-scheduler/actions/index-modules.html"
     }, {
         "title": "Log Job Context",
-        "url": "/sharp-scheduler/log-job-context.html"
+        "url": "/sharp-scheduler/actions/log-job-context.html"
     }, {
         "title": "Post Data",
-        "url": "/sharp-scheduler/post-data.html"
+        "url": "/sharp-scheduler/actions/post-data.html"
     }, {
         "title": "Run DNN Job",
-        "url": "/sharp-scheduler/run-dnn-job.html"
+        "url": "/sharp-scheduler/actions/run-dnn-job.html"
     }, {
         "title": "Run Executable",
-        "url": "/sharp-scheduler/run-executable.html"
+        "url": "/sharp-scheduler/actions/run-executable.html"
     }, {
         "title": "Run PowerShell Script",
-        "url": "/sharp-scheduler/run-powershell-script.html"
+        "url": "/sharp-scheduler/actions/run-powershell-script.html"
     }, {
         "title": "Run SQL Query",
-        "url": "/sharp-scheduler/run-sql-query.html"
+        "url": "/sharp-scheduler/actions/run-sql-query.html"
     }, {
         "title": "Send Email",
-        "url": "/sharp-scheduler/send-email.html" 
+        "url": "/sharp-scheduler/actions/send-email.html" 
     }, {
         "title": "Serialization",
-        "url": "/sharp-scheduler/serialization.html"
+        "url": "/sharp-scheduler/actions/serialization.html"
     }, {
         "title": "Search Boost",
-        "url": "/sharp-scheduler/search-boost.html"
+        "url": "/sharp-scheduler/actions/search-boost.html"
     }, {
         "title": "Backup Files",
-        "url": "/sharp-scheduler/backup-files.html"
+        "url": "/sharp-scheduler/actions/backup-files.html"
     }]
 }, {
     "title": "Triggers",
-    "url": "/sharp-scheduler/triggers1.html",
+    "url": "/sharp-scheduler/triggers/triggers1.html",
     "subpages": [{
         "title": "Overview",
-        "url": "/sharp-scheduler/triggers1.html"
+        "url": "/sharp-scheduler/triggers/triggers1.html"
     }, {
         "title":"App Events Triggers",
-        "url":"/sharp-scheduler/app-events.html"    
+        "url":"/sharp-scheduler/triggers/app-events.html"    
     }, {
         "title": "Database Triggers",
-        "url": "/sharp-scheduler/database-triggers.html"
+        "url": "/sharp-scheduler/triggers/database-triggers.html"
     }, {
         "title": "Mail Trigggers",
-        "url": "/sharp-scheduler/mail-triggers.html"
+        "url": "/sharp-scheduler/triggers/mail-triggers.html"
     }, {
         "title": "On User Created",
-        "url": "/sharp-scheduler/on-user-created.html"
+        "url": "/sharp-scheduler/triggers/on-user-created.html"
     }, {
         "title": "Time Triggers",
-        "url": "/sharp-scheduler/time-triggers.html"
+        "url": "/sharp-scheduler/triggers/time-triggers.html"
     }]
 }, {
     "title": "Debugging",
@@ -89,10 +86,10 @@
     "url": "/sharp-scheduler/extending-sharp-scheduler.html"
 }, {
     "title": "Extensions",
-    "url": "/sharp-scheduler/clickatell.html",
+    "url": "/sharp-scheduler/extensions/clickatell.html",
     "subpages": [{
         "title": "Clickatell",
-        "url": "/sharp-scheduler/clickatell.html"
+        "url": "/sharp-scheduler/extensions/clickatell.html"
     }]
 }, {
     "title": "History",

@@ -2,7 +2,7 @@
 
 **1. Delete files older than one month (31 days) from a given folder**
 
-We create a new job in the [Jobs](jobs.html) administrative page. A [trigger](time-trigger.html) is needed to schedule this job and for this maintenance task, a monthly frequency seems often enough, so we add a "Repeat on interval" trigger with the interval set to 14 days. Twice a month we will delete the files that are older than a month. Now we need some [actions](actions.html) to get the job done. We will use a [PowerShell script](run-powershell-script.html) since it is the more generic (the folder is not necessary related to DNN) and a powerful (we can use the .NET functionality) method, but other methods are also possible (some custom executable or defined method). So we add a "Run PowerShell Script" action with the following script:
+We create a new job in the [Jobs](jobs.html) administrative page. A [trigger](triggers/time-triggers.html) is needed to schedule this job and for this maintenance task, a monthly frequency seems often enough, so we add a "Repeat on interval" trigger with the interval set to 14 days. Twice a month we will delete the files that are older than a month. Now we need some [actions](actions/actions.html) to get the job done. We will use a [PowerShell script](actions/run-powershell-script.html) since it is the more generic (the folder is not necessary related to DNN) and a powerful (we can use the .NET functionality) method, but other methods are also possible (some custom executable or defined method). So we add a "Run PowerShell Script" action with the following script:
 
 ```powershell
 function RemoveFiles($path = $pwd) 
@@ -38,13 +38,13 @@ function RemoveFiles($path = $pwd)
 RemoveFiles("C:\Logs")
 ```
 
-This script will remove recursively the files older than 31 days from the folder "C:\Logs" (change it to your location), including the folders left empty. Being run from the IIS service, if not inside the host folder, be sure you have the appropriate rights for the application, that is "full control" for the "Network Service" user. 
+This script will remove recursively the files older than 31 days from the folder "C:\Logs" (change it to your location), including the folders left empty. Being run from the IIS service, if not inside the host folder, be sure you have the appropriate rights for the application, that is "full control" for the "Network Service" user.
 
 **WARNING** Also, please be sure you know what you are doing, the script will really delete those files!
 
 **2. Send email notification once a week with total number of users and pages, out of which X users and Y pages in the last week**
 
-After creating the job in the [Jobs](jobs.html) page, we need to add a [trigger](time-trigger.html) and it is "Repeat on interval" we choose, with a 7 days interval to run it on a weekly basis. We find the number of users and pages by querying the database, so the obvious [action](actions.html) is "[Run SQL Query](run-sql-query.html)", but one script will not be enough since the script will be complex enough and since we need four "Output tokens": total number of users, total number of pages, new users during the last week, new pages during the last week, respectively. The needed scripts for these tokens (and the four actions):
+After creating the job in the [Jobs](jobs.html) page, we need to add a [trigger](triggers/time-triggers.html) and it is "Repeat on interval" we choose, with a 7 days interval to run it on a weekly basis. We find the number of users and pages by querying the database, so the obvious [action](actions/actions.html) is "[Run SQL Query](actions/run-sql-query.html)", but one script will not be enough since the script will be complex enough and since we need four "Output tokens": total number of users, total number of pages, new users during the last week, new pages during the last week, respectively. The needed scripts for these tokens (and the four actions):
 
 ```sql
 1. SELECT COUNT(UserID) FROM dbo.Users;
