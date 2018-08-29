@@ -1,6 +1,6 @@
 # Run DNN Job
 
-This action is used to execute a job from the DNN Scheduler. These jobs implement a special interface from DNN and they can only be created programatically. That’s one of the biggest pains that Sharp Scheduler alleviates by allowing new jobs to be created at runtime from the administration console. 
+This action is used to execute a job from the DNN Scheduler. These jobs implement a special interface from DNN and they can only be created programatically. That’s one of the biggest pains that Sharp Scheduler alleviates by allowing new jobs to be created at runtime from the administration console.
 
 Importing from DNN has the same effect as creating a new job, adding a new Run DNN Job action for the respective job, copying the time interval and stopping the job from DNN Scheduler to prevent it from running twice. Note that if you add this action manually (without using the DNN import button), you’ll need to stop the job from DNN Scheduler yourself.
 

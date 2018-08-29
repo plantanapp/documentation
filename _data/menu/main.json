@@ -15,14 +15,26 @@
         "title": "Search Boost",
         "ref": "searchboost",
         "url": "/search-boost/getting-started/index.html"
-    },
-    {
-        "title": "Common",
-        "ref": "common",
-        "url": "/common/index.html"
     }, {
         "title": "Sharp Scheduler",
         "url": "/sharp-scheduler/index.html",
         "ref": "sharpscheduler"
+    }]
+}, {
+    "title": "Actions",
+    "ref": "common"
+}, {
+    "title": "Add-ons",
+    "subpages":[{
+        "title": "Email Sync",
+        "url" : "/add-ons/email-sync/index.html",
+        "ref": "emailsync"
+    }]
+}, { 
+    "title": "Integrations",
+    "subpages": [{
+        "title": "Clickatell",
+        "ref": "clickatell",
+        "url": "integrations/clickatell/index.html"
     }]
 }]

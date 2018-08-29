@@ -16,7 +16,10 @@ The **General Settings** section is displayed for admins only and here you can c
 
 Other options are the **Enable Search** and **Enable Filters** boxes - if they are not checked, then the search box and the filters will not be displayed on the grid even though there are fields marked as filterable or searchable. The Include jQuery and the Include Bootstrap options are checked by default, their purpose is to include their own versions of jQuery and Bootstrap libraries in order to avoid conflicts.
 
-![settings page](assets/settings.png)
+![settings page](assets/settings 1.png)
+![settings page](assets/settings 2.png)
+![settings page](assets/settings 3.png)
+![settings page](assets/settings 4.png)
 
 ## Grid Row Selection
 
@@ -26,7 +29,7 @@ This option is available under General Settings and comes enabled by default. Ba
 
 ### Refresh when a modal/popup is closed
 
-This option is available under General Settings and comes disabled by default. Use it to refresh Action Grid when a Bootstrap modal is closed. For example when using [Open in Pop option](http://action-grid.dnnsharp.com/buttons/special-buttons#TOC-Popups) the`afcallparentonsubmit=angridEditDone`parameter is no longer necessary.
+This option is available under General Settings and comes disabled by default. Use it to refresh Action Grid when a Bootstrap modal is closed. For example when using [Open in Pop option](buttons/special-buttons#TOC-Popups) the`afcallparentonsubmit=angridEditDone`parameter is no longer necessary.
 
 ### Grid minimum column width
 
@@ -41,13 +44,13 @@ div.angrid .angrid-row td:first-child + td + td + td + td + td + td {min-width:3
 
 ### Create a list inside the PDF template
 
-Right now the only way to create a list inside the PDF template is through My Tokens using a Razor token that loops over a SQL token. I believe there's an example here [my-tokens.dnnsharp.com/scripts-templates](http://my-tokens.dnnsharp.com/scripts-templates).
+Right now the only way to create a list inside the PDF template is through My Tokens using a Razor token that loops over a SQL token. Example here:[my-tokens.dnnsharp.com/scripts-templates](https://my-tokens.dnnsharp.com/scripts-templates).
 
 ### Tabs Pro Integration
 
 This option is available under the General Settings of Action Grid module and comes disabled by default. Basically it determines when the load/refresh operation should be done.
 
-**Note: **These options are working only if you already have a [TabsPro](http://www.dnnsharp.com/dnn/modules/tabs-pro) version higher than 02.01.40 installed.
+**Note: **These options are working only if you already have a [TabsPro](https://www.dnnsharp.com/dnn/modules/tabs-pro) version higher than 02.01.40 installed.
 
 * **Load When Tab Is Activated - **this option enables Action Grid to be initialized when the tab is active;
 
