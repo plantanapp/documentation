@@ -6,10 +6,10 @@
         var children = $(this).parent('li.parent_li').find(' > ul > li');
         if (children.is(":visible")) {
             children.hide('fast');
-            $(this).find(' > i').addClass('icon-plus-sign').removeClass('icon-minus-sign');
+            $(this).find(' > i').addClass('fa-plus-circle').removeClass('fa-minus-circle');
         } else {
             children.show('fast');
-            $(this).find(' > i').addClass('icon-minus-sign').removeClass('icon-plus-sign');
+            $(this).find(' > i').addClass('fa-minus-circle').removeClass('fa-plus-circle');
         }
         e.stopPropagation();
     });

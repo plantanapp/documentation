@@ -5,12 +5,12 @@
                 {% if treepage.url %}
                     <a href="{{treepage.url | relative_url}}">
                     {{treepage.title}}</a>
-                    {%if treepage.subpages.size > 0 or treepage.ref%}
-                    <i class="icon-plus-sign" style="margin-left:3px"></i>
-                    {%endif%}
                 {% else %}
                     {{treepage.title}}
                 {% endif %}
+                {%if treepage.subpages.size > 0 or treepage.ref%}
+                    <i class="fas fa-plus-circle" style="margin-left:3px"></i>
+                {%endif%}
             </span>
             {% if treepage.ref %}
                 {%assign module_pages = site.data.menu[treepage.ref] %}
