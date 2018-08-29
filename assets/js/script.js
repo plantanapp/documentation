@@ -70,7 +70,7 @@
             return 0;
         },
         noResultsText: 'No results found',
-        limit: 10,
+        limit: 5,
         fuzzy: false
     });
 
