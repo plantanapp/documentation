@@ -30,7 +30,7 @@
             while (!element.parent().hasClass('tree') && !element.is('body')) {
                 element = element.parent();
                 if (element.hasClass('parent_li')) {
-                    element.find(' > span > i').addClass('icon-minus-sign').removeClass('icon-plus-sign')
+                    element.find(' > span > i').addClass('fa-minus-circle').removeClass('fa-plus-circle');
                     element.find(' > ul > li').show();
                 }
             }
@@ -74,10 +74,16 @@
         fuzzy: false
     });
 
+    $(".menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+
     if (location.pathname !== '/' && location.pathname !== '/index.html') {
         let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);
         element.parent('span').addClass('tree-current-item');
+        $("#wrapper").toggleClass("toggled");
     }
 
 })();
