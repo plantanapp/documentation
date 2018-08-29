@@ -12,5 +12,5 @@ Once you begin collecting results, it provides powerful functions covering workf
 
 With regular updates, enjoy an even faster and more lightweight builder, providing you with all the modern features.
 
-![](/assets/action-form-builder-300x388w.jpg)
+![](/action-form/assets/action-form-builder-300x388w.jpg)
 
