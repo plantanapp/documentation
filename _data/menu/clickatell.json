@@ -1,0 +1,25 @@
+[{
+  "title":"Overview",
+  "url":"/integrations/clickatell/index.html"    
+}, {
+  "title": "Installation",
+  "url": "/integrations/clickatell/installation.html"
+}, {
+  "title": "Clickatell accounts",
+  "url": "/integrations/clickatell/clickatell-accounts.html"
+}, {
+  "title": "Clickatell setup",
+  "url": "/integrations/clickatell/clickatell-setup.html"
+}, {
+  "title": "Send SMS",
+  "url": "/integrations/clickatell/send-sms.html"
+}, {
+  "title": "Send SMS - Obsolete",
+  "url": "/integrations/clickatell/send-sms-obsolete.html"
+}, {
+  "title": "Action Form Setup",
+  "url": "/integrations/clickatell/action-form-setup.html"
+}, {
+  "title": "Resources",
+  "url": "/integrations/clickatell/resources.html"
+}]

@@ -30,7 +30,7 @@ The table style of a data grid allows viewing data in a modern looking responsiv
 
 ## How to Install Action Grid
 
-You can download the latest version from [Action Grid Download Page](http://www.dnnsharp.com/dnn/modules/action-grid-table-data/download). While you are on that page, you can also check the changelog to see what's new.
+You can download the latest version from [Action Grid Download Page](http://www.dnnsharp.com/dnn/modules/action-grid-table-data/download){:target="_blank"}. While you are on that page, you can also check the changelog to see what's new.
 
 In order to install Action Grid module on your DNN website, you can follow the steps below:
 

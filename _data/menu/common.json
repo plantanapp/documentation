@@ -1,43 +1,139 @@
-[{
-    "title": "Actions",
+[  {
+    "title": "Overview",  
+    "url": "/common/index.html"
+}, {
+    "title": "Extensibility",
+    "url": "/common/extensibility.html"
+}, {
+    "title": "Context",
     "subpages": [{
-        "title": "Overview",
-        "url": "/common/index.html"
+        "title": "Inject Form Data",
+        "url": "/common/inject-form-data.html"
     }, {
-        "title": "Context",
-        "url": "/common/context.html"
-    }, {
-        "title": "Data",
-        "url": "/common/data.html"
-    }, {
-        "title": "Datasource",
-        "url": "/common/datasource.html"
-    }, {
-        "title": "DNN Sharp",
-        "url": "/common/dnn-sharp.html"
-    }, {
-        "title": "Email",
-        "url": "/common/email.html"
-    }, {
-        "title": "Entities",
-        "url": "/common/entities.html"
-    }, {
-        "title": "Parsing",
-        "url": "/common/parsing.html"
-    }, {
-        "title": "Payments",
-        "url": "/common/payments.html"
-    }, {
-        "title": "Redirect",
-        "url": "/common/redirect.html"
-    }, {
-        "title": "Security",
-        "url": "/common/security.html"
-    }, {
-        "title": "Serialization",
-        "url": "/common/serialization.html"
-    }, {
-        "title": "User",
-        "url": "/common/user.html"
+        "title": "Load User",
+        "url": "/common/load-user.html"
     }]
+}, {
+    "title": "Data",
+    "subpages": [{
+      "title": "Run SQL Query",
+      "url": "/common/run-sql-query.html"
+  }, {
+      "title": "Server Request",
+      "url": "/common/server-request.html"
+  }]
+}, {
+    "title": "Datasource",
+    "subpages": [{
+        "title": "Datasource refresh",
+        "url": "/common/datasource/datasource-refresh.html"
+    }, {
+        "title": "Datasource add",
+        "url": "/common/datasource/datasource-add.html"
+    }, {
+        "title": "Datasource delete",
+        "url": "/common/datasource/datasource-delete.html"
+    }, {
+        "title": "Datasource view",
+        "url": "/common/datasource/datasource-view.html"
+    }, {
+        "title": "Datasource edit",
+        "url": "/common/datasource/datasource-edit.html"
+    }, {
+        "title": "Datasource inline-edit",
+        "url": "/common/datasource/datasource-inline-edit.html"
+    }, {
+        "title": "Datasource detail view",
+        "url": "/common/datasource/datasource-detail-view.html"
+    }]
+}, {
+    "title": "DNN Sharp",
+    "subpages": [{
+        "title": "Open Action Form Popup",
+        "url": "/common/dnnsharp/open-action-form-popup.html"
+    }, {
+        "title": "Open Tabs Pro Popup",
+        "url": "/common/dnnsharp/open-tabs-pro-popup.html"
+    }, {
+        "title": "Close Action Form Popup",
+        "url": "/common/dnnsharp/close-action-form-popup.html"
+    }, {
+        "title": "Close Tabs Pro Popup",
+        "url": "/common/dnnsharp/close-tabs-pro-popup.html"
+    }]
+}, {
+    "title": "Email",
+    "url": "/common/email.html"
+}, {
+    "title": "Entities",
+    "subpages": [{
+      "title": "Load Entities (SQL)",
+      "url": "/common/entities/load-entities.html"
+  }, {
+      "title": "Open Tabs Pro Popup",
+      "url": "/common/entities/remove-entities.html"
+  }]
+}, {
+    "title": "Parsing",
+    "subpages": [{
+      "title": "Regex",
+      "url": "/common/parsing/regex.html"
+    }]
+}, {
+    "title": "Payments",
+    "url": "/common/payments.html"
+}, {
+    "title": "Redirect",
+    "subpages": [{
+        "title": "Redirect to URL",
+        "url": "/common/redirect/redirect-url.html"
+    }, {
+        "title": "Redirect to Portal Page",
+        "url": "/common/redirect/redirect-portal-page.html"
+    }, {
+        "title": "Send file for Download",
+        "url": "/common/redirect/send-file-download.html"
+    }]
+}, {
+    "title": "Security",
+    "subpages": [{
+      "title": "AES Encrypt",
+      "url": "/common/security/aes-encrypt.html"
+    }, {
+      "title": "AES Decrypt",
+      "url": "/common/security/aes-decrypt.html"
+    }, {
+      "title": "RSA Encrypt/Decrypt",
+      "url": "/common/security/rsa-encrypt-decrypt.html"
+    }]
+}, {
+    "title": "Serialization",
+    "subpages": [{
+      "title": "Serialize to CSV",
+      "url": "/common/serialization/serialize-csv.html"
+    }, {
+      "title": "Serialize to Excel",
+      "url": "/common/serialization/serialize-excel.html"
+    }]
+}, {
+    "title": "User",
+    "subpages": [{
+      "title": "User Login",
+      "url": "/common/user/user-login.html"
+  }, {
+      "title": "User Registration",
+      "url": "/common/user/user-registration.html"
+  }, {
+      "title": "Update User Profile",
+      "url": "/common/user/update-user-profile.html"
+  }, {
+      "title": "Grant User Role",
+      "url": "/common/user/grant-user-role.html"
+  }, {
+      "title": "Revoke User Role",
+      "url": "/common/user/revoke-user-role.html"
+  }, {
+      "title": "Clear User Cache",
+      "url": "/common/user/clear-user-cache.html"
+  }]
 }]
