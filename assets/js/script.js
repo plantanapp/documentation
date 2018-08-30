@@ -83,7 +83,7 @@
         let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);
         element.parent('span').addClass('tree-current-item');
-        $("#wrapper").toggleClass("toggled");
+        window.matchMedia("(max-width: 768px)") && $("#wrapper").toggleClass("toggled");
     }
 
 })();
