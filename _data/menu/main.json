@@ -19,6 +19,10 @@
         "title": "Sharp Scheduler",
         "url": "/sharp-scheduler/index.html",
         "ref": "sharpscheduler"
+    }, {
+        "title": "URL Adapter",
+        "ref": "urladapter",
+        "url": "/url-adapter/getting-started/index.html"
     }]
 }, {
     "title": "Actions",
