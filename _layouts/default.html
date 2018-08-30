@@ -8,37 +8,43 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/simple-sidebar.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
 
 <body class="container-fluid">
-    <div id="wrapper">
+    <div id="wrapper" class="toggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a class="text-center" href="//dnnsharp.com">
+                        <img src="https://static.dnnsharp.com/logo/DNNSharp-Logo-62x180.png" alt="logo">
+                    </a>
+                </li>
                 <li class="tree">
                     {% include menu.html pages = site.data.menu.main %}
                 </li>
             </ul>
-            <button style="color:black;" type="button" class="btn btn-secondary btn-sm menu-toggle"><i class="fas fa-bars"></i></button>
+            <span class="menu-toggle"><i class="fas fa-bars"></i></span>
         </div>
         <!-- /#sidebar-wrapper -->
         <div id="page-content-wrapper">
             <div class="row">
-                <header class="page-header d-flex flex-column align-items-center justify-content-center" role="banner">
-                    <h1 class="project-name">{{ site.title | default: site.github.repository_name }}</h1>
+                <header class="page-header d-flex align-items-center justify-content-around" role="banner">
+                    <span class="menu-toggle"><i class="fas fa-bars"></i></span>
+                    <h1 class="project-name"><span>{{ site.title | default:site.github.repository_name }}</span></h1>
                     <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
                     <div class="input-group col-md-3">
                         <input type="text" class="form-control" id="search-input" placeholder="Search...">
                         <span><i class="fas fa-search" aria-hidden="true"></i></span>
                         <ul class="list-group list-unstyled" id="results-container"></ul>
                     </div>
-                    <button style="color:black;" type="button" class="btn btn-secondary btn-sm menu-toggle"><i class="fas fa-bars"></i></button>
                 </header>
             </div>
-            <div class="row" style="margin-top: 185px;">
-                <div class="offset-sm-2 col-sm-10">
+            <div class="row" style="margin-top: 125px;">
+                <div class="offset-sm-2 col-sm-9">
                     <main id="content" class="main-content" role="main">
                         {{ content }}
                     </main>
