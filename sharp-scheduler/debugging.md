@@ -1,9 +1,16 @@
 # Debugging
 
-Send the debugging files to us via email (or setup a place where we can download it if it's too big).
+## How to debug
+
+You can debug your Sharp Scheduler Job by using the [Log Job Context](actions/log-job-context.html) action in order to generate logs.
+
 You can find the debugging files on:
 
-* /Portals/0/Logs/SharpScheduler folder (note that this is your portal home directory, so it may look different but you get the idea)
+* ``/Portals/_default/Logs/SharpScheduler`` folder (note that this is your portal home directory, so it may look different but you get the idea)
+
+Logs are added to a separate log file each separate day.
+
+## How to submit debug files
 
 When submitting debugging information to us for investigation, please make sure to provide the following:
 

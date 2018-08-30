@@ -13,7 +13,7 @@ If you click on the Job Title the accordion will expand to show a quick overview
 
 There are 2 other important functions in the job overview panel. They refer to the ability to run a job independently of triggers, either by clicking the Run Now button or by using the Web Service URL.
 
-**Job Context**
+## Job Context
 
 One important concept in Sharp Scheduler is context. At a minimum a context is data shared between actions. So one action can basically save data in context for other actions down the stack to use.
 

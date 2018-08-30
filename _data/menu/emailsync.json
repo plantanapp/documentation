@@ -1,0 +1,20 @@
+[{
+  "title": "Overview",
+  "url": "add-ons/email-sync/index.html"    
+}, {
+  "title": "Installation",
+  "url": "add-ons/email-sync/installation.html"
+}, { 
+  "title": "Scheduler Triggers",
+  "url": "add-ons/email-sync/triggers/scheduler-triggers.html",
+  "subpages": [{
+    "title": "IMAP",
+    "url": "add-ons/email-sync/triggers/imap.html"
+  }, {
+    "title": "POP Mail",
+    "url": "add-ons/email-sync/triggers/pop-mail.html"  
+  }]
+}, {
+  "title": "Resources",
+  "url": "add-ons/email-sync/resources.html"
+}]

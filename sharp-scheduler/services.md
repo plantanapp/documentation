@@ -2,7 +2,7 @@
 
 The Sharp Scheduler triggers work through services and this services are used for firing the triggers. Services run in background and they could not be stopped. Sharp Scheduler has integrated 2 services but it's an open framework and more services can be added. We intend to include more types of services in future releases.
 
-**Quartz Service**
+## Quartz Service
 
 Quartz is a richly featured, open source job scheduling library that can be integrated within virtually any Java application - from the smallest stand-alone application to the largest e-commerce system. Quartz can be used to create simple or complex schedules for executing tens, hundreds, or even tens-of-thousands of jobs; jobs whose tasks are defined as standard Java components that may execute virtually anything you may program them to do. The Quartz Scheduler includes many enterprise-class features, such as support for JTA transactions and clustering.
 
@@ -14,6 +14,6 @@ Sample uses of job scheduling with Quartz:
 + System Maintenance: Schedule a job to dump the contents of a database into an XML file every business day (all weekdays except holidays) at 11:30 PM.
 + Providing reminder services within an application.
 
-**AppEvents Service**
+## AppEvents Service
 
 AppEvents is a critical service because Sharp Scheduler is initialized through this. It automatically install/uninstall...
