@@ -12,14 +12,13 @@
 },
 {
     "title": "Data Sources",
-    "url": "/action-grid/capabilities/index.html",
+    "url": "/action-grid/data-sources/data-sources.html",
     "subpages": [{
             "title": "Overview",
-            "url": "/action-grid/capabilities/index.html"
-        },
-        {
+            "url": "/action-grid/data-sources/data-sources.html"
+        }, {
             "title": "Action Form",
-            "url": "/action-grid/data-sources/action_form.html"
+            "url": "/action-grid/data-sources/action-form.html"
         }, {
             "title": "Custom data sources",
             "url": "/action-grid/data-sources/custom-data-sources.html"
@@ -32,8 +31,13 @@
         }, {
             "title": "SQL Select",
             "url": "/action-grid/data-sources/sql-query-cte.html"
-        }
-    ]
+        }, {
+            "title": "Server Request JSON",
+            "url": "/action-grid/data-sources/server-json.html"
+        }, {
+            "title": "Credential Store",
+            "url": "/action-grid/data-sources/credential-store.html"
+        }]
 }, 
 {
     "title": "Buttons",
@@ -54,8 +58,13 @@
     "subpages": [{
             "title": "Overview",
             "url": "/action-grid/capabilities/index.html"
-        },
-        {
+        }, {
+            "title": "Inline Edit",
+            "url": "/action-grid/capabilities/inline-edit.html"
+        }, {
+            "title": "Conditional display on field",
+            "url": "/action-grid/capabilities/conditional-display-fields.html"
+        }, {
             "title": "Filter",
             "url": "/action-grid/capabilities/filter.html"
         }, {

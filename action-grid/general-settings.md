@@ -12,9 +12,22 @@ These are the settings that can be modified:
 * Default Page Size
 * Debug Mode \(when checked, it will log detailed debug information under `[PortalHome]/Logs/ActionGrid` folder\)
 
-The **General Settings** section is displayed for admins only and here you can configure the grid's display mode. Here are various options like the **Page style** from where you can choose if the page will be Touch friendly or Classic, or the **Page sizes** option where you have the possibility to add other sizes by using the comma separator or to change the **Default Page Size** from 12 \(we've set this 12 default size because it's compatible with the 12 column grid system and we prefer to use this default size option\).
+The **General Settings** section is displayed for admins only and here you can configure the grid's display mode. Here are various options like the
 
-Other options are the **Enable Search** and **Enable Filters** boxes - if they are not checked, then the search box and the filters will not be displayed on the grid even though there are fields marked as filterable or searchable. The Include jQuery and the Include Bootstrap options are checked by default, their purpose is to include their own versions of jQuery and Bootstrap libraries in order to avoid conflicts.
+* **Page style** from where you can choose if the page will be Touch friendly or Classic
+* **Page sizes** option where you have the possibility to add other sizes by using the comma separator or to change the **Default Page Size** from 12 \(we've set this 12 default size because it's compatible with the 12 column grid system and we prefer to use this default size option\).
+* **Enable Row Tooltip** enables an informative tooltip for end users.
+* **Message for emty grid** is used for setting a message in case the datasource is empty.
+* **Enable Search** and **Enable Filters** boxes - if they are not checked, then the search box and the filters will not be displayed on the grid even though there are fields marked as filterable or searchable.
+* **Load Grid on Search** - This shows data only when the user types something into the search bar.
+* **Search Position** - Sets the position of the search bar. "Expandable" means that the search bar is smaller, but expands when in focus.
+  + The *Search Placeholder* is used to set a text that is shown when nothing is typed in the search bar.
+* **Sync with URL** - This option syncs url with current settings.
+* **Lock into Edit Mode** - This locks the grid into inline edit, so it's easier to edit the data inside if that's the only use a certain grid has.
+* **Angular noConflict** and the **Include Bootstrap** options are checked by default, their purpose is to include their own versions of jQuery and Bootstrap libraries in order to avoid conflicts.
+* **Debug Mode** - Logs detailed debug information under [PortalHome]/Logs/ActionGrid
+* **Select all position** - If and where should a "Select All" checkbox appear.
+* **Root CSS Classes** - adds predefined CSS classes to the grid.
 
 ![settings page](assets/settings 1.png)
 ![settings page](assets/settings 2.png)

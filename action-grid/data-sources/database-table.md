@@ -4,7 +4,7 @@ Since first line of code we've designed Action Grid with the ability to connect 
 
 The other big scenario is the ability to manage database tables directly. And not only tables, views too. The Action Grid module can easily replace the Users module or the Event Log. Note that if you need to build a grid from a complex query across multiple tables, there's another SQL Query data source that it more appropriate. The advantages of the Database Table data source over the SQL Query data source are the ease of use (simply select a table name from a drop down) and the fact that delete is automatically implemented. For the [SQL Query data source](sql-query.md), since data could come from multiple tables governed by various laws, Action Grid can't determine the best way to delete an entry, so this need to be done manually from the On Delete event by adding one or more Execute SQL actions.
 
-![](assets/database.png)
+![](../assets/database table.png)
 
 Once the Database Table data source is selected, additional configuration options will appear. 
 
