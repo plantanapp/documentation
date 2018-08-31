@@ -1,0 +1,91 @@
+[{
+    "title": "Overview",
+    "url": "/url-adapter/index.html"
+},
+{
+    "title": "FAQs",
+    "url": "/url-adapter/faqs.html"
+},
+{
+    "title": "Getting Started",
+    "url": "/url-adapter/getting_started.html"
+},
+{
+  "title": "Video Tutorials",
+  "url": "/url-adapter/video_tutorials.html"
+},
+{
+  "title": "Compatibility",
+  "url": "/url-adapter/compatibility.html"
+},
+{
+  "title": "Debugging",
+  "url": "/url-adapter/debugging.html"
+},
+{
+  "title": "Examples",
+  "url": "/url-adapter/examples/examples.html",
+  "subpages": [{
+          "title": "Improving SEO",
+          "url": "/url-adapter/examples/improving_seo.html"
+      },
+      {
+          "title": "Redirect HTML Pages",
+          "url": "/url-adapter/examples/redirect_html_pages.html"
+      }, {
+          "title": "Redirect PHP Pages",
+          "url": "/url-adapter/examples/redirect_php_pages.html"
+      }
+  ]
+},
+{
+    "title": "Integration",
+    "url": "/url-adapter/integration.html"
+},
+{
+    "title": "Localization",
+    "url": "/url-adapter/localization.html"
+},
+{
+  "title": "Locked Out?",
+  "url": "/url-adapter/locked_out.html"
+},
+{
+  "title": "Logging",
+  "url": "/url-adapter/logging.html"
+},
+{
+  "title": "Redirects and Rewrites",
+  "url": "/url-adapter/redirects_and_rewrites.html"
+},
+{
+    "title": "Settings Reference",
+    "url": "/url-adapter/settings-reference/settings_reference.html",
+    "subpages": [{
+            "title": "Advanced Rules",
+            "url": "/url-adapter/settings-reference/advanced_rules.html"
+        },
+        {
+            "title": "Custom URLs",
+            "url": "/url-adapter/settings-reference/custom_urls.html"
+        }, {
+            "title": "Friendly URLs",
+            "url": "/url-adapter/settings-reference/friendly_urls.html"
+        }, {
+            "title": "Portal Aliases",
+            "url": "/url-adapter/settings-reference/portal_aliases.html"
+        }, {
+            "title": "Special Pages",
+            "url": "/url-adapter/settings-reference/special_pages.html"
+        }
+    ]
+  },
+{
+    "title": "Setup",
+    "url": "/url-adapter/Setup.html"
+},
+{
+    "title": "URL Adapter vs Redirect Toolkit",
+    "url": "/url-adapter/url_adapter_vs_redirect_toolkit.html"
+}
+]
