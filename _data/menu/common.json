@@ -5,6 +5,13 @@
     "title": "Extensibility",
     "url": "/common/extensibility.html"
 }, {
+    "title": "Code",
+    "subpages": [{
+        "title": "Apply Tokens"
+    }, {
+        "title": "Execute Token"
+    }]
+}, {
     "title": "Context",
     "subpages": [{
         "title": "Inject Form Data",
@@ -14,6 +21,21 @@
         "url": "/common/load-user.html"
     }]
 }, {
+  "title": "Credential Store",
+  "subpages": [{
+      "title": "Add Group"
+  }, {
+      "title": "Delete Credential"
+  }, {
+      "title": "Encrypt Value"
+  }, {
+      "title": "Find Group"
+  }, {
+      "title": "Get Credential"
+  }, {
+      "title": "Get User Credential"
+  }]
+}, {
     "title": "Data",
     "subpages": [{
       "title": "Run SQL Query",
@@ -21,6 +43,15 @@
   }, {
       "title": "Server Request",
       "url": "/common/server-request.html"
+  }]
+}, {
+  "title": "Dnn",
+  "subpages": [{
+      "title": "Copy File"
+  }, {
+      "title": "Delete File"
+  }, {
+      "title": "Delete Folder"
   }]
 }, {
     "title": "Datasource",
@@ -62,6 +93,11 @@
         "url": "/common/dnnsharp/close-tabs-pro-popup.html"
     }]
 }, {
+  "title": "Documents",
+  "subpages": [{
+      "title": "Save file to disk"
+  }]
+}, {
     "title": "Email",
     "url": "/common/email.html"
 }, {
@@ -72,6 +108,16 @@
   }, {
       "title": "Open Tabs Pro Popup",
       "url": "/common/entities/remove-entities.html"
+  }]
+}, {
+  "title": "Flow",
+  "subpages": [{
+      "title": "Execute Actions"
+  }]
+}, {
+  "title": "Message",
+  "subpages": [{
+      "title": "Send DNN Message"
   }]
 }, {
     "title": "Parsing",
@@ -135,5 +181,20 @@
   }, {
       "title": "Clear User Cache",
       "url": "/common/user/clear-user-cache.html"
+  }]
+}, {
+  "title": "User Management",
+  "subpages": [{
+      "title": "Create Auto Login Link"
+  }, {
+      "title": "Sync Users"
+  }, {
+      "title": "Unlock User"
+  }, {
+      "title": "User Login"
+  }, {
+      "title": "User Registration"
+  }, {
+      "title": "User/Password Validation"
   }]
 }]

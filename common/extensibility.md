@@ -16,3 +16,5 @@ In the example presented below, we are going to show you how to create your cust
 - Refresh your admin page and you should see the new Group containing your example action.
 
 - In this example you should select a value for the dropdown when you configure the action on the site, as some of our modules (such as DnnApiEndpoint) require a value for the dropdowns to be selected.
+
+[Custom Action Example](https://dl.dnnsharp.com/documentation/AFORM/MyCustomAction.zip)

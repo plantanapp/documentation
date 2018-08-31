@@ -1,9 +1,8 @@
 # Action Form
 
-One of the main use cases of the Action Grid module is to manage data submitted via Action Form. This includes querying, editing and deleting data. The integration is seamless. Simply add an Action Grid module to a page and select one of the Action Form modules to connect to. If you are interested how this works, read more below. 
+One of the main use cases of the Action Grid module is to manage data submitted via Action Form. This includes querying, editing and deleting data. The integration is seamless. Simply add an Action Grid module to a page and select one of the Action Form modules to connect to. If you are interested how this works, read more below.
 
-
-![](assets/action.png)
+![](../assets/action form ds.png)
 
 This integration was straightforward because Action Form saves all data in an internal reports table. In the past, this used to be an action that was added just like the rest of the actions. But then other functionalities were built on top of it such as the auto save or multistage submits (for example the PayPal action). In recent versions of Action Form you have the option to choose which fields are saved in the reports table. Be aware that only the included fields will appear in the Action Grid module. 
 
