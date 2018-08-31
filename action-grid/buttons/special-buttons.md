@@ -6,12 +6,13 @@ layout: default
 <div style="float: left; max-width: 100%; margin-bottom: 20px">
 In Action Grid 1.1 we've created a list of predefined special buttons per Item and per Grid section which are most commonly used in order to ease the user's task. On Item Button section if you click on Add Special Button there are three special buttons: Delete Item, Edit Item and View Item, each one of them is already customized and set with the appropriate actions - so, the Delete button has the Datasource Delete action, the View button has as action the Datasource View action, and the Edit button has the Datasource Edit action.  
 </div>
-<img style="margin-left:50px" src="assets/specialbuttons.png"/>
+
+![SpecialButtons1](\action-grid\buttons\assets\SpecialButtons1.png)
+![SpecialButtons2](\action-grid\buttons\assets\SpecialButtons2.png)
+
 <div style="float: left; max-width: 100%; margin-bottom: 20px">
-The Grid special buttons are Bulk Delete and Add Item which are already customized - the Bulk Delete button uses as general action the Datasource Refresh and as action for Each Selected Item the Datasource Delete action, therefore, you need to select the item you want to remove and just click on this button. The Add Item button uses a general action, the Datasource Add one and if the grid is linked to an Action Form, when you click on this button the form will open in a pop up page from where you can add new info. For when you have the grid linked to a database table or an SQL Query, and you want to add info in the grid, we depend on the Add URL/Edit URL options which have the purpose to 
-redirect the user to a page where an existing Action Form will use an 
-SQL statement in order to insert or to update the columns in the 
-database.
+The Grid special buttons are Bulk Delete and Add Item which are already customized - the Bulk Delete button uses as general action the Datasource Refresh and as action for Each Selected Item the Datasource Delete action, therefore, you need to select the item you want to remove and just click on this button. The Add Item button uses a general action, the Datasource Add one and if the grid is linked to an Action Form, when you click on this button the form will open in a pop up page from where you can add new info. For when you have the grid linked to a database table or an SQL Query, and you want to add info in the grid, we depend on the Add URL/Edit URL options which have the purpose to
+redirect the user to a page where an existing Action Form will use an SQL statement in order to insert or to update the columns in the database.
 </div>
 
 ## Popups
