@@ -22,7 +22,11 @@
     }, {
         "title": "URL Adapter",
         "ref": "urladapter",
-        "url": "/url-adapter/getting-started/index.html"
+        "url": "/url-adapter/index.html"
+    }, {
+        "title": "Tabs Pro",
+        "ref": "tabspro",
+        "url":"/tabs-pro/index.html"
     }]
 }, {
     "title": "Actions",
