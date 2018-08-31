@@ -1,8 +1,11 @@
-# Sql Query
+# Sql Advanced Query
 
 The SQL Query data source fills the need of managing data that comes from multiple tables or built using complex statements. Note that this data source is not currently heavily optimized and should be used with care, especially with large data sets. It doesn't use a Lucene index nor CTE \(Common Table Expressions\).
 
-![](assets/sql.png)
+![](../assets/advanced sql 1.png)
+![](../assets/advanced sql 2.png)
+![](../assets/advanced sql 3.png)
+![](../assets/advanced sql 4.png)
 
 Once the SQL Query data source is selected, additional configuration options will appear.
 
