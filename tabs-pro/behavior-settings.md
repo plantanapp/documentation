@@ -14,7 +14,7 @@ Tabs Pro can be configured to open tabs on click \(default\) or on mouse hover.
 
 ![](/tabs-pro/assets/action.jpg)
 
-### **Auto Scroll**
+### Auto Scroll
 
 By enabling this option you'll have Tabs Pro scroll automatically the tabs into view when the active tab changes.
 
@@ -24,7 +24,7 @@ This option will display the modules only after they are fully loaded and initia
 
 ![](/tabs-pro/assets/fully.loaded.jpg)
 
-### [Tab Persistence](/tabs-pro/usability-settings/tab-persistence.html){:target="_blank"}
+### Tab Persistence
 
-Defines how the active tab stays selected while the page reloads \(for example during a postback or while navigating back to the tabs page from a different page\)
+Defines how the active tab stays selected while the page reloads \(for example during a postback or while navigating back to the tabs page from a different page\). [Read more...](/tabs-pro/behavior-settings/tab-persistence.html){:target="_blank"}
 

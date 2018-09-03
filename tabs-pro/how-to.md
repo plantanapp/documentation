@@ -1,8 +1,8 @@
 # How To
 
-### [**How to Create a Multi-Step Workflow**](/how-to/create-a-multi-step-workflow.md)
+### How to Create a Multi-Step Workflow 
 
-TabsPro Modules provides a facility for building and handling multi-step workflows in your application.
+TabsPro Modules provides a facility for building and handling multi-step workflows in your application. [Read More...](/how-to/create-a-multi-step-workflow.md){:target="_blank"}
 
 ### How to customize Bootstrap
 
@@ -10,11 +10,7 @@ Bootstrap can be customized via .css - the strategy would be to find or write th
 
 ### How to add and style other Modules
 
-We have a short video clip posted [here](https://www.youtube.com/watch?v=_halGC-nKz4&feature=youtu.be&hd=1){:target="_blank"} which will guide you through the process of adding and styling other modules which will be fit for use in Tabs Pro.
-
-### How to manually build your own theme
-
-Click [here](https://www.youtube.com/watch?v=hBuhKu3G150){:target="_blank"} to see a video where we've made a step by step presentation in which you'll learn to use jQuery UI in order to build your own theme and upload it to Tabs Pro.
+We have a short video clip posted [here](//www.youtube.com/watch?v=_halGC-nKz4&feature=youtu.be&hd=1){:target="_blank"} which will guide you through the process of adding and styling other modules which will be fit for use in Tabs Pro.
 
 ### How to add your own icon
 
@@ -26,9 +22,9 @@ Then you will find it on the tab you want to add the icon to by selecting Icon \
 
 ### How to update Tabs Pro to Font Awesome latest version
 
-Tabs Pro 2.0 is updated and supports Font Awesome 4.6.3 library but in case you struggle with updating Tabs Pro to Font Awesome 4.6.3 here are the steps that you'd need to take:
+Tabs Pro is updated and supports Font Awesome 4.6.3 library but in case you struggle with updating Tabs Pro to Font Awesome 4.6.3 here are the steps that you'd need to take:
 
-Open \DesktopModules\TabsPro\ManageTabs.ascx and locate the list of icons. It's a simple UL [list](http://screencast.com/t/YhNiteeZjrd7){:target="_blank"}. Redo all icons with classes from new version. Then, overwrite the files under \DesktopModules\TabsPro\static\font-awesome.
+Open \DesktopModules\TabsPro\ManageTabs.ascx and locate the list of icons. It's a simple UL [list](//screencast.com/t/YhNiteeZjrd7){:target="_blank"}. Redo all icons with classes from new version. Then, overwrite the files under \DesktopModules\TabsPro\static\font-awesome.
 
 ### How to add the same module to multiple tabs
 
@@ -41,34 +37,33 @@ The Export does not export the other modules from the page. Only Tabs Pro settin
 How to use anchor tags inside tabs:
 
 If you want to access a specific tab and scroll the page to a div from that tab you have to associate the div id with ‘goto’ variable in query strings and add this script in page header:
+```
+<script>
 
-`<script>`
+$(document).ready(function(){
 
-`$(document).ready(function(){`
+if (document.location.search) {
 
-`if (document.location.search) {`
+var queries = {};
 
-`var queries = {};`
+$.each(document.location.search.substr(1).split('&'),function(c,q){
 
-`$.each(document.location.search.substr(1).split('&'),function(c,q){`
+var i = q.split('=');
 
-`var i = q.split('=');`
+queries[i[0].toString()] = i[1].toString();
 
-`queries[i[0].toString()] = i[1].toString();`
+});
 
-`});`
+if (queries) {
 
-`if (queries) {`
+$(window).scrollTop($("#" + queries.goto).offset().top);
 
-`$(window).scrollTop($("#" + queries.goto).offset().top);`
+}
+}
+})
 
-`}`
+</script>
+```
 
-`}`
-
-`})`
-
-`</script>`
-
-Example: [http://www.mywebsite.com/?goto=divid\#tabname](http://www.mywebsite.com/?goto=divid#tabname){:target="_blank"}
+Example: [//www.mywebsite.com/?goto=divid\#tabname](//www.mywebsite.com/?goto=divid#tabname){:target="_blank"}
 

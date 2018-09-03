@@ -27,6 +27,10 @@
         "title": "Tabs Pro",
         "ref": "tabspro",
         "url":"/tabs-pro/index.html"
+    }, {
+        "title": "NavXP",
+        "ref": "navxp",
+        "url":"/navxp/index.html"
     }]
 }, {
     "title": "Actions",
