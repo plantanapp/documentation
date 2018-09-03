@@ -7,7 +7,7 @@ layout: default
 - About this documentation
     - Navigate using menus or search
     - It reflects latest versions
-    - How to contribute to documentation
+    - How to [contribute](/getting-started/contribute.html) to documentation
 - [How to get help][help]
 - [Knowledge base - searching past tickets][Tickets]
 - [About Premium Support][Support]
