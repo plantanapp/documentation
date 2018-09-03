@@ -1,11 +1,7 @@
 [{
     "title": "Getting Started",
     "ref": "gettingstarted",
-    "url": "index.html",
-    "subpages": [{
-        "title": "How to contribute",
-        "url": "/getting-started/contribute.html"
-    }]
+    "url": "index.html"
 }, {
     "title": "Modules",
     "subpages": [{
