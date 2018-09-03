@@ -20,6 +20,10 @@ body {
   padding-left: 25vw;
 }
 
+#wrapper.toggled header {
+  width: 75vw;
+}
+
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
@@ -28,7 +32,7 @@ body {
   height: 100%;
   margin-left: -25vw;
   overflow-y: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -48,7 +52,6 @@ body {
   position: absolute;
   margin-right: -25vw;
 }
-
 
 /* Sidebar Styles */
 
@@ -112,19 +115,19 @@ body {
   }
 }
 
-@media(max-width:768px){
+@media(max-width:768px) {
   #wrapper.toggled {
     padding-left: 100vw;
   }
   #wrapper.toggled #sidebar-wrapper {
     width: 100vw;
   }
-  .sidebar-nav{
-    width:100vw;
-    font-size:11px;
+  .sidebar-nav {
+    width: 100vw;
+    font-size: 11px;
   }
-  .main-content{
-    padding-left:0
+  .main-content {
+    padding-left: 0
   }
   .sidebar-nav li {
     line-height: 20px;

@@ -1,6 +1,11 @@
 [{
     "title": "Getting Started",
-    "url": "index.html"
+    "ref": "gettingstarted",
+    "url": "index.html",
+    "subpages": [{
+        "title": "How to contribute",
+        "url": "/getting-started/contribute.html"
+    }]
 }, {
     "title": "Modules",
     "subpages": [{
@@ -26,19 +31,19 @@
     }, {
         "title": "Tabs Pro",
         "ref": "tabspro",
-        "url":"/tabs-pro/index.html"
+        "url": "/tabs-pro/index.html"
     }]
 }, {
     "title": "Actions",
     "ref": "common"
 }, {
     "title": "Add-ons",
-    "subpages":[{
+    "subpages": [{
         "title": "Email Sync",
-        "url" : "/add-ons/email-sync/index.html",
+        "url": "/add-ons/email-sync/index.html",
         "ref": "emailsync"
     }]
-}, { 
+}, {
     "title": "Integrations",
     "subpages": [{
         "title": "Clickatell",
