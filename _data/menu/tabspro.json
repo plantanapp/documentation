@@ -24,47 +24,42 @@
   ]
 },
 {
-  "title": "Integration",
-  "url": "/tabs-pro/integrations.html"
+  "title": "Layout Settings",
+  "url": "/tabs-pro/layout-settings.html",
+  "subpages": [{
+      "title": "Tabs Layout Options",
+      "url": "/tabs-pro/layout-settings/tabs-layout.html"
+    },
+    {
+        "title": "Admin View",
+        "url": "/tabs-pro/layout-settings/admin-view.html"
+    }
+    ]
 },
 {
-  "title": "Advanced Settings",
-  "url": "/tabs-pro/advanced-settings.html"
+  "title": "UI Settings",
+  "url": "/tabs-pro/ui-settings.html"
 },
 {
     "title": "Behavior Settings",
     "url": "/tabs-pro/behavior-settings.html",
     "subpages": [{
         "title": "Tab Persistence",
-        "url": "/tabs-pro/usability-settings/tab-persistence.html"
+        "url": "/tabs-pro/behavior-settings/tab-persistence.html"
       }
       ]
 },
 {
-    "title": "Layout Settings",
-    "url": "/tabs-pro/layout-settings.html",
-    "subpages": [{
-        "title": "Accordion Layout",
-        "url": "/tabs-pro/layout-settings/accordion-layout.html"
-      },
-      {
-          "title": "Admin View",
-          "url": "/tabs-pro/layout-settings/admin-view.html"
-      }
-      ]
+  "title": "Advanced Settings",
+  "url": "/tabs-pro/advanced-settings.html"
 },
 {
-    "title": "UI Settings",
-    "url": "/tabs-pro/ui-settings.html",
-    "subpages": [{
-        "title": "Widget Provider",
-        "url": "/tabs-pro/ui-settings/widget-provider.html"
-      }
-      ]
+  "title": "Items",
+  "url": "/tabs-pro/items.html"
 },
 {
-  "title": "Add icon to tabs",
-  "url": "/tabs-pro/add-icon-to-tabs.html"
+  "title": "Integration",
+  "url": "/tabs-pro/integrations.html"
 },
 {
   "title": "Responsiveness",

@@ -1,0 +1,45 @@
+﻿@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage<DnnSharp.NavXp.Core.Model.RenderDefinition>
+@{
+    //inits (There is no sense editing this)
+    List<DnnSharp.NavXp.Core.UserMenuListItem> Items = Model.Items;
+    DnnSharp.NavXp.Core.Model.TemplateDefinition Config = Model.Config;
+    string ModuleId = Model.ModuleId.ToString();
+    DnnSharp.NavXp.Core.Model.InstanceInfo IInfo = Model.InstanceInfo;
+    string Logo = Model.Logo;
+
+    //rendering
+    string html = "<ul class=\"navxp-level menu-level-0\">";
+    foreach (DnnSharp.NavXp.Core.UserMenuListItem item in Items) {
+        if(item.Children.Count > 0) {
+            html += "<li id=\"menu-item-" + item.TabId + "\"><a class=\"" + ((item.IsActive) ? "active " : "") + (item.Data.ContainsKey("CustomClass") ? item.Data["CustomClass"] : string.Empty) + "\" rel=\"" + item.LinkRelAttr + "\" title=\"" + item.AlternativeText + "\" href=\"" + item.URL + "\" target=\"" + item.Target + "\">" + (!string.IsNullOrEmpty(item.Icon) ? "<img class=\"nav-icon\" src=\"" + item.Icon + "\" aria-hidden=\"true\"></img>" : "") + item.Name + "</a></li>";
+            html += AppendChilds(item.Children, 1);
+        } else {
+            html += "<li id=\"menu-item-" + item.TabId + "\"><a class=\"" + ((item.IsActive) ? "active " : "") + (item.Data.ContainsKey("CustomClass") ? item.Data["CustomClass"] : string.Empty) + "\" rel=\"" + item.LinkRelAttr + "\" title=\"" + item.AlternativeText + "\" href=\"" + item.URL + "\" target=\"" + item.Target + "\">" + (!string.IsNullOrEmpty(item.Icon) ? "<img class=\"nav-icon\" src=\"" + item.Icon + "\" aria-hidden=\"true\"></img>" : "") + item.Name + "</a></li>";
+        }
+    }
+
+    html += "</ul>";
+
+    HtmlString Response = new HtmlString(html);
+ }
+
+@functions{  public string AppendChilds(List<DnnSharp.NavXp.Core.UserMenuListItem> Children,int level) {
+        string Chld = "<ul class=\"navxp-level menu-level-" + level + "\">";
+        foreach (DnnSharp.NavXp.Core.UserMenuListItem item in Children) {
+            if (item.Children.Count > 0) {
+                Chld += "<li id=\"menu-item-" + item.TabId + "\"><a class=\"" + ((item.IsActive) ? "active " : "") + (item.Data.ContainsKey("CustomClass") ? item.Data["CustomClass"] : string.Empty) + "\" rel=\"" + item.LinkRelAttr + "\" title=\"" + item.AlternativeText + "\" href=\"" + item.URL + "\" target=\"" + item.Target + "\">" + (!string.IsNullOrEmpty(item.Icon) ? "<img class=\"nav-icon\" src=\"" + item.Icon + "\" aria-hidden=\"true\"></img>" : "") + item.Name + "</a></li>";
+                Chld += AppendChilds(item.Children, ++level);
+            } else {
+                Chld += "<li id=\"menu-item-" + item.TabId + "\"><a class=\"" + ((item.IsActive) ? "active " : "") + (item.Data.ContainsKey("CustomClass") ? item.Data["CustomClass"] : string.Empty) + "\" rel=\"" + item.LinkRelAttr + "\" title=\"" + item.AlternativeText + "\" href=\"" + item.URL + "\" target=\"" + item.Target + "\">" + (!string.IsNullOrEmpty(item.Icon) ? "<img class=\"nav-icon\" src=\"" + item.Icon + "\" aria-hidden=\"true\"></img>" : "") + item.Name + "</a></li>";
+            }
+        }
+        Chld += "</ul>";
+        return Chld;
+
+    }
+    }
+
+<div class="navxp-menu-simple" id="navxp-menu navxp-@ModuleId" style="width:@IInfo.Width;z-index:@IInfo.zIndex">
+<a class="navbar-brand" style="float: inherit;" href="/"><img src="@Logo"/></a>
+@Response
+</div>

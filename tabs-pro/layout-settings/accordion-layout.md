@@ -12,7 +12,7 @@
 
 Tabs Pro allows Administrators to include multiple modules in the same tab. Because of this, some tabs can get quite big while others will remain smaller, making the navigation process more difficult.
 
-Luckily, Tabs Pro provides a solution to this, it integrates with [jQuery UI Accordion](http://jqueryui.com/accordion/){:target="_blank"} control and, with the new release, with Bootstrap, in order to display each module inside an Accordion section. So when one section expands, the other ones are hidden so that the space could be saved.![](/tabs-pro/assets/accordion.plain.jpg)
+Luckily, Tabs Pro provides a solution to this, it integrates with [jQuery UI Accordion](//jqueryui.com/accordion/){:target="_blank"} control and, with the new release, with Bootstrap, in order to display each module inside an Accordion section. So when one section expands, the other ones are hidden so that the space could be saved.![](/tabs-pro/assets/accordion.plain.jpg)
 
 The Accordion display can be combined with all the Tabs layout options so that a tab will be displayed horizontally on top or on bottom, or vertically to the right or to the left and also as accordion - this is what we call nested tabs.
 

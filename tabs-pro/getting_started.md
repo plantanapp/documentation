@@ -2,7 +2,7 @@
 
 #### Download & Install
 
-You can download the latest version of Tabs Pro from [MyDownloads](http://www.dnnsharp.com/my-account/my-downloads){:target="_blank"} Section. While you are on that page, you can also check the [changelog](https://www.dnnsharp.com/dnn/modules/tabs-pro/changelog){:target="_blank"} to see what's new.
+You can download the latest version of Tabs Pro from [MyDownloads](//www.dnnsharp.com/my-account/my-downloads){:target="_blank"} Section. While you are on that page, you can also check the [changelog](//www.dnnsharp.com/dnn/modules/tabs-pro/changelog){:target="_blank"} to see what's new.
 
 In order to install Tabs Pro module on your DNN website, you can follow the steps below:
 
