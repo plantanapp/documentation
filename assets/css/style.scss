@@ -191,6 +191,21 @@ header {
 }
 
 @media(max-width:768px) {
+
+    #wrapper.mobile-untoggled {
+        padding-left: 0vw !important;
+        #sidebar-wrapper {
+            width: 0vw !important ;
+          }
+          header{
+            width:100vw !important;
+        }
+        .sidebar-nav {
+            width: 0vw !important;
+            font-size: 11px !important;
+          }
+      }
+
     .page-header {
         width: 100%;
         padding: 35px 0 30px 0;

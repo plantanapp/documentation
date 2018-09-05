@@ -15,6 +15,7 @@
 
         gtag('config', 'UA-3523643-22');
     </script>
+    
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/simple-sidebar.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
@@ -23,7 +24,7 @@
 </head>
 
 <body class="container-fluid">
-    <div id="wrapper">
+    <div id="wrapper" class="toggled mobile-untoggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
@@ -45,7 +46,7 @@
                     <span class="menu-toggle"><i class="fas fa-bars"></i></span>
                     <h1 class="project-name"><span>{{ site.title | default:site.github.repository_name }}</span></h1>
                     <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
-                    <div class="input-group col-md-3">
+                    <div class="input-group col-md-3" style="margin-right:15px;">
                         <input type="text" class="form-control" id="search-input" placeholder="Search...">
                         <span><i class="fas fa-search" aria-hidden="true"></i></span>
                         <ul class="list-group list-unstyled" id="results-container"></ul>
