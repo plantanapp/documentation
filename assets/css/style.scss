@@ -1,7 +1,7 @@
---- 
 ---
- @import "{{ site.theme }}";
- 
+--- 
+@import "{{ site.theme }}";
+
 .main-content {
     margin: initial;
 }
@@ -19,21 +19,37 @@
     z-index: 9999;
 }
 
+.main-content-wrapper {
+    margin-top: 100px;
+}
+
 header {
     transition-property: width;
     transition-duration: 0.5s;
+
+    img {
+        width: 50%;
+    }
+}
+
+.show-md{
+    display: initial;
+}
+
+.hide-md{
+    display:none;
 }
 
 .project-name {
     font-size: 1.55rem;
-    flex-grow:2;
+    flex-grow: 2;
 }
 
 .page-header .menu-toggle {
     flex-grow: 1;
 }
 
-.menu-toggle > i {
+.menu-toggle>i {
     cursor: pointer;
 }
 
@@ -41,52 +57,56 @@ header {
     display: none;
 }
 
-#sidebar-wrapper::-webkit-scrollbar-track
-{
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	background-color: #F5F5F5;
+#sidebar-wrapper::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
 }
 
-#sidebar-wrapper::-webkit-scrollbar
-{
-	width: 6px;
-	background-color: #F5F5F5;
+#sidebar-wrapper::-webkit-scrollbar {
+    width: 6px;
+    background-color: #F5F5F5;
 }
 
-#sidebar-wrapper::-webkit-scrollbar-thumb
-{
-	background-color: gainsboro;
+#sidebar-wrapper::-webkit-scrollbar-thumb {
+    background-color: gainsboro;
 }
 
-.page-header>.input-group {
+.page-header .input-group {
     margin-bottom: 0;
     color: white;
+
     ::placeholder {
         /* Chrome, Firefox, Opera, Safari 10.1+ */
         color: white !important;
         opacity: 1 !important;
         /* Firefox */
     }
+
     :-ms-input-placeholder {
         /* Internet Explorer 10-11 */
         color: white !important;
     }
+
     ::-ms-input-placeholder {
         /* Microsoft Edge */
         color: white !important;
     }
+
     .form-control {
         color: inherit;
     }
-    span{
+
+    span {
         height: 25px;
         display: flex;
         align-items: center;
         // margin-left: -20px;
-      }
-      input{
+    }
+
+    input {
         height: 20px;
-      }
+    }
+
     ul {
         position: absolute;
         top: 30px;
@@ -104,8 +124,8 @@ header {
     padding: 0
 }
 
-.tree>ul>li>span{
-    margin-left:5px;
+.tree>ul>li>span {
+    margin-left: 5px;
 }
 
 .tree {
@@ -123,33 +143,9 @@ header {
     position: relative
 }
 
-// .tree li::before,
-// .tree li::after {
-//     content: '';
-//     left: -20px;
-//     position: absolute;
-//     right: auto
-// }
-
-// .tree li::before {
-//     border-left: 1px solid #999;
-//     bottom: 50px;
-//     height: 100%;
-//     top: 0;
-//     width: 1px
-// }
-
-// .tree li::after {
-//     border-top: 1px solid #999;
-//     height: 20px;
-//     top: 25px;
-//     width: 25px
-// }
-
 .tree li span {
     -moz-border-radius: 5px;
     -webkit-border-radius: 5px;
-    // border: 1px solid #999;
     border-radius: 5px;
     display: inline-block;
     padding: 3px 8px;
@@ -159,15 +155,6 @@ header {
 .tree li.parent_li>span {
     cursor: pointer
 }
-
-// .tree>ul>li::before,
-// .tree>ul>li::after {
-//     border: 0
-// }
-
-// .tree li:last-child::before {
-//     height: 30px
-// }
 
 .tree li.parent_li>span:hover,
 .tree li.parent_li>span:hover+ul li span,
@@ -192,24 +179,40 @@ header {
 
 @media(max-width:768px) {
 
+    .show-md {
+        display: none;
+    }
+
+    .hide-md {
+        display: initial;
+    }
+
+    .main-content {
+        padding-left: 10px;
+        padding-right: 33px;
+    }
+
+    .main-content-wrapper {
+        margin-top: 35px;
+    }
+
     #wrapper.mobile-untoggled {
         padding-left: 0vw !important;
+
         #sidebar-wrapper {
-            width: 0vw !important ;
-          }
-          header{
-            width:100vw !important;
-        }
-        .sidebar-nav {
             width: 0vw !important;
-            font-size: 11px !important;
-          }
-      }
+        }
+
+        header {
+            width: 100vw !important;
+        }
+    }
 
     .page-header {
         width: 100%;
-        padding: 35px 0 30px 0;
+        padding: 5px 0 10px 0;
     }
+
     #sidebar-wrapper .menu-toggle {
         display: inline-block;
         color: black;
@@ -219,26 +222,23 @@ header {
         top: 1vh;
         width: initial;
     }
-    #wrapper .menu-toggle{
-        padding: 5px 5px 5px 5px;
 
+    #wrapper .menu-toggle {
+        padding: 5px 5px 5px 5px;
+        font-size: 22px;
     }
-    // header .menu-toggle{
-    //     display:inline-block;
-    //     top:30vh;
-    //     position:absolute;
-    //     width: initial;
-    // }
+
     .project-name {
         font-size: 1.25rem;
         font-weight: 800;
     }
 }
-@media screen and (max-width: 42em){
+
+@media screen and (max-width: 42em) {
     .btn {
-        display: block; 
-        width: 100%; 
-        padding: 0.75rem; 
-        font-size: 0.9rem; 
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 0.9rem;
     }
 }
