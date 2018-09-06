@@ -1,8 +1,8 @@
 ### Profiles
 
-Profiles are used to create menus. It contains multiple settings fields, structured in 3 main categories: **Profile Settings**, **Profile Items** and **Permissions **\(if Menu Items Mode - Advanced\).
+Profiles are used to create menus. It contains multiple settings fields, structured in 3 main categories: **Profile Settings**, **Profile Items** and **Permissions**\(if Menu Items Mode - Advanced\).
 
-* **Profile Settings **- General settings for Profile, like Name, Description.
+* **Profile Settings** - General settings for Profile, like Name, Description.
 
   * **Profile Name**: Specify the name of the Profile. This is not public, it will be displayed just in Admin Panel;
 
@@ -20,20 +20,20 @@ Profiles are used to create menus. It contains multiple settings fields, structu
 
   * **Use MyTokens to Replace Tokens**: If this is ticked, you will be able to use MyTokens for menu items.
 
-* **Profile Items **- Using this setting you can build your menu. Simply drag from the left pane an element and drop it to the right pane. You can also edit every item individually by pressing the pencil icon available on hover for items on the right pane.
+* **Profile Items** - Using this setting you can build your menu. Simply drag from the left pane an element and drop it to the right pane. You can also edit every item individually by pressing the pencil icon available on hover for items on the right pane.
 
-* **Permissions **- Here you can select what user groups will see that specific menu. Note that this option is available on the **Profile Settings **only if **Menu Items** is set to "Advanced".
+* **Permissions** - Here you can select what user groups will see that specific menu. Note that this option is available on the **Profile Settings** only if **Menu Items** is set to "Advanced".
 
-Under the **Profile Items **you can also edit settings for every item, if you click the "Pencil" icon:
+Under the **Profile Items** you can also edit settings for every item, if you click the "Pencil" icon:
 
-* **Item Title**: Here you set the title of the item. You can use the tab name or tab title, or if you want, you set the name manually. For this, select **Input Caption **and a new field will be added below;
+* **Item Title**: Here you set the title of the item. You can use the tab name or tab title, or if you want, you set the name manually. For this, select **Input Caption** and a new field will be added below;
 * **Item Alternative Text**: The alternative text that will be added to the item;
-* **Rel Attribute**: Select the desired "**Rel**" attribute. Here you can see more info about this: [http://www.w3schools.com/tags/att\\_a\\_rel.asp](http://www.w3schools.com/tags/att\_a\_rel.asp);
-* **Link Target**: The target where you want the page to open. It can be **Default**, **Parent**, **Top **or **Named Frame**. Here you can find out more about "link" attribute: [http://www.w3schools.com/TAgs/att\\_link\\_target.asp](http://www.w3schools.com/TAgs/att\_link\_target.asp);
-* **Visibility**: The visibility of the item. It can be **Inherit**, **Visible**, **Hidden **or **Execute Token **if you want to show/hide the menu using complex scenarios;
+* **Rel Attribute**: Select the desired "**Rel**" attribute. Click [here](https://www.w3schools.com/TAGS/att_a_rel.asp){:target="_blank"} so you can see more info about this.
+* **Link Target**: The target where you want the page to open. It can be **Default**, **Parent**, **Top** or **Named Frame**. Click [here](https://www.w3schools.com/tags/att_link_target.asp){:target="_blank"} to find out more about "link" attribute.
+* **Visibility**: The visibility of the item. It can be **Inherit**, **Visible**, **Hidden** or **Execute Token** if you want to show/hide the menu using complex scenarios;
 * **Sync**: Optionally, you can use this setting to "**Sync All Descendants with DNN**";
 * **Initially Active**: Work in progress;
-* **Add Data:** This field allows transporting user inputted data for an item into the skin\(See more [here](/add-data.md "Here")\).
+* **Add Data**: This field allows transporting user inputted data for an item into the skin\(See more [here](/nav-xp/add-data.html){:target="_blank"}\).
 
 
 

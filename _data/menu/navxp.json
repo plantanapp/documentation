@@ -1,0 +1,36 @@
+[{
+    "title": "Getting Started",
+    "url": "/nav-xp/index.html"
+}, {
+    "title": "Breaking Changes",
+    "url": "/nav-xp/breaking-changes.html"
+},
+{
+    "title": "Profiles",
+    "url" : "/nav-xp/profiles.html",
+    "subpages": [{
+        "title": "Add Data",
+        "url": "/nav-xp/add-data.html"
+    }
+    ]
+}, {
+    "title": "Menu Settings",
+    "url": "/nav-xp/menu-settings.html"
+}, {
+    "title": "Menu Items",
+    "url": "/nav-xp/menu-items.html"
+}, {
+    "title": "Themes",
+    "url": "/nav-xp/themes.html",
+    "subpages": [{
+        "title": "Creating a Theme",
+        "url": "/nav-xp/creating-a-theme.html"
+    }]
+},  {
+    "title": "NavXP as a skin object",
+    "url": "/nav-xp/skin-object.html"
+},
+{
+    "title": "F.A.Q",
+    "url": "/nav-xp/faq.html"
+}]
