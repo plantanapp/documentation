@@ -3,26 +3,23 @@ layout: default
 ---
 # Getting Started
 
-<h1 style="float: left; max-width: 70%; margin-top:0;">
-What is Action Grid?
-</h1>
-<div style="float: left; max-width: 70%;">
+## What is Action Grid?
+
 Action Grid enables the integration of powerful tables from multiple sources into DNN projects, providing a simple, yet flexible mean of displaying data in a tabular format.
-</div>
-<div style="float: left; max-width: 70%;">
+
 The table style of a data grid allows viewing data in a modern looking responsive table completed by headers, sorting, filtering, searching and more actions.
-</div>
-<img style="max-width: 28%" src="assets/action-grid-300x388w.png" />
+
+<div style="text-align:center;"><img src="assets/action-grid-300x388w.png" /></div>
 
 ## Key Features
 
 * **Seamlessly Integrated with Action Form**
 
-  Action Grid enables the management of the submitted Action Form entries from different forms. It allows filtering, sorting, searching for records, editing or deleting records. 
+  Action Grid enables the management of the submitted Action Form entries from different forms. It allows filtering, sorting, searching for records, editing or deleting records.
 
 * **Manage Lots Of Data From Any Source**
 
-   Action Grid allows displaying data in a tabular format out of the box from each of the following data sources: Action Form forms, Database table, SQL Query. It’s also possible to add new custom data sources without needing the Action Grid source code. 
+   Action Grid allows displaying data in a tabular format out of the box from each of the following data sources: Action Form forms, Database table, SQL Query. It’s also possible to add new custom data sources without needing the Action Grid source code.
 
 * **Responsive and Touch Friendly**
 
@@ -54,7 +51,7 @@ In the steps below, we are going to show you how to add a the Action Grid module
 
 1. When the page you work on is opened, select the Modules option from the top menu, click on the Add New Module option.
 
-![](assets/ad-new-module.png)
+![add new module](assets/ad-new-module.png)
 
 2.Find avt.ActionGrid and with Drag&Drop option add the module to your page.
 
