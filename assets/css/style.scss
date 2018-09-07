@@ -1,7 +1,6 @@
 ---
 --- 
 @import "{{ site.theme }}";
-
 .main-content {
     margin: initial;
 }
@@ -32,12 +31,12 @@ header {
     }
 }
 
-.show-md{
+.show-md {
     display: initial;
 }
 
-.hide-md{
-    display:none;
+.hide-md {
+    display: none;
 }
 
 .project-name {
@@ -178,18 +177,12 @@ header {
 }
 
 @media(max-width:768px) {
-
     .show-md {
         display: none;
     }
 
     .hide-md {
         display: initial;
-    }
-
-    .main-content {
-        padding-left: 10px;
-        padding-right: 33px;
     }
 
     .main-content-wrapper {
