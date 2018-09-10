@@ -1,5 +1,6 @@
 [{
     "title": "Getting Started",
+    "ref": "gettingstarted",
     "url": "index.html"
 }, {
     "title": "Modules",
@@ -23,18 +24,26 @@
         "title": "URL Adapter",
         "ref": "urladapter",
         "url": "/url-adapter/index.html"
+    }, {
+        "title": "Tabs Pro",
+        "ref": "tabspro",
+        "url": "/tabs-pro/index.html"
+    }, {
+        "title": "NavXP",
+        "ref": "navxp",
+        "url":"/nav-xp/index.html"
     }]
 }, {
     "title": "Actions",
     "ref": "actions"
 }, {
     "title": "Add-ons",
-    "subpages":[{
+    "subpages": [{
         "title": "Email Sync",
-        "url" : "/add-ons/email-sync/index.html",
+        "url": "/add-ons/email-sync/index.html",
         "ref": "emailsync"
     }]
-}, { 
+}, {
     "title": "Integrations",
     "subpages": [{
         "title": "Clickatell",

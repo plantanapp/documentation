@@ -3,9 +3,20 @@
 
 <head>
     <meta charset="UTF-8"> {% seo %}
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-3523643-22"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-3523643-22');
+    </script>
+
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="{{ '/assets/css/simple-sidebar.css?v=' | append: site.github.build_revision | relative_url }}">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
@@ -14,12 +25,12 @@
 </head>
 
 <body class="container-fluid">
-    <div id="wrapper" class="toggled">
+    <div id="wrapper" class="toggled mobile-untoggled">
         <!-- Sidebar -->
         <div id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
-                    <a class="text-center" href="//dnnsharp.com">
+                    <a class="text-center" target="_blank" href="//dnnsharp.com">
                         <img src="https://static.dnnsharp.com/logo/DNNSharp-Logo-62x180.png" alt="logo">
                     </a>
                 </li>
@@ -34,21 +45,22 @@
             <div class="row">
                 <header class="page-header d-flex align-items-center justify-content-around" role="banner">
                     <span class="menu-toggle"><i class="fas fa-bars"></i></span>
-                    <h1 class="project-name"><span>{{ site.title | default:site.github.repository_name }}</span></h1>
+                    <h1 class="project-name">
+                        <span class="show-md">{{ site.title | default:site.github.repository_name }}</span>
+                        <img class="hide-md" src="https://static.dnnsharp.com/logo/DNNSharp%20Logo%20White%20small.png" alt="logo">
+                    </h1>
                     <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
-                    <div class="input-group col-md-3">
+                    <div class="input-group col-md-3" style="margin-right:20px;">
                         <input type="text" class="form-control" id="search-input" placeholder="Search...">
                         <span><i class="fas fa-search" aria-hidden="true"></i></span>
                         <ul class="list-group list-unstyled" id="results-container"></ul>
                     </div>
                 </header>
             </div>
-            <div class="row" style="margin-top: 125px;">
-                <div class="offset-sm-2 col-sm-9">
-                    <main id="content" class="main-content" role="main">
-                        {{ content }}
-                    </main>
-                </div>
+            <div class="row main-content-wrapper main-content-mw">
+                <main id="content" class="main-content mx-auto main-content-mw" role="main">
+                    {{ content }}
+                </main>
             </div>
         </div>
     </div>

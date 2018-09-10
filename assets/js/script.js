@@ -76,14 +76,13 @@
 
     $(".menu-toggle").click(function(e) {
         e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
+        window.matchMedia("(min-width: 768px)").matches ? $("#wrapper").toggleClass("toggled") : $("#wrapper").toggleClass("mobile-untoggled");
     });
 
     if (location.pathname !== '/' && location.pathname !== '/index.html') {
         let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);
         element.parent('span').addClass('tree-current-item');
-        window.matchMedia("(max-width: 768px)") && $("#wrapper").toggleClass("toggled");
     }
 
 })();

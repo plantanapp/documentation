@@ -1,0 +1,72 @@
+[{
+    "title": "Overview",
+    "url":"/tabs-pro/index.html"
+},
+{
+    "title": "Breaking Changes",
+    "url":"/tabs-pro/breaking-changes.html"
+},
+{
+    "title": "Getting Started",
+    "url": "/tabs-pro/getting_started.html"
+},
+{
+  "title": "Training Path",
+  "url": "/tabs-pro/training-path.html"
+},
+{
+  "title": "How To",
+  "url": "/tabs-pro/how-to.html",
+  "subpages": [{
+    "title": "Create a Multi-Step Workflow",
+    "url": "/tabs-pro/how-to/create-a-multi-step-workflow.html"
+  }
+  ]
+},
+{
+  "title": "Layout Settings",
+  "url": "/tabs-pro/layout-settings.html",
+  "subpages": [{
+      "title": "Tabs Layout Options",
+      "url": "/tabs-pro/layout-settings/tabs-layout.html"
+    },
+    {
+        "title": "Admin View",
+        "url": "/tabs-pro/layout-settings/admin-view.html"
+    }
+    ]
+},
+{
+  "title": "UI Settings",
+  "url": "/tabs-pro/ui-settings.html"
+},
+{
+    "title": "Behavior Settings",
+    "url": "/tabs-pro/behavior-settings.html",
+    "subpages": [{
+        "title": "Tab Persistence",
+        "url": "/tabs-pro/behavior-settings/tab-persistence.html"
+      }
+      ]
+},
+{
+  "title": "Advanced Settings",
+  "url": "/tabs-pro/advanced-settings.html"
+},
+{
+  "title": "Items",
+  "url": "/tabs-pro/items.html"
+},
+{
+  "title": "Integration",
+  "url": "/tabs-pro/integrations.html"
+},
+{
+  "title": "Responsiveness",
+  "url": "/tabs-pro/responsiveness.html"
+},
+{
+    "title": "Localization",
+    "url": "/tabs-pro/localization.html"
+}
+]
