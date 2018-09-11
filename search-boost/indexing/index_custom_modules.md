@@ -1,7 +1,6 @@
-#### Index Custom Modules
+# Index Custom Modules
 
-**Index Custom Modules
-**If you have a custom module that is not searchable it means it doesn't implement the ISearchable interface from DNN. This article will cover all options.
+If you have a custom module that is not searchable it means it doesn't implement the ISearchable interface from DNN. This article will cover all options.
 
 **If you own the Source Code**
 

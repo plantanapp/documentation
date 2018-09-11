@@ -1,8 +1,8 @@
-#### CSV File
+# CSV File
 
 The CSV file stores a report of all searches conducted in the Search Boost portal. Follow the Download CSV File section below to download and view the search report.
 
-**Download CSV File**
+## Download CSV File
 
 1. Click on the Download as CSV link, identified on Figure 1, to download the CSV file. 
 
@@ -10,7 +10,7 @@ The CSV file stores a report of all searches conducted in the Search Boost porta
 
   * The CSV file provides details about searches performed by users in the Search Boost portal. It includes several columns with specific details relevant to the each search.
   
-**CSV File Specifications**
+## CSV File Specifications
 
 The CSV file, displayed in Figure 2, provides specifications about each search, such as the search term, url id and the date of the search. The bullet list below Figure 2 specifies a description of each column.
 
@@ -20,19 +20,19 @@ The CSV file, displayed in Figure 2, provides specifications about each search, 
   
 The Id column specifies a unique number for each search. This number differentiates each search. It is identified in the search URL below as logid.  
 
-/SearchBoost_Page1.aspx?sb-search=Rules&sb-inst=390&sb-logid=1-ip5gyr74xm2fai7b 
+`/SearchBoost_Page1.aspx?sb-search=Rules&sb-inst=390&sb-logid=1-ip5gyr74xm2fai7b` 
 
   * **UrlId**
   
 The UrlId column specify a unique url id assigned to each search. A Urlid is different for each search. You can find the url id at the end of each search URL at the time the search is conducted. It is identified in the search URL below.
 
-/SearchBoost_Page1.aspx?sb-search=Rules&sb-inst=390&sb-logid=1-ip5gyr74xm2fai7b 
+`/SearchBoost_Page1.aspx?sb-search=Rules&sb-inst=390&sb-logid=1-ip5gyr74xm2fai7b` 
 
   * **InstanceId**
   
 The InstanceId column is an instance id number that uniquely identifies a device on the operating system. It is the same throughout each search. It is identified in the search URL below as inst=390. 
 
-/SearchBoost_Page1.aspx?sb-search=Rules&sb-inst=390&sb-logid=1-ip5gyr74xm2fai7b 
+`/SearchBoost_Page1.aspx?sb-search=Rules&sb-inst=390&sb-logid=1-ip5gyr74xm2fai7b` 
 
   * **PortalId**
   

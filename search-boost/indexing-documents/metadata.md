@@ -1,4 +1,4 @@
-#### Metadata
+# Metadata
 
 When Search Boost indexes documents to make them searchable it reads the filename and the document content and uses this to build an index  (set a title, a description, a URL for the result, etc). But there are times when you need to override these parameters. 
 
@@ -6,7 +6,7 @@ To accomplish this you need to create metadata which are XML files that sit next
 
 Below is an example of a metadata file:
 
-```
+```xml
 <?xml version="1.0" encoding="utf-8"?>
 <metadata>
     <title>Friendly Document Title</title>
@@ -41,7 +41,7 @@ Normally, Search Boost uses the file name to display as title in the search resu
   
 If not specified, Search Boost builds this from content. Supports My Tokens.
 
-  * **keywords
+  * **keywords**
 If the document doesn't contain some terms that you know are important in order to have the document better match the searches, then input additional keywords in this field. Supports My Tokens.
 
   * **boost**
@@ -78,3 +78,26 @@ Also, metadata makes it very powerful to integrate with other document managemen
 Important!
 
 Make sure your encoding is UTF8. For example, in Notepad++, set it like this:
+
+![](/search-boost/indexing-documents/assets/search-boost-metadata-encode.png)
+
+Also encode special characters such as 
+* & to &amp; 
+* < to &lt; 
+* > to &gt;
+
+These are all constraints imposed by the XML standard and the .NET implementation.
+
+**Per Folder Metadata**
+
+Starting with version 2.5 it's possible to specify a metadata XML per folder. This means it will be applied to all documents in that folder. The file should be named _.sbmetadata_ and it has the same structure as the per document XML except the title node.
+
+Search Boost loads metadata in following order:
+
+  1. First, it initializes a metadata object with defaults based on file name, file contents, etc.
+
+  2. If a folder metadata file exists, it's merged with current metadata; this means that only fields that exist in the folder metadata are copied to the document metadata. Categories are appended to existing set.
+
+  3. If document metadata file exists, it's merged with current metadata using same rules as described at point 2.
+
+This feature is very powerful to enable Faceted Search for documents, boost documents in a folder, or give some additional content to all documents in that folder.

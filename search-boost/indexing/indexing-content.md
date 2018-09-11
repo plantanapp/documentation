@@ -1,8 +1,9 @@
-#### Indexing
+# Indexing
 
 Definition: Search engine indexing collects, parses, and stores data to facilitate fast and accurate information retrieval. 
 
 In Search Boost there are 3 types of indexing:
+
 - normal indexing
 - incremental (delta) indexing
 - real-time indexing

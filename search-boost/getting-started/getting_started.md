@@ -1,4 +1,4 @@
-### Getting Started
+# Getting Started
 
 After installation you should see two modules in **Host-Extensions**: "**avt.SearchBoost.Input**" and "**avt.SearchBoost.Results**". 
 

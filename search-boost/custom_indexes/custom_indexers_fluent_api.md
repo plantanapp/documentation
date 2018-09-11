@@ -1,11 +1,11 @@
-#### Fluent API
+# Fluent API
 In **version 3** don't use the old class IndexItem, use the new class *IndexingJob* that should be added to the indexing queue (table *avtSearchBoost_IndexingQueue*) with *indexingJob.Save()*.
 
 In **version 2.6.0** we added a new API to simplify indexing content since the existing indexing API contained many parameters. it was also too difficult to build it all at once. The new Fluent API creates an **IndexItem** object that allows you to pass around to other components, as well as fill with content and metadata.
 
 The following code shows how data from custom rules are passed to the index using the new Fluent API.
 
-```javascript
+```js
 IndexItem item = new IndexItem();
     item = item
         .SetType("rule")
