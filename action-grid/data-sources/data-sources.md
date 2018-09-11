@@ -21,4 +21,4 @@ This requests a JSON from an API then uses it for generating the grid.
 
 * Credential Store
 
-![](../assets/data.png)
+![credential-store](../assets/credential-store.png)

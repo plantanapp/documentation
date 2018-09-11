@@ -15,9 +15,20 @@ The Grid special buttons are Bulk Delete and Add Item which are already customiz
 redirect the user to a page where an existing Action Form will use an SQL statement in order to insert or to update the columns in the database.
 </div>
 
+* Delete Item<br>
+  ![delete](\action-grid\buttons\assets\datasource-delete.png)
+* Edit Item<br>
+  ![delete](\action-grid\buttons\assets\datasource-edit.png)
+* View Item<br>
+  ![delete](\action-grid\buttons\assets\datasource-view.png)
+* Inline Edit<br>
+  ![delete](\action-grid\buttons\assets\datasource-inline-edit.png)
+* Inline Details<br>
+  ![delete](\action-grid\buttons\assets\datasource-detail-view.png)
+
 ## Popups
 
-Use the <font face="courier new, monospace">Open in Popup</font> option in the Add or Edit actions to have the forms open in popups. Note that if you use the [Action Form data source](http://action-grid.dnnsharp.com/data-sources/action-form), the form will open without the surrounding page elements. This is not true if you use any other data source unless you take special steps.
+Use the <font face="courier new, monospace">Open in Popup</font> option in the Add or Edit actions to have the forms open in popups. Note that if you use the [Action Form data source](../../action-form/overview.html){:target="_blank"}, the form will open without the surrounding page elements. This is not true if you use any other data source unless you take special steps.
 
 What we did to achieve this is we used the print functionality that ships with DNN. Say that we have a form on page <font face="courier new, monospace"> domain.com/form.aspx </font>, which is an Action Form. When using popups, we change this URL to be <font face="courier new, monospace">domain.com/form.aspx?mid=123&dnnprintmode=true&SkinSrc=[G]Skins/_default/No+Skin&ContainerSrc=[G]Containers/_default/No+Container&afcallparentonsubmit=angridEditDone</font>.
 
@@ -29,7 +40,7 @@ Of course, you can always just create a blank page for your form (using No Skin 
 
 One way to do it is create another page with the grid that you want to open in popup. This grid will accept ID as a query string parameter. On the main grid add a button and in the javascript for that button add the following.
 
-``` html
+``` js
 dnnModal.show('/Popupurl.aspx?ID=' + row.IDcolumnfrommaingrid + '&popUp=true',false,800,800,false);
 ```
 
@@ -39,7 +50,7 @@ Other parameters specify the size of the popup.
 
 Alternatively, use
 
-``` html
+``` js
 dnnModal.show('/popup.aspx?ID=' + row.ID + '&popUp=true',false,800,800,false);
 ```
 

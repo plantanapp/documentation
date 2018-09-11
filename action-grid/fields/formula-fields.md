@@ -27,20 +27,21 @@ This is a server side expression (C# and My Tokens. See More examples.)
 
 ## Formating
 
-![formatting](\action-grid\fields\assets\formatting.png)
+![formatting](/action-grid\fields\assets\formatting.png)
 
 ## Field Condition
 
-This is a server side expression (C# and My Tokens) that programatically hides an entire column. As it applies to entire the column, specific tokens that relate to a particular row are not available. See More examples.
+This is a server side expression (C# and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens)) that programatically hides an entire column. As it applies to entire the column, specific tokens that relate to a particular row are not available. See [More examples](/common/conditions.html).
 
 ## Cell Condition
 
-This is a server side expression (C# and My Tokens) that programatically hides an entire column. As it applies to entire the column, specific tokens that relate to a particular row are not available. See More examples.
+This is a server side expression (C# and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens)) that programatically hides an entire column. As it applies to entire the column, specific tokens that relate to a particular row are not available. See [More examples](/common/conditions.html).
 
 ## Enable Conditionally
 
-This boolean expression is used to determine if this field will be enabled (accepting input). A common example is [SomeField] == "Some Value". This field supports My Tokens.
+This boolean expression is used to determine if this field will be enabled (accepting input). A common example is [SomeField] == "Some Value". This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens).
+
 
 ## Enable Field Tooltip
 
-![tooltip](\action-grid\fields\assets\enable-tooltip.png)
+![tooltip](/action-grid\fields\assets\enable-tooltip.png)

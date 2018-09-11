@@ -6,25 +6,25 @@ layout: default
 
 ## How to add fields
 
-* [Add Fields]() 
-* [Add Template]()
-* [Add Formula]()
-* [Add Form]()
+* [Add Fields](#1)
+* [Add Template](#2)
+* [Add Formula](#3)
+* [Add Form](#4)
 
 ![add-fields](/action-grid/fields/assets/add-fields.png)
 
-## Add Fields
+## <a name="1"> </a> Add Fields
 
-![add-selected](\action-grid\fields\assets\add-selected.png)
+![add-selected](/action-grid\fields\assets\add-selected.png)
 
-## Add Template
+## <a name="2"> </a> Add Template
 
-![add-template](\action-grid\fields\assets\add-template.png)
+![add-template](/action-grid\fields\assets\add-template.png)
 
-## Add Formula
+## <a name="3"> </a> Add Formula
 
-![add-formula](\action-grid\fields\assets\add-formula.png)
+![add-formula](/action-grid\fields\assets\add-formula.png)
 
-## Add Form
+## <a name="4"> </a> Add Form
 
-![add-form](\action-grid\fields\assets\add-form.png)
+![add-form](/action-grid\fields\assets\add-form.png)

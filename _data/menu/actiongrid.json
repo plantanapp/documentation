@@ -10,28 +10,28 @@
         "title": "General Settings",
         "url": "/action-grid/general-settings.html"
     },{
-        "title": "Datasource",
+        "title": "Datasource Actions",
         "subpages": [{
-            "title": "Datasource refresh",
-            "url": "/common/datasource/datasource-refresh.html"
+            "title": "Datasource Refresh",
+            "url": "/action-grid/datasource/datasource-refresh.html"
         }, {
-            "title": "Datasource add",
-            "url": "/common/datasource/datasource-add.html"
+            "title": "Datasource Add",
+            "url": "/action-grid/datasource/datasource-add.html"
         }, {
-            "title": "Datasource delete",
-            "url": "/common/datasource/datasource-delete.html"
+            "title": "Datasource Delete",
+            "url": "/action-grid/datasource/datasource-delete.html"
         }, {
-            "title": "Datasource view",
-            "url": "/common/datasource/datasource-view.html"
+            "title": "Datasource View",
+            "url": "/action-grid/datasource/datasource-view.html"
         }, {
-            "title": "Datasource edit",
-            "url": "/common/datasource/datasource-edit.html"
+            "title": "Datasource Edit",
+            "url": "/action-grid/datasource/datasource-edit.html"
         }, {
-            "title": "Datasource inline-edit",
-            "url": "/common/datasource/datasource-inline-edit.html"
+            "title": "Datasource Inline-Edit",
+            "url": "/action-grid/datasource/datasource-inline-edit.html"
         }, {
-            "title": "Datasource detail view",
-            "url": "/common/datasource/datasource-detail-view.html"
+            "title": "Datasource Detail View",
+            "url": "/action-grid/datasource/datasource-detail-view.html"
         }]
     },
     {
@@ -106,6 +106,12 @@
         "subpages": [{
                 "title": "Overview",
                 "url": "/action-grid/buttons/index.html"
+            },{
+                "title":"Proprities",
+                "url":"/action-grid/buttons/proprieties.html"
+            },{
+                "title":"Actions",
+                "url":"/common/index.html"
             },
             {
                 "title": "Special Buttons",
@@ -144,10 +150,6 @@
             "title": "Sync with URL",
             "url": "/action-grid/capabilities/update-datasource-without-postback.html"
         }]
-    },
-    {
-        "title": "Conditions",
-        "url": "not-found.html"
     },
     {
         "title": "Debug",
@@ -193,39 +195,7 @@
                 ]
             }, {
                 "title": "Listing View",
-                "subpages": [{
-                        "title": "Filter",
-                        "url": "/action-grid/grid-template/listing-view/Filter.html"
-                    }, {
-                        "title": "Sort",
-                        "url": "/action-grid/grid-template/listing-view/Sort.html"
-                    }
-
-                ]
-            },
-            {
-                "title": "Calendar View",
-                "subpages": [{
-                        "title": "Filter",
-                        "url": "/action-grid/grid-template/listing-view/Filter.html"
-                    }, {
-                        "title": "Sort",
-                        "url": "/action-grid/grid-template/listing-view/Sort.html"
-                    }
-
-                ]
-            },
-            {
-                "title": "Carousel View",
-                "subpages": [{
-                        "title": "Filter",
-                        "url": "/action-grid/grid-template/listing-view/Filter.html"
-                    }, {
-                        "title": "Sort",
-                        "url": "/action-grid/grid-template/listing-view/Sort.html"
-                    }
-
-                ]
+                "url": "/action-grid/grid-template/listing-view.html"
             }
         ]
     }

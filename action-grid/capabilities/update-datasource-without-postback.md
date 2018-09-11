@@ -33,6 +33,3 @@ Below is an example of how this can be achieve
 * Use the '\[Get:id\]' token to filter the Grid's Datasource by adding it in a where condition from the SQL Query for retrieving Items, like: `Select * from Table5 where id='[Get:id]'`
 
 * every time an item in the HTML module is clicked on \(such as: Analyst, Sales Rep, Manager, Designer\) the Action Grid will update its datasource without a page load.
-
-
-
