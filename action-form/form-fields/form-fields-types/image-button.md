@@ -1,8 +1,12 @@
+---
+layout: default
+---
+
 # Image Button
 
 Displays a button with an image \(instead of text\) that can be pressed or clicked by the user.
 
-### Options
+## Options
 
 * **Causes Validation**
 

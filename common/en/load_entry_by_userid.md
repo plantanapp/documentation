@@ -10,4 +10,3 @@ Using this Action you can edit the following fields:
 * **UserId**. An user ID, username or email address that identifies the user. Leave blank to load data for current user. Can contain form tokens \(for example **\[Email\]**\) and **My Tokens**.
 
 ![](http://static.dnnsharp.com/documentation/load_entry_user_ID.png)
-

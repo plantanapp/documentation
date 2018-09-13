@@ -1,4 +1,4 @@
-## Execute Javascript
+# Execute Javascript
 
 This action will allow you to execute javascript code on a click of a button, similar to the code you usually write in the on change/click field of a button/form field.
 
@@ -10,6 +10,3 @@ With this action you will also be able to:
 * run multiple final actions available in the public APIs \(like initform, openpopup, closemodal,....\)
 
 ![](https://static.dnnsharp.com/documentation/execute_javascript.png)
-
-
-
