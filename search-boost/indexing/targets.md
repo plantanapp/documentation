@@ -1,4 +1,4 @@
-#### Targets
+# Targets
 
 Search Target allows you to have a Search Instance return results specific to the subcategory of the portal pages and folders. It tells SearchBoost what to search for. Users select pages and directories for the SearchBoost Instance. Search results are then retrieved from the pages and directories selected by the users.
 
@@ -6,7 +6,7 @@ Search Target allows you to have a Search Instance return results specific to th
 
 1. To define pages and folders for a Search Boost Instance login with a Super User Account.
 
-2. Then go to the Manage menu of the avt.searchboost.input module in the portal and select the Search Settings link. You will be taken to the Search Boost Control Panel.
+2. Then go to the Manage menu of the DnnSharp.searchboost.input module in the portal and select the Search Settings link. You will be taken to the Search Boost Control Panel.
 
 3. Then click Search Target in the Search Boost Control Panel. It will open the Search Target main page.
 

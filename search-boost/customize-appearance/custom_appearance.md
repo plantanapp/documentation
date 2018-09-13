@@ -1,4 +1,4 @@
-### Customize Appearance
+# Customize Appearance
 
 Search Boost uses templates to render both the input box and the search results. The templates provide full customization capabilities because they are made of:
 
@@ -15,8 +15,8 @@ There is more to appearance than templates. There are settings to control the pa
 
 Most of the appearance settings are grouped under UI Settings tab of the Search Boost Administration Console as shown below. Note this is subject to change in future releases as we plan to better separate settings based on topic. You can access the Search Boost Administration Console through the Search Input box on your Search Boost portal. Follow the directions below to open UI Settings.
 
-* ##### Open UI Settings
+1. **Open UI Settings**
 
- * In your Search Boost portal, go to your Search Input box and select the Manage > Search Settings option to open Search Boost Administration Console;
+2. In your Search Boost portal, go to your Search Input box and select the Manage > Search Settings option to open Search Boost Administration Console;
 
- * Click on the UI Settings tab to open UI Settings.
+3. Click on the UI Settings tab to open UI Settings.

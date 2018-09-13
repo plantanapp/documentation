@@ -1,4 +1,4 @@
-### Search Input Box
+# Search Input Box
 
 
 You can find the settings in  section:
@@ -15,7 +15,6 @@ This setting allows you to adjust the name of the Query String parameter that pa
 * **Filters -> Portal Filter**
 This allows the user to narrow searches to a specific portal. 
 
-#### Templates
-
+## Templates
 
 Search Boost comes with 6 input templates: default, default-white, expandable, material-design, material-design-purple and orange-wide.

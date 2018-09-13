@@ -1,10 +1,10 @@
-#### Debug Index
+# Debug Index
 
 **The need for Lucene Search Engine**
 
 Starting with version 2.0 Search Boost works exclusively with own indexing engine based on Lucene.NET. This gives us full control so we can overcome all limitations in DNN Search design. This is a good things as it results in faster, more accurate and powerful searches. Read more about Limitations of DNN Search on how Search Boost overcame them.
 
-Unlike the standard search store from DNN which saves the index in Database, Lucene saves it on disk. This is saved under \Portals\{portal id}\Cache\SearchBoost\{instance id}\SearchIndex folder. 
+Unlike the standard search store from DNN which saves the index in Database, Lucene saves it on disk. This is saved under `\Portals\{portal id}\Cache\SearchBoost\{instance id}\SearchIndex` folder. 
 
 Note that saving the index on disk has a few notable advantages compared to the database because of:
 * **Scalability**. Simply put, MS SQL doesn't scale (at least not horizontally across multiple machines). The disk storage these days is extremely scalable and Lucene also supports reading indexes from multiple locations (although Search Boost doesn't support this for now)
@@ -14,9 +14,7 @@ Note that saving the index on disk has a few notable advantages compared to the 
 * **Faster Access**. Lucene database was especially designed for storing indexed content for the purpose of searching it. A MSSQL database is a generic relational structure with a lot of overhead in terms of security, transactions and integrity checks.
 The highlights above relate only to the storage structure and not the features. Lucene is a lot more powerful than DNN Search and comes with features such as fuzzy search, phrase search, advanced search syntax and so on.
 
-
-##### Check that Search Boost "sees" your files as expected
-
+## Check that Search Boost "sees" your files as expected
 
 Besides indexing plain content from modules, databases or web pages, Search Boost can also index documents that are binary files. This means that there are special libraries designated with reading and translating these binary files to plain text that can afterwards be indexed and searched.
 
@@ -26,7 +24,7 @@ For this purpose we created a test script that allows you to upload a file and i
 
 To test document indexers:
 
-1. Open you portal at http://yoursite/DesktopModules/DnnSharp/SearchBoost/TestDocIndexer.aspx
+1. Open you portal at `http://yoursite/DesktopModules/DnnSharp/SearchBoost/TestDocIndexer.aspx`
 If you're not logged in, you'll be asked to do so before being able to do the tests
 
 2. Use the Browse Button to locate the file you want to test and hit Extract Content.
@@ -35,29 +33,29 @@ If you're not logged in, you'll be asked to do so before being able to do the te
 
 4. If you don't see the content you expect, or you see an error, please contact us for support. But before that, make sure that for PDFs you also try the PDF Box extension downloadable from our site. And for other document types, make sure you have appropriate IFilter packages installed.
 
-##### Analyze Lucene Index with Luke
+## Analyze Lucene Index with Luke
 
 Luke is a Java application capable of opening the index and do all sort of simple or advanced queries that are supported by Lucene. You can read more about luke and download it at code.google.com/p/luke.
 
-When you open Luke it will ask for the indexing folder. Locate the folder \Portals\{portal id}\Cache\SearchBoost\{instance id}\SearchIndex{largest number}.
+When you open Luke it will ask for the indexing folder. Locate the folder `\Portals\{portal id}\Cache\SearchBoost\{instance id}\SearchIndex{largest number}`.
 
-The simplest thing you can do is to see all content indexed for a portal. Go to Search tab, and type PortalId:0 in the search box then hit the Search button. There are arrows to navigate between result pages. 
+The simplest thing you can do is to see all content indexed for a portal. Go to Search tab, and type PortalId:0 in the search box then hit the Search button. There are arrows to navigate between result pages.
 
-In Luke you can use the full search syntax of Lucene which is not available in Search Boost (but you can create one with DNN Sharp Advanced Search). 
+In Luke you can use the full search syntax of Lucene which is not available in Search Boost (but you can create one with DNN Sharp Advanced Search).
 For a quick help read about Query Parser Syntax.
 
 Note that Lucene is very complex and requires some reading before mastering it. Normally you don't need to do this because Search Boost takes care of everything unless you're interested to know how things work under the hood or determine how the contend could be better searched and ask us to implement some features. For a comprehensive reading we recommend Lucene in Action, Second Edition.
 
 ![](/search-boost/developer/assets/dnn-search-debug-lucene-luke.png)
 
-##### Submit Debug Information for Further Investigation
+## Submit Debug Information for Further Investigation
 
 If your search does not behave as you'd expect please contact us for support. We'll most likely need you to do the following in order to have a complete view of the issue:
 
   1. Go to Search Boost -> General Settings -> Advanced Settings  and set both loggers to Debug then save settings.
 
   2. Click Clear Index and wait for success message.
-This only wipes the Search Index, which is a database located under \Portals\0\Cache\SearchBoost\{instance id}\SearchIndex\ folder.
+This only wipes the Search Index, which is a database located under `\Portals\0\Cache\SearchBoost\{instance id}\SearchIndex\ folder`.
 
   3. Click Index Content and wait for success message.
 

@@ -1,6 +1,6 @@
-#### Install IFilter
+# Install IFilter
 
-IMPORTANT: Starting with version 2.4 you can index PDF files using the PDFBox extension that you can download from our website at [http://www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx](http://www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx)  
+**IMPORTANT**: Starting with version 2.4 you can index PDF files using the PDFBox extension that you can download from our website at [http://www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx](http://www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx)  
 If you have this extension you don't need to install the PDF Ifilter anymore.
 
 Search Boost can index documents both plain text files and binary documents such as PDFs or Word documents. But in order for Search Boost to be able to read the contents of binary files, it needs IFIlter packages installed on the server.

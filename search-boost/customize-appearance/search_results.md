@@ -1,14 +1,15 @@
-#### Search Results
+# Search Results
 
 Search results are rendered by the *avt.SearchBoost.Results* located in the Modules menu. To add the Search Results module:
+
 1. Click on the Modules menu.
 2. Then select All Categories from the Category drop down menu.
-3.  In the Module drop down menu, select avt.SearchBoost.Results.
+3. In the Module drop down menu, select _avt.SearchBoost.Results_.
 4. Then click the Add Module button. 
 The template is configured in UI Settings in the Search Boost Control Panel. Note that unlike the Search Box template this type of template is less restrictive. Some templates are capable of building photo albums or product listings.
-  * You can open the Search Boost Control Panel by clicking on Manage > Settings on the Search Input Module. Here you will see search settings specifications for the Search Results module.
+  * You can open the Search Boost Control Panel by clicking on _Manage > Settings_ on the _Search Input Module_. Here you will see search settings specifications for the _Search Results_ module.
 
-##### Settings
+## Settings
 
 You can the access settings for search results by opening Search Boost Control Panel. You would need to click on Manage > Search Settings in the Search Results module. In the Search Boost Control Panel, click on the UI Settings tab to locate the Search Results settings.
 
@@ -25,15 +26,15 @@ The following settings in UI Settings affect the search results:
 
 * **Maximum Description Length**. This option determines how long the description is allowed. If descriptions are bigger than the value specified in this field then it is stripped down.
 
-##### Templates
+## Templates
 
 Search Boost comes with only one template for the results page - actually there is two, but the other one just displays Page Title instead of Module Title for each search result. We plan to extend this in the future and provide other templates out-of-the-box as well for the most common scenarios.
 
 Visually, the search results are rendered like the image below. Though it is possible to customize appearance by changing the template or create new templates. This is covered in the next section. 
 
-![](search-results.png)
+![](/search-boost/customize-appearance/assets/search-results.png)
 
-##### Tokens
+## Tokens
 
 Search Boost can replace tokens in results. This option can be configured from the General Settings window. You can open the General Settings window in the Search Boost Control Panel.
 

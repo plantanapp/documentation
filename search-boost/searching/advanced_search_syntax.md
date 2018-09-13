@@ -1,7 +1,6 @@
-#### Advanced Search Syntax
+# Advanced Search Syntax
 
 Search Boost perms searches based on configuration. However, it still allows some flexibility for end users to influence how searches at performed. Below are a few examples.
-
 
   * *search terms*: Searches for entries that contain either search or terms. Higher precedence is given to content that contains both. Note that this is configurable through the multi-word search setting.
 
