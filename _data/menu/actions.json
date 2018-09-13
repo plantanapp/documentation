@@ -12,6 +12,9 @@
         "title": "Execute Token"
     }]
 }, {
+    "title":"Conditions",
+    "url":"/common/conditions.html"
+}, {
     "title": "Context",
     "subpages": [{
         "title": "Inject Form Data",
@@ -53,31 +56,7 @@
   }, {
       "title": "Delete Folder"
   }]
-}, {
-    "title": "Datasource",
-    "subpages": [{
-        "title": "Datasource refresh",
-        "url": "/common/datasource/datasource-refresh.html"
-    }, {
-        "title": "Datasource add",
-        "url": "/common/datasource/datasource-add.html"
-    }, {
-        "title": "Datasource delete",
-        "url": "/common/datasource/datasource-delete.html"
-    }, {
-        "title": "Datasource view",
-        "url": "/common/datasource/datasource-view.html"
-    }, {
-        "title": "Datasource edit",
-        "url": "/common/datasource/datasource-edit.html"
-    }, {
-        "title": "Datasource inline-edit",
-        "url": "/common/datasource/datasource-inline-edit.html"
-    }, {
-        "title": "Datasource detail view",
-        "url": "/common/datasource/datasource-detail-view.html"
-    }]
-}, {
+},{
     "title": "DNN Sharp",
     "subpages": [{
         "title": "Open Action Form Popup",

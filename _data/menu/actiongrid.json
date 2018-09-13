@@ -1,19 +1,43 @@
 [{
-      "title": "Overview",
-      "url": "/action-grid/index.html"
-  },
-  {
-    "title": "Breaking Changes",
-    "url": "/action-grid/breaking-changes.html"
-},
-{
-    "title": "General Settings",
-    "url": "/action-grid/general-settings.html"
-},
-{
-    "title": "Data Sources",
-    "url": "/action-grid/data-sources/data-sources.html",
-    "subpages": [{
+        "title": "Overview",
+        "url": "/action-grid/index.html"
+    },
+    {
+        "title": "Breaking Changes",
+        "url": "/action-grid/breaking-changes.html"
+    },
+    {
+        "title": "General Settings",
+        "url": "/action-grid/general-settings.html"
+    },{
+        "title": "Datasource Actions",
+        "subpages": [{
+            "title": "Datasource Refresh",
+            "url": "/action-grid/datasource/datasource-refresh.html"
+        }, {
+            "title": "Datasource Add",
+            "url": "/action-grid/datasource/datasource-add.html"
+        }, {
+            "title": "Datasource Delete",
+            "url": "/action-grid/datasource/datasource-delete.html"
+        }, {
+            "title": "Datasource View",
+            "url": "/action-grid/datasource/datasource-view.html"
+        }, {
+            "title": "Datasource Edit",
+            "url": "/action-grid/datasource/datasource-edit.html"
+        }, {
+            "title": "Datasource Inline-Edit",
+            "url": "/action-grid/datasource/datasource-inline-edit.html"
+        }, {
+            "title": "Datasource Detail View",
+            "url": "/action-grid/datasource/datasource-detail-view.html"
+        }]
+    },
+    {
+        "title": "Data Sources",
+        "url": "/action-grid/data-sources/data-sources.html",
+        "subpages": [{
             "title": "Overview",
             "url": "/action-grid/data-sources/data-sources.html"
         }, {
@@ -38,24 +62,67 @@
             "title": "Credential Store",
             "url": "/action-grid/data-sources/credential-store.html"
         }]
-}, 
-{
-    "title": "Buttons",
-    "url": "/action-grid/buttons/index.html",
-    "subpages": [{
+    },
+    {
+        "title": "Fields",
+        "url": "/action-grid/fields/overview.html",
+        "subpages": [{
             "title": "Overview",
-            "url": "/action-grid/buttons/index.html"
-        },
-        {
-            "title": "Special Buttons",
-            "url": "/action-grid/buttons/special-buttons.html"
-        }
-    ]
-},
-{
-    "title": "Capabilities",
-    "url": "/action-grid/capabilities/index.html",
-    "subpages": [{
+            "url": "/action-grid/fields/overview.html"
+        }, {
+            "title": "Data Source Fields",
+            "url": "/action-grid/fields/data-source-fields.html"
+        }, {
+            "title": "Formatting",
+            "url": "/action-grid/fields/formatting.html"
+        }, {
+            "title": "Template Fields",
+            "url": "/action-grid/fields/template-fields.html"
+        }, {
+            "title": "Formula Fields",
+            "url": "/action-grid/fields/formula-fields.html"
+        }, {
+            "title": "Form Fields",
+            "url": "/action-grid/fields/form-fields.html",
+            "subpages": [{
+
+                "title": "Form Builder",
+                "url": "/action-grid/form-builder.html",
+                "subpages": [{
+                        "title": "Star Rating",
+                        "url": "/action-grid/star-rating.html"
+                    },
+                    {
+                        "title": "Item picker tree view",
+                        "url": "/action-grid/item-picker-tree-view.html"
+                    }
+                ]
+            }]
+        }]
+    },
+    {
+        "title": "Buttons",
+        "url": "/action-grid/buttons/index.html",
+        "subpages": [{
+                "title": "Overview",
+                "url": "/action-grid/buttons/index.html"
+            },{
+                "title":"Proprities",
+                "url":"/action-grid/buttons/proprieties.html"
+            },{
+                "title":"Actions",
+                "url":"/common/index.html"
+            },
+            {
+                "title": "Special Buttons",
+                "url": "/action-grid/buttons/special-buttons.html"
+            }
+        ]
+    },
+    {
+        "title": "Capabilities",
+        "url": "/action-grid/capabilities/index.html",
+        "subpages": [{
             "title": "Overview",
             "url": "/action-grid/capabilities/index.html"
         }, {
@@ -82,103 +149,54 @@
         }, {
             "title": "Sync with URL",
             "url": "/action-grid/capabilities/update-datasource-without-postback.html"
-        }
-    ]
-}, 
-{
-  "title": "Conditions",
-  "url": "not-found.html"
-},
-{
-  "title": "Debug",
-  "url": "/action-grid/debug.html"
-},
-{
-  "title": "Examples",
-  "url": "/action-grid/examples.html"
-},
-{
-  "title": "Faqs",
-  "url": "/action-grid/faqs.html"
-},
-{
-  "title": "Form Builder",
-  "url": "/action-grid/star-rating.html",
-  "subpages": [{
-          "title": "Star Rating",
-          "url": "/action-grid/star-rating.html"
-      },
-      {
-          "title": "Item picker tree view",
-          "url": "/action-grid/item-picker-tree-view.html"
-      }
-  ]
-},
-{
-  "title": "Formatting",
-  "url": "/action-grid/formatting.html"
-},
-{
-      "title": "Grid Template",
-      "url": "/action-grid/grid-template/index.html",
-      "subpages": [{
-              "title": "Overview",
-              "url": "/action-grid/grid-template/index.html"
-          },
-          {
-              "title": "Grid View",
-              "subpages": [{
-                      "title": "Overview",
-                      "url": "/action-grid/grid-template/grid-view/index.html"
-                  },
-                  {
-                      "title": "Filtering",
-                      "url": "/action-grid/grid-template/grid-view/filtering.html"
-                  },
-                  {
-                      "title": "Selection",
-                      "url": "/action-grid/grid-template/grid-view/Selection.html"
-                  },
-                  {
-                      "title": "Sort",
-                      "url": "/action-grid/grid-template/grid-view/Sort.html"
-                  }
-              ]
-          }, {
-              "title": "Listing View",
-              "subpages": [{
-                      "title": "Filter",
-                      "url": "/action-grid/grid-template/listing-view/Filter.html"
-                  }, {
-                      "title": "Sort",
-                      "url": "/action-grid/grid-template/listing-view/Sort.html"
-                  }
-
-              ]
-          },
-          {
-              "title": "Calendar View",
-              "subpages": [{
-                      "title": "Filter",
-                      "url": "/action-grid/grid-template/listing-view/Filter.html"
-                  }, {
-                      "title": "Sort",
-                      "url": "/action-grid/grid-template/listing-view/Sort.html"
-                  }
-
-              ]
-          },
-          {
-              "title": "Carousel View",
-              "subpages": [{
-                      "title": "Filter",
-                      "url": "/action-grid/grid-template/listing-view/Filter.html"
-                  }, {
-                      "title": "Sort",
-                      "url": "/action-grid/grid-template/listing-view/Sort.html"
-                  }
-
-              ]
-          }
-      ]
-}]
+        }]
+    },
+    {
+        "title": "Debug",
+        "url": "/action-grid/debug.html"
+    },
+    {
+        "title": "Examples",
+        "url": "/action-grid/examples.html"
+    },
+    {
+        "title": "Faqs",
+        "url": "/action-grid/faqs.html"
+    },
+    {
+        "title": "Formatting",
+        "url": "/action-grid/formatting.html"
+    },
+    {
+        "title": "Grid Template",
+        "url": "/action-grid/grid-template/index.html",
+        "subpages": [{
+                "title": "Overview",
+                "url": "/action-grid/grid-template/index.html"
+            },
+            {
+                "title": "Grid View",
+                "subpages": [{
+                        "title": "Overview",
+                        "url": "/action-grid/grid-template/grid-view/index.html"
+                    },
+                    {
+                        "title": "Filtering",
+                        "url": "/action-grid/grid-template/grid-view/filtering.html"
+                    },
+                    {
+                        "title": "Selection",
+                        "url": "/action-grid/grid-template/grid-view/Selection.html"
+                    },
+                    {
+                        "title": "Sort",
+                        "url": "/action-grid/grid-template/grid-view/Sort.html"
+                    }
+                ]
+            }, {
+                "title": "Listing View",
+                "url": "/action-grid/grid-template/listing-view.html"
+            }
+        ]
+    }
+]
