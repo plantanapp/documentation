@@ -280,7 +280,6 @@
     }]
 }, {
     "title": "Form Actions",
-    "url": "https://action-form.guide.dnnsharp.com/",
     "subpages": [{
         "title": "Code",
         "url": "/action-form/form-actions/code.html",
@@ -322,6 +321,15 @@
         }, {
             "title": "Get Credentials",
             "url": "/action-form/form-actions/credential-store/get-credential.html"
+        }, {
+            "title": "Get User Credential",
+            "url": "/action-form/form-actions/credential-store/TODO.html"
+        }, {
+            "title": "Add Group",
+            "url": "/action-form/form-actions/credential-store/TODO.html"
+        }, {
+            "title": "Find Group",
+            "url": "/action-form/form-actions/credential-store/TODO.html"
         }]
     }, {
         "title": "Data",
@@ -386,9 +394,6 @@
             "title": "Close module Popup",
             "url": "/action-form/form-actions/dnn-sharp/close-module-popup.html"
         }]
-    }, {
-        "title": "Email",
-        "url": "/action-form/form-actions/email.html"
     }, {
         "title": "Entities",
         "url": "/action-form/form-actions/entities.html",
