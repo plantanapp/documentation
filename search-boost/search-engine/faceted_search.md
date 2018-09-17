@@ -1,4 +1,4 @@
-### Faceted Search
+# Faceted Search
 
 Faceted Search is a new feature added in 2.5 that allows users to filter down results based on categories. You can think of this as a combination of traditional search and category/menu browsing.
 
@@ -7,9 +7,10 @@ So basically the task to enable Faceted Search consists of setting the right cat
 A classic example is show in the image below:
 
 ![](/search-boost/search-engine/assets/sb-faceted-search.png)
+
 Read sections below for more information on how to create categories.
 
-#### Subcategories
+## Subcategories
 
 Before diving into specific categories you should know that Search Boost supports any number depth for subcategories. The effect is that after user clicks a category, then the subcategories of that category will be displayed and so on until there are no more categories to drill down.
 
@@ -18,7 +19,7 @@ Note the forward slash that delimits the levels.
 
 By putting a search item in a subcategory it will automatically be included in all parent categories as well.
 
-#### Categories for DNN Modules
+## Categories for DNN Modules
 
 Content from modules that implement ISearchable can be placed under specific categories by using the built-in tags from DNN. Search Boost will take into account tags specified both under page settings and module settings.
 
@@ -30,14 +31,14 @@ Besides categories you also get to specify custom fields (that are available in 
 
 The categories are saved at indexing time, so changes will not reflect immediately. You can use the manual indexing functions in SB Admin if you need the content to reindex right away.
 
-#### Categories for documents
+## Categories for documents
 
 For documents, categories can be easily added through the metadata feature.
 You can specify the metadata per folder - in which case it will apply for all documents indexed from that particular folder - or for an individual document. If both are specified, they are merged but the metadata per document takes priority.
 
 Here is an example of metadata that adds 4 categories to the document(s):
 
-```html
+```xml
 <metadata>
  <categories>
      <cat>Places</cat>
@@ -47,7 +48,7 @@ Here is an example of metadata that adds 4 categories to the document(s):
     </metadata>
 ```
 
-##### Categories for Custom Database Rules
+### Categories for Custom Database Rules
 
 Custom rules have been extended to allow a list of categories for each row. This can be achieved two ways:
 * **By using a database column**

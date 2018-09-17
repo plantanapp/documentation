@@ -1,15 +1,15 @@
-### Configuration and Capabilities
+# Configuration and Capabilities
 
-We decided to use popular and mature Lucene library instead of developing our own engine and reach same pit falls as the DotNetNuke standard search. Lucene comes with lots of features and advanced syntax capabilities. We only integrated a handful of these which are the most popular and have been requested by our customers. These options are used to tweak the behavior of the search engine to achieve all kinds of setups. 
+We decided to use popular and mature Lucene library instead of developing our own engine and reach same pit falls as the DNN standard search. Lucene comes with lots of features and advanced syntax capabilities. We only integrated a handful of these which are the most popular and have been requested by our customers. These options are used to tweak the behavior of the search engine to achieve all kinds of setups. 
 
-#### Autocomplete Options Count
+## Autocomplete Options Count
 
 ![](/search-boost/search-engine/assets/Autocomplete_Options_Count.png)
 
 
 This option allows selecting the number of options the autocomplete feature should display at a maximum. The options are built from the content that is already indexed.
 
-#### Number of Suggestions
+## Number of Suggestions
 
 ![](/search-boost/search-engine/assets/Number_Of_Suggestions.png)
 
@@ -17,15 +17,15 @@ When searches return 0 results Search Boost can be configured to give hints to t
 
 The way it works, Search Boost builds a second index with all the words and runs a special spell check plugin that returns similar terms. These terms are surely to bring results because they were added there from the main indexed content. 
 
-One thing to note is that the lower is the Fuzzy Search similarity, the less likely this option will be visible because searches will automatically match similar terms from the start. 
+One thing to note is that the lower is the Fuzzy Search similarity, the less likely this option will be visible because searches will automatically match similar terms from the start.
 
-#### Enable More Like This
+## Enable More Like This
 
 ![](/search-boost/search-engine/assets/Enable_More_Like_This.png)
 
 When this option is enabled, each result will have a "More Like This" link that when clicked returns simillar results based on the selected number of repeated terms. If the Contextual Highlight is enabled, you will see which words have been considered. For a words to be considered it must appear N times inside the content of the original result. Common words configured with the Stop Words option described later in this section will be ignored.
 
-#### Fuzzy Search
+## Fuzzy Search
 
 ![](/search-boost/search-engine/assets/Fuzzy_Search_Search_Boost.png)
 
@@ -35,7 +35,7 @@ This option is specified as a similarity percent, where 100% will disable the Fu
 
 This is very powerful feature but we're also planning additional features around this like language corrections, auto suggestions and stemming.
 
-#### WildCard(*) Search
+## WildCard(*) Search
 
 ![](/search-boost/search-engine/assets/WildCard_Search.png)
 
@@ -45,19 +45,20 @@ The wild card character can appear at end or inside of search terms, it can't be
 
 Note that wildcard search is not compatible with the Highlighter or Stem Filter!
 
-#### Multi Word Searches
+## Multi Word Searches
 
 ![](/search-boost/search-engine/assets/Multi_Word_Searches.png)
 
 Define standard behavior when the search contains more than one word. 
 
 The behavior is defined as a logical operation that determine which results are considered based on how the search term appear inside content. Available options are:
+
 * **ANY** - It will match results that contain any of the words
 * **ALL** - It will match results that contain all of the words
 * **EXACT** - It will match results that contain the exact phrase (using the specified Slop index)
 Note that exact match is still possible in all cases by enclosing the words in double quotes.
 
-#### Highlight Search Terms in Results
+## Highlight Search Terms in Results
 
 ![](/search-boost/search-engine/assets/Highlight_Search_Term_in-Results.png)
 
@@ -75,24 +76,24 @@ Change the value of this option to define the tolerance to noise of the exact ph
 
 If this option is disabled, Search Boost no longers matches keywords in the content. Use this to create for example a 'search titles only' function.
 
-#### Search Additional Fields
+## Search Additional Fields
 
 Normally, only the content is searchable. For an HTML module this means the text you typed in and for a document it means the text from the document. But it's possible to instruct Search Boost to search additional fields, such as the titles (module titles, document titles, etc), descriptions, folder names and so on. 
 
 ![](/search-boost/search-engine/assets/Search_Additional_Fields.png)
 
-
 Not all documents and fields are created equal - or at least you can make sure that’s the case by using boosting.
 Each of the additional fields can be configured with a boost. What this does is define how important is when a search term appears in the field. It's natural for example that if a search term appears in the title of a module, it's considered more important than when same word appears inside the content.
 
 Note that the boost is not an absolute value. It aggregates with other boost factors to produce the final relevance index. Other factors include: 
+
 * **How big the content is** - the shorter the content of the field the more important that field is considered to be, so for example if the content is smaller than the title the search engine will consider the content to be more important.
 
 * **How many times the word appears in given field** - the more a word appears in a field, the more important is considered to be
 
 * **Other boost factors defined using Search Boost features** - for example, in the Metadata of documents or using the Boost Recent Documents feature described below
 
-#### Title for Module Results
+## Title for Module Results
 
 This option determines which title Search Boost should use to display results that come from modules. 
 
@@ -101,33 +102,33 @@ This option determines which title Search Boost should use to display results th
 * **Module Title** when title is missing means that whenever you use a module with more items like a blog creating module (e.g. Easy DNN News) and one item (article) does not have a title, then, Search Boost Results will display the title of the module.
 * **Page Title** when title is missing means that whenever you use a module with more items like a blog creating module (e.g. Easy DNN News) and one item (article) does not have a title, then, Search Boost Results will display the title of the page.
 
-#### Merge Module Content
+## Merge Module Content
 
 With this option you to instruct Search Boost to merge content that comes from module son the same page to prevent duplicate results. Note that if this option is enabled it's recommnded that you use the Page Title option for displaying result titles.
 
-#### Also Search Page Titles
+## Also Search Page Titles
 
 This option allows to have Search Boost also return results that contain the keywords in titles.The boost let's you determine how results should be ranked if the search matches this field.
 
-#### Also Search Descriptions
+## Also Search Descriptions
 
 Check this option to have Search Boost also return results that contain the keywords in descriptions.The boost let's you determine how results should be ranked if the search matches this field.
 
-#### Also Search Page Titles
+## Also Search Page Titles
 
 Check this option to have Search Boost also return results that contain the keywords in page titles.The boost let's you determine how results should be ranked if the search matches this field.
 
-#### Also Search Folder Names
+## Also Search Folder Names
 
 Check this option to have Search Boost also return results that contain the keywords in folder names.The boost let's you determine how results should be ranked if the search matches this field. 
 
-#### Boost Recent Documents
+## Boost Recent Documents
 
 ![](/search-boost/search-engine/assets/Boost_Recent_Documents.png)
 
 With this setting you can control if newer documents should be considered more relevant and therefore rank higher within results. In this case Search Boost uses the last modified date of the document.
 
-#### Boost Recent Module Content
+## Boost Recent Module Content
 
 ![](/search-boost/search-engine/assets/Boost_Recent_Module_Content.png)
 
@@ -137,7 +138,7 @@ Note that many modules don't return real values for this so this boosting may no
 
 If you want to find out more on how boost works, check out this article explaining how scoring is calculated in Lucene: www.lucenetutorial.com/advanced-topics/scoring.html.
 
-#### Ignore Accents
+## Ignore Accents
 
 ![](/search-boost/search-engine/assets/Ignore_Accents.png)
 
@@ -146,7 +147,7 @@ Enable this option to have Search Boost ignore accents so all word are searchabl
 Internally this is achieved by converting the accents to their Latin equivalents both in the search index and in the search terms.
 This setting is global (for all instances).
 
-#### Stop Words
+## Stop Words
 
 ![](/search-boost/search-engine/assets/Stop_Words.png)
 
@@ -158,16 +159,14 @@ Note that the default list is of English words, but you can extend or change tha
 
 This setting is global (for all instances).
 
-#### Word Splitting Characters
+## Word Splitting Characters
 
 ![](/search-boost/search-engine/assets/Word_Splitting_Characters.png)
 
 This option determines how the text is split into words.
 
-#### Use Stemming (English Only)
+## Use Stemming (English Only)
 
 ![](/search-boost/search-engine/assets/Use_Stemming.png)
 
 Stemming is the process of reducing the word to a base form. For example, stemming will make "search", "searches", "seaching", "searched" identical, so a search for any will bring the same results. Stemming only works for English words and requires Search Boost Analyzer in General Settings.
-
-

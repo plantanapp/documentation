@@ -1,8 +1,8 @@
-#### Logging
+# Logging
 
 Starting with version 1.7.2 Search Boost provides advanced logging capabilities for both the indexing process and for when people do searches on the front-end. The logging detail is configured separately for the two processes and also they're located in separate locations:
-- Search Logs are located in the *Portal Home Directory/Logs/SearchBoost*
-- Indexing Logs are located in *Portals/_default/Logs/SearchBoost* (as indexing is more of a host task)
+- Search Logs are located in the `Portal Home Directory/Logs/SearchBoost`
+- Indexing Logs are located in `Portals/_default/Logs/SearchBoost` (as indexing is more of a host task)
 One thing to keep an eye for is the size of the logs. Make sure to regularly archive the logs and cleanup the disk. Also, a common mistake is to forget the loggers set at Info or Debug levels which generate lots of content.
 
 To configure the loggers,

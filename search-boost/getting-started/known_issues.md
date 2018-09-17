@@ -1,4 +1,4 @@
-### Known Issues
+# Known Issues
 
 **In DNN 8 when Patching DNN Search the input box is small (shows 3 chars max)**
 

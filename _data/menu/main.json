@@ -35,7 +35,7 @@
     }]
 }, {
     "title": "Actions",
-    "ref": "common"
+    "ref": "actions"
 }, {
     "title": "Add-ons",
     "subpages": [{

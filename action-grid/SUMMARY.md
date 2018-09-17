@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Summary
 
 * [About](README.md)

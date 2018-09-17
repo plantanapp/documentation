@@ -1,6 +1,6 @@
-### Debugging - Common fixes for various issues with SearchBoost
+# Debugging - Common fixes for various issues with SearchBoost
 
-#### **Files from Document Exchange \(DMX\) are not indexed by SearchBoost**
+### **Files from Document Exchange \(DMX\) are not indexed by SearchBoost**
 
 1. The file type is not checked to be indexed by SearchBoost. Go to SearchBoost Studio - Document Search - File Types and check the desired file types. Make sure you save the changes and reindex.
 2. The DMX Integration add-on is not installed. Go to Host - Extensions and make sure the "avt.SearchBoost.DmxIntegration" is installed.
@@ -17,8 +17,4 @@
 
 * If the scheduler is enabled, click on the pencil icon \(Edit\) on the left and press "Run Now";
 * Go to Schedule Status and check if indexer schedule is running.
-
-### 
-
-
 
