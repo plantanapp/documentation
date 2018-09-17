@@ -1,0 +1,25 @@
+[{
+    "title": "Overview",
+    "url":"/add-ons/barcode-generator/index.html"
+},
+{
+  "title": "Installation",
+  "url": "/add-ons/barcode-generator/installation.html"
+},
+{
+  "title": "Barcode Generator Field",
+  "url": "/add-ons/barcode-generator/barcode-generator-field.html"
+},
+{
+  "title": "Barcode Scanner Field",
+  "url": "/add-ons/barcode-generator/barcode-scanner-field.html"
+},
+{
+  "title": "Generate Barcode Action",
+  "url": "/add-ons/barcode-generator/generate-barcode-action.html"
+},
+{
+    "title": "Resources",
+    "url": "/add-ons/barcode-generator/resources.html"
+}
+]

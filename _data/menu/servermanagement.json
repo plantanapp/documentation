@@ -1,0 +1,17 @@
+[{
+    "title": "Overview",
+    "url":"/add-ons/server-management/index.html"
+},
+{
+  "title": "Installation",
+  "url": "/add-ons/server-management/installation.html"
+},
+{
+    "title": "Resources",
+    "url": "/add-ons/server-management/resources.html"
+},
+{
+    "title": "DataSource for Action Grid",
+    "url": "/add-ons/server-management/datasource-for-action-grid.html"
+}
+]

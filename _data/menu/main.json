@@ -42,6 +42,14 @@
         "title": "Email Sync",
         "url": "/add-ons/email-sync/index.html",
         "ref": "emailsync"
+}, {
+        "title": "Server Management",
+        "url": "/add-ons/server-management/index.html",
+        "ref": "servermanagement"
+}, {
+    "title": "Barcode Generator",
+    "url": "/add-ons/barcode-generator/index.html",
+    "ref": "barcodegenerator"
     }]
 }, {
     "title": "Integrations",
