@@ -66,9 +66,9 @@ In order to have WHERE clause displayed, you need to select as Data Source the D
    Select * from Actions
 ```
 
-    * Define a column in ID Column box
-    * add an Item button with Redirect to URL action 
-    * set the link to the form which you want to populate with grid's items like this:
+* Define a column in ID Column box
+* add an Item button with Redirect to URL action 
+* set the link to the form which you want to populate with grid's items like this:
 
 ``` html
 www.example.com/form-page?AuctionID=[AuctionID]
@@ -105,7 +105,7 @@ We can't change the state directly, but we can check one of the fields from the 
 
 ## How to apply CSS to specific columns
 
-If you would like to apply CSS to specific columns, you can use the nth child selector to write CSS for each individual column: [http://www.w3schools.com/cssref/sel_nth-child.asp](http://www.w3schools.com/cssref/sel_nth-child.asp).
+If you would like to apply CSS to specific columns, you can use the nth child selector to write CSS for each individual column: [http://www.w3schools.com/cssref/sel_nth-child.asp](http://www.w3schools.com/cssref/sel_nth-child.asp){:target="_blank"}.
 
 ## How to export (serialize to CSV) the fields that are not displayed in the grid
 

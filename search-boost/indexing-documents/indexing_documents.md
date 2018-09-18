@@ -1,4 +1,4 @@
-#### Indexing Documents
+# Indexing Documents
 
 Starting with version 1.6 Search Boost supports searching portal documents. These can be plain files such as .txt or .html or rich format binary files such as PDF or Word documents. 
 
@@ -17,7 +17,7 @@ under Search Target screen.
 A portal tree has two root nodes: Portal Pages (that has the DNN Page and Modules hierarchy) and Portal Home Directory (that has the folder structure under Website Root/Portals/X folder).
 See image on the right for visual guidelines.
 
-Note that if under Document Search Settings you configure the instance to enforce DotNetNuke security, the actual folders that return results will vary based on the permissions of the user doing the search.
+Note that if under Document Search Settings you configure the instance to enforce DNN security, the actual folders that return results will vary based on the permissions of the user doing the search.
 
 
 **Select File Types to Search**
@@ -35,23 +35,26 @@ In the second tab of the Document Search Settings dialog you can configure how t
 
   * **Use file path**
 
-SEO & Human Friendly, doesn't enforce security (once obtained, the link can be accessed regardless of security)
+SEO & Human Friendly, doesn't enforce security (once obtained, the link can be accessed regardless of security).
+
 Example: http://site.com/Portals/0/MyFolder/MyFile.pdf
 
-  * ** Download script with File Path **
+  * **Download script with File Path**
 
 SEO & Human Friendly, enforces portal security (when option is enabled in Security Tab) but absolute path can be guessed
+
 Example: http://site.com/SearchResults.aspx?file=MyFolder/MyFile.pdf
 
   * **Download script with File ID**
   
 Hides (obfuscates) internal paths, ideal solution for enforcing security (when option is enabled in Security Tab)
+
 Example: http://site.com/SearchResults.aspx?file=4123
 
 **Security**
 
 Important: This section has been removed. The security is now always enforced by default. There is a now an inverse setting to ignore security from the Metadata file.
 
-Last tab of the Document Search Settings dialog is called Security and the only option available now is to Enforce DotNetNuke security. When this option is checked Search Boost looks up folder permissions in DNN tables and only displays results from files user doing the search has access to. 
+Last tab of the Document Search Settings dialog is called Security and the only option available now is to Enforce DNN security. When this option is checked Search Boost looks up folder permissions in DNN tables and only displays results from files user doing the search has access to. 
 
-One important thing to keep in mind is if a folder doesn't exist in DotNetNuke permissions table then Search Boost will consider that folder as being public. This happens most likely because the folder was manually copied in portal home directory and DNN wasn't synchronized back with the file system.
+One important thing to keep in mind is if a folder doesn't exist in DNN permissions table then Search Boost will consider that folder as being public. This happens most likely because the folder was manually copied in portal home directory and DNN wasn't synchronized back with the file system.

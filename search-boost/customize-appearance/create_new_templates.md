@@ -1,4 +1,4 @@
-#### Creating New Templates
+# Creating New Templates
 
 **NOTICE**: This document is in the process of updating it to reflect SearchBoost 3.
 
@@ -22,11 +22,12 @@ structure of the XML used to transform the XSL template. Luckily, Search Boost a
     
   * Note that using the Debug Mode the XML link is visible to all users.  This shows what the XML contains for different users. This means that you can use this function for debugging (especially for debugging results).
 
-##### Search Input Templates
+## Search Input Templates
 
 Search Boost reads the main.xsl file for the template you specified under the UI Settings tab and transforms it to following XML document displayed below: 
 
 ![](/search-boost/customize-appearance/assets/inputxml.png)
+
 The following bullet list provides a definition for each XML tag specified in the screenshot:
 
   * **instanceId** specifies the Module Id or Skin Object Control Id;
@@ -43,7 +44,7 @@ The following bullet list provides a definition for each XML tag specified in th
   * **requirekeywords** is true or false depends if the instance require keywords;
   * **contentfilters** may contain search filters. This is empty if no filters are specified.
 
-##### Edit Search Input Template
+### Edit Search Input Template
 
 To change the appearance of the Search Input Template:
 
@@ -54,7 +55,8 @@ To change the appearance of the Search Input Template:
 5. Then Scroll down and click the Save UI Settings button.
 
 ![](/search-boost/customize-appearance/assets/inputtemplate.png)
-##### Search Results Templates
+
+### Search Results Templates
 
 Respectively, the XML used to transform the templates for search boxes look like the following XML code. You can view the XML after a search is performed by clicking on the DEBUG: Show XML below the search results.
 
@@ -62,7 +64,8 @@ Respectively, the XML used to transform the templates for search boxes look like
 
 When you click on the DEBUG: Show XML link, a window with XML code appears. In code below, for example, the XML tags specifies details for the search term - "content".
 
-```<?xml version="1.0" encoding="utf-8"?>
+```xml
+<?xml version="1.0" encoding="utf-8"?>
 <search>
   <summary>
     <term>content</term>
@@ -111,11 +114,13 @@ When you click on the DEBUG: Show XML link, a window with XML code appears. In c
       <data />
     </result>
   </results>
-</search>```
+</search>
+```
 
 A definition for each XML tag in image are specified below:
 
 * search is the Root Node.
+
   * summary is a node that contains meta data about the search.
   * term specifies the terms that were searched.
   * resultcount is the number of results returned by the search.
@@ -134,6 +139,7 @@ A definition for each XML tag in image are specified below:
   * execution_time measures the elapse time from when Search Boost starts the search until the XML. object is created. Note that it does not measure how much time it takes afterwards to transform the XML or the time other components on the page takes to complete their execution.
 
 * results is the node that contains the list of results (the node below repeats for each result).
+
   * result is the root node containing search results information.
   * author is the ID of the User that published the content.
   * author_name is the name of the User that published the content.
@@ -159,9 +165,10 @@ A definition for each XML tag in image are specified below:
   * urlfwd
   * data
   * occurrences specifies how many times the result has been found inside this specific module.
+  
 * result is the next result.
 
-##### Edit Search Results Template
+### Edit Search Results Template
 
 To change the appearance of the Search Input Template:
 
@@ -172,9 +179,10 @@ To change the appearance of the Search Input Template:
 5. There are actually two options for Search Results.
 6. Then Scroll down and click the Save UI Settings button.
 
-##### Additional Notes
+## Additional Notes
 
 Here are some more tips & tricks that will help you:
+
 * It is best that you start from an existing template (copy/paste). Modifying an existing pre-built template will put you in the position to lose all your changes on the next upgrade.
 
 * Do not put spaces or other non-standard characters in the template name (we recommend only a to z and the minus sign).  This is to meet the strictest requirements when it comes to forming URLs for template resources.

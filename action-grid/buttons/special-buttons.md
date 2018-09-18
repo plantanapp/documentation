@@ -6,17 +6,29 @@ layout: default
 <div style="float: left; max-width: 100%; margin-bottom: 20px">
 In Action Grid 1.1 we've created a list of predefined special buttons per Item and per Grid section which are most commonly used in order to ease the user's task. On Item Button section if you click on Add Special Button there are three special buttons: Delete Item, Edit Item and View Item, each one of them is already customized and set with the appropriate actions - so, the Delete button has the Datasource Delete action, the View button has as action the Datasource View action, and the Edit button has the Datasource Edit action.  
 </div>
-<img style="margin-left:50px" src="assets/specialbuttons.png"/>
+
+![SpecialButtons1](\action-grid\buttons\assets\SpecialButtons1.png)
+![SpecialButtons2](\action-grid\buttons\assets\SpecialButtons2.png)
+
 <div style="float: left; max-width: 100%; margin-bottom: 20px">
-The Grid special buttons are Bulk Delete and Add Item which are already customized - the Bulk Delete button uses as general action the Datasource Refresh and as action for Each Selected Item the Datasource Delete action, therefore, you need to select the item you want to remove and just click on this button. The Add Item button uses a general action, the Datasource Add one and if the grid is linked to an Action Form, when you click on this button the form will open in a pop up page from where you can add new info. For when you have the grid linked to a database table or an SQL Query, and you want to add info in the grid, we depend on the Add URL/Edit URL options which have the purpose to 
-redirect the user to a page where an existing Action Form will use an 
-SQL statement in order to insert or to update the columns in the 
-database.
+The Grid special buttons are Bulk Delete and Add Item which are already customized - the Bulk Delete button uses as general action the Datasource Refresh and as action for Each Selected Item the Datasource Delete action, therefore, you need to select the item you want to remove and just click on this button. The Add Item button uses a general action, the Datasource Add one and if the grid is linked to an Action Form, when you click on this button the form will open in a pop up page from where you can add new info. For when you have the grid linked to a database table or an SQL Query, and you want to add info in the grid, we depend on the Add URL/Edit URL options which have the purpose to
+redirect the user to a page where an existing Action Form will use an SQL statement in order to insert or to update the columns in the database.
 </div>
+
+* Delete Item<br>
+  ![delete](\action-grid\buttons\assets\datasource-delete.png)
+* Edit Item<br>
+  ![delete](\action-grid\buttons\assets\datasource-edit.png)
+* View Item<br>
+  ![delete](\action-grid\buttons\assets\datasource-view.png)
+* Inline Edit<br>
+  ![delete](\action-grid\buttons\assets\datasource-inline-edit.png)
+* Inline Details<br>
+  ![delete](\action-grid\buttons\assets\datasource-detail-view.png)
 
 ## Popups
 
-Use the <font face="courier new, monospace">Open in Popup</font> option in the Add or Edit actions to have the forms open in popups. Note that if you use the [Action Form data source](http://action-grid.dnnsharp.com/data-sources/action-form), the form will open without the surrounding page elements. This is not true if you use any other data source unless you take special steps.
+Use the <font face="courier new, monospace">Open in Popup</font> option in the Add or Edit actions to have the forms open in popups. Note that if you use the [Action Form data source](../../action-form/overview.html){:target="_blank"}, the form will open without the surrounding page elements. This is not true if you use any other data source unless you take special steps.
 
 What we did to achieve this is we used the print functionality that ships with DNN. Say that we have a form on page <font face="courier new, monospace"> domain.com/form.aspx </font>, which is an Action Form. When using popups, we change this URL to be <font face="courier new, monospace">domain.com/form.aspx?mid=123&dnnprintmode=true&SkinSrc=[G]Skins/_default/No+Skin&ContainerSrc=[G]Containers/_default/No+Container&afcallparentonsubmit=angridEditDone</font>.
 
@@ -28,7 +40,7 @@ Of course, you can always just create a blank page for your form (using No Skin 
 
 One way to do it is create another page with the grid that you want to open in popup. This grid will accept ID as a query string parameter. On the main grid add a button and in the javascript for that button add the following.
 
-``` html
+``` js
 dnnModal.show('/Popupurl.aspx?ID=' + row.IDcolumnfrommaingrid + '&popUp=true',false,800,800,false);
 ```
 
@@ -38,7 +50,7 @@ Other parameters specify the size of the popup.
 
 Alternatively, use
 
-``` html
+``` js
 dnnModal.show('/popup.aspx?ID=' + row.ID + '&popUp=true',false,800,800,false);
 ```
 

@@ -1,4 +1,4 @@
-#### Debug Process Crashes
+# Debug Process Crashes
 
 Because of the complexity of indexing (like some unusual pdfs or other possible causes) we can have application process crashes. Process crashes are rather hard to debug so you may have to do the following to get debugging data:
 

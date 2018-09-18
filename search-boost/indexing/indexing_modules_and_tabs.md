@@ -1,8 +1,8 @@
-#### Indexing Modules and Tabs
+# Indexing Modules and Tabs
 
 Besides the introductory things shown in Getting started there are some advanced options regarding the indexing of modules and pages.
 
-So we know that we can select what modules to be indexed in Portals -> Pages subtree. At the moment, we ignore the "Allow Indexing" properties for both tab and module. We rather use the Pages Tree for enable / disable module or page indexing.
+So we know that we can select what modules to be indexed in _Portals -> Pages subtree_. At the moment, we ignore the "Allow Indexing" properties for both tab and module. We rather use the Pages Tree for enable / disable module or page indexing.
 
 ![](/search-boost/indexing/assets/Portals_pages_modules.png)
 

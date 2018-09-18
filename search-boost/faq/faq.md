@@ -1,4 +1,4 @@
-#### FAQ
+# FAQ
 
 **How do I migrate a custom indexer from SearchBoost 2.x to SearchBoost 3?**
 
@@ -6,7 +6,7 @@ It should be easy to upgrade your custom indexer for SearchBoost 3. We have chan
 
 **How does SearchBoost ranks results?**
 
-Default search scoring algorithm weights results using TF—IDF, term frequency—inverse document frequency.  Term frequency means that high-frequency terms within a document have higher weight than do low-frequency terms.  Inverse document frequency means that terms that occur frequently across many documents in a collection of documents are less likely to be meaningful descriptors of any given document in a corpus and are therefore down-weighted.  This filters out common words. Details about all the factors: http://www.lucenetutorial.com/advanced-topics/scoring.html
+Default search scoring algorithm weights results using TF—IDF, term frequency—inverse document frequency.  Term frequency means that high-frequency terms within a document have higher weight than do low-frequency terms.  Inverse document frequency means that terms that occur frequently across many documents in a collection of documents are less likely to be meaningful descriptors of any given document in a corpus and are therefore down-weighted.  This filters out common words. Details about all the factors: <http://www.lucenetutorial.com/advanced-topics/scoring.html>
 
 **How can I can exclude specific modules or folders from search results?**
 
@@ -15,9 +15,9 @@ It's very easy to exclude specific modules from search index. After you added a 
 **Is there any way I can set the "Skin Object siteSearch" (skin search) to use the settings and index from a Search Boost module?**
 
 If you intend to use the same settings for the Search Boost module and site search, use the following steps:
-1. Go to *Portals\portal ID\Skins\skin name*;
-2. Open the file *Home.ascx*;
-3. Find the following line: ```<avt:SEARCH ID="dnnSearch" SiteInstanceId="siteSearch" runat="server" />```;
+1. Go to _Portals\portal ID\Skins\skin name_;
+2. Open the file _Home.ascx_;
+3. Find the following line: `<avt:SEARCH ID="dnnSearch" SiteInstanceId="siteSearch" runat="server"/>`;
 4. Go to *Search Boost Studio*;
 5. Click on the "*Switch Instance*" button;
 6. Find the ID of the module you want to use as a source;
@@ -27,3 +27,6 @@ If you intend to use the same settings for the Search Boost module and site sear
 **If I click on "Switch Instance" button from SearchBoost Studio, I notice multiple instances that I no longer use. How can I delete them?**
 
 This happens sometimes. It usually happens when multiple skins are patched, since SearchBoost can't check or automatically unpatch skins that are no longer used. The solution for this is pretty simple, you just need to go to SQL Server, open the avtSearchBoost_Instances and delete the desired entries. And yes, it's safe.
+
+
+

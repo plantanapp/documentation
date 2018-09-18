@@ -1,18 +1,18 @@
-#### Content Sources
+# Content Sources
 
 According to the Architecture a content source is responsible to get new content to be indexed. The steps to develop a custom content source would be:
-- Add a configuration file in ContentSources folder (see local .readme.txt)
-- Create your own project with a class that implements *avt.SearchBoost.Core.ContentSource.IContentSource*
-    - implement the Query method that returns a IEnumerable<Core.Indexing.IndexingJob>. 
-    - implement ComputeResultUrl method. The default should be:
- return new GenericUrlResolver(searchResult, searchContext).GetUrlForSearchResult();
+- Add a configuration file in _ContentSources_ folder (see local .readme.txt)
+- Create your own project with a class that implements `DnnSharp.SearchBoost.Core.ContentSource.IContentSource`
+    - implement the Query method that returns a `IEnumerable<Core.Indexing.IndexingJob>`. 
+    - implement _ComputeResultUrl_ method. The default should be:
+ `return new GenericUrlResolver(searchResult, searchContext).GetUrlForSearchResult();`
 
 Here is a sample (works with SearchBoost >= 3.1.43):
 
-```
-using avt.SearchBoost.Core.ContentSource;
-using avt.SearchBoost.Core.Indexing;
-using avt.SearchBoost.Core.Search;
+```csharp
+using DnnSharp.SearchBoost.Core.ContentSource;
+using DnnSharp.SearchBoost.Core.Indexing;
+using DnnSharp.SearchBoost.Core.Search;
 using DnnSharp.Common.Logging;
 using System;
 using System.Collections.Generic;

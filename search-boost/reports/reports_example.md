@@ -1,8 +1,8 @@
-#### Reports Example
+# Reports Example
 
 In this Reports example, a CMS page is created in the Search Boost portal, then a search is performed for "Content Management Systems". After the search, the CSV file is downloaded to view the report generated for this search.
 
-#### Create Target Page
+## Create Target Page
 
 In the following steps, a CMS page is created that simply defines Content Management Systems:
 
@@ -24,7 +24,6 @@ In the following steps, a CMS page is created that simply defines Content Manage
 
 * In the Editor enter the following information:
 
-
 > What is a Content Management System?
 Content Management Systems implement features to store, manage and retrieve data efficiently. Some systems are simple while others are complex, but carry similar features. The three main CMS types are Web Content Management Systems, Enterprise Content Management Systems and Component Content Management Systems.
 
@@ -32,7 +31,7 @@ Content Management Systems implement features to store, manage and retrieve data
 
 ![](/search-boost/reports/assets/savecms.png)
 
-#### Perform Search
+## Perform Search
 
 In the following steps a search is performed for "Content Management Systems". The result page is generated and opened to view the information. Certainly you will need to have the avt.SearchBoost.Input module and avt.SearchBoost.Results modules installed.
 
@@ -48,7 +47,7 @@ In the results module, you will see the results from the CMS page created previo
 
 * Click on the CMS title, identified with the blue arrow on Figure 6. This will open the CMS page created previously. 
 
-#### Download CSV File
+## Download CSV File
 
 In this section, the CSV file is downloaded to view the report generated for the search previously conducted. You will need to go to the Search Boost Input module to open the Reports page to access the link for downloading the CSV file. 
 * For details on the CSV file, go to the CSV File page.
