@@ -1,0 +1,7 @@
+{
+    "variables": {
+        "code": "BARCODE",
+        "name": "Barcode Generator",
+        "productPage": "http://www.dnnsharp.com/products/action-form/add-ons/barcode-generator"
+    }
+}
