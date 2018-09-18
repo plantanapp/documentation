@@ -1,8 +1,12 @@
+---
+layout: default
+---
+
 # Button
 
 A control that executes your custom action in response to user interactions. When you press a button, it performs any actions attached to it. You communicate the purpose of a button using a text label, an icon, an image, or both. The appearance of buttons is configurable, so you can tint buttons or format titles to match the design of your app.
 
-#### Button’s settings:
+## Button’s settings:
 
 * **Causes Validation**
 
@@ -48,6 +52,3 @@ A control that executes your custom action in response to user interactions. Whe
 * On Click Handler
 
   * Connect one or more actions to the button. See the [Form Actions](/form-actions.md) chapter.
-
-
-

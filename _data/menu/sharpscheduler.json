@@ -8,27 +8,27 @@
     "title": "Scheduler Status",
     "url": "/sharp-scheduler/scheduler-status.html"
 }, {
-  "title": "Jobs",
-  "url": "/sharp-scheduler/jobs.html"
+    "title": "Jobs",
+    "url": "/sharp-scheduler/jobs.html"
 }, {
-  "title": "Triggers",
-  "url": "/sharp-scheduler/triggers/triggers1.html",
-  "subpages": [{
-      "title":"App Events Triggers",
-      "url":"/sharp-scheduler/triggers/app-events.html"    
-  }, {
-      "title": "Database Triggers",
-      "url": "/sharp-scheduler/triggers/database-triggers.html"
-  }, {
-      "title": "Mail Triggers",
-      "url": "/sharp-scheduler/triggers/mail-triggers.html"
-  }, {
-      "title": "User Triggers",
-      "url": "/sharp-scheduler/triggers/on-user-created.html"
-  }, {
-      "title": "Time Triggers",
-      "url": "/sharp-scheduler/triggers/time-triggers.html"
-  }]
+    "title": "Triggers",
+    "url": "/sharp-scheduler/triggers/triggers1.html",
+    "subpages": [{
+        "title": "App Events Triggers",
+        "url": "/sharp-scheduler/triggers/app-events.html"
+    }, {
+        "title": "Database Triggers",
+        "url": "/sharp-scheduler/triggers/database-triggers.html"
+    }, {
+        "title": "Mail Triggers",
+        "url": "/sharp-scheduler/triggers/mail-triggers.html"
+    }, {
+        "title": "User Triggers",
+        "url": "/sharp-scheduler/triggers/on-user-created.html"
+    }, {
+        "title": "Time Triggers",
+        "url": "/sharp-scheduler/triggers/time-triggers.html"
+    }]
 }, {
     "title": "Actions",
     "url": "/sharp-scheduler/actions/actions.html",
@@ -36,11 +36,17 @@
         "title": "Common Actions...",
         "url": "/common/index.html"
     }, {
-        "title": "Integration:Execute Method",
-        "url": "/sharp-scheduler/actions/execute-method.html"
-    }, {
         "title": "Debug:Log Job Context",
         "url": "/sharp-scheduler/actions/log-job-context.html"
+    }, {
+        "title": "DNNSharp:Reindex Search Boost Content",
+        "url": "/sharp-scheduler/actions/reindex-search-boost-content.html"
+    }, {
+        "title": "Filesystem:Backup Files",
+        "url": "/sharp-scheduler/actions/backup-files.html"
+    }, {
+        "title": "Integration:Execute Method",
+        "url": "/sharp-scheduler/actions/execute-method.html"
     }, {
         "title": "Integration:Run DNN Job",
         "url": "/sharp-scheduler/actions/run-dnn-job.html"
@@ -50,22 +56,16 @@
     }, {
         "title": "Shell:Run PowerShell Script",
         "url": "/sharp-scheduler/actions/run-powershell-script.html"
-    }, {
-        "title": "DNNSharp:Reindex Search Boost Content",
-        "url": "/sharp-scheduler/actions/reindex-search-boost-content.html"
-    }, {
-        "title": "Filesystem:Backup Files",
-        "url": "/sharp-scheduler/actions/backup-files.html"
     }]
 }, {
     "title": "History",
     "url": "/sharp-scheduler/history.html"
 }, {
     "title": "Debugging",
-    "url": "/sharp-scheduler/debugging.html"  
+    "url": "/sharp-scheduler/debugging.html"
 }, {
     "title": "Disabling jobs ",
-    "url":"/sharp-scheduler/disable.html"
+    "url": "/sharp-scheduler/disable.html"
 }, {
     "title": "Migrate from DNN Scheduler",
     "url": "/sharp-scheduler/migrate-from-dnn-scheduler.html"
@@ -79,7 +79,7 @@
     "title": "Extending Sharp Scheduler",
     "url": "/sharp-scheduler/extending-sharp-scheduler.html",
     "subpages": [{
-      "title": "Services",
-      "url":"/sharp-scheduler/services.html"
-  }]
+        "title": "Services",
+        "url": "/sharp-scheduler/services.html"
+    }]
 }]
