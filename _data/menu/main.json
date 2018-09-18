@@ -32,6 +32,10 @@
         "title": "NavXP",
         "ref": "navxp",
         "url":"/nav-xp/index.html"
+    }, {
+        "title": "DNN API Endpoint",
+        "ref": "dnnapiendpoint",
+        "url": "/dnnapiendpoint/index.html"
     }]
 }, {
     "title": "Actions",

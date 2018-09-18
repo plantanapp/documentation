@@ -1,0 +1,102 @@
+[{
+    "title": "Overview",
+    "url": "/dnnapiendpoint/index.html",
+    "subpages": [{
+        "title":"Setup",
+        "url": "/dnnapiendpoint/getting-started/setup.html"
+    }, {
+        "title":"Training Path",
+        "url": "/dnnapiendpoint/getting-started/training-path.html"
+    }, {
+        "title":"Breaking Changes",
+        "url": "/dnnapiendpoint/getting-started/breaking-changes.html"
+    }]
+}, {
+    "title": "API Actions",
+    "url": "/dnnapiendpoint/api-actions/actions.html",
+    "subpages": [{
+        "title": "Context",
+        "url":"/dnnapiendpoint/api-actions/context.html"
+    }, {
+        "title":"Data",
+        "url":"/dnnapiendpoint/api-actions/data.html"
+    }, {
+        "title":"Email",
+        "url":"/dnnapiendpoint/api-actions/email.html"
+    }, {
+        "title":"Entities",
+        "url":"/dnnapiendpoint/api-actions/entities.html"
+    }, {
+        "title":"Parsing",
+        "url":"/dnnapiendpoint/api-actions/parsing.html"
+    }, {
+        "title":"Payments",
+        "url":"/dnnapiendpoint/api-actions/payments.html"
+    }, {
+        "title":"Security",
+        "url":"/dnnapiendpoint/api-actions/security.html"
+    }, {
+        "title":"User",
+        "url":"/dnnapiendpoint/api-actions/user.html"
+    }]
+}, {
+    "title":"API Context",
+    "url":"/dnnapiendpoint/api-context.html"
+}, {
+    "title":"API Methods",
+    "url":"/dnnapiendpoint/api-methods.html"
+}, {
+    "title":"API Responses",
+    "url":"/dnnapiendpoint/api-responses.html"
+}, {
+    "title":"Conditional Workflows",
+    "url":"/dnnapiendpoint/conditional-workflows.html"
+}, {
+    "title":"Debugging",
+    "url":"/dnnapiendpoint/debugging.html"
+}, {
+    "title":"Entitties",
+    "url": "/dnnapiendpoint/entities.html"
+}, {
+    "title":"Examples",
+    "url":"/dnnapiendpoint/examples.html"
+}, {
+    "title":"Extensibility",
+    "url":"/dnnapiendpoint/extensibility/extensibility.html",
+    "subpages": [{
+        "title":"Input Handlers",
+        "url":"/dnnapiendpoint/extensibility/input-handlers.html"
+    }]
+}, {
+    "title":"Input Data",
+    "url":"/dnnapiendpoint/input-data/input-data.html",
+    "subpages": [{
+        "title":"GET",
+        "url":"/dnnapiendpoint/input-data/get.html"
+    }, {
+        "title":"POST",
+        "url":"/dnnapiendpoint/input-data/post.html"
+    }, {
+        "title":"XML",
+        "url":"/dnnapiendpoint/input-data/xml.html"
+    }, {
+        "title":"JSON",
+        "url":"/dnnapiendpoint/input-data/json.html"
+    }]
+}, {
+    "title":"On Error Section",
+    "url":"/dnnapiendpoint/on-error.html"
+}, {
+    "title":"Security",
+    "url":"/dnnapiendpoint/security/security.html",
+    "subpages": [{
+        "title":"API Keys",
+        "url":"/dnnapiendpoint/security/api-keys.html" 
+    }, {
+        "title":"Cross Domain Policy",
+        "url":"/dnnapiendpoint/security/cross-domain-policy.html"
+    }]
+}, {
+    "title":"Validation",
+    "url":"/dnnapiendpoint/validation.html"
+}]
