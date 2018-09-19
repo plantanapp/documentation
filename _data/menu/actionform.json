@@ -97,6 +97,9 @@
         }, {
             "title": "Date And Time",
             "url": "/action-form/form-fields/form-fields-types/date-and-time/date-and-time.html"
+        }, {
+            "title": "Clock",
+            "url": "/action-form/form-fields/form-fields-types/date-and-time/clock.html"
         }]
     }, {
         "title": "DotNetNuke",
@@ -120,10 +123,17 @@
         }, {
             "title": "Single File Upload",
             "url": "/action-form/form-fields/form-fields-types/files/single-file-upload.html"
+        }, {
+            "title": "File Manager",
+            "url": "/action-form/form-fields/form-fields-types/files/file-manager.html"
         }]
     }, {
         "title": "Hidden Data",
-        "url": "/action-form/form-fields/form-fields-types/hidden-data.html"
+        "url": "/action-form/form-fields/form-fields-types/hidden-data/hidden-data.html",
+        "subpages": [{
+            "title": "Dynamic Field Container",
+            "url": "/action-form/form-fields/form-fields-types/hidden-data/dynamic-field-container.html"
+        }]
     }, {
         "title": "Image",
         "url": "/action-form/form-fields/form-fields-types/image.html"
@@ -172,6 +182,9 @@
         }, {
             "title": "Yes/No/Maybe (Radio boxes)",
             "url": "/action-form/form-fields/form-fields-types/multiple-choice/yesnomaybe-radio-boxes.html"
+        }, {
+            "title":"Agreement Links",
+            "url": "/action-form/form-fields/form-fields-types/multiple-choice/agreement-links.html"
         }]
     }, {
         "title": "Progress Bar",
@@ -181,19 +194,22 @@
         "url": "/action-form/form-fields/form-fields-types/security.html",
         "subpages": [{
             "title": "CAPTCHA",
-            "url": "/action-form/form-fields/form-fields-types/captcha.html"
+            "url": "/action-form/form-fields/form-fields-types/security/captcha.html"
         }, {
             "title": "Password",
-            "url": "/action-form/form-fields/form-fields-types/password.html"
+            "url": "/action-form/form-fields/form-fields-types/security/password.html"
         }, {
             "title": "Permision Grid",
-            "url": "/action-form/form-fields/form-fields-types/permission-grid.html"
+            "url": "/action-form/form-fields/form-fields-types/security/permission-grid.html"
         }, {
             "title": "reCAPTCHA",
-            "url": "/action-form/form-fields/form-fields-types/recaptcha.html"
+            "url": "/action-form/form-fields/form-fields-types/security/recaptcha.html"
         }, {
             "title": "Username",
-            "url": "/action-form/form-fields/form-fields-types/username.html"
+            "url": "/action-form/form-fields/form-fields-types/security/username.html"
+        },{
+            "title":"Device Fingerprint",
+            "url": "/action-form/form-fields/form-fields-types/security/device-fingerprint.html"
         }]
     }, {
         "title": "Statistics",
@@ -247,6 +263,15 @@
         }, {
             "title": "Title",
             "url": "/action-form/form-fields/form-fields-types/text/title.html"
+        },{
+            "title":"Currency",
+            "url": "/action-form/form-fields/form-fields-types/text/Currency.html"
+        },{
+            "title":"Phone",
+            "url": "/action-form/form-fields/form-fields-types/text/phone.html"
+        },{
+            "title":"Trumbowyg",
+            "url": "/action-form/form-fields/form-fields-types/text/trumbowyg.html"
         }]
     }, {
         "title": "User",
@@ -281,47 +306,47 @@
 }, {
     "title": "Form Actions",
     "subpages": [{
-        "title":"Common Actions...",
-        "url":"/common/index.html"
-    },{
+        "title": "Common Actions...",
+        "url": "/common/index.html"
+    }, {
         "title": "Dynamic Fields",
-        "url": "/common/dynamic-fields/TODO.html",
+        "url": "/action-form/form-actions/dynamic-fields/Overview.html",
         "subpages": [{
             "title": "Add Checkbox (True/False)",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Checkbox-True-False.html"
         }, {
             "title": "Add Date and Time",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Date-and-Time.html"
         }, {
             "title": "Add Dropdown with Checkboxes",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Dropdown-with-Checkboxes.html"
         }, {
             "title": "Add Hidden Field with Custom Value",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Hidden-Field-with-Custom-Value.html"
         }, {
             "title": "Add Large Text",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Large-Text.html"
         }, {
             "title": "Add Multiple Choice with Dropdown",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Multiple-Choice-with-Dropdown.html"
         }, {
             "title": "Add Multiple Choice with Radio Buttons",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Multiple-Choice-with-Radio-Buttons.html"
         }, {
             "title": "Add Slider",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Slider.html"
         }, {
             "title": "Add StaticText",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-StaticText.html"
         }, {
             "title": "Add Textbox",
-            "url": "/common/dynamic-fields/TODO.html"
+            "url": "/action-form/form-actions/dynamic-fields/Add-Textbox.html"
         }]
-    
+
     }, {
         "title": "Email",
-        "url": "/common/email.html"
-    },{
+        "url": "/action-form/email.html"
+    }, {
         "title": "Form State",
         "url": "/action-form/form-actions/form-state.html",
         "subpages": [{
@@ -347,7 +372,7 @@
             "title": "Log Error",
             "url": "/action-form/form-actions/logging/log-error.html"
         }]
-    },  {
+    }, {
         "title": "Output",
         "url": "/action-form/form-actions/output.html",
         "subpages": [{
@@ -357,7 +382,7 @@
             "title": "JSON Entity List",
             "url": "/action-form/form-actions/json-entity-list.html"
         }]
-    },{
+    }, {
         "title": "Serialization",
         "url": "/action-form/form-actions/serialization.html",
         "subpages": [{
