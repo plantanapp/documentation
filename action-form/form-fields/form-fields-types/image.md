@@ -1,6 +1,6 @@
 # Image
 
-There are two image options available on Action Form, **Display Image** field and** Progress Bar** which will be displayed after the user clicks on a submit button.
+There are two image options available on Action Form, **Display Image** field and **Progress Bar** which will be displayed after the user clicks on a submit button.
 
 * Display Image
   * allows selecting an already uploaded image from the DNN portal, in the Image drop down list, or you can provide an image URL in the Image URL box.
