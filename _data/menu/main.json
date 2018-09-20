@@ -36,6 +36,10 @@
         "title": "Sharp CDN",
         "ref": "sharpcdn",
         "url": "/sharp-cdn/index.html"
+    }, {
+        "title": "DNN API Endpoint",
+        "ref": "dnnapiendpoint",
+        "url": "/dnnapiendpoint/index.html"
         }]
 }, {
     "title": "Actions",

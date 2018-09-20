@@ -97,6 +97,9 @@
         }, {
             "title": "Date And Time",
             "url": "/action-form/form-fields/form-fields-types/date-and-time/date-and-time.html"
+        }, {
+            "title": "Clock",
+            "url": "/action-form/form-fields/form-fields-types/date-and-time/clock.html"
         }]
     }, {
         "title": "DotNetNuke",
@@ -120,10 +123,17 @@
         }, {
             "title": "Single File Upload",
             "url": "/action-form/form-fields/form-fields-types/files/single-file-upload.html"
+        }, {
+            "title": "File Manager",
+            "url": "/action-form/form-fields/form-fields-types/files/file-manager.html"
         }]
     }, {
         "title": "Hidden Data",
-        "url": "/action-form/form-fields/form-fields-types/hidden-data.html"
+        "url": "/action-form/form-fields/form-fields-types/hidden-data/hidden-data.html",
+        "subpages": [{
+            "title": "Dynamic Field Container",
+            "url": "/action-form/form-fields/form-fields-types/hidden-data/dynamic-field-container.html"
+        }]
     }, {
         "title": "Image",
         "url": "/action-form/form-fields/form-fields-types/image.html"
@@ -172,6 +182,9 @@
         }, {
             "title": "Yes/No/Maybe (Radio boxes)",
             "url": "/action-form/form-fields/form-fields-types/multiple-choice/yesnomaybe-radio-boxes.html"
+        }, {
+            "title":"Agreement Links",
+            "url": "/action-form/form-fields/form-fields-types/multiple-choice/agreement-links.html"
         }]
     }, {
         "title": "Progress Bar",
@@ -181,19 +194,22 @@
         "url": "/action-form/form-fields/form-fields-types/security.html",
         "subpages": [{
             "title": "CAPTCHA",
-            "url": "/action-form/form-fields/form-fields-types/captcha.html"
+            "url": "/action-form/form-fields/form-fields-types/security/captcha.html"
         }, {
             "title": "Password",
-            "url": "/action-form/form-fields/form-fields-types/password.html"
+            "url": "/action-form/form-fields/form-fields-types/security/password.html"
         }, {
             "title": "Permision Grid",
-            "url": "/action-form/form-fields/form-fields-types/permission-grid.html"
+            "url": "/action-form/form-fields/form-fields-types/security/permission-grid.html"
         }, {
             "title": "reCAPTCHA",
-            "url": "/action-form/form-fields/form-fields-types/recaptcha.html"
+            "url": "/action-form/form-fields/form-fields-types/security/recaptcha.html"
         }, {
             "title": "Username",
-            "url": "/action-form/form-fields/form-fields-types/username.html"
+            "url": "/action-form/form-fields/form-fields-types/security/username.html"
+        },{
+            "title":"Device Fingerprint",
+            "url": "/action-form/form-fields/form-fields-types/security/device-fingerprint.html"
         }]
     }, {
         "title": "Statistics",
@@ -247,6 +263,15 @@
         }, {
             "title": "Title",
             "url": "/action-form/form-fields/form-fields-types/text/title.html"
+        },{
+            "title":"Currency",
+            "url": "/action-form/form-fields/form-fields-types/text/Currency.html"
+        },{
+            "title":"Phone",
+            "url": "/action-form/form-fields/form-fields-types/text/phone.html"
+        },{
+            "title":"Trumbowyg",
+            "url": "/action-form/form-fields/form-fields-types/text/trumbowyg.html"
         }]
     }, {
         "title": "User",
@@ -280,140 +305,47 @@
     }]
 }, {
     "title": "Form Actions",
-    "url": "https://action-form.guide.dnnsharp.com/",
     "subpages": [{
-        "title": "Code",
-        "url": "/action-form/form-actions/code.html",
-        "subpages": [{
-            "title": "Apply Tokens",
-            "url": "/action-form/form-actions/code/apply-tokens.html"
-        }, {
-            "title": "Execute JavaScript",
-            "url": "/action-form/form-actions/code/execute-javascript.html"
-        }, {
-            "title": "Execute Tokens",
-            "url": "/action-form/form-actions/code/execute-token.html"
-        }]
+        "title": "Common Actions...",
+        "url": "/common/index.html"
     }, {
-        "title": "Context",
-        "url": "/action-form/form-actions/apply-tokens.html",
+        "title": "Dynamic Fields",
+        "url": "/action-form/form-actions/dynamic-fields/Overview.html",
         "subpages": [{
-            "title": "Inject Form Data",
-            "url": "/action-form/form-actions/apply-tokens/inject-form-data.html"
+            "title": "Add Checkbox (True/False)",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Checkbox-True-False.html"
         }, {
-            "title": "Load Entry by ID",
-            "url": "/action-form/form-actions/apply-tokens/load-entry.html"
+            "title": "Add Date and Time",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Date-and-Time.html"
         }, {
-            "title": "Load Entry by User ID",
-            "url": "/action-form/form-actions/apply-tokens/load-entry-by-user-id.html"
+            "title": "Add Dropdown with Checkboxes",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Dropdown-with-Checkboxes.html"
         }, {
-            "title": "Load User",
-            "url": "/action-form/form-actions/apply-tokens/load-user.html"
+            "title": "Add Hidden Field with Custom Value",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Hidden-Field-with-Custom-Value.html"
         }, {
-            "title": "Load Users from SQL",
-            "url": "/action-form/form-actions/apply-tokens/load-users-from-sql.html"
+            "title": "Add Large Text",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Large-Text.html"
+        }, {
+            "title": "Add Multiple Choice with Dropdown",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Multiple-Choice-with-Dropdown.html"
+        }, {
+            "title": "Add Multiple Choice with Radio Buttons",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Multiple-Choice-with-Radio-Buttons.html"
+        }, {
+            "title": "Add Slider",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Slider.html"
+        }, {
+            "title": "Add StaticText",
+            "url": "/action-form/form-actions/dynamic-fields/Add-StaticText.html"
+        }, {
+            "title": "Add Textbox",
+            "url": "/action-form/form-actions/dynamic-fields/Add-Textbox.html"
         }]
-    }, {
-        "title": "Credentials Store",
-        "url": "/action-form/form-actions/credential-store.html",
-        "subpages": [{
-            "title": "Delete Credentials",
-            "url": "/action-form/form-actions/credential-store/delete-credential.html"
-        }, {
-            "title": "Get Credentials",
-            "url": "/action-form/form-actions/credential-store/get-credential.html"
-        }]
-    }, {
-        "title": "Data",
-        "url": "/action-form/form-actions/data.html",
-        "subpages": [{
-            "title": "Clear Cache (by Key)",
-            "url": "/action-form/form-actions/data/clear-cache-by-key.html"
-        }, {
-            "title": "Import Into Database (Entity)",
-            "url": "/action-form/form-actions/data/import-into-database-entity.html"
-        }, {
-            "title": "Repost Data",
-            "url": "/action-form/form-actions/data/repost-data.html"
-        }, {
-            "title": "Run SQL Query",
-            "url": "/action-form/run-sql-query.html"
-        }, {
-            "title": "Save Report in the Database",
-            "url": "/action-form/form-actions/data/save-report-in-the-database.html"
-        }, {
-            "title": "Server Request",
-            "url": "/action-form/form-actions/data/server-request.html"
-        }, {
-            "title": "Update Form Data (AJAX)",
-            "url": "/action-form/form-actions/data/update-form-data-ajax.html"
-        }]
-    }, {
-        "title": "Dnn",
-        "url": "/action-form/form-actions/dnn.html",
-        "subpages": [{
-            "title": "Clear Cache Item",
-            "url": "/action-form/form-actions/dnn/clear-cache-item.html"
-        }, {
-            "title": "Copy File",
-            "url": "form-actions/dnn/copy-file.html"
-        }, {
-            "title": "Delete File",
-            "url": "/action-form/form-actions/dnn/delete-file.html"
-        }, {
-            "title": "Delete Folder",
-            "url": "/action-form/form-actions/dnn/delete-folder.html"
-        }]
-    }, {
-        "title": "DNN Sharp",
-        "url": "/action-form/form-actions/dnn-sharp.html",
-        "subpages": [{
-            "title": "Browse Data from Action Grid",
-            "url": "/action-form/form-actions/dnn-sharp/browse-data-from-action-grid.html"
-        }, {
-            "title": "Filter Action Grid",
-            "url": "/action-form/form-actions/dnn-sharp/filter-action-grid.html"
-        }, {
-            "title": "Change TabsPro Tab",
-            "url": "/action-form/form-actions/dnn-sharp/change-tabspro-tab.html"
-        }, {
-            "title": "Initialize Action Form",
-            "url": "/action-form/form-actions/dnn-sharp/initialize-action-form.html"
-        }, {
-            "title": "Open module Popup",
-            "url": "/action-form/form-actions/dnn-sharp/open-module-popup.html"
-        }, {
-            "title": "Close module Popup",
-            "url": "/action-form/form-actions/dnn-sharp/close-module-popup.html"
-        }]
+
     }, {
         "title": "Email",
-        "url": "/action-form/form-actions/email.html"
-    }, {
-        "title": "Entities",
-        "url": "/action-form/form-actions/entities.html",
-        "subpages": [{
-            "title": "Create Entity",
-            "url": "/action-form/form-actions/entities/create-entity.html"
-        }, {
-            "title": "Extend Entity",
-            "url": "/action-form/form-actions/entities/extend-entity.html"
-        }, {
-            "title": "Execute actions on entity list",
-            "url": "/action-form/form-actions/entities/execute-actions-on-entity-list.html"
-        }, {
-            "title": "Load Entities (JSON)",
-            "url": "/action-form/form-actions/entities/load-entities-from-json.html"
-        }, {
-            "title": "Load Entities (SQL)",
-            "url": "/action-form/form-actions/entities/load-entities-from-sql.html"
-        }, {
-            "title": "Remap Entity List",
-            "url": "/action-form/form-actions/entities/remap-entity-list.html"
-        }, {
-            "title": "Remove Entities",
-            "url": "/action-form/form-actions/entities/remove-entity.html"
-        }]
+        "url": "/action-form/email.html"
     }, {
         "title": "Form State",
         "url": "/action-form/form-actions/form-state.html",
@@ -441,22 +373,6 @@
             "url": "/action-form/form-actions/logging/log-error.html"
         }]
     }, {
-        "title": "Message",
-        "url": "/action-form/form-actions/message.html",
-        "subpages": [{
-            "title": "Display Message",
-            "url": "/action-form/form-actions/message/display-message.html"
-        }, {
-            "title": "Display Error Message",
-            "url": "/action-form/form-actions/message/display-error-message.html"
-        }, {
-            "title": "Display Toast Message",
-            "url": "/action-form/form-actions/message/display-toast-message.html"
-        }, {
-            "title": "Send Plain Text as File Download",
-            "url": "/action-form/form-actions/message/send-plain-text-as-file-download.html"
-        }]
-    }, {
         "title": "Output",
         "url": "/action-form/form-actions/output.html",
         "subpages": [{
@@ -467,75 +383,11 @@
             "url": "/action-form/form-actions/json-entity-list.html"
         }]
     }, {
-        "title": "Parsing",
-        "url": "/action-form/form-actions/parsing.html",
-        "subpages": [{
-            "title": "Regex",
-            "url": "/action-form/form-actions/regex.html"
-        }, {
-            "title": "Regex - Multiple Results",
-            "url": "/action-form/form-actions/regex-multiple-results.html"
-        }]
-    }, {
-        "title": "Redirect",
-        "url": "/action-form/form-actions/redirect.html",
-        "subpages": [{
-            "title": "Redirect to Portal Page",
-            "url": "/action-form/form-actions/redirect/redirect-to-portal-page.html"
-        }, {
-            "title": "Redirect to URL",
-            "url": "/action-form/form-actions/redirect/redirect-to-url.html"
-        }, {
-            "title": "Send File to Download",
-            "url": "/action-form/form-actions/redirect/send-file-to-download.html"
-        }]
-    }, {
-        "title": "Security",
-        "url": "/action-form/form-actions/security.html",
-        "subpages": [{
-            "title": "AES Decrypt",
-            "url": "/action-form/form-actions/security/aes-decrypt.html"
-        }, {
-            "title": "AES Encrypt",
-            "url": "/action-form/form-actions/security/aes-encrypt.html"
-        }, {
-            "title": "RSA Decrypt",
-            "url": "/action-form/form-actions/security/rsa-decrypt.html"
-        }, {
-            "title": "RSA Encrypt",
-            "url": "/action-form/form-actions/security/rsa-encrypt.html"
-        }]
-    }, {
         "title": "Serialization",
         "url": "/action-form/form-actions/serialization.html",
         "subpages": [{
             "title": "Serialize to CSV",
             "url": "/action-form/form-actions/serialization/serialize-to-csv.html"
-        }]
-    }, {
-        "title": "User",
-        "url": "/action-form/form-actions/user.html",
-        "subpages": [{
-            "title": "Authorize User",
-            "url": "/action-form/form-actions/user/authorie-user.html"
-        }, {
-            "title": "Grant User Role",
-            "url": "/action-form/form-actions/user/grant-user-role.html"
-        }, {
-            "title": "Revoke User Role",
-            "url": "/action-form/form-actions/user/revoke-usere-role.html"
-        }, {
-            "title": "Unauthorize User",
-            "url": "/action-form/form-actions/user/unauthorize-user.html"
-        }, {
-            "title": "Update User Profile",
-            "url": "/action-form/form-actions/user/update-user-profile.html"
-        }, {
-            "title": "User Login",
-            "url": "/action-form/form-actions/user/user-login.html"
-        }, {
-            "title": "User Registration",
-            "url": "/action-form/form-actions/user/user-registration.html"
         }]
     }]
 }, {
