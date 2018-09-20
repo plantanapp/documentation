@@ -32,7 +32,11 @@
         "title": "NavXP",
         "ref": "navxp",
         "url":"/nav-xp/index.html"
-    }]
+    }, {
+        "title": "Sharp CDN",
+        "ref": "sharpcdn",
+        "url": "/sharp-cdn/index.html"
+        }]
 }, {
     "title": "Actions",
     "ref": "actions"
@@ -50,7 +54,11 @@
     "title": "Barcode Generator",
     "url": "/add-ons/barcode-generator/index.html",
     "ref": "barcodegenerator"
-    }]
+}, {
+    "title": "PDF Generator",
+    "url": "/add-ons/pdf-generator/installing.html",
+    "ref": "pdfgenerator"
+}]
 }, {
     "title": "Integrations",
     "subpages": [{
