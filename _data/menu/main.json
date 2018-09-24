@@ -62,6 +62,10 @@
     "title": "PDF Generator",
     "url": "/add-ons/pdf-generator/installing.html",
     "ref": "pdfgenerator"
+}, {
+    "title": "Stripe",
+    "url":"/add-ons/stripe/introduction.html",
+    "ref": "stripe"
 }]
 }, {
     "title": "Integrations",
