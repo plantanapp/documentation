@@ -40,6 +40,10 @@
         "title": "DNN API Endpoint",
         "ref": "dnnapiendpoint",
         "url": "/dnnapiendpoint/index.html"
+    }, {
+        "title": "Info Box",
+        "ref": "infobox",
+        "url": "/info-box/index.html"
         }]
 }, {
     "title": "Actions",
