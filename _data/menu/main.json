@@ -36,6 +36,10 @@
         "title": "DNN API Endpoint",
         "ref": "dnnapiendpoint",
         "url": "/dnnapiendpoint/index.html"
+    }, {
+        "title": "My Tokens",
+        "ref": "mytokens",
+        "url": "/my-tokens/index.html"
     }]
 }, {
     "title": "Actions",
