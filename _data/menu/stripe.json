@@ -1,0 +1,36 @@
+[{
+    "title": "Overview",
+    "url":"/add-ons/stripe/introduction.html"
+},
+{
+    "title": "Installation",
+    "url":"/add-ons/stripe/installation.html"
+},
+{
+    "title": "Stripe Integration",
+    "url": "/add-ons/stripe/about.html"
+},
+{
+  "title": "Stripe Add Seller",
+  "url": "/add-ons/stripe/stripe-add-seller.html"
+},
+{
+  "title": "Get Stripe User Account",
+  "url": "/add-ons/stripe/get-stripe-user-account.html"
+},
+{
+  "title": "Stripe Direct Payment with Token",
+  "url": "/add-ons/stripe/stripe-direct-payment-with-token.html"
+},
+{
+  "title": "Stripe Direct Payment (unsafe - obsolete)",
+  "url": "/add-ons/stripe/stripe-direct-payment.html"
+},
+{
+    "title": "Stripe Payment through the platform",
+    "url": "/add-ons/stripe/stripe-payment-through-the-platform.html"
+},
+{
+  "title": "Resources",
+  "url": "/add-ons/stripe/resources.html"
+}]
