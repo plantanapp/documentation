@@ -1,0 +1,47 @@
+[{
+    "title": "Overview",
+    "url":"/info-box/index.html"
+},
+{
+    "title": "Installation",
+    "url":"/info-box/installation.html"
+},
+{
+    "title": "Creating your first Guide",
+    "url": "/info-box/creating-your-first-guide.html"
+},
+{
+  "title": "Info",
+  "url": "/info-box/info.html"
+},
+{
+  "title": "Triggers",
+  "url": "/info-box/triggers.html",
+  "subpages": [{
+    "title": "Pages",
+    "url": "/info-box/triggers/pages.html"
+  }, {
+    "title": "Conditions",
+    "url": "/info-box/triggers/conditions.html"
+  }]
+},
+{
+  "title": "Steps",
+  "url": "/info-box/steps.html"
+},
+{
+  "title": "Buttons",
+  "url": "/info-box/buttons.html",
+  "subpages": [{
+    "title": "Actions",
+    "url": "/info-box/buttons/actions.html"
+  }]
+},
+{
+    "title": "Reports",
+    "url": "/info-box/Reports.html"
+},
+{
+  "title": "F.A.Q",
+  "url": "/info-box/faq.html"
+}]

@@ -33,10 +33,18 @@
         "ref": "navxp",
         "url":"/nav-xp/index.html"
     }, {
+        "title": "Sharp CDN",
+        "ref": "sharpcdn",
+        "url": "/sharp-cdn/index.html"
+    }, {
         "title": "DNN API Endpoint",
         "ref": "dnnapiendpoint",
         "url": "/dnnapiendpoint/index.html"
-    }]
+    }, {
+        "title": "Info Box",
+        "ref": "infobox",
+        "url": "/info-box/index.html"
+        }]
 }, {
     "title": "Actions",
     "ref": "actions"
@@ -54,7 +62,15 @@
     "title": "Barcode Generator",
     "url": "/add-ons/barcode-generator/index.html",
     "ref": "barcodegenerator"
-    }]
+}, {
+    "title": "PDF Generator",
+    "url": "/add-ons/pdf-generator/installing.html",
+    "ref": "pdfgenerator"
+}, {
+    "title": "Stripe",
+    "url":"/add-ons/stripe/introduction.html",
+    "ref": "stripe"
+}]
 }, {
     "title": "Integrations",
     "subpages": [{
