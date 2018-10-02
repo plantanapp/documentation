@@ -1,0 +1,141 @@
+[{
+    "title":"Overview",
+    "url":"/my-tokens/index.html",
+    "subpages": [{
+        "title":"About DNN Tokens",
+        "url": "/my-tokens/overview/about.html"
+    }, {
+        "title":"FAQs",
+        "url":"/my-tokens/overview/faq.html"
+    }, {
+        "title":"Getting Started",
+        "url":"/my-tokens/overview/getting-started.html"
+    }, {
+        "title":"Supported Modules",
+        "url":"/my-tokens/overview/supported-modules.html"
+    }, {
+        "title":"Syntax",
+        "url":"/my-tokens/overview/syntax.html"
+    }, {
+        "title":"Video Tutorials",
+        "url":"/my-tokens/overview/video-tutorials.html"
+    }]
+}, {
+    "title":"About My Tokens",
+    "url":"/my-tokens/about/about.html",
+    "subpages": [{
+        "title":"Caching",
+        "url":"/my-tokens/about/caching.html"
+    }, {
+        "title":"Core Tokens",
+        "url":"/my-tokens/about/core-tokens.html"
+    }, {
+        "title":"Custom Tokens",
+        "url":"/my-tokens/about/custom-tokens.html",
+        "subpages":[{
+            "title":"Data Sources",
+            "url":"/my-tokens/about/data-sources.html",
+            "subpages":[{
+                "title":"Execute Type",
+                "url":"/my-tokens/about/execute-type.html"
+            }]
+        }, {
+            "title": "Parameters",
+            "url": "/my-tokens/about/parameters.html"
+        }, {
+            "title": "Token Parsers",
+            "url": "/my-tokens/about/token-parsers.html"
+        }]
+    }, {
+        "title":"Default Values",
+        "url":"/my-tokens/about/default-values.html"
+    }]
+}, {
+    "title":"Examples",
+    "url":"/my-tokens/examples.html"
+}, {
+    "title":"Gadgets",
+    "url":"/my-tokens/gadgets/gadgets.html",
+    "subpages": [{
+        "title":"Financial",
+        "url":"/my-tokens/gadgets/financial.html"
+    }, {
+        "title":"Geography",
+        "url":"/my-tokens/gadgets/geography.html"
+    }, {
+        "title":"Media",
+        "url":"/my-tokens/gadgets/media.html"
+    }, {
+        "title":"News",
+        "url":"/my-tokens/gadgets/news.html"
+    }, {
+        "title":"Social",
+        "url":"/my-tokens/gadgets/social.html"
+    }]
+}, {
+    "title":"How To",
+    "url":"/my-tokens/how-to/how-to.html",
+    "subpages":[{
+        "title":"Access Google Api",
+        "url":"/my-tokens/how-to/google-api.html"
+    }, {
+        "title":"Consume Web Services",
+        "url":"/my-tokens/how-to/web-services.html"
+    }, {
+        "title":"Escape Special Characters",
+        "url":"/my-tokens/how-to/escape.html"
+    }, {
+        "title":"Tokenize Page Title & Meta Tags",
+        "url":"/my-tokens/how-to/tokenize-title-meta.html"
+    }, {
+        "title":"Use Tokens in DNN Skins",
+        "url":"/my-tokens/how-to/token-dnn-skins.html"
+    }]
+}, {
+    "title":"Integration Notes",
+    "url":"/my-tokens/integration-notes/notes.html",
+    "subpages":[{
+        "title":"API (Building Web Services)",
+        "url":"/my-tokens/integration-notes/api-web-services.html"
+    }, {
+        "title":"Exposing Token Interface",
+        "url":"/my-tokens/integration-notes/exposing-token-interface.html"
+    }, {
+        "title":"Other Integrations",
+        "url":"/my-tokens/integration-notes/other-integrations.html"
+    }, {
+        "title":"Patch DNN Core",
+        "url":"/my-tokens/integration-notes/patch-dotnetnuke-core.html"
+    }, {
+        "title":"Replace Tokens with MyTokens",
+        "url":"/my-tokens/integration-notes/replace-tokens-my-tokens.html"
+    }, {
+        "title":"XMod",
+        "url":"/my-tokens/integration-notes/xmod.html"
+    }]
+}, {
+    "title":"Other Resources",
+    "url":"/my-tokens/other-resources.html"
+}, {
+    "title":"Pass Thru Authentication",
+    "url":"/my-tokens/pass-thru-auth.html"
+}, {
+    "title":"Scripts/Templates",
+    "url":"/my-tokens/scripts/scripts.html",
+    "subpages":[{
+        "title":"Debugging Razor",
+        "url":"/my-tokens/scripts/debug-razor.html"
+    }, {
+        "title":"Razor Examples",
+        "url":"/my-tokens/scripts/razor-examples.html"
+    }, {
+        "title":"Razor Optimizations",
+        "url":"/my-tokens/scripts/razor-optimization.html"
+    }]
+}, {
+    "title":"ToDoC",
+    "url":"/my-tokens/todoc.html"
+}, {
+    "title":"Tokenize Module Title, Header, Footer",
+    "url":"/my-tokens/tokenize-module.html"
+}]

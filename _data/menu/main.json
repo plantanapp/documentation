@@ -41,10 +41,14 @@
         "ref": "dnnapiendpoint",
         "url": "/dnnapiendpoint/index.html"
     }, {
+        "title": "My Tokens",
+        "ref": "mytokens",
+        "url": "/my-tokens/index.html"
+    }, {
         "title": "Info Box",
         "ref": "infobox",
         "url": "/info-box/index.html"
-        }]
+    }]
 }, {
     "title": "Actions",
     "ref": "actions"
