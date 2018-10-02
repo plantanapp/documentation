@@ -5,9 +5,11 @@ Search results are rendered by the *avt.SearchBoost.Results* located in the Modu
 1. Click on the Modules menu.
 2. Then select All Categories from the Category drop down menu.
 3. In the Module drop down menu, select _avt.SearchBoost.Results_.
-4. Then click the Add Module button. 
+4. Then click the Add Module button.
+
 The template is configured in UI Settings in the Search Boost Control Panel. Note that unlike the Search Box template this type of template is less restrictive. Some templates are capable of building photo albums or product listings.
-  * You can open the Search Boost Control Panel by clicking on _Manage > Settings_ on the _Search Input Module_. Here you will see search settings specifications for the _Search Results_ module.
+
+* You can open the Search Boost Control Panel by clicking on _Manage > Settings_ on the _Search Input Module_. Here you will see search settings specifications for the _Search Results_ module.
 
 ## Settings
 
@@ -18,7 +20,7 @@ The following settings in UI Settings affect the search results:
 * **Results Page**. This specifies the page that contains the SearchBoost Results module. It receives the input then retrieves the results.
 
 * **Template for Search Results**. Defines the layout and color scheme of Search Results. They are used to render the search results.
-  * Read Create New Templates for additional information.
+* Read Create New Templates for additional information.
 
 * **Results per page**. Determines how many results appear on each page.
 
@@ -65,3 +67,9 @@ There are 3 types of tokens you can use:
   * CustomXXXX - where XXXX is the the name of the custom data
   
 The syntax for using tokens is [SourceName:TokenName] for DNN or My Tokens, and [TokenName] for local tokens.
+
+## SearchBoost New Features
+
+* **Ignore DNN Security**: This will add a new checkbox under the **Advanced Settings** tab. If this option is ticked, in results will be listed all pages, even if the user does not have access to that page. Instead of showing the page, he will be redirected to the login page. \(**upcoming feature**\);
+
+![](/search-boost/customize-appearance/assets/ignore_dnn_security.png)

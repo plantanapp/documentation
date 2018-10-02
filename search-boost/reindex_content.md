@@ -1,2 +1,0 @@
-# Reindex Content
-
