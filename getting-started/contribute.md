@@ -6,11 +6,11 @@ layout: default
 
 ## Markdown
 
-We are using Github Pages for this site so you need to use [GitHub Flavored Markdown](//guides.github.com/features/mastering-markdown/){:target="_blank"}
+We are using Github Pages for this site. You need to use [GitHub Flavored Markdown](//guides.github.com/features/mastering-markdown/){:target="_blank"}
 
 ## First steps
 
-  1. Create a [github](//github.com){:target="_blank"} account.
+  1. Create a [github](//github.com/join){:target="_blank"} account.
   2. Fork our [repository](//github.com/dnnsharp/dnnsharp.github.io){:target="_blank"} and clone it locally using GIT or you can even edit it directly on github.
       - Now you have your own copy at github.com/**YOUR_USERNAME**/dnnsharp.github.io
   3. If you write documentation locally, we recommend [Visual Studio Code](//code.visualstudio.com/){:target="_blank"} and those two extensions for markdown:
@@ -36,7 +36,7 @@ We are using Github Pages for this site so you need to use [GitHub Flavored Mark
 }]
 ```
 
-You can see here that every main product is child to the object with the title `Modules`.
+You can see here that every main product is a child of the object with the title `Modules`.
 
 The `ref` property links `main.json` to the other JSON files; to be used only in this file's objects.
 
