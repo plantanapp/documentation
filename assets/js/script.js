@@ -32,6 +32,7 @@
                 if (element.hasClass('parent_li')) {
                     element.find(' > span > i').addClass('fa-minus-circle').removeClass('fa-plus-circle');
                     element.find(' > ul > li').show();
+                    element.find(' > span ').addClass('tree-current-item');
                 }
             }
         }
@@ -79,6 +80,7 @@
         window.matchMedia("(min-width: 768px)").matches ? $("#wrapper").toggleClass("toggled") : $("#wrapper").toggleClass("mobile-untoggled");
     });
 
+    // expand the tree to current location
     if (location.pathname !== '/' && location.pathname !== '/index.html') {
         let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);

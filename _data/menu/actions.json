@@ -53,10 +53,10 @@
         "url": "/common/credential-store/Get-User-Credential.html---TODO"
     }, {
         "title": "Add Group",
-        "url": "/common/credential-store/Add-Group.html---TODO"
+        "url": "/common/credential-store/Add-Group.html"
     }, {
         "title": "Find Group",
-        "url": "/common/credential-store/Find-Group.html---TODO"
+        "url": "/common/credential-store/Find-Group.html"
     }]
 }, {
     "title": "Data",
