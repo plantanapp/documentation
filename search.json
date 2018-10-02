@@ -11,4 +11,4 @@ layout: null
       "categories" : "{{page.categories}}"
     } {% unless forloop.last %},{% endunless %}
   {% endfor %}
-] 
+]
