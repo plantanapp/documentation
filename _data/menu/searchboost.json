@@ -1,6 +1,6 @@
 [{
         "title": "Overview",
-        "url": "/search-boost/getting-started/index.html"
+        "url": "/search-boost/index.html"
     },
     {
         "title": "Getting Started",
@@ -49,7 +49,7 @@
     },
     {
         "title": "FAQ",
-        "url": "/search-boost/faq/faq.html"
+        "url": "/search-boost/faq.html"
     },
     {
         "title": "Search Engine",
@@ -134,7 +134,7 @@
         },
         {
             "title": "SearchBoost Addons",
-            "url": "/search-boost/searchboost-addons/searchboost_addons.html"
+            "url": "/search-boost/searchboost_addons.html"
         },
         {
             "title": "Customize Appearance",
@@ -204,6 +204,6 @@
         },
         {
             "title": "Debugging",
-            "url": "/search-boost/debugging/debugging.html"
+            "url": "/search-boost/debugging.html"
         }
     ]
