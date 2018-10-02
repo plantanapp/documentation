@@ -1,5 +1,7 @@
 # PayPal - Credit Card (using REST API)
 
+**Warning** Pay with Credit Card action has been deprecated in version 5.0.23 of PayPal.
+
 **Breaking Changes** Increased minimum requirements to .NET 4.5 and DNN 6+
 
 Start by adding a new form on the page. On the Initialization Screen, either use the template or start with a blank form. If latter, then add a button the form. From the list of actions select one of the paypal actions under Payments section. Check screenshot below for exact location.
