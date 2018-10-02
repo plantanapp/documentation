@@ -81,5 +81,9 @@
         "title": "Clickatell",
         "ref": "clickatell",
         "url": "integrations/clickatell/index.html"
+    }, {
+        "title": "PayPal",
+        "ref":"paypal",
+        "url":"integrations/paypal/index.html"
     }]
 }]

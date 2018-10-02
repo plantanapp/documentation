@@ -1,0 +1,19 @@
+[{
+  "title":"About",
+  "url": "integrations/paypal/about.html"
+}, {
+  "title":"Installation",
+  "url": "integrations/paypal/installation.html"
+}, {
+  "title":"FAQs",
+  "url": "integrations/paypal/faq.html"  
+}, {
+  "title":"Resources",
+  "url": "integrations/paypal/resources.html"  
+}, {
+  "title":"PayPal - Credit Card (using REST API)",
+  "url": "integrations/paypal/paypal-credit-card.html" 
+}, {
+  "title":"PayPal - Express Checkout",
+  "url": "integrations/paypal/paypal-express-checkout.html" 
+}]
