@@ -6,7 +6,7 @@
     "url": "/common/extensibility.html"
 }, {
     "title": "Code",
-    "url": "/common/code.html",
+    "url": "/common/code/code.html",
     "subpages": [{
         "title": "Apply Tokens",
         "url": "/common/code/apply-tokens.html"
@@ -22,7 +22,7 @@
     "url": "/common/conditions.html"
 },{
     "title": "Context",
-    "url": "/common/apply-tokens.html",
+    "url": "/common/apply-tokens/apply-tokens.html",
     "subpages": [{
         "title": "Inject Form Data",
         "url": "/common/apply-tokens/inject-form-data.html"
@@ -41,7 +41,7 @@
     }]
 },  {
     "title": "Credentials Store",
-    "url": "/common/credential-store.html",
+    "url": "/common/credential-store/credential-store.html",
     "subpages": [{
         "title": "Delete Credentials",
         "url": "/common/credential-store/delete-credential.html"
@@ -49,8 +49,8 @@
         "title": "Get Credentials",
         "url": "/common/credential-store/get-credential.html"
     }, {
-        "title": "Get User Credential",
-        "url": "/common/credential-store/Get-User-Credential.html---TODO"
+        "title": "Get User Credential-TODO",
+        "url": "/common/credential-store/Get-User-Credential.html"
     }, {
         "title": "Add Group",
         "url": "/common/credential-store/Add-Group.html"
@@ -60,7 +60,7 @@
     }]
 }, {
     "title": "Data",
-    "url": "/common/data.html",
+    "url": "/common/data/data.html",
     "subpages": [{
         "title": "Clear Cache (by Key)",
         "url": "/common/data/clear-cache-by-key.html"
@@ -85,7 +85,7 @@
     }]
 },{
         "title": "Dnn",
-        "url": "/common/dnn.html",
+        "url": "/common/dnn/dnn.html",
         "subpages": [{
             "title": "Clear Cache Item",
             "url": "/common/dnn/clear-cache-item.html"
@@ -101,7 +101,7 @@
         }]
     },{
         "title": "DNN Sharp",
-        "url": "/common/dnn-sharp.html",
+        "url": "/common/dnn-sharp/dnn-sharp.html",
         "subpages": [{
             "title": "Browse Data from Action Grid",
             "url": "/common/dnn-sharp/browse-data-from-action-grid.html"
@@ -124,12 +124,12 @@
     },{
     "title": "Documents",
     "subpages": [{
-        "title": "Save file to disk",
-        "url": "/common/Save-file-to-disk.html---TODO"
+        "title": "Save file to disk-TODO",
+        "url": "/common/Save-file-to-disk.html"
     }]
 },  {
     "title": "Entities",
-    "url": "/common/entities.html",
+    "url": "/common/entities/entities.html",
     "subpages": [{
         "title": "Create Entity",
         "url": "/common/entities/create-entity.html"
@@ -155,12 +155,12 @@
 },  {
     "title": "Flow",
     "subpages": [{
-        "title": "Execute Actions",
-        "url":"/common/Execute-Actions.html---TODO"
+        "title": "Execute Actions-TODO",
+        "url":"/common/Execute-Actions.html"
     }]
 },{
     "title": "Message",
-    "url": "/common/message.html",
+    "url": "/common/message/message.html",
     "subpages": [{
         "title": "Display Message",
         "url": "/common/message/display-message.html"
@@ -189,7 +189,7 @@
     "url": "/common/payments.html"
 },{
     "title": "Redirect",
-    "url": "/common/redirect.html",
+    "url": "/common/redirect/redirect.html",
     "subpages": [{
         "title": "Redirect to Portal Page",
         "url": "/common/redirect/redirect-to-portal-page.html"
@@ -202,7 +202,7 @@
     }]
 },{
     "title": "Security",
-    "url": "/common/security.html",
+    "url": "/common/security/security.html",
     "subpages": [{
         "title": "AES Decrypt",
         "url": "/common/security/aes-decrypt.html"
@@ -227,7 +227,7 @@
     }]
 }, {
     "title": "User",
-    "url": "/common/user.html",
+    "url": "/common/user/user.html",
     "subpages": [{
         "title": "Authorize User",
         "url": "/common/user/authorie-user.html"

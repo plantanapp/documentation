@@ -80,6 +80,6 @@
     "url": "/sharp-scheduler/extending-sharp-scheduler.html",
     "subpages": [{
         "title": "Services",
-        "url": "/sharp-scheduler/services.html"
+        "url": "/sharp-scheduler/extending/services.html"
     }]
 }]
