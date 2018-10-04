@@ -67,6 +67,8 @@
     };
 
     function renderResults(searchResults) {
+        $('#results-container').empty();
+
         const searchTemplate = '<li>' +
             '<a class="list-group-item list-group-item-action text-left"' +
             'href="{url}">' +
