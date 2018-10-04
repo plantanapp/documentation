@@ -38,44 +38,89 @@
         }
     }
 
-    function parseUrlForSearchResults(url) {
-        const replaceObject = {
+    function parsePathForSearchResults(path) {
+        const replaceDictionary = {
             "/": " -> ",
             "-": " ",
             ".html": "",
             "_": " "
         }
-        //need to eliminate the first slash and then replace the other strings
-        return url.substring(1).replace(/\/|-|.html/gi, function (matched) {
-            return replaceObject[matched]
+        return path.replace(/\/|-|_|.html/gi, function (matched) {
+            return replaceDictionary[matched]
         });
     }
 
-    function searchResults(prop, value) {
-        if (prop === 'path') {
-            let parseResult = parseUrlForSearchResults(value);
-            return toTitleCase(parseResult);
-        }
+    function debounce(func, wait, immediate) {
+        var timeout;
+        return function () {
+            var context = this,
+                args = arguments;
+            var later = function () {
+                timeout = null;``
+                if (!immediate) func.apply(context, args);
+            };
+            var callNow = immediate && !timeout;
+            clearTimeout(timeout);
+            timeout = setTimeout(later, wait);
+            if (callNow) func.apply(context, args);
+        };
+    };
+
+    function renderResults(searchResults) {
+        const searchTemplate = '<li>' +
+            '<a class="list-group-item list-group-item-action text-left"' +
+            'href="{url}">' +
+            '<span class="search-result-title">{title}</span>' +
+            '<br>' +
+            '<span class="search-result-path">{path}</span>' +
+            '</a>' +
+            '</li>';
+
+        $.each(searchResults, function (index, result) {
+            const templateCompileRegex = /({url}|{title}|{path})/g;
+            const templateReplaceDictionary = {
+                '{url}': result.Url,
+                // github adds a "| Title of the site" after every title page and we need to get rid of it
+                '{title}': result.Title.split('|')[0],
+                '{path}': toTitleCase(parsePathForSearchResults(result.Url.replace('https://docs.dnnsharp.com/', '')))
+            }
+
+            const compiledTemplateForElement = searchTemplate.replace(templateCompileRegex, function (matched) {
+                return templateReplaceDictionary[matched];
+            });
+
+            $('#results-container').append(compiledTemplateForElement);
+        });
     }
     //END DECLARE FUNCTIONS
 
-    // MAIN CODE
-    var sjs = SimpleJekyllSearch({
-        searchInput: document.getElementById('search-input'),
-        resultsContainer: document.getElementById('results-container'),
-        json: '/search.json',
-        success: Function.prototype,
-        searchResultTemplate: '<li><a class="list-group-item list-group-item-action text-left" href="{url}"><span class="search-result-title">{title}</span><br><span class="search-result-path">{path}</span></a></li>',
-        templateMiddleware: searchResults,
-        sortMiddleware: function () {
-            return 0;
-        },
-        noResultsText: 'No results found',
-        limit: 5,
-        fuzzy: false
+    // Search Setup
+
+    var debouncedSearch = debounce(function (searchTerms) {
+        const searchApiUrl = '//dnnsharpdocsservices.apps.plantanapp.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=search-docs' +
+            '&query=' + searchTerms +
+            '&resultsnumber=' + 10;
+
+        $.ajax({
+            url: searchApiUrl,
+            type: "GET",
+            contentType: "application/json; charset=utf-8",
+            crossDomain: true,
+            success: function (response) {
+                renderResults(JSON.parse(response));
+            }
+        });
+
+    }, 300);
+
+    $('#search-input').on('keyup', function (event) {
+        debouncedSearch(event.target.value);
     });
 
-    $(".menu-toggle").click(function(e) {
+    // end Searchboost Setup
+
+    // inverts the state of toggle menu for mobile and desktop 
+    $(".menu-toggle").click(function (e) {
         e.preventDefault();
         window.matchMedia("(min-width: 768px)").matches ? $("#wrapper").toggleClass("toggled") : $("#wrapper").toggleClass("mobile-untoggled");
     });
