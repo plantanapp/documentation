@@ -63,10 +63,21 @@ Important: Note that you will need to unlock the 30 Day trial or Activate for Pr
 
 ## How to configure Action Grid
 
-To manage Action Grid you have to access the management page of the module, either by clicking on the Manage Grid text displayed on the module after it was added on the page, either you have to click on the right edit menu on Manage Grid options. 
+To manage Action Grid you have to access the management page of the module, either by clicking on the Manage Grid text displayed on the module after it was added on the page, either you have to click on the right edit menu on Manage Grid options.
 ![manage screenshot](assets/manage.png)
 
-On the management page of the module, there are the following options, which are displayed and available for admins only: the [General Settings](general-settings.md) section, the [Data Source](data-sources.md) section, the [Template](template.md) section, the [Item Buttons and the Grid Buttons](buttons.md) section.
+First time when you click on Manage Grid you will be taken to the Action Grid Quick Start page. Here you will have to choose between the 2 "operating modes" of Action Grid:
+ * Simple/Basic/Easy (from database table)
+ * Complex (from scratch)
+ ![action grid quick start page](https://static.dnnsharp.com/documentation/ActionGrid_QuickStart.png)
+ 
+Choosing the simple mode (from Database Table) you will be taken to a page where you are able to:
+- select the table you want to use as datasource for the grid
+- select if you also want to automatically create ADD/UPDATE(edit) Forms and also a DELETE button on the Grid
+- select the columns that will be part of the table and those that will be added/updated by using the automatically created forms
+ ![quick start from database table](https://static.dnnsharp.com/documentation/Actiongrid_quickstart_database_table.png)
+
+The complex mode (from scratch) will take you to the management page of the module, where you are presented with the following options, which are displayed and available for admins only: the [General Settings](general-settings.md) section, the [Data Source](data-sources.md) section, the [Template](template.md) section, the [Item Buttons and the Grid Buttons](buttons.md) section.
 
 ## Support
 
