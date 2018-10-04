@@ -10,3 +10,11 @@ To access field values from the currently iterated entity, in the actions from t
 * On Error - define a list of actions to run on error.  Otherwise, an error message is returned. It will contain the underlying error if debug mode is on.
 
 ![](http://static.dnnsharp.com/documentation/execute_actions_on_entity_list.png)
+
+## Action Grid default entity
+
+There are 3 default entities available in Action Grid only, which can be used in your implementations(eg. do something on all items from Grid without the need to select them).
+
+* Default Entity Name: **ActionGridEntry**
+* Selected Items Entity Name: **ActionGridEntry:Selected**
+* Updated Items Entity Name: **UpdatedActionGridEntry**
