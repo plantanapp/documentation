@@ -130,6 +130,7 @@
         let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);
         element.parent('span').addClass('tree-current-item');
+        element[0].scrollIntoView({block:"center"});
     }
 
 })();

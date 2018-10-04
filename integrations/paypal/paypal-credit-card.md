@@ -1,6 +1,6 @@
 # PayPal - Credit Card (using REST API)
 
-**Warning** Pay with Credit Card action has been deprecated in version 5.0.23 of PayPal.
+**Update 3rd of October, 2018** As of 14th of September, 2017, PayPal REST API has been placed into [restricted mode](https://developer.paypal.com/docs/release-notes/release-notes-2017/#14-september-2017). Currently, this is [only available for UK accounts](https://www.paypal-community.com/t5/Sandbox-Environment/PayPal-REST-payments-API/td-p/1333777).
 
 **Breaking Changes** Increased minimum requirements to .NET 4.5 and DNN 6+
 
