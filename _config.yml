@@ -12,7 +12,6 @@ github_username: dnnsharp
 # Build settings
 markdown: kramdown
 plugins:
-  - jekyll-feed
   - octopress-debugger
   - jekyll-sitemap
 # Exclude from processing.
@@ -26,3 +25,4 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - .history/
