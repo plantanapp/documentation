@@ -77,7 +77,7 @@ Choosing the simple mode (from Database Table) you will be taken to a page where
 - select the columns that will be part of the table and those that will be added/updated by using the automatically created forms
  ![quick start from database table](https://static.dnnsharp.com/documentation/Actiongrid_quickstart_database_table.png)
 
-The complex mode (from scratch) will take you to the management page of the module, where you are presented with the following options, which are displayed and available for admins only: the [General Settings](general-settings.md) section, the [Data Source](data-sources.md) section, the [Template](template.md) section, the [Item Buttons and the Grid Buttons](buttons.md) section.
+The complex mode (from scratch) will take you to the management page of the module, where you are presented with the following options, which are displayed and available for admins only: the [General Settings](general-settings.md) section, the [Data Source](data-sources/data-sources.html) section, the [Template](grid-template/index.md) section, the [Item Buttons and the Grid Buttons](buttons/index.md) section.
 
 ## Support
 
