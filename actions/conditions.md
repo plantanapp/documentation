@@ -13,7 +13,7 @@ The Condition option runs on server side, is C# code and can contains tokens (de
 
 ## Fields
 
-In other words, "Show Conditionally" applies from the server side, it supports C# syntax. It's not real time. It evaluates on form load and on button clicks. But you have the power of everything that's on the server, including My Tokens.     
+In other words, "Show Conditionally" applies from the server side, it supports C# syntax. It's not real time. It evaluates on form load and on button clicks. But you have the power of everything that's on the server, including My Tokens.
 
 Please note that if "Show Conditionally" returns false then the field value will not be saved in the reports.
 

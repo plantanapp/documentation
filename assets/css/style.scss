@@ -96,7 +96,7 @@ header {
     }
 
     span {
-        height: 25px;
+        height: auto;
         display: flex;
         align-items: center;
         // margin-left: -20px;
@@ -170,6 +170,7 @@ header {
 
 .search-result-path {
     font-size: 13px;
+    margin-top:-3px;
 }
 
 .tree-current-item {
