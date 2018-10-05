@@ -42,7 +42,6 @@
 },  {
     "title": "Credentials Store",
     "url": "/actions/credential-store.html",
-    "url": "/common/credential-store.html",
     "subpages": [{
         "title": "Delete Credentials",
         "url": "/actions/credential-store/delete-credential.html"
