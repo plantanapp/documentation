@@ -1,2 +1,0 @@
-# [Obsolete] Collect PayPal Payment
-
