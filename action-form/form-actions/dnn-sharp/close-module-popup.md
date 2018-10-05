@@ -10,4 +10,3 @@ Using this Action you can edit the following fields:
 * **Select Module**. Select the module for which you want to trigger a close popup action \(Form or TabsPro based on the action selected: Close Action Form Popup, Close TabsPro Popup\).
 
 ![](http://static.dnnsharp.com/documentation/close_module_popup.png)
-

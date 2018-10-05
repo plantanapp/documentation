@@ -11,4 +11,3 @@ Using this Action you can edit the following fields:
 * **Tab**.  Select the tab to which you wish to change; if an expression is passed you will need to pass the TabsPro tabID. Supports My Tokens.
 
 ![](http://static.dnnsharp.com/documentation/change_tab.png)
-

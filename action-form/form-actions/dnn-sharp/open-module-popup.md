@@ -21,4 +21,3 @@ First parameter is required and is the module id of the Action Form
 The second parameter is optional and it is a JS object. After the Action Form init the values can be used by calling the QueryString token \(eg. \[QueryString:param\]\).
 
 The third parameter is optional and tells Action Form if the module should be reinitialized \(refreshed\). This can be used when you want to refresh the form so it can use the values from the second parameters. Show Condition and Enable Condition are refreshed as well. Default is false.
-
