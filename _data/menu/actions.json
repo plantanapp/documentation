@@ -1,254 +1,254 @@
 [{
     "title": "Overview",
-    "url": "/common/index.html"
+    "url": "/actions/index.html"
 }, {
     "title": "Extensibility",
-    "url": "/common/extensibility.html"
+    "url": "/actions/extensibility.html"
 }, {
     "title": "Code",
-    "url": "/common/code/code.html",
+    "url": "/actions/code.html",
     "subpages": [{
         "title": "Apply Tokens",
-        "url": "/common/code/apply-tokens.html"
+        "url": "/actions/code/apply-tokens.html"
     }, {
         "title": "Execute JavaScript",
-        "url": "/common/code/execute-javascript.html"
+        "url": "/actions/code/execute-javascript.html"
     }, {
         "title": "Execute Tokens",
-        "url": "/common/code/execute-token.html"
+        "url": "/actions/code/execute-token.html"
     }]
 }, {
     "title": "Conditions",
-    "url": "/common/conditions.html"
+    "url": "/actions/conditions.html"
 },{
     "title": "Context",
-    "url": "/common/apply-tokens/apply-tokens.html",
+    "url": "/actions/apply-tokens.html",
     "subpages": [{
         "title": "Inject Form Data",
-        "url": "/common/apply-tokens/inject-form-data.html"
+        "url": "/actions/apply-tokens/inject-form-data.html"
     }, {
         "title": "Load Entry by ID",
-        "url": "/common/apply-tokens/load-entry.html"
+        "url": "/actions/apply-tokens/load-entry.html"
     }, {
         "title": "Load Entry by User ID",
-        "url": "/common/apply-tokens/load-entry-by-user-id.html"
+        "url": "/actions/apply-tokens/load-entry-by-user-id.html"
     }, {
         "title": "Load User",
-        "url": "/common/apply-tokens/load-user.html"
+        "url": "/actions/apply-tokens/load-user.html"
     }, {
         "title": "Load Users from SQL",
-        "url": "/common/apply-tokens/load-users-from-sql.html"
+        "url": "/actions/apply-tokens/load-users-from-sql.html"
     }]
 },  {
     "title": "Credentials Store",
-    "url": "/common/credential-store/credential-store.html",
+    "url": "/actions/credential-store.html",
     "subpages": [{
         "title": "Delete Credentials",
-        "url": "/common/credential-store/delete-credential.html"
+        "url": "/actions/credential-store/delete-credential.html"
     }, {
         "title": "Get Credentials",
-        "url": "/common/credential-store/get-credential.html"
+        "url": "/actions/credential-store/get-credential.html"
     }, {
         "title": "Get User Credential-TODO",
-        "url": "/common/credential-store/Get-User-Credential.html"
+        "url": "/actions/credential-store/Get-User-Credential.html---TODO"
     }, {
         "title": "Add Group",
-        "url": "/common/credential-store/Add-Group.html"
+        "url": "/actions/credential-store/Add-Group.html"
     }, {
         "title": "Find Group",
-        "url": "/common/credential-store/Find-Group.html"
+        "url": "/actions/credential-store/Find-Group.html"
     }]
 }, {
     "title": "Data",
-    "url": "/common/data/data.html",
+    "url": "/actions/data.html",
     "subpages": [{
         "title": "Clear Cache (by Key)",
-        "url": "/common/data/clear-cache-by-key.html"
+        "url": "/actions/data/clear-cache-by-key.html"
     }, {
         "title": "Import Into Database (Entity)",
-        "url": "/common/data/import-into-database-entity.html"
+        "url": "/actions/data/import-into-database-entity.html"
     }, {
         "title": "Repost Data",
-        "url": "/common/data/repost-data.html"
+        "url": "/actions/data/repost-data.html"
     }, {
         "title": "Run SQL Query",
-        "url": "/common/run-sql-query.html"
+        "url": "/actions/run-sql-query.html"
     }, {
         "title": "Save Report in the Database",
-        "url": "/common/data/save-report-in-the-database.html"
+        "url": "/actions/data/save-report-in-the-database.html"
     }, {
         "title": "Server Request",
-        "url": "/common/data/server-request.html"
+        "url": "/actions/data/server-request.html"
     }, {
         "title": "Update Form Data (AJAX)",
-        "url": "/common/data/update-form-data-ajax.html"
+        "url": "/actions/data/update-form-data-ajax.html"
     }]
 },{
         "title": "Dnn",
-        "url": "/common/dnn/dnn.html",
+        "url": "/actions/dnn.html",
         "subpages": [{
             "title": "Clear Cache Item",
-            "url": "/common/dnn/clear-cache-item.html"
+            "url": "/actions/dnn/clear-cache-item.html"
         }, {
             "title": "Copy File",
-            "url": "/common/dnn/copy-file.html"
+            "url": "/actions/dnn/copy-file.html"
         }, {
             "title": "Delete File",
-            "url": "/common/dnn/delete-file.html"
+            "url": "/actions/dnn/delete-file.html"
         }, {
             "title": "Delete Folder",
-            "url": "/common/dnn/delete-folder.html"
+            "url": "/actions/dnn/delete-folder.html"
         }]
     },{
         "title": "DNN Sharp",
-        "url": "/common/dnn-sharp/dnn-sharp.html",
+        "url": "/actions/dnn-sharp.html",
         "subpages": [{
             "title": "Browse Data from Action Grid",
-            "url": "/common/dnn-sharp/browse-data-from-action-grid.html"
+            "url": "/actions/dnn-sharp/browse-data-from-action-grid.html"
         }, {
             "title": "Filter Action Grid",
-            "url": "/common/dnn-sharp/filter-action-grid.html"
+            "url": "/actions/dnn-sharp/filter-action-grid.html"
         }, {
             "title": "Change TabsPro Tab",
-            "url": "/common/dnn-sharp/change-tabspro-tab.html"
+            "url": "/actions/dnn-sharp/change-tabspro-tab.html"
         }, {
             "title": "Initialize Action Form",
-            "url": "/common/dnn-sharp/initialize-action-form.html"
+            "url": "/actions/dnn-sharp/initialize-action-form.html"
         }, {
             "title": "Open module Popup",
-            "url": "/common/dnn-sharp/open-module-popup.html"
+            "url": "/actions/dnn-sharp/open-module-popup.html"
         }, {
             "title": "Close module Popup",
-            "url": "/common/dnn-sharp/close-module-popup.html"
+            "url": "/actions/dnn-sharp/close-module-popup.html"
         }]
     },{
     "title": "Documents",
     "subpages": [{
         "title": "Save file to disk-TODO",
-        "url": "/common/Save-file-to-disk.html"
+        "url": "/actions/Save-file-to-disk.html---TODO"
     }]
 },  {
     "title": "Entities",
-    "url": "/common/entities/entities.html",
+    "url": "/actions/entities.html",
     "subpages": [{
         "title": "Create Entity",
-        "url": "/common/entities/create-entity.html"
+        "url": "/actions/entities/create-entity.html"
     }, {
         "title": "Extend Entity",
-        "url": "/common/entities/extend-entity.html"
+        "url": "/actions/entities/extend-entity.html"
     }, {
         "title": "Execute actions on entity list",
-        "url": "/common/entities/execute-actions-on-entity-list.html"
+        "url": "/actions/entities/execute-actions-on-entity-list.html"
     }, {
         "title": "Load Entities (JSON)",
-        "url": "/common/entities/load-entities-from-json.html"
+        "url": "/actions/entities/load-entities-from-json.html"
     }, {
         "title": "Load Entities (SQL)",
-        "url": "/common/entities/load-entities-from-sql.html"
+        "url": "/actions/entities/load-entities-from-sql.html"
     }, {
         "title": "Remap Entity List",
-        "url": "/common/entities/remap-entity-list.html"
+        "url": "/actions/entities/remap-entity-list.html"
     }, {
         "title": "Remove Entities",
-        "url": "/common/entities/remove-entity.html"
+        "url": "/actions/entities/remove-entity.html"
     }]
 },  {
     "title": "Flow",
     "subpages": [{
         "title": "Execute Actions-TODO",
-        "url":"/common/Execute-Actions.html"
+        "url":"/actions/Execute-Actions.html---TODO"
     }]
 },{
     "title": "Message",
-    "url": "/common/message/message.html",
+    "url": "/actions/message.html",
     "subpages": [{
         "title": "Display Message",
-        "url": "/common/message/display-message.html"
+        "url": "/actions/message/display-message.html"
     }, {
         "title": "Display Error Message",
-        "url": "/common/message/display-error-message.html"
+        "url": "/actions/message/display-error-message.html"
     }, {
         "title": "Display Toast Message",
-        "url": "/common/message/display-toast-message.html"
+        "url": "/actions/message/display-toast-message.html"
     }, {
         "title": "Send Plain Text as File Download",
-        "url": "/common/message/send-plain-text-as-file-download.html"
+        "url": "/actions/message/send-plain-text-as-file-download.html"
     }]
 }, {
     "title": "Parsing",
-    "url": "/common/parsing.html",
+    "url": "/actions/parsing.html",
     "subpages": [{
         "title": "Regex",
-        "url": "/common/regex.html"
+        "url": "/actions/regex.html"
     }, {
         "title": "Regex - Multiple Results",
-        "url": "/common/regex-multiple-results.html"
+        "url": "/actions/regex-multiple-results.html"
     }]
 }, {
     "title": "Payments",
-    "url": "/common/payments.html"
+    "url": "/actions/payments.html"
 },{
     "title": "Redirect",
-    "url": "/common/redirect/redirect.html",
+    "url": "/actions/redirect.html",
     "subpages": [{
         "title": "Redirect to Portal Page",
-        "url": "/common/redirect/redirect-to-portal-page.html"
+        "url": "/actions/redirect/redirect-to-portal-page.html"
     }, {
         "title": "Redirect to URL",
-        "url": "/common/redirect/redirect-to-url.html"
+        "url": "/actions/redirect/redirect-to-url.html"
     }, {
         "title": "Send File to Download",
-        "url": "/common/redirect/send-file-to-download.html"
+        "url": "/actions/redirect/send-file-to-download.html"
     }]
 },{
     "title": "Security",
-    "url": "/common/security/security.html",
+    "url": "/actions/security.html",
     "subpages": [{
         "title": "AES Decrypt",
-        "url": "/common/security/aes-decrypt.html"
+        "url": "/actions/security/aes-decrypt.html"
     }, {
         "title": "AES Encrypt",
-        "url": "/common/security/aes-encrypt.html"
+        "url": "/actions/security/aes-encrypt.html"
     }, {
         "title": "RSA Decrypt",
-        "url": "/common/security/rsa-decrypt.html"
+        "url": "/actions/security/rsa-decrypt.html"
     }, {
         "title": "RSA Encrypt",
-        "url": "/common/security/rsa-encrypt.html"
+        "url": "/actions/security/rsa-encrypt.html"
     }]
 }, {
     "title": "Serialization",
     "subpages": [{
         "title": "Serialize to CSV",
-        "url": "/common/serialization/serialize-csv.html"
+        "url": "/actions/serialization/serialize-csv.html"
     }, {
         "title": "Serialize to Excel",
-        "url": "/common/serialization/serialize-excel.html"
+        "url": "/actions/serialization/serialize-excel.html"
     }]
 }, {
     "title": "User",
-    "url": "/common/user/user.html",
+s    "url": "/actions/user.html",
     "subpages": [{
         "title": "Authorize User",
-        "url": "/common/user/authorie-user.html"
+        "url": "/actions/user/authorie-user.html"
     }, {
         "title": "Grant User Role",
-        "url": "/common/user/grant-user-role.html"
+        "url": "/actions/user/grant-user-role.html"
     }, {
         "title": "Revoke User Role",
-        "url": "/common/user/revoke-usere-role.html"
+        "url": "/actions/user/revoke-usere-role.html"
     }, {
         "title": "Unauthorize User",
-        "url": "/common/user/unauthorize-user.html"
+        "url": "/actions/user/unauthorize-user.html"
     }, {
         "title": "Update User Profile",
-        "url": "/common/user/update-user-profile.html"
+        "url": "/actions/user/update-user-profile.html"
     }, {
         "title": "User Login",
-        "url": "/common/user/user-login.html"
+        "url": "/actions/user/user-login.html"
     }, {
         "title": "User Registration",
-        "url": "/common/user/user-registration.html"
+        "url": "/actions/user/user-registration.html"
     }]
 }, {
     "title": "User Management",
