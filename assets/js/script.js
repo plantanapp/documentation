@@ -56,7 +56,7 @@
             var context = this,
                 args = arguments;
             var later = function () {
-                timeout = null;``
+                timeout = null;
                 if (!immediate) func.apply(context, args);
             };
             var callNow = immediate && !timeout;
@@ -67,7 +67,13 @@
     };
 
     function renderResults(searchResults) {
-        $('#results-container').empty();
+        const resultsContainer = $('#results-container');
+        resultsContainer.empty();
+
+        if (!searchResults.length) {
+            resultsContainer.text('No Results have been found');
+            return;
+        }
 
         const searchTemplate = '<li>' +
             '<a class="list-group-item list-group-item-action text-left"' +
@@ -91,7 +97,7 @@
                 return templateReplaceDictionary[matched];
             });
 
-            $('#results-container').append(compiledTemplateForElement);
+            resultsContainer.append(compiledTemplateForElement);
         });
     }
     //END DECLARE FUNCTIONS
@@ -102,6 +108,8 @@
         const searchApiUrl = '//dnnsharpdocsservices.apps.plantanapp.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=search-docs' +
             '&query=' + searchTerms +
             '&resultsnumber=' + 10;
+
+        $('#results-container').empty().append('<i class="fas fa-sync fa-spin"></i>');
 
         $.ajax({
             url: searchApiUrl,
@@ -132,7 +140,9 @@
         let element = $("a[href='" + location.pathname + "']");
         element && expandTreeToElement(element);
         element.parent('span').addClass('tree-current-item');
-        element[0].scrollIntoView({block:"center"});
+        element[0].scrollIntoView({
+            block: "center"
+        });
     }
 
 })();
