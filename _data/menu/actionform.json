@@ -1,9 +1,6 @@
 [{
-    "title": "Are you using Action Form 2.X?",
-    "url": "http://action-form-v2.dnnsharp.com/"
-}, {
     "title": "Overview",
-    "url": "/action-form/overview.html"
+    "url": "/action-form/index.html"
 }, {
     "title": "Breaking Changes",
     "url": "/action-form/breaking-changes.html"
@@ -11,8 +8,8 @@
     "title": "Examples & Troubleshooting",
     "url": "/action-form/exemples-troubleshooting.html"
 }, {
-    "title": "FAQ",
-    "url": "/action-form/FAQ.html"
+    "title": "FAQs",
+    "url": "/action-form/FAQs.html"
 }, {
     "title": "Video Tutorials",
     "url": "/action-form/video-tutorials.html"

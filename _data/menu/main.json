@@ -48,6 +48,10 @@
         "title": "Info Box",
         "ref": "infobox",
         "url": "/info-box/index.html"
+    },{
+        "title":"Easy Container",
+        "ref":"easycontainer",
+        "url":"/easy-container/index.html"
     }]
 }, {
     "title": "Actions",
