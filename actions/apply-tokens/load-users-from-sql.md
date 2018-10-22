@@ -8,5 +8,5 @@ Using this Action you can edit the following fields:
 * **Condition**. This boolean expression is used to determine if this action will execute. Use it to enable or disable actions programatically. For example, you'd enable a **ShowError** action only if you've found an error let's say when you parsed a response from a web service. A common example is **\[SomeField\] == "Some Value**". This field supports **My Tokens**.
 * **SQL Query**. SQL to execute. It should return only one column, which is the **UserID**. A common query is S**ELECT UserId from Users Where FirstName LIKE '%John%'**. Can contain context tokens \(for example **\[ContextTokenName\]**\) and **My Tokens**.
 
-![](http://static.dnnsharp.com/documentation/load_users_from_sql.png)
+![](//static.dnnsharp.com/documentation/load_users_from_sql.png)
 

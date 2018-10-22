@@ -10,5 +10,5 @@ Using this Action you can edit the following fields:
 * **Entity Name**. Provide a name for your new entity.
 * **Properties**.  select which properties\(and corresponding values\) should be added to the newly created entity.
 
-![](http://static.dnnsharp.com/documentation/create_entity.png)
+![](//static.dnnsharp.com/documentation/create_entity.png)
 

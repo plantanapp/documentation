@@ -30,7 +30,7 @@ As you probably already guessed, the pattern supports some light regular express
 
 The first column determines what to match against: 
 
-* **Absolute** - URL Full URL as it appears in browser address bar, including http://. 
+* **Absolute** - URL Full URL as it appears in browser address bar, including //. 
 * **Schemeless URL** - Full URL without protocol. 
 * **Domain** - Looks only in domain name. 
 * **Portal Alias** - Usually it is the domain name, but for child portals or virtual IIS directories it can also include a root folder. 

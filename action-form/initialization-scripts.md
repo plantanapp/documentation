@@ -24,7 +24,7 @@ or jQuery:
 var $el = $('#' + form.fields.SomeFieldName.id);
 ```
 
-Once you have that, you can do DOM manipulation, install plugins and so on. For example, one could hide a textbox by using *$el.hide();* If you're trying to integrate a 3rd party jQuery plugin, you'll first have to include it. Currently you can't do this with Action Form, so you'll have to add it to the DNN skin or the Page Header under Page Settings. After you do that, you can simply call the plugin on the jquery element. For example, the following script would provide a password complexity message using the <a href="http://danpalmer.me/jquery-complexify/">complexify plugin:</a>
+Once you have that, you can do DOM manipulation, install plugins and so on. For example, one could hide a textbox by using *$el.hide();* If you're trying to integrate a 3rd party jQuery plugin, you'll first have to include it. Currently you can't do this with Action Form, so you'll have to add it to the DNN skin or the Page Header under Page Settings. After you do that, you can simply call the plugin on the jquery element. For example, the following script would provide a password complexity message using the <a href="//danpalmer.me/jquery-complexify/">complexify plugin:</a>
 
 ```js
 $el.complexify(options, callback(valid, complexity){
@@ -32,7 +32,7 @@ $el.complexify(options, callback(valid, complexity){
 });
 ```
 
-Other things to keep in mind is that this field also supports <a href="http://www.dnnsharp.com/dnn/modules/my-custom-tokens">My Tokens</a>. Note that if you use form tokens in this context they access the value of each field. So for example, [SomeFormField] is equivalent to form.fields.SomeFormField.value. One useful trick to know is that values can also be changed at this stage by assigning values to them. The following 2 are equivalent:
+Other things to keep in mind is that this field also supports <a href="/my-tokens/index.html">My Tokens</a>. Note that if you use form tokens in this context they access the value of each field. So for example, [SomeFormField] is equivalent to form.fields.SomeFormField.value. One useful trick to know is that values can also be changed at this stage by assigning values to them. The following 2 are equivalent:
 
 ```code
 form.fields.SomeFieldName.value = 'Something new';

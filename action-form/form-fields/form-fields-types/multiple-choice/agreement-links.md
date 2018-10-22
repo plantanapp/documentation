@@ -26,4 +26,4 @@ Please set modal width/height CSS property(px,%,em)
 
 ## Popup Close Button
 
-Please set the close button text, if this value is empty the close button will not be displayed. Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} so you can pull data from various sources such as user profile.
+Please set the close button text, if this value is empty the close button will not be displayed. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as user profile.

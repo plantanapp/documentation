@@ -41,8 +41,8 @@ If all URLs remained the same, then you can rewrite all traffic with a single Ad
 If you need to write one single rule, that would be:
 
     Match: Absolute
-    Condition: http://olddomain.com{path*}
-    Target URL: http://newdomain.com{path*}
+    Condition: //olddomain.com{path*}
+    Target URL: //newdomain.com{path*}
 
 Note that `{*path}` parameter matches everything after the domain name. Read more about [*Advanced Rules*](settings-reference/advanced_rules.html){:target="_blank"}.
 
@@ -50,7 +50,7 @@ Note that `{*path}` parameter matches everything after the domain name. Read mor
 
 ##### 5. How do I configure the URL Adapter desktop module?
 
-In order to use URL Adapter, after installing and adding it on a page, you have to enable the module. To do that, you have to click on the green Enable button: [see here](http://screencast.com/t/Rd2d3qVuw){:target="_blank"}. 
+In order to use URL Adapter, after installing and adding it on a page, you have to enable the module. To do that, you have to click on the green Enable button: [see here](//screencast.com/t/Rd2d3qVuw){:target="_blank"}. 
 
 Because all the URLs get rewritten on activation, you will be redirected to the homepage. Chances are to get a "page not found" error, but do not worry: as soon as you manually re-access the homepage you'll be able to continue with the configuration of the module.
 

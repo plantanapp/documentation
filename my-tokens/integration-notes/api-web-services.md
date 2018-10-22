@@ -68,7 +68,7 @@ Now, let's assume we have an API Key that requires login. We can get the user id
 The following C# example will show you how to use in your remote applications the External API.
 
 ```c#
-string apiBaseUrl = "http://yourdomain.com/DesktopModules/avt.MyTokens/Api.aspx";
+string apiBaseUrl = "//yourdomain.com/DesktopModules/avt.MyTokens/Api.aspx";
 string apiKey = "C068C594-027D-5D43-C673-F337D848C51A";
 int portalId = 0;
 string token = "[Portal:PortalName]";

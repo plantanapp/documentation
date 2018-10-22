@@ -2,7 +2,7 @@
 
 ## DNN Blog and news modules integration
 
-Since the release of URL Adapter version 1.4, we've worked on its integration with some of the most popular DNN blogs, news and directories modules, such as: [SunBlogNuke](http://www.sunblognuke.com/){:target="_blank"}, [EasyDNNnews](http://www.easydnnsolutions.com/Modules/EasyDNNnews/Overview){:target="_blank"} and others.
+Since the release of URL Adapter version 1.4, we've worked on its integration with some of the most popular DNN blogs, news and directories modules, such as: [SunBlogNuke](//www.sunblognuke.com/){:target="_blank"}, [EasyDNNnews](//www.easydnnsolutions.com/Modules/EasyDNNnews/Overview){:target="_blank"} and others.
 
 You can use URL Adapter when you want to restructure the pages within your blog and news modules (or within your DNN portal), and you want to ensure that people who have bookmarked old URLs don't break when you move pages around. URL Adapter enables you to transparently forward requests to the new page location without breaking browsers. 
 

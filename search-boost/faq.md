@@ -6,7 +6,7 @@ It should be easy to upgrade your custom indexer for SearchBoost 3. We have chan
 
 **How does SearchBoost ranks results?**
 
-Default search scoring algorithm weights results using TF—IDF, term frequency—inverse document frequency.  Term frequency means that high-frequency terms within a document have higher weight than do low-frequency terms.  Inverse document frequency means that terms that occur frequently across many documents in a collection of documents are less likely to be meaningful descriptors of any given document in a corpus and are therefore down-weighted.  This filters out common words. Details about all the factors: <http://www.lucenetutorial.com/advanced-topics/scoring.html>
+Default search scoring algorithm weights results using TF—IDF, term frequency—inverse document frequency.  Term frequency means that high-frequency terms within a document have higher weight than do low-frequency terms.  Inverse document frequency means that terms that occur frequently across many documents in a collection of documents are less likely to be meaningful descriptors of any given document in a corpus and are therefore down-weighted.  This filters out common words. Details about all the factors: <//www.lucenetutorial.com/advanced-topics/scoring.html>
 
 **How can I can exclude specific modules or folders from search results?**
 

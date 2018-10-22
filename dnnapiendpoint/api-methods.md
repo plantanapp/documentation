@@ -57,7 +57,7 @@ To get to a more complex example where we can use the integration of API Endpoin
 ```javascript
 $.ajax({
 type: "POST",
-url: "http://site.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=Print",
+url: "//site.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=Print",
 data: {"Name":"Test"} 
 }).done(function( data ) {
 // process response
@@ -83,7 +83,7 @@ This is what the request from the button should finally look like:
 ```javascript
 $.ajax({
 type: "POST",
-url: "http://site.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=Print",
+url: "//site.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=Print",
 data: {"Name":"Test"} 
 }).done(function( data ) {
 // process response

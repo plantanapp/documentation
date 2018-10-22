@@ -6,7 +6,7 @@ It updates the User profile that will match by UserId, Username or Email the val
 * either the predefined ones (password, display name and email)
 * or __Additional User Profile Properties__ specified by you
 
-![update user profile action](http://static.dnnsharp.com/documentation/update_user_profile.png)
+![update user profile action](//static.dnnsharp.com/documentation/update_user_profile.png)
 
 ## Update User Profile (Obsolete)
 > In all builds released after June 12th, 2018 this action is marked as Obsolete and replaced by the one above.
@@ -17,5 +17,5 @@ Allow password update
 If there's a password field on the form, the module will also update the password for the current user.  
 Also update Display Name with in this drop down list you can select a corresponding field which were previously added as data source and which will be called when the buttons action is executed.
 
-![update user profile obsolete](http://static.dnnsharp.com/documentation/UpdateUserProfile.png)
+![update user profile obsolete](//static.dnnsharp.com/documentation/UpdateUserProfile.png)
 

@@ -24,6 +24,5 @@ Create digital walkthroughs on your DNN portal improving the user experience and
 * IIS 6.0+
 * Support
 
-Our support staff is friendly and always available to help you. Engage us on our [community platform](http://www.dnnsharp.com/support){:target="_blank"}.
+Our support staff is friendly and always available to help you. Engage us on our [community platform](//www.dnnsharp.com/helpcenter){:target="_blank"}.
 
-You can download latest version of InfoBox from [HERE](https://www.dnnsharp.com/dnn/modules/infobox/download){:target="_blank"}.

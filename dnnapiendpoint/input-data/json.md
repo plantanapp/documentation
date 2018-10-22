@@ -42,7 +42,7 @@ var carInfo = {
 $.ajax({
         type: "POST",
         headers : {"Content-Type" : "application/json"},
-        url: "http://example.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=UpdatePrice",
+        url: "//example.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=UpdatePrice",
         data: JSON.stringify(carInfo)
     }).done(function( data ) {
         // process response

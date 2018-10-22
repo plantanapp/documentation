@@ -37,7 +37,7 @@ left join Folders D on D.FolderID = F.FolderID
 2. add a computed field on the grid, check the Allow HTML option and use the following content:
 
 ``` html
-<img id="irc_mi" src="http://static.comicvine.com/uploads/original/13/134858/2779331-the-witchers-geralt.jpg" width="230" height="130" style="margin-top: 0px;">
+<img id="irc_mi" src="//static.comicvine.com/uploads/original/13/134858/2779331-the-witchers-geralt.jpg" width="230" height="130" style="margin-top: 0px;">
 <div><h3>[DisplayName]</h3></div>
 <div><strong>[Profile:FirstName]</strong><div>
 <div>[Biography]</div>
@@ -85,7 +85,7 @@ www.example.com/form-page?AuctionID=[AuctionID]
 
 **Result:** when you click on the grid item button, the id of the item will be checked and the redirect will be made to the form page where the form fields will be auto-populated with items values.  
 
-**Info note:** We have a client who wanted to help us and posted this info on our support forum - it's more detailed and provides explanation on each action which needs to be made, so if you want to see it, please click [here](http://www.dnnsharp.com/Support.aspx#opturl=%2Faction-grid%2Fusing-action-grid--forms-to-manage-your-own-data). 
+**Info note:** We have a client who wanted to help us and posted this info on our support forum - it's more detailed and provides explanation on each action which needs to be made, so if you want to see it, please click [here](//www.dnnsharp.com/Support.aspx#opturl=%2Faction-grid%2Fusing-action-grid--forms-to-manage-your-own-data). 
 
 We've made a video tutorial where we provide a practical sample on how you can integrate Google Charts into your DNN website by using My Tokens (to feed data), Action Grid and Google Charts modules. The purpose of our example is to make a Pie Chart to show different types of errors that exist in DNN Log errors. To see how this can be made, click [here](https://www.youtube.com/watch?v=UqCDxRC3IIw).
 
@@ -105,7 +105,7 @@ We can't change the state directly, but we can check one of the fields from the 
 
 ## How to apply CSS to specific columns
 
-If you would like to apply CSS to specific columns, you can use the nth child selector to write CSS for each individual column: [http://www.w3schools.com/cssref/sel_nth-child.asp](http://www.w3schools.com/cssref/sel_nth-child.asp){:target="_blank"}.
+If you would like to apply CSS to specific columns, you can use the nth child selector to write CSS for each individual column: [//www.w3schools.com/cssref/sel_nth-child.asp](//www.w3schools.com/cssref/sel_nth-child.asp){:target="_blank"}.
 
 ## How to export (serialize to CSV) the fields that are not displayed in the grid
 

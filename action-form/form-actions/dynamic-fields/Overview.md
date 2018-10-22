@@ -5,47 +5,47 @@ Is a feature that allows the user to create on the initialization of the form di
 ## Container Id
 
 This is the Container Id to place this checkbox into. Eg. Add a Dynamic Field Container having id DynamicFieldContainer. "DynamicFieldContainer" is the ID of the field.
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Field
 
 Required. Give this field an id so you can reference it later.
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Field Title
 
 Give this field an title/name which is a label.
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Field Description
 
 Give this field a description.
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Initial Value
 
 Give this field an initial value.
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## CSS Class
 
 Set CSS classes on the input control. This is appended to the container's UI settings!
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## CSS Style
 
 Set inline styles on the input control. This is appended to the container's UI settings!
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Label CSS Class
 
 Set CSS classes on the input label. This is appended to the container's UI settings!
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Label CSS Styles
 
 Set inline styles on the input label. This is appended to the container's UI settings!
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Field ID Token Name
 

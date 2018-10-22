@@ -43,7 +43,7 @@ Features:
 
     * Save To Reports - this setting enables Action Form to save data to reports table.
 
-* **TabsPro Integration with Action Grid on General Settings** These options work only if you already have a [TabsPro](http://www.dnnsharp.com/dnn/modules/tabs-pro) version higher than 02.01.40 installed.
+* **TabsPro Integration with Action Grid on General Settings** These options work only if you already have a [TabsPro](//www.dnnsharp.com/dnn/modules/tabs-pro) version higher than 02.01.40 installed.
 
   * **Load When Tab Is Activated** - if this setting is enabled the grid will be initialized when the tab is active.
 

@@ -3,7 +3,7 @@
 ## [News:AjaxFeed]
 
 Google AJAX Feed API allows to embed a Dynamic Feed Control on your web page and let your users see customized views of the feeds.
-Read more about this gadget at http://www.google.com/uds/solutions/wizards/dynamicfeed.html
+Read more about this gadget at //www.google.com/uds/solutions/wizards/dynamicfeed.html
 
 * Parameters:
 
@@ -18,17 +18,17 @@ Read more about this gadget at http://www.google.com/uds/solutions/wizards/dynam
   - To test the token, click Test Token button below and replace parameters (if any) with actual values.
 
 * Examples:
-  - [News:AjaxFeed(DisplayMode=Horizontal,Feeds="http://rss.people.com/web/people/rss/topheadlines/index.xml#People.com Celebrity News;http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml#E! Online Entertainment News")]
+  - [News:AjaxFeed(DisplayMode=Horizontal,Feeds="//rss.people.com/web/people/rss/topheadlines/index.xml#People.com Celebrity News;//www.eonline.com/syndication/feeds/rssfeeds/topstories.xml#E! Online Entertainment News")]
   
-  - Rotates one headline from the two RSS sources.[News:AjaxFeed(Feeds="http://rss.people.com/web/people/rss/topheadlines/index.xml#People.com
-  Celebrity News;http://www.eonline.com/syndication/feeds/rssfeeds/topstories.xml#E! Online Entertainment News")]
+  - Rotates one headline from the two RSS sources.[News:AjaxFeed(Feeds="//rss.people.com/web/people/rss/topheadlines/index.xml#People.com
+  Celebrity News;//www.eonline.com/syndication/feeds/rssfeeds/topstories.xml#E! Online Entertainment News")]
 
   - Embeds celebrity news by merging two sources (RSS Feeds) and stack 4 from each source.
 
 ## [News:NewsShow]
 
 NewsShow is a Google service that embeds news article summaries matching some criteria.
-Read more about this gadget at http://code.google.com/apis/newssearch/newsshow/index.html
+Read more about this gadget at //code.google.com/apis/newssearch/newsshow/index.html
 
 * Parameters:
   

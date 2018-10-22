@@ -8,4 +8,4 @@ It does exactly what it says, with the click of a button. For this action you ca
 * **EntryId**. A guid that uniquely identifies an entry. Can contain form tokens \(for example **\[Email\]**\) and **My Tokens**.
 * **Input**. Can contain form tokens \(for example **\[Email\]**\) and **My Tokens**.
 
-![](http://static.dnnsharp.com/documentation/UnauthorizeUser.png)
+![](//static.dnnsharp.com/documentation/UnauthorizeUser.png)

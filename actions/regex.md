@@ -9,4 +9,4 @@ When you want to parse multiple values at once from the same **Input**, you can 
 * **Input**. Can contain form tokens \(for example **\[Email\]**\) and **My Tokens**.
 * **Parse Data**. Provide a list of rules to parse the Input expression \(which can be a token that contains the value from another field or action\) into new tokens. Use these new tokens in subsequent actions. If the match contains subgroups, then the first subgroup will be extracted instead of the whole match.
 
-![](http://static.dnnsharp.com/documentation/Regex.png)
+![](//static.dnnsharp.com/documentation/Regex.png)

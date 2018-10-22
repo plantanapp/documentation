@@ -1,6 +1,6 @@
 # Install IFilter
 
-**IMPORTANT**: Starting with version 2.4 you can index PDF files using the PDFBox extension that you can download from our website at [http://www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx](http://www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx)  
+**IMPORTANT**: Starting with version 2.4 you can index PDF files using the PDFBox extension that you can download from our website at [//www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx](//www.dnnsharp.com/dotnetnuke/modules/dnn-search/search-boost/download.aspx)  
 If you have this extension you don't need to install the PDF Ifilter anymore.
 
 Search Boost can index documents both plain text files and binary documents such as PDFs or Word documents. But in order for Search Boost to be able to read the contents of binary files, it needs IFIlter packages installed on the server.
@@ -16,11 +16,11 @@ You can get IFilter installers from respective vendors \(PDF IFilter from Adobe 
 Here are direct download links for common IFilters:
 
 * Office Files  
-  [http://www.microsoft.com/en-us/download/details.aspx?id=17062](http://www.microsoft.com/en-us/download/details.aspx?id=17062)
+  [//www.microsoft.com/en-us/download/details.aspx?id=17062](//www.microsoft.com/en-us/download/details.aspx?id=17062)
 
 * PDF  
-  [http://supportdownloads.adobe.com/detail.jsp?ftpID=5542](http://supportdownloads.adobe.com/detail.jsp?ftpID=5542) \(for 64 bit platforms\)  
-  [http://www.adobe.com/support/downloads/detail.jsp?ftpID=2611](http://www.adobe.com/support/downloads/detail.jsp?ftpID=2611) \(for 32 bits\)  
+  [//supportdownloads.adobe.com/detail.jsp?ftpID=5542](//supportdownloads.adobe.com/detail.jsp?ftpID=5542) \(for 64 bit platforms\)  
+  [//www.adobe.com/support/downloads/detail.jsp?ftpID=2611](//www.adobe.com/support/downloads/detail.jsp?ftpID=2611) \(for 32 bits\)  
   \(Note: on 64 bit platforms install both to be safe since IIS application pools can sometimes be configured to run as 32 bit\)
 
 * You can also use Adobe Acrobat® 11 or Adobe Reader® 11 \(free\) to index PDF documents \(32 bits\).

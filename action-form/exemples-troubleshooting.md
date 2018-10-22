@@ -290,7 +290,7 @@ Copy DnnSharp.Common.dll from zip package file to your website /bin folder.
 
 You can create a new (custom) validation in (C:\wwwroot\dnn733\DesktopModules\AvatarSoft\ActionForm\Config\Validators).
 
-More documentation is available <a href="http://action-form.dnnsharp.com/form-fields">here</a> (scroll to "Validation"). One important aspect to keep in mind is that you have to manually add this after every module upgrade.
+More documentation is available <a href="//action-form.dnnsharp.com/form-fields">here</a> (scroll to "Validation"). One important aspect to keep in mind is that you have to manually add this after every module upgrade.
 
 ### <a name="12"></a> Send email to registered user
 
@@ -310,7 +310,7 @@ Create an Action Form with two textboxes: InString and OutString.
 In its "On Change/Click" field, put this code:
 
 ```js
-var responsePromise = $http.get("http://yourserver.com/strrev.php?instr=" + [InString]);
+var responsePromise = $http.get("//yourserver.com/strrev.php?instr=" + [InString]);
 responsePromise.success(function(data, status, headers, config) {
    [OutString] = data.instr;
 });

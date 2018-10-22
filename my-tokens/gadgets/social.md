@@ -3,7 +3,7 @@
 #### [Social:AddThis] 
 
 Shares page link in one of 100s of networks exposed by AddThis.com.
-Read more about this gadget at http://www.addthis.com/help
+Read more about this gadget at //www.addthis.com/help
 
 * Syntax:
 
@@ -21,7 +21,7 @@ Show bookmarking links.
 
 Embed Disqus comments on the page.
 
-Read more about this gadget at http://docs.disqus.com/developers/
+Read more about this gadget at //docs.disqus.com/developers/
 
 * Parameters:
   + [required] String ShortName ShortName uniquely identifies your account on Disqus.
@@ -39,7 +39,7 @@ Read more about this gadget at http://docs.disqus.com/developers/
 
 This Gadget embeds FaceBook Like button on current page.
 
-Read more about this gadget at http://developers.facebook.com/docs/reference/plugins/like
+Read more about this gadget at //developers.facebook.com/docs/reference/plugins/like
 
 * Parameters:
   + [optional] String Url URL to Like. If not specified it uses the URL of the webpage.
@@ -83,7 +83,7 @@ Possible Values: light,dark
 
 
 Show a button that links to a LinkedIn profile.
-Read more about this gadget at http://www.linkedin.com/profile?promoteProfile=
+Read more about this gadget at //www.linkedin.com/profile?promoteProfile=
 Parameters:
 [required]	String	PublicUrl	Link to user public profile. This link ussually appears on user profile.
 
@@ -104,7 +104,7 @@ btn_viewmy_120x33.png,btn_profile_greytxt_80x15.png,btn_liprofile_blue_80x15.png
 
 To test the token, click Test Token button below and replace parameters (if any) with actual values.
 Examples: 
-[Social:LinkedInProfileButton(PublicUrl="http://ro.linkedin.com/pub/bogdan-litescu/3/22a/2a2",Name="View Bogdan Litescu Profile")]
+[Social:LinkedInProfileButton(PublicUrl="//ro.linkedin.com/pub/bogdan-litescu/3/22a/2a2",Name="View Bogdan Litescu Profile")]
 Link to my profile on LinkedIn. 
 
 
@@ -112,7 +112,7 @@ Link to my profile on LinkedIn.
 [Social:TweetButton]
 
         The Tweet Button is a small widget which allows users to easily share your website with their followers.
-        Read more about this gadget at http://dev.twitter.com/pages/tweet_button
+        Read more about this gadget at //dev.twitter.com/pages/tweet_button
 
 Parameters:
 [optional]	String	Url	URL to Tweet. If not specified it uses the URL of the webpage.
@@ -138,5 +138,5 @@ To test the token, click Test Token button below and replace parameters (if any)
 Examples:
 [Social:TweetButton]
 Show Tweet button that will share current URL with default settings.
-[Social:TweetButton(Count=vertical,Text="Check This!",Url="http://mysite.com")]
+[Social:TweetButton(Count=vertical,Text="Check This!",Url="//mysite.com")]
 Show Tweet button that will share current URL, displaying the count above the button and the specifieddefault text.

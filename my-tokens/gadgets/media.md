@@ -3,11 +3,11 @@
 ## [Media:YouTube]
 
 Embed a video from youtube by its ID.
-Read more about this gadget [here](http://www.google.com/support/youtube/bin/topic.py?topic=16569){:target="_blank"}
+Read more about this gadget [here](//www.google.com/support/youtube/bin/topic.py?topic=16569){:target="_blank"}
 
 **Parameters:**
 
-* [required] String Video: Unique identifier for the video. It appears in the URLs on YouTube and looks like this http://www.youtube.com/watch?v=irp8CNj9qBI.
+* [required] String Video: Unique identifier for the video. It appears in the URLs on YouTube and looks like this //www.youtube.com/watch?v=irp8CNj9qBI.
   + Default Value:
   + Possible Values:
 

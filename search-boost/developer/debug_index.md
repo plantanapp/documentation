@@ -24,7 +24,7 @@ For this purpose we created a test script that allows you to upload a file and i
 
 To test document indexers:
 
-1. Open you portal at `http://yoursite/DesktopModules/DnnSharp/SearchBoost/TestDocIndexer.aspx`
+1. Open you portal at `//yoursite/DesktopModules/DnnSharp/SearchBoost/TestDocIndexer.aspx`
 If you're not logged in, you'll be asked to do so before being able to do the tests
 
 2. Use the Browse Button to locate the file you want to test and hit Extract Content.

@@ -5,5 +5,5 @@ As example, create a Grid button, call it export, add as action on this button t
 **Tips for Action Grid:** Manage the Grid Fields that will be serialized by using the **\[SpecialContext:SerializeCSV\]** token into a Field Condition. The most common scenario is to programatically hide an entire column and append true only into the serialization context, such as: **\[MyCondition\]** == "hide" \|\| **\[SpecialContext:SerializeCSV\]**.  
 
 
-![](http://static.dnnsharp.com/documentation/SerializeToCSV.png)
+![](//static.dnnsharp.com/documentation/SerializeToCSV.png)
 

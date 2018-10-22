@@ -214,12 +214,12 @@ Using the XML Definition MyTokens can put in place a complete documentation for 
     <mytokens>
         <receiveOnlyKnownTokens>true</receiveOnlyKnownTokens>
         <cacheTimeSeconds>86400</cacheTimeSeconds><!-- XML Definition doesn't change -->
-        <docurl>http://docs.avatar-soft.ro</docurl>
+        <docurl>//docs.avatar-soft.ro</docurl>
         <token>
             <name>GetFaq</name><!-- case insensitive -->
             <desc>Returns a faq by its Id.</desc>
             <cacheTimeSeconds>0</cacheTimeSeconds><!-- FAQMaster handles the caching -->
-            <docurl>http://docs.avatar-soft.ro</docurl>
+            <docurl>//docs.avatar-soft.ro</docurl>
             <param>
                 <name>id</name>
                 <desc>Id of the Faq to retrieve.</desc>
@@ -241,7 +241,7 @@ Using the XML Definition MyTokens can put in place a complete documentation for 
             <name>LatestFaq</name>
             <desc>Returns latest faq.</desc>
             <cacheTimeSeconds>0</cacheTimeSeconds><!-- FAQMaster handles the caching -->
-            <docurl>http://docs.avatar-soft.ro</docurl>
+            <docurl>//docs.avatar-soft.ro</docurl>
             <param>
                 <name>ModuleId</name>
                 <desc>

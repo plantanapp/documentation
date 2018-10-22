@@ -22,5 +22,5 @@
 
 
 **A**: If you used all your credits, you have 2 options:
-* **Purchase Prepaid Credits**: You can do this directly from your CDN Admin Panel or from our website: [http://www.dnnsharp.com/products/sharpcdn](http://www.dnnsharp.com/products/sharpcdn){:target="_blank"};
+* **Purchase Prepaid Credits**: You can do this directly from your CDN Admin Panel or from our website: [//www.dnnsharp.com/products/sharpcdn](//www.dnnsharp.com/products/sharpcdn){:target="_blank"};
 * **Upgrade to a higher Tier**: If you decide to upgrade to a higher plan, the current subscription will be cancelled and a new recurring payment will be generated for the selected Tier.

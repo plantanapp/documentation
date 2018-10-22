@@ -691,7 +691,7 @@ and Extract Columns with the following settings: Column Name = Username and Stor
 
 I have an Action Form that uploads a file to AWS. I want to be able to provide a download link in my associated Action Grid for the file that gets uploaded.
 
-In my form if I use the [Upload:AbsoluteURL] token to display a message that includes the file path of the uploaded file I get http://mysite.com/LinkClick.aspx?fileticket=cv07f-ZMnXY%3d&portalid=2
+In my form if I use the [Upload:AbsoluteURL] token to display a message that includes the file path of the uploaded file I get //mysite.com/LinkClick.aspx?fileticket=cv07f-ZMnXY%3d&portalid=2
 
 This path takes me to the file correctly. How can I have that same path referenced in my associated Action Grid?
 

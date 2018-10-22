@@ -8,5 +8,5 @@ This action sends an email using the SMTP server that is defined in DNN Host Set
 * **Subject**. Used as email subject. For best experience, choose something not too short but not too long either. This field supports context tokens and My Tokens.
 * **Body**. This is the email content. If you need custom data then use other actions, for example the Run SQL action, to fetch it and store it in the job context. Then access it through the context tokens. This field also supports My Tokens.
 
-![](http://static.dnnsharp.com/documentation/send_email.png)
+![](//static.dnnsharp.com/documentation/send_email.png)
 
