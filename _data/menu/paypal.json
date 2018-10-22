@@ -16,4 +16,7 @@
 }, {
   "title":"PayPal - Express Checkout",
   "url": "integrations/paypal/paypal-express-checkout.html" 
+},{
+  "title":"Paypal-Parse-IPN-request",
+  "url":"integrations/paypal/paypal-parse-ipn-request.html" 
 }]
