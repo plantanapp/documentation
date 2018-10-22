@@ -6,7 +6,7 @@ Show month and year dropdowns in place of the static month/year header to facili
 
 * Initial Value
 
-  * Determines which date is_ initially selected_. Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens) so you can pull data from various sources such as \[DateTime:Now\].
+  * Determines which date is_ initially selected_. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as \[DateTime:Now\].
 
 * Year Range
 

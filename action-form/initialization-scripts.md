@@ -32,7 +32,7 @@ $el.complexify(options, callback(valid, complexity){
 });
 ```
 
-Other things to keep in mind is that this field also supports <a href="http://www.dnnsharp.com/dnn/modules/my-custom-tokens">My Tokens</a>. Note that if you use form tokens in this context they access the value of each field. So for example, [SomeFormField] is equivalent to form.fields.SomeFormField.value. One useful trick to know is that values can also be changed at this stage by assigning values to them. The following 2 are equivalent:
+Other things to keep in mind is that this field also supports <a href="/my-tokens/index.html">My Tokens</a>. Note that if you use form tokens in this context they access the value of each field. So for example, [SomeFormField] is equivalent to form.fields.SomeFormField.value. One useful trick to know is that values can also be changed at this stage by assigning values to them. The following 2 are equivalent:
 
 ```code
 form.fields.SomeFieldName.value = 'Something new';

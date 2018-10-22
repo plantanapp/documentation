@@ -4,7 +4,7 @@ Trumbowyg is a lightweight jQuery plugin used to transform a textarea into a HTM
 
 ## Initial Value
 
-The fields loads initially having this value. Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} so you can pull data from various sources such as user profile.
+The fields loads initially having this value. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as user profile.
 
 ## Image Manager Field
 

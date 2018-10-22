@@ -2,7 +2,7 @@
 
 ## Run SQL Query
 
-This action executes an SQL statement, optionally capturing the output. The SQL runs in the context of the DNN database, but there are plans to extend it to also allow a connection string or a connection string name that will make it possible to run in other databases as well – not restricted to SQL Server either. This action supports context tokens and [My Tokens](https://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} inside the SQL query.
+This action executes an SQL statement, optionally capturing the output. The SQL runs in the context of the DNN database, but there are plans to extend it to also allow a connection string or a connection string name that will make it possible to run in other databases as well – not restricted to SQL Server either. This action supports context tokens and [My Tokens](/my-tokens/index.html) inside the SQL query.
 
 Here are some common scenarios when you would use this action:
 

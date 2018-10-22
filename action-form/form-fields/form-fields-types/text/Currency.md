@@ -4,7 +4,7 @@ This field displays a floating point value as a currency amount. Tokens generate
 
 ## Initial Value
 
-The fields loads initially having this value. Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} so you can pull data from various sources such as user profile.
+The fields loads initially having this value. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as user profile.
 
 ## Formatter Type
 
@@ -12,7 +12,7 @@ Here you can select if you want to manually set the format type or if you want t
 
 ## Currency Type
 
-For auto formatter please check the [supported currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html){:target="_blank"}. Can contain form tokens (for example [Email]) and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+For auto formatter please check the [supported currency code list](https://www.currency-iso.org/en/home/tables/table-a1.html){:target="_blank"}. Can contain form tokens (for example [Email]) and [My Tokens](/my-tokens/index.html)
 
 ## Currency symbol position
 
@@ -20,15 +20,15 @@ You can set if you want the symbol to be shown first or after the amount.
 
 ## Thousands separator
 
-Can contain form tokens (for example [Email]) and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Can contain form tokens (for example [Email]) and [My Tokens](/my-tokens/index.html)
 
 ## Decimal separator
 
-Can contain form tokens (for example [Email]) and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Can contain form tokens (for example [Email]) and [My Tokens](/my-tokens/index.html)
 
 ## Precision
 
-How many decimal places are allowed. Can contain form tokens (for example [Email]) and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+How many decimal places are allowed. Can contain form tokens (for example [Email]) and [My Tokens](/my-tokens/index.html)
 
 #### Symbol visible on blur
 

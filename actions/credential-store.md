@@ -19,7 +19,7 @@ For a better management experience we recommend to integrated it with our [Actio
 * Credential Type \(ss.trigger.imap\) - provides seamless integration with IMAP Trigger available in [SharpScheduler&gt; Mail Triggers&gt; Imap](https://www.gitbook.com/book/dnnsharp/common/edit#)
 * Credential Group - the group name for the Credential data to be processed
 * Custom Data Keys - offers the possibility to make columns with the custom data info
-* Filter Entries - to select entries by their properties and their custom data. The values can contain [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens)and tokens that refer to field names. Enabling the Use Regex option below will use filters as Regex Patterns for evaluate the retrieved values
+* Filter Entries - to select entries by their properties and their custom data. The values can contain [My Tokens](/my-tokens/index.html)and tokens that refer to field names. Enabling the Use Regex option below will use filters as Regex Patterns for evaluate the retrieved values
 
 After having the Credential Store Entries configured, Action Grid[Datasource actions](https://action-grid.guide.dnnsharp.com/en/buttons/actions/datasource.html) can be used to properly operate the records.
 

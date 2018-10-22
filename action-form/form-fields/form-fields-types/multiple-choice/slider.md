@@ -8,7 +8,7 @@ On submit, it will generate the following tokens: \[&lt;FieldName&gt;\] \(which 
 
 * Initial Value
 
-  * Determines which value or interval \(e.g.: 10, 20\) is initially selected. Also sets the number of slider handles, either 1 or 2. This field supports [My Tokens.](http://www.dnnsharp.com/dnn/modules/my-custom-tokens)
+  * Determines which value or interval \(e.g.: 10, 20\) is initially selected. Also sets the number of slider handles, either 1 or 2. This field supports [My Tokens.](/my-tokens/index.html)
 
 * Start Text
 
@@ -38,13 +38,13 @@ On submit, it will generate the following tokens: \[&lt;FieldName&gt;\] \(which 
 
   * Append Slider Captions. For decimals use ".". Can contain form tokens \(for example \[Email\]\) and
 
-    [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens). Example: One \(Name\) - 1 \(Value\), Two \(Name\) - 2 \(Value\).
+    [My Tokens](/my-tokens/index.html). Example: One \(Name\) - 1 \(Value\), Two \(Name\) - 2 \(Value\).
 
 * Slider Caption Classes
 
   * Append Slider Caption Css Classes. Can contain form tokens \(for example \[Email\]\) and
 
-    [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens). Example: label label-danger \(Class\) - 1 \(Value\), label label-success \(Class\) - 2 \(Value\).
+    [My Tokens](/my-tokens/index.html). Example: label label-danger \(Class\) - 1 \(Value\), label label-success \(Class\) - 2 \(Value\).
 
 * Width
 

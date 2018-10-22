@@ -12,7 +12,7 @@ _**Drawing AddOn required:**_** **Also creates \[&lt;FieldName&gt;:FileOrThumbna
 
 * Filename Pattern
 
-  * Optionally provide a pattern to use for filenames on the server. For example "\[User:Username\]-avatar". Leave blank to use the original filename. Here you can use \[&lt;FieldName&gt;\], \[&lt;FieldName&gt;:FileName\], \[&lt;FieldName&gt;:FileNameAndExtension\], \[&lt;FieldName&gt;:FileExtension\] \(note the file name is before the duplication handling\). Supports [My Tokens](https://www.dnnsharp.com/dnn/modules/my-custom-tokens). 
+  * Optionally provide a pattern to use for filenames on the server. For example "\[User:Username\]-avatar". Leave blank to use the original filename. Here you can use \[&lt;FieldName&gt;\], \[&lt;FieldName&gt;:FileName\], \[&lt;FieldName&gt;:FileNameAndExtension\], \[&lt;FieldName&gt;:FileExtension\] \(note the file name is before the duplication handling\). Supports [My Tokens](/my-tokens/index.html). 
 
 * File Types
 

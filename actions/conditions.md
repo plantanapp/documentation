@@ -3,7 +3,7 @@ layout: default
 ---
 # Conditions
 
-This features provide the ability to show/enable fields/actions based on a boolean expression. Depending on the condition type it will be executed real time or on the server side. All condition options support [MyTokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens)
+This features provide the ability to show/enable fields/actions based on a boolean expression. Depending on the condition type it will be executed real time or on the server side. All condition options support [MyTokens](/my-tokens/index.html)
 Please note that all server side conditions will also put the value between quotation marks so the following expression might break:
 `"SomeValue" = "[SomeToken] something else"`
 

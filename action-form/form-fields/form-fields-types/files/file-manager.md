@@ -37,7 +37,7 @@ Optionally provide a series of file types to limit the upload to these specific 
 
 ## Filename Pattern
 
-Optionally provide a pattern to use for filenames on the server. For example "`[User:Username]-avatar`". Leave blank to use the original filename. Here you can use `[<FieldName>]`, `[<FieldName>:FileName]`, `[<FieldName>:FileExtension]` (note the file name is before the duplication handling). Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Optionally provide a pattern to use for filenames on the server. For example "`[User:Username]-avatar`". Leave blank to use the original filename. Here you can use `[<FieldName>]`, `[<FieldName>:FileName]`, `[<FieldName>:FileExtension]` (note the file name is before the duplication handling). Supports [My Tokens](/my-tokens/index.html)
 
 ## Resize Method
 

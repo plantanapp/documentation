@@ -2,9 +2,9 @@
 
 Add a stripe seller to your platform.
 
-_API Secret Key_ - Specify your platform's Secret Key. Can contain [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
+_API Secret Key_ - Specify your platform's Secret Key. Can contain [My Tokens](/my-tokens/index.html).
 
-_Client Id_ - Specify the platform's ClientId. Can contain [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
+_Client Id_ - Specify the platform's ClientId. Can contain [My Tokens](/my-tokens/index.html).
 
 **Important!** Please add the website URL to your stripe account - Account Settings - Connect - Platform Settings - Redirect URIs
 

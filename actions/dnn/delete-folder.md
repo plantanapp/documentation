@@ -11,7 +11,7 @@ You can edit the following fields:
 * **Condition**
   . This boolean expression is used to determine if this action will execute. Use it to enable or disable actions programatically. For example, you'd enable a ShowError action only if you've found an error let's say when you parsed a response from a web service. A common example is \[SomeField\] == "Some Value". This field supports My Tokens.
 * **Identifier**
-  . It can be: The folder ID \(Example: 77\), the folder path \(Example: assets/Cars/\) or the folder path from current portal \(Example: Portals/0/assets/Cars/\). Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens).
+  . It can be: The folder ID \(Example: 77\), the folder path \(Example: assets/Cars/\) or the folder path from current portal \(Example: Portals/0/assets/Cars/\). Supports [My Tokens](/my-tokens/index.html).
 * **Recursive**
   . Enable this checkbox to enable deleting subfolders and their content.    
 
