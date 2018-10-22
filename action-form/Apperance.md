@@ -10,7 +10,7 @@ The forms, among other things, are frequently one of the main communication path
 
 Your forms do not need to be boring, you can be sure that they are attractive and very effective if you use Action Form module. To get noticed, you need to come up with something unique and interesting - colors, position, size of the form are often used to reach interesting designs. Luckily, Action Form delivers this out of the box.
 
-The General Settings, along with the <a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/form-layout">Layout</a> settings, give you the ability to set up the forms exactly the way you want so they match with your website design and to also be attractive.
+The General Settings, along with the <a href="/action-form/form-layout.html">Layout</a> settings, give you the ability to set up the forms exactly the way you want so they match with your website design and to also be attractive.
 
 <img style="max-width:100%" src="assets/settings.png" /><br>
 
@@ -81,7 +81,7 @@ To implement more complex layout scenarios, you have the Manual Layout option wh
 
 ## Display Mode
 
-This option is used to determine either if the form will be displayed on the page or if it will get displayed when the user clicks a link. More on this option can be found on the <a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/display-mode"> Display Mode</a> page in this documentation.  
+This option is used to determine either if the form will be displayed on the page or if it will get displayed when the user clicks a link. More on this option can be found on the <a href="/action-form/display-mode.html"> Display Mode</a> page in this documentation.  
 
 ## Show Form Condition
 
@@ -93,11 +93,11 @@ Left and Right Sidebar HTML options let you insert text which will be displayed 
 
 ## Initialization Scripts
 
-This option lets you include more scripts on the page along with the form - <a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/form-settings/initialization-scripts">click here</a> to read more on this option.
+This option lets you include more scripts on the page along with the form - <a href="/action-form/initialization-scripts.html">click here</a> to read more on this option.
 
 ## Enable Client Side Validation
 
-<a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/validations">Click here</a> to read more on this option.
+<a href="/action-form/validations.html">Click here</a> to read more on this option.
 
 ## Show Tool tips
 
@@ -105,4 +105,4 @@ When enabled, this option will show the short description of the fields, if ther
 
 ## Debug Mode
 
-Click <a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/debugging">here</a> to see how this options works when is enabled.
+Click <a href="/action-form/debugging.html">here</a> to see how this options works when is enabled.

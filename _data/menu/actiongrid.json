@@ -45,7 +45,7 @@
         "title": "Actions",
         "subpages": [{
             "title": "Common Actions...",
-            "url": "/common/index.html"
+            "url": "/actions/index.html"
         }, {
             "title": "Datasource:Add",
             "url": "/action-grid/datasource/datasource-add.html"
@@ -117,7 +117,7 @@
                 "url": "/action-grid/buttons/proprieties.html"
             }, {
                 "title": "Actions",
-                "url": "/common/index.html"
+                "url": "/actions/index.html"
             },
             {
                 "title": "Special Buttons",

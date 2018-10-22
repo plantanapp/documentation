@@ -18,7 +18,7 @@ Features:
 
 * **Navigation** - it can be defined in Action Form or Action Grid by creating buttons, labeled \(Next, Previous, etc\) within Change TabsPro Tab actions. The following JavaScript method dnnsf.api.tabspro.changeTab\({mid:421,done}\); is available to reference it from external modules.
 
-* **Validation** - it can be set in Tabs Pro \(Items Section\) by using Boolean expressions in one of the options: Show Conditionally or Enable Conditionally. These conditions are evaluated on server side. A common example is \[QueryString:Key\] == "Value". These fields support [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens). See [More examples](http://action-form.dnnsharp.com/conditions).![](https://puu.sh/xs9gX/e3cd2a6dfd.png)
+* **Validation** - it can be set in Tabs Pro \(Items Section\) by using Boolean expressions in one of the options: Show Conditionally or Enable Conditionally. These conditions are evaluated on server side. A common example is \[QueryString:Key\] == "Value". These fields support [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens). See [More examples](/actions/conditions.html).![](https://puu.sh/xs9gX/e3cd2a6dfd.png)
 
 * **Open as Modal** - this option is available in TabsPro under Settings Section. Basically, it displays the entire Multi-Step system in PopUp. This can be triggered from external modules \(a HTML module, a DNN Skin, etc\) by calling the following javascript functions:
 

@@ -307,7 +307,7 @@
     "title": "Form Actions",
     "subpages": [{
         "title": "Common Actions...",
-        "url": "/common/index.html"
+        "url": "/actions/index.html"
     }, {
         "title": "Dynamic Fields",
         "url": "/action-form/form-actions/dynamic-fields/Overview.html",

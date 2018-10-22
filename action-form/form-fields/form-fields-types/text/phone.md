@@ -14,7 +14,7 @@ Initial country code. You need to set this if you use initial value.This field s
 
 The countries to be shown at the top of the country dropdown. Input comma-separated values.This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
 
-#### International Mode
+### International Mode
 
 Check this to enable international mode (which shows country dial codes in the input).Leaving this off provides a better experience for national sites.
 

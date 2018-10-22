@@ -85,5 +85,9 @@
         "title": "PayPal",
         "ref":"paypal",
         "url":"integrations/paypal/index.html"
+    },{
+        "title":"Authorize Net",
+        "ref":"authorize",
+        "url":"integrations/authorizenet/index.html"
     }]
 }]
