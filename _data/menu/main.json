@@ -31,7 +31,7 @@
     }, {
         "title": "NavXP",
         "ref": "navxp",
-        "url":"/nav-xp/index.html"
+        "url": "/nav-xp/index.html"
     }, {
         "title": "Sharp CDN",
         "ref": "sharpcdn",
@@ -62,23 +62,23 @@
         "title": "Email Sync",
         "url": "/add-ons/email-sync/index.html",
         "ref": "emailsync"
-}, {
+    }, {
         "title": "Server Management",
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
-}, {
-    "title": "Barcode Generator",
-    "url": "/add-ons/barcode-generator/index.html",
-    "ref": "barcodegenerator"
-}, {
-    "title": "PDF Generator",
-    "url": "/add-ons/pdf-generator/installing.html",
-    "ref": "pdfgenerator"
-}, {
-    "title": "Stripe",
-    "url":"/add-ons/stripe/introduction.html",
-    "ref": "stripe"
-}]
+    }, {
+        "title": "Barcode Generator",
+        "url": "/add-ons/barcode-generator/index.html",
+        "ref": "barcodegenerator"
+    }, {
+        "title": "PDF Generator",
+        "url": "/add-ons/pdf-generator/installing.html",
+        "ref": "pdfgenerator"
+    }, {
+        "title": "Stripe",
+        "url": "/add-ons/stripe/introduction.html",
+        "ref": "stripe"
+    }]
 }, {
     "title": "Integrations",
     "subpages": [{
@@ -87,8 +87,8 @@
         "url": "integrations/clickatell/index.html"
     }, {
         "title": "PayPal",
-        "ref":"paypal",
-        "url":"integrations/paypal/index.html"
+        "ref": "paypal",
+        "url": "integrations/paypal/index.html"
     },{
         "title":"Authorize Net",
         "ref":"authorize",
