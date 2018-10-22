@@ -19,5 +19,3 @@
 
 * **SearchBoost.Input** - Represents the text box that initiates the search. Additionally, it provides the means to the configure Search Boost instance.
 * **SearchBoost.Results**. Represents the result pages. Note that the results module can't be configured separately, it uses the settings of the instance that initiated the search. This allows you to link multiple **SearchBoost.Input** instances to the same results module, add render differently accordingly.
-
-You can download latest version of Search Boost from [www.dnnsharp.com](https://www.dnnsharp.com/). While on that page, you can also check thechangelog to see what's new.

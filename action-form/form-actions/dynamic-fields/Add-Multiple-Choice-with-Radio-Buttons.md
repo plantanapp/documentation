@@ -5,7 +5,7 @@ This action will add a Multiple Choice with Radio Buttons to the specified dynam
 ## Display Horizontally
 
 Turn on this option to display radioboxes next to one another on the same line. Use 1/0 or true/false .
-Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Supports [My Tokens](/my-tokens/index.html)
 
 ## Data Source
 

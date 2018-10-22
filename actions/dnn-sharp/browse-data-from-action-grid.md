@@ -15,7 +15,7 @@ You can edit the following fields:
 * **Mappings**
   . Link Grid columns to Form fields: this will determine which Grid data will go to which Form field.    
 
-![](http://static.dnnsharp.com/documentation/browse_data_from_grid.png)
+![](//static.dnnsharp.com/documentation/browse_data_from_grid.png)
 
 
 

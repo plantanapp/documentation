@@ -10,7 +10,7 @@ In the next example we will go through all the steps to add a custom css class t
 
 Set the custom data on the Profile Items you want. Let's say we want a link to float on the right on the container.
 
-Below we added the a key "CustomClass" with the Value of "pull-right" \([Bootstrap](http://getbootstrap.com/ "Bootstrap"){:target="_blank"} class \| float: right !important\). Now if this value is applied in the class property of a element, in this case link we will achieve what we desire.
+Below we added the a key "CustomClass" with the Value of "pull-right" \([Bootstrap](//getbootstrap.com/ "Bootstrap"){:target="_blank"} class \| float: right !important\). Now if this value is applied in the class property of a element, in this case link we will achieve what we desire.
 
 ![](/nav-xp/assets/6474448ae2.jpg)
 

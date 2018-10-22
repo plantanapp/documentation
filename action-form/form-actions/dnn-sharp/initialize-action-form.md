@@ -14,5 +14,5 @@ Using this Action you can edit the following fields:
 * **Select Module**. Select the Action Form module that you wish to initialize.
 * **QueryString Parameters**.  Optionally you can pass parameters through querystrings that can then be used in other modules.
 
-![](http://static.dnnsharp.com/documentation/init_form.png)
+![](//static.dnnsharp.com/documentation/init_form.png)
 

@@ -8,7 +8,7 @@ If you have trouble with your URLs there are a few different ways to debug it. F
 
 Another useful trick for debugging redirects is using the Chrome F12 Developer Tools. There are similar tools in IE and Firefox, but we recommend Chrome. Go to the Network tab and turn on the Preserve Log Upon Navigation option. Then refresh the page and it will show all the request being made. Particularly important is the first request that gets the page, which sometimes could be a redirect to another page. Looks at the HTTP header to see if it's a permanent 301 redirect or a simple (temporary moved) redirect.
 
-Another way to achieve the same is with a traffic sniffer, for example [Fiddler2](http://fiddler2.com/){:target="_blank"}. This is more complex to use but it provides advanced features to better filter and analyze requests.
+Another way to achieve the same is with a traffic sniffer, for example [Fiddler2](//fiddler2.com/){:target="_blank"}. This is more complex to use but it provides advanced features to better filter and analyze requests.
 
 ## Ask for Our Help
 

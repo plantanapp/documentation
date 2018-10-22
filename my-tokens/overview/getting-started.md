@@ -1,6 +1,6 @@
 # Getting Started
 
-**NOTE:** This guide assumes you already downloaded and installed latest version from our website. If you don't have it, please download [My Tokens trial](https://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} and install as any other module from Host>Module Definition or Host>Extensions.
+**NOTE:** This guide assumes you already downloaded and installed latest version from our website. If you don't have it, please download [My Tokens trial](/my-tokens/index.html) and install as any other module from Host>Module Definition or Host>Extensions.
 
 There is also a [My Tokens video tutorial](https://www.dnnhero.com/Videos/EntryId/304/Turbo-charge-token-replacement-in-DotNetNuke-with-MyTokens-module-part-1-2-Video-284){:target="_blank"} by Aderson Oliveira that shows how to get started and create your first simple token that answers a real common problem in content management.
 

@@ -2,7 +2,7 @@
 
 ## Run SQL Query
 
-This action executes an SQL statement, optionally capturing the output. The SQL runs in the context of the DNN database, but there are plans to extend it to also allow a connection string or a connection string name that will make it possible to run in other databases as well – not restricted to SQL Server either. This action supports context tokens and [My Tokens](https://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} inside the SQL query.
+This action executes an SQL statement, optionally capturing the output. The SQL runs in the context of the DNN database, but there are plans to extend it to also allow a connection string or a connection string name that will make it possible to run in other databases as well – not restricted to SQL Server either. This action supports context tokens and [My Tokens](/my-tokens/index.html) inside the SQL query.
 
 Here are some common scenarios when you would use this action:
 
@@ -24,6 +24,6 @@ If you want to use a token in the connection string field of the Run SQL Query a
 
 This action can be used to make an HTTP request to a different server, optionally sending data. Often, this means invoking a web service. Note that if you don’t run in Full Trust, this action requires that the Application Pool identity has Web Permission. The following fields can be configured: 
 
-* URL. This represents the URL to make the request to. A common mistake is to forget to include the protocol. For example www.domain.com/webservice is wrong. Instead, use ``http://www.domain.com/websservice``. Optionally, append the query string directly to the URL after the question mark. For example ``http://www.domain.com/websservice?q=test&p=1``. This field supports context tokens and My Tokens.
+* URL. This represents the URL to make the request to. A common mistake is to forget to include the protocol. For example www.domain.com/webservice is wrong. Instead, use ``//www.domain.com/websservice``. Optionally, append the query string directly to the URL after the question mark. For example ``//www.domain.com/websservice?q=test&p=1``. This field supports context tokens and My Tokens.
 
 * POST Data. This is data to send to the URL using POST operation. Put key=value pairs, each on a separate line. It’s also possible to post whole messages, for example and XML (that SOAP-like services expect) by simply putting the XML without any lines. This field supports context tokens and My Tokens.

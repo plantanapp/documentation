@@ -52,7 +52,7 @@ The first option provides the most flexibility because you can reference your as
 
 A video on how to extend MyTokens with new property sources is available [here](https://www.youtube.com/watch?v=SoglzIWgMEg){:target="_blank"}
 
-If you're using Razor scripts, you simply add a reference to your assembly and then write your C# code in the script body. [Example]( http://screencast.com/t/j0lhd92Wz){:target="_blank"}
+If you're using Razor scripts, you simply add a reference to your assembly and then write your C# code in the script body. [Example]( //screencast.com/t/j0lhd92Wz){:target="_blank"}
 
 **Q:** What is the String Replace Token?
 
@@ -147,7 +147,7 @@ or
       <tkn>
         <name>selecteerafgelopenweek</name>
         <desc />
-        <src>&lt;src&gt;&lt;type&gt;db&lt;/type&gt;&lt;syncTknId&gt;-1&lt;/syncTknId&gt;&lt;connStr&gt;&lt;/connStr&gt;&lt;sql&gt;SELECT TOP (1000) ArticleID, Title,  IsApproved, StartDate, CONCAT('http://YOURDOMAINNAMEHERE.COM/News?id=',ArticleID) AS NewsURL
+        <src>&lt;src&gt;&lt;type&gt;db&lt;/type&gt;&lt;syncTknId&gt;-1&lt;/syncTknId&gt;&lt;connStr&gt;&lt;/connStr&gt;&lt;sql&gt;SELECT TOP (1000) ArticleID, Title,  IsApproved, StartDate, CONCAT('//YOURDOMAINNAMEHERE.COM/News?id=',ArticleID) AS NewsURL
 FROM     dbo.DnnForge_NewsArticles_Article
 WHERE (IsApproved = 1) AND (StartDate &amp;gt; (GETDATE()-7))&lt;/sql&gt;&lt;cols&gt;ArticleID
 Title

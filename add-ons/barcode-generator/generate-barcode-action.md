@@ -6,13 +6,13 @@ Its output is a printable and scanable barcode in Code128 B or C, Code 39, EAN 1
 
 The below particular properties can be set for this field type:
 
-* Barcode - the input for the Barcode to be generated. This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
-* Barcode Encoding - the symbologies of the generated barcode. Its output is a printable and scanable barcode in Code128 B or C, Code 39, EAN 13, UPC, ITF, and ITF 14, etc. Click on EXPR option to add a different type of encoding that's not available in the dropdown, see the [comprehensive documentation](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes){:target="_blank"}. This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
-* Barcode Width - the width in pixels of the image to be generated. Note that this should be proportional with the number of characters set as Barcode Input. This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
-* Barcode Height - the height in pixels of the barcode to be generated. This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
-* Show Text - decide if you want to display/hide the text under the barcode. This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
+* Barcode - the input for the Barcode to be generated. This field supports [My Tokens](/my-tokens/index.html).
+* Barcode Encoding - the symbologies of the generated barcode. Its output is a printable and scanable barcode in Code128 B or C, Code 39, EAN 13, UPC, ITF, and ITF 14, etc. Click on EXPR option to add a different type of encoding that's not available in the dropdown, see the [comprehensive documentation](https://en.wikipedia.org/wiki/Barcode#Types_of_barcodes){:target="_blank"}. This field supports [My Tokens](/my-tokens/index.html).
+* Barcode Width - the width in pixels of the image to be generated. Note that this should be proportional with the number of characters set as Barcode Input. This field supports [My Tokens](/my-tokens/index.html).
+* Barcode Height - the height in pixels of the barcode to be generated. This field supports [My Tokens](/my-tokens/index.html).
+* Show Text - decide if you want to display/hide the text under the barcode. This field supports [My Tokens](/my-tokens/index.html).
 * Upload to Folder - the relative path where the .jpeg file will be stored. 
-* Signature Name - the name of the image to be generated. If left empty, a GUID will be generated for name. This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
+* Signature Name - the name of the image to be generated. If left empty, a GUID will be generated for name. This field supports [My Tokens](/my-tokens/index.html).
 
 The tokens below are generated on submit:
 

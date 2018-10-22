@@ -3,7 +3,7 @@
 ### [Financial:CurrencyConverter]
 
     Embed a gocurrency.com currency converter.
-    Read more about this gadget at http://www.gocurrency.com/add-converter.htm
+    Read more about this gadget at //www.gocurrency.com/add-converter.htm
       Syntax:
         [Financial:CurrencyConverter]
 
@@ -16,7 +16,7 @@
 ### [Financial:LiveRates]
 
     Embeds a list of currencies.
-    Read more about this gadget at http://www.gocurrency.com/add-converter.htm
+    Read more about this gadget at //www.gocurrency.com/add-converter.htm
       Parameters:
       - [optional]
       - String

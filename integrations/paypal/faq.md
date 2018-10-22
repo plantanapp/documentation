@@ -4,10 +4,6 @@
 
 No, we don't provide trial for add-ons, just for modules. If you need a preview of the functionality best is to go through the documentation or check our YouTube channel.
 
-### Where can I download latest version?
-
-You can download latest builds from our website under My Account section.
-
 ### Q. How can I set a trial of 0.99$ for one-week?
 
 **A.** In order to set a trial for one week, the setup should look like this:

@@ -2,7 +2,7 @@
 
 Sometimes you just want to customize the search box from Search Boost and ignore the rest of the features. If this is the case, you can link the Search Boost Input module directly to the Standard DNN Search Results module and skip the logic that Search Boost adds to implement targeted searches for example.
 
-The standard way Search Boost works on the web is through a text box that receives input from user, then on submit it transports it to a result page via Query String (the URL). On Google, the parameter is named q (as in `http://www.google.com/search?q=dotnetnuke`).
+The standard way Search Boost works on the web is through a text box that receives input from user, then on submit it transports it to a result page via Query String (the URL). On Google, the parameter is named q (as in `//www.google.com/search?q=dotnetnuke`).
 
 For DNN Standard Search, the name of the parameter is Search (as in `your.site/Results.aspx?Search=dotnetnuke`)
 

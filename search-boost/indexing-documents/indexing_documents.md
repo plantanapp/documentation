@@ -37,19 +37,19 @@ In the second tab of the Document Search Settings dialog you can configure how t
 
 SEO & Human Friendly, doesn't enforce security (once obtained, the link can be accessed regardless of security).
 
-Example: http://site.com/Portals/0/MyFolder/MyFile.pdf
+Example: //site.com/Portals/0/MyFolder/MyFile.pdf
 
   * **Download script with File Path**
 
 SEO & Human Friendly, enforces portal security (when option is enabled in Security Tab) but absolute path can be guessed
 
-Example: http://site.com/SearchResults.aspx?file=MyFolder/MyFile.pdf
+Example: //site.com/SearchResults.aspx?file=MyFolder/MyFile.pdf
 
   * **Download script with File ID**
   
 Hides (obfuscates) internal paths, ideal solution for enforcing security (when option is enabled in Security Tab)
 
-Example: http://site.com/SearchResults.aspx?file=4123
+Example: //site.com/SearchResults.aspx?file=4123
 
 **Security**
 

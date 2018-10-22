@@ -99,7 +99,7 @@ You've already seen the concatenation operator in the example above. Here are mo
 
     <b>     [Sync] ? [Source] : "". </b>
 
-    This simply says "If Sync is checked, then use the value from Source field, otherwise use nothing". There is a video on this example at <a href="http://youtu.be/iOjGys1NVmg">youtu.be/iOjGys1NVmg</a> and also some files that you can find attached to this page.
+    This simply says "If Sync is checked, then use the value from Source field, otherwise use nothing". There is a video on this example at <a href="//youtu.be/iOjGys1NVmg">youtu.be/iOjGys1NVmg</a> and also some files that you can find attached to this page.
 
 * <b> Parse values </b>
 

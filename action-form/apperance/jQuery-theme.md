@@ -21,4 +21,4 @@ Here are some examples applied on a calendar field:
 
 ## Building Custom Themes
 
-Rolling your own theme is also possible. Create the theme using <a href="http://jqueryui.com/themeroller/">http://jqueryui.com/themeroller/</a>, then copy it to folder <i>\DesktopModules\AvatarSoft\ActionForm\templates\jQuery\yourthemename</i>. Also check the other themes in the folder and make sure you follow the same naming convention for jquery-ui.css. After you complete these steps the theme will also be displayed in the jQuery Theme drop down list.
+Rolling your own theme is also possible. Create the theme using <a href="//jqueryui.com/themeroller/">//jqueryui.com/themeroller/</a>, then copy it to folder <i>\DesktopModules\AvatarSoft\ActionForm\templates\jQuery\yourthemename</i>. Also check the other themes in the folder and make sure you follow the same naming convention for jquery-ui.css. After you complete these steps the theme will also be displayed in the jQuery Theme drop down list.

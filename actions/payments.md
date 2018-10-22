@@ -45,4 +45,4 @@ The Collect Paypal Payment action allows you to set the requirement before givin
 ## Payments without PayPal account
 
 By default, PayPal requires customers that they either already have a PayPal account or create one during the checkout process. This option can be configured from PayPal so customers can buy without having a PayPal account, by using a credit card for example.
-More information can be found [here](http://help.eventbrite.com/customer/portal/articles/430152-paypal-account-optional-setting).
+More information can be found [here](//help.eventbrite.com/customer/portal/articles/430152-paypal-account-optional-setting).

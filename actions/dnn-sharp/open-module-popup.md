@@ -10,7 +10,7 @@ Using this Action you can edit the following fields:
 * **Select Module**. Select the module that you wish to open in popup \(Form or TabsPro based on the action selected: Open Action Form Popup, Open TabsPro Popup\).
 * **QueryString Parameters**.  Optionally you can pass parameters through querystrings that can then be used in the module that is currently being opened in popup; their values can be referenced as tokens with 'QueryString:' namespace.
 
-![](http://static.dnnsharp.com/documentation/open_module_popup.png)
+![](//static.dnnsharp.com/documentation/open_module_popup.png)
 
 Using the javascript API you can open Action Form in popup by calling the next javascript method
 

@@ -12,7 +12,7 @@ _**Drawing AddOn required:**_** **Also creates \[&lt;FieldName&gt;:FileOrThumbna
 
 * Filename Pattern
 
-  * Optionally provide a pattern to use for filenames on the server. For example "\[User:Username\]-avatar". Leave blank to use the original filename. Here you can use \[&lt;FieldName&gt;\], \[&lt;FieldName&gt;:FileName\], \[&lt;FieldName&gt;:FileNameAndExtension\], \[&lt;FieldName&gt;:FileExtension\] \(note the file name is before the duplication handling\). Supports [My Tokens](https://www.dnnsharp.com/dnn/modules/my-custom-tokens). 
+  * Optionally provide a pattern to use for filenames on the server. For example "\[User:Username\]-avatar". Leave blank to use the original filename. Here you can use \[&lt;FieldName&gt;\], \[&lt;FieldName&gt;:FileName\], \[&lt;FieldName&gt;:FileNameAndExtension\], \[&lt;FieldName&gt;:FileExtension\] \(note the file name is before the duplication handling\). Supports [My Tokens](/my-tokens/index.html). 
 
 * File Types
 
@@ -52,7 +52,7 @@ where \[Upload\] is the title of the Single File Upload field_
 
 #### How to upload files on S3 Browser via Single File Upload using EvotivaGlobalStorage
 
-* Install EvotivaGlobalStorage \(here's the page from where you can download a free trial: [http://www.evotiva.com/Downloads](http://www.evotiva.com/Downloads%29\);
+* Install EvotivaGlobalStorage \(here's the page from where you can download a free trial: [//www.evotiva.com/Downloads](//www.evotiva.com/Downloads%29\);
 
 * Access S3 Browser and in Accounts &gt; Manage Accounts &gt; double click on Account Name - from here you'll need to use the Access Key ID and the Secret Key ID;
 

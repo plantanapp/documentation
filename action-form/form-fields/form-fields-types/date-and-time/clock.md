@@ -8,7 +8,7 @@ Here you can select from: Analog, Digital or Both to display in the field.
 
 ## Initial Value
 
-The fields loads initially having this value. The time should be represented in miliseconds. Supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} so you can pull data from various sources such as user profile.
+The fields loads initially having this value. The time should be represented in miliseconds. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as user profile.
 
 ## Digital Format
 

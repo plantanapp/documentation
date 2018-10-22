@@ -10,7 +10,7 @@ This is an API method that will reset all URL Adapter settings and revert to the
 
 The API can be invoked by accessing the following URL in your browser:
 
-    http://example.com/DesktopModules/DnnSharp/SeoUrlAdapter/AdminApi.ashx?method=Reset&username=host&password=password
+    //example.com/DesktopModules/DnnSharp/SeoUrlAdapter/AdminApi.ashx?method=Reset&username=host&password=password
 
 After this, the URLs will switch back to the standard format, so if you get 404 errors make sure to navigate back to the root domain find your way from there.
 

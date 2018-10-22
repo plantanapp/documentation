@@ -19,7 +19,7 @@ The **General Settings** section is displayed for admins only and here you can c
 
 ## Show Conditionally
 
-This is a server side expression (C# and [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens)) that when false will cause the grid to hide itself. See [More examples](http://action-grid.dnnsharp.com/conditions).
+This is a server side expression (C# and [My Tokens](/my-tokens/index.html)) that when false will cause the grid to hide itself. See [More examples](//action-grid.dnnsharp.com/conditions).
 
 ## Page style
 

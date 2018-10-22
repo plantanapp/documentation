@@ -32,39 +32,39 @@ In the steps below, we will show you how to add a predefined contact form - don'
 
 When the page you work on is opened, select the Modules option from the top menu and click on the Add New Module option.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/ad-new-module.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/ad-new-module.png)
 
 Find avt.ActionForm and with Drag & Drop option add the module to your page.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/drag-action-form.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/drag-action-form.png)
 
 Now that you have installed Action Form Module on you page, you will need to configure it by clicking on Manage Form option.
 
 **Important: **Note that you will need to unlock the 30 Day trial or Activate for Production before being able to see this screen.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/manage-form.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/manage-form.png)
 
 In this example we will create a standard Contact Form - when you are on the Manage Form page, click on Start button displayed on the Contact Form template. You will be redirected to the form settings screen.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/new.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/new.png)
 
 Just by clicking on the Back button, you will have a standard contact form, like in the example below.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/back.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/back.png)
 
 ##### **Standard Contact Form example**
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/contact-form.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/contact-form.png)
 
 ### Configure Action Form Module
 
 To manage the Action Form you've created, click on the Manage menu, then on the Manage Form link - this opens the Action Form main configuration page.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/manage-form-drop-down.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/manage-form-drop-down.png)
 
 In the top menu bar, you will find 3 tabs: Form \(Form Settings\), Fields, and Events. These are the 3 steps to configure and manage the form.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/form-set-up-panel.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/form-set-up-panel.png)
 
 ### Action Form General Settings
 
@@ -74,11 +74,11 @@ The Action Form settings, highlighted in the image below, allow you to configure
 
 In this section, you can change the settings for your form fields. It allows you to customize the form fields and adjust various options such as UI settings, validations, etc. You can add, remove, and reorder fields according to your needs. After you finish setting up the fields, click on Save button. More details about how fields can be configured can be found under the Form Fields section.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/1.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/1.png)
 
 Also, if you click on the Layout Mode button, a panel will be displayed from where you can configure the fields' layout - you can change their order, size, or even place them in columns. More details about this option can be found in the Form Layout section.
 
-![](http://action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/2.png)
+![](//action-form.dnnsharp.com/_/rsrc/1424164524534/home/getting-started/2.png)
 
 ### Action Form Events
 

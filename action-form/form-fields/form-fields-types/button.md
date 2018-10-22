@@ -34,7 +34,7 @@ A control that executes your custom action in response to user interactions. Whe
 
 * Button Icon
 
-  * Use [font awesome version 4.7 classes](http://fontawesome.io/icons/) to label the button with icons. \(fa-\*shortcode\*\). You can also use "pull-left" and "pull-right" bootstrap classes to modify the position of the icon \(not supported on firefox\).
+  * Use [font awesome version 4.7 classes](//fontawesome.io/icons/) to label the button with icons. \(fa-\*shortcode\*\). You can also use "pull-left" and "pull-right" bootstrap classes to modify the position of the icon \(not supported on firefox\).
   * ![](https://s3.amazonaws.com/static.dnnsharp.com/documentation/2017/07/chrome_2017-07-07_11-11-47.png)
 
 * Connected Forms 

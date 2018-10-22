@@ -8,7 +8,7 @@ layout: default
 
 <b>Action Form</b> is the most powerful, flexible, secure, fast, and easy-to-use tool that enables the creation of amazing web forms. The web is all about interaction, and web forms are an essential part of that. Forms created by <b>Action Form</b> are completely customizable, giving you the power to make any type of form you can imagine, e.g. surveys, contact forms, widgets, and lead generation forms etc. Moreover, it takes just minutes to set up even the most complex forms for your website, with no programming and technical experience required.
 
-Besides, you will benefit from our <a href="http://www.dnnsharp.com/support#opturl=%2Faction-form" target="_blank">excellent support</a> and quick response for implementing your feature requests.
+Besides, you will benefit from our <a href="//www.dnnsharp.com/support#opturl=%2Faction-form" target="_blank">excellent support</a> and quick response for implementing your feature requests.
 
 ## Why Action Form ?
 
@@ -36,7 +36,7 @@ With regular updates, enjoy an even faster and more lightweight builder, providi
 * Efficient database access management
 * And much more
 
-For other unique and technical features, <a href="http://www.dnnsharp.com/dnn/modules/action-form-builder" target="_blank">click here.</a>
+For other unique and technical features, <a href="//www.dnnsharp.com/dnn/modules/action-form-builder" target="_blank">click here.</a>
 
 ## Support
 

@@ -4,7 +4,7 @@ This action executes an SQL statement, optionally capturing the output. This act
 
 We also recommend you to bind parameters instead of using tokens directly in sql queries in order to prevent SQL Injection \(example in image below\)
 
-![](http://static.dnnsharp.com/documentation/runsql1.png)
+![](//static.dnnsharp.com/documentation/runsql1.png)
 
 Here are some common scenarios when you would use this action:
 

@@ -1,6 +1,6 @@
 # Payments
 
-**This page has been moved, please go [here](http://paypal.guide.dnnsharp.com/en//) for the latest updated version**
+**This page has been moved, please go [here](//paypal.guide.dnnsharp.com/en//) for the latest updated version**
 
 ## Collect PayPal Payment
 

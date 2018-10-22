@@ -11,11 +11,11 @@ In the Input Data section text and/or number fields can be created and used as p
 
 ## How to Create a Field
 
-You can begin by *naming* the field you want to create. Keep in mind that the parameter name must not contain spaces and that this data will be passed to this API under this name, after which it's possible to reference fields using the [Name] syntax. This field supports also [My Tokens](https://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}.
+You can begin by *naming* the field you want to create. Keep in mind that the parameter name must not contain spaces and that this data will be passed to this API under this name, after which it's possible to reference fields using the [Name] syntax. This field supports also [My Tokens](/my-tokens/index.html).
 
 There are three *Condition* boxes where you can determine if and how the field will be used in the method. The first generic Condition box has the purpose to disable the whole field, the other two Condition boxes apply as follows: one Condition box disables the whole validation and other Condition box disables only the validation rule.  
 
-There's a *validation* section where you can add the predefined validation rules that will determine if and how the field validation executes, and let's not forget that this section supports [My Tokens](https://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"} too. You can find more about the validation rules on the [Validation](../validation.html) page from this documentation.
+There's a *validation* section where you can add the predefined validation rules that will determine if and how the field validation executes, and let's not forget that this section supports [My Tokens](/my-tokens/index.html) too. You can find more about the validation rules on the [Validation](../validation.html) page from this documentation.
 
 ## Handling Input
 

@@ -2,7 +2,7 @@
 
 The **Sync URL **option is available under General Settings and comes enabled by default. Basically, it synchronizes the URL with the current state of the grid without causing a page reload. The sates includes sorting, pagination, search and filters. It is useful for navigating back using browser button, bookmarking, sharing and integrating with other modules.
 
-The new URL will be similar with the following: [http://domain.com/ActionGridPage?pageModuleId=Value&sizeModuleId=Value&searchModuleId=Value&sortModuleId=Value&sortdirModuleId=asc&filterModuleID-GridField=Value](http://domain.com/ActionGridPage?pageModuleId=Value&sizeModuleId=Value&searchModuleId=Value&sortModuleId=Value&sortdirModuleId=asc&filterModuleID-GridField=Value). Copy pasting the URL in other browsers/tabs should open the grid with exact same data.
+The new URL will be similar with the following: [//domain.com/ActionGridPage?pageModuleId=Value&sizeModuleId=Value&searchModuleId=Value&sortModuleId=Value&sortdirModuleId=asc&filterModuleID-GridField=Value](//domain.com/ActionGridPage?pageModuleId=Value&sizeModuleId=Value&searchModuleId=Value&sortModuleId=Value&sortdirModuleId=asc&filterModuleID-GridField=Value). Copy pasting the URL in other browsers/tabs should open the grid with exact same data.
 
 ## Refreshing Grid without Page Load from Outside Action Grid
 

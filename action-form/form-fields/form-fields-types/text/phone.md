@@ -4,15 +4,15 @@ This field allows users to input a phone number while auto-detecting the country
 
 ## Initial Value
 
-Initial phone number.This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Initial phone number.This field supports [My Tokens](/my-tokens/index.html)
 
 ## Initial Country
 
-Initial country code. You need to set this if you use initial value.This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+Initial country code. You need to set this if you use initial value.This field supports [My Tokens](/my-tokens/index.html)
 
 ## Preferred Countries
 
-The countries to be shown at the top of the country dropdown. Input comma-separated values.This field supports [My Tokens](http://www.dnnsharp.com/dnn/modules/my-custom-tokens){:target="_blank"}
+The countries to be shown at the top of the country dropdown. Input comma-separated values.This field supports [My Tokens](/my-tokens/index.html)
 
 #### International Mode
 

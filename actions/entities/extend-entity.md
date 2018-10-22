@@ -10,4 +10,4 @@ Using this Action you can edit the following fields:
 * **Entity Name**. Provide the name of the entity you would like to modify \(add new properties to\).
 * **Properties**.  select which properties\(and corresponding values\) should be added to the existing entity.
 
-![](http://static.dnnsharp.com/documentation/extend_entity.png)
+![](//static.dnnsharp.com/documentation/extend_entity.png)
