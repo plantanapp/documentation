@@ -14,7 +14,7 @@ Below is an example of a metadata file:
     <desc>Some <b>description that comes from metadata document</b></desc> 
     <keywords>other important words not present in document</keywords> 
     <boost>16.0</boost> 
-    <overrideUrl>http://somesite.com/resultpage.html</overrideUrl>
+    <overrideUrl>//somesite.com/resultpage.html</overrideUrl>
     <locale>en-US</locale>
     <linkToTabId>123</linkToTabId>
     <categories>

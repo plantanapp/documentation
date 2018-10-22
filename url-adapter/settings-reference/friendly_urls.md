@@ -6,9 +6,9 @@ After you click on the "Change" button, this section will look like in the image
 
 ![](friendly-urls.png)
 
-You can see an area with a Sample URL at the bottom of the section that updates in real time based on your changes. In this particular example, `http://example.com/Home/Job-Offers/Etudiant.aspx`, the following settings were applied: 
-* '/' as path separator (for '_' it looks like `http://example.com/Home_Job-Offers_Etudiant.aspx`)
-* space replaced (for '_' it will be `http://example.com/Home/Job_Offers/Etudiant.aspx`)
+You can see an area with a Sample URL at the bottom of the section that updates in real time based on your changes. In this particular example, `//example.com/Home/Job-Offers/Etudiant.aspx`, the following settings were applied: 
+* '/' as path separator (for '_' it looks like `//example.com/Home_Job-Offers_Etudiant.aspx`)
+* space replaced (for '_' it will be `//example.com/Home/Job_Offers/Etudiant.aspx`)
 * extension applied
 * lowercase not enforced
 * accents ignored (`étudiant`).

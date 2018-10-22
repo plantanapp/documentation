@@ -3,7 +3,7 @@
 ## [Geo:GoogleMap]
 
 Embed a Google Map by specifying coordinates.
-Read more about this gadget at http://www.google.com/support/youtube/bin/topic.py?topic=16569
+Read more about this gadget at //www.google.com/support/youtube/bin/topic.py?topic=16569
 
 Parameters:
   - [1 of 2 required] String Address Google Maps will try to match this address to coordinates.

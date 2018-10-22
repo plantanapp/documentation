@@ -13,7 +13,7 @@ Credential store supports the following actions:
 * [Delete Credentials](/credential-store/delete-credential.md)
 * [Get Credentials](/credential-store/get-credential.md)
 
-For a better management experience we recommend to integrated it with our [Action Grid](http://www.dnnsharp.com/dnn/modules/action-grid-table-data) Module. The latter comes with a Credential Store Entries Datasource configured in order users to add/edit/remove credentials, as shown below;
+For a better management experience we recommend to integrated it with our [Action Grid](//www.dnnsharp.com/dnn/modules/action-grid-table-data) Module. The latter comes with a Credential Store Entries Datasource configured in order users to add/edit/remove credentials, as shown below;
 
 * Credential Store Entries Source - feeds the grid with necessary information
 * Credential Type \(ss.trigger.imap\) - provides seamless integration with IMAP Trigger available in [SharpScheduler&gt; Mail Triggers&gt; Imap](https://www.gitbook.com/book/dnnsharp/common/edit#)

@@ -14,5 +14,5 @@ The first debugging "tool" we use is the "*test this method*" button which is di
 Another tool for debugging is the [Postman](https://www.getpostman.com/){:target="_blank"} application for Chrome. We gave an example on the [API Keys](security/api-keys.html) page where one of the testing methods was using the Postman application.
 
 As an additional tool, which we prefer to use when testing browser independent, is *cURL* where in command line we make an insert like:
-``curl --data "input=data" http://test.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=List``
+``curl --data "input=data" //test.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=List``
 with an already created method and after the command is run, the message which informs you about the method gets displayed, in this case, the method was created as a GET method and we've tried to insert it as a POST method.

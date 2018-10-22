@@ -9,7 +9,7 @@ To access field values from the currently iterated entity, in the actions from t
 * Continue on error - continues to the next iteration even if the current one failed to execute.
 * On Error - define a list of actions to run on error.  Otherwise, an error message is returned. It will contain the underlying error if debug mode is on.
 
-![](http://static.dnnsharp.com/documentation/execute_actions_on_entity_list.png)
+![](//static.dnnsharp.com/documentation/execute_actions_on_entity_list.png)
 
 ## Action Grid default entity
 

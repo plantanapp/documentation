@@ -24,7 +24,7 @@ or jQuery:
 var $el = $('#' + form.fields.SomeFieldName.id);
 ```
 
-Once you have that, you can do DOM manipulation, install plugins and so on. For example, one could hide a textbox by using *$el.hide();* If you're trying to integrate a 3rd party jQuery plugin, you'll first have to include it. Currently you can't do this with Action Form, so you'll have to add it to the DNN skin or the Page Header under Page Settings. After you do that, you can simply call the plugin on the jquery element. For example, the following script would provide a password complexity message using the <a href="http://danpalmer.me/jquery-complexify/">complexify plugin:</a>
+Once you have that, you can do DOM manipulation, install plugins and so on. For example, one could hide a textbox by using *$el.hide();* If you're trying to integrate a 3rd party jQuery plugin, you'll first have to include it. Currently you can't do this with Action Form, so you'll have to add it to the DNN skin or the Page Header under Page Settings. After you do that, you can simply call the plugin on the jquery element. For example, the following script would provide a password complexity message using the <a href="//danpalmer.me/jquery-complexify/">complexify plugin:</a>
 
 ```js
 $el.complexify(options, callback(valid, complexity){

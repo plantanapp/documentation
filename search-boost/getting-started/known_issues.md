@@ -31,5 +31,5 @@ This is nothing serious and happens because the Index file is opened when Asp.ne
 
 **[Fixed in 3.0.85] If a module is present on several pages, only results from one page will be returned**
 
-If a module is placed on more than one page, then the search will only return results from one, main page - http://screencast.com/t/zUKdMkXW.
+If a module is placed on more than one page, then the search will only return results from one, main page - //screencast.com/t/zUKdMkXW.
 [Fixed in 3.0.57] If there is a page within another page and for the parent page all the modules are unchecked then on save there is an error in javascript - so there is no save at all.

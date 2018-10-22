@@ -16,17 +16,17 @@ Create a new token, as follows:
   + *Cache Time:* for this examples the cache time can be safely set to as much as possible since the conversion values won't change between requests.
 
 * **Screen 2**
-  + *URL:* http://www.w3schools.com/webservices/tempconvert.asmx
+  + *URL:* //www.w3schools.com/webservices/tempconvert.asmx
   + *POST Parameters:*
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <soap:Envelope 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-    xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    xmlns:xsi="//www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="//www.w3.org/2001/XMLSchema" 
+    xmlns:soap="//schemas.xmlsoap.org/soap/envelope/">
   <soap:Body>
-    <CelsiusToFahrenheit xmlns="http://www.w3schools.com/webservices/">
+    <CelsiusToFahrenheit xmlns="//www.w3schools.com/webservices/">
       <Celsius>30</Celsius>
     </CelsiusToFahrenheit>
   </soap:Body>
@@ -37,7 +37,7 @@ Create a new token, as follows:
 
   ```
   Content-Type: text/xml; charset=utf-8
-  SOAPAction: "http://www.w3schools.com/webservices/CelsiusToFahrenheit"
+  SOAPAction: "//www.w3schools.com/webservices/CelsiusToFahrenheit"
   ```
 
   + *Parser:* XML (XPath Parsing)
@@ -63,17 +63,17 @@ Here is the complete sample:
   + *Cache Time:* for this examples the cache time can be safely set to as much as possible since the conversion values won't change between requests.
 
 * **Screen 2**
-  + *URL:* http://www.w3schools.com/webservices/tempconvert.asmx
+  + *URL:* //www.w3schools.com/webservices/tempconvert.asmx
   + *POST Parameters:*
 
 ```
 <?xml version="1.0" encoding="utf-8"?>
 <soap12:Envelope 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
-    xmlns:xsd="http://www.w3.org/2001/XMLSchema" 
-    xmlns:soap12="http://www.w3.org/2003/05/soap-envelope">
+    xmlns:xsi="//www.w3.org/2001/XMLSchema-instance" 
+    xmlns:xsd="//www.w3.org/2001/XMLSchema" 
+    xmlns:soap12="//www.w3.org/2003/05/soap-envelope">
   <soap12:Body>
-    <CelsiusToFahrenheit xmlns="http://www.w3schools.com/webservices/">
+    <CelsiusToFahrenheit xmlns="//www.w3schools.com/webservices/">
       <Celsius>30</Celsius>
     </CelsiusToFahrenheit>
   </soap12:Body>
@@ -102,7 +102,7 @@ This is the easiest method to invoke web services without a framework. The targe
   + *Cache Time:* for this examples the cache time can be safely set to as much as possible since the conversion values won't change between requests.
 
 * **Screen 2**
-  + *URL:* http://www.w3schools.com/webservices/tempconvert.asmx/CelsiusToFahrenheit
+  + *URL:* //www.w3schools.com/webservices/tempconvert.asmx/CelsiusToFahrenheit
   + *POST Parameters:* Celsius=30
   + *Parser:* XML (XPath Parsing)
 

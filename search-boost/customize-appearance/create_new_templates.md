@@ -107,8 +107,8 @@ When you click on the DEBUG: Show XML link, a window with XML code appears. In c
       <tab_title>Content Management Systems</tab_title>
       <mod_title>CMS</mod_title>
       <title>CMS</title>
-      <url>http://dnn614.dev2.dnnsharp.com/CMS.aspx</url>
-      <plainurl>http://dnn614.dev2.dnnsharp.com/CMS.aspx</plainurl>
+      <url>//dnn614.dev2.dnnsharp.com/CMS.aspx</url>
+      <plainurl>//dnn614.dev2.dnnsharp.com/CMS.aspx</plainurl>
       <ukey>nCbXhUouItH60eQInjLdRPblObmUt+kyVrfuyMr2qMPSIgdbo7Rg1kEBdo1480os</ukey>
       <urlfwd>/DesktopModules/SearchBoost/UrlFwd.ashx?url=http%3a%2f%2fdnn614.dev2.dnnsharp.com%2fCMS.aspx&ukey=nCbXhUouItH60eQInjLdRPblObmUt%2bkyVrfuyMr2qMPSIgdbo7Rg1kEBdo1480os&logid=41-9qzpc6sddtz3vqsy</urlfwd>
       <data />

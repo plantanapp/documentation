@@ -15,5 +15,5 @@ You can edit the following fields:
 * **Destination Folder**
   . This field supports expressions, by passing the path of the destination folder.    
 
-![](http://static.dnnsharp.com/documentation/copy_file.png)
+![](//static.dnnsharp.com/documentation/copy_file.png)
 

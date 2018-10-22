@@ -9,6 +9,6 @@ What we did in this example is to:
 * rename FirstName to FN and LastName to LN 
 * add a new property called FullName that includes both First and Last Name.
 
-![](http://static.dnnsharp.com/documentation/mapping_entities_1.png)
+![](//static.dnnsharp.com/documentation/mapping_entities_1.png)
 
-![](http://static.dnnsharp.com/documentation/mapping_entities_2.png)
+![](//static.dnnsharp.com/documentation/mapping_entities_2.png)

@@ -6,4 +6,4 @@ Load a list of entities from a JSON Model into context; so further actions like 
 * **Entity Name** - set a name for the entity so you can reference it later by name. Can contain My Tokens.
 * On Error - define a list of actions to run on error. Otherwise, an error message is returned. It will contain the underlying error if debug mode is on.
 
-![](http://static.dnnsharp.com/documentation/load_entity_json.png)
+![](//static.dnnsharp.com/documentation/load_entity_json.png)

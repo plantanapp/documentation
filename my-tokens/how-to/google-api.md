@@ -42,7 +42,7 @@ source=Author-Application_Name-Version
 service=analytics
 ```
 
-Read more on query parameters here: http://code.google.com/apis/analytics/docs/gdata/2.0/gdataProtocol.html
+Read more on query parameters here: //code.google.com/apis/analytics/docs/gdata/2.0/gdataProtocol.html
 
 ### Post & Http Headers
 
@@ -108,7 +108,7 @@ The endpoint URL for retrieving data is https://www.google.com/analytics/feeds/d
 
 #### GET Parameters
 
-This is the most complicated part of this process; figuring out which parameters to use. Google provides a handy “Query Explorer” at http://code.google.com/apis/analytics/docs/gdata/gdataExplorer.html for this reason. You can login and build your query. You CAN type/paste the cleanly formatted parameters as you see below and you CAN remove the question (?) and ampersands (&). MyTokens will retain this neat formatting for you as well as construct the proper string back together for passing to the REST service.
+This is the most complicated part of this process; figuring out which parameters to use. Google provides a handy “Query Explorer” at //code.google.com/apis/analytics/docs/gdata/gdataExplorer.html for this reason. You can login and build your query. You CAN type/paste the cleanly formatted parameters as you see below and you CAN remove the question (?) and ampersands (&). MyTokens will retain this neat formatting for you as well as construct the proper string back together for passing to the REST service.
 
 * Single-line Format:
 
@@ -164,9 +164,9 @@ This XSLT stylesheet will (in theory) work for any search data received from ver
 ```xml
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <xsl:stylesheet version="1.0"
-    xmlns:xsl='http://www.w3.org/1999/XSL/Transform'
-    xmlns:atom='http://www.w3.org/2005/Atom'
-    xmlns:dxp='http://schemas.google.com/analytics/2009'>
+    xmlns:xsl='//www.w3.org/1999/XSL/Transform'
+    xmlns:atom='//www.w3.org/2005/Atom'
+    xmlns:dxp='//schemas.google.com/analytics/2009'>
     <xsl:output method="html" />
     <xsl:template match="/">
         <ul>

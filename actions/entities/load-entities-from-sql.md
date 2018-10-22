@@ -11,5 +11,5 @@ Load a list of entities from a SQL query into context; so further actions like _
 
 * On Error - define a list of actions to run on error. Otherwise, an error message is returned. It will contain the underlying error if debug mode is on.
 
-![](http://static.dnnsharp.com/documentation/load_enity_sql.png)
+![](//static.dnnsharp.com/documentation/load_enity_sql.png)
 

@@ -6,5 +6,5 @@ This action allows you to specify an action for creating user account when the u
 * **Generate random password**. Enable this option to have DNN Api Endpoint generate a random password. This basically replaces the password fields. The generated password is stored in \[RegRandomPass\] token so you can use it for example in an email action.
 * **Send standard DNN registration email**. When this option is enabled DNN Api Endpoint will use the standard registration email from DNN. For custom emails, disable this option and add Email actions.
 
-![](http://static.dnnsharp.com/documentation/UserRegistration.png)
+![](//static.dnnsharp.com/documentation/UserRegistration.png)
 

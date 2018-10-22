@@ -52,7 +52,7 @@ where \[Upload\] is the title of the Single File Upload field_
 
 #### How to upload files on S3 Browser via Single File Upload using EvotivaGlobalStorage
 
-* Install EvotivaGlobalStorage \(here's the page from where you can download a free trial: [http://www.evotiva.com/Downloads](http://www.evotiva.com/Downloads%29\);
+* Install EvotivaGlobalStorage \(here's the page from where you can download a free trial: [//www.evotiva.com/Downloads](//www.evotiva.com/Downloads%29\);
 
 * Access S3 Browser and in Accounts &gt; Manage Accounts &gt; double click on Account Name - from here you'll need to use the Access Key ID and the Secret Key ID;
 

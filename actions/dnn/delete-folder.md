@@ -15,5 +15,5 @@ You can edit the following fields:
 * **Recursive**
   . Enable this checkbox to enable deleting subfolders and their content.    
 
-![](http://static.dnnsharp.com/documentation/delete_folder.png)
+![](//static.dnnsharp.com/documentation/delete_folder.png)
 

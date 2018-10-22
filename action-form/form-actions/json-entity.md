@@ -12,4 +12,4 @@ Here's what you can configure:
 * **Criteria**. Provide criteria to determine which entries are removed.
 * **HTTP Headers**. Can contain context tokens, for example \[FieldId\], and [My Tokens](/my-tokens/index.html).
 
-![](http://static.dnnsharp.com/documentation/output_json_entity.png)
+![](//static.dnnsharp.com/documentation/output_json_entity.png)

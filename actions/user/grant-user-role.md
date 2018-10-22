@@ -9,5 +9,5 @@ This option gives you the possibility to input a role name and if you specify mu
 Role expiration  
 In this field you can input after how many days the role expires. It you leave it blank, it will never expire.
 
-![](http://static.dnnsharp.com/documentation/GrantUserRole.png)
+![](//static.dnnsharp.com/documentation/GrantUserRole.png)
 

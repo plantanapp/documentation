@@ -8,7 +8,7 @@ On submit, it will generate the following tokens: \[&lt;FieldName&gt;\] \(which 
 
 * Css Icon Class
 
-  * Use [font awesome version 4.7 classes](http://fontawesome.io/icons/) to label the item with icons. \(fa-\*shortcode\*\).
+  * Use [font awesome version 4.7 classes](//fontawesome.io/icons/) to label the item with icons. \(fa-\*shortcode\*\).
 
 * Icon Position
 

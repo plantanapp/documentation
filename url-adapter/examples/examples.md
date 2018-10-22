@@ -1,6 +1,6 @@
 # Examples
 
-## How to redirect `http://site.com` to `http://www.site.com`
+## How to redirect `//site.com` to `//www.site.com`
 
 There are two methods in which this can be achieved:
 
@@ -11,27 +11,27 @@ There are two methods in which this can be achieved:
     * When it is set to `non-www` only URLs without `www.` will be accepted.
 
 * Use the `Advanced Rules` settings:
-    * When you need to redirect a site or any URLs which are not using `www.` and you want to force them to use `www.` for all `http://` or `https://` calls, then you need to create an Advanced Rule in URL Adapter like:
+    * When you need to redirect a site or any URLs which are not using `www.` and you want to force them to use `www.` for all `//` or `https://` calls, then you need to create an Advanced Rule in URL Adapter like:
     
     ```
     Match In: Absolute URL
-    Condition: http://site.com/{*}
-    Target URL: http://www.site.com{*}
+    Condition: //site.com/{*}
+    Target URL: //www.site.com{*}
     Type: Redirect
     ```
     
     ![www image example](www.png)
     
-    * In this way, only the specified portal will be "affected" by the advanced rule, and if you have, for example, other portals like `http://blog.site.com`, it will remain without `www`.
+    * In this way, only the specified portal will be "affected" by the advanced rule, and if you have, for example, other portals like `//blog.site.com`, it will remain without `www`.
     
 ## Redirects to `https://`
 
-URL Adapter also provides the ability to redirect all `http://` traffic to `https://` - it respects the HTTPS settings made in DNN (Admin > Site Settings and page settings), therefore, pages checked as secured should be served with `https://`.
+URL Adapter also provides the ability to redirect all `//` traffic to `https://` - it respects the HTTPS settings made in DNN (Admin > Site Settings and page settings), therefore, pages checked as secured should be served with `https://`.
 
-There is also an advanced rule if you want to redirect from `http://` to `https://` without relying on DNN settings:
+There is also an advanced rule if you want to redirect from `//` to `https://` without relying on DNN settings:
 ```
 Match In: Absolute URL
-Condition: http://site.com/{*path}
+Condition: //site.com/{*path}
 Target URL: https://www.site.com{*path}
 Type: Redirect
 ```

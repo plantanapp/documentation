@@ -12,7 +12,7 @@ This field allows a user to agree to your terms or legal agreements by requiring
 
 * Custom Url
 
-  * Or, freely provide an URL, for example: [http://OtherWebsite.com/TermsAndConditions.html](http://OtherWebsite.com/TermsAndConditions.html). Can contain [My Tokens](/my-tokens/index.html).
+  * Or, freely provide an URL, for example: [//OtherWebsite.com/TermsAndConditions.html](//OtherWebsite.com/TermsAndConditions.html). Can contain [My Tokens](/my-tokens/index.html).
 
 
 
