@@ -1,0 +1,105 @@
+[{
+    "title": "Getting Started",
+    "ref": "gettingstarted",
+    "url": "index.html"
+}, {
+    "title": "Modules",
+    "subpages": [{
+        "title": "Action Grid",
+        "ref": "actiongrid",
+        "url": "/action-grid/index.html"
+    }, {
+        "title": "Action Form",
+        "ref": "actionform",
+        "url": "/action-form/index.html"
+    }, {
+        "title": "Search Boost",
+        "ref": "searchboost",
+        "url": "/search-boost/index.html"
+    }, {
+        "title": "Sharp Scheduler",
+        "url": "/sharp-scheduler/index.html",
+        "ref": "sharpscheduler"
+    }, {
+        "title": "URL Adapter",
+        "ref": "urladapter",
+        "url": "/url-adapter/index.html"
+    }, {
+        "title": "Tabs Pro",
+        "ref": "tabspro",
+        "url": "/tabs-pro/index.html"
+    }, {
+        "title": "NavXP",
+        "ref": "navxp",
+        "url": "/nav-xp/index.html"
+    }, {
+        "title": "Sharp CDN",
+        "ref": "sharpcdn",
+        "url": "/sharp-cdn/index.html"
+    }, {
+        "title": "DNN API Endpoint",
+        "ref": "dnnapiendpoint",
+        "url": "/dnnapiendpoint/index.html"
+    }, {
+        "title": "My Tokens",
+        "ref": "mytokens",
+        "url": "/my-tokens/index.html"
+    }, {
+        "title": "Info Box",
+        "ref": "infobox",
+        "url": "/info-box/index.html"
+    },{
+        "title":"Easy Container",
+        "ref":"easycontainer",
+        "url":"/easy-container/index.html"
+    }]
+}, {
+    "title": "Actions",
+    "ref": "actions"
+}, {
+    "title": "Add-ons",
+    "subpages": [{
+        "title": "Email Sync",
+        "url": "/add-ons/email-sync/index.html",
+        "ref": "emailsync"
+    }, {
+        "title": "Server Management",
+        "url": "/add-ons/server-management/index.html",
+        "ref": "servermanagement"
+    }, {
+        "title": "Barcode Generator",
+        "url": "/add-ons/barcode-generator/index.html",
+        "ref": "barcodegenerator"
+    }, {
+        "title": "PDF Generator",
+        "url": "/add-ons/pdf-generator/installing.html",
+        "ref": "pdfgenerator"
+    }, {
+        "title": "Stripe",
+        "url": "/add-ons/stripe/introduction.html",
+        "ref": "stripe"
+    }]
+}, {
+    "title": "Integrations",
+    "subpages": [{
+        "title": "Clickatell",
+        "ref": "clickatell",
+        "url": "integrations/clickatell/index.html"
+    }, {
+        "title": "PayPal",
+<<<<<<< HEAD
+        "ref":"paypal",
+        "url":"integrations/paypal/index.html"
+    },{
+        "title":"Authorize Net",
+        "ref":"authorize",
+        "url":"integrations/authorizenet/index.html"
+=======
+        "ref": "paypal",
+        "url": "integrations/paypal/index.html"
+    }, {
+        "title": "Campaign Monitor",
+        "url": "integrations/campaign-monitor/index.html"
+>>>>>>> 8440c400154b248344ddd734e7070e674e602a5a
+    }]
+}]
