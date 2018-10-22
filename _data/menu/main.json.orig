@@ -87,11 +87,19 @@
         "url": "integrations/clickatell/index.html"
     }, {
         "title": "PayPal",
-        "ref": "paypal",
-        "url": "integrations/paypal/index.html"
+<<<<<<< HEAD
+        "ref":"paypal",
+        "url":"integrations/paypal/index.html"
     },{
         "title":"Authorize Net",
         "ref":"authorize",
         "url":"integrations/authorizenet/index.html"
+=======
+        "ref": "paypal",
+        "url": "integrations/paypal/index.html"
+    }, {
+        "title": "Campaign Monitor",
+        "url": "integrations/campaign-monitor/index.html"
+>>>>>>> 8440c400154b248344ddd734e7070e674e602a5a
     }]
 }]

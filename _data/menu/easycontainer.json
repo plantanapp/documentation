@@ -1,0 +1,45 @@
+[{
+    "title":"Overview",
+    "url":"/easy-container/index.html"
+},{
+    "title":"Video Tutorials",
+    "url":"/easy-container/video-tutorials.html"
+},{
+    "title":"Compatibility with other modules",
+    "url":"/easy-container/other-modules.html"
+},{
+    "title":"Containers",
+    "url":"/easy-container/containers.html",
+    "subpages":[{
+        "title":"Format",
+        "url":"/easy-container/containers/format.html"
+    },{
+        "title":"Management",
+        "url":"/easy-container/containers/management.html"
+    },{
+        "title":"Special containers",
+        "url":"/easy-container/containers/special-containers.html"
+    }]
+},{
+    "title":"Responsiveness",
+    "url":"/easy-container/responsiveness.html"
+},{
+    "title":"Settings",
+    "url":"/easy-container/settings.html",
+    "subpages":[{
+        "title":"Actions",
+        "url":"/easy-container/settings/actions.html"
+    },{
+        "title":"Apperance",
+        "url":"/easy-container/settings/apperance.html"
+    },{
+        "title":"Dynamic Conditions",
+        "url":"/easy-container/settings/dynamic-conditions.html"
+    },{
+        "title":"Layout",
+        "url":"/easy-container/settings/layout.html"
+    },{
+        "title":"User css styles",
+        "url":"/easy-container/settings/user-css-styles.html"
+    }]
+}]

@@ -143,4 +143,4 @@ Only after the upgrade and features have been fully tested upgrade your live sit
 
 ### <a name="11"></a> I have a question that's not included in this FAQ, where can I get an answer ?
 
-You can find more resources in our <a href="https://sites.google.com/a/dnnsharp.com/action-form-v2/home/how-to">How to</a> and <a href="/action-form/exemples-troubleshooting.html">Examples & Troubleshooting</a> sections; if everything else fails, do not hesitate to contact our <a href="https://www.dnnsharp.com/helpcenter/action-form">Support</a> team.
+You can find more resources in our <a href="/action-form/how-to.html">How to</a> and <a href="/action-form/exemples-troubleshooting.html">Examples & Troubleshooting</a> sections; if everything else fails, do not hesitate to contact our <a href="https://www.dnnsharp.com/helpcenter/action-form">Support</a> team.

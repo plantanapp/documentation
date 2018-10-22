@@ -227,7 +227,7 @@
     }]
 }, {
     "title": "User",
-s    "url": "/actions/user.html",
+    "url": "/actions/user.html",
     "subpages": [{
         "title": "Authorize User",
         "url": "/actions/user/authorie-user.html"

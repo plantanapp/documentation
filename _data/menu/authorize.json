@@ -1,0 +1,31 @@
+
+[
+    {
+        "title":"Overview",
+        "url":"/integrations/authorizenet/index.html"
+    },{
+        "title":"Installation",
+        "url":"/integrations/authorizenet/installation.html"
+    },{
+        "title":"Requirements",
+        "url":"/integrations/authorizenet/requirements.html"
+    },{
+        "title":"Make a payment with Credit Card",
+        "url":"/integrations/authorizenet/make-a-payment-with-credit-card.html"
+    },{
+        "title":"Make a payment with Electronic Check",
+        "url":"/integrations/authorizenet/make-a-payment-with-electronic-check.html"
+    },{
+        "title":"Simple Checkout",
+        "url":"/integrations/authorizenet/simple-checkout.html"
+    },{
+        "title":"Refund a Transaction",
+        "url":"/integrations/authorizenet/refund-a-transaction.html"
+    },{
+        "title":"FAQs",
+        "url":"/integrations/authorizenet/FAQs.html"
+    },{
+        "title":"Resources",
+        "url":"/integrations/authorizenet/resources.html"
+    }
+]

@@ -1,4 +1,10 @@
 [{
+<<<<<<< HEAD
+=======
+    "title": "Are you using Action Form 2.X?",
+    "url": "//action-form-v2.dnnsharp.com/"
+}, {
+>>>>>>> 8da740054c75ac30a8280d7f7e304e4a09878202
     "title": "Overview",
     "url": "/action-form/index.html"
 }, {
