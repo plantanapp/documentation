@@ -74,6 +74,54 @@
         "title": "PDF Generator",
         "url": "/add-ons/pdf-generator/installing.html",
         "ref": "pdfgenerator"
+    }, {
+        "title": "Email Verification",
+        "url": "/add-ons/email-verification/index.html",
+        "subpages": [{
+                "title": "Requirements",
+                "url": "/add-ons/email-verification/requirements.html"
+            },
+            {
+                "title": "Installation",
+                "url": "/add-ons/email-verification/installation.html"
+            }
+        ]
+    }, {
+        "title": "File Management",
+        "url": "/add-ons/file-management/index.html",
+        "subpages": [{
+            "title": "Getting Started",
+            "url": "/add-ons/file-management/getting-started.html"
+        }, {
+            "title": "Actions",
+            "url": "/add-ons/file-management/actions.html"
+        }, {
+            "title": "FAQ",
+            "url": "/add-ons/file-management/faq.html"
+        }]
+    }, {
+        "title": "Portal Management",
+        "url": "/add-ons/portal-management/index.html",
+        "subpages": [{
+            "title": "Getting Started",
+            "url": "/add-ons/portal-management/getting-started.html"
+        }, {
+            "title": "Actions",
+            "url": "/add-ons/portal-management/actions.html",
+            "subpages": [{
+                "title": "Module Actions",
+                "url": "/add-ons/portal-management/module-actions.html"
+            }, {
+                "title": "Page Actions",
+                "url": "/add-ons/portal-management/page-actions.html"
+            }, {
+                "title": "Portal Actions",
+                "url": "/add-ons/portal-management/portal-actions.html"
+            }]
+        }, {
+            "title": "FAQ",
+            "url": "/add-ons/portal-management/faq.html"
+        }]
     }]
 }, {
     "title": "Integrations",
@@ -96,6 +144,13 @@
     }, {
         "title": "Campaign Monitor",
         "url": "/integrations/campaign-monitor/index.html"
+    }, {
+        "title": "MailChimp",
+        "url": "/integrations/mailchimp/index.html",
+        "subpages": [{
+            "title": "Subscribe",
+            "url": "/integrations/mailchimp/subscribe.html"
+        }]
     }, {
         "title": "Bluefin",
         "url": "/integrations/bluefin/index.html",
