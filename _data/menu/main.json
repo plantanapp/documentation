@@ -48,10 +48,10 @@
         "title": "Info Box",
         "ref": "infobox",
         "url": "/info-box/index.html"
-    },{
-        "title":"Easy Container",
-        "ref":"easycontainer",
-        "url":"/easy-container/index.html"
+    }, {
+        "title": "Easy Container",
+        "ref": "easycontainer",
+        "url": "/easy-container/index.html"
     }]
 }, {
     "title": "Actions",
@@ -74,24 +74,29 @@
         "title": "PDF Generator",
         "url": "/add-ons/pdf-generator/installing.html",
         "ref": "pdfgenerator"
-    }, {
-        "title": "Stripe",
-        "url": "/add-ons/stripe/introduction.html",
-        "ref": "stripe"
     }]
 }, {
     "title": "Integrations",
     "subpages": [{
-        "title": "Clickatell",
-        "ref": "clickatell",
-        "url": "integrations/clickatell/index.html"
-    }, {
-        "title": "PayPal",
-        "ref": "paypal",
-        "url": "integrations/paypal/index.html"
-    },{
-        "title":"Authorize Net",
-        "ref":"authorize",
-        "url":"integrations/authorizenet/index.html"
-    }]
+            "title": "Clickatell",
+            "ref": "clickatell",
+            "url": "integrations/clickatell/index.html"
+        }, {
+            "title": "PayPal",
+            "ref": "paypal",
+            "url": "integrations/paypal/index.html"
+        }, {
+            "title": "Authorize Net",
+            "ref": "authorize",
+            "url": "integrations/authorizenet/index.html"
+        }, {
+            "title": "Stripe",
+            "url": "/add-ons/stripe/introduction.html",
+            "ref": "stripe"
+        },
+        {
+            "title": "Campaign Monitor",
+            "url": "integrations/campaign-monitor/index.html"
+        }
+    ]
 }]
