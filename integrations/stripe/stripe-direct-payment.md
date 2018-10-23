@@ -7,7 +7,7 @@ A refund must be initiated by the destination account.
 
 _API Secret Key_ - Specify your platform's Secret Key.Can contain [My Tokens](/my-tokens/index.html). 
 
-![](/add-ons/stripe/assets/9.png)
+![](/assets/9.png)
 
 _Application Fee Percentage_ - Percentage of how much the application will charge based on the amount field. Use dot to separate decimals. (Ex: 2.35).Can contain [My Tokens](/my-tokens/index.html).
 
@@ -21,7 +21,7 @@ _Payment To_ - The destination AccountID of the payment. Does not work with the 
 
 It can be configured as a multiple choice dropdown with Stripe Connected Accounts datasource. Underneath Data Source fill in your API Secret Key, which you can find in your Stripe account [https://dashboard.stripe.com/account](https://dashboard.stripe.com/account){:target="_blank"}, under Account Settings > API Keys.
 
-![](/add-ons/stripe/assets/10.png)
+![](/assets/10.png)
 
 _Card Number_ - Credit card number. Can contain [My Tokens](/my-tokens/index.html).
 
@@ -47,4 +47,4 @@ _On Success_ - Define a list of actions that should execute when this action's r
 
 _On Error_ - Define a list of actions that should execute when this action's result is Error. You can see the error message in [Stripe:ErrorMessage].
 
-![](/add-ons/stripe/assets/11.png)
+![](/assets/11.png)
