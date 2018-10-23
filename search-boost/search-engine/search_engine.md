@@ -38,7 +38,7 @@ Fortunately, Search Boost fixes this by using Lucene search library from Apache 
 
 * **DNN doesn't support high customization for the Search Input and Search Results Module**
 
-Search Boost handles this elegantly by using XSL templates which basically put you in charge of everything in terms of what to display, the layout and the design.
+Search Boost handles this elegantly by using Razor templates which basically put you in charge of everything in terms of what to display, the layout and the design.
 
 * **DNN Indexer is not transparent**
 
