@@ -107,16 +107,16 @@
             "url": "/add-ons/portal-management/getting-started.html"
         }, {
             "title": "Actions",
-            "url": "/add-ons/portal-management/actions.html",
+            "url": "/add-ons/portal-management/actions/index.html",
             "subpages": [{
                 "title": "Module Actions",
-                "url": "/add-ons/portal-management/module-actions.html"
+                "url": "/add-ons/portal-management/actions/module-actions.html"
             }, {
                 "title": "Page Actions",
-                "url": "/add-ons/portal-management/page-actions.html"
+                "url": "/add-ons/portal-management/actions/page-actions.html"
             }, {
                 "title": "Portal Actions",
-                "url": "/add-ons/portal-management/portal-actions.html"
+                "url": "/add-ons/portal-management/actions/portal-actions.html"
             }]
         }, {
             "title": "FAQ",
