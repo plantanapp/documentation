@@ -89,7 +89,7 @@
     }, {
         "title": "File Management",
         "url": "/add-ons/file-management/index.html",
-        "subpages": [ {
+        "subpages": [{
             "title": "Actions",
             "url": "/add-ons/file-management/actions.html"
         }]
@@ -112,34 +112,6 @@
                 "title": "Portal Actions",
                 "url": "/add-ons/portal-management/actions/portal-actions.html"
             }]
-        }]
-    }, {
-        "title": "Sales force",
-        "url": "/add-ons/sales-force/index.html",
-        "subpages": [{
-            "title": "Getting Started",
-            "url": "/add-ons/sales-force/getting-started.html"
-        }, {
-            "title": "Settings reference",
-            "url": "/add-ons/sales-force/settings-reference.html"
-        }, {
-            "title": "Create a lead form",
-            "url": "/add-ons/sales-force/create-a-lead-form.html"
-        }, {
-            "title": "Query a Sales force form",
-            "url": "/add-ons/sales-force/query-salesforce-form.html"
-        }, {
-            "title": "Step 1 - Sign up",
-            "url": "/add-ons/sales-force/step-1-sign-up.html"
-        },  {
-            "title": "Step 2 - Install",
-            "url": "/add-ons/sales-force/step-2-install.html"
-        }, {
-            "title": "Step 3 - Getting the security token",
-            "url": "/add-ons/sales-force/step-3-get-security-token.html"
-        }, {
-            "title": "Step 4 - Setup Action form",
-            "url": "/add-ons/sales-force/step-4-setup-action-form.html"
         }]
     }]
 }, {
@@ -194,5 +166,33 @@
                 "url": "/integrations/bluefin/requirements.html"
             }
         ]
+    }, {
+        "title": "Sales force",
+        "url": "/integrations/sales-force/index.html",
+        "subpages": [{
+            "title": "Getting Started",
+            "url": "/integrations/sales-force/getting-started.html"
+        }, {
+            "title": "Settings reference",
+            "url": "/integrations/sales-force/settings-reference.html"
+        }, {
+            "title": "Create a lead form",
+            "url": "/integrations/sales-force/create-a-lead-form.html"
+        }, {
+            "title": "Query a Sales force form",
+            "url": "/integrations/sales-force/query-salesforce-form.html"
+        }, {
+            "title": "Step 1 - Sign up",
+            "url": "/integrations/sales-force/step-1-sign-up.html"
+        }, {
+            "title": "Step 2 - Install",
+            "url": "/integrations/sales-force/step-2-install.html"
+        }, {
+            "title": "Step 3 - Getting the security token",
+            "url": "/integrations/sales-force/step-3-get-security-token.html"
+        }, {
+            "title": "Step 4 - Setup Action form",
+            "url": "/integrations/sales-force/step-4-setup-action-form.html"
+        }]
     }]
 }]
