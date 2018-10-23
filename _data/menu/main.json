@@ -89,10 +89,7 @@
     }, {
         "title": "File Management",
         "url": "/add-ons/file-management/index.html",
-        "subpages": [{
-            "title": "Getting Started",
-            "url": "/add-ons/file-management/getting-started.html"
-        }, {
+        "subpages": [ {
             "title": "Actions",
             "url": "/add-ons/file-management/actions.html"
         }]
