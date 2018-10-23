@@ -95,9 +95,6 @@
         }, {
             "title": "Actions",
             "url": "/add-ons/file-management/actions.html"
-        }, {
-            "title": "FAQ",
-            "url": "/add-ons/file-management/faq.html"
         }]
     }, {
         "title": "Portal Management",
@@ -118,9 +115,37 @@
                 "title": "Portal Actions",
                 "url": "/add-ons/portal-management/actions/portal-actions.html"
             }]
+        }]
+    }, {
+        "title": "Sales force",
+        "url": "/add-ons/sales-force/index.html",
+        "subpages": [{
+            "title": "Getting Started",
+            "url": "/add-ons/sales-force/getting-started.html"
         }, {
+            "title": "Settings reference",
+            "url": "/add-ons/sales-force/settings-reference.html"
+        }, {
+            "title": "Create a lead form",
+            "url": "/add-ons/sales-force/create-a-lead-form.html"
+        }, {
+            "title": "Query a Sales force form",
+            "url": "/add-ons/sales-force/query-salesforce-form.html"
+        }, {
+            "title": "Step 1 - Sign up",
+            "url": "/add-ons/sales-force/step-1-sign-up.html"
+        },  {
+            "title": "Step 2 - Install",
+            "url": "/add-ons/sales-force/step-2-install.html"
+        }, {
+            "title": "Step 3 - Getting the security token",
+            "url": "/add-ons/sales-force/step-3-get-security-token.html"
+        }, {
+            "title": "Step 4 - Setup Action form",
+            "url": "/add-ons/sales-force/step-4-setup-action-form.html"
+        },{
             "title": "FAQ",
-            "url": "/add-ons/portal-management/faq.html"
+            "url": "/add-ons/sales-force/faq.html"
         }]
     }]
 }, {
