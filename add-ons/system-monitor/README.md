@@ -1,4 +1,4 @@
-# ![](/assets/SysMon300x388w.png)
+# ![](assets/SysMon300x388w.png)
 
 System monitor is an add-on used to monitor the disk space in a computer system.
 

@@ -26,5 +26,5 @@ Show Loader - displays a progress bar;
 
 Loader Color - the color of the progress bar \(eg. red \#00ff00 rgb\(0,0,255\)\). Supports My Tokens.
 
-![](/assets/^B5A8A8B69DDB8CDB8A37FAB3B492F714B36F7BD828F66CA49B^pimgpsh_fullsize_distr %281%29.jpg)
+![](assets/^B5A8A8B69DDB8CDB8A37FAB3B492F714B36F7BD828F66CA49B^pimgpsh_fullsize_distr %281%29.jpg)
 

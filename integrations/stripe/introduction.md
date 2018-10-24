@@ -1,7 +1,7 @@
 # Introduction 
 
 
-![](/assets/logo.jpg)
+![](assets/logo.jpg)
 
 
 Stripe integration allows you to accept instant credit card payments through Stripe right on your DNN portal.

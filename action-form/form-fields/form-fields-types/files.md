@@ -7,7 +7,7 @@ The **files** section contains two File Upload widgets, with multiple or single 
 * ##### [Multi File Upload](/form-fields/form-fields-types/files/multi-file-upload.md)
 * ##### [Single File Upload](/form-fields/form-fields-types/files/single-file-upload.md)
 
-![](/assets/a82d1be1cc[1].png)
+![](assets/a82d1be1cc[1].png)
 
 ### Features
 

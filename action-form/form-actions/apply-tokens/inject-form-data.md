@@ -10,5 +10,5 @@ Loading over a name that already exists will overwrite the existing data. If a f
 
 [Click here](https://www.youtube.com/watch?v=kB0UKNnlbHQ) to see a tutorial where we present some Core concepts in Action From and where you'll find a practical example where Inject Form Data action is used.
 
-![](/assets/inject_form_data.png)![](https://static.dnnsharp.com/documentation/inject_form_data.png)
+![](assets/inject_form_data.png)![](https://static.dnnsharp.com/documentation/inject_form_data.png)
 

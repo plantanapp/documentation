@@ -2,7 +2,7 @@
 
 A progress bar can be used to indicate to a user the progress of an operation.
 
-![](/assets/progress_bar.png)
+![](assets/progress_bar.png)
 
 ###### Getting started:
 

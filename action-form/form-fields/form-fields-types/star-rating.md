@@ -2,7 +2,7 @@
 
 This field helps you to collect and display user ratings on a star scale.
 
-![](/assets/star rating.png)
+![](assets/star rating.png)
 
 Settings Reference
 
