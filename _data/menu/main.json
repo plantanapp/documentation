@@ -66,9 +66,9 @@
         "title": "Server Management",
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
-    },{
-        "title":"Electronic signature",
-        "url":"/add-ons/electronic-signature/index.html"
+    }, {
+        "title": "Electronic signature",
+        "url": "/add-ons/electronic-signature/index.html"
     }, {
         "title": "Barcode Generator",
         "url": "/add-ons/barcode-generator/index.html",
@@ -151,6 +151,21 @@
         }, {
             "title": "Refund a Transaction",
             "url": "/integrations/authorizenet/refund-a-transaction.html"
+        }]
+    }, {
+        "title":"Social Media Integration",
+        "subpages":[{
+            "title":"FAQs",
+            "url":"/integrations/social-media/FAQs.html"
+        },{
+            "title":"Facebook Integration",
+            "url":"/integrations/social-media/fb-integration.html"
+        },{
+            "title":"Google+ Integration",
+            "url":"/integrations/social-media/gplus-integration.html"
+        },{
+            "title":"Twitter Integration",
+            "url":"/integrations/social-media/twitter-integration.html"
         }]
     }, {
         "title": "Stripe",
