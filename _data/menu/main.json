@@ -204,6 +204,9 @@
         "title": "Constant Contact",
         "url": "/integrations/constant-contacts/index.html"
     }, {
+        "title": "Excel Generator",
+        "url": "/integrations/excel-generator/index.html"
+    }, {
         "title": "Sales force",
         "url": "/integrations/sales-force/index.html",
         "subpages": [{
