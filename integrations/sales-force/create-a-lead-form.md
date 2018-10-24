@@ -4,14 +4,14 @@ Start by adding a new Action Form module to the desired page. At the initial con
 
 Note that different entities have different requirements in terms of required fields. Make sure to read the documentation.
 
-![](/assets/action-form-salesforce-demo.png)
+![](assets/action-form-salesforce-demo.png)
 
 Add two actions on the On Click handler: 
 * Create an Salesforce Entity action, for actually creating the entity
 
-![](/assets/create-an-salesforce-entity.png)
+![](assets/create-an-salesforce-entity.png)
 
 * and a Display message action, for displaying the newly created entity's id and URL. You can pass these tokens for later use in other actions.
 
-![](/assets/display-message.png)
+![](assets/display-message.png)
 
