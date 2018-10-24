@@ -1,13 +1,14 @@
 # Introduction
 
-![](/search-boost/getting-started/assets/search-boost-300x388w.jpg)
+<img style="float: right; height: 200px; width: 200px;" src="getting-started/assets/search-boost-300x388w.jpg"/>
 
 **Search Boost** is a **DNN** component that extends search functionalities with powerful new ones such as document search, fully customize appearance or chose one from many available templates, restrict results to specific sets of modules and so on. Everything is made easy through powerful **AJAX** based **Administration Console**.
 
 ## Key Features:
-* Fully Customize Appearance (based on XSL+CSS templates);
+* Fully Customize Appearance (based on Razor+CSS templates);
 * Restrict search results to specific portals/tabs/modules;
 * Search documents;
+* Live Search;
 * Fuzzy Search;
 * Exact Phrase Search;
 * Contextual Highlighting;
