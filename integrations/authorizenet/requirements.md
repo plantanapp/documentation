@@ -21,8 +21,3 @@
   * InfoBox 01.01.22
   
 * The merchant must have a platform containing DNN 6 and ASP.NET 4.0 at the least.
-
-
-
-
-
