@@ -66,6 +66,9 @@
         "title": "Server Management",
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
+    },{
+        "title":"Electronic signature",
+        "url":"/add-ons/electronic-signature/index.html"
     }, {
         "title": "Barcode Generator",
         "url": "/add-ons/barcode-generator/index.html",
