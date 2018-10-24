@@ -66,6 +66,9 @@
         "title": "Server Management",
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
+    },{
+        "title":"Electronic signature",
+        "url":"/add-ons/electronic-signature/index.html"
     }, {
         "title": "Barcode Generator",
         "url": "/add-ons/barcode-generator/index.html",
@@ -126,8 +129,29 @@
         "url": "/integrations/paypal/index.html"
     }, {
         "title": "Authorize Net",
-        "ref": "authorize",
-        "url": "/integrations/authorizenet/index.html"
+        "url": "/integrations/authorizenet/index.html",
+        "subpages": [{
+            "title": "Overview",
+            "url": "/integrations/authorizenet/index.html"
+        }, {
+            "title": "Installation",
+            "url": "/integrations/authorizenet/installation.html"
+        }, {
+            "title": "Requirements",
+            "url": "/integrations/authorizenet/requirements.html"
+        }, {
+            "title": "Make a payment with Credit Card",
+            "url": "/integrations/authorizenet/make-a-payment-with-credit-card.html"
+        }, {
+            "title": "Make a payment with Electronic Check",
+            "url": "/integrations/authorizenet/make-a-payment-with-electronic-check.html"
+        }, {
+            "title": "Simple Checkout",
+            "url": "/integrations/authorizenet/simple-checkout.html"
+        }, {
+            "title": "Refund a Transaction",
+            "url": "/integrations/authorizenet/refund-a-transaction.html"
+        }]
     }, {
         "title": "Stripe",
         "url": "/integrations/stripe/introduction.html",
@@ -146,26 +170,24 @@
         "title": "Bluefin",
         "url": "/integrations/bluefin/index.html",
         "subpages": [{
-                "title": "Installation",
-                "url": "/integrations/bluefin/installation.html"
-            },
-            {
-                "title": "Payment with CC",
-                "url": "/integrations/bluefin/make-a-payment-with-credit-card.html"
-            },
-            {
-                "title": "Payment with Electronic Check",
-                "url": "/integrations/bluefin/make-a-payment-with-electronic-check.html"
-            },
-            {
-                "title": "Refund a transaction",
-                "url": "/integrations/bluefin/refund-a-transaction.html"
-            },
-            {
-                "title": "Requirements",
-                "url": "/integrations/bluefin/requirements.html"
-            }
-        ]
+            "title": "Installation",
+            "url": "/integrations/bluefin/installation.html"
+        }, {
+            "title": "Payment with CC",
+            "url": "/integrations/bluefin/make-a-payment-with-credit-card.html"
+        }, {
+            "title": "Payment with Electronic Check",
+            "url": "/integrations/bluefin/make-a-payment-with-electronic-check.html"
+        }, {
+            "title": "Refund a transaction",
+            "url": "/integrations/bluefin/refund-a-transaction.html"
+        }, {
+            "title": "Requirements",
+            "url": "/integrations/bluefin/requirements.html"
+        }]
+    }, {
+        "title": "Constant Contact",
+        "url": "/integrations/constant-contacts/index.html"
     }, {
         "title": "Sales force",
         "url": "/integrations/sales-force/index.html",
