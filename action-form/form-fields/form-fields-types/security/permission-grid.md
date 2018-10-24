@@ -2,7 +2,7 @@
 
 In order to add the Permission Grid field on the form, you need to select it from Add Field section &gt; Security &gt; Permission Grid.
 
-![](/assets/Permission Grid.png)
+![](assets/Permission Grid.png)
 
 ## Getting started:
 

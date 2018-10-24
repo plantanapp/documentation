@@ -32,4 +32,4 @@ Using this Action you can edit the following fields:
 * **On Error**  
   . This is a list of actions that will be executed when the Import Into Database action fails to execute.
 
-![](/assets/screencapture-mihai91-test-forest-dnnsharp-Home-ctl-Manage-mid-379-1499171178286.png)![](https://static.dnnsharp.com/documentation/import_into_database.png)
+![](assets/screencapture-mihai91-test-forest-dnnsharp-Home-ctl-Manage-mid-379-1499171178286.png)![](https://static.dnnsharp.com/documentation/import_into_database.png)

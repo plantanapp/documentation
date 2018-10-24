@@ -8,5 +8,5 @@ You can customize the date picker using the jQuery Theme option from the General
 * [Date \(with Month/Year Picker\)](/form-fields/form-fields-types/date-and-time/date-with-monthyear-picker.md)
 * [Date And Time](/form-fields/form-fields-types/date-and-time.md)
 
-![](/assets/8a223f8b04[1].png)
+![](assets/8a223f8b04[1].png)
 
