@@ -390,6 +390,9 @@
 }, {
     "title": "Lifecycle",
     "url": "/action-form/lifecycle.html"
+},{
+    "title":"Tokens",
+    "url":"/action-form/Tokens.html"
 }, {
     "title": "Validations",
     "url": "/action-form/validations.html"
