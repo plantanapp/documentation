@@ -67,6 +67,9 @@
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
     }, {
+        "title": "System Monitor",
+        "url": "/add-ons/system-monitor/index.html"
+    }, {
         "title": "Electronic signature",
         "url": "/add-ons/electronic-signature/index.html"
     }, {
@@ -100,9 +103,6 @@
         "title": "Portal Management",
         "url": "/add-ons/portal-management/index.html",
         "subpages": [{
-            "title": "Getting Started",
-            "url": "/add-ons/portal-management/getting-started.html"
-        }, {
             "title": "Actions",
             "url": "/add-ons/portal-management/actions/index.html",
             "subpages": [{
