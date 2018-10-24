@@ -10,7 +10,7 @@ Read more on Official <a href="http://www.dnnsharp.com/dotnetnuke-modules/dnn-sk
 
 You can get started with Easy Container and build some nice containers within a few minutes.
 
-1\) If you haven't already done so, get Easy Container trial from [www.dnnsharp.com](http://www.dnnsharp.com/dotnetnuke-modules/dnn-skin/easy-container){:target="_blank"} Install the package using the _Host > Extensions screen._
+1\) If you haven't already done so, get Easy Container trial. Install the package using the _Host > Extensions screen._
 
 2\) Now, locate an HTML module for which you wish to make a new container; go to its Module Setti ngs > Page Settings > Module Container and select _Easy Container > ...New Container_. Update Module Settings.
 
