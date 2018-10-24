@@ -66,9 +66,9 @@
         "title": "Server Management",
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
-    },{
-        "title":"Electronic signature",
-        "url":"/add-ons/electronic-signature/index.html"
+    }, {
+        "title": "Electronic signature",
+        "url": "/add-ons/electronic-signature/index.html"
     }, {
         "title": "Barcode Generator",
         "url": "/add-ons/barcode-generator/index.html",
@@ -188,6 +188,9 @@
     }, {
         "title": "Constant Contact",
         "url": "/integrations/constant-contacts/index.html"
+    }, {
+        "title": "Excel Generator",
+        "url": "/integrations/excel-generator/index.html"
     }, {
         "title": "Sales force",
         "url": "/integrations/sales-force/index.html",
