@@ -48,10 +48,10 @@
         "title": "Info Box",
         "ref": "infobox",
         "url": "/info-box/index.html"
-    },{
-        "title":"Easy Container",
-        "ref":"easycontainer",
-        "url":"/easy-container/index.html"
+    }, {
+        "title": "Easy Container",
+        "ref": "easycontainer",
+        "url": "/easy-container/index.html"
     }]
 }, {
     "title": "Actions",
@@ -75,23 +75,124 @@
         "url": "/add-ons/pdf-generator/installing.html",
         "ref": "pdfgenerator"
     }, {
-        "title": "Stripe",
-        "url": "/add-ons/stripe/introduction.html",
-        "ref": "stripe"
+        "title": "Email Verification",
+        "url": "/add-ons/email-verification/index.html",
+        "subpages": [{
+                "title": "Requirements",
+                "url": "/add-ons/email-verification/requirements.html"
+            },
+            {
+                "title": "Installation",
+                "url": "/add-ons/email-verification/installation.html"
+            }
+        ]
+    }, {
+        "title": "File Management",
+        "url": "/add-ons/file-management/index.html",
+        "subpages": [{
+            "title": "Actions",
+            "url": "/add-ons/file-management/actions.html"
+        }]
+    }, {
+        "title": "Portal Management",
+        "url": "/add-ons/portal-management/index.html",
+        "subpages": [{
+            "title": "Getting Started",
+            "url": "/add-ons/portal-management/getting-started.html"
+        }, {
+            "title": "Actions",
+            "url": "/add-ons/portal-management/actions/index.html",
+            "subpages": [{
+                "title": "Module Actions",
+                "url": "/add-ons/portal-management/actions/module-actions.html"
+            }, {
+                "title": "Page Actions",
+                "url": "/add-ons/portal-management/actions/page-actions.html"
+            }, {
+                "title": "Portal Actions",
+                "url": "/add-ons/portal-management/actions/portal-actions.html"
+            }]
+        }]
     }]
 }, {
     "title": "Integrations",
     "subpages": [{
         "title": "Clickatell",
         "ref": "clickatell",
-        "url": "integrations/clickatell/index.html"
+        "url": "/integrations/clickatell/index.html"
     }, {
         "title": "PayPal",
         "ref": "paypal",
-        "url": "integrations/paypal/index.html"
-    },{
-        "title":"Authorize Net",
-        "ref":"authorize",
-        "url":"integrations/authorizenet/index.html"
+        "url": "/integrations/paypal/index.html"
+    }, {
+        "title": "Authorize Net",
+        "ref": "authorize",
+        "url": "/integrations/authorizenet/index.html"
+    }, {
+        "title": "Stripe",
+        "url": "/integrations/stripe/introduction.html",
+        "ref": "stripe"
+    }, {
+        "title": "Campaign Monitor",
+        "url": "/integrations/campaign-monitor/index.html"
+    }, {
+        "title": "MailChimp",
+        "url": "/integrations/mailchimp/index.html",
+        "subpages": [{
+            "title": "Subscribe",
+            "url": "/integrations/mailchimp/subscribe.html"
+        }]
+    }, {
+        "title": "Bluefin",
+        "url": "/integrations/bluefin/index.html",
+        "subpages": [{
+                "title": "Installation",
+                "url": "/integrations/bluefin/installation.html"
+            },
+            {
+                "title": "Payment with CC",
+                "url": "/integrations/bluefin/make-a-payment-with-credit-card.html"
+            },
+            {
+                "title": "Payment with Electronic Check",
+                "url": "/integrations/bluefin/make-a-payment-with-electronic-check.html"
+            },
+            {
+                "title": "Refund a transaction",
+                "url": "/integrations/bluefin/refund-a-transaction.html"
+            },
+            {
+                "title": "Requirements",
+                "url": "/integrations/bluefin/requirements.html"
+            }
+        ]
+    }, {
+        "title": "Sales force",
+        "url": "/integrations/sales-force/index.html",
+        "subpages": [{
+            "title": "Getting Started",
+            "url": "/integrations/sales-force/getting-started.html"
+        }, {
+            "title": "Settings reference",
+            "url": "/integrations/sales-force/settings-reference.html"
+        }, {
+            "title": "Create a lead form",
+            "url": "/integrations/sales-force/create-a-lead-form.html"
+        }, {
+            "title": "Query a Sales force form",
+            "url": "/integrations/sales-force/query-salesforce-form.html"
+        }, {
+            "title": "Step 1 - Sign up",
+            "url": "/integrations/sales-force/step-1-sign-up.html"
+        }, {
+            "title": "Step 2 - Install",
+            "url": "/integrations/sales-force/step-2-install.html"
+        }, {
+            "title": "Step 3 - Getting the security token",
+            "url": "/integrations/sales-force/step-3-get-security-token.html"
+        }, {
+            "title": "Step 4 - Setup Action form",
+            "url": "/integrations/sales-force/step-4-setup-action-form.html"
+        }]
     }]
 }]
