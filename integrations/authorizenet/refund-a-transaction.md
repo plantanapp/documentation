@@ -45,19 +45,16 @@ Add any extra fields that you need for your particular setup.
 ### Settings Reference
 
 * API Login ID
-  * Required. API Login ID. This key will authenticate requests to the payment gateway.
+* Required. API Login ID. This key will authenticate requests to the payment gateway.
 * Transaction Key
-  * Required. Transaction Key. This key will authenticate requests to the payment gateway.
+* Required. Transaction Key. This key will authenticate requests to the payment gateway.
 * Transaction amount
-  * Required. Amount of the transaction. This is the total amount and must include tax, shipping, and any other charges. Up to 15 digits with a decimal point.
+* Required. Amount of the transaction. This is the total amount and must include tax, shipping, and any other charges. Up to 15 digits with a decimal point.
 * Transaction ID
-  * Required. Transaction ID of the original settled transaction.
+* Required. Transaction ID of the original settled transaction.
 * On Success
 
-  * Define a list of actions that should execute when a transaction is successfully refunded. 
+* Define a list of actions that should execute when a transaction is successfully refunded. 
     You can use the \[AuthorizeResponseCode\], \[AuthorizeResponseMessage\], \[AuthorizeAuthCode\], \[AuthorizeTransactionId\] tokens to show more info.
 
 * On Error - Define a list of actions that should execute when this action's result is Error. You can use the \[AuthorizeErrorMessage\] and \[AuthorizeErrorCode\] tokens to show more info.
-
-
-

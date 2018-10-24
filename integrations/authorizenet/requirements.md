@@ -10,14 +10,12 @@
 
 * The merchant must have one of the following module installed
 
-  * Action Form 03.08.74
+* Action Form 03.08.74
 
-  * Action Grid 04.00.39
+* Action Grid 04.00.39
 
-  * DNN API Endpoint 01.02.15
+* DNN API Endpoint 01.02.15
 
-  * Sharp Scheduler 02.01.18
+* Sharp Scheduler 02.01.18
 
-  * InfoBox 01.01.22
-  
-* The merchant must have a platform containing DNN 6 and ASP.NET 4.0 at the least.
+* InfoBox 01.01.22
