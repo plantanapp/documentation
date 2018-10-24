@@ -156,20 +156,23 @@
             "url": "/integrations/authorizenet/refund-a-transaction.html"
         }]
     }, {
-        "title":"Social Media Integration",
-        "subpages":[{
-            "title":"FAQs",
-            "url":"/integrations/social-media/FAQs.html"
-        },{
-            "title":"Facebook Integration",
-            "url":"/integrations/social-media/fb-integration.html"
-        },{
-            "title":"Google+ Integration",
-            "url":"/integrations/social-media/gplus-integration.html"
-        },{
-            "title":"Twitter Integration",
-            "url":"/integrations/social-media/twitter-integration.html"
+        "title": "Social Media Integration",
+        "subpages": [{
+            "title": "FAQs",
+            "url": "/integrations/social-media/FAQs.html"
+        }, {
+            "title": "Facebook Integration",
+            "url": "/integrations/social-media/fb-integration.html"
+        }, {
+            "title": "Google+ Integration",
+            "url": "/integrations/social-media/gplus-integration.html"
+        }, {
+            "title": "Twitter Integration",
+            "url": "/integrations/social-media/twitter-integration.html"
         }]
+    }, {
+        "title":"DMX SearchBoost add-on",
+        "url":"/integrations/dmx-search-boost/integration.html"
     }, {
         "title": "Stripe",
         "url": "/integrations/stripe/introduction.html",
