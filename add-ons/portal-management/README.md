@@ -15,19 +15,19 @@
 
 ### Minimum requirements
 
-* .NET 4.0+
-* SQL 2008+ 
-* DNN 7.2.1+
+* .NET 4.5+
+* SQL 2012+ 
+* DNN 8.0.4+
 
 ### Compatibility with our products
 
 Portal Management is compatible with our most powerful and complex products, so you can create various scenarios with the following modules:
 
-- Action Form (3.8.195+);
-- Action Grid (4.0.118+);
-- Infobox (1.1.45+);
-- Sharp Scheduler (2.1.45+);
-- Dnn API EndPoint (1.2.54+).
+- Action Form (3.8.195+); (recommended 5.X.XXX+)
+- Action Grid (4.0.118+); (recommended 5.X.XXX+)
+- Infobox (1.1.45+); (recommended 5.X.XXX+)
+- Sharp Scheduler (2.1.45+); (recommended 5.X.XXX+)
+- Dnn API EndPoint (1.2.54+). (recommended 5.X.XXX+)
 
 As long as you already own one of the above modules, you can install the Portal Management add-on using the DNN installer and you're all set.
-For this add-on, you must use .NET 4.0+, SQL 2008+ and DNN 7.2.1.+. It is compatible with Action Form (3.8.195), Action Grid (4.0.118), Infobox (1.1.45), Sharp Scheduler (2.1.45), Dnn API EndPoint (1.2.54).
+For this add-on, you must use .NET 4.5+, SQL 2012+ and DNN 8.0.4+. It is compatible with Action Form (3.8.195), Action Grid (4.0.118), Infobox (1.1.45), Sharp Scheduler (2.1.45), Dnn API EndPoint (1.2.54). (recommended version 5.X.XXX for all compatible products)
