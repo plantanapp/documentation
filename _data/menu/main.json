@@ -67,6 +67,9 @@
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
     }, {
+        "title": "System Monitor",
+        "url": "/add-ons/system-monitor/index.html"
+    }, {
         "title": "Electronic signature",
         "url": "/add-ons/electronic-signature/index.html"
     }, {
