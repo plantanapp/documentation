@@ -10,4 +10,4 @@ As you already know, File Management is an add-on, so it must to be used along w
 * Dnn API EndPoint.
 
 As long as you already own one of the above modules, you can install the Portal Management add-on using the DNN installer and you're all set.
-For this add-on, you must use .NET 4.0+, SQL 2008+ and DNN 7.2.1.+. It is compatible with Action Form (3.8.228+), Action Grid (4.0.136+), Infobox (1.1.45+), Sharp Scheduler (2.1.53+), Dnn API EndPoint (1.2.54+).
+For this add-on, you must use .NET 4.5+, SQL 2012+ and DNN 8.0.4+ . It is compatible with Action Form (3.8.228+)(recommended 5.X.XXX+), Action Grid (4.0.136+)(recommended 5.X.XXX+), Infobox (1.1.45+)(recommended 5.X.XXX+), Sharp Scheduler (2.1.53+)(recommended 5.X.XXX+), Dnn API EndPoint (1.2.54+)(recommended 5.X.XXX+).
