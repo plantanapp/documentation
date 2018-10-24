@@ -24,6 +24,8 @@ The default template of the forms is the Bootstrap one which has the purpose of 
 
 Include Bootstrap and Include jQuery and jQuery UI options are checked by default and have the role of customize the layout of the forms accordingly. They can be used along with the jQuery Theme option which will give a different appearance to the forms. Click here to read more about jQuery Theme option.  
 
+* We also have Material as Material Bootstrap theme.
+
 ## Background
 
 The form background can be solid color, pattern or cover image and these options are best used with the Text Color options which will give a nice effect to the form if you don't want to remain to the standard default options. The usability of these settings is that you don't need to write code for each form when wanting to customize it, you just have to use these drop down lists from where you can select the option which suits you. Among the themes, background color, text color, there's also the possibly to change the padding - you can enlarge the space between the forms and the surrounding elements.
