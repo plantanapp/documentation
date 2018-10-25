@@ -4,5 +4,5 @@ This action displays a message if there are some errors while the user is trying
 
 Message. In this text box you can input your message that will be displayed if there are errors when the form is submitted. Example: "Errors occurred while sending the form. Please correct the errors and try again." This field also supports My Tokens.
 
-![](/assets/errormessage.png)
+![](assets/errormessage.png)
 

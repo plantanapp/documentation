@@ -12,7 +12,7 @@ Once you have Action Form, you can proceed to install the Constant Contact exten
 
 Now that you have installed all these, let's start adding the Constant Contact form. At the end you will have a form to subscribe like the one below (note that you can personalize it just the way you want it or you can just create one from scratch).
 
-![contact form](/assets/constantcontact-form.png)
+![contact form](assets/constantcontact-form.png)
 
 1. Select the page where you want to have your Constant Contact form.
 
@@ -22,7 +22,7 @@ Now that you have installed all these, let's start adding the Constant Contact f
 
 4. In the start panel chose the Subscribe to Constant Contact template. Press the Start button and you will have the form installed on your page. Check the Configuration Options section below to see what needs to be configured before the form is actually functional.
 
-![subscribe to constant contact](/assets/subscribe-to-constantcontact.png)
+![subscribe to constant contact](assets/subscribe-to-constantcontact.png)
 
 ## **Configuration Options**
 
@@ -50,7 +50,7 @@ Fill in your Constant Contact details:
 
 After checking all settings, press the Save button and Back. That's all. Now you're ready to start building your email list.
 
-![constant contact action](/assets/subscribe-to-constant-contact-action.png)
+![constant contact action](assets/subscribe-to-constant-contact-action.png)
 
 This predefined form will display a notification message after he sign up. You can modify it to suits your needs on the On Click Handler > Display message.
 

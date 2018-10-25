@@ -4,5 +4,5 @@
 
 Logs a debug message in the internal logs.
 
-![](/assets/LogDebugMessage.png)
+![](assets/LogDebugMessage.png)
 

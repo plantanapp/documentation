@@ -103,9 +103,6 @@
         "title": "Portal Management",
         "url": "/add-ons/portal-management/index.html",
         "subpages": [{
-            "title": "Getting Started",
-            "url": "/add-ons/portal-management/getting-started.html"
-        }, {
             "title": "Actions",
             "url": "/add-ons/portal-management/actions/index.html",
             "subpages": [{
@@ -208,7 +205,7 @@
         }]
     }, {
         "title": "Constant Contact",
-        "url": "/integrations/constant-contacts/index.html"
+        "url": "/integrations/constant-contact/index.html"
     }, {
         "title": "Excel Generator",
         "url": "/integrations/excel-generator/index.html"

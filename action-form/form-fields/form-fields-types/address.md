@@ -13,7 +13,7 @@ The Address field helps you capture address information on a form and contains t
 
   * allows users to select an US state from the dropdown. On submit, this field generates the following tokens: \[&lt;FieldName&gt;\] \(which yields the state code, or if that doesn't exist, it will fall back to state name\), \[&lt;FieldName&gt;:StateCode\], \[&lt;FieldName&gt;:StateName\].                        
 
-  ![](/assets/1abfe120f5[1].png)
+  ![](assets/1abfe120f5[1].png)
 
 
 

@@ -12,4 +12,4 @@ The buttons section of fields has three options: simple Button, Button Group and
 
 * [Image Button](/action-form/form-fields/form-fields-types/image-button.html)
 
-![](/assets/ae0684cf42[1].png)
+![](assets/ae0684cf42[1].png)

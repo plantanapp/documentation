@@ -8,4 +8,4 @@ _User email_ - The email of the connected account. Can contain [My Tokens](/my-t
 
 _Account Number Token Name_ - Optionally provide a token name where to store the account number. Can contain [My Tokens](/my-tokens/index.html).
 
-![](/assets/5.png)
+![](assets/5.png)
