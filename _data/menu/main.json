@@ -183,6 +183,10 @@
         "subpages": [{
             "title": "Subscribe",
             "url": "/integrations/mailchimp/subscribe.html"
+        },
+                    {
+            "title": "Update Mailchimp member GDPR",
+            "url": "/integrations/mailchimp/update-gdpr.html"
         }]
     }, {
         "title": "Bluefin",
