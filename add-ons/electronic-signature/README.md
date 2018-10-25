@@ -1,10 +1,9 @@
 # Electronic Signature
 
-
+![](assets/dnn-electronic-signature-add-on-300x388w.png)
 
 ## Getting Started
 
-<div style="float: left; max-width: 50%;">
 
 **Step 1 - Install Action Form if you don't have it installed yet**
 
@@ -20,11 +19,6 @@ How to generate a Signature directly from the DNN portal:
 * Add a name for the PDF file to generate.
 
 ## Settings Reference
-
-</div>
-
-![](/add-ons/electronic-signature/assets/dnn-electronic-signature-add-on-300x388w.png)
-
 
 * Signature Name<br>
     The name of the signature file to generate. If left empty, a GUID will be generated for name. Illegal characters will be cut out from the name.<br>
