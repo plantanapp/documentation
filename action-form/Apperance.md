@@ -91,7 +91,7 @@ In this box you can provide a Boolean server expression or you can use Tokens to
 
 ## Sidebar Options
 
-Left and Right Sidebar HTML options let you insert text which will be displayed accordingly on the form, on mobile devices, the text gets displayed at the top of the form. Here, form fields can easily be referenced by using the *${{form.fields.FieldID.value}}* syntax and the result can be similar to the one below
+Left and Right Sidebar HTML options let you insert text which will be displayed accordingly on the form, on mobile devices, the text gets displayed at the top of the form. Here, form fields can easily be referenced by using the ```${{form.fields.FieldID.value}}``` syntax and the result can be similar to the one below
 
 ![Right Form Sidebar example](https://static.dnnsharp.com/documentation/form_sidebar_example.png "right sidebar example")
 
