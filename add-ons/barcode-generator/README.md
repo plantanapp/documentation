@@ -8,12 +8,12 @@ Its output is a printable and scanable barcode in Code128 B or C, Code 39, EAN 1
 
 Integration requirements:
 
-* ActionForm version 3.8.480 
-* Action Grid version 4.0.355 
-* DnnApiEndPoint version 1.2.138 
-* SharpScheduler version 2.1.138                                      
+* ActionForm version 3.8.480 (Recomanded 5.x.xxx+)
+* Action Grid version 4.0.355 (Recomanded 5.x.xxx+)
+* DnnApiEndPoint version 1.2.138 (Recomanded 5.x.xxx+)
+* SharpScheduler version 2.1.138 (Recomanded 5.x.xxx+)                                   
 
-General requirements: **.NET4 and DNN 7.2.1**.
+General requirements: **.NET4.5+ , DNN 8.0.4+ , IIS 7.0+ , SQL Server 2012+**.
 
 ![](/add-ons/barcode-generator/assets/Barcodegenerator_388x150t.png)
 
