@@ -7,8 +7,8 @@ We are using Github Pages for this site so you need to use [GitHub Flavored Mark
 ## First steps
 
   1. Create a [github](//github.com) account.
-  2. Fork our [repository](//github.com/dnnsharp/dnnsharp.github.io) and clone it locally using GIT or you can even edit it directly on github.
-      - Now you have your own copy at github.com/**YOUR_USERNAME**/dnnsharp.github.io
+  2. Fork our [repository](//github.com/plantanapp/plantanapp.github.io) and clone it locally using GIT or you can even edit it directly on github.
+      - Now you have your own copy at github.com/**YOUR_USERNAME**/plantanapp.github.io
   3. If you write documentation locally, we recommend [Visual Studio Code](//code.visualstudio.com/) and those two extensions for markdown:
       - [markdownlint](//marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint)
       - [markdown all in one](//marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
