@@ -10,11 +10,11 @@ Regarding the conditions, you can filter the emails by subject, recipient, sende
 
 **Integration requirements:**
 
-+ Sharp Scheduler version 2.1.174+
++ Sharp Scheduler version 2.1.174+ (Recomanded 5.x.xxx+)
 
 **General requirements:**
 
-+ .Net 4 version 4
-+ DNN Platform version 7.2.1+
++ .Net 4.5+ 
++ DNN Platform version 8.0.4+
 
 ![](assets/email sync.png)
