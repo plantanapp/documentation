@@ -24,8 +24,41 @@
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
     }
-
+    
+    function makeUL(arr) {
+        // Create the list element:
+        var list = document.createElement('ol');
+        list.setAttribute("class", "breadcrumb");
+        var i, text='';
+        for (i = arr.length-1; i >= 0; i--) { 
+            var child, el = arr[i];
+            if(el.href){
+                child = document.createElement('a');
+                child.setAttribute('href',el.href);
+                child.innerHTML = el.title;
+            } else {
+                child = document.createTextNode(el.title.replace(/(\r\n\t|\n|\r\t)/gm,""));
+            }
+            var item = document.createElement('li');
+            item.setAttribute("class", "breadcrumb-item");
+            i == 0 && item.classList.add('active');
+            item.appendChild(child);
+            list.appendChild(item);
+        }
+        return list;
+    }
+    function getCrumb(el){
+        if(el[0].nodeName=='A'){
+            el = el.closest('li');
+        }
+        return {
+            'title':el.find('>span>a').text() || el.find('>span').text(),
+            'href':el.find('>span>a').attr('href')
+        }
+    }
     function expandTreeToElement(element) {
+        var crumbs=[];
+        crumbs.push(getCrumb(element));
         if (element.length) {
             while (!element.parent().hasClass('tree') && !element.is('body')) {
                 element = element.parent();
@@ -33,8 +66,15 @@
                     element.find(' > span > i').addClass('fa-minus-circle').removeClass('fa-plus-circle');
                     element.find(' > ul > li').show();
                     element.find(' > span ').addClass('tree-current-item');
+                    crumbs.push(getCrumb(element));
                 }
             }
+            
+            crumbs.push({
+                'title':'Home',
+                'href':'/index.html'
+            });
+            $('#breadcrumb').html(makeUL(crumbs));
         }
     }
 
@@ -138,11 +178,14 @@
     // expand the tree to current location
     if (location.pathname !== '/' && location.pathname !== '/index.html') {
         let element = $("a[href='" + location.pathname + "']");
-        element && expandTreeToElement(element);
-        element.parent('span').addClass('tree-current-item');
-        element[0].scrollIntoView({
-            block: "center"
-        });
+        if(element){
+            element.parent('span').addClass('tree-current-item');
+            expandTreeToElement(element);
+            element[0].scrollIntoView({
+                block: "center"
+            });
+        }
+       
     }
 
 })();
