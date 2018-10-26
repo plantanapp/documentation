@@ -1,6 +1,6 @@
 # Introduction
 
-<img style="float: right; height: 200px; width: 200px;" src="getting-started/assets/search-boost-300x388w.jpg"/>
+<img style="float: right; height: 200px; width: 200px;" src="getting-started/assets/sb.jpg"/>
 
 **Search Boost** is a **DNN** component that extends search functionalities with powerful new ones such as document search, fully customize appearance or chose one from many available templates, restrict results to specific sets of modules and so on. Everything is made easy through powerful **AJAX** based **Administration Console**.
 
