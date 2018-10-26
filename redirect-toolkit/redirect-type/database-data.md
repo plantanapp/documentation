@@ -19,7 +19,7 @@ For example: *select SomeField from SomeTable where SomeCondition=1*
 For example: *EXEC SomeStoreProcedure 'this is the param'*<br>
 The store procedure needs to do a similar select to return only 1 value.
 
-* Function
+* Function<br>
 For example: *SELECT dbo.SomeFunction('this is the param')*
 
 The result of the SQL is saved under a token called [Conditions:SqlResult].

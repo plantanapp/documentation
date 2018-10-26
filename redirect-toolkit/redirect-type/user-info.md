@@ -2,13 +2,11 @@
 
 This type of redirect provides capabilities to match based on user information such as username, user id, first&last name, email or profile property.
 
-
 <div style="text-align:center">
 
 ![](../assets/redirect-by-user-info.png)
 
 </div>
-
 
 Common scenarios when this type of redirect is needed include:
 

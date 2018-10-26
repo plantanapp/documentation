@@ -2,7 +2,6 @@
 
 When a rule's conditions are met, Redirect Toolkit will execute the redirect action associated with the rule. The actions are edited through the interface below:
 
-
 <div style="text-align:center">
 
 ![](../assets/redirect-actions.png)

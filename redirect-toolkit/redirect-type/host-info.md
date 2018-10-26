@@ -12,7 +12,7 @@ This type of redirect makes it possible to direct based on URL of current page.
 
 Following properties are exposed:
 
-* Domain Name - This property exposes only the domain part from the URL making it easier to write conditions where domain equal some value. For example, on this page this Property would return *redirect-toolkit.dnnsharp.com*
+* Domain Name - This property exposes only the domain part from the URL making it easier to write conditions where domain equal some value.
 * Full URL - This property exposes full URL, including scheme (http:// or https://), port, domain, path and query string parameters.
 
 ## Operations

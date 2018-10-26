@@ -5,9 +5,10 @@ Redirect Toolkit can easily be extended with new types of redirects and actions.
 Currently, following plugins are publicly available for Redirect Toolkit:
 
 * MaxMind Offline DB
+
 Normally, Redirect Toolkit comes with a MaxMind integration which uses their Web Services which they charge per request. This extension uses their database which is a one off cost and includes free updates for 1 year.
 
-# MaxMind Offline DB
+## MaxMind Offline DB
 
 ## Requirements
 
@@ -34,4 +35,4 @@ Normally, Redirect Toolkit comes with a MaxMind integration which uses their Web
 2. Once you have a database, unpack it into folder /DesktopModules/RedirectToolkit/Config/Data/MaxMind. This folder does not exist so you'll have to create it in advance. Assuming that you've purchased the Country database, Redirect Toolkit will loot after the following file: */DesktopModules/RedirectToolkit/Config/Data/MaxMind/GeoIP2-Country.mmdb*.<br>
 **Important**: Note that if the folder contains more than one .mmdb files, the first one will be used.
 
-6. Go back to Redirect Toolkit and refresh the screen. Now you should see the proper message for the rule Condition. Logout to test the redirect. Use the override IP feature from General Settings to test various IP addresses. Also keep in mind that on localhost the server will not see your external IP.
+3. Go back to Redirect Toolkit and refresh the screen. Now you should see the proper message for the rule Condition. Logout to test the redirect. Use the override IP feature from General Settings to test various IP addresses. Also keep in mind that on localhost the server will not see your external IP.

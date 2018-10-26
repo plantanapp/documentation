@@ -4,7 +4,7 @@ Redirect Toolkit can be installed through Extensions screen.
 
 <div style="text-align:center">
 
-![](/redirect-toolkit/assets/host-extensions.png)
+![](assets/host-extensions.png)
 
 </div>
 
@@ -12,7 +12,7 @@ On successful install you'll see the avt.Redirect Toolkit module in the module l
 
 <div style="text-align:center">
 
-![](/redirect-toolkit/assets/add-redirect-toolkit.png)
+![](assets/add-redirect-toolkit.png)
 
 </div>
 
@@ -37,17 +37,20 @@ But, if the installer doesn't have access to modify web.config for example, you'
 
 In web.config: / configuration / system.webServer / modules append following line:
 
+```xml
     <add name="RedirectToolkitHandler"
          type="avt.RedirectToolkit.GlobalHttpFilter, avt.RedirectToolkit.DotNetNuke"
          preCondition="managedHandler" />
+```
 
 In web.config: /configuration/system.web/httpModules append following line:
 
+```xml
     <add name="RedirectToolkitHandler"
          type="avt.RedirectToolkit.GlobalHttpFilter, avt.RedirectToolkit.DotNetNuke" />
-
+```
 If you get an error during installation, open the zip install package and modify the avt.RedirectToolkit.dnn file and remove the whole node show below:
-
+```xml
     <component type="Config">
           <config>
             <configFile>web.config</configFile>
@@ -73,5 +76,5 @@ If you get an error during installation, open the zip install package and modify
             </uninstall>
           </config>
         </component>
-
+```
 After you remove these lines, add the file back to the zip and reinstall.

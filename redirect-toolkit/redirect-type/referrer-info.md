@@ -8,10 +8,6 @@ This type of redirect provides capabilities to match based on where the user cam
 
 </div>
 
-
-
-
-
 Common scenarios when this type of redirect is needed include:
 
 * Redirect to different pages based on where the user came from (you can accomplish this by creating a rule that matches against the referrer full URL or just the domain name)

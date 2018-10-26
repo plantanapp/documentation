@@ -1,4 +1,5 @@
 # Date and Time
+
 This type of redirect allows building redirects that apply to specific date and time intervals.
 
 <div style="text-align:center">
