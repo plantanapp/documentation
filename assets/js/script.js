@@ -105,7 +105,7 @@
     // Search Setup
 
     var debouncedSearch = debounce(function (searchTerms) {
-        const searchApiUrl = '//dnnsharpdocsservices.apps.plantanapp.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=search-docs' +
+        const searchApiUrl = '//dnnsharpdocsservices.apps.plantanapp.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=search-plantanapp-docs' +
             '&query=' + searchTerms +
             '&resultsnumber=' + 10;
 
