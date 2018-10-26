@@ -2,7 +2,7 @@
 
 
 
-![](/assets/Likert 3.png)
+![](assets/Likert 3.png)
 
 
 

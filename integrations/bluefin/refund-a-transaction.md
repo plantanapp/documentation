@@ -12,7 +12,6 @@ This transaction type is used to refund a customer for a transaction that was su
 * The merchant must be able to store payment gateway account data securely \(for example, API Login ID, or Transaction Key\).
 * The merchant must have Action Form module installed.
 
-### 
 
 
 

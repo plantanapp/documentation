@@ -1,16 +1,16 @@
 # Search Engine
 
-Starting with version 2.0 Search Boost comes with own indexing engine based on the popular Lucene library. For the past few releases we had to do a number of hacks to DNN Search in order to support to various features requested by our clients. This has finally determined us to take full control and eliminate DNN Search components completely. 
+Starting with version 5.0 Search Boost comes with own indexing engine based on the popular Lucene library. For the past few releases we had to do a number of hacks to DNN Search in order to support to various features requested by our clients. This has finally determined us to take full control and eliminate DNN Search components completely. 
 
 ## Limitations with DNN Search Engine
 
-Here are the main limitations we encountered with DNN search and how Search Boost fixed them before and after version 2.0:
+Here are the main limitations we encountered with DNN search and how Search Boost fixed them before and after version 5.0:
 
 * **DNN in Memory Indexing will cause servers to run out of memory**
 
 DNN  indexes content in memory and writes it in the database when it completes all the indexing for a portal. This means that when there's a lot of content the server will run out of memory preventing the indexing from completing so search will be severely damages. This happens especially with the document search because people that wish to allow search within documents usually have lots of documents that contain lot of valuable content.
 
-Search Boost fixes this in version 2.0 by streaming results to the Lucene Storage, so they don't pile up in memory.
+Search Boost fixes this in version 5.0 by streaming results to the Lucene Storage, so they don't pile up in memory.
 
 * **DNN has no algorithm/logic to differentially index content**
 
@@ -22,7 +22,7 @@ Search Boost fixes this for documents by indexing only documents that have chang
 
 This makes it difficult to include documents, external web pages or other content from the database in search results. Search Boost fixed this in previous releases by linking all documents and custom rules to the avt.SearchResults module.
 
-In version 2.0, Search Boost engine knows to handle DNN modules different from other content that comes from documents, custom rules or web pages (this feature is due in next release).
+In version 5.0, Search Boost engine knows to handle DNN modules different from other content that comes from documents, custom rules or web pages.
 
 * **DNN doesn't support passing custom data through Search Results**
 
@@ -34,11 +34,11 @@ Search Boost will fix this in a future release by transporting own structure to 
 
 In the Google Search world we're used to concepts like fuzzy search, exact phrase search, suggestions and so on. The fact that DNN  doesn't support any of this is very unfriendly.
 
-Fortunately, Search Boost fixes this by using Lucene search library from Apache which is very mature and modern. The library supports all the modern features listed above and a lot more through use of plugins. An example is the contextual highlighter (also present in 2.0 release) that basically matches the search results description to include as many of the search terms as possible and color them differently.
+Fortunately, Search Boost fixes this by using Lucene search library from Apache which is very mature and modern. The library supports all the modern features listed above and a lot more through use of plugins. An example is the contextual highlighter (also present in 5.0 release) that basically matches the search results description to include as many of the search terms as possible and color them differently.
 
 * **DNN doesn't support high customization for the Search Input and Search Results Module**
 
-Search Boost handles this elegantly by using XSL templates which basically put you in charge of everything in terms of what to display, the layout and the design.
+Search Boost handles this elegantly by using Razor templates which basically put you in charge of everything in terms of what to display, the layout and the design.
 
 * **DNN Indexer is not transparent**
 
@@ -46,7 +46,7 @@ Want to know what happens in the back-end? Which modules have been indexed, whic
 
 Search Boost comes with advanced loggers configured separately for searching and indexing on 4 levels: Off/Error/Info/Debug (each level adds a surplus of information). This has made our debug job on customer sites a lot easier. Just by asking for the logs in debug mode we're able to detect many of the issues.
 
-Additionally, the Analyzer from Search Boost 2.0 produces some statistics that are displayed on front page of the administration console. The statistics show how many modules/documents/custom rules have been indexed in total and how many were on last iteration of the Analyzer and the Indexer.
+Additionally, the Analyzer from Search Boost 5.0 produces some statistics that are displayed on front page of the administration console. The statistics show how many modules/documents/custom rules have been indexed in total and how many were on last iteration of the Analyzer and the Indexer.
 
 ## How DNN Search Engine works
 
@@ -57,7 +57,7 @@ DNN Search is achieved by several components:
 * **Storage** - this says where the search engine keeps all indexed content (the default provider keeps everything in the database in a few tables that begin with Search)
 We tried to replace as few of these components as possible but each had a piece of the limitation and we ended up replacing everything.
 
-## How Search Boost 2.0 Engine works
+## How Search Boost 5.0 Engine works
 
 We integrated with DNN in two points:
 We changed the Search Store provider to AvtLuceneDataStore which is our implementation over Lucene storage

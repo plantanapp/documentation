@@ -71,6 +71,9 @@
         "url": "/add-ons/server-management/index.html",
         "ref": "servermanagement"
     }, {
+        "title": "System Monitor",
+        "url": "/add-ons/system-monitor/index.html"
+    }, {
         "title": "Electronic signature",
         "url": "/add-ons/electronic-signature/index.html"
     }, {
@@ -102,9 +105,6 @@
         "title": "Portal Management",
         "url": "/add-ons/portal-management/index.html",
         "subpages": [{
-            "title": "Getting Started",
-            "url": "/add-ons/portal-management/getting-started.html"
-        }, {
             "title": "Actions",
             "url": "/add-ons/portal-management/actions/index.html",
             "subpages": [{
@@ -131,8 +131,47 @@
         "url": "/integrations/paypal/index.html"
     }, {
         "title": "Authorize Net",
-        "ref": "authorize",
-        "url": "/integrations/authorizenet/index.html"
+        "url": "/integrations/authorizenet/index.html",
+        "subpages": [{
+            "title": "Overview",
+            "url": "/integrations/authorizenet/index.html"
+        }, {
+            "title": "Installation",
+            "url": "/integrations/authorizenet/installation.html"
+        }, {
+            "title": "Requirements",
+            "url": "/integrations/authorizenet/requirements.html"
+        }, {
+            "title": "Make a payment with Credit Card",
+            "url": "/integrations/authorizenet/make-a-payment-with-credit-card.html"
+        }, {
+            "title": "Make a payment with Electronic Check",
+            "url": "/integrations/authorizenet/make-a-payment-with-electronic-check.html"
+        }, {
+            "title": "Simple Checkout",
+            "url": "/integrations/authorizenet/simple-checkout.html"
+        }, {
+            "title": "Refund a Transaction",
+            "url": "/integrations/authorizenet/refund-a-transaction.html"
+        }]
+    }, {
+        "title": "Social Media Integration",
+        "subpages": [{
+            "title": "FAQs",
+            "url": "/integrations/social-media/FAQs.html"
+        }, {
+            "title": "Facebook Integration",
+            "url": "/integrations/social-media/fb-integration.html"
+        }, {
+            "title": "Google+ Integration",
+            "url": "/integrations/social-media/gplus-integration.html"
+        }, {
+            "title": "Twitter Integration",
+            "url": "/integrations/social-media/twitter-integration.html"
+        }]
+    }, {
+        "title":"DMX SearchBoost add-on",
+        "url":"/integrations/dmx-search-boost/integration.html"
     }, {
         "title": "Stripe",
         "url": "/integrations/stripe/introduction.html",
@@ -146,6 +185,10 @@
         "subpages": [{
             "title": "Subscribe",
             "url": "/integrations/mailchimp/subscribe.html"
+        },
+                    {
+            "title": "Update Mailchimp member GDPR",
+            "url": "/integrations/mailchimp/update-gdpr.html"
         }]
     }, {
         "title": "Bluefin",
@@ -166,6 +209,12 @@
             "title": "Requirements",
             "url": "/integrations/bluefin/requirements.html"
         }]
+    }, {
+        "title": "Constant Contact",
+        "url": "/integrations/constant-contact/index.html"
+    }, {
+        "title": "Excel Generator",
+        "url": "/integrations/excel-generator/index.html"
     }, {
         "title": "Sales force",
         "url": "/integrations/sales-force/index.html",

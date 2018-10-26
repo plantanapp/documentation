@@ -6,5 +6,5 @@ Message. In this text box you can input your message that will be displayed afte
 
 Action Buttons. Optionally, you can bind one or more buttons from the form. For example, you can add a button and set an action on it to redirect to another page or to download a file.
 
-![](/assets/message.png)
+![](assets/message.png)
 

@@ -73,13 +73,13 @@
         "title": "Buttons",
         "url": "/action-form/form-fields/form-fields-types/buttons.html",
         "subpages": [{
-            "title:": "Button",
+            "title": "Button",
             "url": "/action-form/form-fields/form-fields-types/button.html"
         }, {
-            "title:": "Button Group",
+            "title": "Button Group",
             "url": "/action-form/form-fields/form-fields-types/button-group.html"
         }, {
-            "title:": "Image Button",
+            "title": "Image Button",
             "url": "/action-form/form-fields/form-fields-types/image-button.html"
         }]
     }, {
@@ -133,7 +133,11 @@
         }]
     }, {
         "title": "Image",
-        "url": "/action-form/form-fields/form-fields-types/image.html"
+        "url": "/action-form/form-fields/form-fields-types/image.html",
+        "subpages": [{
+            "title": "Image Editor",
+            "url": "/action-form/form-fields/form-fields-types/image/image-editor.html"
+        }]
     }, {
         "title": "Multiple Choice",
         "url": "/action-form/form-fields/form-fields-types/multiple-choice.html",
