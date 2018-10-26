@@ -52,6 +52,10 @@
         "title": "Easy Container",
         "ref": "easycontainer",
         "url": "/easy-container/index.html"
+    }, {
+        "title": "Redirect Toolkit",
+        "url": "/redirect-toolkit/index.html",
+        "ref": "redirect-toolkit"
     }]
 }, {
     "title": "Actions",
@@ -84,14 +88,12 @@
         "title": "Email Verification",
         "url": "/add-ons/email-verification/index.html",
         "subpages": [{
-                "title": "Requirements",
-                "url": "/add-ons/email-verification/requirements.html"
-            },
-            {
-                "title": "Installation",
-                "url": "/add-ons/email-verification/installation.html"
-            }
-        ]
+            "title": "Requirements",
+            "url": "/add-ons/email-verification/requirements.html"
+        }, {
+            "title": "Installation",
+            "url": "/add-ons/email-verification/installation.html"
+        }]
     }, {
         "title": "File Management",
         "url": "/add-ons/file-management/index.html",
