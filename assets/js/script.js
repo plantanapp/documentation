@@ -130,7 +130,7 @@
                 '{url}': result.Url,
                 // github adds a "| Title of the site" after every title page and we need to get rid of it
                 '{title}': result.Title.split('|')[0],
-                '{path}': toTitleCase(parsePathForSearchResults(result.Url.replace('https://docs.dnnsharp.com/', '')))
+                '{path}': toTitleCase(parsePathForSearchResults(result.Url.replace('https://docs.plantanapp.com/', '')))
             }
 
             const compiledTemplateForElement = searchTemplate.replace(templateCompileRegex, function (matched) {

@@ -1,13 +1,13 @@
 theme: jekyll-theme-cayman
-title: DNN Sharp Documentation Center 
+title: Plant an App Documentation Center 
 github: [metadata]
 
-email: support@dnnsharp.com
+email: support@plantanapp.com
 description: >- # this means to ignore newlines until "baseurl:"
-  The brand new site that hosts the DnnSharp Product Documentation.<br />
+  The brand new site that hosts the Plant an App Documentation.<br />
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://docs.dnnsharp.com" # the base hostname & protocol for your site, e.g. http://example.com
-github_username: dnnsharp
+url: "https://docs.plantanapp.com" # the base hostname & protocol for your site, e.g. http://example.com
+github_username: plantanapp
 
 # Build settings
 markdown: kramdown
