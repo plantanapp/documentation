@@ -30,17 +30,17 @@ Pay With Credit Card, it is a form that will do an Authorization and Capture tra
 
 * The merchant must have one of the following module installed
 
-  * Action Form 03.08.74
+  * Action Form 03.08.74 (Recomanded 5.x.xxx+)
 
-  * Action Grid 04.00.39
+  * Action Grid 04.00.39 (Recomanded 5.x.xxx+)
 
-  * DNN API Endpoint 01.02.15
+  * DNN API Endpoint 01.02.15 (Recomanded 5.x.xxx+)
 
-  * Sharp Scheduler 02.01.18
+  * Sharp Scheduler 02.01.18 (Recomanded 5.x.xxx+)
 
-  * InfoBox 01.01.22
+  * InfoBox 01.01.22 (Recomanded 5.x.xxx+)
 
-* The merchant must have a platform containing DNN 6 and ASP.NET 4.0 at the least.
+* The merchant must have a platform containing DNN 8.0.4+ and ASP.NET 4.5+ at the least.
 
 ### Getting started {#getting-started}
 

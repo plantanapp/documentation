@@ -18,11 +18,11 @@ Create digital walkthroughs on your DNN portal improving the user experience and
 
 **Requirements**
 
-* DNN 6.0+
-* SQL Server 2005+
-* ASP.NET 4.0+
-* IIS 6.0+
-* Support
+* DNN 8.0.4+
+* SQL Server 2012+
+* ASP.NET 4.5+
+* IIS 7.0+
+
+**Support**
 
 Our support staff is friendly and always available to help you. Engage us on our [community platform](//www.dnnsharp.com/helpcenter){:target="_blank"}.
-
