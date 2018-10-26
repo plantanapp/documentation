@@ -26,7 +26,7 @@ Normally, Redirect Toolkit comes with a MaxMind integration which uses their Web
 
 <div style="text-align:center">
 
-![](\assets/redirect-toolkit-maxmind-db.png)
+<img src="assets/redirect-toolkit-maxmind-db.png">
 
 </div>
 

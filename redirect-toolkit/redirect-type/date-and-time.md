@@ -4,9 +4,9 @@ This type of redirect allows building redirects that apply to specific date and 
 
 <div style="text-align:center">
 
-![](\../assets/redirect-by-date-and-time.png)
+<img src="../assets/redirect-by-date-and-time.png">
 
-</dv>
+</div>
 
 ## Properties
 
@@ -16,22 +16,22 @@ Following properties are exposed:
 
 <div style="text-align:center">
 
-![](\../assets/match-by-date-and-time.png)
+<img src="../assets/match-by-date-and-time.png">
 
-</dv>
+</div>
 
 * Time of Day
 
 <div style="text-align:center">
 
-![](\../assets/match-by-time-of-day.png)
+<img src="../assets/match-by-time-of-day.png">
 
-</dv>
+</div>
 
 * Day Of Week
 
 <div style="text-align:center">
 
-![](\../assets/match-by-day-of-week.png)
+<img src="../assets/match-by-day-of-week.png">
 
-</dv>
+</div>

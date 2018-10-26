@@ -4,7 +4,7 @@ This type of redirect allows specifying an SQL Query that returns a scalar. Then
 
 <div style="text-align:center">
 
-![](\../assets/sql-query.png)
+<img src="../assets/sql-query.png">
 
 </div>
 

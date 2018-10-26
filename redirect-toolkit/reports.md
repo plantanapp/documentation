@@ -7,9 +7,7 @@ Starting with version 2.0 Redirect Toolkit has a configurable reporting framewor
 For the reporting framework to work the Logging option must be enabled for all rules you want included in the reports. Otherwise the logs are not saved and there is no data from which Redirect Toolkit could build the reports.
 
 <div style="text-align:center">
-
-![](\assets/log-redirects.png)
-
+<img src="assets/log-redirects.png">
 </div>
 
 There are two reports available in Redirect Toolkit right now. One is a report with all redirects that happened for selected rules, the other is a referrer count report which shows how many redirects were executed for which distinct referrer.
@@ -24,7 +22,7 @@ The XML file has the following structure:
     * report - represents report definition; multiple reports means multiple occurrences of this node
         * title - friendly UNIQUE title to display in the UI
         * sql - the query that will return the results
-    *report - another report
+    * report - another report
         * ...
 
 The *sql* query can make use of some special syntax to mark placeholders for specific data. Following tokens are available:
@@ -39,9 +37,7 @@ You can create as many XML files as you need. Each XML can contain definitions f
 The reports configuration is parsed by Redirect Toolkit and displayed in the *Reports Screen* shown in image below.
 
 <div style="text-align:center">
-
-![](\assets/redirect-toolkit-reports.png)
-
+<img src="assets/redirect-toolkit-reports.png">
 </div>
 
 Besides choosing the report, you can also specify a Redirect Rule to generate the report for (or select to include all rules) and a date interval.
