@@ -1,0 +1,76 @@
+[{
+    "title": "General Info",
+    "url": "/redirect-toolkit/general-info.html"
+}, {
+    "title": "Extending Redirect Toolkit",
+    "url": "/redirect-toolkit/extensions.html"
+}, {
+    "title": "Redirect rules",
+    "url": "/redirect-toolkit/redirect-rules/index.html",
+    "subpages": [{
+        "title": "Additional Actions",
+        "url": "/redirect-toolkit/redirect-rules/additional-rules.html"
+    }, {
+        "title": "Operators Reference",
+        "url": "/redirect-toolkit/redirect-rules/operators-reference.html"
+    }, {
+        "title": "Redirect Actions",
+        "url": "/redirect-toolkit/redirect-rules/redirect-actions.html"
+    }, {
+        "title": "Redirect Conditions",
+        "url": "/redirect-toolkit/redirect-rules/redirect-conditions.html"
+    }, {
+        "title": "Redirect General Info",
+        "url": "/redirect-toolkit/redirect-rules/redirect-general.html"
+    }]
+}, {
+    "title": "Redirect Scope",
+    "url": "/redirect-toolkit/redirect-scope.html"
+}, {
+    "title": "Redirects By Type",
+    "url": "/redirect-toolkit/redirect-type/index.html",
+    "subpages": [{
+        "title": "Browser Information",
+        "url": "/redirect-toolkit/redirect-type/browser-information.html"
+    }, {
+        "title": "Database Data",
+        "url": "/redirect-toolkit/redirect-type/database-data.html"
+    }, {
+        "title": "Host Info",
+        "url": "/redirect-toolkit/redirect-type/host-info.html"
+
+    }, {
+        "title": "Date And Time",
+        "url": "/redirect-toolkit/redirect-type/date-and-time.html"
+    }, {
+        "title": "IP Geo Locations",
+        "url": "/redirect-toolkit/redirect-type/ip-geo-locations.html"
+    }, {
+        "title": "My Tokens",
+        "url": "/redirect-toolkit/redirect-type/my-tokens.html"
+    }, {
+        "title": "Page Parameters",
+        "url": "/redirect-toolkit/redirect-type/page-parameters.html"
+    }, {
+        "title": "Page View Count",
+        "url": "/redirect-toolkit/redirect-type/page-view-count.html"
+    }, {
+        "title": "Random",
+        "url": "/redirect-toolkit/redirect-type/random.html"
+    }, {
+        "title": "Referrer Info",
+        "url": "/redirect-toolkit/redirect-type/referrer-info.html"
+    }, {
+        "title": "Role Info",
+        "url": "/redirect-toolkit/redirect-type/role-info.html"
+    }, {
+        "title": "User Info",
+        "url": "/redirect-toolkit/redirect-type/user-info.html"
+    }]
+}, {
+    "title": "Reports",
+    "url": "/redirect-toolkit/reports.html"
+}, {
+    "title": "Tokens",
+    "url": "/redirect-toolkit/tokens.html"
+}]
