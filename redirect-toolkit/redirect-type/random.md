@@ -1,4 +1,5 @@
-Random
+# Random
+
 Random redirects allow redirecting a percentage of users to target URL. Note that this is not exactly random, you get to specify a percentage for the redirect to happen. So for a very large number of visitors this rule actually says *Redirect N% of the users*. But you don't get to specify which users to redirect so for the targeted users this is random.
 
 <div style="text-align:center">

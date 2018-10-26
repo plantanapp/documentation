@@ -1,4 +1,5 @@
 # User Info
+
 This type of redirect provides capabilities to match based on user information such as username, user id, first&last name, email or profile property.
 
 

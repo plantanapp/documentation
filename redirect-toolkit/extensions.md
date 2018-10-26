@@ -25,13 +25,13 @@ Normally, Redirect Toolkit comes with a MaxMind integration which uses their Web
 
 <div style="text-align:center">
 
-![](/redirect-toolkit/assets/redirect-toolkit-maxmind-db.png)
+![](assets/redirect-toolkit-maxmind-db.png)
 
 </div>
 
-4. Add a new rule, for example, redirect based on your country name. After you add the rule you'll notice it says "MaxMind DB not present or corrupt.". This basically means that you don't have the MaxMind database yet. Go to http://www.maxmind.com/en/geolocation_landing and select one of the database. Redirect Toolkit works with any of them, so choose according to your app requirements.
+1. Add a new rule, for example, redirect based on your country name. After you add the rule you'll notice it says "MaxMind DB not present or corrupt.". This basically means that you don't have the MaxMind database yet. Go to http://www.maxmind.com/en/geolocation_landing and select one of the database. Redirect Toolkit works with any of them, so choose according to your app requirements.
 
-5. Once you have a database, unpack it into folder /DesktopModules/RedirectToolkit/Config/Data/MaxMind. This folder does not exist so you'll have to create it in advance. Assuming that you've purchased the Country database, Redirect Toolkit will loot after the following file: */DesktopModules/RedirectToolkit/Config/Data/MaxMind/GeoIP2-Country.mmdb*.<br>
+2. Once you have a database, unpack it into folder /DesktopModules/RedirectToolkit/Config/Data/MaxMind. This folder does not exist so you'll have to create it in advance. Assuming that you've purchased the Country database, Redirect Toolkit will loot after the following file: */DesktopModules/RedirectToolkit/Config/Data/MaxMind/GeoIP2-Country.mmdb*.<br>
 **Important**: Note that if the folder contains more than one .mmdb files, the first one will be used.
 
 6. Go back to Redirect Toolkit and refresh the screen. Now you should see the proper message for the rule Condition. Logout to test the redirect. Use the override IP feature from General Settings to test various IP addresses. Also keep in mind that on localhost the server will not see your external IP.
