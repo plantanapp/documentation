@@ -4,7 +4,7 @@ This type of redirect provides capabilities to match based on user information s
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-user-info.png)
+<img src="../assets/redirect-by-user-info.png">
 
 </div>
 

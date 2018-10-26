@@ -6,7 +6,7 @@ Note that if the URL after tokenization is empty, then no redirection occurs.
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-my-tokens.png)
+<img src="../assets/redirect-by-my-tokens.png">
 
 </div>
 

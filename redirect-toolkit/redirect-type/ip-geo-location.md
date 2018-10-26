@@ -4,7 +4,7 @@ Starting with version 1.8.0 Redirect Toolkit support redirects based on Geo Loca
 
 <div style="text-align:center">
 
-![](../assets/redirect-maxmind.png)
+<img src="../assets/redirect-maxmind.png">
 
 </div>
 **Note that Geo Bytes offer up to 20 free checks per hours**. If you exceed this limit you have to purchase their service and fill in the username and password in Redirect Toolkit Global Settings.
@@ -13,7 +13,7 @@ Starting with version 1.8.0 Redirect Toolkit support redirects based on Geo Loca
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-ip-geo-location.png)
+<img src="../assets/redirect-by-ip-geo-location.png">
 
 </div>
 Max Mind comes with two flavours: Country Service and Omni Service. The Country Service only returns the country code for a given IP. This means that matching by any other field will fail.
