@@ -47,7 +47,7 @@ In web.config: /configuration/system.web/httpModules append following line:
          type="avt.RedirectToolkit.GlobalHttpFilter, avt.RedirectToolkit.DotNetNuke" />
 
 If you get an error during installation, open the zip install package and modify the avt.RedirectToolkit.dnn file and remove the whole node show below:
-
+```xml
     <component type="Config">
           <config>
             <configFile>web.config</configFile>
@@ -73,7 +73,7 @@ If you get an error during installation, open the zip install package and modify
             </uninstall>
           </config>
         </component>
-
+```
 After you remove these lines, add the file back to the zip and reinstall.
 
 # Locked Out?
@@ -137,7 +137,7 @@ A condition type is a *Redirect By...* category you see in Add/Edit Rule screen.
 
 Below is how we implemented Redirects By Host (in C#). Note that *SimpleProperty* is an utility class that you can also use in your plugins. It takes care of instantiating appropriate operator and check saved value against the one providing to the constructor.
 
-
+```cs
      public class RedirectByHost: ICondition
         {
             public bool IsMatch(RedirectConditionInfo condition)
@@ -182,6 +182,8 @@ Below is how we implemented Redirects By Host (in C#). Note that *SimpleProperty
         }
     }
 
+```
+
 To test your plugin you have to copy it to your website bin folder and then register into to the Redirect Toolkit configuration file. So go to /Config/Conditions and create a new XML file (better to copy paste an existing file and start from there). Note that the numbers at the beginning of the XML files are only used for sorting - they determine the order they follow when listed in Add/Edit Rule screen.
 
 Most important thing is to think of a code that is unique and short (maximum 10 chars). This is used to link a rule to a definition. After this is done proceed to defining the definitions. Obviously this should be matched with something you implemented in the code to handle them differently. In the example above, there are two properties: domain and fullurl. In the configuration file there are two important things to set: the type (use standard format FullQualifiedTypeName, Assembly Name) and the name of an operators group to use. In our case both properties are of type text so we use __opText.
@@ -194,6 +196,7 @@ Redirect Toolkit comes with operators to handle all common scenarios, but at som
 
 Below is how we implemented the Equals operator.
 
+```cs
     public class Equals : IOperator
         {
           public bool IsMatch(OperatorDef opDef, object savedValue, object contextValue)
@@ -223,7 +226,7 @@ Below is how we implemented the Equals operator.
             return name;
         }
     }
-
+```
 
 To test your plugin you have to copy it to your website bin folder and then register into to the Redirect Toolkit configuration file. So go to */Config/Operators* and create a new XML file (better to copy paste an existing file and start from there). Note that the numbers at the beginning of the XML files are only used for sorting - they determine the order they follow when listed in *Add/Edit Rule* screen.
 
@@ -237,6 +240,7 @@ To create an operator you must write a class that implements *IExecutableAction*
 
 Below is how we implemented the *DnnLogout* action.
 
+```cs
      public class DnnLogout : IExecutableAction
         {
             public void Execute(RedirectRuleInfo rule, 
@@ -259,7 +263,7 @@ Below is how we implemented the *DnnLogout* action.
             return actDef.Title;
         }
     }
-
+```
 To test your plugin you have to copy it to your website bin folder and then register into to the Redirect Toolkit configuration file. So go to */Config/Actions* and create a new XML file (better to copy paste an existing file and start from there). Note that the numbers at the beginning of the XML files are only used for sorting - they determine the order they follow when listed in *Add/Edit* Rule screen.
 
 It's important that in the configuration file you specify a code that is unique and has up to 10 characters. Under execute node put the type of your action in standard format *"FullQualifiedTypeName, Assembly Name"*.
