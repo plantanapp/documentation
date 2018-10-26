@@ -4,7 +4,7 @@ When Redirect Toolkit matches a rule, it can be configured with additional actio
 
 <div style="text-align:center">
 
-![](../assets/additional-actions.png)
+![](\../assets/additional-actions.png)
 
 </div>
 

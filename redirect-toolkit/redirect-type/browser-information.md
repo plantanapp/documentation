@@ -12,7 +12,7 @@ There are two methods used to detect mobile devices:
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-browser-information.png)
+![](\../assets/redirect-by-browser-information.png)
 
 </div>
 

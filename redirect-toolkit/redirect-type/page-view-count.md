@@ -4,7 +4,7 @@ This type of redirect matches against the number of types current rule was evalu
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-view-count.png)
+![](\../assets/redirect-by-view-count.png)
 
 </div>
 
