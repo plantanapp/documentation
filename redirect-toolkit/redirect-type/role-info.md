@@ -15,7 +15,7 @@ There are two property exposed, **Role (as object)** and **Role Name(as text)**.
 
 <div style="text-align:center">
 
-![](\../assets/redirect-by-role-info.png)
+<img src="../assets/redirect-by-role-info.png">
 
 </div>
 

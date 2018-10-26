@@ -18,7 +18,7 @@ This is all we need to do for now, for more information read the Installation se
 While logged in with edit rights for the Redirect Toolkit module, locate and click the **Add Redirect** link in Module Actions (preceded by the green plus icon). You will be redirected to the form for defining a new rule.
 <div style="text-align:center">
 
-![](assets/add-redirect.png)
+<img src="assets/add-redirect.png">
 
 </div>
 A rule is formed by 3 parts:
@@ -33,7 +33,7 @@ To do this, select the options as reflected in the image below. Note that the fo
 
 <div style="text-align:center">
 
-![](assets/conditions.png)
+<img src="assets/conditions.png">
 
 </div>
 
@@ -41,7 +41,7 @@ So far, we told Redirect Toolkit what to match. Next, we'll tell it what to do w
 
 <div style="text-align:center">
 
-![](assets/redirect.png)
+<img src="assets/redirect.png">
 
 </div>
 
@@ -49,7 +49,7 @@ Note that once with Redirect Toolkit 2.2, we've added ability to override IP fro
 
 <div style="text-align:center">
 
-![](assets/global-settings.png)
+<img src="assets/global-settings.png">
 
 </div>
 
@@ -58,7 +58,7 @@ Note that once with Redirect Toolkit 2.2, we've added ability to override IP fro
 
 <div style="text-align:center">
 
-![](assets/save.png)
+<img src="assets/save.png">
 
 </div>
 
@@ -67,7 +67,7 @@ You will be redirected to the *Manage Redirects* screen that also can be accesse
 
 <div style="text-align:center">
 
-![](assets/manage-redirects1.png)
+<img src="assets/manage-redirects1.png">
 
 </div>
 
@@ -75,7 +75,7 @@ Here you can see the new rule.
 
 <div style="text-align:center">
 
-![](assets/manage-redirects.png)
+<img src="assets/manage-redirects.png">
 
 </div>
 

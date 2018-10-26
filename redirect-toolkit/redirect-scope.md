@@ -6,7 +6,7 @@ This can be achieved by configuring the rule to run globally by selecting the op
 
 <div style="text-align:center">
 
-![](\assets/evaluate-for-all-requests.png)
+<img src="assets/evaluate-for-all-requests.png">
 
 </div>
 Global redirects are new in version 2.0. Behind the scenes, Redirect Toolkit installs an HTTP filter in web.config that will intercept all requests and see if they need redirected. It's important to know that global redirects run at a different time than module redirects, so the order in which you define the redirects should evaluate will apply separately for the two types of redirects.
