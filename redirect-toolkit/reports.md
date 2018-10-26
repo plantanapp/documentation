@@ -8,7 +8,7 @@ For the reporting framework to work the Logging option must be enabled for all r
 
 <div style="text-align:center">
 
-![](assets/log-redirects.png)
+![](\assets/log-redirects.png)
 
 </div>
 
@@ -40,7 +40,7 @@ The reports configuration is parsed by Redirect Toolkit and displayed in the *Re
 
 <div style="text-align:center">
 
-![](assets/redirect-toolkit-reports.png)
+![](\assets/redirect-toolkit-reports.png)
 
 </div>
 

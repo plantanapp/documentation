@@ -4,7 +4,7 @@ Redirect Toolkit can be installed through Extensions screen.
 
 <div style="text-align:center">
 
-![](assets/host-extensions.png)
+![](\assets/host-extensions.png)
 
 </div>
 
@@ -12,7 +12,7 @@ On successful install you'll see the avt.Redirect Toolkit module in the module l
 
 <div style="text-align:center">
 
-![](assets/add-redirect-toolkit.png)
+![](\assets/add-redirect-toolkit.png)
 
 </div>
 

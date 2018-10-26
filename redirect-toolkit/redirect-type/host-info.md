@@ -4,7 +4,7 @@ This type of redirect makes it possible to direct based on URL of current page.
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-host-adress.png)
+![](\../assets/redirect-by-host-adress.png)
 
 </div>
 

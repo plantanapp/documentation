@@ -29,6 +29,6 @@ Rules are maintained from Manage Redirects. Note that it is possible to order ru
 
 <div style="text-align:center">
 
-![](../assets/manage-redirects2.png)
+![](\../assets/manage-redirects2.png)
 
 </div>

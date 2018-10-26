@@ -4,7 +4,7 @@ This type of redirect provides capabilities to match based on where the user cam
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-referrer.png)
+![](\../assets/redirect-by-referrer.png)
 
 </div>
 

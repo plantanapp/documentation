@@ -4,7 +4,7 @@ This type of redirect allows matching based on page state. This includes reading
 
 <div style="text-align:center">
 
-![](../assets/redirect-by-request-parameters.png)
+![](\../assets/redirect-by-request-parameters.png)
 
 </div>
 

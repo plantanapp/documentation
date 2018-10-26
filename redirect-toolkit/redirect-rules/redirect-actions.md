@@ -4,7 +4,7 @@ When a rule's conditions are met, Redirect Toolkit will execute the redirect act
 
 <div style="text-align:center">
 
-![](../assets/redirect-actions.png)
+![](\../assets/redirect-actions.png)
 
 </div>
 
@@ -15,7 +15,7 @@ This option is useful to prevent special cases from matching other redirect rule
 
 <div style="text-align:center">
 
-![](../assets/keep-on-current-page.png)
+![](\../assets/keep-on-current-page.png)
 
 </div>
 
@@ -29,7 +29,7 @@ Allows freely imputing a URL to any location. This option also offers three poss
 
 <div style="text-align:center">
 
-![](../assets/redirect-to-url.png)
+![](\../assets/redirect-to-url.png)
 
 </div>
 
@@ -40,7 +40,7 @@ Allows selecting a page from the portal to which users matched by current rule w
 
 <div style="text-align:center">
 
-![](../assets/redirect-to-page.png)
+![](\../assets/redirect-to-page.png)
 
 </div>
 
@@ -49,7 +49,7 @@ This option allows choosing a file to which users will be redirected to
 
 <div style="text-align:center">
 
-![](../assets/redirect-to-file.png)
+![](\../assets/redirect-to-file.png)
 
 </div>
 
@@ -57,7 +57,7 @@ This option allows choosing a file to which users will be redirected to
 
 <div style="text-align:center">
 
-![](../assets/redirect-to-query-string-param.png)
+![](\../assets/redirect-to-query-string-param.png)
 
 </div>
 
@@ -69,7 +69,7 @@ Redirect Toolkit allows specifying a delay in seconds before redirect happens. I
 
 <div style="text-align:center">
 
-![](../assets/delay-redirects.png)
+![](\../assets/delay-redirects.png)
 
 </div>
 
@@ -83,7 +83,7 @@ The POST option is available when *Action is set to Redirect to URL*. When selec
 
 <div style="text-align:center">
 
-![](../assets/redirect-toolkit-post-redirect.png)
+![](\../assets/redirect-toolkit-post-redirect.png)
 
 </div>
 
