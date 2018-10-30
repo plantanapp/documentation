@@ -4,7 +4,7 @@ Random redirects allow redirecting a percentage of users to target URL. Note tha
 
 <div style="text-align:center">
 
-![](../assets/redirect-random.png)
+<img src="../assets/redirect-random.png">
 
 </div>
 

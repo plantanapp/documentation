@@ -8,8 +8,11 @@
     "title": "Redirect rules",
     "url": "/redirect-toolkit/redirect-rules/index.html",
     "subpages": [{
+        "title": "Redirect General Info",
+        "url": "/redirect-toolkit/redirect-rules/redirect-general.html"
+    }, {
         "title": "Additional Actions",
-        "url": "/redirect-toolkit/redirect-rules/additional-rules.html"
+        "url": "/redirect-toolkit/redirect-rules/additional-actions.html"
     }, {
         "title": "Operators Reference",
         "url": "/redirect-toolkit/redirect-rules/operators-reference.html"
@@ -19,9 +22,6 @@
     }, {
         "title": "Redirect Conditions",
         "url": "/redirect-toolkit/redirect-rules/redirect-conditions.html"
-    }, {
-        "title": "Redirect General Info",
-        "url": "/redirect-toolkit/redirect-rules/redirect-general.html"
     }]
 }, {
     "title": "Redirect Scope",
@@ -44,7 +44,7 @@
         "url": "/redirect-toolkit/redirect-type/date-and-time.html"
     }, {
         "title": "IP Geo Locations",
-        "url": "/redirect-toolkit/redirect-type/ip-geo-locations.html"
+        "url": "/redirect-toolkit/redirect-type/ip-geo-location.html"
     }, {
         "title": "My Tokens",
         "url": "/redirect-toolkit/redirect-type/my-tokens.html"

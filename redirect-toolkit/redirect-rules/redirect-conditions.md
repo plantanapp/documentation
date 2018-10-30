@@ -6,7 +6,7 @@ The interface for defining conditions looks like in following image:
 
 <div style="text-align:center">
 
-![](../assets/redirect-toolkit-condition-redirect.png)
+<img src="../assets/redirect-toolkit-condition-redirect.png">
 
 </div>
 

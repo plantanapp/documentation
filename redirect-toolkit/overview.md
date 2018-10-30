@@ -3,17 +3,13 @@
 Redirect Toolkit can be installed through Extensions screen.
 
 <div style="text-align:center">
-
-![](assets/host-extensions.png)
-
+<img src="assets/host-extensions.png">
 </div>
 
 On successful install you'll see the avt.Redirect Toolkit module in the module list.
 
 <div style="text-align:center">
-
-![](assets/add-redirect-toolkit.png)
-
+<img src="assets/add-redirect-toolkit.png">
 </div>
 
 You have to add a Redirect Toolkit module to the page then start configuring redirects. Each redirect can then be made global, in each case it runs for all page requests. Otherwise, the redirect runs only in the context of the page where the module has been added to.
@@ -76,15 +72,15 @@ If you get an error during installation, open the zip install package and modify
 ```
 After you remove these lines, add the file back to the zip and reinstall.
 
-# Locked Out?
+## Locked Out?
 
-Sometimes you might find yourself locked out of the website because of a Redirect Toolkit error. This happens because Redirect Toolkit installs an HTTP module to handle all requests for global redirects. Global redirects are rules that get evaluated for every HTTP request, regardless of the page where the module lives. 
+Sometimes you might find yourself locked out of the website because of a Redirect Toolkit error. This happens because Redirect Toolkit installs an HTTP module to handle all requests for global redirects. Global redirects are rules that get evaluated for every HTTP request, regardless of the page where the module lives.
 
 To gain access back to the site, disable the HTTP module from web.config. To do this, open web.config in a text editor and remove this line:
 
     <add name="RedirectToolkitHandler" type="avt.RedirectToolkit.GlobalHttpFilter, avt.RedirectToolkit" preCondition="managedHandler" />
 
-# Uninstall
+## Uninstall
 Redirect Toolkit can be uninstalled directly from DNN Extensions screen (or Module Definitions for older versions) just as any other module.
 
 ## For DNN 4 Only
@@ -97,16 +93,16 @@ In web.config: / configuration / system.webServer / modules remove following lin
          type="avt.RedirectToolkit.GlobalHttpFilter, avt.RedirectToolkit.DotNetNuke"
          preCondition="managedHandler" />
 
-In web.config: ***** /configuration/system.web/httpModules ***** remove following line:
+In web.config: */configuration/system.web/httpModules* remove following line:
 
     <add name="RedirectToolkitHandler"
          type="avt.RedirectToolkit.GlobalHttpFilter, avt.RedirectToolkit.DotNetNuke" />
 
-# Video Tutorials
+## Video Tutorials
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/ar0OuE3EXW8?list=PLttZcObtJJgHvf2uGFxW4Q7MSoUlK-vgz" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-# Debugging
+## Debugging
 
 When submitting debugging information to us for investigation, please make sure to provide the following:
 
