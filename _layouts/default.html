@@ -36,6 +36,9 @@
                         <img src="https://static.dnnsharp.com/logo/DNNSharp-Logo-62x180.png" alt="logo">
                     </a>
                 </li>
+                
+                <span style="display:none">{{ content | strip_html }}</span>
+
                 <li class="tree">
                     {% include menu.html pages = site.data.menu.main %}
                 </li>
@@ -49,7 +52,8 @@
                     <span class="menu-toggle"><i class="fas fa-bars"></i></span>
                     <h1 class="project-name">
                         <span class="show-md">{{ site.title | default:site.github.repository_name }}</span>
-                        <img class="hide-md" src="https://static.dnnsharp.com/logo/DNNSharp%20Logo%20White%20small.png" alt="logo">
+                        <img class="hide-md" src="https://static.dnnsharp.com/logo/DNNSharp%20Logo%20White%20small.png"
+                            alt="logo">
                     </h1>
                     <!-- <h2 class="project-tagline">{{ site.description | default: site.github.project_tagline }}</h2> -->
                     <div class="input-group col-md-3" style="margin-right:20px;">
@@ -60,10 +64,10 @@
                 </header>
             </div>
             <div class="row breadcrumb-container">
-                    <nav aria-label="breadcrumb" id="breadcrumb"></nav>
+                <nav aria-label="breadcrumb" id="breadcrumb"></nav>
             </div>
             <div class="row main-content-wrapper main-content-mw">
-                    
+
                 <main id="content" class="main-content mx-auto main-content-mw" role="main">
                     {{ content }}
                 </main>
