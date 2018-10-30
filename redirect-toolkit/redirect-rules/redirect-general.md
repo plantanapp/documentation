@@ -1,6 +1,6 @@
 # Redirect General Info
 
-In this section you have to provide a short description and to specify priority of your redirects. 
+In this section you have to provide a short description and to specify priority of your redirects.
 
 Firstly, in *Title* section you need to provide a descriptive label in order to identify the redirect and its purpose. Then you  have to define priorities in *Priority* section. There are two option available:
 
