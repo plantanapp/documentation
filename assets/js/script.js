@@ -147,7 +147,7 @@
     var debouncedSearch = debounce(function (searchTerms) {
         const searchApiUrl = '//dnnsharpdocsservices.apps.plantanapp.com/DesktopModules/DnnSharp/DnnApiEndpoint/Api.ashx?method=search-docs' +
             '&query=' + searchTerms +
-            '&resultsnumber=' + 10;
+            '&resultsnumber=' + 50;
 
         $('#results-container').empty().append('<i class="fas fa-sync fa-spin"></i>');
 
