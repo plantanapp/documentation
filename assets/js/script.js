@@ -24,20 +24,27 @@
             return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
         });
     }
-    
+
+    function removeDuplicates(myArr, prop) {
+        return myArr.filter((obj, pos, arr) => {
+            return arr.map(mapObj => mapObj[prop]).indexOf(obj[prop]) === pos
+        })
+    }
+
     function makeUL(arr) {
+        arr = removeDuplicates(arr, 'href');
         // Create the list element:
         var list = document.createElement('ol');
         list.setAttribute("class", "breadcrumb");
-        var i, text='';
-        for (i = arr.length-1; i >= 0; i--) { 
+        var i, text = '';
+        for (i = arr.length - 1; i >= 0; i--) {
             var child, el = arr[i];
-            if(el.href){
+            if (el.href) {
                 child = document.createElement('a');
-                child.setAttribute('href',el.href);
+                child.setAttribute('href', el.href);
                 child.innerHTML = el.title;
             } else {
-                child = document.createTextNode(el.title.replace(/(\r\n\t|\n|\r\t)/gm,""));
+                child = document.createTextNode(el.title.replace(/(\r\n\t|\n|\r\t)/gm, ""));
             }
             var item = document.createElement('li');
             item.setAttribute("class", "breadcrumb-item");
@@ -47,17 +54,19 @@
         }
         return list;
     }
-    function getCrumb(el){
-        if(el[0].nodeName=='A'){
+
+    function getCrumb(el) {
+        if (el[0].nodeName == 'A') {
             el = el.closest('li');
         }
         return {
-            'title':el.find('>span>a').text() || el.find('>span').text(),
-            'href':el.find('>span>a').attr('href')
+            'title': el.find('>span>a').text() || el.find('>span').text(),
+            'href': el.find('>span>a').attr('href')
         }
     }
+
     function expandTreeToElement(element) {
-        var crumbs=[];
+        var crumbs = [];
         crumbs.push(getCrumb(element));
         if (element.length) {
             while (!element.parent().hasClass('tree') && !element.is('body')) {
@@ -69,12 +78,15 @@
                     crumbs.push(getCrumb(element));
                 }
             }
-            
+
             crumbs.push({
-                'title':'Home',
-                'href':'/index.html'
+                'title': 'Home',
+                'href': '/index.html'
             });
-            $('#breadcrumb').html(makeUL(crumbs));
+
+            if(location.pathname !== "/actions/index.html"){
+                $('#breadcrumb').html(makeUL(crumbs));
+            }
         }
     }
 
@@ -129,7 +141,7 @@
             const templateReplaceDictionary = {
                 '{url}': result.Url,
                 // github adds a "| Title of the site" after every title page and we need to get rid of it
-                '{title}': result.Title.split('|')[0],
+                '{title}': result.Title.split('|')[0].trim(),
                 '{path}': toTitleCase(parsePathForSearchResults(result.Url.replace('https://docs.plantanapp.com/', '')))
             }
 
@@ -178,14 +190,12 @@
     // expand the tree to current location
     if (location.pathname !== '/' && location.pathname !== '/index.html') {
         let element = $("a[href='" + location.pathname + "']");
-        if(element){
+        if (element) {
             element.parent('span').addClass('tree-current-item');
             expandTreeToElement(element);
             element[0].scrollIntoView({
                 block: "center"
             });
         }
-       
     }
-
 })();
