@@ -1,6 +1,6 @@
 # Create Subscription
 
-The action will link an existing customer to an existing recurring payment plan; customers  and the plan .
+The action will link an existing customer to an existing recurring payment plan.
 
 In order to work, the actions needs to be given:
 * a customer ID which can be created with the [Create Customer](/integrations/stripe/recurring-payments/stripe-create-customer.html) action
