@@ -183,6 +183,10 @@
                         "url": "/action-grid/grid-template/grid-view/index.html"
                     },
                     {
+                        "title": "Sticky header",
+                        "url": "/action-grid/grid-template/grid-view/sticky-header.html"
+                    },
+                    {
                         "title": "Filtering",
                         "url": "/action-grid/grid-template/grid-view/filtering.html"
                     },
