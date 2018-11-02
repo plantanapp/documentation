@@ -7,7 +7,7 @@ You now have the ability to keep Action Grid's table head on the visible area of
 
 The feature rings two different operating modes:
 * **Scroll the Grid**, and keep its header on top of page(or popup window) for as long as the grid content is visible
-* **Scroll inside the Grid**, which means the Grid has fixed position on the page and you will scroll the data inside it
+* **Scroll inside the Grid**, which means the Grid has a fixed position on the page and you will scroll the data inside it
 
 The difference between the two is made by the **Table Height** setting 
 ![Sticky head table height](https://static.dnnsharp.com/documentation/sticky-header-table-height.png "Sticky header table height")
