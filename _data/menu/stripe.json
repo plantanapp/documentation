@@ -3,12 +3,29 @@
     "url":"/integrations/stripe/introduction.html"
 },
 {
-    "title": "Installation",
+    "title": "Getting Started",
     "url":"/integrations/stripe/installation.html"
 },
 {
-    "title": "Stripe Integration",
-    "url": "/integrations/stripe/about.html"
+  "title": "Stripe Credit Card field",
+  "url": "/integrations/stripe/stripe-credit-card-field.html"
+},
+{
+  "title": "Recurring Payments",
+  "url":"/integrations/stripe/recurring-payments/index.html",
+  "subpages": [{
+    "title": "Overview",
+    "url": "/integrations/stripe/recurring-payments/index.html"
+},{
+  "title": "Create Plan",
+  "url": "/integrations/stripe/recurring-payments/stripe-create-plan.html"
+},{
+  "title": "Create Customer",
+  "url": "/integrations/stripe/recurring-payments/stripe-create-customer.html"
+},{
+  "title": "Create Subscription",
+  "url": "/integrations/stripe/recurring-payments/stripe-create-subscription.html"
+}]
 },
 {
   "title": "Stripe Add Seller",
