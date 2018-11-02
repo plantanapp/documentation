@@ -3,9 +3,10 @@
 > Feature was introduced in Action Grid 5.0.110 and does not apply to the Listing template.
 
 You now have the ability to keep Action Grid's table head on the visible area of the screen by setting the **Enable sticky head** checkbox to true.
+
 ![Enable sticky head](https://static.dnnsharp.com/documentation/sticky-header-setting.png "Enable sticky head")
 
-The feature rings two different operating modes:
+The feature brings two different operating modes:
 * **Scroll the Grid**, and keep its header on top of page(or popup window) for as long as the grid content is visible
 * **Scroll inside the Grid**, which means the Grid has a fixed position on the page and you will scroll the data inside it
 
