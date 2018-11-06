@@ -88,11 +88,17 @@
         "title": "Email Verification",
         "url": "/add-ons/email-verification/index.html",
         "subpages": [{
-            "title": "Requirements",
-            "url": "/add-ons/email-verification/requirements.html"
+            "title": "Overview",
+            "url": "/add-ons/email-verification/index.html"
         }, {
             "title": "Installation",
             "url": "/add-ons/email-verification/installation.html"
+        }, {
+            "title": "Neverbounce custom validator",
+            "url": "/add-ons/email-verification/features/neverbounce-email-validation-custom-validator.html"
+        }, {
+            "title": "Neverbounce action",
+            "url": "/add-ons/email-verification/features/neverbounce-email-verification-action.html"
         }]
     }, {
         "title": "File Management",
