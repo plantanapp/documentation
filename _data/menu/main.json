@@ -99,6 +99,9 @@
         }, {
             "title": "Neverbounce action",
             "url": "/add-ons/email-verification/features/neverbounce-email-verification-action.html"
+        }, {
+            "title": "Setup Neverbounce credentials",
+            "url": "/add-ons/email-verification/features/setup-neverbounce-email-verification-action.html"
         }]
     }, {
         "title": "File Management",
