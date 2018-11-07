@@ -1,29 +1,18 @@
 # Agreement links
 
-## Initially Checked
+This is the field that will help you replace multiple Agree to Terms fields
+![Multiple Agree to Terms](https://static.dnnsharp.com/documentation/multiple_agree_to_terms.png "Multiple Agree to Terms and Condition")
+with one single field with multiple options
+![Agree to Terms with multiple options](https://static.dnnsharp.com/documentation/agreement_links_field.png "Agree to Terms with multiple options")
 
-Determines whether this field will load initially checked.
+It allows you to specify multiple parameters(links) for the same *Agree to...* field and they can be of different types:
+* *html* - custom html that will be shown in the popup
+* *page* - an existing page from your website that will be shown in the popup
 
-## Content
+![Agreement Links content](https://static.dnnsharp.com/documentation/agreement_links_content.png "Agreement Links content")
 
-Here you can set the parameters (links) which have the following proprieties:
-
-* Type
-* Link Text
-* Content
-
-## Enforce reading terms
-
-By checking this all terms popups will be opened one by one and have to be agreed to before setting the checkbox to true.
-
-## Word between links
-
-Displays a text between the links.
-
-## Popup Width/Height
-
-Please set modal width/height CSS property(px,%,em)
-
-## Popup Close Button
-
-Please set the close button text, if this value is empty the close button will not be displayed. Supports [My Tokens](/my-tokens/index.html) so you can pull data from various sources such as user profile.
+More customizable options:
+* word between links
+* popup width and height
+* popup close button (this is the "*I agree*" consent button shown on every popup)
+* **enforce reading terms** (when checked, each terms popup will be opened one by one; the True value to the Agreement checkbox will be applied **only when** "*I agree*" is clicked on all of the popups)
