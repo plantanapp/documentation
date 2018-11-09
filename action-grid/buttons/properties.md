@@ -36,5 +36,5 @@ Both button types(**item button**/**grid button**) in Action Grid have similar p
 ![Grid button show count](https://static.dnnsharp.com/documentation/grid_button_show_sum.png)
 
 
-> **Requires Data** was introduced in Action Grid 5.0.120\
-> **Show Sum** was introduced in Action Grid 5.0.95\
+> **Requires Data** was introduced in Action Grid 5.0.120  
+> **Show Sum** was introduced in Action Grid 5.0.95
