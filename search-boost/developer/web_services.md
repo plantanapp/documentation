@@ -42,10 +42,10 @@ The syntax is:
 ```xml
 //example.com/DesktopModules/DnnSharp/SearchBoost/SearchService.ashx?portalId=<number>&inst=<SB instance ID>&sb-page=<current page>&sb-pagesize=<pagesize>&sb-search=<search terms>&format=<[xml]|json|html>
 ```
-*The pagesize parameter is optional. When not specified, Search Boost defaults to the pagesize defined in the settings of current instance. The sb-page parameter is also optional and it's a 1 based index. So it defaults to 1.
+*The pagesize parameter is optional. When not specified, Search Boost defaults to the pagesize defined in the settings of current instance. The sb-page parameter is also optional and it's a 1 based index. So it defaults to 1. <br/>
 > v4 - v5
 ```xml
-http://example.com/DesktopModules/DnnSharp/SearchBoost/API/Search/Get?_alias=<sitealias>&behaviorId=<number>&query=<query>&top=<resultsnumber>
+http://example.com/DesktopModules/DnnSharp/SearchBoost/API/Search/Get?_alias=<sitealias>&behaviorId=<number>&query=<query>&top=<resultsnumber> 
 ```
 *All parameters are required.
 
