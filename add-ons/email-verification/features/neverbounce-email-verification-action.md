@@ -6,7 +6,7 @@ The action is available in:
 * API Endpoint
 * Sharp Scheduler
 
-and works only if the [Setup Neverbounce action](/setup-neverbounce-email-verification-action.html) was used at least once on the instance.
+and works only if the [Setup Neverbounce action](setup-neverbounce-email-verification-action.html) was used at least once on the instance.
 
 It takes an email address as input and will output the result received from the Neverbounce API in a token, which name you specify in the *Output Result TokenName* field.
 

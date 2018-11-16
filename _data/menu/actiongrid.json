@@ -113,13 +113,9 @@
                 "title": "Overview",
                 "url": "/action-grid/buttons/index.html"
             }, {
-                "title": "Proprities",
-                "url": "/action-grid/buttons/proprieties.html"
+                "title": "Button Properties",
+                "url": "/action-grid/buttons/properties.html"
             }, {
-                "title": "Actions",
-                "url": "/actions/index.html"
-            },
-            {
                 "title": "Special Buttons",
                 "url": "/action-grid/buttons/special-buttons.html"
             }
