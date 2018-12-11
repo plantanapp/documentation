@@ -17,8 +17,13 @@ SharpCDN is very easy to setup, just few seconds and a couple of clicks, and you
 
 ![](/sharp-cdn/assets/getting-started2.jpg)
 
-* **Minify JS**: Minify JS files to improve download speed;
-* **Minify CSS**: Minify CSS files to improve download speed;
+* **Note**: Composite Files option combines the resources into less files to reduce the number of file requests that the browser makes, thus lowering the load on the hosting server  
+Minifying resources (CSS and JavaScript files) reduces their sizes, increasing the fetch speed, and decreasing the page load times  
+**SharpCDN minification conflicts with DNN composite files, because files are minified after DNN combines the resources.**<br/><br/>
+This can lead to minification errors, resulting in malformed files.<br/>
+SharpCDN serves the content from Cloud servers, meaning it will find the closest server to the client location, in order to gain the maximum speed. This means that resource requests are made to other servers than DNN server, allowing the webserver IIS to process more concurrent requests. Also, the files are cached on the CDN servers, so the load time decreases drastically, opposite to DNN and ASP.Net which needs to process the file request and return a response  
+* **Minify JS**: Minify JS files to improve page load speed;
+* **Minify CSS**: Minify CSS files to improve page load speed;
 * **Exclude from Minification**: Provide relative paths of files to ignore from minification, one per line. For example: _/Portals/_default/default.css_. Supports My Tokens;
 * **Exclude from Minification (Regex)**: Provide Regex rules to exclude files from minification, , one per line. For example: _\/Portals\/_default\/.*.css_ will exclude all CSS fils in _/Portals/_default_ folder. Supports My Tokens.
 
