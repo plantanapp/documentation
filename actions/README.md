@@ -20,7 +20,7 @@ They can be easily identified by their name which is always of type **"... And C
 
 ![Flushable Actions](https://static.dnnsharp.com/documentation/flushable_actions.png)
 
-There are cases when the environment doesn't support chunked transfers on whcih the flushable actions rely in order to properly function; in this situation, even though the action is supposed to return a partial response to the front-end (browser/user) this is going to happen only after all actions are executed (at the end of the execution); this leads to situations in which multiple partial results are sent to the browser the same time with the final result.
+There are cases when the environment doesn't support chunked transfers on which the flushable actions rely in order to properly function; in this situation, even though the action is supposed to return a partial response to the front-end (browser/user) this is going to happen only after all actions are executed (at the end of the execution); this leads to situations in which multiple partial results are sent to the browser the same time with the final result.
 
 A test for the chunked transfers functionality was introduced in Action Form and Action Grid in order to warn you if you're using an environment(hosting) that doesn't support it and the flushable actions might not work as expected.
 > The test was introduced in Action Form 5.0.422 and Action Grid 5.0.147
