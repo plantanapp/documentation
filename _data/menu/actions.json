@@ -183,6 +183,9 @@
     }, {
         "title": "Regex - Multiple Results",
         "url": "/actions/regex-multiple-results.html"
+    }, {
+        "title": "Parse JSON into tokens",
+        "url": "/actions/parse_json_into_tokens.html"
     }]
 }, {
     "title": "Payments",
