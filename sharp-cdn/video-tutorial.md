@@ -4,5 +4,4 @@ Here's a video tutorial on what you can do with CDN, how to use it, the benefits
 
 [https://www.youtube.com/watch?v=KXUBmbZ_qck](https://www.youtube.com/watch?v=KXUBmbZ_qck){:target="_blank"}
 
-
 [https://www.youtube.com/watch?v=cQSMOcWF_TU](https://www.youtube.com/watch?v=cQSMOcWF_TU){:target="_blank"}
