@@ -1,6 +1,6 @@
 # GET
 
-### Handling Http GET requets
+### Handling HTTP GET requests
 
 The method will be able to get all values from the query string.
 

@@ -1,6 +1,6 @@
 # API Responses
 
-### Summary
+## Summary
 
 * Although not necessary, it's good a practice to always have APIs return data
 * Data can be JSON, XML, HTML, text or any other plain text format

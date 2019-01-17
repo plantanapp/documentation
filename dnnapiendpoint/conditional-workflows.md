@@ -1,6 +1,6 @@
 # Conditional Workflows
 
-### Summary
+## Summary
 
 * Fields, Actions and Validations can be dynamically enabled based on Conditions
 * A condition is a server side C# expression that evaluates to Boolean true/false

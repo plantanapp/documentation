@@ -1,6 +1,6 @@
 # Input Data
 
-### Summary
+## Summary
 
 * Create definitions for parameters that the API accepts Based on the HTTP Method; these will be sent via Query String or form data
 * The input fields can be accessed inside any action using the token syntax (e.g. [ParameterName])
@@ -25,9 +25,9 @@ The field indicates the reference to the input value from the body of the reques
 
 DnnApiEndpoint comes with 4 handlers:
 
-1. [Handling Http GET requets](get.html)
-2. [Handling Http POST requets with a JSON body](json.html)
-3. [Handling Http POST requets with a x-www-form-urlencoded body](post.html)
-4. [Handling Http POST requets with a XML body](xml.html)
+1. [Handling Http GET requests](get.html)
+2. [Handling Http POST requests with a JSON body](json.html)
+3. [Handling Http POST requests with a x-www-form-urlencoded body](post.html)
+4. [Handling Http POST requests with a XML body](xml.html)
 
 You can also add your own custom handlers. To see how to do this check the following link: [Input Handlers](../extensibility/input-handlers.html)
