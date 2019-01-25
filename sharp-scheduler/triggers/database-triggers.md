@@ -4,18 +4,42 @@ The database triggers are automatically executed in response to certain events i
 
 The supported database events are:
 
-* On Database Insert: 
-  - triggers when data is inserted into a table. The job is fired once for every inserted row ; 
-* On Database Update: 
-  - triggers when data is updated into a table. The job is fired once for every row that was updated ;
-* On Database Update Column: 
-  - triggers when data is updated into a named column. The job is fired once for every row that was updated ;
-* On Database Delete: 
-  - triggers when data is deleted from a table. The job is fired once for every deleted row.
+* On Database Insert:
+    * triggers when data is inserted into a table. The job is fired once for every inserted row ;
+* On Database Update:
+    * triggers when data is updated into a table. The job is fired once for every row that was updated ;
+* On Database Update Column:
+    * triggers when data is updated into a named column. The job is fired once for every row that was updated ;
+* On Database Delete:
+    * triggers when data is deleted from a table. The job is fired once for every deleted row.
 
 Notice that the tokens are built automatically using column names, so you can reference inserted, updated or deleted values inside actions using ``[ColumnName]`` token syntax. You also get the original value using the ``[ColumnName:Before]`` syntax.
-![](../assets/database-triggers.png)
+
+Starting with version [05.00.48](https://www.dnnsharp.com/products/download?p=SCHD&v=05.00.48) you can use the token **[Row:JsonData]** to see the information about the changes in a JSON format, like in the following example:
+
+```json
+{
+    "ColumnName": {
+        "OldValue": "Some old value",
+        "NewValue": "New column value"
+    }
+}
+```
+
+On insert, the ``OldValue`` property will be null, like in the following example:
+
+```json
+{
+    "ColumnName": {
+        "OldValue": null,
+        "NewValue": "Newly inserted value"
+    }
+}
+```
+
+![DatabaseTriggers](../assets/database-triggers.png)
 
 Notes:
-* You can not use text/ntext/image sql columns for Database Update Column ( they are actually [deprecated](https://stackoverflow.com/a/1935709/443379){:target="_blank"} since SQL Server 2005)
-* If you use a column token with the value null keep in mind that the tokenization result is actually a empty string. In order to have *NULL* as tokenization result set first action an *Inject Data* with condition ``[ColumnName] == ""`` and in Data an element with name *ColumnName* and value ``NULL``.
+
+* You can not use **text / ntext / image / timestamp** SQL column types for Database Update Column ( they are actually [deprecated](https://stackoverflow.com/a/1935709/443379){:target="_blank"} since SQL Server 2005)
+* If you use a column token with the value ``NULL`` keep in mind that the tokenization result is actually a empty string. In order to have *NULL* as tokenization result set first action an *Inject Data* with condition ``[ColumnName] == ""`` and in Data an element with name *ColumnName* and value ``NULL``.
