@@ -2,7 +2,7 @@
 
 The Multiple Choice Field is a closed-ended field type where people can select one or more values from a list of choices. You can select from a long list of field types and also you are given with the possibility of selecting where the field pulls its data from(datasource).
 ### Field types:
-* [Agree to Terms](/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms.html) - tra la la aasnafk
+* [Agree to Terms](/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms.html)
 * [Agree to Terms PopUp](/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms-popup.html)
 * [Dropdown with Autocomplete](/action-form/form-fields/form-fields-types/multiple-choice/dropdown-with-autocomplete.html)
 * [Dropdown with Checkboxes](/action-form/form-fields/form-fields-types/multiple-choice/dropdown-with-checkboxes.html)
@@ -18,5 +18,29 @@ The Multiple Choice Field is a closed-ended field type where people can select o
 * [Yes/No/Maybe \(Radio Boxes\)](/action-form/form-fields/form-fields-types/multiple-choice/yesnomaybe-radio-boxes.html)
 
 ### Datasource types:
+* **Page Content Templates**
+* **Portal Files**
+* **Portal Folder List**
+* **Containers**
+* **Portal Pages**
+* **Admin Pages**
+* **Host Pages**
+* **Portals**
+* **Modules**
+* **DNN Modules**
+* **Db Tables**
+* **DNN Email Templates Source**
+* **Credential Store Credential Groups**
+* **Credential Store Credential Types**
+* **Excel Columns**
+* **Module Items**
+* **Portal Aliases All**
+* **Portal Hosts**
+* **Roles**
+* **Stripe Connected Accounts(obsolete)**
+* **Stripe Connected Accounts**
+* **Tabs Pro Get Tabs**
+* **Time Zone List**
+* **Year Range**
+* **Items**
 * **SQL Query**
-* 
