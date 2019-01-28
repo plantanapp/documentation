@@ -1,6 +1,6 @@
 # Debugging
 
-### Summary
+## Summary
 
 * Use the Test Method function to test APIs using jQuery
 * Alternatively, use Postman which also allows settings headers, it saves previous requests and other neat functionality
