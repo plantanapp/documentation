@@ -1,6 +1,6 @@
 # API Actions
 
-## Summary
+### Summary
 
 * When an API is called, it executes a list of actions
 * Each action provides specific functionality such as sending an email, creating a DNN user and so on

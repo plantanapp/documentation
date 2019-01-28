@@ -1,6 +1,6 @@
 # Entities
 
-### Summary
+## Summary
 
 * Entities are objects, or list of objects, that you can load into context
 * If there's only one entity in the context, you don't need entities
