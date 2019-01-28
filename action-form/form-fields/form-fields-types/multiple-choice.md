@@ -2,7 +2,7 @@
 
 The Multiple Choice Field is a closed-ended field type where people can select one or more values from a list of choices. You can select from a long list of field types and also you are given with the possibility of selecting where the field pulls its data from(datasource).
 ### Field types:
-* [Agree to Terms](/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms.html) - tra la la aasnafk
+* [Agree to Terms](/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms.html)
 * [Agree to Terms PopUp](/action-form/form-fields/form-fields-types/multiple-choice/agree-to-terms-popup.html)
 * [Dropdown with Autocomplete](/action-form/form-fields/form-fields-types/multiple-choice/dropdown-with-autocomplete.html)
 * [Dropdown with Checkboxes](/action-form/form-fields/form-fields-types/multiple-choice/dropdown-with-checkboxes.html)
