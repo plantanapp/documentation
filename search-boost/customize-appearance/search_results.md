@@ -45,7 +45,7 @@ There are 3 types of tokens you can use:
 
 * My Tokens if it's installed
 
-Startin with version 4, in order to include My Tokens in the Search Boost Results Template follow the instructions bellow.
+Starting with version 4, in order to include My Tokens in the Search Boost Results Template follow the instructions bellow.
  * Open the Template.cshtml file from ~\DesktopModules\DnnSharp\SearchBoost\templates\output\default
  * Add the following line after @using DnnSharp.SearchBoost.Core.Behaviors; 
 ```
