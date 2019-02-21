@@ -16,3 +16,6 @@ Using this Action you can edit the following fields:
 
 ![](//static.dnnsharp.com/documentation/init_form.png)
 
+The same can be accomplished directly from javascript by calling:
+* ```dnnsf.api.actionForm.initForm(1234)``` - when you just want to init the form with module id 1234
+* ```dnnsf.api.actionForm.initForm(1234, {param1:val1, param2:val2})``` -  when you also want to pass some parameters to the form with module id 1234
