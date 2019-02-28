@@ -167,7 +167,6 @@
             url: searchApiUrl,
             type: "GET",
             contentType: "application/json; charset=utf-8",
-            crossDomain: true,
             success: function (response) {
                 renderResults(JSON.parse(response));
             }
