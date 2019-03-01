@@ -181,7 +181,7 @@
     // end Searchboost Setup
 
     // inverts the state of toggle menu for mobile and desktop 
-    $(".menu-toggle").click(function (e) {
+    $(".menu-toggle, .btn-menu-close").click(function (e) {
         e.preventDefault();
         window.matchMedia("(min-width: 768px)").matches ? $("#wrapper").toggleClass("toggled") : $("#wrapper").toggleClass("mobile-untoggled");
     });
