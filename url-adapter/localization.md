@@ -1,6 +1,6 @@
 # Localization
 
-When more that one language is in use on your site, to determine the language in which the content is displayed, we look at the following settings, in this order:
+When more than one language is in use on your site, to determine the language in which the content is displayed, we look at the following settings, in this order:
 
  1. The `language` parameter in query string
  2. The first segment of the request path (after the virtual path, if any).
