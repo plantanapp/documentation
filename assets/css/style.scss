@@ -211,6 +211,10 @@ header {
 }
 
 @media(max-width:768px) {
+    .menu-toggle{
+        display:inline;
+    }
+    
     .show-md {
         display: none;
     }
