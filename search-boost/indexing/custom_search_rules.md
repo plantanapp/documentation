@@ -49,15 +49,16 @@ In this example search rules are created for users with user profiles.
 
 Indexing Rules is the next step for creating a new index rule. This screen allows you to select columns that need to be indexed. Columns are converted to strings at the time of indexing.
 
-1. Specify the columns you want to index from the Select columns to Index list.
-2. Then scroll down to Link results to pages by using to specify where you want the page results to be generated when clicked.  You can manually input where you want the page results or select a specific column.
+1. Select the columns you want to index from the `Columns to Index` list.
+2. Then scroll down to `Link results` option to specify where you want the page results to redirect when clicked:
   
-      * Module ID column allows you to redirect to original content when a link is clicked in search results.  Specify the Module ID column you want to use for redirecting to original content.
-      * I'll specify a Module ID points to the module identified by the module id. Locate the Module ID and input it in the Module ID input field. You can use the next step below to pass additional parameters in the Query String.
-      * Tab ID Column is similar to the Module Id column. It also allows you to redirect to original content when a link is clicked in search results. Specify the Tab ID column you want to use.
-      * I'll specify a tab ID Column points to the page identified by this id. Locate the Tab ID and input it in the Tab ID input field. You can use the next step below to pass additional parameters in the Query String.
-      * URL Column points to the URL specified by the database field. This option should be used with Advanced Query to build the URL from the database fields and predetermined data. Specify the URL column you want to use for the database field.
-      * I'll specify a URL Column points to the URL specified in the this field. You can use the next step below to pass additional parameters in the Query String. You can use the following tokens in the URL:  [SearchItemId], [Type], [SubType], [ContainerPath], [ItemPath], [Title], [Description], [PortalId], [ModuleId], [AuthorId], [AuthorName], [DatePublished], [Custom&lt;KeyName&gt;]
+      * `By Module ID Column` allows you to redirect to original content when a link is clicked in search results.  Specify the Module ID column you want to use for redirecting to original content.
+      * `By Specific Module ID` allows you to specify a Module ID. Locate the Module ID and input it in the Module ID input field. You can use the next step below to pass additional parameters in the Query String.
+      * `By Tab ID Column` is similar to the `By Module ID Column` option. It also allows you to redirect to original content when a link is clicked in search results. Specify the Tab ID column you want to use.
+      * `By Specific Tab ID` points to the page identified by this id. Locate the Tab ID and input it in the Tab ID input field. You can use the next step below to pass additional parameters in the Query String.
+      * `By URL Column` points to the URL specified by the database field. This option should be used with Advanced Query to build the URL from the database fields and predetermined data. Specify the URL column you want to use for the database field.
+      * `By specific URL` option allows you to input an absolut URL, including an external URL. You can also use the fields from the indexed columns as tokens to form the final URL. See the **NOTE** at the end of this page. You can use the next step below to pass additional parameters in the Query String. There are a number of additional tokens that can be used in the URL:  [SearchItemId], [Type], [SubType], [ContainerPath], [ItemPath], [Title], [Description], [PortalId], [ModuleId], [AuthorId], [AuthorName], [DatePublished], [Custom&lt;KeyName&gt;]
+
 3. Then specify the unique record for indexing individual items in the Select ID Column option.
 4. Then select Specify Title Column to specify the title column for the module that you want in the search results.
 5. When you are done click Next to go to final step.
@@ -70,7 +71,7 @@ In this example specific columns are selected to be indexed, a tab id is inputte
 
  I'll specify a tab ID option is specified in Link results and 61 is inputted as the tab ID for page results. Users.[UserID] is specified as the unique id in Select Id Column.
  
- ![](/_site/search-boost/indexing/assets/rule5.jpg)
+![](/_site/search-boost/indexing/assets/rule5.jpg)
  
 ### **Step 4: Optional Parameters**
 
