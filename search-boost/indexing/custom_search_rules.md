@@ -13,7 +13,7 @@ Custom Search Rules allow you to define rules for indexing content directly from
 ![](/search-boost/indexing/assets/rule1.jpg)
 
 
-### Step 1: General Information
+### **Step 1: General Information**
 
 There are fields which collect basic information and parameters relevant to the search rule. You will need to input relevant data in the Title, Description, and Connection String fields. You will also need to choose a Boost parameter for the search. 
 
@@ -25,7 +25,7 @@ There are fields which collect basic information and parameters relevant to the 
 
 4. Then select a Boost parameter to determine how high you would like the results to rank.
 
-**A General Information Example**
+#### **A General Information Example**
 
 In this example search rules are created for users with user profiles. 
 
@@ -35,7 +35,7 @@ In this example search rules are created for users with user profiles.
 
 ![](/search-boost/indexing/assets/rule2.jpg)
 
-### Step 2: Data Source
+### **Step 2: Data Source**
 
 1. Write your SQL query in the Input Query text field. Your query should specify all relevant columns for indexing, including all special columns and it should return distinct columns.
 
@@ -45,26 +45,25 @@ In this example search rules are created for users with user profiles.
 
 ![](/search-boost/indexing/assets/rule3.jpg)
 
-### Step 3: Indexing Rules
+### **Step 3: Indexing Rules**
 
-Indexing Rules is the next step for creating a new index rule. This screen allows you to select columns that need to be indexed. Columns are converted to strings at the time of indexing. 
+Indexing Rules is the next step for creating a new index rule. This screen allows you to select columns that need to be indexed. Columns are converted to strings at the time of indexing.
 
-1. Specify the columns you want to index from the Select columns to Index list. 
-
-2. Then scroll down to Link results to pages by using to specify where you want the page results to be generated when clicked.  You can manually input where you want the page results or select a specific column.
+1. Select the columns you want to index from the `Columns to Index` list.
+2. Then scroll down to `Link results` option to specify where you want the page results to redirect when clicked:
   
-  * Module ID column allows you to redirect to original content when a link is clicked in search results.  Specify the Module ID column you want to use for redirecting to original content.
-  * I'll specify a Module ID points to the module identified by the module id. Locate the Module ID and input it in the Module ID input field. You can use the next step below to pass additional parameters in the Query String.
-  * Tab ID Column is similar to the Module Id column. It also allows you to redirect to original content when a link is clicked in search results. Specify the Tab ID column you want to use.
-  * I'll specify a tab ID Column points to the page identified by this id. Locate the Tab ID and input it in the Tab ID input field. You can use the next step below to pass additional parameters in the Query String.
-  * URL Column points to the URL specified by the database field. This option should be used with Advanced Query to build the URL from the database fields and predetermined data. Specify the URL column you want to use for the database field.
-  * I'll specify a URL Column points to the URL specified in the this field. You can use the next step below to pass additional parameters in the Query String. You can use the following tokens in the URL:
-    * [SearchItemId],[Type],[SubType],[ContainerPath],[ItemPath],[Title],[Description],[PortalId],[ModuleId],[AuthorId],[AuthorName],[DatePublished],[Custom<KeyName>]
-    1.  Then specify the unique record for indexing individual items in the Select ID Column option. 
-    2.  Then select Specify Title Column to specify the title column for the module that you want in the search results.
-    3.  When you are done click Next to go to final step.
+      * `By Module ID Column` allows you to redirect to original content when a link is clicked in search results.  Specify the Module ID column you want to use for redirecting to original content.
+      * `By Specific Module ID` allows you to specify a Module ID. Locate the Module ID and input it in the Module ID input field. You can use the next step below to pass additional parameters in the Query String.
+      * `By Tab ID Column` is similar to the `By Module ID Column` option. It also allows you to redirect to original content when a link is clicked in search results. Specify the Tab ID column you want to use.
+      * `By Specific Tab ID` points to the page identified by this id. Locate the Tab ID and input it in the Tab ID input field. You can use the next step below to pass additional parameters in the Query String.
+      * `By URL Column` points to the URL specified by the database field. This option should be used with Advanced Query to build the URL from the database fields and predetermined data. Specify the URL column you want to use for the database field.
+      * `By specific URL` option allows you to input an absolut URL, including an external URL. You can also use the fields from the indexed columns as tokens to form the final URL. See the **NOTE** at the end of this page. You can use the next step below to pass additional parameters in the Query String. There are a number of additional tokens that can be used in the URL:  [SearchItemId], [Type], [SubType], [ContainerPath], [ItemPath], [Title], [Description], [PortalId], [ModuleId], [AuthorId], [AuthorName], [DatePublished], [Custom&lt;KeyName&gt;]
 
-**An Indexing Rule Example**
+3. Then specify the unique record for indexing individual items in the Select ID Column option.
+4. Then select Specify Title Column to specify the title column for the module that you want in the search results.
+5. When you are done click Next to go to final step.
+
+#### **An Indexing Rule Example**
 
 In this example specific columns are selected to be indexed, a tab id is inputted, an id column and a title column are specified for the search results.
 
@@ -72,9 +71,9 @@ In this example specific columns are selected to be indexed, a tab id is inputte
 
  I'll specify a tab ID option is specified in Link results and 61 is inputted as the tab ID for page results. Users.[UserID] is specified as the unique id in Select Id Column.
  
- ![](/_site/search-boost/indexing/assets/rule5.jpg)
+![](/_site/search-boost/indexing/assets/rule5.jpg)
  
-### Step 4: Optional Parameters
+### **Step 4: Optional Parameters**
 
 The Optional Parameters screen allows you to provide specific details on how the rule is indexed. These parameters are optional. Specifying these parameters are not mandatory to establish a search rule.
 
@@ -96,7 +95,7 @@ The Optional Parameters screen allows you to provide specific details on how the
 
 9. When you are done specifying your optional parameters click Save.
  
-**An Optional Parameters Example**
+#### **An Optional Parameters Example**
 
 This example only selects the Users.[UserID] parameter from the Additional Parameters section. userid is then inputted in the text field as the parameter to pass. 
 
@@ -106,7 +105,7 @@ You will now need to index your Custom Rule. To index your Custom Rule click on 
 
 When the index is successfully completed you will see the Search Index Successfully Rebuilt message on the top right like in the image below. If you see this message, then your rule was successfully created.  
 
-#### Incremental Indexing
+#### **Incremental Indexing**
 
 It is possible to setup a custom rule in such a way so it indexes only new content. This will greatly improve the indexer performance. Here are the rules that you must keep in mind: 
 If you only have a published column, Search Boost is smart enough to pick up only entries added after last indexing operation. However, if entries are deleted they will still be present in search.
@@ -115,18 +114,20 @@ If you also have a IsDeleted column, and the "Last Modified" column changes when
 
 #### How to use Custom Data
 
-1. create a rule to index in Files table in File Name column
+1. Create a rule to index in Files table in File Name column
 
-2. access Custom Data > check Extension > set example in "pass as"
+2. Access Custom Data > check Extension > set example in "pass as"
 
-3. save > index
+3. Save > reindex
 
-4. search for a keyword existing in File Name column, let's say "wink"
+4. Search for a keyword existing in File Name column, let's say "wink"
 
-5. on the search result page append in the url: 
-
-`page?sb-search=wink&sb-inst=418&sb-logid=136-0e86hr2rntycpauh&sbc-example=gif`
+5. On the search result page append in the url: `page?sb-search=wink&sb-inst=418&sb-logid=136-0e86hr2rntycpauh&sbc-example=gif`
 
 As expected result, "wink" result should be returned and displayed on SearchBoostResults - if you change the extension from gif to doc, no result should be displayed since there is no doc file with wink name in the File Name column.
 
-
+### **NOTE**
+  If you set the option of `Link Results` to `By specific URL`, you will need to select the fields in `Custom Data` which you want to tokenize in the URLs.
+  
+  **Example**: For files, you will want to add a QueryString parameter named FileId -> URL should look like ``http://mydomain.com/Page?FileId=[FileId]``.
+  If you do not check the `[FileId]` in `Custom Data` then the tokenization will not happen!
