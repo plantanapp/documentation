@@ -133,3 +133,13 @@ The tokens below are generated and can be used later in actions:
 The datasource information of the set Action Grid is not automatically updated to reflect the changes.
 
 This option is available only in grid template.
+
+## Embed Grid - mirror/show on other pages or websites
+
+The feature was added in Action Grid 5.0.193 and can be found under General Settings > Advanced UI Settings. Once activated it will generate a code which placed on any other webpage will generate an iframe where the original grid is loaded.
+![Embed Grid](https://static.dnnsharp.com/documentation/embed_grid.png)
+
+You need to make sure that:
+* there is only one X-Frame-Options tag in your web.config file as indicated in the helptext below the setting
+* the page where the original/source Grid is situated is public (everyone has view access to it)
+* a grid hosted on an https page will be embeded only on https pages as mixed content will most probably be blocked by the browser
