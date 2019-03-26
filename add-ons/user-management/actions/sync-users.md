@@ -1,4 +1,4 @@
-#Sync users
+# Sync users
 
 The Sync Ussers action will allow you to synchronize users across all portals of your website.
 
