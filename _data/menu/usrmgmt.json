@@ -6,7 +6,6 @@
     "url": "add-ons/user-management/installation.html"
   }, { 
     "title": "Actions",
-    "url": "add-ons/user-management/actions/scheduler-triggers.html",
     "subpages": [{
       "title": "User/Password Validation",
       "url": "add-ons/user-management/actions/user-pass-validation.html"
