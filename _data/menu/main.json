@@ -127,6 +127,10 @@
                 "url": "/add-ons/portal-management/actions/portal-actions.html"
             }]
         }]
+    }, {
+        "title": "User Management",
+        "url": "/add-ons/user-management/index.html",
+        "ref": "usrmgmt"
     }]
 }, {
     "title": "Integrations",
