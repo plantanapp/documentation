@@ -1,4 +1,4 @@
-#Create Auto Login Link
+# Create Auto Login Link
 
 The action will help you create user specific links that when clicked will automatically login the user and redirect to a portal page(or url) specified in the action.
 

@@ -1,4 +1,4 @@
-#User/Password Validation
+# User/Password Validation
 
 This action allows you to verify credentials for a user account by providing the username and password combination that needs to be checked.
 

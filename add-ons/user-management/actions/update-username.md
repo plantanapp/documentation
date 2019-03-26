@@ -1,4 +1,4 @@
-#Update Username
+# Update Username
 
 The Update Username action will allow you to change the username for:
 * a given user of your website (identified with either *username*, *userid* or *email*)
