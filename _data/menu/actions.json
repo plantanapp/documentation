@@ -79,6 +79,9 @@
     }, {
         "title": "Server Request",
         "url": "/actions/data/server-request.html"
+    },{
+        "title": "Execute API Method",
+        "url": "/actions/data/execute-api-method.html"
     }, {
         "title": "Update Form Data (AJAX)",
         "url": "/actions/data/update-form-data-ajax.html"
