@@ -48,7 +48,7 @@ this.myFunc = function(args) {
 
 And then, just invoke the function from an expression just as you'd invoke any function in JavaScript.
 
-## Visibility
+## Visibility / Show
 
 This binding dynamically shows or hides fields based on a Boolean expression. Access field values by their name between square brackets and use standard JavaScript Boolean operators (==, !=, <, >, !). For example, use <b>[PaymentMethod] == 'CreditCard'</b> to show the credit card field only when the Payment Method is set accordingly. More complex expressions are possible by using the logical and operator (&&) and the or operator (\|\|).
 
@@ -81,6 +81,14 @@ If you need to join more expressions, also use round brackets to group condition
 
 <strong> Important! </strong>
 Hidden fields do not get submitted to the server. This is because the show binding is commonly used to create conditional logic, where only the visible fields make sense to be filled in and sent to server.
+
+## Enable
+
+This binding is used to auto determine in realtime(only based on data available on front-end) if the field is enabled or not. As for all the bind expression conditions you will not be able to use [MyTokens](/my-tokens/index.html) tokens as they will be evaluated only once, at form initialization.
+
+![Enable bind expression](https://static.dnnsharp.com/documentation/enable_bind_expression.png)
+
+> The setting was added in Action Form 5.0.519 and is available in all following versions.
 
 ## Value
 
