@@ -2,7 +2,7 @@
 
 ## Basic Topics
 
-* In order to learn hot to install the DNN API Endpoint module please follow the [Setup Guide](setup.html).
+* In order to learn how to install the DNN API Endpoint module please follow the [Setup Guide](setup.html).
 
 * To understand the API Methods components and to experiment with a complex case where we used Action Form module with API Endpoint, click [here](../api-methods.html).
 

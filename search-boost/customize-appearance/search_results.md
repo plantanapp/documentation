@@ -45,6 +45,18 @@ There are 3 types of tokens you can use:
 
 * My Tokens if it's installed
 
+Starting with version 4, in order to include My Tokens in the Search Boost Results Template follow the instructions bellow.
+  
+  * Open the Template.cshtml file from ~\DesktopModules\DnnSharp\SearchBoost\templates\output\default
+  * Add the following line after @using DnnSharp.SearchBoost.Core.Behaviors; 
+```
+@using DnnSharp.Common;
+```
+  * Use this syntax wherever you want the token to be shown:
+```
+@TokenUtil.Tokenize("[<mytoken>]");
+ ```
+
 * Local Tokens - these refer to each result. Valid tokens are:
 
   * SearchItemId

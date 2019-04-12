@@ -1,6 +1,87 @@
 # Creating New Templates
 
-**NOTICE**: This document is in the process of updating it to reflect SearchBoost 3.
+Creating a new Search Boost 4+ template is pretty simple, but it requires having basic knowledge about Razor, HTML, CSS and Javascript.
+
+**Step 1:** Understanding how it works
+
+In Search Boost 4 we have the Input Template and Output Template which can be modified individually and any Input(Search) will work with any Output (Result). The path where they can be found is the following: \DesktopModules\DnnSharp\SearchBoost\templates
+
+The basic structure has 4 files: Template.json.config, template.cshtml, styles.css, script.js. While the first 2 are critical for a template to work, the last 2 are auxiliary(nice to have but not required).
+
+Template.json.config - this file contains the template information, like:
+ * Id - unique id for the template
+ * DisplayName - name to appear in the settings drop-down
+ * CssIncludes - CSS Files to be added with with this templates to help in design
+ * JsIncludes -  CSS Files to be added with with this templates to help in functionality
+ * TemplateFile - the razor template that will be rendered
+
+Template.cshtml - The actual file that will be rendered. We will get there later in this document. 
+
+
+**Step 2:** Preparation
+
+1. Just copy the default folder from the Input or the Output folder and rename it. 
+2. Open the new folder and edit the Template.json.config file
+3. Make sure that you update the values for Id and DisplayName. The rest can remain as they are for the moment.
+
+You now have a clone of the default template that can be modified at any point. It's also recommeded having a custom template because on module upgrade the default template gets overwritten. 
+
+
+**Step 3:** Modifying the template.cshtml file
+
+This is the actual file where the layout and/or functionality can be changed.
+
+Keep in mind to leave all @using lines and the error management part untouched. Making modifications there may cause unexpected behaviors. 
+
+All the settings inside Search Boost Studio are available here in different variables (eg: results , resultSet, behavior). Depending on what you want to change, all the sections inside the template have a comment that starts with two slash signs(//).   
+
+Let's try to modify the //Panel section; the //Description (Output Template) to be exact. In the default template the line looks like this:
+
+```html
+<p class="sb-description" style="clear:both">@Html.Raw(result.Description) </p>
+```
+
+Now let's change the font size and the color of the text:
+
+```html
+<p class="sb-description" style="clear:both; font-size:30px; color:red;">@Html.Raw(result.Description) </p> 
+```
+
+If you don't want to display this part at all, you can just delete it or hide it by adding the display:none; css attribute:
+
+```html
+<p class="sb-description" style="clear:both; display:none;">@Html.Raw(result.Description) </p>  
+```
+
+You can also edit the Description info or add your own custom html code:
+
+```html
+<div class="sb-description" style="clear:both">
+  <h3>Custom Title</h3>
+  <p>@Html.Raw(result.Description) </p>
+</div>   
+```
+
+This can be done to any part of the template.cshtml to achieve your custom layout and/or custom logic.
+
+The templates contain also &lt;script&gt; tags at the bottom of the files that control Sort, Filter, Pages. We don't recommend changing this area, unless you fully understand the Search Boost Extension and the modifications are strictly necessary.
+
+CSS Modifications can be added inline or in the style.css file, by targeting the desired element by its class. All HTML elements have individual classes that start with sb-  and an unique class for each part(sb-head-<mid> sb-opt-<mid> sb-opt-<mid> where mid is the module id), like for ex:
+
+```html
+.sb-opt-456 sb-description {
+font-size:30px;
+color:red;
+}
+```
+
+
+
+
+
+**Creating XSL based templates**
+
+**NOTICE**: This type of template is considered obsolete in Search Boost 4+ 
 
 The true customization power lies in the XSL based templates.  They allow you to build any kind of layout you can imagine. To create your own templates we recommend that you become familiar with CSS, HTML and XSL.
 

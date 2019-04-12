@@ -20,7 +20,7 @@ with the following body:
 
             Email                  my@user.com
 
-Now the keys received from the request are not entirely user friendly. By using the reference option we can store the data into more appropriately named tokens. To do this, in the reference field type the name of the key and in the name field write anything you want. In this example, the reference option could be *uid* and the name *UserName*. Now, you can use the token associated with the field (i.e. *[UserName]*), as it will have the value from the request (i.e. *MyUserName*).
+Now the keys received from the request are not entirely user friendly. By using the reference option we can store the data into more appropriately named tokens. To do this, in the reference field type the name of the key and in the name field write anything you want. In this example, the reference option could be *uid* and the name *UserName*. Now, you can use the token associated with the name field (i.e. *[UserName]*), as it will have the value from the request (i.e. *MyUserName*).
 
 Also, in this example, the reference option is left empty and the field name is set to Email. The [Email] will be correctly created since it will use the field name as a default reference.
 

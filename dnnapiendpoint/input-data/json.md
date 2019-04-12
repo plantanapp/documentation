@@ -1,6 +1,6 @@
 # JSON
 
-### Handling Http POST requets with a JSON body
+### Handling HTTP POST requests with a JSON body
 
 When a web browser make a request it sends information to the server about what it is looking for in headers. One of these headers is the Content-Type header. The Content-Type header tells the server what file format, or more correctly MIME-type, the browser is looking for. One such type is application/json. By using this Content-type you are telling the server that the data received from the request is in a JSON format and it should be treated accordingly.
 
