@@ -28,6 +28,9 @@
     }, {
         "title": "Time Triggers",
         "url": "/sharp-scheduler/triggers/time-triggers.html"
+    }, {
+        "title": "Manually Trigger Job Remotely",
+        "url": "/sharp-scheduler/triggers/manual-trigger.html"
     }]
 }, {
     "title": "Actions",
