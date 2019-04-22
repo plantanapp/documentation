@@ -162,6 +162,12 @@
         "url":"/actions/flow/execute-actions.html"
     }]
 },{
+    "title": "Google",
+    "subpages": [{
+        "title": "Google Maps",
+        "url":"/actions/google/google-maps-location-picker.html"
+    }]
+},{
     "title": "Message",
     "url": "/actions/message.html",
     "subpages": [{
