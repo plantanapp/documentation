@@ -47,7 +47,11 @@
     "url":"/dnnapiendpoint/api-methods.html"
 }, {
     "title":"API Responses",
-    "url":"/dnnapiendpoint/api-responses.html"
+    "url":"/dnnapiendpoint/api-responses.html",
+    "subpages": [{
+        "title":"Download File (Response)",
+        "url":"/dnnapiendpoint/responses/response-download-file.html"
+    }]
 }, {
     "title":"Conditional Workflows",
     "url":"/dnnapiendpoint/conditional-workflows.html"
