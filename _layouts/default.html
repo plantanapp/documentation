@@ -29,19 +29,20 @@
 <body class="container-fluid">
     <div id="wrapper" class="toggled mobile-untoggled">
         <!-- Sidebar -->
-        <div id="sidebar-wrapper">
+        <nav id="sidebar-wrapper">
             <ul class="sidebar-nav">
                 <li class="sidebar-brand">
                     <a class="text-center" target="_blank" href="//plantanapp.com">
                         <img src="https://static.plantanapp.com/plantanapp-logo-black.png" width="180" alt="logo">
                     </a>
+                    <span class="btn-menu-close"><i class="fas fa-times"></i></span>
                 </li>
                 <li class="tree">
                     {% include menu.html pages = site.data.menu.main %}
                 </li>
             </ul>
-            <span class="menu-toggle"><i class="fas fa-bars"></i></span>
-        </div>
+            <span class="menu-toggle"><i class="fas fa-times"></i></span>
+        </nav>
         <!-- /#sidebar-wrapper -->
         <div id="page-content-wrapper">
             <div class="row">

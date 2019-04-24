@@ -79,6 +79,9 @@
     }, {
         "title": "Server Request",
         "url": "/actions/data/server-request.html"
+    },{
+        "title": "Execute API Method",
+        "url": "/actions/data/execute-api-method.html"
     }, {
         "title": "Update Form Data (AJAX)",
         "url": "/actions/data/update-form-data-ajax.html"
@@ -159,6 +162,12 @@
         "url":"/actions/flow/execute-actions.html"
     }]
 },{
+    "title": "Google",
+    "subpages": [{
+        "title": "Google Maps",
+        "url":"/actions/google/google-maps-location-picker.html"
+    }]
+},{
     "title": "Message",
     "url": "/actions/message.html",
     "subpages": [{
@@ -179,10 +188,13 @@
     "url": "/actions/parsing.html",
     "subpages": [{
         "title": "Regex",
-        "url": "/actions/regex.html"
+        "url": "/actions/parsing/regex.html"
     }, {
         "title": "Regex - Multiple Results",
-        "url": "/actions/regex-multiple-results.html"
+        "url": "/actions/parsing/regex-multiple-results.html"
+    }, {
+        "title": "Parse JSON into tokens",
+        "url": "/actions/parsing/parse_json_into_tokens.html"
     }]
 }, {
     "title": "Payments",

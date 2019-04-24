@@ -1,0 +1,22 @@
+[{
+    "title": "Overview",
+    "url": "add-ons/user-management/index.html"    
+  }, {
+    "title": "Installation",
+    "url": "add-ons/user-management/installation.html"
+  }, { 
+    "title": "Actions",
+    "subpages": [{
+      "title": "User/Password Validation",
+      "url": "add-ons/user-management/actions/user-pass-validation.html"
+    }, {
+      "title": "Sync Users",
+      "url": "add-ons/user-management/actions/sync-users.html"  
+    }, {
+        "title": "Create Auto Login Link",
+        "url": "add-ons/user-management/actions/auto-login-link.html"  
+      }, {
+        "title": "Update Username",
+        "url": "add-ons/user-management/actions/update-username.html"  
+      }]
+  }]
