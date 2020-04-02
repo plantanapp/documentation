@@ -21,8 +21,8 @@ const users = [
 ];
 
 const siteConfig = {
-  title: 'Test Site', // Title for your website.
-  tagline: 'A website for testing',
+  title: 'Plant an App', // Title for your website.
+  tagline: 'Developer-First Low-Code Platform',
   url: 'https://your-docusaurus-test-site.com', // Your website URL
   baseUrl: '/', // Base URL for your project */
   // For github.io type URLs, you would set the url and baseUrl like:
@@ -30,6 +30,7 @@ const siteConfig = {
   //   baseUrl: '/test-site/',
 
   docsSideNavCollapsible: true,
+  disableHeaderTitle: true,
   // Used for publishing and more
   projectName: 'test-site',
   organizationName: 'facebook',
@@ -49,8 +50,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
+  headerIcon: 'img/CustomLogo2.png',
+  footerIcon: 'img/CustomLogo2.png',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
