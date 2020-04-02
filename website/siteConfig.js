@@ -29,6 +29,7 @@ const siteConfig = {
   //   url: 'https://facebook.github.io',
   //   baseUrl: '/test-site/',
 
+  docsSideNavCollapsible: true,
   // Used for publishing and more
   projectName: 'test-site',
   organizationName: 'facebook',
