@@ -40,7 +40,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'doc1', label: 'Documentation'},
     {doc: 'doc4', label: 'API'},
     {page: 'help', label: 'Help'},
     {blog: true, label: 'Blog'},
@@ -50,8 +50,8 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/CustomLogo2.png',
-  footerIcon: 'img/CustomLogo2.png',
+  headerIcon: 'img/pap-logo-header.png',
+  footerIcon: 'img/pap-logo-footer.png',
   favicon: 'img/favicon.ico',
 
   /* Colors for website */
