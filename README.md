@@ -8,8 +8,12 @@ In order to get started contributing to the documentation, you will need the fol
 
 First of all, you will need GitExtensions and Visual Studio Code installed in order to have control over the repository and be able to modify the documentation.
 
-Second, you have to follow the Docusaurus installation [guide](https://docusaurus.io/docs/en/installation) which will explains all the steps necessary in order to get a local version up and running. This will help you see how your changes look and be sure everything is correct. Everything about how Docusaurus works is laid on in the documentation of it, from the very basic page adding all the way up to localized pages and such.
+You will also have to install [Node](https://nodejs.org/en/download/) and [Yarn](https://classic.yarnpkg.com/en/docs/install). The minimum versions currently requested by Docusaurus are Node >= 8.X and Yarn >= 1.5.
 
-After following the installation guide you should be able to open up a powershell command line in the `website`  directory and start the local server by running `npm-start`. This is the basic example site that docusaurus sets you up with in order to get up and running.
+The quick set-up procedure is the following:  
 
-In order to get the Plant An App documentation locally, you will have to clone the repository in a different folder and the paste the contents of the said folder over the starting app, this should refresh the page and you should be able to see our documentation locally.
+  1. Clone the repository into your folder of choice. 
+  2. Navigate over to the folder `website`.
+  3. Use the key combo `Ctrl + Shift + Right-Click` in order to bring up menu and select  'Open Powershell Window here'
+  4. Inside the new window run the command `npm-install` which will install all the necessary dependencies to run Docusaurus locally.
+  5. After the command finishes, run the command `npm start` which will start your local server and open a new tab with the site in your browser.
