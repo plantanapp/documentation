@@ -1,17 +1,17 @@
 module.exports = {
-  title: 'My Site',
+  title: 'Plant An App',
   tagline: 'The tagline of my site',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/pap-logo-footer.png',
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: '',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/pap-logo-header.png',
       },
       links: [
         {
@@ -22,7 +22,7 @@ module.exports = {
         },
         {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/plantanapp/documentation',
           label: 'GitHub',
           position: 'right',
         },
