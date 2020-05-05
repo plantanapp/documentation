@@ -19,7 +19,7 @@ We recommend installing the following Visual Studio Code extensions for markdown
 The quick set-up procedure is the following:  
 
   1. Clone the repository into your folder of choice. 
-  2. Navigate over to the folder in which you cloned your repository.
+  2. Navigate inside the folder of the project you cloned.
   3. Use the key combo `Shift + Right-Click` in order to bring up menu and select  'Open Powershell Window here'
-  4. Inside the new window run the command `npm-install` which will install all the necessary dependencies to run Docusaurus locally.
+  4. Inside the new window run the command `npm install` which will install all the necessary dependencies to run Docusaurus locally.
   5. After the command finishes, run the command `npm start` which will start your local server and open a new tab with the site in your browser.
