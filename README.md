@@ -9,7 +9,7 @@ In order to get started contributing to the documentation, you will need the fol
 
 First of all, you will need GitExtensions and Visual Studio Code installed in order to have control over the repository and be able to modify the documentation.
 
-You will also have to install [Node](https://nodejs.org/en/download/), the minimum versions currently requested by Docusaurus is Node >= 10.9.0.
+You will also have to install [Node](https://nodejs.org/en/download/), the minimum version currently requested by Docusaurus is Node >= 10.9.0.
 
 We recommend installing the following Visual Studio Code extensions for markdown:
 
