@@ -18,9 +18,8 @@ module.exports = {
           to: 'docs/doc1',
           activeBasePath: 'docs',
           label: 'Docs',
-          position: 'left',
+          position: 'right',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
           href: 'https://github.com/plantanapp/documentation',
           label: 'GitHub',
@@ -64,10 +63,6 @@ module.exports = {
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
             {
               label: 'GitHub',
               href: 'https://github.com/plantanapp/documentation',
