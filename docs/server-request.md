@@ -6,7 +6,7 @@ sidebar_label: Server Request
 ​
 A low-level action that allows for any kind of HTTP request to be performed.
 
-## `Typical Use Cases`
+## `Typical use cases`
 
 - Integrate with external systems through APIs
 - Crawl web pages
@@ -17,20 +17,38 @@ A low-level action that allows for any kind of HTTP request to be performed.
 - Read files or binary streams
 - Call APIs from same app system - use the [Call Local API](/docs/Actions/CallLocalApi.md) action instead
 
-## `Related Actions`
+## `Related actions`
 
 - [Parse JSON](/docs/Actions/CallApi.md) - creates variables from JSON returned by API calls
 - [Regex](/docs/Actions/CallApi.md) - create variables by matching patterns inside the content
 
-## `Parameter Reference`
+## `Parameter reference`
 
-| Parameter     | Description                           | Supports Variables |
+| Parameter     | Description                           | Supports variables |
 |---------------|---------------------------------------|--------------------|
 | URL           | Absolute URL where the resource to be invoked lives. | Yes |
-| HTTP Method   | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD. | No |
+| Enforce SSL   | This will for ce request to be sent to a secure version of the URL.(https instead of http)| No |
+| Timeout       | The amount of time in which the response must come or the request fails. | Yes |
+| HTTP Method   | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD, PATCH. | No |
 | Data          | If the HTTP Method is POST or PUT, data is allowed to be sent to the target URL. The data can take various forms, from key-value pairs to complex JSON. For the target URL to understand the format, it needs to be passed through the Content-Type header. | Yes |
+| Headers | Additional headers to pass with the request. | Yes |
+| Ignore Errors | Any errors thrown when executing this action will be ignored. Using this options will not stop the triggering of the 'On Error' event. | No |
 
-## `GET Requests`
+## `Events reference`
+
+| Event Name | Description |
+|------------|-------------|
+| On Error | When an error is thrown during the execution of this action, it will trigger the execution of the list of actions specified. |
+
+## `Output parameters reference`
+
+| Parameter | Description |
+|-----------|-------------|
+| Output Headers | The list of the headers which are to be retrieved from the request response. |
+| Output Token Name | The variable name in which the response payload is to be stored for further use. |
+
+
+## `GET requests`
 
 GET is used to retrieve data or content. Note that although GET was not designed for sending data to the target URL, in reality that often happens through Query String parameters. These can be placed directly in the URL parameter. For example
 
@@ -40,7 +58,7 @@ https://example.com?id=[Id]&type=[Type]
 
 The query string parameters are supported by all HTTP Methods.
 
-## `POST and PUT Requests`
+## `POST and PUT requests`
 
 These methods allow for data to be passed to the target URL. The difference between then if often semantical. POST usually means creating new records, while PUT means updating them. This is defined by the [REST specification](https://www.w3.org/2001/sw/wiki/REST).
 ​
