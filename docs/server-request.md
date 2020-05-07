@@ -6,7 +6,7 @@ sidebar_label: Server Request
 ​
 A low-level action that allows for any kind of HTTP request to be performed.
 
-## `Typical use cases`
+## `Typical Use Cases`
 
 - Integrate with external systems through APIs
 - Crawl web pages
@@ -17,38 +17,43 @@ A low-level action that allows for any kind of HTTP request to be performed.
 - Read files or binary streams
 - Call APIs from same app system - use the [Call Local API](/docs/Actions/CallLocalApi.md) action instead
 
-## `Related actions`
+## `Related Actions`
 
 - [Parse JSON](/docs/Actions/CallApi.md) - creates variables from JSON returned by API calls
 - [Regex](/docs/Actions/CallApi.md) - create variables by matching patterns inside the content
 
-## `Parameter reference`
+## `Input Parameter Reference`
 
-| Parameter     | Description                           | Supports variables |
+| Parameter     | Description                           | Supports Variables |
 |---------------|---------------------------------------|--------------------|
-| URL           | Absolute URL where the resource to be invoked lives. | Yes |
-| Enforce SSL   | This will for ce request to be sent to a secure version of the URL.(https instead of http)| No |
-| Timeout       | The amount of time in which the response must come or the request fails. | Yes |
+| URL           | The URL where the resource to be invoked lives. It can be relative or absolute. | Yes |
+| Enforce SSL   | This will for the request to be sent to a secure version of the URL(https instead of http). This is useful for the instances in which the URL comes from a variable and you want to ensure it is secured.| No |
+| Timeout       | The amount of time in seconds in which the response must come or the request fails. If nothing is provided, it will default to 100 seconds. If you don't want to wait for the request to finish(when you must leverage higher Timeout values) we suggest using [Execute Actions Async](/docs/Actions/ExecuteAsync.md). | Yes |
 | HTTP Method   | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD, PATCH. | No |
 | Data          | If the HTTP Method is POST or PUT, data is allowed to be sent to the target URL. The data can take various forms, from key-value pairs to complex JSON. For the target URL to understand the format, it needs to be passed through the Content-Type header. | Yes |
+|Do not Escape Tokens in Data | By default, we escape tokens in order to not break the XML structure. If you need your tokens to bring XML data, you will have to check this. | No|
+| Disable Refer Header | By default, we append a referer header  but some APIs will throw errors if this header is sent. If the resource  you want to use doesn't need the referer header, check this. | No |
 | Headers | Additional headers to pass with the request. | Yes |
+| Use DNN Proxy Settings | Check this if you want to use the proxy settings you have set for your DNN instance. | No |
+| Add Current Cookies | This will add the current cookies of the session to the request. | No |
+| Cookie Container Token |  This will name a container in which to store the cookies. If you want to use cookies from the previous actions or pass them along the execution stack, make sure they have same name. | No |
+| Url Token Context | If you are using variables to provide the  URL this will decide whether the variables will be URL encoded or not. | No |
 | Ignore Errors | Any errors thrown when executing this action will be ignored. Using this options will not stop the triggering of the 'On Error' event. | No |
 
-## `Events reference`
-
-| Event Name | Description |
-|------------|-------------|
-| On Error | When an error is thrown during the execution of this action, it will trigger the execution of the list of actions specified. |
-
-## `Output parameters reference`
+## `Output Parameters Reference`
 
 | Parameter | Description |
 |-----------|-------------|
 | Output Headers | The list of the headers which are to be retrieved from the request response. |
 | Output Token Name | The variable name in which the response payload is to be stored for further use. |
 
+## `Events Reference`
 
-## `GET requests`
+| Event Name | Description |
+|------------|-------------|
+| On Error | When an error is thrown during the execution of this action, it will trigger the execution of the list of actions specified. |
+
+## `GET Requests`
 
 GET is used to retrieve data or content. Note that although GET was not designed for sending data to the target URL, in reality that often happens through Query String parameters. These can be placed directly in the URL parameter. For example
 
@@ -58,7 +63,7 @@ https://example.com?id=[Id]&type=[Type]
 
 The query string parameters are supported by all HTTP Methods.
 
-## `POST and PUT requests`
+## `POST and PUT Requests`
 
 These methods allow for data to be passed to the target URL. The difference between then if often semantical. POST usually means creating new records, while PUT means updating them. This is defined by the [REST specification](https://www.w3.org/2001/sw/wiki/REST).
 ​
@@ -69,17 +74,18 @@ The format needs to be reflected via the Content Type header that is inputted in
 
 ## `Examples`
 
-### `1. Read a json array`
+### `1. Read a JSON Array`
 
 ​
-The action below reads a list of employees from an API via GET. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below reads a list of employees from an API via GET and saves it to a variable `[Employees]`. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 ​
 
 ```json
 ​
 {
-    "Title": "Get employees",
+    "Title": "Server Request",
     "ActionType": "PostData",
+    "Description": "Get Employees",
     "Parameters": {
         "URL": "http://dummy.restapiexample.com/api/v1/employees",
         "UseSSL": "",
@@ -90,7 +96,7 @@ The action below reads a list of employees from an API via GET. [Import it](/doc
             "IsExpression": false,
             "Parameters": {}
         },
-        "Data": "name=[FirstName]\npage=[Tab:TabName]",
+        "Data": "",
         "DoNotEscapeTokens": "",
         "DisableReferer": "",
         "Headers": "",
@@ -103,7 +109,7 @@ The action below reads a list of employees from an API via GET. [Import it](/doc
             "IsExpression": false,
             "Parameters": {}
         },
-        "OutputTokenName": "",
+        "OutputTokenName": "Employees",
         "OutputHeaders": "",
         "IgnoreErrors": "",
         "OnError": []
@@ -112,17 +118,19 @@ The action below reads a list of employees from an API via GET. [Import it](/doc
 ​
 ```
 
-### `2. Read a web page`
+### `2. Read a Web Page`
 
 The action below reads the homepage from `http://example.com/` and saves it into a variable called `[Homepage]`. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 
 {
-    "Title": "Read homepage",
+    "Title": "Server Request",
     "ActionType": "PostData",
+    "Description": "Read homepage",
+    "Condition": null,
     "Parameters": {
-        "URL": "http://dummy.restapiexample.com/api/v1/employees",
+        "URL": "http://example.com/",
         "UseSSL": "",
         "Timeout": "",
         "HttpMethod": {
@@ -131,10 +139,10 @@ The action below reads the homepage from `http://example.com/` and saves it into
             "IsExpression": false,
             "Parameters": {}
         },
-        "Data": "name=[FirstName]\npage=[Tab:TabName]",
-        "DoNotEscapeTokens": "",
+        "Data": "",
+        "DoNotEscapeTokens": false,
         "DisableReferer": "",
-        "Headers": "",
+        "Headers": [],
         "UseDNNProxySettings": "",
         "AddCurrentCookies": "",
         "CookieContainerToken": "",
@@ -144,7 +152,7 @@ The action below reads the homepage from `http://example.com/` and saves it into
             "IsExpression": false,
             "Parameters": {}
         },
-        "OutputTokenName": "",
+        "OutputTokenName": "Homepage",
         "OutputHeaders": "",
         "IgnoreErrors": "",
         "OnError": []
@@ -153,29 +161,36 @@ The action below reads the homepage from `http://example.com/` and saves it into
 ​
 ```
 
-### `3. POST a JSON object`
+### `3. POST a JSON Object`
 
 This action posts a new lead to a CRM system. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 
 {
-    "Title": "Create Lead in CRM",
+    "Title": "Server Request",
     "ActionType": "PostData",
+    "Description": "Create Lead in CRM",
+    "Condition": null,
     "Parameters": {
         "URL": "http://dummy.restapiexample.com/api/v1/employees",
         "UseSSL": "",
         "Timeout": "",
         "HttpMethod": {
             "Expression": "",
-            "Value": "GET",
+            "Value": "POST",
             "IsExpression": false,
             "Parameters": {}
         },
-        "Data": "name=[FirstName]\npage=[Tab:TabName]",
-        "DoNotEscapeTokens": "",
+        "Data": "{ \n  \"leadName\" : \"Atlanta Deal\",\n  \"leadCreationDate\" : \"2020/05/07\",\n  \"leadContactPerson\" : \"John Doe\",\n  \"leadStatusId\" : 1\n}",
+        "DoNotEscapeTokens": false,
         "DisableReferer": "",
-        "Headers": "",
+        "Headers": [
+            {
+                "value": "application/json",
+                "name": "ContentType"
+            }
+        ],
         "UseDNNProxySettings": "",
         "AddCurrentCookies": "",
         "CookieContainerToken": "",
@@ -185,7 +200,7 @@ This action posts a new lead to a CRM system. [Import it](/docs/Actions/Import-a
             "IsExpression": false,
             "Parameters": {}
         },
-        "OutputTokenName": "",
+        "OutputTokenName": "Response",
         "OutputHeaders": "",
         "IgnoreErrors": "",
         "OnError": []
