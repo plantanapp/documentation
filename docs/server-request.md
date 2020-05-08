@@ -21,29 +21,30 @@ A low-level action that allows for any kind of HTTP request to be performed.
 
 - [Parse JSON](/docs/Actions/CallApi.md) - creates variables from JSON returned by API calls
 - [Regex](/docs/Actions/CallApi.md) - create variables by matching patterns inside the content
+- [Execute Actions Async](/docs/Actions/ExecuteAsync.md) - nesting other actions under the Execute Actions Async enables them to continue executing without waiting for the previous actions to finalize. Useful in the case of Server Request action when you don't want to wait for it to bring a response.
 
 ## `Input Parameter Reference`
 
 | Parameter     | Description                           | Supports Variables |
 |---------------|---------------------------------------|--------------------|
 | URL           | The URL where the resource to be invoked lives. It can be relative or absolute. | Yes |
-| Enforce SSL   | This will for the request to be sent to a secure version of the URL(https instead of http). This is useful for the instances in which the URL comes from a variable and you want to ensure it is secured.| No |
-| Timeout       | The amount of time in seconds in which the response must come or the request fails. If nothing is provided, it will default to 100 seconds. If you don't want to wait for the request to finish(when you must leverage higher Timeout values) we suggest using [Execute Actions Async](/docs/Actions/ExecuteAsync.md). | Yes |
+| URL Token Encoding | URLs brought from variables might contain characters outside of the ASCII character-set, this will pose problems when you are trying to send requests to those URLs. <br/>URL encoding takes care of this issue by converting unsafe characters to valid ASCII characters. For example, a whitespace, is not a ASCII character and it will be replaced with '%20' or the '+' sign. If you are using variables to provide the URL, the option URL Encoding will make sure the URL is valid. | No |
+| Enforce SSL   | This will for the request to be sent to a secure version of the URL (https instead of http). This is useful for the instances in which the URL comes from a variable and you want to ensure it is secured.| No |
+| Timeout       | The amount of time in seconds in which the response must come or the request fails. If nothing is provided, it will default to 100 seconds. If you don't want to wait for the request to finish (when you must leverage higher Timeout values) we suggest using [Execute Actions Async](/docs/Actions/ExecuteAsync.md). | Yes |
 | HTTP Method   | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD, PATCH. | No |
 | Data          | If the HTTP Method is POST or PUT, data is allowed to be sent to the target URL. The data can take various forms, from key-value pairs to complex JSON. For the target URL to understand the format, it needs to be passed through the Content-Type header. | Yes |
-|Do not Escape Tokens in Data | By default, we escape tokens in order to not break the XML structure. If you need your tokens to bring XML data, you will have to check this. | No|
-| Disable Refer Header | By default, we append a referer header  but some APIs will throw errors if this header is sent. If the resource  you want to use doesn't need the referer header, check this. | No |
+|Do not Escape Tokens in Data | By default, we escape tokens in order to not break the XML structure in the data you are trying to send. Enabling this option helps when you are trying to send XML data which comes from tokens in the request body and only takes effect if the Content-Type header is set to text/xml, application/xml or application/soap+xml. | No |
+| Disable Refer Header | By default, we append a referer header  but some APIs will throw errors if this header is sent. If the resource  you want to use doesn't need the referer header, enable this option. | No |
 | Headers | Additional headers to pass with the request. | Yes |
-| Use DNN Proxy Settings | Check this if you want to use the proxy settings you have set for your DNN instance. | No |
+| Use DNN Proxy Settings | Enable this option if you want to use the proxy settings you have set for your DNN instance. | No |
 | Add Current Cookies | This will add the current cookies of the session to the request. | No |
-| Cookie Container Token |  This will name a container in which to store the cookies. If you want to use cookies from the previous actions or pass them along the execution stack, make sure they have same name. | No |
-| Url Token Context | If you are using variables to provide the  URL this will decide whether the variables will be URL encoded or not. | No |
 | Ignore Errors | Any errors thrown when executing this action will be ignored. Using this options will not stop the triggering of the 'On Error' event. | No |
 
 ## `Output Parameters Reference`
 
 | Parameter | Description |
 |-----------|-------------|
+| Cookie Container |  This will name a container in which to store the cookies. If you want to use cookies from the previous Server Request actions or pass them along to other Server Requests, make sure they have same name. |
 | Output Headers | The list of the headers which are to be retrieved from the request response. |
 | Output Token Name | The variable name in which the response payload is to be stored for further use. |
 
@@ -51,7 +52,7 @@ A low-level action that allows for any kind of HTTP request to be performed.
 
 | Event Name | Description |
 |------------|-------------|
-| On Error | When an error is thrown during the execution of this action, it will trigger the execution of the list of actions specified. |
+| On Error | When an error is thrown during the execution of this action, it will trigger the execution of the list of actions specified for this event. |
 
 ## `GET Requests`
 
