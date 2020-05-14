@@ -39,13 +39,13 @@ A low-level action that allows for any kind of HTTP request to be performed.
 | Headers | Additional headers to pass with the request. | Yes |
 | Use DNN Proxy Settings | Enable this option if you want to use the proxy settings you have set for your DNN instance. | No |
 | Add Current Cookies | This will add the current cookies of the session to the request. | No |
-| Ignore Errors | Any errors thrown when executing this action will be ignored. Using this options will not stop the triggering of the 'On Error' event. | No |
+| Ignore Errors | Any errors thrown when executing this action will be ignored. Using this option will not stop the triggering of the 'On Error' event. | No |
 
 ## `Output Parameters Reference`
 
 | Parameter | Description |
 |-----------|-------------|
-| Cookie Container |  This will name a container in which to store the cookies. If you want to use cookies from the previous Server Request actions or pass them along to other Server Requests, make sure they have same name. |
+| Cookie Container |  This will name a container in which to store the cookies. If you want to use cookies from the previous Server Request actions or pass them along to other Server Requests, make sure they have the same name. |
 | Output Headers | The list of the headers which are to be retrieved from the request response. |
 | Output Token Name | The variable name in which the response payload is to be stored for further use. |
 
