@@ -4,7 +4,16 @@ title: Load User
 sidebar_label: Load User
 ---
 
-An action that allows altering the contextual users which all the subsequent actions use. This action supports loading multiple users by providing multiple user identifiers. The last user identifier provided will also be used as the context user under which all actions execute (logged in user).
+An action that allows altering the user which the subsequent actions refer to. The user change affects all actions after the `Load User` action and after all actions have finished executing the user will be reverted back to the initial one. By default, all actions that need an user for their execution will refer to the currently logged in user.
+
+This action also supports loading multiple users by providing multiple user identifiers. The last user identifier provided will also be used as the context user under which all actions execute. Loading multiple users creates a hidden context entity that is leveraged by the following actions which support this:
+
+- [Grant Role](/docs/Actions/grant-role.md)
+- [Revoke Role](/docs/Actions/revoke-role.md)
+- [Authorize User](/docs/Actions/authorize-user.md)
+- [Unauthorize User](/docs/Actions/unauthorize-user.md)
+- [Delete User](/docs/Actions/delete-user.md)
+- [Send Email](/doc/Actions/send-email.md).
 
 When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-role.md), the `Grant Role` action will grant the role specified to all users loaded by this action.
 
@@ -27,14 +36,14 @@ When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-r
 
 | Parameter     | Description                           | Supports Variables |
 |---------------|---------------------------------------|--------------------|
-| User Identifier | The identifier which will indicate which user to load into context. You can use the user ID, username or the email as identifiers. <br/> <br/> You can load multiple users by providing multiple values separated by a comma. | Yes |
+| User Identifier | The identifier which will indicate which user to load into context. You can use the user ID, username or the email as identifiers. <br/> You can load multiple users by providing multiple values separated by a comma. | Yes |
 | Portal ID | The identifier which will specify in which portal to look for the user indicated by the 'User Identifier'. If left blank, the action will search for the user across all portals. Valid values are either the portal ID or the portal name. | Yes |
 
 ## `Examples`
 
-### `1. Load an user and grant it a role`
+### `1. Load an user and grant it the Subscribers role`
 
-The actions below will load the user with the identifier (user ID) '0' into the context and then grant him the role `Subscribers` with an indefinite expiration date.
+The actions below will load the user with the identifier (user email) 'john.doe@gmail.com' into the context and then grant him the role `Subscribers` with an indefinite expiration date.
 
 ```json
 {
@@ -43,7 +52,7 @@ The actions below will load the user with the identifier (user ID) '0' into the 
     "Description": "Load the user into the context",
     "Condition": null,
     "Parameters": {
-        "Id": "0",
+        "Id": "john.doe@gmail.com",
         "Portal": ""
     }
 }

@@ -4,9 +4,16 @@ title: Load Users From SQL
 sidebar_label: Load Users From SQL
 ---
 
-An action that allows altering the contextual users which all the subsequent actions use. This action will not alter the context user (logged in user).
+An action that loads users into a hidden context entity of users in order to be leveraged by other actions.
 
-When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-role.md), the `Grant Role` action will grant the role specified to all users loaded by this action.
+The following actions support the Users hidden entity:
+
+- [Grant Role](/docs/Actions/grant-role.md)
+- [Revoke Role](/docs/Actions/revoke-role.md)
+- [Authorize User](/docs/Actions/authorize-user.md)
+- [Unauthorize User](/docs/Actions/unauthorize-user.md)
+- [Delete User](/docs/Actions/delete-user.md)
+- [Send Email](/doc/Actions/send-email.md).
 
 ## `Typical Use Cases`
 
@@ -15,7 +22,7 @@ When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-r
 
 ## `Don't use it to`
 
-- Alter the currently logged in context user, use [Load User](/docs/actions/load-user.md) instead
+- Alter the context user which the actions use, leverage [Load User](/docs/actions/load-user.md) instead
 
 ## `Related Actions`
 
@@ -28,12 +35,11 @@ When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-r
 |---------------|---------------------------------------|--------------------|
 | SQL Query | The SQL query will define what users will be loaded into context from the database. The SQL result must be an user ID, and user email, or a user name. | Yes |
 
-
 ## `Examples`
 
-### `1. Load a list of users and grant the a role`
+### `1. Load a list of users and grant the Subscribers role`
 
-The actions below will load the user with the identifier (user ID) '0' into the context and then grant him the role `Subscribers` with an indefinite expiration date.
+The actions below will load all the users into the context and then grant them the role `Subscribers` with an indefinite expiration date.
 
 ```json
 {
