@@ -22,6 +22,7 @@ A low-level action that allows for any kind of HTTP request to be performed.
 - [Parse JSON](/docs/Actions/CallApi.md) - creates variables from JSON returned by API calls
 - [Regex](/docs/Actions/CallApi.md) - create variables by matching patterns inside the content
 - [Execute Actions Async](/docs/Actions/ExecuteAsync.md) - nesting other actions under the Execute Actions Async enables them to continue executing without waiting for the previous actions to finalize. Useful in the case of Server Request action when you don't want to wait for it to bring a response.
+- [Load Entities from JSON](/docs/Actions/LoadEntitiesFromJson.md) - Use this action to load an array of JSON objects returned by an API and perform a list of actions on each object.
 
 ## `Input Parameter Reference`
 
