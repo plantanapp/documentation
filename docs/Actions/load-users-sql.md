@@ -26,8 +26,10 @@ The following actions support the Users hidden entity:
 
 ## `Related Actions`
 
-- [Grant Role](/docs/Actions/grant-role.md) - grants the users in the context the specified roles
-- [Send Email](/doc/Actions/send-email.md) - sends an email to the users loaded in the context
+| Action Name | Description|
+|-------------|------------|
+| [Grant Role](/docs/Actions/grant-role.md) | Grants the users in the context the specified roles.|
+| [Send Email](/doc/Actions/send-email.md) | Sends an email to the users loaded in the context.|
 
 ## `Input Parameter Reference`
 
