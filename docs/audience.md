@@ -12,7 +12,7 @@ As you go through each audience below, please keep in mind that this is not at a
 
 ## `Business Users`
 
-Business users usually come from the stakeholder side of a project. They have he ability to make micro-decisions regarding the application, such as what an email template should be, what fields should be captures in a form and so on. In a traditional development process, they would address their change requests to a business analyst that turns them into a specification for the developers. On Plant an App, they are able to do many changes by themselves, therefore saving a lot of back and forth.
+Business users usually come from the stakeholder side of a project. They have the ability to make micro-decisions regarding the application, such as what an email template should be, what fields should be captured in a form and so on. In a traditional development process, they would address their change requests to a business analyst that turns them into a specification for the developers. On Plant an App, they are able to do many changes by themselves, therefore saving a lot of back and forth.
 
 Skills: `decision making`, `business understanding`, `business tools savvy`
 
