@@ -98,7 +98,7 @@ Typical personas:
 - C# developers
 - Front-end and Angular developers
 - Outsourcing development shops and freelancers
-- Developers on other backend technologies such as Python or Java
+- Developers on other back-end technologies such as Python or Java
 
 Examples of activities:
 
