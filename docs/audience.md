@@ -50,7 +50,7 @@ Typical personas:
 Examples of activities:
 
 - Define the data model through the [Entities](/docs/Entities/overview.md)
-- Implemented the permission scheme
+- Implement the permission scheme
 - Create application screens with forms, grids, dashboards and other visualizations
 - Implement business processes through [Workflows](/docs/Workflows/overview.md) and configure most of the [Actions](/docs/Actions/overview.md)
 - Integrate with external systems by using the [API Builder](/docs/ApiBuilder/oveview.md) and the [Server Request](/docs/Actions/server-request.md) action
