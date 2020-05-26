@@ -15,7 +15,7 @@ This action also supports loading multiple users by providing multiple user iden
 - [Delete User](/docs/Actions/delete-user.md)
 - [Send Email](/doc/Actions/send-email.md).
 
-When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-role.md), the `Grant Role` action will grant the role specified to all users loaded by this action.
+When used in conjunction with the actions above, the logic applies to all users that have been loaded into the context by the `Load User` action. For example, the `Grant Role` action will assign the specified role to each and every user loaded into the context.
 
 ## `Typical Use Cases`
 
