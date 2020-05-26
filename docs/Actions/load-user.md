@@ -17,7 +17,7 @@ This action also supports loading multiple users by providing multiple user iden
 
 When used in conjunction with the actions above, the logic applies to all users that have been loaded into the context by the `Load User` action. For example, the `Grant Role` action will assign the specified role to each and every user loaded into the context.
 
-Calling the `Load User` action the second time inside the same workflow will replace the context user that the actions use and add to the list of context users(the Users entity) that actions such as `Grant Role` leverage.
+Calling the `Load User` action the second time inside the same workflow will replace the context user that the actions use and add to the list of context users (the Users entity) that actions such as `Grant Role` leverage.
 
 ## `Typical Use Cases`
 

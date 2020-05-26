@@ -15,7 +15,7 @@ The following actions support the Users hidden entity:
 - [Delete User](/docs/Actions/delete-user.md)
 - [Send Email](/doc/Actions/send-email.md).
 
-Calling the `Load Users From SQL` action the second time inside the same workflow will add to the already existing list of context users(the Users entity) from the previous call.
+Calling the `Load Users From SQL` action the second time inside the same workflow will add to the already existing list of context users (the Users entity) from the previous call.
 
 ## `Typical Use Cases`
 
