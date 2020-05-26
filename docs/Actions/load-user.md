@@ -17,6 +17,8 @@ This action also supports loading multiple users by providing multiple user iden
 
 When used in conjunction with actions such as [Grant Role](/docs/Actions/grant-role.md), the `Grant Role` action will grant the role specified to all users loaded by this action.
 
+Calling the `Load User` action the second time inside the same workflow will replace the context user that the actions use and add to the list of context users(the Users entity) that actions such as `Grant Role` leverage.
+
 ## `Typical Use Cases`
 
 - Update another user profile
