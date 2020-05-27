@@ -1,8 +1,11 @@
 ---
-id: LoadUser
+id: load-user
 title: Load User
 sidebar_label: Load User
 ---
+
+> Audience: [`Business Users`](/docs/audience#business-users)<br/>
+> Skill Prerequisites: `User management`
 
 An action that allows altering the user which the subsequent actions refer to. The user change affects all actions after the `Load User` action and after all actions have finished executing the user will be reverted back to the initial one (i.e. the logged-in user). By default, all actions that need a user for their execution will refer to the currently logged in user.
 

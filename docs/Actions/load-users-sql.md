@@ -1,8 +1,11 @@
 ---
-id: LoadUsersSql
+id: load-users-from-sql
 title: Load Users From SQL
 sidebar_label: Load Users From SQL
 ---
+
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Skill Prerequisites: `User management` `SQL` `Users Table`
 
 An action that loads users into a hidden context entity of users in order to be leveraged by other actions.
 

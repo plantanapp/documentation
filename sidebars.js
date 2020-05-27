@@ -5,7 +5,10 @@ module.exports = {
       {
         type: 'category',
         label: 'Actions',
-      items: ['Actions/ServerRequest', 'Actions/LoadUser','Actions/LoadUsersSql'],
+        items: [
+          'actions/server-request', 
+          'actions/load-user',
+          'actions/load-users-from-sql'],
       }
     ]
   },
