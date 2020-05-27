@@ -114,7 +114,7 @@ Examples of activities:
 
 So far, all the roles presented refer to the application development process. There are other aspects to consider which are related to configuring authentication credentials for external systems, deployments, maintenance, and auditing the performance and security aspects once the application is in production.
 
-Note that although they are presented here together, in reality these task fall across different individuals and teams.
+Note that although they are presented here together, in reality, these tasks fall across different individuals and teams.
 
 Skills: `Security`, `DevOps`, `System Administration`, `Maintenace`, `Auditing`
 
