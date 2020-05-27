@@ -91,7 +91,7 @@ We understand the passion for code and we do not want to take that away.
 
 A final note. Software development teams that are not native to .NET prefer to extend the platform through Microservices. That is, build the new functionality in other languages, such as Python or Java, then expose it as an API that can be consumed by Citizen Developers through the [Server Request](/docs/Actions/server-request.md) action or other HTTP based actions and data sources.
 
-Skills: `C#`, `Razor`, `html/css`, `JavaScript`, `Angular`, `IoC`, `Dependency Injection`
+Skills: `C#`, `Razor`, `HTML/CSS`, `JavaScript`, `Angular`, `IoC`, `Dependency Injection`
 
 Typical personas:
 
