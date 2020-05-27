@@ -1,9 +1,12 @@
 module.exports = {
   someSidebar: {
-    'Getting Started': ['doc1',{
-      type: 'category',
-      label: 'Actions',
+    'Getting Started': [
+      'Audience',
+      {
+        type: 'category',
+        label: 'Actions',
       items: ['Actions/ServerRequest', 'Actions/LoadUser','Actions/LoadUsersSql'],
-    }]
+      }
+    ]
   },
 };
