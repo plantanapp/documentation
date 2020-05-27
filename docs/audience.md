@@ -129,5 +129,5 @@ Examples of activities:
 - Configure [Connectors](/docs/Connectors/overview.md) to enable communications with external systems
 - Handle deployments
 - Review access logs and controls to detect suspicious activity
-- Observe performance of [Workflows](/docs/Workflows/overview.md) and identify potential issues
+- Observe the performance of [Workflows](/docs/Workflows/overview.md) and identify potential issues
 - Schedule and perform platform upgrades to patch known vulnerabilities and enable additional features added in Plant an App
