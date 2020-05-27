@@ -85,7 +85,7 @@ Examples of activities:
 
 Plant an App has over 30 extension points that developers can tap into in order to add new functionalities to the platform. For example, new actions can be created as simple as implementing a C# interface and creating its specification in a JSON configuration file. Once deployed, Citizen Developers can use the new actions inside Workflows and pass in the input required for each action. Some extension points are front-end based, such as creating new views for grids or dashboards, which are Angular based.
 
-Extending the platform is achieved by traditional software engineers. Plant an App does not try to impose a new development paradigm, nor force learning the low-code way of building software. Instead, Plant an App focuses on integrating with the tools that developers already use, such as Visual Studio or GitHub, where functionality is extended through interfaces, Dependency Injection and configuration files that are then deployed to the application for other roles to use. 
+Extending the platform is achieved by traditional software engineers. Plant an App does not try to impose a new development paradigm, nor force learning the low-code way of building software. Instead, Plant an App focuses on integrating with the tools that developers already use, such as Visual Studio or GitHub, where functionality is extended through interfaces, Dependency Injection, and configuration files that are deployed to the application for other roles to use. 
 
 We understand the passion for code and we do not want to take that away.
 
