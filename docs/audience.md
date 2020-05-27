@@ -38,7 +38,7 @@ In Plant an App, Citizen Developers do, on average, 80% of the application devel
 
 Note that a Citizen Developer rarely has experience with writing code. But they are technically savvy in the sense that they understand technology. The know concepts such as what HTTP Requests are, what is the difference between back-end and front-end technologies, or how databases are structured. Often, they even know the basics of various markup and programming languages, such as HTML, CSS, SQL, or JavaScript, and can read such code for the purpose of copy-pasting and adjusting it.  
 
-Skills: `no-code`, `tech savvy`, `data models`, `business process modeling`, `basic coding skills`
+Skills: `no-code`, `tech-savvy`, `data models`, `business process modeling`, `basic coding skills`
 
 Typical personas:
 
