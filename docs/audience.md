@@ -64,7 +64,7 @@ Low-code Engineers step in to write the custom code. Therefore, they have prior 
 
 In some cases, it's the Low-code Engineer that builds the entire application, fulfilling all the roles at once.
 
-Skills: `low-code`, `coding skills`, `SQL`, `html/css`, `C#`, `JavaScript`
+Skills: `low-code`, `coding skills`, `SQL`, `HTML/CSS`, `C#`, `JavaScript`
 
 Typical personas:
 
