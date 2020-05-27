@@ -20,7 +20,7 @@ Typical personas:
 
 - Project Manager on the stakeholder side
 - Business Analyst on the stakeholder side
-- Business Owner for SMBs
+- Small and Midsize Business Owners (SMBs)
 - Department Lead
 - Digital Transformation Leader
 - External Digital Transformation Consultant
