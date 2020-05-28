@@ -6,9 +6,9 @@ module.exports = {
         type: 'category',
         label: 'Actions',
         items: [
-          'actions/server-request', 
-          'actions/load-user',
-          'actions/load-users-from-sql'],
+          'Actions/server-request', 
+          'Actions/load-user',
+          'Actions/load-users-from-sql'],
       }
     ]
   },
