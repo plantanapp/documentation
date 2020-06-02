@@ -1,7 +1,7 @@
 ---
-id: apply-tokens
-title: Apply Tokens
-sidebar_label: Apply Tokens
+id: execute-token
+title: Execute Token
+sidebar_label: Execute Token
 ---
 
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
@@ -13,7 +13,7 @@ This action will output a token that stores the output of a Variable (token).
 ## `Typical Use Cases`
 
 - Execute a Variable token
-- Apply tokens inside a text from various sources (eg: other actions, form fields, API input parameters)
+- Execute Token inside a text from various sources (eg: other actions, form fields, API input parameters)
 
 ## `Don't use it to`
 
@@ -24,7 +24,7 @@ This action will output a token that stores the output of a Variable (token).
 
 | Action Name                                                     | Description                                                                        |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form module only, it updates the fields based on the values from the tokens        |
+| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form module only, it updates the fields based on the values from the tokens.        |
 | [Display Message](/docs/Actions/display-message.md)             | Form Module only, shows a message after the executions of set of actions/workflow. |
 
 
