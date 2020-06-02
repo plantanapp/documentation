@@ -8,7 +8,9 @@ module.exports = {
         items: [
           'Actions/server-request', 
           'Actions/load-user',
-          'Actions/load-users-from-sql'],
+          'Actions/load-users-from-sql',
+          'Actions/execute-token',
+          'Actions/apply-tokens'],
       }
     ]
   },
