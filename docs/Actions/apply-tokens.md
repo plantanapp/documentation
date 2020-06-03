@@ -148,7 +148,8 @@ This example demonstrates replacing tokens inside the content returned by evalua
 **What is the average number of recursions?**
 
 
-Usually 2 or 3 depending of the situation should be enough but it really depends on what you need to achieve. Setting the number of recursion bigger that is need it will not have any impact on the result but will impact the performance. If you are not sure how recursion works increment the value by one until you get the desire output and there are no tokens left. That will be the desire value for the execution.
+It really depends on what you need to achieve. 2 or 3 recursions is the maximum that we've seen. Setting the number of recursion higher than needed will not have any impact on the result, but will impact the performance. If you are not sure how recursion works, increment the value by one until you get the desired output and there are no tokens left. That will be the ideal number for your use case.
+
 
 **How long can I use the output token?**
 
