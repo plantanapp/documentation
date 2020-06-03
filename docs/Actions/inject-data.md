@@ -14,60 +14,61 @@ An action that lets you add data as tokens to the current execution context. Inj
 - Generate a new token
 - Concatenate 2 tokens
 - Overwrite a token
+- Initialize variables with empty strings
 
 ## `Don't use it to`
 
 - Execute a Variables token - use [Apply Tokens](/docs/Actions/apply-tokens.md) or [Execute Tokens](/docs/Actions/execute-tokens.md) actions instead
 - Apply tokens inside a text from different sources - use [Apply Tokens](/docs/Actions/apply-tokens.md) or [Execute Tokens](/docs/Actions/execute-tokens.md) actions instead
-- Use a token into another action list, only use it for the current one - store the data in a [hidden field](/docs/Actions/hidden-field.md), cookies or server session instead
+- Create a token that is used in another execution context - store the data in a [hidden field](/docs/Actions/hidden-field.md), cookies or server session instead
 
 ## `Related Actions`
 
 | Action Name | Description|
 |-------------|------------|
-| [Run SQL Query](/docs/Actions/run-sql-query.md) | Executes an SQL statement, optionally capturing the output |
+| [Run SQL Query](/docs/Actions/run-sql-query.md) | Executes an SQL statement and captures the output, so that it can be used in the form using Inject Data.|
 
 ## `Input Parameter Reference`
 
 | Parameter     | Description                           | Supports Variables |
 |---------------|---------------------------------------|--------------------|
-| Name/Value | First parameter refers to the name of the variable, the second one refers to the value assigned. The action use a key-value(name-value) concept. <br></br> Each data that you want to inject has different parameters. | Yes |
+| Name/Value | The first parameter refers to the name of the new token that will be created. The second one refers to the value assigned. The action uses a key-value (name-value) concept. | Yes |
 
 ## `Output Parameters Reference`
 
 | Parameter | Description |
 |-----------|-------------|
-| Output Token Name | The Name parameter is stored as a token for further use anywhere in the form. |
+| Name | The Name parameter is stored as a token for further use anywhere in the form. |
 
 ## `Examples`
 
 ### `1. Inject data using Run SQL Query`
 
 ​
-The action below selects first client name from a database using Run SQL Query and sends it into the form. <br></br>[Import it](/docs/Actions/import-actions.md) into your application to see it in action.
+The action below selects first username from users database using Run SQL Query and sends it into the form. <br></br>[Import it](/docs/Actions/import-actions.md) into your application to see it in action.
 ​
 
 ```json
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "Extract and inject first client name into form",
+    "Description": "Extract and inject first username into form",
     "Condition": null,
     "Parameters": {
         "ActionList": [
             {
                 "Id": -1,
-                "$_uid": "action15911016148437876",
+                "$_uid": "action15911731358816854",
                 "Parameters": {
                     "ConnectionString": "",
                     "QueryTimeout": "",
-                    "SqlQuery": "SELECT Name FROM app.Client\nWHERE Id = 1",
+                    "SqlQuery": "SELECT Username FROM Users\nWHERE UserId = 1",
                     "BindTokens": [],
                     "OutputTokenName": "",
                     "ExtractColumns": [
                         {
-                            "value": "SQL_Name",
-                            "name": "Name"
+                            "value": "SQL_Username",
+                            "name": "Username"
                         }
                     ],
                     "OnError": [],
@@ -86,12 +87,12 @@ The action below selects first client name from a database using Run SQL Query a
             },
             {
                 "Id": -1,
-                "$_uid": "action15911016148431102",
+                "$_uid": "action15911731358819956",
                 "Parameters": {
                     "Data": [
                         {
-                            "value": "[SQL_Name]",
-                            "name": "Inject_Name"
+                            "value": "[SQL_Username]",
+                            "name": "Inject_Username"
                         }
                     ]
                 },
@@ -114,7 +115,7 @@ The action below selects first client name from a database using Run SQL Query a
 ### `2. Generate a new token`
 
 ​
-The action below generates a new token named "Client_ID" with the assigned value "ID15367" that can be used in the form. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
+The action below generates a new token named "ClientId" with the assigned value "ID15367" that can be used in the form. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
 ​
 
 ```json
@@ -127,7 +128,7 @@ The action below generates a new token named "Client_ID" with the assigned value
         "Data": [
             {
                 "value": "ID15367",
-                "name": "Client_ID"
+                "name": "ClientId"
             }
         ]
     }
@@ -137,24 +138,24 @@ The action below generates a new token named "Client_ID" with the assigned value
 ### `3. Concatenate 2 tokens`
 
 ​
-The action below extract "FirstName" and "LastName" from a database and concatenate them so that "FullName" can be used in the form. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
+The action below extract "FirstName" and "LastName" from users database and concatenate them so that "FullName" can be used in the form. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
 ​
 
 ```json
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "Inject first client full name into form",
+    "Description": "Inject first user full name into form",
     "Condition": null,
     "Parameters": {
         "ActionList": [
             {
                 "Id": -1,
-                "$_uid": "action15911044123153952",
+                "$_uid": "action15911732046536029",
                 "Parameters": {
                     "ConnectionString": "",
                     "QueryTimeout": "",
-                    "SqlQuery": "SELECT FirstName, LastName FROM app.Client\nWHERE Id = 1",
+                    "SqlQuery": "SELECT FirstName, LastName FROM Users\nWHERE UserId = 1",
                     "BindTokens": [],
                     "OutputTokenName": "",
                     "ExtractColumns": [
@@ -183,7 +184,7 @@ The action below extract "FirstName" and "LastName" from a database and concaten
             },
             {
                 "Id": -1,
-                "$_uid": "action15911044123153988",
+                "$_uid": "action15911732046533516",
                 "Parameters": {
                     "Data": [
                         {
