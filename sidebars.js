@@ -10,7 +10,8 @@ module.exports = {
           'Actions/load-user',
           'Actions/load-users-from-sql',
           'Actions/execute-token',
-          'Actions/apply-tokens'],
+          'Actions/apply-tokens',
+          'Actions/faq'],
       }
     ]
   },

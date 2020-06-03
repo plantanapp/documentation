@@ -116,21 +116,3 @@ Spelling of plurals can be as easy as the next example. Instead of adding (s) at
 }
 
 ```
-
-## `Frequently Asked Questions`
-
-**How long can I use the output token?**
-
-It can be used after the action is executed in the execution flow and/or Workflow and it be available until the executions ends or it is stopped. 
-
-**Can I use multiple actions in a row?**
-
-Yes. There is no limit or restriction regarding the usage of this action.
-
-**Where can I use the output token?**
-
-It can be used after the action is executed in the action set and/or Workflow and it be available until the end of the process or it is stopped. 
-
-**What tokens can I use?**
-
-Module related tokens (form fields, API input parameters etc.), Workflow input parameters, tokens tokens and other output tokens from the same execution/workflow.

@@ -62,7 +62,9 @@ When will bring the template content we'll have to set its value in a token that
 
 `[EmailTemplate]` -> Hi, `[User:FirstName] [User:LastName]`. Please contact me! -> Hi, John Doe. Please contact me!
 
+## `What is the average number of recursions?`
 
+It really depends on what you need to achieve. 2 or 3 recursions is the maximum that we've seen. Setting the number of recursion higher than needed will not have any impact on the result, but will impact the performance. If you are not sure how recursion works, increment the value by one until you get the desired output and there are no tokens left. That will be the ideal number for your use case.
 
 ## `Examples`
 
@@ -148,28 +150,3 @@ This example demonstrates replacing tokens inside the content returned by evalua
 }
 
 ```
-
-## `Frequently Asked Questions`
-
-**What is the average number of recursions?**
-
-
-It really depends on what you need to achieve. 2 or 3 recursions is the maximum that we've seen. Setting the number of recursion higher than needed will not have any impact on the result, but will impact the performance. If you are not sure how recursion works, increment the value by one until you get the desired output and there are no tokens left. That will be the ideal number for your use case.
-
-
-**How long can I use the output token?**
-
-It can be used after the action is executed in the action set and/or Workflow and it be available until the end of the process or it is stopped. 
-
-**Can I use multiple actions in a row?**
-
-Yes. There is no limit or restriction regarding the usage of this action. Be aware that a bigger than need it Number of recursion may affect the performance.
-
-**Where can I use the output token?**
-
-The output token can be used starting with the next action. It's used just like any other token - in conditions, as parameters to other actions and so on. The output tokens will not be available in the same action where they are defined, even if they are above in the token/expression list.
-
-
-**What tokens can I use?**
-
-Module related tokens (form fields, API input parameters etc.), Workflow input parameters, tokens and other output tokens from the same execution/workflow.
