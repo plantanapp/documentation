@@ -5,14 +5,14 @@ sidebar_label: Execute Token
 ---
 
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `Variables`
+> Skill Prerequisites: `Tokens`
 
-This actions executes a Variable (token), usually a Variables token, where tokens can contain business logic that generates and/or saves data.
-This action will output a token that stores the output of a Variable (token).
+This actions executes a token, usually a token, where tokens can contain business logic that generates and/or saves data.
+This action will output a token that stores the output of a token.
 
 ## `Typical Use Cases`
 
-- Execute a Variable token
+- Execute a token
 - Execute Token inside a text from various sources (eg: other actions, form fields, API input parameters)
 
 ## `Don't use it to`
@@ -24,27 +24,33 @@ This action will output a token that stores the output of a Variable (token).
 
 | Action Name                                                     | Description                                                                        |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form module only, it updates the fields based on the values from the tokens.        |
-| [Display Message](/docs/Actions/display-message.md)             | Form Module only, shows a message after the executions of set of actions/workflow. |
+| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form action only, it updates the fields based on the values from the tokens.       |
+| [Display Message](/docs/Actions/display-message.md)             | Form action only, shows a message after the executions of set of actions/workflow. |
+| [Run SQL Query](/docs/Actions/run-sql-query.md)                 | Executes an SQL statement and captures the output.                                 |
 
 
 ## `Input Parameter Reference`
 
-| Parameter        | Description                                     | Supports Variables |
-| ---------------- | ----------------------------------------------- | ------------------ |
-| Token Expression | The tokens and/or text you want to be evaluated | Yes                |
+| Parameter        | Description                                     | Supports Tokens | Default        |
+| ---------------- | ----------------------------------------------- | --------------- | -------------- |
+| Token Expression | The tokens and/or text you want to be evaluated | Yes             | `empty string` |
 
 ## `Output Parameters Reference`
 
-| Parameter         | Description                                                              |
-| ----------------- | ------------------------------------------------------------------------ |
-| Output Token Name | The variable name in which the response is to be stored for further use. |
+| Parameter         | Description                                                           |
+| ----------------- | --------------------------------------------------------------------- |
+| Output Token Name | The token name in which the response is to be stored for further use. |
+
+## `Security`
+**Note that this presents a security risk when the expression has content from untrusted sources.**
+
+Tokens are powerful and can execute code that is not meant for end users to execute. This may result in unwanted behaviors or security breaches. eg: [User:Email(UserId=1)] will provide the email of that user so **expressions that come directly from a user should not be used in this action.**. Consider using only expressions the system manages and end users can't modify.  
 
 ## `Examples`
 
-### `1. Calculations with Variable DoMath`
+### `1. Calculations with DoMath token`
 
-By default the expression will only concatenate the variables and/or text from the token expression so in case we need to do some math Variables provides a token called DoMath that can solve this issue.
+By default the expression will only concatenate the tokens and/or text from the token expression so in case we need to do some math tokens provides a token called DoMath that can solve this issue.
 
 
 ```json
@@ -60,9 +66,9 @@ By default the expression will only concatenate the variables and/or text from t
 ​
 ```
 
-### `2. Set a Cookie with Variable SetCookie`
+### `2. Set a Cookie with SetCookie token`
 
-You can set the value of a cookie by using the example below. You can retrieve the value of the cookie using the Cookie Variable. 
+You can set the value of a cookie by using the example below. You can retrieve the value of the cookie using the Cookie token. 
 
 ```json
 
@@ -77,9 +83,9 @@ You can set the value of a cookie by using the example below. You can retrieve t
 
 ```
 
-### `3. Set a Session token with Variable SetSession`
+### `3. Set a Session token with SetSession token`
 
-You can set the value of a session token by using the example below. You can retrieve the value of the session token using the Session Variable. 
+You can set the value of a session token by using the example below. You can retrieve the value of the session token using the Session token. 
 
 ```json
 
@@ -96,7 +102,7 @@ You can set the value of a session token by using the example below. You can ret
 
 ### `4. Pluralization of a value`
 
-Spelling of plurals can be as easy as the next example. Instead of adding (s) at the end of number (eg: 1 car(s) or 3 car(s) ) we can use the Pluralization Variable. For this example **3** can be another variable. 
+Spelling of plurals can be as easy as the next example. Instead of adding (s) at the end of number (eg: 1 car(s) or 3 car(s) ) we can use the Pluralization token. For this example **3** can be another token. 
 
 ```json
 
@@ -111,7 +117,7 @@ Spelling of plurals can be as easy as the next example. Instead of adding (s) at
 
 ```
 
-## `Frequently asked questions`
+## `Frequently Asked Questions`
 
 **How long can I use the output token?**
 
@@ -123,8 +129,8 @@ Yes. There is no limit or restriction regarding the usage of this action.
 
 **Where can I use the output token?**
 
-The output token can be used starting from the next action as any other token in conditions, as parameters to other actions etc.
+It can be used after the action is executed in the action set and/or Workflow and it be available until the end of the process or it is stopped. 
 
 **What tokens can I use?**
 
-Module related tokens (form fields, API input parameters etc.), Workflow input parameters, Variables tokens and other output tokens from the same execution/workflow.
+Module related tokens (form fields, API input parameters etc.), Workflow input parameters, tokens tokens and other output tokens from the same execution/workflow.

@@ -5,13 +5,13 @@ sidebar_label: Apply Tokens
 ---
 
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `Variables`
+> Skill Prerequisites: `Tokens`
 
-This actions executes multiple expressions and applies tokens on those expressions and stores it in another (or the same) token(s). Note that this presents a security risk when the expression has content from untrusted users. 
+This actions executes multiple expressions and applies tokens on those expressions and stores it in a token. The expression can also be stored in the same token, overwriting the original content.
 
 ## `Typical Use Cases`
 
-- Execute a Variable expression that returns an token that needs to be reevaluated
+- Execute a token expression (a mix of tokens and/or free text) that returns an other token expression that needs to go thru the same process
 - Apply tokens inside a text from various sources (eg: other actions, form fields, API input parameters)
 
 ## `Don't use it to`
@@ -23,22 +23,28 @@ This actions executes multiple expressions and applies tokens on those expressio
 
 | Action Name                                                     | Description                                                                        |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form module only, it updates the fields based on the values from the tokens.       |
-| [Display Message](/docs/Actions/display-message.md)             | Form Module only, shows a message after the executions of set of actions/workflow. |
+| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form action only, it updates the fields based on the values from the tokens.       |
+| [Display Message](/docs/Actions/display-message.md)             | Form action only, shows a message after the executions of set of actions/workflow. |
+| [Run SQL Query](/docs/Actions/run-sql-query.md)                 | Executes an SQL statement and captures the output.                                 |
 
 
 ## `Input Parameter Reference`
 
-| Parameter                 | Description                                                                                                                 | Supports Variables |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------- | ------------------ |
-| Token -> Token Expression | The tokens and/or text (expression) you want to be evaluated or reevaluated                                                 | Yes                |
-| Number of Recursions      | Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced | Yes                |
+| Parameter                 | Description                                                                                                                 | Supports Tokens | Default        |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------- |
+| Token -> Token Expression | The tokens and/or text (expression) you want to be evaluated or reevaluated                                                 | Yes             | `empty string` |
+| Number of Recursions      | Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced | Yes             | 1              |
 
 ## `Output Parameters Reference`
 
-| Parameter         | Description                                                                 |
-| ----------------- | --------------------------------------------------------------------------- |
-| Token -> Store as | The variable name(s) in which the response is to be stored for further use. |
+| Parameter         | Description                                                              |
+| ----------------- | ------------------------------------------------------------------------ |
+| Token -> Store as | The token name(s) in which the response is to be stored for further use. |
+
+## `Security`
+**Note that this presents a security risk when the expression has content from untrusted sources.**
+
+Tokens are powerful and can execute code that is not meant for end users to execute. This may result in unwanted behaviors or security breaches. Eg: `[User:Email(UserId=1)]` will provide the email of that user so **expressions that come directly from a user should not be used in this action**. Consider using only expressions the system manages and end users can't modify.  
 
 ## `What is recursion and when to use it`
 
@@ -46,23 +52,23 @@ Recursion refers of how many times we should try to check for tokens in the expr
 
 If recursion is set to 1 then this action will work as [Execute Token](/docs/Actions/execute-token.md) action. Will assign the Expression to a token.
 
-There are situation ([like example number 2](#2-apply-tokens-inside-a-template-recursion-1)) where you save a template (let's say email template) and you save it with tokens instead of the First Name and Last Name so you can save only one copy and when you need to deliver that email you only have to replace the Variables. 
+There are situation ([like example number 2](#2-apply-tokens-inside-a-template-recursion-1)) where you save a template (let's say email template). Some of the content has tokens inside to replace the First Name and Last Name. At this point you only have one copy of the template and when you need to deliver that email you only have to replace the tokens. 
 
-Eg. Email Template: Hi, [User:FirstName] [User:LastName]. Please contact me!
+Eg. Email Template: Hi, `[User:FirstName] [User:LastName]`. Please contact me!
 
-Let's say we have the above template stored in \[EmailTemplate\]
+Let's say we have the above template stored in `[EmailTemplate]`
 
-When will bring the template value will have to set it's value in a token that will contain tokens itself so we will need to set the recursion to 2 to replace the token to the template and the template to a plain token. See below example for Recursion set to 2:
+When will bring the template content we'll have to set its value in a token that will contain tokens itself. At this point we'll need to set the recursion to 2 to replace the tokens inside the template. See below example for Recursion set to 2:
 
-\[EmailTemplate\] -> Hi, \[User:FirstName\] \[User:LastName\]. Please contact me! -> Hi, John Doe. Please contact me!
+`[EmailTemplate]` -> Hi, `[User:FirstName] [User:LastName]`. Please contact me! -> Hi, John Doe. Please contact me!
 
 
 
 ## `Examples`
 
-### `1. Calculations with Variable DoMath (Recursion =1)`
+### `1. Calculations with DoMath Token (Recursion =1)`
 
-By default the expression will only concatenate the variables and/or text from the token expression so in case we need to do some math Variables provides a token called DoMath that can solve this issue.
+By default the expression will only concatenate the tokens and/or text from the token expression so in case we need to do some math tokens provides a token called DoMath that can solve this issue.
 
 
 ```json
@@ -142,7 +148,7 @@ This example will show you how to replace tokens inside another token.
 
 ```
 
-## `Frequently asked questions`
+## `Frequently Asked Questions`
 
 **What is the best Number of Recursion**
 
@@ -150,7 +156,7 @@ Usually 2 or 3 depending of the situation should be enough but it really depends
 
 **How long can I use the output token?**
 
-It can be used after the action is executed in the execution flow and/or Workflow and it be available until the executions ends or it is stopped. 
+It can be used after the action is executed in the action set and/or Workflow and it be available until the end of the process or it is stopped. 
 
 **Can I use multiple actions in a row?**
 
@@ -162,4 +168,4 @@ The output token can be used starting from the next action as any other token in
 
 **What tokens can I use?**
 
-Module related tokens (form fields, API input parameters etc.), Workflow input parameters, Variables tokens and other output tokens from the same execution/workflow.
+Module related tokens (form fields, API input parameters etc.), Workflow input parameters, tokens and other output tokens from the same execution/workflow.
