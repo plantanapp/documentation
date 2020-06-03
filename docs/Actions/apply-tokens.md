@@ -161,7 +161,8 @@ Yes. There is no limit or restriction regarding the usage of this action. Be awa
 
 **Where can I use the output token?**
 
-The output token can be used starting from the next action as any other token in conditions, as parameters to other actions etc. Store as values (output tokens) will not be available in the execution of the same action even if they are above in the token/expression list.
+The output token can be used starting with the next action. It's used just like any other token - in conditions, as parameters to other actions and so on. The output tokens will not be available in the same action where they are defined, even if they are above in the token/expression list.
+
 
 **What tokens can I use?**
 
