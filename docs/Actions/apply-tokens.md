@@ -62,7 +62,7 @@ When will bring the template value will have to set it's value in a token that w
 
 ### `1. Calculations with Variable DoMath (Recursion =1)`
 
-By default the expression will only concatenate the variables and/or text from the token expression so in case we need to do some math Variables provides a token called DoMath that can solve this issue.
+Applying tokens is just replacing the placeholders inside the token expression. If we needed to do some arithmetic operations, we can use the built-in [DoMath](/docs/tokens/do-math) token.
 
 
 ```json
