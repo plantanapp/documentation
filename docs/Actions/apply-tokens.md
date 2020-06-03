@@ -68,7 +68,7 @@ When will bring the template content we'll have to set its value in a token that
 
 ### `1. Calculations with DoMath Token (Recursion =1)`
 
-By default the expression will only concatenate the tokens and/or text from the token expression so in case we need to do some math tokens provides a token called DoMath that can solve this issue.
+Applying tokens is just replacing the placeholders inside the token expression. If we needed to do some arithmetic operations, we can use the built-in [DoMath](/docs/tokens/do-math) token.
 
 
 ```json
@@ -95,7 +95,8 @@ By default the expression will only concatenate the tokens and/or text from the 
 
 ### `2. Apply tokens inside a template (Recursion >1)`
 
-This example will show you how to replace tokens inside another token.
+This example demonstrates replacing tokens inside the content returned by evaluating a different token named `[EmailTemplate]`.
+
 
 ```json
 
@@ -150,9 +151,11 @@ This example will show you how to replace tokens inside another token.
 
 ## `Frequently Asked Questions`
 
-**What is the best Number of Recursion**
+**What is the average number of recursions?**
 
-Usually 2 or 3 depending of the situation should be enough but it really depends on what you need to achieve. Setting the number of recursion bigger that is need it will not have any impact on the result but will impact the performance. If you are not sure how recursion works increment the value by one until you get the desire output and there are no tokens left. That will be the desire value for the execution.
+
+It really depends on what you need to achieve. 2 or 3 recursions is the maximum that we've seen. Setting the number of recursion higher than needed will not have any impact on the result, but will impact the performance. If you are not sure how recursion works, increment the value by one until you get the desired output and there are no tokens left. That will be the ideal number for your use case.
+
 
 **How long can I use the output token?**
 
@@ -164,7 +167,8 @@ Yes. There is no limit or restriction regarding the usage of this action. Be awa
 
 **Where can I use the output token?**
 
-The output token can be used starting from the next action as any other token in conditions, as parameters to other actions etc. Store as values (output tokens) will not be available in the execution of the same action even if they are above in the token/expression list.
+The output token can be used starting with the next action. It's used just like any other token - in conditions, as parameters to other actions and so on. The output tokens will not be available in the same action where they are defined, even if they are above in the token/expression list.
+
 
 **What tokens can I use?**
 
