@@ -89,7 +89,8 @@ Applying tokens is just replacing the placeholders inside the token expression. 
 
 ### `2. Apply tokens inside a template (Recursion >1)`
 
-This example will show you how to replace tokens inside another token.
+This example demonstrates replacing tokens inside the content returned by evaluating a different token named `[EmailTemplate]`.
+
 
 ```json
 
