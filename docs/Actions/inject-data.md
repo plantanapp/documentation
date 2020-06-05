@@ -7,7 +7,7 @@ sidebar_label: Inject Data
 > Audience: [`Business Users`](/docs/audience#business-users)<br/>
 > Skill Prerequisites: `None`
 
-An action that lets you add data as tokens to the current execution context. Inject data can be used to load data that other actions other actions down the stack need.
+An action that lets you create new tokens into the current execution context. The value of each token is usually a computation of other tokens from the context. Once created, the new tokens can be accessed by any subsequent action.
 
 ## `Typical Use Cases`
 
@@ -18,57 +18,57 @@ An action that lets you add data as tokens to the current execution context. Inj
 
 ## `Don't use it to`
 
-- Execute a Variables token - use [Apply Tokens](/docs/Actions/apply-tokens.md) or [Execute Tokens](/docs/Actions/execute-tokens.md) actions instead
-- Apply tokens inside a text from different sources - use [Apply Tokens](/docs/Actions/apply-tokens.md) or [Execute Tokens](/docs/Actions/execute-tokens.md) actions instead
+- Execute the same token multiple times, in case the token contains other tokens inside - use [Apply Tokens](/docs/Actions/apply-tokens.md) instead
 - Create a token that is used in another execution context - store the data in a [hidden field](/docs/Actions/hidden-field.md), cookies or server session instead
+- Store data in [Entitites]()
 
 ## `Related Actions`
 
-| Action Name | Description|
-|-------------|------------|
-| [Run SQL Query](/docs/Actions/run-sql-query.md) | Executes an SQL statement and captures the output, so that it can be used in the form using Inject Data.|
+| Action Name                                     | Description                                                                                                                  |
+| ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
+| [Run SQL Query](/docs/Actions/run-sql-query.md) | Executes an SQL statement and captures the output, so you can create tokens derived from the data returned by the SQL query. |
 
 ## `Input Parameter Reference`
 
-| Parameter     | Description                           | Supports Variables |
-|---------------|---------------------------------------|--------------------|
-| Name/Value | The first parameter refers to the name of the new token that will be created. The second one refers to the value assigned. The action uses a key-value (name-value) concept. | Yes |
+| Parameter      | Description                                              | Supports Variables |
+| -------------- | -------------------------------------------------------- | ------------------ |
+| Token -> Value | The value that you want to assigne to the created token. | Yes                |
 
 ## `Output Parameters Reference`
 
-| Parameter | Description |
-|-----------|-------------|
-| Name | The Name parameter is stored as a token for further use anywhere in the form. |
+| Parameter     | Description                                                              |
+| ------------- | ------------------------------------------------------------------------ |
+| Token -> Name | The token name(s) in which the response is to be stored for further use. |
 
 ## `Examples`
 
 ### `1. Inject data using Run SQL Query`
 
 ​
-The action below selects first username from users database using Run SQL Query and sends it into the form. <br></br>[Import it](/docs/Actions/import-actions.md) into your application to see it in action.
+The action below counts the total number of users from users database using Run SQL Query and appends the token for user experience purposes. <br></br>[Import it](/docs/Actions/import-actions.md) into your application to see it in action.
 ​
 
 ```json
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "Extract and inject first username into form",
+    "Description": "Extract and inject total number of users into form",
     "Condition": null,
     "Parameters": {
         "ActionList": [
             {
                 "Id": -1,
-                "$_uid": "action15911731358816854",
+                "$_uid": "action15913545646539602",
                 "Parameters": {
                     "ConnectionString": "",
                     "QueryTimeout": "",
-                    "SqlQuery": "SELECT Username FROM Users\nWHERE UserId = 1",
+                    "SqlQuery": "SELECT COUNT(UserId) as Total FROM Users",
                     "BindTokens": [],
                     "OutputTokenName": "",
                     "ExtractColumns": [
                         {
-                            "value": "SQL_Username",
-                            "name": "Username"
+                            "value": "SQL_TotalNumber",
+                            "name": "Total"
                         }
                     ],
                     "OnError": [],
@@ -87,12 +87,12 @@ The action below selects first username from users database using Run SQL Query 
             },
             {
                 "Id": -1,
-                "$_uid": "action15911731358819956",
+                "$_uid": "action15913545646536347",
                 "Parameters": {
                     "Data": [
                         {
-                            "value": "[SQL_Username]",
-                            "name": "Inject_Username"
+                            "value": "[SQL_TotalNumber]",
+                            "name": "Inject_Total"
                         }
                     ]
                 },
@@ -115,20 +115,57 @@ The action below selects first username from users database using Run SQL Query 
 ### `2. Generate a new token`
 
 ​
-The action below generates a new token named "ClientId" with the assigned value "ID15367" that can be used in the form. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
+The action below logs a debug message only if injected data is true. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
 ​
 
 ```json
 {
-    "Title": "Inject Data",
-    "ActionType": "InjectData",
-    "Description": null,
+    "Title": "Execute Actions",
+    "ActionType": "ExecuteActions",
+    "Description": "Check if debug mode is on",
     "Condition": null,
     "Parameters": {
-        "Data": [
+        "ActionList": [
             {
-                "value": "ID15367",
-                "name": "ClientId"
+                "Id": -1,
+                "$_uid": "action15913550876418705",
+                "Parameters": {
+                    "Data": [
+                        {
+                            "value": "true",
+                            "name": "Debug"
+                        }
+                    ]
+                },
+                "ActionType": "InjectData",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true,
+                "Definition": {
+                    "IsClientAction": false,
+                    "Settings": {
+                        "Group": "Context"
+                    }
+                }
+            },
+            {
+                "Id": -1,
+                "$_uid": "action15913550876417679",
+                "Parameters": {
+                    "Message": "Inject data worked."
+                },
+                "ActionType": "LogDebug",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true,
+                "Definition": {
+                    "IsClientAction": false,
+                    "Settings": {
+                        "Group": "Logging"
+                    }
+                },
+                "Condition": "[Debug] == true",
+                "Description": "Debug Logging"
             }
         ]
     }
@@ -212,7 +249,7 @@ The action below extract "FirstName" and "LastName" from users database and conc
 ### `4. Overwrite a token`
 
 ​
-The action below creates a token with initial value "1" and overwrites it. The injected token will have value "2", which is the new one. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
+The action below creates a token with different value depending on logged in user role, the default value being admin role. <br></br> [Import it](/docs/Actions/import-actions.md) into your application to see it in action.
 ​
 
 ```json
@@ -225,12 +262,12 @@ The action below creates a token with initial value "1" and overwrites it. The i
         "ActionList": [
             {
                 "Id": -1,
-                "$_uid": "action15911055285914160",
+                "$_uid": "action159135668460984",
                 "Parameters": {
                     "Data": [
                         {
-                            "value": "1",
-                            "name": "InitialValue"
+                            "value": "Admin User",
+                            "name": "Role"
                         }
                     ]
                 },
@@ -247,12 +284,12 @@ The action below creates a token with initial value "1" and overwrites it. The i
             },
             {
                 "Id": -1,
-                "$_uid": "action15911055285914424",
+                "$_uid": "action15913566846095614",
                 "Parameters": {
                     "Data": [
                         {
-                            "value": "2",
-                            "name": "OverwrittenValue"
+                            "value": "Manager User",
+                            "name": "Role"
                         }
                     ]
                 },
@@ -266,7 +303,9 @@ The action below creates a token with initial value "1" and overwrites it. The i
                         "Group": "Context"
                     }
                 },
-                "Title": "Inject Data"
+                "Title": "Inject Data",
+                "Condition": "[HasRole:Managers] == true",
+                "ActionErrorMessage": ""
             }
         ]
     }
