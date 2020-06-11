@@ -11,7 +11,8 @@ module.exports = {
           'Actions/load-users-from-sql',
           'Actions/execute-token',
           'Actions/apply-tokens',
-          'Actions/faq'],
+          'Actions/faq',
+          'Actions/send-email'],
       }
     ]
   },
