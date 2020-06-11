@@ -8,7 +8,8 @@ module.exports = {
         items: [
           'Actions/server-request', 
           'Actions/load-user',
-          'Actions/load-users-from-sql'],
+          'Actions/load-users-from-sql',
+          'Actions/send-email'],
       }
     ]
   },
