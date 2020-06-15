@@ -395,7 +395,8 @@ In this example will load all the users in the system and send them an email. We
                         "Group": "Email"
                     }
                 },
-                "Description": "Send all the users the email"
+                "Description": "Send email to all users loaded into the context"
+
             }
         ]
     }
