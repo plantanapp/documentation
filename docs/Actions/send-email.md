@@ -264,7 +264,8 @@ In addition, we set up a token for the logo so we can send it with the email as 
                     "ReplyTo": "",
                     "Cc": "user3@plantanapp.com; user4@plantanapp.com;",
                     "Bcc": "user5@plantanapp.com; user6@plantanapp.com;",
-                    "Subject": "Multiple Email sent",
+                    "Subject": "Multiple emails sent",
+
                     "Format": {
                         "Expression": "",
                         "Value": "Html",
