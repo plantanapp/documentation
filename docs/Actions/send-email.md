@@ -216,7 +216,7 @@ In this simple example, we use tokens to send the email from the current user to
 
 In this example, we demonstrate how to use a mix of text and tokens to set parameters. 
 
-Note how the `From` parameter can be configured to also have a display name, such as `<The Sender of the Email>support@plantanapp.com`. Same applies to any email field.
+Note how the `From` parameter can be configured to also have a display name, such as `The Sender of the Email<support@plantanapp.com>`. Same applies to any email field.
 
 In addition, we set up a token for the logo so we can send it with the email as an attachment.  
 
@@ -257,7 +257,7 @@ In addition, we set up a token for the logo so we can send it with the email as 
                 "Description": "Complex example",
                 "Condition": null,
                 "Parameters": {
-                    "From": "<The Sender of the Email>support@plantanapp.com",
+                    "From": "The Sender of the Email<support@plantanapp.com>",
                     "DetermineEmail": "",
                     "To": "user1@plantanapp.com; user2@plantanapp.com; [User:Email]",
                     "ToAllUsers": "",
