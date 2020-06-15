@@ -213,7 +213,12 @@ In this simple example, we use tokens to send the email from the current user to
 ### `3. A more complex setup for sending an email`
 
 
-In this example we display how to use a mix of text and tokens to set parameters. You can also set the From parameter email display name as in this example: `<The Sender of the Email>support@plantanapp.com`. In addition we setup an token to the logo so we can send it with the email as attachment.  
+In this example, we demonstrate how to use a mix of text and tokens to set parameters. 
+
+Note how the `From` parameter can be configured to also have a display name, such as `<The Sender of the Email>support@plantanapp.com`. Same applies to any email field.
+
+In addition, we set up a token for the logo so we can send it with the email as an attachment.  
+
 
 ```json
 {
