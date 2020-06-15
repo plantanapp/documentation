@@ -145,7 +145,8 @@ Send a simple email
 ### `2. Simple Email with Tokens`
 
 
-Simple example where we use tokens to set parameters so we can obtain a more dynamic setup 
+In this simple example, we use tokens to send the email from the current user to itself. This is done using the `[User:Email]` token. We also use the `[User:FirstName]` and the `[User:LastName]` tokens to create a dynamic email body.
+
 
 ```json
 {
