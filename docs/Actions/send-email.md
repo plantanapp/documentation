@@ -223,7 +223,6 @@ Note how the `From` parameter can be configured to also have a display name, suc
 
 In addition, we set up a token for the logo so we can send it with the email as an attachment.  
 
-
 ```json
 {
     "Title": "Execute Actions",
