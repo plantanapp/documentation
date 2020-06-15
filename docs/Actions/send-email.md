@@ -329,7 +329,8 @@ In this example, we will load all the existing users directly from the database 
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "Sending an email with Load User from SQL action help",
+    "Description": "Send email to all users loaded into the context",
+
     "Condition": null,
     "Parameters": {
         "ActionList": [
