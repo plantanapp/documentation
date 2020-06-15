@@ -29,7 +29,8 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | [Load Entities (CSV)](/docs/Actions/load-entities-csv)                         | Load emails and other data from a CSV formatted text to compose complex emails              |
 
-| [Load Entities (Excel File) XSLX](/docs/Actions/load-entities-excel-file-xslx) | Load emails and other data to compose complex emails              |
+| [Load Entities (Excel File) XSLX](/docs/Actions/load-entities-excel-file-xslx) | Load emails and other data from an Excel file to compose complex emails              |
+
 | [Load Entities (JSON)](/docs/Actions/load-entities-json)                       | Load emails and other data to compose complex emails              |
 | [Load Entities (SQL)](/docs/Actions/load-entities-sql)                         | Load emails and other data to compose complex emails              |
 
