@@ -15,7 +15,7 @@ sidebar_label: Grant/Revoke User Role
 
 ## `Don't use it to`
 
-- Prevent users from accessing the system at all, instead mark users as deleted or unauthorize them (for Revoke User Role)
+- Prevent users from accessing the system at all. Instead, mark users as deleted or unauthorize them (for Revoke User Role)
 
 ## `Related Actions`
 
