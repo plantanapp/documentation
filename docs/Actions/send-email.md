@@ -207,7 +207,8 @@ Simple example where we use tokens to set parameters so we can obtain a more dyn
 }
 ```
 
-### `3. A more coplex setup for sending a email`
+### `3. A more complex setup for sending an email`
+
 
 In this example we display how to use a mix of text and tokens to set parameters. You can also set the From parameter email display name as in this example: `<The Sender of the Email>support@plantanapp.com`. In addition we setup an token to the logo so we can send it with the email as attachment.  
 
