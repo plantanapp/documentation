@@ -68,7 +68,7 @@ This action sends an email to one or multiple recipients. It also supports sendi
 ## `Security`
 
 :::caution
-Note that this presents a security risk when the To, From, CC, BCC and Reply To parameter has Tokens from untrusted sources.
+Note that this presents a security risk when the `To`, `From`, `CC`, `BCC` and `Reply To` parameter have tokens from untrusted sources.
 :::
 
 The above mentioned parameters support tokens so the values, if not from a trusted source, may be altered and emails recipients can be modified. 
