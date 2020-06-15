@@ -403,7 +403,8 @@ In this example will load all the users in the system and send them an email. We
 }
 ```
 
-### `5. Sending an email with Load Enitites from SQL action help`
+### `5. Send email to a list of entities loaded from the database
+
 
 ```json
 {
