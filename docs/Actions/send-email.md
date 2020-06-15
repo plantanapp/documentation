@@ -142,7 +142,8 @@ Send a simple email
 }
 ```
 
-### `2. Simple Email with tokens`
+### `2. Simple Email with Tokens`
+
 
 Simple example where we use tokens to set parameters so we can obtain a more dynamic setup 
 
