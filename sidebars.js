@@ -9,7 +9,8 @@ module.exports = {
           'Actions/server-request', 
           'Actions/load-user',
           'Actions/load-users-from-sql',
-          'Actions/grant-revoke-user-role']
+          'Actions/grant-user-role',
+          'Actions/revoke-user-role']
       }
     ]
   },
