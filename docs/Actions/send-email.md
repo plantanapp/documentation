@@ -12,7 +12,8 @@ This action sends an email to one or multiple recipients. It also supports sendi
 ## `Typical Use Cases`
 
 - Send email notifications
-- Send confirmations emails
+- Send confirmation emails
+
 - Newsletters
 - Email Campaigns with the help of our BeeFree integration [`More Details`](https://beefree.io/)
 
