@@ -30,10 +30,10 @@ This actions executes multiple expressions and applies tokens on those expressio
 
 ## `Input Parameter Reference`
 
-| Parameter                 | Description                                                                                                                 | Supports Tokens | Default        |
-| ------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------- |
-| Token -> Token Expression | The tokens and/or text (expression) you want to be evaluated or reevaluated                                                 | Yes             | `empty string` |
-| Number of Recursions      | Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced | Yes             | 1              |
+| Parameter                 | Description                                                                                                                 | Supports Tokens | Default        | Required |
+| ------------------------- | --------------------------------------------------------------------------------------------------------------------------- | --------------- | -------------- | -------- |
+| Token -> Token Expression | The tokens and/or text (expression) you want to be evaluated or reevaluated                                                 | Yes             | `empty string` | No       |
+| Number of Recursions      | Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced | Yes             | 1              | No       |
 
 ## `Output Parameters Reference`
 

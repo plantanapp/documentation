@@ -31,9 +31,9 @@ This action will output a token that stores the output of a token.
 
 ## `Input Parameter Reference`
 
-| Parameter        | Description                                     | Supports Tokens | Default        |
-| ---------------- | ----------------------------------------------- | --------------- | -------------- |
-| Token Expression | The tokens and/or text you want to be evaluated | Yes             | `empty string` |
+| Parameter        | Description                                     | Supports Tokens | Default        | Required |
+| ---------------- | ----------------------------------------------- | --------------- | -------------- | -------- |
+| Token Expression | The tokens and/or text you want to be evaluated | Yes             | `empty string` | No       |
 
 ## `Output Parameters Reference`
 
