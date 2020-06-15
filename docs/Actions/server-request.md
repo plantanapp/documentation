@@ -40,7 +40,7 @@ A low-level action that allows for any kind of HTTP request to be performed.
 | HTTP Method   | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD, PATCH. | No |
 | Data          | If the HTTP Method is POST or PUT, data is allowed to be sent to the target URL. The data can take various forms, from key-value pairs to complex JSON. For the target URL to understand the format, it needs to be passed through the Content-Type header. | Yes |
 |Do not Escape Tokens in Data | By default, we escape tokens in order to not break the XML structure in the data you are trying to send. Enabling this option helps when you are trying to send XML data which comes from tokens in the request body and only takes effect if the Content-Type header is set to text/xml, application/xml or application/soap+xml. | No |
-| Disable Refer Header | By default, we append a referer header  but some APIs will throw errors if this header is sent. If the resource  you want to use doesn't need the referer header, enable this option. | No |
+| Disable Refer Header | By default, we append a referrer header  but some APIs will throw errors if this header is sent. If the resource  you want to use doesn't need the referer header, enable this option. | No |
 | Headers | Additional headers to pass with the request. | Yes |
 | Use DNN Proxy Settings | Enable this option if you want to use the proxy settings you have set for your DNN instance. | No |
 | Add Current Cookies | This will add the current cookies of the session to the request. | No |
