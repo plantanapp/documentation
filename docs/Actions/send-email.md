@@ -15,7 +15,7 @@ This action sends an email to one or multiple recipients. It also supports sendi
 - Send confirmation emails
 
 - Newsletters
-- Email Campaigns with the help of our BeeFree integration [`More Details`](https://beefree.io/)
+- Email Campaigns with the help of our `[BeeFree](https://beefree.io/)` integration 
 
 ## `Don't use it to`
 
