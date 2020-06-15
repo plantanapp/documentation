@@ -224,7 +224,8 @@ In addition, we set up a token for the logo so we can send it with the email as 
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "A more coplex setup for sending a email",
+    "Description": "A more complex setup for sending an email",
+
     "Condition": null,
     "Parameters": {
         "ActionList": [
