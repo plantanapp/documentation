@@ -324,7 +324,6 @@ In addition, we set up a token for the logo so we can send it with the email as 
 
 ### `4. Send email to a list of recipients retrieved from the database`
 
-
 In this example, we will load all the existing users directly from the database and send them an email. Note that we are using the `Send mail to all users` parameter instead of setting the `To` parameter.
 
 
