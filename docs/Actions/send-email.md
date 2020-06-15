@@ -173,7 +173,8 @@ Simple example where we use tokens to set parameters so we can obtain a more dyn
             "IsExpression": false,
             "Parameters": {}
         },
-        "Body": "<p>Dear [User:FirstName] [User:LastName],</p><p>This is an example mail using tokens.</p>",
+        "Body": "<p>Dear [User:FirstName] [User:LastName],</p><p>This is an example email that is using tokens.</p>",
+
         "Headers": "",
         "PortalFiles": "",
         "FileField1": {
