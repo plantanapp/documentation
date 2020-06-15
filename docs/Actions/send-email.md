@@ -19,7 +19,8 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 ## `Don't use it to`
 
-- Debug purposes - Use [Log Error](/docs/Actions/log-error) or [Log Debug Message](/docs/Actions/log-debug-message)
+- Debug - Use [Log Error](/docs/Actions/log-error) or [Log Debug Message](/docs/Actions/log-debug-message)
+
 
 ## `Related Actions`
 
