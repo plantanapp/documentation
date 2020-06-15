@@ -467,7 +467,7 @@ In this example will load all the users in the system and send them an email. We
                                     "IsExpression": false,
                                     "Parameters": {}
                                 },
-                                "Body": "<p><span style=\"color: rgb(102, 102, 102); font-family: Roboto, &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 13px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: 0.1px; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; background-color: rgb(255, 255, 255); text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\">The user: [UserDetails:Firstname] [UserDetails:Lastname] was created on date [UserDetails:CreatedOnDate]</span><!--EndFragment--><br><br><br></p>",
+                                "Body": "<p>The user: [UserDetails:Firstname] [UserDetails:Lastname] was created on date [UserDetails:CreatedOnDate]</p>",
                                 "Headers": "",
                                 "PortalFiles": "",
                                 "FileField1": {
