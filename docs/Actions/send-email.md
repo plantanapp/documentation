@@ -74,7 +74,8 @@ The above mentioned parameters support tokens so the values, if not from a trust
 
 **The FROM parameter needs to be in concordance with the application SMTP settings. (eg: `notifications@mydomain.com`).**
 
-For Plant An App cloud hosted application the from email can be `anything@my-app.apps.plantanapp.com`
+For Plant An App cloud-hosted application, the `From` email can be `anything@my-app.apps.plantanapp.com` or emails from a custom domain, if configured.
+
 
 ### `1. Simple Email`
 
