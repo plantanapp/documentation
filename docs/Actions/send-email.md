@@ -429,7 +429,6 @@ In this example, we will load all the existing users directly from the database 
 
 ### `5. Send email to a list of entities loaded from the database`
 
-
 ```json
 {
     "Title": "Execute Actions",
