@@ -15,11 +15,12 @@ This action sends an email to one or multiple recipients. It also supports sendi
 - Send confirmation emails
 
 - Newsletters
-- Email Campaigns with the help of our BeeFree integration [`More Details`](https://beefree.io/)
+- Email Campaigns with the help of our `[BeeFree](https://beefree.io/)` integration 
 
 ## `Don't use it to`
 
-- Debug purposes - Use [Log Error](/docs/Actions/log-error) or [Log Debug Message](/docs/Actions/log-debug-message)
+- Debug - Use [Log Error](/docs/Actions/log-error) or [Log Debug Message](/docs/Actions/log-debug-message)
+
 
 ## `Related Actions`
 
@@ -38,45 +39,46 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | Parameter                     | Description                                                                                                                                                                                                                                                               | Supports Tokens | Default                                  | Required |
 | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------- | -------- |
-| From                          | The email address from where the email(s) will be sent                                                                                                                                                                                                                    | Yes             | `Creator of the website`                 | No       |
-| Determine Email Automatically | If the `To` parameter is left empty, the action will use the email address of the current user that is loaded into context (by default, the currently logged in user).                                                                                                    | No              | No                                       | No       |
+| From                          | The email address from which the email(s) will be sent                                                                                                                                                                                                                    | Yes             | `Creator of the website`                 |
+
 | To                            | Recipient(s) to send the email to. Multiple Recipients can be separated by semicolon (;)                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
 | Send email to all users       | Sends emails to all users in the context loaded by [Load Users from SQL](/docs/Actions/load-users-sql.md)                                                                                                                                                                 | No              | No                                       | No       |
 | Reply To                      | Email address that the reply message is sent back to instead of the `From` address. Multiple recipients can be separated by semicolon (;)                                                                                                                                 | Yes             | `empty string`                           | No       |
-| CC                            | Carbon Copy. Multiple Recipients can be separated by semicolon (;)                                                                                                                                                                                                        | Yes             | `empty string`                           | No       |
-| BCC                           | Blind Carbon Copy. Multiple Recipients can be separated by semicolon (;)                                                                                                                                                                                                  | Yes             | `empty string`                           | No       |
-| Subject                       | The subject of the Email                                                                                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
+| Reply To                      | Email address that the reply message is sent back to instead of the `From` address. Multiple recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                | Yes             | `empty string`                           |
+| CC                            | Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                                   | Yes             | `empty string`                           |
+| BCC                           | Blind Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                              | Yes             | `empty string`                           |
 | Format                        | The format of the email. Check below for more [details](/docs/Actions/send-email.md#Formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />)` | No       |
 | DNN email template to use.    | Choose from a predefined email from the system                                                                                                                                                                                                                            | No              | Unset                                    | No       |
 | Body                          | The email content to send                                                                                                                                                                                                                                                 | Yes             | `empty string`                           | No       |
 | Headers                       | Appends custom headers to the email.                                                                                                                                                                                                                                      | Yes             | Unset                                    | No       |
 | Attach Portal Files           | Picks existing files from the system to send as attachments.                                                                                                                                                                                                              | No              | Unset                                    | No       |
 | Attach Field #                | Form only parameters. Provides the ability to add up to 5 Single File Uploads fields to be sent as attachments.                                                                                                                                                           | No              | Unset                                    | No       |
-| Attach from Token             | Computes file path from token. It must be relative to the portal home folder. Multiple items must be separated by semicolons. Also supports file ids comma separated as input                                                                                             | Yes             | `empty string`                           | No       |
-| Ignore Errors                 | If errors are ignored, the submission of the form continues even when there is an error sending the email. Otherwise, an error message will be displayed to the user. Note that if the email is being sent async or is placed in a pickup folder, errors won't be caught. | No              | No                                       | No       |
+| Attach Field #                | Form only parameter. It provides the ability to add up to 5 Single File Uploads fields to be sent as attachments.                                                                                                                                                           | No              | Unset                                    |
+| Attach from Token             | Computes file path from token. It must be relative to the portal home folder. Multiple items must be separated by semicolons or commas.                                                                                                                                            | Yes             | `empty string`                           |
+| Ignore Errors                 | If errors are ignored, the submission of the form continues even when there is an error sending the email. Otherwise, an error message will be displayed to the user. Note that if the email is being sent async or is placed in a pickup folder, errors won't be caught. | No              | No                                       |
 
 ## `Formats`
 
 | Format                                   | Details                                                                                                                                                                                                                      |
 | ---------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Html (And replace newline with `<br />`) | To simplify the input of the email we are replacing the newlines in the `Body` of the email with html tag `<br>`. While it is easier to compose the email it may have strange behaviors with some email clients like Outlook |
+| HTML (And replace newline with `<br />`) | To simplify the input of the email we are replacing the newlines in the `Body` of the email with the HTML tag `<br>`. While it is easier to compose the email it may have strange behaviors with some email clients like Outlook |
 | Text                                     | Regular text, with no formatting options such as bold, italics, underlines, or special layout. Can include URLs, such as http:// and ftp:// options.                                                                         |
-| Html (**Recommended**)                   | It’s the way web pages and email templates are coded so that text is formatted and images are added . What it is displayed in the HTML editor of `Body` it is the the result that will be displayed in the email client      |
+| HTML(**Recommended**)                   | It’s the way web pages and email templates are coded so that text is formatted and images are added. What it is displayed in the HTML editor of `Body` will be the result that will be displayed in the email client      |
 
 ## `Security`
 
 :::caution
-Note that this presents a security risk when the To, From, CC, BCC and Reply To parameter has Tokens from untrusted sources.
+Note that this presents a security risk when the `To`, `From`, `CC`, `BCC` and `Reply To` parameter have tokens from untrusted sources.
 :::
 
-The above mentioned parameters support tokens so the values, if not from a trusted source, may be altered and emails recipients can be modified. 
-For example if you let the user to input the email address manually from a Form may be a security risk. The expectation is to input only one email address but the end user may input: `my-email@company.com;other-email@othercompany.com`. Doing this he may send the emails that are meant only for him to other people or organizations. To avoid similar situations we strongly recommend using Tokens like `[User:Email]` or hardcoded email addresses when setting recipients parameters. 
+The above-mentioned parameters support tokens so if the values are not coming from a trusted source they may be altered and email recipients can be modified. 
+For example, if you let the user input the email address manually from a Form, it may present a security risk. The expectation is to input only one email address but the end-user may input: `my-email@company.com;other-email@othercompany.com`. Doing this he may send the emails that are meant only for him to other people or organizations. To avoid similar situations we strongly recommend using Tokens like `[User:Email]` or hardcoded email addresses when setting recipients parameters. 
 
 ## `Examples`
 
 **The FROM parameter needs to be in concordance with the application SMTP settings. (eg: `notifications@mydomain.com`).**
 
-For Plant An App cloud-hosted application, the `From` email can be `anything@my-app.apps.plantanapp.com` or emails from a custom domain, if configured. 
+For Plant An App cloud-hosted application, the `From` address can be `anything@my-app.apps.plantanapp.com` or an address from a custom domain, if configured. 
 
 
 ### `1. Simple Email`
@@ -214,13 +216,11 @@ In this simple example, we use tokens to send the email from the current user to
 
 ### `3. A more complex setup for sending an email`
 
-
 In this example, we demonstrate how to use a mix of text and tokens to set parameters. 
 
 Note how the `From` parameter can be configured to also have a display name, such as `<The Sender of the Email>support@plantanapp.com`. Same applies to any email field.
 
 In addition, we set up a token for the logo so we can send it with the email as an attachment.  
-
 
 ```json
 {
@@ -321,11 +321,9 @@ In addition, we set up a token for the logo so we can send it with the email as 
 }
 ```
 
-### `4. Send email to a list of recipients retrieved from the database`
-
+### `4. Send an email to a list of recipients retrieved from the database`
 
 In this example, we will load all the existing users directly from the database and send them an email. Note that we are using the `Send mail to all users` parameter instead of setting the `To` parameter.
-
 
 ```json
 {
@@ -429,7 +427,6 @@ In this example, we will load all the existing users directly from the database 
 ```
 
 ### `5. Send email to a list of entities loaded from the database`
-
 
 ```json
 {
