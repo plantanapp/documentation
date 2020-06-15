@@ -71,7 +71,7 @@ This action sends an email to one or multiple recipients. It also supports sendi
 Note that this presents a security risk when the `To`, `From`, `CC`, `BCC` and `Reply To` parameter have tokens from untrusted sources.
 :::
 
-The above mentioned parameters support tokens so the values, if not from a trusted source, may be altered and emails recipients can be modified. 
+The above-mentioned parameters support tokens so if the values are not coming from a trusted source they may be altered and email recipients can be modified. 
 For example if you let the user to input the email address manually from a Form may be a security risk. The expectation is to input only one email address but the end user may input: `my-email@company.com;other-email@othercompany.com`. Doing this he may send the emails that are meant only for him to other people or organizations. To avoid similar situations we strongly recommend using Tokens like `[User:Email]` or hardcoded email addresses when setting recipients parameters. 
 
 ## `Examples`
