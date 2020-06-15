@@ -61,7 +61,8 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | Attach Field #                | Form only parameters. Provides the ability to add up to 5 Single File Uploads fields to be sent as attachments.                                                                                                                                                | No              | Unset                                    |
 
-| Attach from Token             | This lets you compute file path from token. It must be relative to portal home folder. Multiple items must be separated by semicolons.                                                                                                                                    | Yes             | `empty string`                           |
+| Attach from Token             | Computes file path from token. It must be relative to the portal home folder. Multiple items must be separated by semicolons.                                                                                                                                    | Yes             | `empty string`                           |
+
 | Ignore Errors                 | If errors are ignored, the submission of the form continues even when there is an error sending the email. Otherwise, an error message will be displayed to the user. Note that if the email is being sent async or is placed in a pickup folder, errors won't be caught. | No              | No                                       |
 
 ## `Security`
