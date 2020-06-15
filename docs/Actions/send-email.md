@@ -531,7 +531,8 @@ In this example will load all the users in the system and send them an email. We
                         "Group": "Entities"
                     }
                 },
-                "Description": "For each email"
+                "Description": "Send email for each entity"
+
             }
         ]
     }
