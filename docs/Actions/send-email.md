@@ -33,7 +33,8 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | [Load Entities (JSON)](/docs/Actions/load-entities-json)                       | Load emails and other data from a JSON formatted text to compose complex emails              |
 
-| [Load Entities (SQL)](/docs/Actions/load-entities-sql)                         | Load emails and other data to compose complex emails              |
+| [Load Entities (SQL)](/docs/Actions/load-entities-sql)                         | Load emails and other data from the database to compose complex emails              |
+
 
 ## `Input Parameter Reference`
 
