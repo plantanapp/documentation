@@ -25,7 +25,8 @@ This action sends an email to one or multiple recipients. It also supports sendi
 | Action Name                                                                    | Description                                                       |
 | ------------------------------------------------------------------------------ | ----------------------------------------------------------------- |
 | [Load Users from SQL](/docs/Actions/load-users-sql.md)                         | Load multiple users so you can send emails to all of them at once |
-| [Load Entities (CSV File)](/docs/Actions/load-entities-csv-file)               | Load emails and other data to compose complex emails              |
+| [Load Entities (CSV File)](/docs/Actions/load-entities-csv-file)               | Load emails and other data from a CSV file to compose complex emails              |
+
 | [Load Entities (CSV)](/docs/Actions/load-entities-csv)                         | Load emails and other data to compose complex emails              |
 | [Load Entities (Excel File) XSLX](/docs/Actions/load-entities-excel-file-xslx) | Load emails and other data to compose complex emails              |
 | [Load Entities (JSON)](/docs/Actions/load-entities-json)                       | Load emails and other data to compose complex emails              |
