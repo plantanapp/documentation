@@ -410,7 +410,8 @@ In this example will load all the users in the system and send them an email. We
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "Sending an email with Load Enitites from SQL action help",
+    "Description": "Send email to a list of entities loaded from the database",
+
     "Condition": null,
     "Parameters": {
         "ActionList": [
