@@ -144,7 +144,7 @@ The action below register a new user and grants it the '[Citizen Developers]' Ro
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "grant Citizen Developers Role for 30 days to testuser",
+    "Description": "Grant the Citizen Developers role for 30 days to testuser",
     "Condition": null,
     "Parameters": {
         "ActionList": [
