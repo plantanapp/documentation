@@ -92,7 +92,7 @@ The action below loads the current user using [Load User](/docs/Actions/load-use
 
 ### `2. Revoke a Role from all users`
 
-The action below loads all users using [Load Entities](/docs/Actions/load-entitites) and [Load User](/docs/Actions/load-user) action and revokes the '[Managers]' role from every one. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below loads all users using [Load Entities](/docs/Actions/load-entitites) and [Load User](/docs/Actions/load-user) action and revokes the `Managers` role from every one. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 {
