@@ -27,7 +27,7 @@ sidebar_label: Revoke User Role
 
 | Parameter        | Description                                                                              | Supports Variables |
 | ---------------- | ---------------------------------------------------------------------------------------- | ------------------ |
-| Role             | Select the security role, from existing roles, to revoke.                                | Yes                |
+| Role             | Select the security role to revoke from a list with all the roles in the application.                                | Yes                |
 | Other Role Names | Freely input the role name(s) you want to revoke. Multiple roles are separated by comma. | Yes                |
 
 ## `Examples`
