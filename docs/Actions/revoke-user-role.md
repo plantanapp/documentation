@@ -40,7 +40,7 @@ The action below loads the current user using [Load User](/docs/Actions/load-use
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "revoke current Citizen Developers user Role",
+    "Description": "Revoke Citizen Developers role from current user",
     "Condition": null,
     "Parameters": {
         "ActionList": [
