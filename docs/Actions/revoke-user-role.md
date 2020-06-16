@@ -34,7 +34,7 @@ sidebar_label: Revoke User Role
 
 ### `1. Revoke a User Role `
 
-The action below loads current user using [Load User](/docs/Actions/load-user) action and revokes its '[Citizen Developers]' role. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below loads the current user using [Load User](/docs/Actions/load-user) action and revokes its '[Citizen Developers]' role. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 {
