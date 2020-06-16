@@ -22,17 +22,21 @@ sidebar_label: Grant User Role
 
 ## `Input Parameter Reference`
 
-| Parameter        | Description                                                                                    | Supports Variables |
-| ---------------- | ---------------------------------------------------------------------------------------------- | ------------------ |
-| Role             | Select the security role to grant from a list with all the roles in the application.                                | Yes                |
-| Other Role Names | Freely input the role name(s) you want to grant. Multiple roles are separated by comma. | Yes                |
-| Role Validity    | Set a validity period to the granted role.                                                     | No                 |
+| Parameter        | Description                                                                                                                                                                                                                                                  | Supports Tokens | Default      | Required |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | --------------- | ------------ | -------- |
+| Role             | Select the security role to grant from a list with all the roles in the application. RoleId can also be used as input.                                                                                                                                       | Yes             | Not selected | Yes      |
+| Other Role Names | Freely input the role name(s) you want to grant. Multiple roles are separated by comma. RoleId can also be used as input.                                                                                                                                    | Yes             | Empty string | No       |
+| Role Validity    | Set a validity period to the granted role. The validity period can be done: for a number of days, date interval with or without tokens. <br></br> When the validity period will expire, the user will not have the permissions of that role anymore. | No              | Not selected | No       |
 
 ## `Examples`
 
+**Note** 
+
+If a role is deleted, it will simply be revoked from any user that has it.
+
 ### `1. Grant a User Role`
 
-The action below register a new user and grants it the '[Citizen Developers]' Role. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below register a new user and grants it the '[Citizen Developers]' Role. If the user exists and already has the role, nothing will happen.  [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 {
@@ -138,7 +142,7 @@ The action below register a new user and grants it the '[Citizen Developers]' Ro
 
 ### `2. Grant a User Role for a period of time`
 
-The action below register a new user and grants it the '[Citizen Developers]' Role just for 30 days. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below register a new user and grants it the '[Citizen Developers]' Role just for 30 days. If the user exists already, the old validity period will reset. For example if the user has only 20 days left, it will have again 30 days left after the action is executed. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 {
@@ -242,17 +246,3 @@ The action below register a new user and grants it the '[Citizen Developers]' Ro
     }
 }
 ```
-
-## `Frequently asked questions`
-
-**What happens when granting a role that the user already has?**
-
-If a role is granted again without any validity period nothing will happen. 
-
-**What happens when grating a role that the user already has, but with a different expiration date?**
-
-If the validity period is set, the old one will reset. For example if a user has only 20 days left, if a 30 days validity period is granted, it will have again 30 days left.
-
-**What happens if the Role is deleted?**
-
-The role will simply be revoked from any user that has it.

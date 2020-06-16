@@ -14,7 +14,7 @@ sidebar_label: Revoke User Role
 
 ## `Don't use it to`
 
-- Prevent users from accessing the system at all. Instead, mark users as deleted or unauthorize them
+- Prevent users from accessing the system at all. Instead, use [`Unauthorize User`](/docs/Actions/unauthorize-user) action to unauthorize loaded user(s) or use [`Delete User`](/docs/Actions/delete-user) to delete loaded user(s).
 
 ## `Related Actions`
 
@@ -25,28 +25,32 @@ sidebar_label: Revoke User Role
 
 ## `Input Parameter Reference`
 
-| Parameter        | Description                                                                              | Supports Variables |
-| ---------------- | ---------------------------------------------------------------------------------------- | ------------------ |
-| Role             | Select the security role to revoke from a list with all the roles in the application.                                | Yes                |
-| Other Role Names | Freely input the role name(s) you want to revoke. Multiple roles are separated by comma. | Yes                |
+| Parameter        | Description                                                                                                                | Supports Variables | Default      | Required |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------- | ------------------ | ------------ | -------- |
+| Role             | Select the security role to revoke from a list with all the roles in the application. RoleId can also be used as input.    | Yes                | Not selected | Yes      |
+| Other Role Names | Freely input the role name(s) you want to revoke. Multiple roles are separated by comma. RoleId can also be used as input. | Yes                | Empty string | No       |
 
 ## `Examples`
 
+**Note** 
+
+If a role is deleted, it will simply be revoked from any user that has it.
+
 ### `1. Revoke a User Role `
 
-The action below loads the current user using [Load User](/docs/Actions/load-user) action and revokes its '[Citizen Developers]' role. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below loads the current user using [Load User](/docs/Actions/load-user) action and revokes its '[Users]' role. Nothing will happen if a not assigned role is revoked. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 
 ```json
 {
     "Title": "Execute Actions",
     "ActionType": "ExecuteActions",
-    "Description": "Revoke Citizen Developers role from current user",
+    "Description": "Revoke Users role from current user",
     "Condition": null,
     "Parameters": {
         "ActionList": [
             {
                 "Id": -1,
-                "$_uid": "action1591868419626850",
+                "$_uid": "action15923143726521407",
                 "Parameters": {
                     "Id": "[User:UserId]",
                     "Portal": ""
@@ -64,11 +68,11 @@ The action below loads the current user using [Load User](/docs/Actions/load-use
             },
             {
                 "Id": -1,
-                "$_uid": "action15918684196265931",
+                "$_uid": "action15923143726526549",
                 "Parameters": {
                     "RoleId": {
                         "Expression": "",
-                        "Value": "6",
+                        "Value": "8",
                         "IsExpression": false,
                         "Parameters": {}
                     },
@@ -185,13 +189,3 @@ The action below loads all users using [Load Entities](/docs/Actions/load-entiti
     }
 }
 ```
-
-## `Frequently asked questions`
-
-**What about revoking a role that the user doesn't have?**
-
-Nothing will happen if a not assigned role is revoked.
-
-**What happens if the Role is deleted?**
-
-The role will simply be revoked from any user that has it.
