@@ -24,7 +24,7 @@ sidebar_label: Grant User Role
 
 | Parameter        | Description                                                                                    | Supports Variables |
 | ---------------- | ---------------------------------------------------------------------------------------------- | ------------------ |
-| Role             | Select the security role, from existing roles, to grant/revoke.                                | Yes                |
+| Role             | Select the security role to grant from a list with all the roles in the application.                                | Yes                |
 | Other Role Names | Freely input the role name(s) you want to grant/revoke. Multiple roles are separated by comma. | Yes                |
 | Role Validity    | Set a validity period to the granted role.                                                     | No                 |
 
