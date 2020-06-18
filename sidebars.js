@@ -9,8 +9,8 @@ module.exports = {
           'Actions/server-request', 
           'Actions/load-user',
           'Actions/load-users-from-sql',
-          'Actions/run-sql'
-          'Actions/send-email'],
+          'Actions/run-sql',
+          'Actions/send-email'
         ],
       }
     ]
