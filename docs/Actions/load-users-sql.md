@@ -4,8 +4,8 @@ title: Load Users From SQL
 sidebar_label: Load Users From SQL
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `User management` `SQL` `Users Table`
+    > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+    > Skill Prerequisites: `User management` `SQL` `Users Table`
 
 An action that loads users into a hidden context entity of users in order to be leveraged by other actions.
 
@@ -38,9 +38,9 @@ Calling the `Load Users From SQL` action the second time inside the same workflo
 
 ## `Input Parameter Reference`
 
-| Parameter     | Description                           | Supports Variables |
-|---------------|---------------------------------------|--------------------|
-| SQL Query | The SQL query will define what users will be loaded into context from the database. The SQL result must be a user ID, a user email or a user name. | Yes |
+| Parameter     | Description                           | Supports Tokens | Default | Required |
+|---------------|---------------------------------------|-----------------|---------|----------|
+| SQL Query | The SQL query will define what users will be loaded into context from the database. The SQL result must be a user ID, a user email or a user name. | Yes | `empty string` | Yes |
 
 ## `Examples`
 
