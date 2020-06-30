@@ -47,3 +47,30 @@ Non-metadata information is easier to overwrite, usually done executing the Inje
 In the case of recursive tokens, those which refer other tokens, they won't be replaced recursively unless a Apply Token actions is used with the necessary number of recursions.
 
 The context is created from scratch every single run, this ensures no collisions or synchronization issues take place between the runs.
+
+## Action Context object, accessing and structure
+
+The action context is the object which contains all the data about the state of the app and you can gain access to it by implementing the `IActionImpl` interface. The interface exposes the `Init` and `Execute` methods out which you mostly will need the `Execute` one. The `Execute` method receives a context variable of `Action Context` type.
+The action context object contains two important pieces, the metadata objects and the DataStore object.
+
+### Metadata objects
+
+#### Page
+
+The `Page` object stores data about the tab where the actions was called from. It is a `TabInfo` object and you can find more details about it [here](https://dnndocs.com/api/DotNetNuke.Entities.Tabs.TabInfo.html).
+
+#### Portal
+
+The `Portal` object stores data about the portal on which the action executes. This object is important, especially when dealing with files or users, as they can be portal based. It is a `PortalSettings` object and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Portals.PortalSettings.html#DotNetNuke_Entities_Portals_PortalSettings).
+
+#### User
+
+The `User` object contains the data about the current user that initiated the action, be aware that this can be altered with the [Load User](Actions/load-user.md) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html#DotNetNuke_Entities_Users_UserInfo).
+
+#### Users
+
+The `Users` property is a context entity  of `Hashset<int>` type which some actions use and can be changed with the [Load User](Actions/load-user.md) or [Load Users from SQL](Actions/load-users-sql.md) actions. It is something specific to PlantAnApp and it contains the IDs of the users that have been loaded into context.
+
+### DataStore object
+
+The `DataStore` object contains all the data about the tokens which have been added into the context and are available for use. It is of type `IDictionary<string, ContextField>` and you can access it's context using the specific dictionary syntax.
