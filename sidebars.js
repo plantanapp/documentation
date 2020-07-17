@@ -10,7 +10,8 @@ module.exports = {
           'Actions/load-user',
           'Actions/load-users-from-sql',
           'Actions/run-sql',
-          'Actions/send-email'
+          'Actions/send-email',
+          'Actions/generate-pdf'
         ],
       }
     ]
