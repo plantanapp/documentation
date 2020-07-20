@@ -26,7 +26,8 @@ Each Module individually has each own permissions and can be modified individual
 
 ### `Actions & Buttons`
 
-All the actions and buttons that can be used in the Plant an App platform have 2 settings called Condition (Show Condition) and Enable Condition that supports tokens. Based on those we can create complex access securities with the HasRole token.  `[HasRole:RoleName]` will check if the logged in user (or the user from [Load User](/docs/Actions/load-user.md)/[Load Users from SQL](/docs/Actions/load-users-sql.md)) and return `true` or `false` depending if the user it is in that role or not. (eg: [HasRole:Admin] ==  true can be used on a button to only enable it for an user in the Admin role)
+All the actions and buttons that can be used in the Plant an App platform have 2 settings called Condition (Show Condition) and Enable Condition that supports tokens. Based on those we can create complex access securities with the HasRole token.  `[HasRole:RoleName]` will check the logged-in user (or the user from [Load User](/docs/Actions/load-user.md)/[Load Users from SQL](/docs/Actions/load-users-sql.md)) and return `true` or `false` depending if the user is in that role or not. (eg: [HasRole:Admin] ==  true can be used on a button to only enable it for a user in the Admin role)
+
 
 ### `API JWT Autentification`
 
@@ -86,7 +87,6 @@ This is a flag that can be added to the Administrators Role and enables the user
 6. Login as the newly create user and access the page of the newly created entity
 7. You can add a new entry but editing or deleting are not enabled.
 8. Go to step 5 and change the permission to explore more. You can login with other users from other roles to explore the other behaviors.
-
 
 
 
