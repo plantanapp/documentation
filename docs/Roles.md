@@ -55,7 +55,8 @@ In the user grid find the role you want to delete and click in the delete icon (
 
 ### `Admin`
 
-It's indented for users that need to manage the application setting and can also manage users in the Built-In roles. People in this role are involved in the development of the application. This role can't be edited or deleted.
+It's intended for users that need to manage the application settings and can also manage users in the Built-In roles. People in this role are involved in the development of the application. This role can't be edited or deleted.
+
 
 ### `Citizen Developers`
 
@@ -87,6 +88,5 @@ This is a flag that can be added to the Administrators Role and enables the user
 6. Login as the newly create user and access the page of the newly created entity
 7. You can add a new entry but editing or deleting are not enabled.
 8. Go to step 5 and change the permission to explore more. You can login with other users from other roles to explore the other behaviors.
-
 
 
