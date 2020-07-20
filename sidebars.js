@@ -2,6 +2,7 @@ module.exports = {
   someSidebar: {
     'Getting Started': [
       'Audience',
+      'Roles',
       {
         type: 'category',
         label: 'Actions',
