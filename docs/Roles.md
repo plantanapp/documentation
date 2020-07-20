@@ -35,7 +35,8 @@ Authenticating with JWT to use an API resources has to be done in the name of a 
 
 ### `Search Index Rules`
 
-All or some results may restricted (not shown) based on the roles by specifying the roles who have access to each results.
+All or some results may be restricted (not shown) based on the roles by specifying the roles who have access to each result.
+
 
 ## `Role Management`
 
@@ -88,5 +89,4 @@ This is a flag that can be added to the Administrators Role and enables the user
 6. Login as the newly create user and access the page of the newly created entity
 7. You can add a new entry but editing or deleting are not enabled.
 8. Go to step 5 and change the permission to explore more. You can login with other users from other roles to explore the other behaviors.
-
 
