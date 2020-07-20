@@ -3,6 +3,7 @@ module.exports = {
     'Getting Started': [
       'Audience',
       'Versioning',
+      'Roles',
       {
         type: 'category',
         label: 'Actions',
