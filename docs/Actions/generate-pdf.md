@@ -52,64 +52,282 @@ Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HT
 
 ## `External Resources`
 
-- `Pictures`
+### `Pictures`
   
-  Including a picture in the PDF can be made using the image absolute URL.
+Including a picture in the PDF can be made using the image absolute URL. For example, if you want to include our logo in your PDF, you can use the following HTML syntax:
 
--  `CSS`
+```html
+<img src="https://learn.plantanapp.com/img/pap-logo.png" alt="PlantAnApp Logo">
+```
 
-  CSS can be used using the default HTML syntax in the default 3 ways: 
-    - Inline
-    - Internal 
-    - External
+###  `CSS`
 
--  `JavaScript`
-  
-  s
+CSS can be used using the default HTML syntax in the default 3 ways: 
+Inline, for example a red heading can be made using the following syntax: 
+```html
+<h1 style="color:red;">Heading</h1>
+```
+
+Internal,  the previous example can be written in the header like this:  
+```html
+<html>
+  <head>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Heading</h1>
+  </body>
+</html>      
+```
+
+External, you can load any external style sheet using this syntax in header:
+```html
+<link rel="your_own_stylesheet" href="styles.css">
+```
+**Note!** A style sheet can be written in any text editor and the file will look something like this:
+```CSS
+body {
+  background-color: blue;
+}
+h1 {
+  color: red;
+}
+```
+
+### `JavaScript`
+
+JavaScript can also be executed when compiling a PDF file. The following code generates a PDF with red, centered and Arial font Heading, all made by the javascript found between script tags.
+
+```json
+{
+    "Title": "Execute Actions",
+    "ActionType": "ExecuteActions",
+    "Description": "change font, text align and font using JS",
+    "Condition": null,
+    "Parameters": {
+        "ActionList": [
+            {
+                "Title": "Generate PDF",
+                "ActionType": "GeneratePDF",
+                "Description": null,
+                "Condition": null,
+                "Parameters": {
+                    "HtmlInputType": {
+                        "Expression": "",
+                        "Value": "richtext",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "HTMLCode": "<h1 id=\"heading\">Hello World!</h1>\n\n\n\n<p>\n\t<script>\n\tdocument.getElementById(\"heading\").style.color = \"red\";\n\tdocument.getElementById(\"heading\").style.fontFamily = \"Arial\";\n\tdocument.getElementById(\"heading\").style.textAlign = \"center\";\n\t</script>\n</p>\n",
+                    "PDFName": "Testing-JS",
+                    "PathDestination": {
+                        "Expression": "",
+                        "Value": "/",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "OrientationLandscape": "",
+                    "PaperSize": {
+                        "Expression": "",
+                        "Value": "A4",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "Grayscale": "",
+                    "OtherOptions": "--javascript-delay 1000",
+                    "StoreFileId": "",
+                    "StoreAbsoluteURL": "link",
+                    "StoreRelativeURL": "",
+                    "StorePhysicalPath": "",
+                    "StoreLinkClick": "",
+                    "ForceDownload": true
+                },
+                "$_uid": "action15952449891874616",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true
+            },
+            {
+                "Title": "Redirect to URL",
+                "ActionType": "RedirectToUrl",
+                "Description": null,
+                "Condition": null,
+                "Parameters": {
+                    "Url": "[link]",
+                    "EscapeUrl": "",
+                    "OpenInPopup": "",
+                    "PopupTitle": "",
+                    "OpenInNewTab": "",
+                    "ForceDownload": true
+                },
+                "$_uid": "action15952449891871794",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true
+            }
+        ]
+    }
+}
+```
+
 ​
 
 ## `Examples`
 
-### `1. Read a JSON Array`
+### `1. Generate a PDF using HTML/CSS directly into the action`
 
 ​
-The action below reads a list of employees from an API via GET and saves it to a variable `[Employees]`. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below generates a simple PDF with custom CSS styles for title and paragraph. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
 ​
 
 ```json
-​
-{
-    "Title": "Server Request",
-    "ActionType": "PostData",
-    "Description": "Get Employees",
+​{
+    "Title": "Execute Actions",
+    "ActionType": "ExecuteActions",
+    "Description": "simple example using html directly into the html code box",
+    "Condition": null,
     "Parameters": {
-        "URL": "http://dummy.restapiexample.com/api/v1/employees",
-        "UseSSL": "",
-        "Timeout": "",
-        "HttpMethod": {
-            "Expression": "",
-            "Value": "GET",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "Data": "",
-        "DoNotEscapeTokens": "",
-        "DisableReferer": "",
-        "Headers": "",
-        "UseDNNProxySettings": "",
-        "AddCurrentCookies": "",
-        "CookieContainerToken": "",
-        "UrlTokenContext": {
-            "Expression": "",
-            "Value": "Url",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "OutputTokenName": "Employees",
-        "OutputHeaders": "",
-        "IgnoreErrors": "",
-        "OnError": []
+        "ActionList": [
+            {
+                "Title": "Generate PDF",
+                "ActionType": "GeneratePDF",
+                "Description": null,
+                "Condition": null,
+                "Parameters": {
+                    "HtmlInputType": {
+                        "Expression": "",
+                        "Value": "codemirror",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "HTMLCode": "<head>\n\t<style>\n      h1 {\n        color: red;\n        text-align: center;\n      }\n      p {\n        color: blue;\n        text-align: left;\n      }\n\t</style>\n</head>\n\n<body>\n\t<h1> \n      Example \n  \t</h1>\n\t<p>\n    \tThis is a simple generated PDF.  \n  \t</p>\n</body>",
+                    "PDFName": "Example",
+                    "PathDestination": {
+                        "Expression": "",
+                        "Value": "/",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "OrientationLandscape": "",
+                    "PaperSize": {
+                        "Expression": "",
+                        "Value": "A4",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "Grayscale": "",
+                    "OtherOptions": "--javascript-delay 1000",
+                    "StoreFileId": "",
+                    "StoreAbsoluteURL": "link",
+                    "StoreRelativeURL": "",
+                    "StorePhysicalPath": "",
+                    "StoreLinkClick": "",
+                    "ForceDownload": true
+                },
+                "$_uid": "action15952466244288115",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true
+            },
+            {
+                "Title": "Redirect to URL",
+                "ActionType": "RedirectToUrl",
+                "Description": null,
+                "Condition": null,
+                "Parameters": {
+                    "Url": "[link]",
+                    "EscapeUrl": "",
+                    "OpenInPopup": "",
+                    "PopupTitle": "",
+                    "OpenInNewTab": "",
+                    "ForceDownload": true
+                },
+                "$_uid": "action15952466244288030",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true
+            }
+        ]
+    }
+}​
+```
+
+### `2. Generate a PDF with pictures/signatures`
+
+The action below generates a PDF that has a red title and a loaded picture. This picture can be a signature, a watermark or anything else. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+
+```json
+{
+    "Title": "Execute Actions",
+    "ActionType": "ExecuteActions",
+    "Description": "generating a pdf that has a picture",
+    "Condition": null,
+    "Parameters": {
+        "ActionList": [
+            {
+                "Title": "Generate PDF",
+                "ActionType": "GeneratePDF",
+                "Description": null,
+                "Condition": null,
+                "Parameters": {
+                    "HtmlInputType": {
+                        "Expression": "",
+                        "Value": "codemirror",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "HTMLCode": "<head>\n\t<style>\n      h1 {\n        color: red;\n        text-align: center;\n      }\n      img {\n        display: block;\n        margin-left: auto;\n        margin-right: auto;\n        width: 50%;\n      }\n\t</style>\n</head>\n\n<body>\n\t<h1> \n      Picture \n  \t</h1>\n\t<img src=\"https://learn.plantanapp.com/img/pap-logo.png\" alt=\"Plant An App Logo\">\n</body>",
+                    "PDFName": "PDF-Example",
+                    "PathDestination": {
+                        "Expression": "",
+                        "Value": "/",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "OrientationLandscape": "",
+                    "PaperSize": {
+                        "Expression": "",
+                        "Value": "A4",
+                        "IsExpression": false,
+                        "Parameters": {}
+                    },
+                    "Grayscale": "",
+                    "OtherOptions": "--javascript-delay 1000",
+                    "StoreFileId": "",
+                    "StoreAbsoluteURL": "link",
+                    "StoreRelativeURL": "",
+                    "StorePhysicalPath": "",
+                    "StoreLinkClick": "",
+                    "ForceDownload": true
+                },
+                "$_uid": "action15952510276878309",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true
+            },
+            {
+                "Title": "Redirect to URL",
+                "ActionType": "RedirectToUrl",
+                "Description": null,
+                "Condition": null,
+                "Parameters": {
+                    "Url": "[link]",
+                    "EscapeUrl": "",
+                    "OpenInPopup": "",
+                    "PopupTitle": "",
+                    "OpenInNewTab": "",
+                    "ForceDownload": true
+                },
+                "$_uid": "action15952510276874502",
+                "$_isOpen": false,
+                "$_isLoaded": true,
+                "$_isFocus": true
+            }
+        ]
     }
 }
-​
 ```

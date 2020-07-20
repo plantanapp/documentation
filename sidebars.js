@@ -11,7 +11,9 @@ module.exports = {
           'Actions/load-users-from-sql',
           'Actions/run-sql',
           'Actions/send-email',
-          'Actions/generate-pdf'
+          'Actions/generate-pdf',
+          'Actions/merge-pdf',
+          'Actions/overlay-pdf'
         ],
       }
     ]
