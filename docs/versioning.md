@@ -16,7 +16,7 @@ Versioning is the creation and management of multiple releases of a product, all
 
 Version control (also known as source control) is the management of file changes within a version control system. These systems automatically maintain character level changes for all files stored within allowing for a complete retrace of all versions of each file, the author of those versions and a complete rollback of all changes from the beginning of version control.
 
-For developer-oriented work, it is critical to utilize version control systems for all non-binary files (read Notepad readable) to enable multiple developers or teams to work in an isolated fashion without impacting the work of others. This isolation enables features to be built, tested, integrated or even scrapped in a controllable, transparent and, maintainable manner.
+For developer-oriented work, it is critical to utilize version control systems for all non-binary files (read Notepad readable) to enable multiple developers or teams to work in an isolated fashion without impacting the work of others. This isolation enables features to be built, tested, integrated or even scrapped in a controllable, transparent and maintainable manner.
 
 The basics of version control are the ability to save changes made to files, whilst retaining the changes from all previous versions. All changes made within Git receive a unique version identifier alongside a user-written comment where the changes can be described.
 
