@@ -4,6 +4,7 @@ title: Workflows
 sidebar_label: Workflows
 ---
 
+
 ## `General Description`
 
 A workflow consists of an orchestrated and repeatable pattern of activity, enabled by the systematic organization of resources into processes that transform materials, provide services, or process information. It can be depicted as a sequence of operations, the work of a person or group, the work of an organization of staff, or one or more simple or complex mechanisms.
