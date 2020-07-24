@@ -3,22 +3,27 @@ module.exports = {
     'Getting Started': [
       'Audience',
       'execution-context',
-      'Versioning',
+      'faq',
       'Roles',
+      'running-examples',
+      'Versioning',
+      'Workflows',
       {
         type: 'category',
         label: 'Actions',
         items: [
-          'Actions/server-request', 
+          'Actions/apply-tokens',
+          'Actions/execute-token',
+          'Actions/generate-pdf',
+          'Actions/grant-user-role',
+          'Actions/inject-data',
           'Actions/load-user',
           'Actions/load-users-from-sql',
-          'Actions/execute-token',
-          'Actions/apply-tokens',
-          'Actions/faq',
-          'Actions/send-email',
+          'Actions/merge-pdf',
+          'Actions/overlay-pdf',
+          'Actions/revoke-user-role',
           'Actions/run-sql',
-          'Actions/grant-user-role',
-          'Actions/revoke-user-role'
+          'Actions/server-request',
         ],
       }
     ]
