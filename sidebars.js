@@ -14,7 +14,8 @@ module.exports = {
           'Actions/run-sql',
           'Actions/send-email',
           'Actions/grant-user-role',
-          'Actions/revoke-user-role'
+          'Actions/revoke-user-role',
+          'Actions/running-examples'
         ],
       }
     ]
