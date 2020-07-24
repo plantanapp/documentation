@@ -1,7 +1,7 @@
 ---
 id: running-examples
 title: Running the examples from actions
-sidebar_label: How to run the examples
+sidebar_label: Running examples
 ---
 
 In each `Examples` section there is a code snippet that can be copied and imported in the Plant An App aplication so that it can be run. Below is a screenshot from the first example of the [Run SQL Query](\docs\run-sql.md) action:
