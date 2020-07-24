@@ -42,10 +42,10 @@ Calling the `Load User` action the second time inside the same workflow will rep
 
 ## `Input Parameter Reference`
 
-| Parameter     | Description                           | Supports Variables |
-|---------------|---------------------------------------|--------------------|
-| User Identifier | The identifier which will indicate which user to load into context. You can use the user ID, username or the email as identifiers. <br/> You can load multiple users by providing multiple values separated by a comma. | Yes |
-| Portal ID | The identifier which will specify in which portal to look for the user indicated by the 'User Identifier'. If left blank, the action will search for the user across all portals. Valid values are either the portal ID or the portal name. | Yes |
+| Parameter     | Description                           | Supports Tokens | Default | Required |
+|---------------|---------------------------------------|--------------------|---------|----------|
+| User Identifier | The identifier which will indicate which user to load into context. You can use the user ID, username or the email as identifiers. <br/> You can load multiple users by providing multiple values separated by a comma. | Yes | `empty string` | Yes |
+| Portal ID | The identifier which will specify in which portal to look for the user indicated by the 'User Identifier'. If left blank, the action will search for the user across all portals. Valid values are either the portal ID or the portal name. | Yes | `All Portals` | No |
 
 ## `Examples`
 
