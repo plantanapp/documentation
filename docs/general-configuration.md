@@ -25,7 +25,7 @@ The `Application Url` cannot be changed, **only** the application name!
 Clicking on the `Change` button from the `FavIcon` field will open a pop-up to upload a personal icon and clicking open will upload it. To save it, click on the green `Save` button from the top right corner of the page.
 
 :::note
-The only supported types are **.png** and **.ico**!
+The supported types are **.png** and **.ico**!
 :::
 
 ### `Change the Application Image`
