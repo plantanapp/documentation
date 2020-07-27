@@ -5,7 +5,6 @@ module.exports = {
       'execution-context',
       'faq',
       'Roles',
-      'general-configuration',
       'running-examples',
       'Versioning',
       'Workflows',
