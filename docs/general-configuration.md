@@ -8,7 +8,7 @@ sidebar_label: General Configuration
 
 General Configuration is the place where you can personalize your Plant an App application. 
 
-This can be done by entering `Configuration` from your application menu and then going onto the `General` page. After entering the `General` page, a page similar with the one below will appear:
+This can be done by entering `Configuration` from your application menu and then going into the `General` page. After entering the `General` page, a page similar to the one below will appear:
 
 <img src="/static/img/general-configuration.jpg" alt="General Page" />
 
