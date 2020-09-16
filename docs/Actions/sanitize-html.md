@@ -24,8 +24,8 @@ This action recieves HTML input and repairs broken HTML tag syntax, removes spec
 
 | Action Name                                     | Description                                                                        |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Generate PDF](/docs/Actions/generate-pdf.md)   | Form action only, it updates the fields based on the values from the tokens.       |
-| [Send Email](/docs/Actions/send-email.md)       | Form action only, shows a message after the executions of set of actions/workflow. |
+| [Generate PDF](/docs/Actions/generate-pdf.md)   | Uses wkhtmltopdf open source to generate PDF from HTML template.       |
+| [Send Email](/docs/Actions/send-email.md)       | Sends an email to one or multiple recipients. |
 | [Run SQL Query](/docs/Actions/run-sql-query.md) | Executes an SQL statement and captures the output.                                 |
 
 
