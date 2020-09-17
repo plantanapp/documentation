@@ -24,10 +24,10 @@ This action recieves HTML input and repairs broken HTML tag syntax, removes spec
 
 | Action Name                                     | Description                                                                        |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Generate PDF](/docs/Actions/generate-pdf.md)   | Uses wkhtmltopdf open source to generate PDF from HTML template.       |
-| [Send Email](/docs/Actions/send-email.md)       | Sends an email to one or multiple recipients. |
-| [Run SQL Query](/docs/Actions/run-sql-query.md) | Executes an SQL statement and captures the output.                                 |
-
+| [Generate PDF](/docs/Actions/generate-pdf)   | Uses wkhtmltopdf open source to generate PDF from HTML template. Use Sanitize HTML to remove specific tags or just make sure the HTML is complete before sending it to the pdf.       |
+| [Send Email](/docs/Actions/send-email)       | Sends an email to one or multiple recipients. Use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before sending it the the email action. |
+| [Run SQL Query](/docs/Actions/run-sql) | Executes an SQL statement and captures the output. Use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before saving it to your database.                               |
+| [Server Request](/docs/Actions/server-request) | A low-level action that allows for any kind of HTTP request to be performed. If this action is returning HTML, use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before passing it to subsequent actions.                               |
 
 ## `Input Parameter Reference`
 
@@ -40,7 +40,7 @@ This action recieves HTML input and repairs broken HTML tag syntax, removes spec
 | Toggle between Exclude/Allow HTML tag lists      | Applies to the Excluded Tags option below. When this option is checked Allow Mode is in effect.   | No             | Exclude             | No       |
 | Excluded Tags      | HTML tags specified here will be removed from the provided content. All other tags will remain in place. Content between the removed tags will also remain   | No             | `empty string`               | No       |
 | Allowed Tags      | Only HTML tags specified here will be preserved. All other tags will be deleted and their content processed recursively. | No             | `empty string`               | No       |
-| Allowed Tags      | Only HTML tags specified here will be preserved. All other tags will be deleted and their content processed recursively. | No             | `empty string`               | No       |
+| Removable Tags | Removes specified tags and the content within the tags. | No             | `empty string`               | No       |
 
 ## `Output Parameters Reference`
 
