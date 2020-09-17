@@ -15,7 +15,7 @@ All tokens that exist in the Execution Context when this action runs will be ava
 
 | Parameter     | Description                           | Supports Tokens |
 |---------------|---------------------------------------|-----------------|
-| Script Name | A unique name that identifies what this script is about. It will be used for error and debug messages and logging and for as the filename for the `.js` file exported to GitHub| No |
+| Script Name | A unique name that identifies what this script is about. It will be used for error and debug messages and logging and as the filename for the `.js` file exported to GitHub| No |
 | Local Variables | By default, all tokens in the context, as well as global tokens, are already available as local JavaScript variables. Additional variables can be created through this setting. It's useful, for example, to have non-developers control the flow of the code. Note that variables in JavaScript are case sensitive, so, when used, their names must match exactly the way they were defined in this setting. | Yes |
 | Code | The JavaScript code to run. It supports full syntax. To have the values exported back to the process, simply use `return` statements. | No |
 
