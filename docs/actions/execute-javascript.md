@@ -35,7 +35,7 @@ All tokens that exist in the Execution Context when this action runs will be ava
 
 Data can be returned from the script back to the process simply by issuing a `return` statement. The returned value will be stored in the context under the name specified for the `Output Token` setting above.
 
-Given the example below, if the `Output Token` was set to `Sum`, then the result can be access in following actions by using the `[Sum]` token.
+Given the example below, if the `Output Token` was set to `Sum`, then the result can be accessed in following actions by using the `[Sum]` token.
 
 ``` js
 
