@@ -29,3 +29,40 @@ stages:
               PathtoPublish: "$(Build.ArtifactStagingDirectory)"
               ArtifactName: "drop"
               publishLocation: "Container"
+  - stage: Deployment
+    displayName: Deploy to S3
+    dependsOn: Build
+    condition: succeeded()
+    jobs:
+      - deployment:
+        pool:
+          vmImage: "ubuntu-latest"
+        environment: dev
+        variables:
+          - name: DistributionId
+            value: "YOUR_DISTRIBUTION_ID"
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
+                  inputs:
+                    regionName: "us-east-1"
+                    bucketName: "learn.plantanapp.com"
+                    sourceFolder: "$(Pipeline.Workspace)/drop/"
+                    globExpressions: "**"
+                  env:
+                    AWS_ACCESS_KEY_ID: $(AWS.AccessKeyID)
+                    # this needs to be added as env var because it is a secret variable (read docs)
+                    AWS_SECRET_ACCESS_KEY: $(AWS.SecretAccessKey)
+                    
+
+                # - task: AWSCLI@1
+                #   inputs:
+                #     awsCommand: "cloudfront"
+                #     awsSubCommand: "create-invalidation"
+                #     awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
+                #   displayName: "Invalidate CloudFront Cache"
+                #   env:
+                #     AWS_ACCESS_KEY_ID: $(AWS.AccessKeyID)
+                #     AWS_SECRET_ACCESS_KEY: $(AWS.SecretAccessKey)
