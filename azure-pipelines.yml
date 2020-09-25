@@ -38,9 +38,6 @@ stages:
         pool:
           vmImage: "ubuntu-latest"
         environment: dev
-        variables:
-          - name: DistributionId
-            value: $(DistributionId)
         strategy:
           runOnce:
             deploy:
