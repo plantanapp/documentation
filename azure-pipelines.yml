@@ -52,10 +52,10 @@ stages:
                     bucketName: "learn.plantanapp.com"
                     sourceFolder: "$(Pipeline.Workspace)/drop/"
                     globExpressions: "**"
-                - task: AWSCLI@1
-                  inputs:
-                    awsCredentials: "YOUR_AWS_SERVICE_CONNECTION"
-                    awsCommand: "cloudfront"
-                    awsSubCommand: "create-invalidation"
-                    awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
-                  displayName: "Invalidate CloudFront Cache"
+                #- task: AWSCLI@1
+                 # inputs:
+                  #  awsCredentials: "YOUR_AWS_SERVICE_CONNECTION"
+                   # awsCommand: "cloudfront"
+                    #awsSubCommand: "create-invalidation"
+                    #awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
+                  #displayName: "Invalidate CloudFront Cache"
