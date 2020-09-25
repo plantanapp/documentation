@@ -40,7 +40,7 @@ stages:
         environment: dev
         variables:
           - name: DistributionId
-            value: "YOUR_DISTRIBUTION_ID"
+            value: $(DistributionId)
         strategy:
           runOnce:
             deploy:
@@ -57,12 +57,12 @@ stages:
                     AWS_SECRET_ACCESS_KEY: $(AWS.SecretAccessKey)
                     
 
-                # - task: AWSCLI@1
-                #   inputs:
-                #     awsCommand: "cloudfront"
-                #     awsSubCommand: "create-invalidation"
-                #     awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
-                #   displayName: "Invalidate CloudFront Cache"
-                #   env:
-                #     AWS_ACCESS_KEY_ID: $(AWS.AccessKeyID)
-                #     AWS_SECRET_ACCESS_KEY: $(AWS.SecretAccessKey)
+                - task: AWSCLI@1
+                  inputs:
+                      awsCommand: "cloudfront"
+                      awsSubCommand: "create-invalidation"
+                      awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
+                  displayName: "Invalidate CloudFront Cache"
+                  env:
+                      AWS_ACCESS_KEY_ID: $(AWS.AccessKeyID)
+                      AWS_SECRET_ACCESS_KEY: $(AWS.SecretAccessKey)
