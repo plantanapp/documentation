@@ -45,7 +45,7 @@ stages:
           runOnce:
             deploy:
               steps:
-                - task: S3Upload@1
+                - task:  AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
                   inputs:
                     awsCredentials: "YOUR_AWS_SERVICE_CONNECTION"
                     regionName: "us-east-1"
