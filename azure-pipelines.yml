@@ -48,8 +48,8 @@ stages:
                 - task: S3Upload@1
                   inputs:
                     awsCredentials: "YOUR_AWS_SERVICE_CONNECTION"
-                    regionName: "YOUR_AWS_REGION_NAME"
-                    bucketName: "YOUR_BUCKET_NAME"
+                    regionName: "us-east-1"
+                    bucketName: "learn.plantanapp.com"
                     sourceFolder: "$(Pipeline.Workspace)/drop/"
                     globExpressions: "**"
                 - task: AWSCLI@1
