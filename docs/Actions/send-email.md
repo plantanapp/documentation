@@ -15,25 +15,25 @@ This action sends an email to one or multiple recipients. It also supports sendi
 - Send confirmation emails
 
 - Newsletters
-- Email Campaigns with the help of our `[BeeFree](https://beefree.io/)` integration 
+- Email Campaigns with the help of our [BeeFree](https://beefree.io/) integration 
 
 ## `Don't use it to`
 
-- Debug - Use [Log Error](/docs/Actions/log-error) or [Log Debug Message](/docs/Actions/log-debug-message)
+- Debug - Use Log Error or Log Debug Message
 
 
 ## `Related Actions`
 
 | Action Name                                                                        | Description                                                                           |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Load Users from SQL](/docs/Actions/load-users-sql.md)                             | Load multiple users so you can send emails to all of them at once                     |
-| [Load Entities (CSV File)](/docs/Actions/load-entities-csv-file)                   | Load emails and other data from a CSV file to compose complex emails                  |
-| [Load Entities (CSV)](/docs/Actions/load-entities-csv)                             | Load emails and other data from a CSV formatted text to compose complex emails        |
-| [Load Entities (Excel File) XSLX](/docs/Actions/load-entities-excel-file-xslx)     | Load emails and other data from an Excel file to compose complex emails               |
-| [Load Entities (JSON)](/docs/Actions/load-entities-json)                           | Load emails and other data from a JSON formatted text to compose complex emails       |
-| [Load Entities (SQL)](/docs/Actions/load-entities-sql)                             | Load emails and other data from the database to compose complex emails                |
-| [Load User](/docs/Actions/load-user.md)                                            | Load an user so you can obtain recipient information via tokens                       |
-| [Execute actions on entity list](/docs/Actions/execute-actions-on-enitity-list.md) | Execute a set of actions for each entity, that can help you to compose complex emails |
+| [Load Users from SQL](/docs/actions/load-users-from-sql)                             | Load multiple users so you can send emails to all of them at once                     |
+| Load Entities (CSV File)                   | Load emails and other data from a CSV file to compose complex emails                  |
+| Load Entities (CSV)                             | Load emails and other data from a CSV formatted text to compose complex emails        |
+| Load Entities (Excel File) XSLX     | Load emails and other data from an Excel file to compose complex emails               |
+| Load Entities (JSON)                           | Load emails and other data from a JSON formatted text to compose complex emails       |
+| Load Entities (SQL)                             | Load emails and other data from the database to compose complex emails                |
+| [Load User](/docs/actions/load-user)                                            | Load an user so you can obtain recipient information via tokens                       |
+| Execute actions on entity list | Execute a set of actions for each entity, that can help you to compose complex emails |
 
 ## `Input Parameter Reference`
 
@@ -41,11 +41,11 @@ This action sends an email to one or multiple recipients. It also supports sendi
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------- | -------- |
 | From                       | The email address from which the email(s) will be sent                                                                                                                                                                                                                    | Yes             | `Creator of the website`                 | No       |
 | To                         | Recipient(s) to send the email to. Multiple Recipients can be separated by semicolon (;)                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
-| Send email to all users    | Sends emails to all users in the context loaded by [Load Users from SQL](/docs/Actions/load-users-sql.md)                                                                                                                                                                 | No              | No                                       | No       |
+| Send email to all users    | Sends emails to all users in the context loaded by [Load Users from SQL](/docs/actions/load-users-from-sql)                                                                                                                                                                 | No              | No                                       | No       |
 | Reply To                   | Email address that the reply message is sent back to instead of the `From` address. Multiple recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                | Yes             | `empty string`                           | No |
 | CC                         | Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                       | Yes             | `empty string`                           |  No |
 | BCC                        | Blind Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                 | Yes             | `empty string`                           |  No |
-| Format                     | The format of the email. Check below for more [details](/docs/Actions/send-email.md#Formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />)` | No       |
+| Format                     | The format of the email. Check below for more [details](/docs/actions/send-email#formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />)` | No       |
 | DNN email template to use. | Choose from a predefined email from the system                                                                                                                                                                                                                            | No              | Unset                                    | No       |
 | Subject                    | The subject of the Email                                                                                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
 | Body                       | The email content to send                                                                                                                                                                                                                                                 | Yes             | `empty string`                           | No       |

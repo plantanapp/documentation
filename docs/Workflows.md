@@ -1,5 +1,5 @@
 ---
-id: Workflows 
+id: workflows 
 title: Workflows
 sidebar_label: Workflows
 ---

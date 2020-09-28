@@ -11,12 +11,12 @@ An action that loads users into a hidden context entity of users in order to be 
 
 The following actions support the Users hidden entity:
 
-- [Grant Role](/docs/Actions/grant-role.md)
-- [Revoke Role](/docs/Actions/revoke-role.md)
-- [Authorize User](/docs/Actions/authorize-user.md)
-- [Unauthorize User](/docs/Actions/unauthorize-user.md)
-- [Delete User](/docs/Actions/delete-user.md)
-- [Send Email](/doc/Actions/send-email.md).
+- [Grant Role](/docs/actions/grant-user-role)
+- [Revoke Role](/docs/actions/revoke-user-role)
+- Authorize User
+- Unauthorize User
+- Delete User
+- [Send Email](/docs/actions/send-email)
 
 Calling the `Load Users From SQL` action the second time inside the same workflow will add to the already existing list of context users (the Users entity) from the previous call. If a user is already present in the Users entity he will not be added again.
 
@@ -27,14 +27,14 @@ Calling the `Load Users From SQL` action the second time inside the same workflo
 
 ## `Don't use it to`
 
-- Alter the context user which the actions use, leverage [Load User](/docs/actions/load-user.md) instead
+- Alter the context user which the actions use, leverage [Load User](/docs/actions/load-user) instead
 
 ## `Related Actions`
 
 | Action Name | Description|
 |-------------|------------|
-| [Grant Role](/docs/Actions/grant-role.md) | Grants the users in the context the specified roles.|
-| [Send Email](/doc/Actions/send-email.md) | Sends an email to the users loaded in the context.|
+| [Grant Role](/docs/actions/grant-user-role) | Grants the users in the context the specified roles.|
+| [Send Email](/docs/actions/send-email) | Sends an email to the users loaded in the context.|
 
 ## `Input Parameter Reference`
 

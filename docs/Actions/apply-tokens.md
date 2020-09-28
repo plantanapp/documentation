@@ -16,16 +16,16 @@ This actions executes multiple expressions and applies tokens on those expressio
 
 ## `Don't use it to`
 
-- Concatenate 2 tokens - Use [Inject Data](/docs/Actions/inject-data.md)
-- Overwrite a token - Use [Inject Data](/docs/Actions/inject-data.md)
+- Concatenate 2 tokens - Use [Inject Data](/docs/actions/inject-data)
+- Overwrite a token - Use [Inject Data](/docs/actions/inject-data)
 
 ## `Related Actions`
 
 | Action Name                                                     | Description                                                                        |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form action only, it updates the fields based on the values from the tokens.       |
-| [Display Message](/docs/Actions/display-message.md)             | Form action only, shows a message after the executions of set of actions/workflow. |
-| [Run SQL Query](/docs/Actions/run-sql-query.md)                 | Executes an SQL statement and captures the output.                                 |
+| Update form with AJAX | Form action only, it updates the fields based on the values from the tokens.       |
+| Display Message             | Form action only, shows a message after the executions of set of actions/workflow. |
+| [Run SQL Query](/docs/actions/run-sql)                 | Executes an SQL statement and captures the output.                                 |
 
 
 ## `Input Parameter Reference`
@@ -50,7 +50,7 @@ Tokens are powerful and can execute code that is not meant for end users to exec
 
 Recursion refers of how many times we should try to check for tokens in the expression and try to replace them. 
 
-If recursion is set to 1 then this action will work as [Execute Token](/docs/Actions/execute-token.md) action. Will assign the Expression to a token.
+If recursion is set to 1 then this action will work as [Execute Token](/docs/actions/execute-token) action. Will assign the Expression to a token.
 
 There are situation ([like example number 2](#2-apply-tokens-inside-a-template-recursion-1)) where you save a template (let's say email template). Some of the content has tokens inside to replace the First Name and Last Name. At this point you only have one copy of the template and when you need to deliver that email you only have to replace the tokens. 
 
@@ -70,7 +70,7 @@ It really depends on what you need to achieve. 2 or 3 recursions is the maximum 
 
 ### `1. Calculations with DoMath Token (Recursion =1)`
 
-Applying tokens is just replacing the placeholders inside the token expression. If we needed to do some arithmetic operations, we can use the built-in [DoMath](/docs/tokens/do-math) token.
+Applying tokens is just replacing the placeholders inside the token expression. If we needed to do some arithmetic operations, we can use the built-in DoMath token.
 
 
 ```json

@@ -17,8 +17,8 @@ sidebar_label: Grant User Role
 
 | Action Name                                             | Description                                                        |
 | ------------------------------------------------------- | ------------------------------------------------------------------ |
-| [Load Users](/docs/Actions/load-user.md)                | Can be used to grant roles to a single user or to a list of users. |
-| [User Registration](/docs/Actions/user-registration.md) | Can be used to grant roles to a newly created user.                |
+| [Load Users](/docs/actions/load-user)                | Can be used to grant roles to a single user or to a list of users. |
+| User Registration | Can be used to grant roles to a newly created user.                |
 
 ## `Input Parameter Reference`
 
@@ -36,7 +36,7 @@ If a role is deleted, it will simply be revoked from any user that has it.
 
 ### `1. Grant a User Role`
 
-The action below register a new user and grants it the '[Citizen Developers]' Role. If the user exists and already has the role, nothing will happen.  [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below register a new user and grants it the '[Citizen Developers]' Role. If the user exists and already has the role, nothing will happen.  [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {
@@ -142,7 +142,7 @@ The action below register a new user and grants it the '[Citizen Developers]' Ro
 
 ### `2. Grant a User Role for a period of time`
 
-The action below register a new user and grants it the '[Citizen Developers]' Role just for 30 days. If the user exists already, the old validity period will reset. For example if the user has only 20 days left, it will have again 30 days left after the action is executed. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below register a new user and grants it the '[Citizen Developers]' Role just for 30 days. If the user exists already, the old validity period will reset. For example if the user has only 20 days left, it will have again 30 days left after the action is executed. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {

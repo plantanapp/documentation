@@ -17,16 +17,16 @@ This action will output a token that stores the output of a token.
 
 ## `Don't use it to`
 
-- Concatenate 2 tokens - Use [Inject Data](/docs/Actions/inject-data.md)
-- Overwrite a token - Use [Inject Data](/docs/Actions/inject-data.md)
+- Concatenate 2 tokens - Use [Inject Data](/docs/actions/inject-data)
+- Overwrite a token - Use [Inject Data](/docs/actions/inject-data)
 
 ## `Related Actions`
 
 | Action Name                                                     | Description                                                                        |
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| [Update form with AJAX](/docs/Actions/update-form-with-ajax.md) | Form action only, it updates the fields based on the values from the tokens.       |
-| [Display Message](/docs/Actions/display-message.md)             | Form action only, shows a message after the executions of set of actions/workflow. |
-| [Run SQL Query](/docs/Actions/run-sql-query.md)                 | Executes an SQL statement and captures the output.                                 |
+| Update form with AJAX | Form action only, it updates the fields based on the values from the tokens.       |
+| Display Message             | Form action only, shows a message after the executions of set of actions/workflow. |
+| [Run SQL Query](/docs/actions/run-sql)                 | Executes an SQL statement and captures the output.                                 |
 
 
 ## `Input Parameter Reference`

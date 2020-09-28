@@ -1,12 +1,12 @@
 ---
-id: Roles
+id: roles
 title: Roles
 sidebar_label: Roles
 ---
 
 ## `General Description`
 
-Roles define what users can see and do in the application. Plant an App comes with a list of pre-built roles and other roles can added to define your own security logic. Roles can be added, edited or deleted, and can be setup to restrict access at a page level, component level, actions, workflows, entities or any other module specific feature that support permissions (eg: [API Calls](/docs/Roles#api-jwt-autentification), [Search index rules](/docs/Roles#search-index-rules), etc.).
+Roles define what users can see and do in the application. Plant an App comes with a list of pre-built roles and other roles can added to define your own security logic. Roles can be added, edited or deleted, and can be setup to restrict access at a page level, component level, actions, workflows, entities or any other module specific feature that support permissions (eg: [API Calls](/docs/Roles#api-jwt-authentification), [Search index rules](/docs/Roles#search-index-rules), etc.).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zOGVh-zEsqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -26,10 +26,10 @@ Each Module individually has each own permissions and can be modified individual
 
 ### `Actions & Buttons`
 
-All the actions and buttons that can be used in the Plant an App platform have 2 settings called Condition (Show Condition) and Enable Condition that supports tokens. Based on those we can create complex access securities with the HasRole token.  `[HasRole:RoleName]` will check the logged-in user (or the user from [Load User](/docs/Actions/load-user.md)/[Load Users from SQL](/docs/Actions/load-users-sql.md)) and return `true` or `false` depending if the user is in that role or not. (eg: [HasRole:Admin] ==  true can be used on a button to only enable it for a user in the Admin role)
+All the actions and buttons that can be used in the Plant an App platform have 2 settings called Condition (Show Condition) and Enable Condition that supports tokens. Based on those we can create complex access securities with the HasRole token.  `[HasRole:RoleName]` will check the logged-in user (or the user from [Load User](/docs/actions/load-user)/[Load Users from SQL](/docs/actions/load-users-from-sql)) and return `true` or `false` depending if the user is in that role or not. (eg: `[HasRole:Admin] ==  true` can be used on a button to only enable it for a user in the Admin role)
 
 
-### `API JWT Autentification`
+### `API JWT Authentification`
 
 Authenticating with JWT to use an API resources has to be done in the name of a user so permissions can be set to only permit access to specific users in those roles.
 
