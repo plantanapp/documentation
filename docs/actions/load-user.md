@@ -11,12 +11,12 @@ An action that allows altering the user which the subsequent actions refer to. T
 
 This action also supports loading multiple users by providing multiple user identifiers. The last user identifier provided will also be used as the context user under which all actions execute. Loading multiple users creates a hidden context entity that is leveraged by the following actions which support this:
 
-- [Grant Role](/docs/Actions/grant-role.md)
-- [Revoke Role](/docs/Actions/revoke-role.md)
-- [Authorize User](/docs/Actions/authorize-user.md)
-- [Unauthorize User](/docs/Actions/unauthorize-user.md)
-- [Delete User](/docs/Actions/delete-user.md)
-- [Send Email](/doc/Actions/send-email.md).
+- [Grant Role](/docs/actions/grant-user-role)
+- [Revoke Role](/docs/actions/revoke-user-role)
+- Authorize User
+- Unauthorize User
+- Delete User
+- [Send Email](/docs/actions/send-email)
 
 When used in conjunction with the actions above, the logic applies to all users that have been loaded into the context by the `Load User` action. For example, the `Grant Role` action will assign the specified role to each and every user loaded into the context.
 
@@ -30,15 +30,15 @@ Calling the `Load User` action the second time inside the same workflow will rep
 
 ## `Don't use it to`
 
-- Load multiple users by a specific condition, use [Load Users From SQL](/docs/actions/load-users-sql.md) instead
+- Load multiple users by a specific condition, use [Load Users From SQL](/docs/actions/load-users-from-sql) instead
 
 ## `Related Actions`
 
 | Action Name | Description|
 |-------------|------------|
-| [Grant Role](/docs/Actions/grant-role.md) | Grants the users in the context the specified roles.|
-| [Send Email](/doc/Actions/send-email.md) | Sends an email to the users loaded in the context.|
-| [Update User Profile](/docs/Actions/update-user-profile.md) | updates user profile properties. |
+| [Grant Role](/docs/actions/grant-user-role) | Grants the users in the context the specified roles.|
+| [Send Email](/docs/actions/send-email) | Sends an email to the users loaded in the context.|
+| Update User Profile | updates user profile properties. |
 
 ## `Input Parameter Reference`
 
@@ -51,7 +51,7 @@ Calling the `Load User` action the second time inside the same workflow will rep
 
 ### `1. Load a user and grant it the Subscribers role`
 
-The actions below will load the user with the identifier (user email) 'john.doe@gmail.com' into the context and then grant him the role `Subscribers` with an indefinite expiration date.
+The actions below will load the user with the identifier `(user email) 'john.doe@gmail.com'` into the context and then grant him the role `Subscribers` with an indefinite expiration date.
 
 ```json
 {
@@ -102,7 +102,7 @@ The actions below will load the user with the identifier (user email) 'john.doe@
 
 ### `2. Load a user and update it's first name and last name`
 
-The action exports bellow will load the user which has the email `john.doe@gmail.com` and update it's `Last Name` and `First Name` with the corresponding values coming from two text box fields.
+The action exports below will load the user which has the email `john.doe@gmail.com` and update it's `Last Name` and `First Name` with the corresponding values coming from two text box fields.
 
 ```json
 {

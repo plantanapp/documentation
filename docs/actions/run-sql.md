@@ -18,7 +18,7 @@ This action executes a SQL statement, optionally capturing the output for use in
 
 ## `Don't use it to`
 
-- Load multiple sets of data - use [Load Entities (SQL)](Actions/load-entities-sql.md) instead
+- Load multiple sets of data - use Load Entities (SQL) instead
 - Query entities - use entity specific actions instead
 - Update system tables - it might have unwanted effects on functionality, use specific actions instead
 
@@ -26,7 +26,7 @@ This action executes a SQL statement, optionally capturing the output for use in
 
 | Action Name | Description|
 |-------------|------------|
-| [Server Request](Actions/server-request.md) | A low-level action that allows for any kind of HTTP request to be performed. |
+| [Server Request](docs/actions/server-request) | A low-level action that allows for any kind of HTTP request to be performed. |
 
 ## `Input Parameter Reference`
 

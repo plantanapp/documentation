@@ -23,9 +23,7 @@ Merges two PDF into one.
 
 | Action Name                                   | Description                                                                                  |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [Generate PDF](/docs/Actions/generate-pdf.md) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HTML template. |
-
-
+| [Generate PDF](/docs/actions/generate-pdf) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HTML template. |
 
 ## `Input Parameter Reference`
 
@@ -55,7 +53,7 @@ If one of the PDFs is password protected or doesn't have read permissions, mergi
 ### `1. Merging 2 newly generated PDFs`
 
 ​
-The action below generates two PDFs, with different content, and then merges them. [Import it](/docs/Actions/Import-actions) into your application to see it in action.
+The action below generates two PDFs, with different content, and then merges them. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
 ​
 
 ```json
