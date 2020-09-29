@@ -65,11 +65,11 @@ The `Portal` object stores data about the portal on which the action executes. T
 
 #### User
 
-The `User` object contains the data about the current user that initiated the action, be aware that this can be altered with the [Load User](Actions/load-user.md) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html#DotNetNuke_Entities_Users_UserInfo).
+The `User` object contains the data about the current user that initiated the action, be aware that this can be altered with the [Load User](/docs/actions/load-user) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html#DotNetNuke_Entities_Users_UserInfo).
 
 #### Users
 
-The `Users` property is a context entity  of `Hashset<int>` type which some actions use and can be changed with the [Load User](Actions/load-user.md) or [Load Users from SQL](Actions/load-users-sql.md) actions. It is something specific to PlantAnApp and it contains the IDs of the users that have been loaded into context.
+The `Users` property is a context entity  of `Hashset<int>` type which some actions use and can be changed with the [Load User](/docs/actions/load-user) or [Load Users from SQL](/docs/actions/load-users-from-sql) actions. It is something specific to PlantAnApp and it contains the IDs of the users that have been loaded into context.
 
 ### DataStore object
 
