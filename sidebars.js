@@ -2,6 +2,7 @@ module.exports = {
   someSidebar: {
     'Getting Started': [
       'audience',
+      'entities',
       'execution-context',
       'faq',
       'roles',
