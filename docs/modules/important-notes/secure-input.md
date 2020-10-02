@@ -28,8 +28,8 @@ When enabled, the following actions are taken on the input BEFORE the data is pa
 
 - All `<script>` and `<style>` tags along with the content they contain are removed
 - NoFollow will be forced on all links.  This means the rel=”nofollow” attribute will be added to every anchor tag.
-- Only the standard attributes listed below will be allowed on any HTML tag
-- Only the CSS properties listed below will be allowed in a style attribute
+- Only the standard attributes [listed below](#allowed-attributes) will be allowed on any HTML tag
+- Only the CSS properties [listed below](#allowed-css-properties) will be allowed in a style attribute
 - The Class attribute will be removed from any HTML tag
 
 :::note
