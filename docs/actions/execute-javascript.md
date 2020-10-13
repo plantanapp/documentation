@@ -4,7 +4,7 @@ title: Execute JavaScript (Server-side)
 sidebar_label: Execute JavaScript (Server)
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#software-developers)<br/>
+> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)<br/>
 > Skill Prerequisites: `JavaScript`
 
 Executes JavaScript code on the server side, optionally returning variables. This action is based on the [Microsoft/ClearScript](https://github.com/Microsoft/ClearScript) library that uses the [Google V8](https://v8.dev/) engine. It is a pure JavaScript framework, so there won't be access to the window or the document object. Other than that, it brings the full flexibility of JavaScript, plus some .net helpers to help write better code, faster.
@@ -80,11 +80,11 @@ The following variables are automatically created and available in the script:
 
 | Name | Description |
 |------|-------------|
-| User | Exposes information about the current user. By default, this is the user running the workflow, but it can be changed through the [Load User](/docs/actions/load-user.md) action for example. |
+| User | Exposes information about the current user. By default, this is the user running the workflow, but it can be changed through the [Load User](/docs/actions/load-user) action for example. |
 | Page | The current page from where the workflow was triggered. In some cases, such as when running the action from a scheduler, this variable will be null. |
 | Module | The entry point from where the action was invoked. It can be a form, grid, API, a scheduled job, or another trigger or event. |
-| Global Tokens | All custom tokens that have been created from the [Tokens](/doc/tokens/overview.md) token will be available. Note that they always live under a namespace, so accessing them from the script needs to follow the syntax `Namespace.TokenName`. |
-| Workflow Parameters | If this action runs in a workflow, all input parameters are available as local variables. Note that if the inputs are [Entities](/docs/entities/overview.md) the variables are objects that contain all the properties of the respective entity. |
+| Global Tokens | All custom tokens that have been created in Plant an App **Tokens** will be available. Note that they always live under a namespace, so accessing them from the script needs to follow the syntax `Namespace.TokenName`. |
+| Workflow Parameters | If this action runs in a workflow, all input parameters are available as local variables. Note that if the inputs are [Entities](/docs/entities) the variables are objects that contain all the properties of the respective entity. |
 | Module Data | If this action is invoked from a form, for example, then all the submitted fields will be available as variables. The variable name is exactly the string ID of each field. Same applies for grids and APIs which have inputs as well.|
 | Context Tokens | In Plant an App, it's common that actions generate new variables that are stored in the context for subsequent actions to use. All the tokens that were created by actions previous to the `Execute Javascript` will be available as local variables. |
 
