@@ -11,6 +11,10 @@ Executes JavaScript code on the server side, optionally returning variables. Thi
 
 All tokens that exist in the Execution Context when this action runs will be available inside the script as local variables. Note that JavaScript is a case-sensitive language, so variables names will be in the exact case as the token name.
 
+:::note
+This action requires Microsoft Visual C++ Redistributable for Visual Studio 2019 be installed on the server to run properly. Download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+:::
+
 ## `Input Parameter Reference`
 
 | Parameter     | Description                           | Supports Tokens |
@@ -122,6 +126,63 @@ return client.DownloadString('https://example.com/api');
 
 ```
 
-## `Examples`
+## `Example`
 
-TODO
+### `1. Parse Returned Value from Server Request Action`
+
+​
+Below you will find two actions that will make a call to the HubSpot API to get the contacts in a specified list and parse them to pull out just the First Name, Last Name, and Email address of each contact. To use these actions, you need to have a [HubSpot](https://www.hubspot.com/) account and have a [HubSpot API Key](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key) saved in a Token in Plant an App. You must also have a [HubSpot List](https://knowledge.hubspot.com/lists/create-active-or-static-lists) created and know the list ID. Once you have these minimum requirements, you can [import the actions](/docs/running-examples#import-the-action-in-a-module) into your application to see them in action.
+
+This first action is a [Server Request](server-request) to HubSpot to get a list of contacts for the specified `[ListID]`. The List ID is configured as an input parameter that you need to pass into this action by storing it in a Token named ListID. The action references a Token named `[APIKeys:HubSpot]` to pass the API key on the URL. If you have your API key stored in a token already with a different NameSpace or Token Name, you will need to adjust the token reference. The return from the API call is stored in a token called **ContactJSON** to be used in the **Execute JavaScript (Server-side)** action.
+
+```json
+{
+  "Id": -1,
+  "ActionErrorMessage": null,
+  "ActionType": "PostData",
+  "Condition": null,
+  "Description": null,
+  "IsDeleted": false,
+  "Parameters": {
+    "InputParameters": null,
+    "URL": "https://api.hubapi.com/contacts/v1/lists/[ListID]/contacts/all?hapikey=[APIKeys:Hubspot]",
+    "UrlTokenContext": "Url",
+    "UseSSL": null,
+    "Timeout": null,
+    "HttpMethod": "GET",
+    "Data": null,
+    "DoNotEscapeTokens": null,
+    "DisableReferer": null,
+    "Headers": null,
+    "UseDNNProxySettings": null,
+    "AddCurrentCookies": null,
+    "OutputParameters": null,
+    "CookieContainerToken": null,
+    "OutputTokenName": "ContactJSON",
+    "OutputHeaders": null,
+    "IgnoreErrors": null,
+    "Events": null,
+    "OnError": []
+  }
+}
+```
+
+This second action is the **Execute JavaScript (Server-side)** action. It takes the value of the **ContactJSON** token stored in the last action and parses it to pull out only the First Name, Last Name, and Email address of each contact. It stores this information in an output token named **ContactLIst** to be used in subsequent actions.
+
+```json
+{
+  "Id": -1,
+  "ActionErrorMessage": null,
+  "ActionType": "ExecuteJavascript",
+  "Condition": null,
+  "Description": null,
+  "IsDeleted": false,
+  "Parameters": {
+    "ScriptName": null,
+    "LocalVariables": [],
+    "Code": "var contactList = JSON.parse(ContactJSON);\n\nvar output = contactList.contacts.map(function(contact) {\n\treturn {\n    \t'firstname': contact.properties.firstname.value,\n        'lastname': contact.properties.lastname.value,\n        'email' :contact['identity-profiles'][0].identities[0].value,\n    }\n})\n\nreturn JSON.stringify(output);",
+    "OutputTokenName": "ContactLIst",
+    "OnError": []
+  }
+}
+```
