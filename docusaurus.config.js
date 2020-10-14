@@ -113,4 +113,7 @@ module.exports = {
       },
     ],
   ],
+  scripts: [
+    '/scripts/external-links.js'
+  ],
 };
