@@ -20,6 +20,7 @@ module.exports = {
         'faq',
         'running-examples',
         'actions/apply-tokens',
+        'actions/execute-javascript-server-side',
         'actions/execute-token',
         'actions/generate-pdf',
         'actions/grant-user-role',
