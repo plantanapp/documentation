@@ -26,7 +26,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'https://www.youtube.com/playlist?list=PL67RlTAxc73ESnxFEw0i7AU7yMrmLYAyh',
+          to: 'https://www.youtube.com/plantanapp',
           label: 'Videos',
           position: 'left',
         },
@@ -66,7 +66,7 @@ module.exports = {
             },
             {
               label: 'YouTube',
-              href: 'https://www.youtube.com/channel/UC7wl5WsqwdQTx_pGDhrY-3g',
+              href: 'https://www.youtube.com/plantanapp',
             },
           ],
         },
