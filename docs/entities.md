@@ -31,7 +31,7 @@ When you create an Entity, Plant An App automatically generates database tables,
 
 ### `Property Types`
 
-When you create an Entity, you need to define the properties of the Entity. Plant an App always adds five built-in properties for each Entity including ID, CreateBy, CreatedDate, LastModifiedBy, and LastModifiedDate. You add **Custom Properties** to define your Entity and you need to specify the **Type** for each property. In the property selection dialogue, you will see three sections. They are **Primitive**, **Entities**, and **List of Entities**.
+When you create an Entity, you need to define the properties of the Entity. Plant an App adds five built-in properties for each Entity: ID, CreateBy, CreatedDate, LastModifiedBy, and LastModifiedDate. You add **Custom Properties** to define your Entity and specify the **Type** for each property. You will see three sections in the property selection dialogue: **Primitive**, **Entities**, and **List of Entities**.
 
 #### `Primitive Properties`
 
