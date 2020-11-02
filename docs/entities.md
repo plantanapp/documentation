@@ -9,7 +9,7 @@ sidebar_label: Entities
 Entities define the data model of the application. This is sometimes referred to as Data Structure or Structured Content. This is where you establish the data elements in your application and how they relate to each other. For a simple application, you could begin your design right here. For a more complex app, you may want to create a visual representation of your data model first and then create your entities based on that. Plant an App also creates a visual view of the relation between your Entities. You can view this by toggling to the **Dependency View** on the Entities page.
 
 :::note
-Plant an App automatically includes four default Entities. They are Users, Roles, Documents, and Images. These cannot be removed or edited. They won't appear in the Depency View unless they are added as a dependency to one of your Entities.
+Plant an App automatically includes four default Entities: Users, Roles, Documents, and Images. These cannot be removed or edited. They will not appear in the Dependency View unless added as a dependency to one of the Entities.
 :::
 
 ## `Assets Created`
