@@ -14,7 +14,7 @@ This action allows you to open a specified Tabs Pro from the same page in a popu
 | Action | Purpose |
 | -- | -- |
 | Open Tabs Pro Popup And Continue Execution | Opens the specified Tabs Pro instance and then continues to subsequent actions on the button and submission. |
-| Open Tabs Pro Popup And Stop Execution | Opens the specified Tabs Pro instance and then stops further execution of both subsequent actions and submission. |
+| Open Tabs Pro Popup And Stop Execution | Opens the specified Tabs Pro instance and then stops further execution of both subsequent actions and HTTP post submission. |
 
 ## `Input Parameter Reference`
 
