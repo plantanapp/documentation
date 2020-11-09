@@ -14,7 +14,7 @@ This action allows you to manually trigger a close popup action for the specifie
 | Action | Purpose |
 | -- | -- |
 | Close Action Form Popup And Continue Execution | Closes the specified Action Form popup and then continues to subsequent actions on the button and submission. |
-| Close Action Form Popup And Stop Execution | Closes the specified Action Form popup and then stops further execution of both subsequent actions and submission. |
+| Close Action Form Popup And Stop Execution | Closes the specified Action Form popup and then stops further execution of both subsequent actions and HTTP Post submission. |
 
 ## `Input Parameter Reference`
 
