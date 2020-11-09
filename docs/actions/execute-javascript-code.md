@@ -18,11 +18,11 @@ IMPORTANT: The javascript code that you run using this action will execute by fo
 | Action | Purpose |
 | -- | -- |
 | Execute Javascript Code And Continue Execution | Runs the javascript and then continues to subsequent actions on the button and submision. | 
-| Execute Javascript Code And Stop Execution | Runs the javascript and then stops further execution of both subsequent actions and submission. Use this action either conditionally or because you want the button to act client side only.|
+| Execute Javascript Code And Stop Execution | Runs the javascript and then stops further execution of both subsequent actions and HTTP post submission. Use this action either conditionally or because you want the button to act client-side only.|
 
 ## `Typical Use Cases`
 
-- Make changes to the appearance of a page such as hiding or displaying an element or change CSS
+- Make changes to the appearance of a page, such as hiding or displaying an element or changing CSS
 - Add interaction with a third party feature on the page
 
 ## `Don't use it to`
@@ -33,10 +33,9 @@ IMPORTANT: The javascript code that you run using this action will execute by fo
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |
-| Javascript Code | The JavaScript code to run. It supports full syntax. To have the values exported back to the process, simply use return statements. | Yes | `empty string` | No |
+| Javascript Code | The JavaScript code to run (Full syntax supported). To export values back to the process, use return statements. | Yes | `empty string` | No |
 
 ## `Ideas on How to Use`
 
 - Condition the execution of the code by using boolean expressions (or conditions that upon execution will evaluate to true/false)
 - Run multiple final actions available in the public APIs (like initform, openpopup, closemodal,etc.)
-
