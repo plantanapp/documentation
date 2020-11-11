@@ -35,7 +35,7 @@ The page will not be refreshed when a Form is initialized.
 
 | Action Name                                       | Description                                                                                       |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [Open Form Popup](/docs/actions/open-form-popup)       | Opens a a specified Form in a pop-up.|
+| [Open Form Popup](/docs/actions/open-form-popup)       | Opens a specified Form in a pop-up.|
 
 ## `Input Parameter Reference`
 
