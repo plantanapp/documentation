@@ -28,6 +28,7 @@ module.exports = {
         'actions/execute-token',
         'actions/generate-pdf',
         'actions/grant-user-role',
+        'actions/initialize-form',
         'actions/inject-data',
         'actions/load-user',
         'actions/load-users-from-sql',
