@@ -7,7 +7,7 @@ sidebar_label: Initialize Action Form
 > Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)<br/>
 > Skill Prerequisites: `HTML`
 
-This action will allow you to manually trigger a the initialization of a Form.
+This action allows you to manually trigger the initialization of a Form.
 
 It is very useful in situations when you have multiple Form modules on the same page and you set their state to not be initially visible; this way the forms do not load and therefore they do not take up bandwidth (your page will load a lot faster) while allowing you initialize them(wake them up) when they are needed.
 
