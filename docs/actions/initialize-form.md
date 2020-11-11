@@ -9,7 +9,7 @@ sidebar_label: Initialize Action Form
 
 This action allows you to manually trigger the initialization of a Form.
 
-It is very useful in situations when you have multiple Form modules on the same page and you set their state to not be initially visible; this way the forms do not load and therefore they do not take up bandwidth (your page will load a lot faster) while allowing you initialize them(wake them up) when they are needed.
+It is helpful in situations where you have multiple Form modules on the same page, and you set their **Display Mode** to **Manual**. This prevents the forms from loading and helps save bandwidth at page load (your page will load a lot faster) while allowing you to initialize them (wake them up) when they are needed.
 
 :::note
 The page will not be refreshed when a Form is initialized.
