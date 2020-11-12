@@ -39,6 +39,8 @@ The page will not be refreshed when a Form is initialized.
 
 ## `Input Parameter Reference`
 
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+
 | Parameter                  | Description                                                                                                                                                                | Supports Tokens | Default            | Required |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------ | -------- |
 | Description            | A short description for the action. Only Citizen Developers and Admins will be able to see this field. | No              | `empty string` | No      |
