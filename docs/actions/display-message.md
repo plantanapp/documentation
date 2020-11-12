@@ -7,7 +7,7 @@ sidebar_label: Display Message
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
 > Skill Prerequisites: `HTML`
 
-This action displays a postback message after the form is submitted.
+This action displays a postback message after a form is submitted or before it initializes if used in the `On PreInit` or `On Init` settings.
 
 ## `Typical Use Cases`
 
