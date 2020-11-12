@@ -23,6 +23,8 @@ module.exports = {
         'actions/apply-tokens',
         'actions/close-form-popup',
         'actions/close-tabs-popup',
+        'actions/display-message',
+        'actions/display-toast-message',
         'actions/execute-javascript-code',
         'actions/execute-javascript-server-side',
         'actions/execute-token',
