@@ -11,7 +11,7 @@ This action is usually used to refresh the grid after executing another action.
 
 ## `Typical Use Cases`
 
-- Refresh Action Grid with updated without reloading the entire page
+- Refresh Action Grid with updated data without reloading the entire page
 
 ## `Actions Covered by this Document`
 
