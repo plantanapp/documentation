@@ -13,7 +13,7 @@ This action displays a message at the bottom of a Form, at the bottom of a Grid 
 
 - Display a permission error.
 - Display an error returned from a Server Request action.
-- Use in `On PreInit` or `On Init` form events to Conditionally prevent the loading of a form.
+- Use in `On PreInit` or `On Init` form events to conditionally prevent the loading of a form.
 
 ## `Don't use it to`
 
