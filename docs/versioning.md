@@ -84,6 +84,6 @@ Contains all the pages from the app. Folders inside it are actual pages from the
 Contains the Custom tokens exports available in the Platform.
 
 :::note
-At the moment reverting can only be done manually by copying the desired export and manually import it into the application.
+At the moment reverting can only be done manually by copying the desired export and manually importing it into the application.
 Automation for reverting components is scheduled for development but the release date is unknown. 
 :::
