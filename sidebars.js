@@ -39,6 +39,7 @@ module.exports = {
         'actions/open-form-popup',
         'actions/open-tabs-popup',
         'actions/overlay-pdf',
+        'actions/refresh-grid',
         'actions/revoke-user-role',
         'actions/run-sql',
         'actions/sanitize-html',
