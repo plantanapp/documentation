@@ -25,6 +25,11 @@ This action refreshes an Action Grid module without page reload (if it’s on sa
 | Sort By | Select the field to sort by. Ascending is the default but you can select Descending using the checkbox| Yes | Ascending | No |
 | Search Terms| Grid will automatically search for the characters passed by this field| Yes | Unchecked | No |
 
+| Current Page | Leave empty to keep current page | Yes | Empty String | No |
+| Filters | Allows the grid to be filtered using multiple criteria | Yes | None | No |
+| Replace Filters | By default, filters are merged with existing filtering, if any. Use this option to replace all filters | No | Unchecked| No |
+| Additional Data | Provide additional values that will be passed the grid via query string. You can reference them using [$] syntax.  | Yes | None | No |
+
 
 
 ## `Related Actions`
