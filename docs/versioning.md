@@ -10,15 +10,15 @@ Plant an App features an integration with [GitHub](https://github.com/) for vers
 
 ## `What is versioning`
 
-Versioning is the creation and management of multiple releases of a product, all of which have the same general function but are improved, upgraded or customized. The term applies especially to operating systems (OSs), software and web services. Version control is the practice of ensuring collaborative data sharing and editing among users of systems that employ different versions of a product. 
+Versioning is the creation and management of multiple releases of a product, all of which have the same general function but are improved, upgraded or customized. The term applies mostly to operating systems (OSs), software and web services. Version control is the practice of ensuring collaborative data sharing and editing among users of systems that employ different versions of a product. 
 
 ## `Why is it important`
 
-Version control (also known as source control) is the management of file changes within a version control system. These systems automatically maintain character level changes for all files stored within allowing for a complete retrace of all versions of each file, the author of those versions and a complete rollback of all changes from the beginning of version control.
+Version control (also known as source control) is the management of file changes within a version control system. These systems automatically maintain character level changes for all files stored within, allowing for a complete retrace of all versions of each file, the author of those versions and a complete rollback of all changes from the beginning of version control.
 
 For developer-oriented work, it is critical to utilize version control systems for all non-binary files (read Notepad readable) to enable multiple developers or teams to work in an isolated fashion without impacting the work of others. This isolation enables features to be built, tested, integrated or even scrapped in a controllable, transparent and maintainable manner.
 
-The basics of version control are the ability to save changes made to files, whilst retaining the changes from all previous versions. All changes made within Git receive a unique version identifier alongside a user-written comment where the changes can be described.
+The basics of version control are saving changes made to files while retaining the changes from all previous versions. All changes made within Git receive a unique version identifier alongside a user-written comment where the changes can be described.
 
 ## `Step-by-step instructions`
 
@@ -40,7 +40,7 @@ The basics of version control are the ability to save changes made to files, whi
 14. Paste the token in the Personal Access Token field in Plant an App connector dialog
 15. Click `Save` to add the connector
 16. (Optional) You can test the Connector to be sure it working
-17. Go to `Geneneral` from the left menu
+17. Go to `General` from the left menu
 18. In the `Version Control` dropdown choose your GitHub Connector
 19. (Optional) If you don't have a repository, please go to GitHub and create a repository
 20. Paste the GitHub repository URL next to the dropdown.
@@ -84,6 +84,6 @@ Contains all the pages from the app. Folders inside it are actual pages from the
 Contains the Custom tokens exports available in the Platform.
 
 :::note
-At the moment reverting can only be done manually by coping the desired export and manually import it into the application.
-Automation for reverting components it is scheduled for development but the release date is unknown. 
+At the moment reverting can only be done manually by copying the desired export and manually import it into the application.
+Automation for reverting components is scheduled for development but the release date is unknown. 
 :::
