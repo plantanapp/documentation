@@ -10,7 +10,7 @@ Plant an App features an integration with [GitHub](https://github.com/) for vers
 
 ## `What is versioning`
 
-Versioning is the creation and management of multiple releases of a product, all of which have the same general function but are improved, upgraded or customized. The term applies mostly to operating systems (OSs), software and web services. Version control is the practice of ensuring collaborative data sharing and editing among users of systems that employ different versions of a product. 
+Versioning is the creation and management of multiple releases of a product, all of which have the same general function but are improved, upgraded or customized. The term applies mainly to operating systems (OSs), software and web services. Version control is the practice of ensuring collaborative data sharing and editing among users of systems that employ different versions of a product. 
 
 ## `Why is it important`
 
