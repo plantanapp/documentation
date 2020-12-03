@@ -102,6 +102,14 @@ module.exports = {
             'actions/grant-user-role',
             'actions/revoke-user-role',
             'actions/unauthorize-user',
+            'actions/update-user-profile',
+          ],
+        },
+        {
+          type: 'category',
+          label: 'User Management',
+          items: [
+            'actions/user-registration',
           ],
         },
       ],
