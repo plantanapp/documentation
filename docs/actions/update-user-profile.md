@@ -32,7 +32,7 @@ The parameters unique to this action are listed below. [Review the common parame
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |
 | User Identifier | The user identifier (UserId, username, or email) that you want to update. Leave empty to update the current user. | Yes | `empty string` | No |
-| Password Field | Select a form field from the dropdown to update the password of the user or use expressions (`EXPR` button) to input a custom password or a token. | Yes | Not Selected | No |
+| Password Field | Select a form field from the dropdown to update the user's password or use expressions (`EXPR` button) to input a custom password or a token. | Yes | Not Selected | No |
 | Also update Display Name with | Select a form field from the dropdown to update the Display Name of the user or use expressions (`EXPR` button) to input a custom display name or a token. | Yes | Not Selected | No |
-| Update Email with | Select a form field from the dropdown to update the Email of the user or use expressions (`EXPR` button) to use a token. | Yes | Not Selected | No |
+| Update Email with | Select a form field from the dropdown to update the user's Email or use expressions (`EXPR` button) to use a token. | Yes | Not Selected | No |
 | Additional User Properties | Set additional user profile properties that should be included in the update process. Click the `Add` button and then select a User Profile Property from the left dropdown and a form field from the right dropdown to use as the value for the property. Use the `EXPR` button on either field to specify a custom value or token. | Yes | None Specified | No |
