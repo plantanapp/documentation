@@ -18,6 +18,8 @@ This action allows you to change the active tab in a Tabs Pro module on a Form o
 
 ## `Input Parameter Reference`
 
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |
 | Tabs Pro Module | Select the Tabs Pro module for which the active tab will be changed. if an expression is passed you will need to pass the Tabs Pro ModuleID | Yes | Empty String | No |
