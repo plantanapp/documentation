@@ -58,6 +58,7 @@ module.exports = {
             'actions/open-form-popup',
             'actions/open-tabs-popup',
             'actions/refresh-grid',
+            'actions/tabs-change-tab',
           ],
         },
         {
