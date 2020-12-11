@@ -6,10 +6,10 @@ sidebar_label: Entities
 
 ## `General Description`
 
-Entities define the data model of the application. This is sometimes reffered to as Data Structure or Structed Content. This is where you establish the data elements in your application and how they relate to each other. For a simple application, you could begin your design right here. For a more complex app, you may want to create a visual representation of your data model first and then create your entities based on that. Plant an App also creates a visual view of the relation between your Entities. You can view this by toggling to the **Dependency View** on the Entities page.
+Entities define the data model of the application. This is sometimes referred to as Data Structure or Structured Content. This is where you establish the data elements in your application and how they relate to each other. For a simple application, you could begin your design right here. For a more complex app, you may want to create a visual representation of your data model first and then create your entities based on that. Plant an App also creates a visual view of the relation between your Entities. You can view this by toggling to the **Dependency View** on the Entities page.
 
 :::note
-Plant an App automatically includes four default Entities. They are: Users, Roles, Documents and Images. These cannot be removed or edited. They won't appear in the Depency View unless they are added as a dependency to one of your Entities.
+Plant an App automatically includes four default Entities: Users, Roles, Documents, and Images. These cannot be removed or edited. They will not appear in the Dependency View unless added as a dependency to one of the Entities.
 :::
 
 ## `Assets Created`
@@ -21,6 +21,7 @@ When you create an Entity, Plant An App automatically generates database tables,
 - A new page for viewing details of an entry created (hidden from menu and accessed when clicking the link for an entry in the grid)
 - A form for data entry with fields based on the properties you define
 - A listing grid to show the records in the Entity
+- A data source for the Entity to be used wherever you can select data sources
 - UI buttons providing the ability to create, edit, delete and view entries
 - Custom actions for create, delete, partial update, update and read operations added to the list of Plant an App core actions specifically for the Entity
 - APIs for creating, retrieving, updating, and deleting records
@@ -30,7 +31,7 @@ When you create an Entity, Plant An App automatically generates database tables,
 
 ### `Property Types`
 
-When you create an Entity, you need to define the properties of the Entity. Plant an App always adds five built-in properties for each Entity including ID, CreateBy, CreatedDate, LastModifiedBy, and LastModifiedDate. You add **Custom Properties** to define your Entity and you need to specify the **Type** for each property. In the property selection dialogue you will see three sections. They are **Primitive**, **Entities** and **List of Entities**.
+When you create an Entity, you need to define the properties of the Entity. Plant an App adds five built-in properties for each Entity: ID, CreateBy, CreatedDate, LastModifiedBy, and LastModifiedDate. You add **Custom Properties** to define your Entity and specify the **Type** for each property. You will see three sections in the property selection dialogue: **Primitive**, **Entities**, and **List of Entities**.
 
 #### `Primitive Properties`
 
@@ -57,13 +58,13 @@ The second section lists existing **Entities** from your application that can be
 
 #### `List of Entities`
 
-The third section also lists existing **Entities** from your application. However, selecting an Entity from here allows you define a list of entries from the child Entity that are all related to an entry in the current Entity. For example, if the current Entity (Parent) is going to be a list of Projects and each Project needs to have a list of tasks attached to it, you would add a property called Tasks and select the Tasks Entity (Child) under List of Entities. This property type does not create a form field. Instead it will add a column to the Parent Entity listing with a link to view the Child Entity listing filtered for entries related to the selected Parent Entity and to add entries to the Child Entity. It also creates a relationship table in the database that stores the relationship between the parent and child Entities.
+The third section also lists existing **Entities** from your application. However, selecting an Entity from here allows you to define a list of entries from the child Entity related to an entry in the current Entity. For example, if the current Entity (Parent) will be a list of Projects and each Project needs to have a list of tasks attached to it, you would add a property called Tasks and select the Tasks Entity (Child) under List of Entities. This property type does not create a form field. Instead, it will add a column to the Parent Entity listing with a link to view the Child Entity listing filtered for entries related to the selected Parent Entity and to add entries to the Child Entity. It also creates a relationship table in the database that stores the relationship between the parent and child Entities.
 
 ### `How to Choose 'Entities' or 'List of Entities'`
 
 To decide if you should select Entities or List of Entities, you need to consider the relationship between the Entities.
 
-If you want any entry in the Parent Entity to be related to just one entry in the Child Entity, then choose Entities. This will store the just the one ID of the related entry in the associated column in the Parent Entity's database table.
+If you want an entry in the Parent Entity to be related to just one entry in the Child Entity, then choose Entities. This will store just the one ID of the related entry in the associated column in the Parent Entity's database table.
 
 However, if you want any entry from the Parent Entity to be able to be related to one or more entries from the Child Entity, then choose List of Entities. When you choose this option a new table is created that stores relationships between entries in the Parent and Child Entities.
 
@@ -71,7 +72,7 @@ However, if you want any entry from the Parent Entity to be able to be related t
 
 #### `Required`
 
-Selecting Required option for a Property sets the required validation on the associated form field, but it also sets the associated database column to 'not null'. This is important to keep in mind if you plan on adding any direct insert or update queries on this Entity to your application.
+Selecting the Required option for a Property sets the required validation on the associated form field, but it also sets the associated database column to 'not null'. This is important to keep in mind if you plan on adding any direct insert or update queries on this Entity to your application.
 
 #### `Searchable`
 
@@ -97,9 +98,9 @@ Before setting permissions for your Entities, you will need to consider how your
 | Can Delete | Determines which Entries the user is able to Delete. The choices are All Entries, Own Entries (Entries created by the logged in user), or None. |
 
 :::note
-To remove permission to view the Entity page to members of a role, the View, Edit and Delete permissions must be set to None, and the Add permission disabled. It is not sufficient to simply set the view permission to None.  
+To remove permission to view the Entity page to members of a role, the View, Edit, and Delete permissions must be set to None, and the Add permission disabled. It is not sufficient to simply set the view permission to None.  
 :::
 
 ### `What does it mean to 'Own' an entry?`
 
-Currently, the user that created an entry is the owner of an entry. This means when you select **Own Entries** from the permission dropdowns, you are giving permission to the user that created the entry. However, in the future Plant an App plans to add functionality that will allow admins to transfer ownership of an entry.
+Currently, the user that created an entry is the owner of that entry. This means when you select **Own Entries** from the permission dropdowns, you are giving permission to the user that created the entry. However, in the future Plant an App plans to add functionality that will allow admins to transfer ownership of an entry.
