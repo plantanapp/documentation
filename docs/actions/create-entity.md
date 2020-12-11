@@ -19,7 +19,7 @@ This creates an entity that can be used ONLY in the current context. This does n
 
 ## `Don't use it to`
 
-- Create an entity that will have values loaded from another source like SQL, CSV, CSV File, etc. Use the `Load Enities (Source)` actions instead (e.g. [Load Entities (CSV File)](/docs/actions/load-entities-csv-file)).
+- Create an entity that will have values loaded from another source like SQL, CSV, CSV File, etc. Use the `Load Entities (Source)` actions instead (e.g. [Load Entities (CSV File)](/docs/actions/load-entities-csv-file)).
 
 ## `Related Actions`
 

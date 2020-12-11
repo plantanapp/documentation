@@ -15,7 +15,7 @@ This action exends an entity in the current context with new properties.
 
 ## `Don't use it to`
 
-- Create an entity. Use [Create Entity](/docs/actions/create-entity) or any of the `Load Enities (Source)` actions instead (e.g. [Load Entities (CSV File)](/docs/actions/load-entities-csv-file)).
+- Create an entity. Use [Create Entity](/docs/actions/create-entity) or any of the `Load Entities (Source)` actions instead (e.g. [Load Entities (CSV File)](/docs/actions/load-entities-csv-file)).
 
 ## `Related Actions`
 
