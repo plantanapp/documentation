@@ -95,6 +95,15 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'Redirect',
+          items: [
+            'actions/redirect-to-portal-page',
+            'actions/redirect-to-url',
+            'actions/send-file-to-download',
+          ],
+        },
+        {
+          type: 'category',
           label: 'User',
           items: [
             'actions/authorize-user',
