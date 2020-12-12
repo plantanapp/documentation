@@ -79,6 +79,20 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'Entities',
+          items: [
+            'actions/create-entity',
+            'actions/execute-actions-entity-list',
+            'actions/extend-entity',
+            'actions/load-entities-csv-file',
+            'actions/load-entities-csv',
+            'actions/load-entities-excel',
+            'actions/load-entities-json',
+            'actions/load-entities-sql',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Message',
           items: [
             'actions/display-error-message',
