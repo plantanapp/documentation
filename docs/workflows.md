@@ -61,7 +61,7 @@ In business process modeling, every process has an ending. In BPMN, every path i
 
 ### `Difference`
 
-The main difference between BMPN.io and PlantAnApp Workflows is that in our platform, we create an executable model, not only the visual part (flowcharts). When you create a Workflow, you make a sequence of actions that create behind an entire model, from creating a user and giving him some platform roles to the ability to create some invoices for a purchase.
+The main difference between BMPN.io and PlantAnApp Workflows is that we create an executable model in our platform, not only the visual part (flowcharts). When you create a Workflow, you make a sequence of actions created behind an entire model. For example, creating a user, assigning platform roles, creating invoices for a purchase, etc.
 
 From a technical perspective, a Workflow can be considered a reusable method.
 
@@ -166,9 +166,9 @@ If the workflow has any error, the error message will be displayed at the bottom
 
 ### `Cloning Workflows`
 
-In the event there is an existing workflow that has logic close to what is needed in a new workflow, it can be duplicated and then edited to implement the new logic needed. In the main Workflow list, at the end of the row where the Workflow buttons are located, the last button (when hovered, the tooltip label is **'Duplicate'**) will immediately create a new workflow named with the name of the duplicated workflow appended with **'Copy'** (e.g. 'Send Email to User Copy'). If the same (original) workflow is duplicated again, the name will have **'Copy 2'** appended. The number will increment again as many times as the original workflow is duplicated.
+A workflow can be duplicated and edited if there is an existing workflow that has logic similar to what is needed in a new workflow. In the main Workflow list, at the end of the row where the Workflow buttons are located, the last button (when hovered, the tooltip label is **'Duplicate'**) will immediately create a new workflow named with the name of the duplicated workflow appended with **'Copy'** (e.g. 'Send Email to User Copy'). If the same (original) workflow is duplicated again, the name will have **'Copy 2'** appended. The number will increment again as many times as the original workflow is duplicated.
 
-After duplicating a workflow, it will have exactly the same **Input Parameters**, **Process Flow**, and **Output Parameters** as the original workflow and will function the same. It should be edited to create a new process with the desired outcome and renamed appropriately.
+After cloning a workflow, it will have exactly the same **Input Parameters**, **Process Flow**, and **Output Parameters** as the original workflow and will function the same. It should be edited to create a new process with the desired outcome and renamed appropriately.
 
 ## `UI Logic`
 
