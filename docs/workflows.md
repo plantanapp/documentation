@@ -65,6 +65,8 @@ The main difference between BMPN.io and PlantAnApp Workflows is that we create a
 
 From a technical perspective, a Workflow can be considered a reusable method.
 
+![Workflow](/img/Workflow.png)
+
 ## `Workflows (Business logic)`
 
 ### `Scope isolation`
@@ -148,17 +150,17 @@ Multiple actions can be imported individually, or, if they are in an `Execute Ac
 The tokens available in the execution of a workflow are the input parameters and all the other output tokens that were generated from the action of the workflow.
 Those tokens are available from the start of the execution of the workflow until the end. For more details read the [Execution Context](execution-context) article.
 
-#### `Listing`
+#### `Validation`
 
 The workflow builder comes with built-in validation to keep workflow building easy and without errors. You can find the errors, if any, in the workflow builder interface at the bottom of the page or as an 'x' in a red circle near each action that has an error. Hovering over each error will describe the issue.
 
-### `Testing workflows`
+![Workflow](/img/wf_error.jpg)
 
-![Workflow](/img/Workflow.png)
+### `Testing workflows`
 
 After creating a Workflow, it can be tested using the `Test Workflow` button that looks like a play button in the right column of the workflow listing, on the line of the workflow you want to test.
 
-If the workflow doesn't have input parameters when trying to test it, a pop-up will appear that warns about the workflow not having the required parameters to be executed. After this pop-up, hitting the `Run` button will execute the workflow and, at the bottom of the page, a message will appear displaying how long it took for the workflow to execute. If output parameters have been set, they will be displayed there also, with the returned values.
+If the workflow doesn't have input parameters configured in its settings, the `Prepare Test` pop-up will appear with a message stating "No parameters are required to execute this workflow". Clicking the `Run` button will execute the workflow and, at the bottom of the page, a message will appear displaying how long it took for the workflow to execute. If output parameters have been set, they will be displayed there also, with the returned values.
 
 If the workflow does have input parameters, the pop-up will instead contain the input parameter(s) name(s) and an empty field for each one. You have to provide values for the input parameters to run the test. Once the `Run` button is clicked and the workflow executes, it will return a success message and output parameter values, if any.
 
