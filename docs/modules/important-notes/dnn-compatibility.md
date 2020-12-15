@@ -17,8 +17,9 @@ For all supported versions of DNN Platform, we always recommend upgrading to the
 
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 |-|-|-|-|
-| Above 9.7.2 | - |  - | Untested; not recommended for production use |
-| **9.7.2** | **1.9.x** | **5.9.x** | **Requires DNN Sharp version 5.9.x or above or Plant an App 1.9.x or above** |
+| Above 9.8.0 | - | - | Not yet supported |
+| 9.8.0 | 1.9.x | 5.9.x |  |
+| **9.7.2** | **1.9.x** | **5.9.x** | **Starting with DNN 9.7.2, DNN Sharp version 5.9.x or above or Plant an App 1.9.x or above is Required** |
 | 9.6.2 | 1.6.x | 5.1.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x  and lower or Plant an App 1.8.x and lower  |
 | **9.6.1** | **1.6.x** | **5.1.x** |  |
 | **9.5.x** | **1.6.x** | **5.1.x** |  |
