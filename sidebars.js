@@ -146,6 +146,7 @@ module.exports = {
           type: 'category',
           label: 'Important Notes',
           items: [
+            'modules/important-notes/dnn-compatibility',
             'modules/important-notes/embed-form-or-grid',
             'modules/important-notes/secure-input',
           ],
