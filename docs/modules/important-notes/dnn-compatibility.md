@@ -30,7 +30,7 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 | **9.5.x** | **1.6.x** | **5.6.x** |  |
 | *9.4.x* | - | - | *Version not supported* |
 | **9.3.2** | **1.6.x** | **5.0.x** | **Minimum supported DNN version** |
-| 9.3.1 and lower | 1.6.x <br/> (1.11.x max) | 5.0.x <br/> (5.11.x max) | We no longer perform QA on DNN Versions  9.3.1 and lower for new releases. Support will be considered under separate commercial support agreements. Contact us for a quote. |
+| 9.3.1 and lower | 1.6.x <br/> (1.11.x max) | 5.0.x <br/> (5.11.x max) | Standard support no longer covers DNN Versions 9.3.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote.|
 | *8.0.3 and lower* | - | - | *DNN Versions below 8.0.4 are not supported* |
 
 ## `Important Notes About Upgrade Paths`
