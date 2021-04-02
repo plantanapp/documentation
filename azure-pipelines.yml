@@ -57,7 +57,7 @@ stages:
                   inputs:
                       awsCommand: "cloudfront"
                       awsSubCommand: "create-invalidation"
-                      awsArguments: '--distribution-id $(DistributionId) --paths "/*" --debug'
+                      awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
                   displayName: "Invalidate CloudFront Cache"
                   env:
                       AWS_REGION: us-east-1
