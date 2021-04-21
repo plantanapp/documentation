@@ -51,7 +51,8 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 ### `If You have DNN 9.3.1 or Lower Installed`
 
 1. Make sure all your **DNN Sharp modules are upgraded to the latest 5.0.x version** before upgrading DNN or to DNN Sharp 5.1+ modules. Even if you already have a 5.0 version of a module installed, confirm it is the last 5.0 version that was released for the module. If you aren't sure you have the latest version of a 5.0.x module, [please contact us](https://www.dnnsharp.com/helpcenter).
-2. Upgrade to DNN 9.3.2. **DO NOT skip upgrading to 9.3.2**. It’s a required upgrade for subsequent versions of DNN to work correctly.
+2. Upgrade all the DNN Sharp modules to the latest 5.1.x version.
+3. Upgrade to DNN 9.3.2. **DO NOT skip upgrading to 9.3.2**. It’s a required upgrade for subsequent versions of DNN to work correctly.
 
 ### `Once You have DNN 9.3.2 or Above Installed`
 
