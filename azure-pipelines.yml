@@ -32,7 +32,7 @@ stages:
   - stage: Deployment
     displayName: Deploy to S3
     dependsOn: Build
-    condition: succeeded()
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) # do not run the deploy for PR builds
     jobs:
       - deployment:
         pool:
