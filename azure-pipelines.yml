@@ -51,11 +51,9 @@ stages:
                     globExpressions: "**"
                 - task: AWSCLI@1
                   inputs:
-                      awsCommand: "cloudfront"
-                      awsSubCommand: "create-invalidation"
-                      awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
+                    awsCredentials: 's3-learn.plantanapp.com'
+                    regionName: 'us-east-1'
+                    awsCommand: 'cloudfront'
+                    awsSubCommand: 'create-invalidation'
+                    awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
                   displayName: "Invalidate CloudFront Cache"
-                  env:
-                      AWS_REGION: us-east-1
-                      AWS_ACCESS_KEY_ID: $(AWS.AccessKeyID)
-                      AWS_SECRET_ACCESS_KEY: $(AWS.SecretAccessKey)
