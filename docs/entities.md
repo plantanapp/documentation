@@ -6,11 +6,21 @@ sidebar_label: Entities
 
 ## `General Description`
 
-Entities define the data model of the application. This is sometimes referred to as Data Structure or Structured Content. This is where you establish the data elements in your application and how they relate to each other. For a simple application, you could begin your design right here. For a more complex app, you may want to create a visual representation of your data model first and then create your entities based on that. Plant an App also creates a visual view of the relation between your Entities. You can view this by toggling to the **Dependency View** on the Entities page.
+Entities define the data model of the application. This is sometimes referred to as Data Structure or Structured Content. This is where you establish the data elements in your application and how they relate to each other. For a simple application, you could begin your design right here. For a more complex app, you may want to create a visual representation of your data model first and then create your entities based on that. Plant an App also creates a visual view of the relation between your Entities. You can view this by toggling to the **Dependency View** on the Entities tab.
 
 :::note
 Plant an App automatically includes four default Entities: Users, Roles, Documents, and Images. These cannot be removed or edited. They will not appear in the Dependency View unless added as a dependency to one of the Entities.
 :::
+
+## `Navigating the Entity Tab`
+
+When you first load the Entity tab in Configuration you will see a message inviting you to create your first Entity. After you have created at least one Entity, on subsequent loads of the Entity tab you see a list of all your Entities and Plant an App Built-in Entities. Click the **New** button at the top of the page to create an Entity.
+
+By default, you will see the **List View** of Entities, but you can also view a visual representation of the relation between Entities by toggling to the **Dependency View**. Just above the Entity Listing, there is a **Filter** option where you can type a term to filter the list of Entities. As your application grows, this will be very useful.
+
+Each time you load the tab, the Entity list is sorted alphabetically by the Singular Name column. Simply click any of the column headers once to sort the listing ascending by that column and again to sort descending. Hover any Entity row to expose the Entity's action buttons. These buttons allow you to **View the Entity page** in a new tab, **Edit** the Entity, or **Delete** the Entity.
+
+<img src="/img/EntitiesTab.png" alt="Entities Tab Highlights" />
 
 ## `Assets Created`
 
@@ -25,7 +35,21 @@ When you create an Entity, Plant An App automatically generates database tables,
 - UI buttons providing the ability to create, edit, delete and view entries
 - Custom actions for create, delete, partial update, update and read operations added to the list of Plant an App core actions specifically for the Entity
 - APIs for creating, retrieving, updating, and deleting records
-- In an upcoming release, a visual dashboard where you can define KPIs will also be automatically created
+- Optionally, a visual dashboard where you can define KPIs based on the data from the Entity
+
+## `Entity General Settings`
+
+When creating an Entity, the first tab will present you with some General settings for the Entity. These include the Name and settings that define the User Interface that is created when the Entity is saved.
+
+| Setting | Description |
+| -- | -- |
+| Name | You must define both a singular and plural value for the Entity name and these values must be unique. The singular value will be used (with spaces and special characters removed) as the SQL table name for your Entity and anywhere a singular value is appropriate in the UI. The plural value will be used as the name of the page that is created and anywhere a plural value is appropriate in the UI. |
+| Icon | You may select a custom icon for the Entity that will appear on Entry detail pages, the Entity tab in Configuration, and other places in the UI. If you do not select one, the 'Table' icon will be used. |
+| Enable Indexing | If you enable indexing, entries in your entity will be automatically indexed and will be returned in results for the default site search. |
+| Display In Menu | This determines whether the page that is created for the Entity will appear in the main site menu. If you turn this off, you will likely need to create links to the page in your UI for users to access the Entity. |
+| Include Dashboard | Enable this setting if you want to include a KPI Dashboard on the primary listing page generated for this Entity. The first time you set it, an empty Dashboard will be generated and added. Subsequent toggles of this setting will only show or hide it for non-developer users, but it will not be deleted. |
+| Parent Page | This determines where in the site hierarchy the page will be located. If you do not specify a parent page, the page will be located at the site root. Even if you choose to not display the page in the menu, you should still place the page correctly in the site hierarchy as this also impacts the URL for your page. |
+| Display After | Set the location of the page in relation to other pages under the same Parent Page. The items available in the dropdown update based on the page selected in the Parent Page setting. You can choose to display the page last, first, or after one of the existing pages. This setting impacts the ordering of the site menu. |
 
 ## `Entity Properties`
 
@@ -46,7 +70,8 @@ The first section lists the standard or **Primitive** data types. Selecting thes
 | Large Text | Large Text initialized with 3 rows | nvarchar(max) |
 | Local Date and Time | Date Time Picker with Date and Time Picker Type and formatted as MM/dd/yyyy hh:mm tt | datetimeoffset(7) |
 | Money | Currency set to USD | decimal(19, 4) |
-| Number | Number with Integer Number validation | int |
+| Number (Decimal) | Text Box with Floating Point Number validation | decimal(18,4) |
+| Number (Integer) | Number with Integer Number validation | int |
 | Phone | Phone with initial format set by Browser Country Code | nvarchar(15) |
 | Text | Text Box with maximum 450 characters | nvarchar(450) |
 | Time | Date Time Picker with Time Picker Type and formatted as hh:mm tt | time(7) |
