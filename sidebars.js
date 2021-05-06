@@ -8,6 +8,7 @@ module.exports = {
         'entities',
         'execution-context',
         'roles',
+        'sql_console',
         'users',
         'versioning',
         'workflows',
