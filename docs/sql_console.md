@@ -14,7 +14,7 @@ The SQL Console allows the [Low-Code Engineer](/docs/audience#low-code-engineers
 
 ## `Permissions`
 
-When dealing with being able to directly query the application database, security is of great concern. By default the SQL Console is disabled. Once enabled, Access to it is limited to specific Roles. Below is a permissions grid that shows which roles can see or use the Console.
+When dealing with being able to directly query the application database, security is of great concern. By default the SQL Console is disabled. Once enabled, access to it is limited to specific Roles. Below is a permissions grid that shows which roles can see or use the Console.
 
 | Role | Can Enable | View | Run Queries |
 | -- | :----: | :----: | :----: |
