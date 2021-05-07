@@ -47,7 +47,7 @@ The Plant an App built-in role **Admins**, since they can enable the feature, ca
 
 To use the SQL Console you must be logged in as a user who has one of the roles with a check in the **Run Queries** column in the [grid above](#permissions).
 
-![SQL Console](/static/img/SQLConsole_preview.png)
+![SQL Console](/img/SQLConsole_preview.png)
 
 ### `Run a Query`
 
@@ -62,7 +62,7 @@ To use the SQL Console you must be logged in as a user who has one of the roles 
 
 If your query returned any error it will be shown at the bottom of the page in a red box with white text.
 
-![Query Error](/static/img/QueryErrors.png)
+![Query Error](/img/QueryErrors.png)
 
 ### `Download Results`
 
