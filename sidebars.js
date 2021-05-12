@@ -95,6 +95,14 @@ module.exports = {
         },
         {
           type: 'category',
+          label: 'Logging',
+          items: [
+            'actions/log-error',
+            'actions/log-event',
+          ],
+        },
+        {
+          type: 'category',
           label: 'Message',
           items: [
             'actions/display-error-message',
