@@ -7,6 +7,7 @@ module.exports = {
         'audience',
         'entities',
         'execution-context',
+        'page-management',
         'roles',
         'sql_console',
         'users',
