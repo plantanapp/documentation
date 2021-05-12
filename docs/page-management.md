@@ -31,7 +31,7 @@ Each column in the Page listing has specific information and features that are n
 
 | Column | Detail |
 | -- | -- |
-| Visible | The icon in this column indicates whether a page is visible in the site navigation. A green eye ![Query Error](/img/pagevisible.png) indicates it is visible and an orange eye with a slash ![Query Error](/img/pagenotvisible.png) indicates it is not visible. |
+| Visible | The icon in this column indicates whether a page is visible in the site navigation. A green eye ![Page Visible](/img/pagevisible.png) indicates it is visible and an orange eye with a slash ![Page not Visible](/img/pagenotvisible.png) indicates it is not visible. |
 | Page Name | This column not only shows you the **Name** of the page but also tells you whether it has child pages and allows you to show the child pages in the listing. After the page name is a number in parentheses. If it is 0, there are no child pages. If greater than 0, click the page name to see the child pages. Once you are viewing a Child page listing, the top row of the listing will have a **Back** link to go up a level in the page hierarchy. |
 | Title | The title for the page, if specified, will appear in this column. |
 | Note | Pages created by the Plant an App [Entity Builder (Entities)](/docs/entities) will have orange highlighted text in this column that says "Managed in Entity Builder". This is important because these pages will have the Edit button in the right column disabled. To edit the visibility, permissions, or names of these pages, you must edit the Entity associated with the page. |
