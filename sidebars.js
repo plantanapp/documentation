@@ -45,6 +45,7 @@ module.exports = {
           type: 'category',
           label: 'Data',
           items: [
+            'actions/clear-cache-item',
             'actions/run-sql',
             'actions/server-request',
           ],
