@@ -24,9 +24,9 @@ const features = [
     imageUrl: 'img/undraw_online_reading.svg',
     description: (
       <>
-        Start here if you are the kind of person that just wants to dive into the details. We recommend you begin by learning about the 
-        different <a href="docs/audience" title="Audience">Audiences</a> our documentation targets. From there, you should learn about <a href="docs/entities" title="Entities">Entities</a>, the heart of your application. 
-        
+        Start here if you are the kind of person that just wants to dive into the details. We recommend you begin by learning about the
+        different <a href="docs/audience" title="Audience">Audiences</a> our documentation targets. From there, you should learn about <a href="docs/entities" title="Entities">Entities</a>, the heart of your application.
+
       </>
     ),
   },
@@ -42,7 +42,7 @@ const features = [
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
@@ -59,7 +59,7 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
       title={`Developer-First Low-Code Platform`}
@@ -80,11 +80,11 @@ function Home() {
           </div>
         </div>
       </header>
-      <p style="text-align: center; background-color: #303846; color:white;">
-          <medium>Leave us a Capterra review and earn a $20 giftcard! Limited to first 100 reviewers. 
-            <a class="buttonX buttonRev" href="https://review.capterra.com/Feedback-Plant-an-App-207065-3210555142" target="_blank" type="button">Review now</a>
-        </medium>
-      </p>
+      <div style={{ textAlign: "center", backgroundColor: "#303846", color: "white" }}>
+        Leave us a Capterra review and earn a $20 giftcard! Limited to first 100 reviewers.
+        <button className={classnames(styles.buttonRev, styles.buttonX)} onClick={event => window.open("https://review.capterra.com/Feedback-Plant-an-App-207065-3210555142", "_blank")}>Review now</button>
+
+      </div>
       <main>
         {features && features.length && (
           <section className={styles.features}>
