@@ -34,3 +34,25 @@
   height: 200px;
   width: 200px;
 }
+.buttonX {
+  border: none;
+  color: white;
+  padding: 5px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonRev {
+  background-color: white; 
+  color: #009688; 
+  border: 2px solid #041323;
+}
+.buttonRev:hover {
+  background-color: #041323;
+  color: white;
+  text-decoration: none;
+}
