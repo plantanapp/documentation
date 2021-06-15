@@ -80,6 +80,11 @@ function Home() {
           </div>
         </div>
       </header>
+      <p style="text-align: center; background-color: #009688; color:white;">
+          <medium>Leave us a Capterra review and earn a $20 giftcard! Limited to first 100 reviewers. 
+            <a class="buttonX buttonRev" href="https://review.capterra.com/Feedback-Plant-an-App-207065-3210555142" target="_blank" type="button">Review now</a>
+        </medium>
+      </p>
       <main>
         {features && features.length && (
           <section className={styles.features}>
