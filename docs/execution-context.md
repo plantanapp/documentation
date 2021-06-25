@@ -50,7 +50,7 @@ The context is created from scratch every single run, this ensures no collisions
 
 ## Action Context object, accessing and structure
 
-The Action Context is the object which contains all the data about the state of the app.  You can gain access to it by implementing the `IActionImpl` interface. The interface exposes the `Init` and `Execute` methods, of which you will most-often use `Execute`. The `Execute` method receives a context variable of `Action Context` type.
+The Action Context is the object which contains all the data about the state of the app.  You can gain access to it by implementing the `IActionImpl` interface. The interface exposes the `Init` and `Execute` methods, of which you will most often use `Execute`. The `Execute` method receives a context variable of `Action Context` type.
 The Action Context object contains two important pieces, the Metadata objects and the DataStore object.
 
 ### Metadata objects
