@@ -36,7 +36,7 @@ Examples of activities:
 
 In Plant an App, Citizen Developers do, on average, 80% of the application development. They live at the intersection of the business and technical realms. On the one hand, they work to understand the business requirements and the processes involved. At the same time, they can turn them into working software that has a data model, workflows, and application screens.
 
-Note that a Citizen Developer rarely has experience with writing code. But they are technically savvy in the sense that they understand technology. They know concepts such as what HTTP Requests are; what the differences between back-end and front-end technologies are; or how databases are structured. Often, they even know the basics of various markup and programming languages, such as HTML, CSS, SQL, or JavaScript and can read such code for the purpose of copy-pasting and adjusting it.  
+Note that a Citizen Developer rarely has experience with writing code. But they are technically savvy in the sense that they understand technology. They know concepts such as what HTTP Requests are, what the differences between back-end and front-end technologies are, or how databases are structured. Often, they even know the basics of various markup and programming languages, such as HTML, CSS, SQL, or JavaScript, and can read such code for the purpose of copy-pasting and adjusting it.  
 
 Skills: `no-code`, `tech-savvy`, `data models`, `business process modeling`, `basic coding skills`
 
