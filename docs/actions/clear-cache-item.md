@@ -33,7 +33,7 @@ The parameters unique to this action are listed below. [Review the common parame
 
 ## `Viewing The Server Cache`
 
-The **Clear Cache Item** action used to include a link the in inline help to load a listing of items cached on your server. For security reasons (potentially exposing your server cache to users without permission) that listing has been disabled indefinitely. However, at your discretion, you can create a permission trimmed page that will list your server cache. Follow the steps below:
+The **Clear Cache Item** action used to include a link the in inline help to load a listing of items cached on your server. For security reasons (potentially exposing your server cache to users without permission) that listing has been disabled indefinitely. However, at your discretion, you can create a page accessible only by roles with site administration privileges that will list your server cache. Follow the steps below:
 
 1. Go to Plant an App **Configuration** and navigate to Tokens in the left menu.
 2. Select an existing **NameSpace** or create a new one.
@@ -54,3 +54,7 @@ The **Clear Cache Item** action used to include a link the in inline help to loa
 
 8. Click **Save & Test**. Your new Token will load in the **Test Tokens** area below and your Cache List will load in the results box to the right.
 9. You can now use this token on a page of your choice in an HTML module. Make sure you go into the settings of the module, on the **HTML Module Settings** tab, and select the **Replace Tokens** option.
+
+:::note
+For the security of your site, the page where you list the server cache should only be accessible by users with Site Administration privileges. Set your page permissions accordingly.
+:::
