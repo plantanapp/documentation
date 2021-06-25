@@ -39,25 +39,25 @@ Depending on where it's used, a token can either come as a string, or be casted 
 
 ## Actions and their interactions with the context
 
-Depending on the action used, it interacts differently with the context. Some actions take the context as it is during it's execution while others make a copy of the context and either leave the parent context untouched or it merges the modifications back in the original one, but no matter the behavior it has, after the end of the flow, the context is destroyed after the last action has executed or when a final action is used. In the case of async actions, which do one part of their execution at a moment and the another part at a later time, the context is saved in a persistent cache which is brought back from the database as soon as it's needed. An a form can also save it's field values as a type of mock context through the State actions.
+Depending on the action used, it interacts differently with the context. Some actions take the context as it is during its execution while others make a copy of the context and either leave the parent context untouched or it merges the modifications back in the original one, but no matter the behavior it has, after the end of the flow, the context is destroyed after the last action has executed or when a final action is used. In the case of async actions, which do one part of their execution at one moment and another part at a later time, the context is saved in a persistent cache which is brought back from the database as soon as it's needed. And a form can also save its field values as a type of mock-context through the State actions.
 
-There are some actions which can modify the metadata information inside the context such as  Load User, but this is generally an exception and it only applies to the Load User action.
-Non-metadata information is easier to overwrite, usually done executing the Inject Data action, beware that injecting an empty string into a token of the context will not delete that token from the context, it will simply bring back an empty string every time that it's used after the Inject Data action.
+There are some actions which can modify the metadata information inside the context such as Load User, but this is generally an exception and it only applies to the Load User action.
+Non-metadata information is easier to overwrite, usually done when executing the Inject Data action.  However, beware that injecting an empty string into a token of the context will not delete that token from the context, it will simply bring back an empty string every time that it's used after the Inject Data action.
 
-In the case of recursive tokens, those which refer other tokens, they won't be replaced recursively unless a Apply Token actions is used with the necessary number of recursions.
+In the case of recursive tokens, those which refer to other tokens, they won't be replaced recursively unless an Apply Token action is used with the necessary number of recursions.
 
 The context is created from scratch every single run, this ensures no collisions or synchronization issues take place between the runs.
 
 ## Action Context object, accessing and structure
 
-The action context is the object which contains all the data about the state of the app and you can gain access to it by implementing the `IActionImpl` interface. The interface exposes the `Init` and `Execute` methods out which you mostly will need the `Execute` one. The `Execute` method receives a context variable of `Action Context` type.
-The action context object contains two important pieces, the metadata objects and the DataStore object.
+The Action Context is the object which contains all the data about the state of the app.  You can gain access to it by implementing the `IActionImpl` interface. The interface exposes the `Init` and `Execute` methods, of which you will most often use `Execute`. The `Execute` method receives a context variable of `Action Context` type.
+The Action Context object contains two important pieces, the Metadata objects and the DataStore object.
 
 ### Metadata objects
 
 #### Page
 
-The `Page` object stores data about the tab where the actions was called from. It is a `TabInfo` object and you can find more details about it [here](https://dnndocs.com/api/DotNetNuke.Entities.Tabs.TabInfo.html).
+The `Page` object stores data about the tab where the actions were called from. It is a `TabInfo` object and you can find more details about it [here](https://dnndocs.com/api/DotNetNuke.Entities.Tabs.TabInfo.html).
 
 #### Portal
 
@@ -65,12 +65,12 @@ The `Portal` object stores data about the portal on which the action executes. T
 
 #### User
 
-The `User` object contains the data about the current user that initiated the action, be aware that this can be altered with the [Load User](/docs/actions/load-user) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html#DotNetNuke_Entities_Users_UserInfo).
+The `User` object contains the data about the current user that initiated the action, but be aware that this can be altered with the [Load User](/docs/actions/load-user) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html#DotNetNuke_Entities_Users_UserInfo).
 
 #### Users
 
-The `Users` property is a context entity  of `Hashset<int>` type which some actions use and can be changed with the [Load User](/docs/actions/load-user) or [Load Users from SQL](/docs/actions/load-users-from-sql) actions. It is something specific to PlantAnApp and it contains the IDs of the users that have been loaded into context.
+The `Users` property is a context entity  of `Hashset<int>` type which is used by some actions and it can also be changed with the [Load User](/docs/actions/load-user) or [Load Users from SQL](/docs/actions/load-users-from-sql) actions. It is something specific to PlantAnApp and it contains the IDs of the users that have been loaded into context.
 
 ### DataStore object
 
-The `DataStore` object contains all the data about the tokens which have been added into the context and are available for use. It is of type `IDictionary<string, ContextField>` and you can access it's context using the specific dictionary syntax.
+The `DataStore` object contains all the data about the tokens which have been added into the context and are available for use. It is of type `IDictionary<string, ContextField>` and you can access its context using the specific dictionary syntax.
