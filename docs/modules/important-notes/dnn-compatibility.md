@@ -37,11 +37,11 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 
 ## `Important Notes About Upgrade Paths`
 
-1. BACKUP! Before doing any upgrade, whether to DNN Platform, Plant an App, or DNN Sharp modules, best practice dictates you should backup your site and database first. If you're not sure how to do that or need a refresher on how to perform an upgrade, review the [DNN Platform upgrade guidance](https://www.dnndocs.com/content/getting-started/setup/upgrades/index.html).
+1. BACKUP! Before doing any upgrade, whether to DNN Platform, Plant an App, or DNN Sharp modules, best practice dictates you should backup your site and database first. If you're not sure how to do that or need a refresher on how to perform an upgrade, review the [DNN Platform upgrade guidance](https://dnndocs.com/content/getting-started/setup/upgrades/index.html).
 2. Once your site is safely backed up, carefully consider the best path forward based on what version of DNN your site has installed currently.
 
    :::note
-   The closer you are to current with both DNN Platform and Plant an App or DNN Sharp Modules, the smoother your upgrade is likely to go.  We highly recommended following the [DNN Platform Suggested Upgrade Path](https://www.dnndocs.com/content/getting-started/setup/upgrades/suggested-upgrade-path/index.html).
+   The closer you are to current with both DNN Platform and Plant an App or DNN Sharp Modules, the smoother your upgrade is likely to go.  We highly recommended following the [DNN Platform Suggested Upgrade Path](https://dnndocs.com/content/getting-started/setup/upgrades/suggested-upgrade-path/index.html).   
    :::
    
    :::note
