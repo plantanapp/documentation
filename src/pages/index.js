@@ -71,11 +71,11 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/audience')}>
-              Start Learning
+              to="https://academy.plantanapp.com/Course-Work?CourseId=1">
+              Start the course NOW!
             </Link>
           </div>
         </div>
