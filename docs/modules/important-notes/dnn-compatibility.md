@@ -28,8 +28,8 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 | 9.8.1 | 1.9.x | 5.9.x | DNN 9.8.1 is the recommended version. |
 | **9.7.2** | **1.9.x** | **5.9.x** | **Starting with DNN 9.7.2, DNN Sharp version 5.9.x or above or Plant an App 1.9.x or above is Required** |
 | 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x  and lower or Plant an App 1.8.x and lower  |
-| **9.6.1** | **1.6.x** | **5.6.x** |  |
-| **9.5.x** | **1.6.x** | **5.6.x** | DNN 9.5.x and earlier were released more than one year ago.  Per policy, these will become unsupported in the near future. |
+| **9.6.1** | **1.6.x** | **5.6.x** | On August 31, 2021 this will become the Minimum supported DNN version |
+| **9.5.x** | **1.6.x** | **5.6.x** |  |
 | *9.4.x* | - | - | *Version not supported* |
 | **9.3.2** | **1.6.x** | **5.0.x** | **Minimum supported DNN version** |
 | 9.3.1 and lower | 1.6.x <br/> (1.11.x max) | 5.0.x <br/> (5.11.x max) | Standard support no longer covers DNN Versions 9.3.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote.|
