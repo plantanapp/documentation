@@ -1,7 +1,7 @@
 ---
-id: close-tabs-popup
-title: Close Tabs Popup
-sidebar_label: Close Tabs Popup
+id: close-tabs-pro-popup-and-continue-execution
+title: Close Tabs Popup And Continue Execution
+sidebar_label: Close Tabs Popup And Continue Execution
 ---
 
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>

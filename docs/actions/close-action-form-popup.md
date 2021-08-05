@@ -1,5 +1,5 @@
 ---
-id: close-form-popup
+id: close-action-form-popup
 title: Close Form Popup
 sidebar_label: Close Form Popup
 ---

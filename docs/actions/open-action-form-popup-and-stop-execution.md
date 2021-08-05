@@ -1,11 +1,11 @@
 ---
-id: open-form-popup
-title: Open Form Popup
-sidebar_label: Open Form Popup
+id: open-action-form-popup-and-stop-execution
+title: Open Form Popup And Stop Execution
+sidebar_label: Open Form Popup and Continue Execution
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `Using Form Builder`
+&gt; Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br>
+&gt; Skill Prerequisites: `Using Form Builder`
 
 This action allows you to open a specified Action Form from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
 

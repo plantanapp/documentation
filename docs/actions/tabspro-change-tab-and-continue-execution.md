@@ -1,11 +1,11 @@
 ---
-id: tabs-change-tab
-title: Tabs Pro Change Tab
-sidebar_label: Tabs Pro Change Tab
+id: tabspro-change-tab-and-continue-execution
+title: Tabs Pro Change Tab And Continue Execution
+sidebar_label: Tabs Pro Change Tab And Continue Execution
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `Using Form Builder`
+&gt; Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br>
+&gt; Skill Prerequisites: `Using Form Builder`
 
 This action allows you to change the active tab in a Tabs Pro module on a Form or Grid’s button click.
 

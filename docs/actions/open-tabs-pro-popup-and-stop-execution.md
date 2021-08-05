@@ -1,11 +1,11 @@
 ---
-id: open-tabs-popup
-title: Open Tabs Popup
-sidebar_label: Open Tabs Popup
+id: open-tabs-pro-popup-and-stop-execution
+title: Open Tabs Popup And Stop Execution
+sidebar_label: Open Tabs Popup And Stop Execution
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `Using Form Builder`
+&gt; Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br>
+&gt; Skill Prerequisites: `Using Form Builder`
 
 This action allows you to open a specified Tabs Pro from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
 
