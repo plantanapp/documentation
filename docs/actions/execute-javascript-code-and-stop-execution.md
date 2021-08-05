@@ -1,7 +1,7 @@
 ---
 id: execute-javascript-code-and-stop-execution
-title: Execute JavaScript Code
-sidebar_label: Execute JavaScript Code
+title: Execute JavaScript Code And Stop Execution
+sidebar_label: Execute JavaScript Code And Stop Execution
 ---
 
 > Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)<br/>

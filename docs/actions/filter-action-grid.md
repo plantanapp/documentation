@@ -6,7 +6,7 @@ sidebar_label: Filter Action Grid
 
 > Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
 > Skill Prerequisites: `Using Action Grid`
-> 
+
 This action refreshes an Action Grid module without page reload (if it’s on same page) with the option to change sorting, pagination and filtering.
 
 ## `Typical Use Cases`

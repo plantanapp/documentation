@@ -1,7 +1,7 @@
 ---
 id: execute-javascript-code-and-continue-execution
-title: Execute JavaScript Code
-sidebar_label: Execute JavaScript Code
+title: Execute JavaScript Code And Continue Execution
+sidebar_label: Execute JavaScript Code Continue Execution
 ---
 
 > Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)<br/>

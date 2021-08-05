@@ -4,8 +4,8 @@ title: Load Entities (Excel File) XLSX
 sidebar_label: Load Entities (Excel File) XLSX
 ---
 
-&gt; Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-&gt; Skill Prerequisites: `Using Form Builder`
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Skill Prerequisites: `Using Form Builder`
 
 This action creates an entity list in the current context from the content of a provided XLSX file. You can find the number of loaded entities in the `[<entityname>:Count]` token.
 

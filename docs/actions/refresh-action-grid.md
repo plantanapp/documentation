@@ -4,8 +4,8 @@ title: Refresh Action Grid
 sidebar_label: Refresh Action Grid
 ---
 
-&gt; Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
-&gt; Skill Prerequisites: `Using Action Grid`
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
+> Skill Prerequisites: `Using Action Grid`
 
 This action is usually used to refresh the grid after executing another action.
 
