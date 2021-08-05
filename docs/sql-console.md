@@ -1,5 +1,5 @@
 ---
-id: sql_console
+id: sql-console
 title: SQL Console
 sidebar_label: SQL Console
 ---
