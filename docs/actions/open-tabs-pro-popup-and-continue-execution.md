@@ -1,20 +1,24 @@
 ---
-id: open-tabs-pro-popup-and-continue-execution
-title: Open Tabs Pro Popup And Continue Execution
-sidebar_label: Open Tabs Pro Popup And Continue Execution
+id: open-tabs-popup
+title: Open Tabs Popup
+sidebar_label: Open Tabs Popup
 ---
 
-Available in: Form, Listing.
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
+> Skill Prerequisites: `Using Form Builder`
 
-Requires: AFORM version above 3.9.261.
+This action allows you to open a specified Tabs Pro from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
 
-Requires: AGRID version above 4.1.330.
+## `Actions Covered by this Document`
 
+| Action | Purpose |
+| -- | -- |
+| Open Tabs Pro Popup And Continue Execution | Opens the specified Tabs Pro instance and then continues to subsequent actions on the button and submission. |
+| Open Tabs Pro Popup And Stop Execution | Opens the specified Tabs Pro instance and then stops further execution of both subsequent actions and HTTP post submission. |
 
+## `Input Parameter Reference`
 
-
-## Parameter Reference
-| Parameter | Description | Supports Tokens | Default |
-| -- | -- | -- | -- |
-| Select Module | Select the Tabs Pro module that you want to open in popup. | No | None |
-| QueryString Parameters | The values set here will be sent to the Tabs Pro module. Any Action Form modules present in the tab will receive the values as tokens with 'QueryString:' namespace. | No | None |
+| Parameter | Description | Supports Tokens | Default | Required |
+| -- | -- | -- | -- | -- |
+| Select Module | Select the Tabs Pro you wish to open in a popup. Optionally, click the `EXPR` button to tokenize the selection of the Tabs Pro ID| Yes | Empty String | No |
+| QueryString Parameters | Optionally, you can enter `Name` and `Value` pairs that will be passed to the Tabs Pro being opened in the popup. The Tabs Pro in the popup can reference these values using the `[QueryString:Parameter]` token syntax. | Yes | Unset | No |
