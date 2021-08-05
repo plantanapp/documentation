@@ -1,11 +1,11 @@
 ---
-id: run-sql
+id: run-sql-query
 title: Run SQL Query
 sidebar_label: Run SQL Query
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `SQL`
+&gt; Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br>
+&gt; Skill Prerequisites: `SQL`
 
 This action executes a SQL statement, optionally capturing the output for use in subsequent actions. By default, it targets the SQL Server instance of the application, however, it is not restricted to SQL Server and can run against any database which supports ODBC connections.
 
