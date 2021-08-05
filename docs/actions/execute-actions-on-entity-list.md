@@ -1,11 +1,11 @@
 ---
-id: execute-actions-entity-list
+id: execute-actions-on-entity-list
 title: Execute Actions on Entity List
 sidebar_label: Execute Actions on Entity List
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
-> Skill Prerequisites: `Using Form Builder`
+&gt; Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br>
+&gt; Skill Prerequisites: `Using Form Builder`
 
 This action will execute the specified actions for each item that belongs to the entity collection named in the `EntityName` parameter. To access field values from the currently iterated entity in the specified actions, use this token syntax:`[EntityName:EntityFieldName]`.
 
