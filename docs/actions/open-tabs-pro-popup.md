@@ -4,7 +4,7 @@ title: Open Tabs Popup
 sidebar_label: Open Tabs Popup
 ---
 
-&gt; Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br>
+&gt; Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
 &gt; Skill Prerequisites: `Using Form Builder`
 
 This action allows you to open a specified Tabs Pro from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
