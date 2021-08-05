@@ -1,5 +1,5 @@
 ---
-id: add-to-campaign-obsolete-
+id: add-to-campaign-obsolete
 title: Add to campaign (obsolete)
 sidebar_label: Add to campaign (obsolete)
 ---

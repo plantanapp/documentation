@@ -1,5 +1,5 @@
 ---
-id: delete-module-hard-
+id: delete-module-hard
 title: Delete Module (Hard)
 sidebar_label: Delete Module (Hard)
 ---

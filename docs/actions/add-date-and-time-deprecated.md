@@ -1,5 +1,5 @@
 ---
-id: add-date-and-time-deprecated-
+id: add-date-and-time-deprecated
 title: Add Date and Time (Deprecated)
 sidebar_label: Add Date and Time (Deprecated)
 ---

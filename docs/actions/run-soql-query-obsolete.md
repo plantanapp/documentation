@@ -1,5 +1,5 @@
 ---
-id: run-soql-query-obsolete-
+id: run-soql-query-obsolete
 title: Run SOQL Query (obsolete)
 sidebar_label: Run SOQL Query (obsolete)
 ---

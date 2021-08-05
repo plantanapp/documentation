@@ -1,5 +1,5 @@
 ---
-id: create-an-salesforce-entity-obsolete-
+id: create-an-salesforce-entity-obsolete
 title: Create an Salesforce Entity (obsolete)
 sidebar_label: Create an Salesforce Entity (obsolete)
 ---

@@ -1,5 +1,5 @@
 ---
-id: update-user-profile-obsolete-
+id: update-user-profile-obsolete
 title: Update User Profile (Obsolete)
 sidebar_label: Update User Profile (Obsolete)
 ---

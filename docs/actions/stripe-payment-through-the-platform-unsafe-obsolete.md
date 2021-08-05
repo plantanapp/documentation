@@ -1,5 +1,5 @@
 ---
-id: stripe-payment-through-the-platform-unsafe-obsolete-
+id: stripe-payment-through-the-platform-unsafe-obsolete
 title: Stripe Payment through the platform (unsafe  obsolete)
 sidebar_label: Stripe Payment through the platform (unsafe  obsolete)
 ---

@@ -1,5 +1,5 @@
 ---
-id: stripe-direct-payment-unsafe-obsolete-
+id: stripe-direct-payment-unsafe-obsolete
 title: Stripe Direct Payment (unsafe  obsolete)
 sidebar_label: Stripe Direct Payment (unsafe  obsolete)
 ---

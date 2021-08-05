@@ -1,5 +1,5 @@
 ---
-id: delete-module-soft-
+id: delete-module-soft
 title: Delete Module (Soft)
 sidebar_label: Delete Module (Soft)
 ---

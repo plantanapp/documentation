@@ -1,5 +1,5 @@
 ---
-id: subscribe-to-a-topic-by-sms-
+id: subscribe-to-a-topic-by-sms
 title: Subscribe to a topic (by SMS)
 sidebar_label: Subscribe to a topic (by SMS)
 ---

@@ -1,5 +1,5 @@
 ---
-id: post-hash-item-tierion-
+id: post-hash-item-tierion
 title: Post Hash Item (Tierion)
 sidebar_label: Post Hash Item (Tierion)
 ---

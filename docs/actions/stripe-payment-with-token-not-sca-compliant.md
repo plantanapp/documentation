@@ -1,5 +1,5 @@
 ---
-id: stripe-payment-with-token-not-sca-compliant-
+id: stripe-payment-with-token-not-sca-compliant
 title: Stripe Payment with Token (not SCA compliant)
 sidebar_label: Stripe Payment with Token (not SCA compliant)
 ---

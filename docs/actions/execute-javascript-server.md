@@ -1,5 +1,5 @@
 ---
-id: execute-javascript-server-
+id: execute-javascript-server
 title: Execute Javascript (Server)
 sidebar_label: Execute Javascript (Server)
 ---

@@ -1,5 +1,5 @@
 ---
-id: recheck-receipt-tierion-
+id: recheck-receipt-tierion
 title: Recheck Receipt (Tierion)
 sidebar_label: Recheck Receipt (Tierion)
 ---

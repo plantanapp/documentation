@@ -1,11 +1,11 @@
 ---
-id: delete-page-hard-
-title: Delete Page (Hard)
-sidebar_label: Delete Page (Hard)
+id: delete-page-soft
+title: Delete Page (Soft)
+sidebar_label: Delete Page (Soft)
 ---
 
 
-This action will deletes DNN page, including from the database.
+This action will delete a DNN page, but it's not removed from database. It can be later restored from Admin > Recycle bin.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

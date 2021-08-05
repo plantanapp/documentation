@@ -1,5 +1,5 @@
 ---
-id: add-checkbox-true-false-
+id: add-checkbox-true-false
 title: Add CheckBox (True/False)
 sidebar_label: Add CheckBox (True/False)
 ---

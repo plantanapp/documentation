@@ -1,5 +1,5 @@
 ---
-id: import-into-database-entity-
+id: import-into-database-entity
 title: Import Into Database (Entity)
 sidebar_label: Import Into Database (Entity)
 ---
