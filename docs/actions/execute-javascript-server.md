@@ -186,4 +186,3 @@ This second action is the **Execute JavaScript (Server-side)** action. It takes 
   }
 }
 ```
-</property></output>
