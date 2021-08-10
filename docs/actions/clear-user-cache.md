@@ -4,7 +4,8 @@ title: Clear User Cache
 sidebar_label: Clear User Cache
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `User Management`
 
 This action clears the user level cache for users loaded into the current context when the action is called. By default, this will be the currently logged in user unless a different user or list of users has been loaded into context.

@@ -4,7 +4,8 @@ title: Update User Profile
 sidebar_label: Update User Profile
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `User Management`
 
 This action updates the profile data for a user. It updates the User Profile that is matched (by UserId, Username, or Email) to the value specified in the **User Identifier** field. It only updates properties that contain values. Both the standard user properties and custom-defined properties can be updated, but the properties must already be defined in the DNN **Site Settings** at **Site Behavior**>**User Profiles**.

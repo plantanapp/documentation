@@ -4,7 +4,8 @@ title: Revoke User Role
 sidebar_label: Revoke User Role
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)<br/>
+> Audience: [`Business Users`](/docs/audience#business-users)
+>
 > Skill Prerequisites: `Permission Scheme`
 
 ## `Typical Use Cases`

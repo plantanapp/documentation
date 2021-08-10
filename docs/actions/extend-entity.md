@@ -4,10 +4,11 @@ title: Extend Entity
 sidebar_label: Extend Entity
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
-This action exends an entity in the current context with new properties. 
+This action extends an entity in the current context with new properties. 
 
 ## `Typical Use Cases`
 

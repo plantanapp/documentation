@@ -4,7 +4,8 @@ title: User Registration
 sidebar_label: User Registration
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `User Management`
 
 This action will create a new user account. The form must contain a username or email address. The password can be user-created via a password field or randomly generated. On successful registration, an output token called `[NewUserId]` is created. Also, the context user is changed to the new user, so you have access to `[User:*]` tokens such as: `[User:UserID]` or `[User:FirstName]`.

@@ -4,7 +4,8 @@ title: Initialize Action Form And Continue Execution
 sidebar_label: Initialize Action Continue And Stop Execution
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)<br/>
+> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+>
 > Skill Prerequisites: `HTML`
 
 This action allows you to manually trigger the initialization of a Form.

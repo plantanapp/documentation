@@ -4,7 +4,8 @@ title: Execute JavaScript (Server-side)
 sidebar_label: Execute JavaScript (Server)
 ---
 
-> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)<br/>
+> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)
+>
 > Skill Prerequisites: `JavaScript`
 
 Executes JavaScript code on the server side, optionally returning variables. This action is based on the [Microsoft/ClearScript](https://github.com/Microsoft/ClearScript) library that uses the [Google V8](https://v8.dev/) engine. It is a pure JavaScript framework, so there won't be access to the window or the document object. Other than that, it brings the full flexibility of JavaScript, plus some .net helpers to help write better code, faster.

@@ -4,7 +4,8 @@ title: Execute JavaScript Code And Continue Execution
 sidebar_label: Execute JavaScript Code Continue Execution
 ---
 
-> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)<br/>
+> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)
+>
 > Skill Prerequisites: `JavaScript`
 
 These actions allow you to execute javascript code when a button is clicked, similar to the code you you may enter in the on change/click field of a button or form field. You can run the code and then stop all further actions, or run the code and allow subsequent actions in the stack to run.

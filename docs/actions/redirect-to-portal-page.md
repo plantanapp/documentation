@@ -5,7 +5,8 @@ title: Redirect to Portal Page
 sidebar_label: Redirect to Portal Page
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This option redirects the user to another page in the portal after the user submits the form.

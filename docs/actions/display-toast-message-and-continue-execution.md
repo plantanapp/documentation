@@ -4,7 +4,8 @@ title: Display Toast Message And Continue Execution
 sidebar_label: Display Toast Message And Continue Execution
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `HTML`
 
 This action displays a simple notification/information message to a user in a small popup. It only fills the amount of space required for the message to be displayed, and other elements on the page remain visible and interactive. Toast messages automatically disappear after a set timeout. Depending on the Action selected, the remaining actions will also execute.

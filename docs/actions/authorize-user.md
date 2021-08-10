@@ -4,7 +4,8 @@ title: Authorize User
 sidebar_label: Authorize User
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `User Management`
 
 This action Authorizes users who currently have a status of Unauthorized in the user database. The users must be loaded into the current context when the action is called. By default, this will be the currently logged in user unless a different user or list of users has been loaded into context. This has the same result as authorizing a user through the `Users` option on the persona bar.

@@ -17,12 +17,12 @@ The **Pages** tab in Plant an App Configuration allows users with access to Conf
 Permissions for the **Pages** tab in Configuration is based on specific Plant an App permissions and not on specific Page's edit permissions. If a user is in a role with access to Configuration they will see the tab listed, but what they can do will be limited by their roles. Below is a permissions grid that shows which roles can see the Page listing and which tasks they can do.
 
 | Role | View Page Listing | Add Page | Edit Page Properties | Move Page | Delete Page |
-| -- | :----: | :----: | :----: | :----: | :----: |
-| Admins | &check; |  |  | &check; |  |
-| Citizen Developers | &check; | &check; | &check; | &check; | &check; |
-| Low-Code Engineer | &check; | &check; | &check; | &check; | &check; |
-| Administrators | &check; | &check; | &check; | &check; | &check; |
-| Super Users | &check; | &check; | &check; | &check; | &check; |
+| ---- | :---------------: | :------: | :------------------: | :-------: | :---------: |
+| Admins | ✓ |  |  | ✓ |  |
+| Citizen Developers | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Low-Code Engineer | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Administrators | ✓ | ✓ | ✓ | ✓ | ✓ |
+| Super Users | ✓ | ✓ | ✓ | ✓ | ✓ |
 | All other roles |  |  |  |  |  |
 
 ## `Viewing the Page Listing`
@@ -30,7 +30,7 @@ Permissions for the **Pages** tab in Configuration is based on specific Plant an
 Each column in the Page listing has specific information and features that are noted below.
 
 | Column | Detail |
-| -- | -- |
+| ------ | ------ |
 | Visible | The icon in this column indicates whether a page is visible in the site navigation. A green eye ![Page Visible](/img/pagevisible.png) indicates it is visible and an orange eye with a slash ![Page not Visible](/img/pagenotvisible.png) indicates it is not visible. |
 | Page Name | This column not only shows you the **Name** of the page but also tells you whether it has child pages and allows you to show the child pages in the listing. After the page name is a number in parentheses. If it is 0, there are no child pages. If greater than 0, click the page name to see the child pages. Once you are viewing a Child page listing, the top row of the listing will have a **Back** link to go up a level in the page hierarchy. |
 | Title | The title for the page, if specified, will appear in this column. |
@@ -53,8 +53,8 @@ Each column in the Page listing has specific information and features that are n
 ## `Edit Page Properties`
 
 1. Locate the page you want to edit in the listing.
-2. On that row, in the right column, click the **Edit** button. It has a pencil icon on it. 
-3. In the pop-up form, make the property changes you want. This form has the same fields as the [**Add Page**](#add-a-new-page) form.
+2. On that row, in the right column, click the **Edit** button. It has a pencil icon on it.
+3. In the pop-up form, make the property changes you want. This form has the same fields as the **[Add Page](#add-a-new-page)** form.
 4. Click **Save**.
 
 ## `Move a Page`
@@ -72,9 +72,9 @@ If you want to move a page under a new parent, or you want to place it under a s
 1. Locate the page in the listing and then click the rightmost button on that row (with the down arrow) to drop down additional buttons.
 2. Click the **Move** button.
 3. Choose a **Move Action**:
-   - **Above** moves the page immediately above the page you select in the **Move Target** dropdown, even if it is under a different parent page.
-   - **Below** moves the page immediately below the page you select in the **Move Target** dropdown, even if it is under a different parent page.
-   - **Under** moves the page as a child of the page you select in the **Move Target** dropdown and places it in the last position under that page.
+    * **Above** moves the page immediately above the page you select in the **Move Target** dropdown, even if it is under a different parent page.
+    * **Below** moves the page immediately below the page you select in the **Move Target** dropdown, even if it is under a different parent page.
+    * **Under** moves the page as a child of the page you select in the **Move Target** dropdown and places it in the last position under that page.
 4. In the **Move Target** dropdown, select the page you want the page you are moving to be moved above, below or under based on your selection in **Move Action**.
 5. The action you are taking will be confirmed for you above the Save button.
 6. Click **Save** to complete the move.

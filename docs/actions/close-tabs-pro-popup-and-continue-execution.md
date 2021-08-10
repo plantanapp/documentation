@@ -4,7 +4,8 @@ title: Close Tabs Popup And Continue Execution
 sidebar_label: Close Tabs Popup And Continue Execution
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This action allows you to manually trigger a close Tabs Pro action for the specified Action Form. Depending on the Action selected, the remaining actions will also execute.
