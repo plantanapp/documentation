@@ -198,7 +198,7 @@ This action posts a new lead to a CRM system. [Import it](/docs/running-examples
         "Headers": [
             {
                 "value": "application/json",
-                "name": "Content-Type"
+                "name": "ContentType"
             }
         ],
         "UseDNNProxySettings": "",
