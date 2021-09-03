@@ -71,18 +71,18 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/audience')}>
-              Start Learning
+              to="https://academy.plantanapp.com/Course-Work?CourseId=1">
+              Start the course NOW!
             </Link>
           </div>
         </div>
       </header>
       <div style={{ textAlign: "center", backgroundColor: "#303846", color: "white" }}>
         Leave us a Capterra review and earn a $20 giftcard! Limited to first 100 reviewers.
-        <button className={classnames(styles.buttonRev, styles.buttonX)} onClick={event => window.open("https://review.capterra.com/Feedback-Plant-an-App-207065-3210555142", "_blank")}>Review now</button>
+        <button className={classnames(styles.buttonRev, styles.buttonX)} onClick={event => window.open("https://review.capterra.com/Feedback-Plant-an-App-207065-3163062598", "_blank")}>Review now</button>
 
       </div>
       <main>

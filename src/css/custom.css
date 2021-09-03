@@ -23,3 +23,18 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.hero.hero--primary {
+    background-image: url(https://academy.plantanapp.com/Portals/0/img/Home_navxp_icon.png?ver=qi8HdT3xO1fIPzutXtyyoQ%3d%3d);
+    background-size: contain;
+    background-color: #041323;
+    background-repeat: no-repeat;
+}
+
+.hero .hero__title {
+    color: white;
+}
+
+.hero .hero__subtitle {
+    color: white;
+}

@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'Plant An App',
-  tagline: 'Low-Code for Software Engineers',
+  title: 'Get started with Plant an App',
+  tagline: 'Low Code Fundamentals Course is now Available',
   url: 'https://learn.plantanapp.com',
   baseUrl: '/',
   favicon: 'img/pap-logo.png',
@@ -23,6 +23,11 @@ module.exports = {
           to: 'docs/audience',
           activeBasePath: 'docs',
           label: 'Documentation',
+          position: 'left',
+        },
+        {
+          to: 'https://academy.plantanapp.com/',
+          label: 'Academy',
           position: 'left',
         },
         {
