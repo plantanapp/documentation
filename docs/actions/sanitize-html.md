@@ -4,7 +4,8 @@ title: Sanitize HTML
 sidebar_label: Sanitize HTML
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `HTML`
 
 This action recieves HTML input and repairs broken HTML tag syntax, removes specifed HTML tags and attributes, sets the "rel" attribute to "nofollow" on anchor tags and removes scripts, based on the settings that are selected and set by the user.

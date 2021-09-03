@@ -4,7 +4,8 @@ title: Delete User
 sidebar_label: Delete User
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `User Management`
 
 This action deletes users loaded into the current context when the action is called. By default, this will be the currently logged in user unless a different user or list of users has been loaded into context.

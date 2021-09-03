@@ -4,7 +4,8 @@ title: Clear Cache Item
 sidebar_label: Clear Cache Item
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `System Administration`
 
 ASP.NET provides a cache where all components can save data. This action, depending on the options selected, will clear a specific cache item by specifying its cache key, a set of keys by specifying a cache prefix key, the entire server cache, Tabs cache for specific portals, or Portal cache for specific portals.

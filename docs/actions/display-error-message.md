@@ -4,7 +4,8 @@ title: Display Error Message
 sidebar_label: Display Error Message
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `HTML`
 
 This action displays a message at the bottom of a Form, at the bottom of a Grid when used on Grid buttons, or inline when used on Grid Item Buttons. It prevents further execution of actions below it in the stack.

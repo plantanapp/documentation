@@ -4,7 +4,8 @@ title: Apply Tokens
 sidebar_label: Apply Tokens
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Tokens`
 
 This actions executes multiple expressions and applies tokens on those expressions and stores it in a token. The expression can also be stored in the same token, overwriting the original content.

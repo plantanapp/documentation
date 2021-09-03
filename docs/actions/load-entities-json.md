@@ -4,7 +4,8 @@ title: Load Entities (JSON)
 sidebar_label: Load Entities (JSON)
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This action creates an entity list in the current context from a provided JSON input string (JSONModel). This could be from a form field, or other actions such as a Server Request action. You can find the number of loaded entities in the `[<EntityName>:Count]` token.

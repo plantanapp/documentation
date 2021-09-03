@@ -4,7 +4,8 @@ title: Load Entities (CSV File)
 sidebar_label: Load Entities (CSV File)
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This action creates an entity list in the current context from the content of a provided CSV file. You can find the number of loaded entities in the `[<EntityName>:Count]` token.

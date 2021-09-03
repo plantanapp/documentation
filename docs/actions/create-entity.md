@@ -4,7 +4,8 @@ title: Create Entity
 sidebar_label: Create Entity
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This action creates an entity in the current context to which you can load values from the current context. Use the action additional times to add items to the entity.
