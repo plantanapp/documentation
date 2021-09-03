@@ -4,7 +4,8 @@ title: Redirect to URL
 sidebar_label: Redirect to URL
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This option redirects the user to the specified link after the user submits the form.

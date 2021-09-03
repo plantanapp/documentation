@@ -4,7 +4,8 @@ title: Merge PDF
 sidebar_label: Merge PDF
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)<br/>
+> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+>
 > Skill Prerequisites: `HTML` `CSS`
 
 Merges two PDF into one.

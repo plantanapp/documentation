@@ -1,6 +1,5 @@
 ---
 id: redirect-to-portal-page
-
 title: Redirect to Portal Page
 sidebar_label: Redirect to Portal Page
 ---

@@ -4,7 +4,8 @@ title: Server Request
 sidebar_label: Server Request
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `HTTP Protocol` `REST APIs` `JSON` `XML`
 
 A low-level action that allows for any kind of HTTP request to be performed.
