@@ -4,7 +4,8 @@ title: Overlay PDF
 sidebar_label: Overlay PDF
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)<br/>
+> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+>
 > Skill Prerequisites: `HTML` `CSS`
 
 Overlays two PDFs.

@@ -4,7 +4,8 @@ title: Load Entities (SQL)
 sidebar_label: Load Entities (SQL)
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Using Form Builder`
 
 This action creates an entity in the current context from the result of the provided SQL Query. You can find the number of loaded entities in the `[<EntityName>:Count]` token.

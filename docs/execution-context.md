@@ -4,7 +4,8 @@ title: Execution Context
 sidebar_label: Execution Context
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `C#` `Data Structures` `JavaScript`
 
 ## Introductions

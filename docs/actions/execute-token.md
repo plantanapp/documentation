@@ -4,7 +4,8 @@ title: Execute Token
 sidebar_label: Execute Token
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `Tokens`
 
 This actions executes a token, usually a token, where tokens can contain business logic that generates and/or saves data.

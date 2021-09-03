@@ -4,7 +4,8 @@ title: Send Email
 sidebar_label: Send Email
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)<br/>
+> Audience: [`Business Users`](/docs/audience#business-users)
+>
 > Skill Prerequisites: `HTML`
 
 This action sends an email to one or multiple recipients. It also supports sending attachments along with the body of the email. The content of the email can be configured for each recipient when sending to multiple addresses. 

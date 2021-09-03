@@ -4,7 +4,8 @@ title: Generate PDF
 sidebar_label: Generate PDF
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)<br/>
+> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+>
 > Skill Prerequisites: `HTML` `CSS`
 
 Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HTML template.
@@ -121,7 +122,7 @@ JavaScript can also be executed when compiling a PDF file. The following code ge
                         "IsExpression": false,
                         "Parameters": {}
                     },
-                    "HTMLCode": "<h1 id=\"heading\">Hello World!</h1>\n\n\n\n<p>\n\t<script>\n\tdocument.getElementById(\"heading\").style.color = \"red\";\n\tdocument.getElementById(\"heading\").style.fontFamily = \"Arial\";\n\tdocument.getElementById(\"heading\").style.textAlign = \"center\";\n\t</script>\n</p>\n",
+                    "HTMLCode": "<h1 id=\"heading\">Hello World!</h1>\n\n\n\n<p>\n\t<script>\n\tdocument.getElementById(\"heading\").style.color = \"red\";\n\tdocument.getElementById(\"heading\").style.fontFamily = \"Arial\";\n\tdocument.getElementById(\"heading\").style.textAlign = \"center\";\n\t<\/script>\n</p>\n",
                     "PDFName": "Testing-JS",
                     "PathDestination": {
                         "Expression": "",

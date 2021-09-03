@@ -4,7 +4,8 @@ title: Inject Data
 sidebar_label: Inject Data
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)<br/>
+> Audience: [`Business Users`](/docs/audience#business-users)
+>
 > Skill Prerequisites: `None`
 
 An action that lets you create new tokens into the current execution context. The value of each token is usually a computation of other tokens from the context. Once created, the new tokens can be accessed by any subsequent action.

@@ -4,7 +4,8 @@ title: Server Request
 sidebar_label: Server Request
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `HTTP Protocol` `REST APIs` `JSON` `XML`
 
 A low-level action that allows for any kind of HTTP request to be performed.
@@ -34,7 +35,7 @@ A low-level action that allows for any kind of HTTP request to be performed.
 | Parameter     | Description                           | Supports Tokens | Default | Required |
 |---------------|---------------------------------------|--------------------|---------|----------|
 | URL           | The URL where the resource to be invoked lives. It can be relative or absolute. | Yes | `empty string` | Yes |
-| URL Token Encoding | URLs brought from tokens might contain reserved characters which have a certain meaning in wrong context for a URL part. For example, '&' is a reserved character that is used to separate individual variables within the query string.<br/><br/> This means if we have a query string like `?color=blue&brand=H&M` it will not be valid, since we have the '&' character in a invalid context (`brand=H&M`). URL encoding takes care of this by replacing the character '&' with it's URL encoded value of '%26', now our initial query string becomes `?color=blue&brand=H%26M` which is valid. If you are using tokens to provide the URL, the option URL Encoding will make sure the URL is valid. | No | `URL Encoding` | No |
+| URL Token Encoding | URLs brought from tokens might contain reserved characters which have a certain meaning in wrong context for a URL part. For example, '&amp;' is a reserved character that is used to separate individual variables within the query string.<br/><br/> This means if we have a query string like `?color=blue&amp;brand=H&amp;M` it will not be valid, since we have the '&amp;' character in a invalid context (`brand=H&amp;M`). URL encoding takes care of this by replacing the character '&amp;' with it's URL encoded value of '%26', now our initial query string becomes `?color=blue&amp;brand=H%26M` which is valid. If you are using tokens to provide the URL, the option URL Encoding will make sure the URL is valid. | No | `URL Encoding` | No |
 | Enforce SSL   | This will for the request to be sent to a secure version of the URL (https instead of http). This is useful for the instances in which the URL comes from a variable and you want to ensure it is secured.| No | `Unset` | No |
 | Timeout       | The amount of time in seconds in which the response must come or the request fails. If nothing is provided, it will default to 100 seconds. If you don't want to wait for the request to finish (when you must leverage higher Timeout values) we suggest using Execute Actions Async. | Yes | `100` | No |
 | HTTP Method   | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD, PATCH. | No | `Unset` | Yes |
@@ -65,7 +66,7 @@ A low-level action that allows for any kind of HTTP request to be performed.
 GET is used to retrieve data or content. Note that although GET was not designed for sending data to the target URL, in reality that often happens through Query String parameters. These can be placed directly in the URL parameter. For example
 
 ```url
-https://example.com?id=[Id]&type=[Type]
+https://example.com?id=[Id]&amp;type=[Type]
 ```
 
 The query string parameters are supported by all HTTP Methods.
