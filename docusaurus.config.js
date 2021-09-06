@@ -91,6 +91,10 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Plant an App, Inc.`,
     },
+    gtag: {
+      trackingID: 'G-1MFCQQZSNK',
+      anonymizeIP: true,
+    },
   },
   presets: [
     [
@@ -120,5 +124,16 @@ module.exports = {
   ],
   scripts: [
     '/scripts/external-links.js'
+  ],
+  plugins: [
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+        trailingSlash: false,
+      },
+    ],
+    ['@docusaurus/plugin-google-gtag'],
   ],
 };
