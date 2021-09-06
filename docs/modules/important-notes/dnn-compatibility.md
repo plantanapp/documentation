@@ -4,7 +4,8 @@ title: DNN Compatibility and Upgrades
 sidebar_label: DNN Compatibility
 ---
 
-> Audience: [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)<br/>
+> Audience: [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
+> 
 > Skill Prerequisites: `System Administration and Maintenance`
 
 Before upgrading Plant an App or any of its individual component features (Modules), or upgrading DNN Platform or Evoq, it is important to know whether the versions will be compatible with each other. Please reference the grid below when making this decision.
