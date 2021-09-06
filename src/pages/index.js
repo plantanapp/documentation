@@ -8,38 +8,41 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Easy to Use</>,
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: <>Watch a Video</>,
+    imageUrl: 'img/undraw_youtube_tutorial.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        <p>At Plant an App, we are creating new videos to expand your knowledge all the time. Explore our video content:</p>
+        <a href="https://www.youtube.com/watch?v=zOGVh-zEsqs&amp;list=PL67RlTAxc73ESnxFEw0i7AU7yMrmLYAyh" title="Getting Started with Plant an App" target="_blank">Getting Started with Plant an App</a><br></br>
+        <a href="https://www.youtube.com/watch?v=37C4iSJ7haI&amp;list=PL67RlTAxc73HwiL13W1nvYZ_Wgb2jhWwd" title="Low-Code Feature Focus" target="_blank">Low-Code Feature Focus</a><br></br>
+        <a href="https://www.youtube.com/watch?v=SDL-FfE47TU&amp;list=PL67RlTAxc73EADPcPrLHLGaVu4zXOGuyi" title="The Low-Code Café | Weekly Community Zoom Session" target="_blank">The Low-Code Café</a>
       </>
     ),
   },
   {
-    title: <>Focus on What Matters</>,
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: <>Read the Details</>,
+    imageUrl: 'img/undraw_online_reading.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Start here if you are the kind of person that just wants to dive into the details. We recommend you begin by learning about the
+        different <a href="docs/audience" title="Audience">Audiences</a> our documentation targets. From there, you should learn about <a href="docs/entities" title="Entities">Entities</a>, the heart of your application.
+
       </>
     ),
   },
   {
-    title: <>Powered by React</>,
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: <>Learn From Others</>,
+    imageUrl: 'img/undraw_Group_chat.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        <p>The Plant an App Community is growing all the time, just like your apps! Join the community and ask the experts: the people just like you who are building great apps with Low-Code.</p>
+        <a href="https://community.plantanapp.com/" title="Plant an App Community Portal" target="_blank">Plant an App Community Portal</a>
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
+function Feature({ imageUrl, title, description }) {
   const imgUrl = useBaseUrl(imageUrl);
   return (
     <div className={classnames('col col--4', styles.feature)}>
@@ -56,11 +59,11 @@ function Feature({imageUrl, title, description}) {
 
 function Home() {
   const context = useDocusaurusContext();
-  const {siteConfig = {}} = context;
+  const { siteConfig = {} } = context;
   return (
     <Layout
-      title={`From developers by developers`}
-      description="Description will go into a meta tag in <head />">
+      title={`Developer-First Low-Code Platform`}
+      description="The only app development platform that gives IT teams the speed of low-code without compromising the power and flexibility of custom coding">
       <header className={classnames('hero hero--primary', styles.heroBanner)}>
         <div className="container">
           <h1 className="hero__title">{siteConfig.title}</h1>
@@ -68,15 +71,20 @@ function Home() {
           <div className={styles.buttons}>
             <Link
               className={classnames(
-                'button button--outline button--secondary button--lg',
+                'button button--secondary button--lg',
                 styles.getStarted,
               )}
-              to={useBaseUrl('docs/audience')}>
-              Get Started
+              to="https://academy.plantanapp.com/Course-Work?CourseId=1">
+              Start the course NOW!
             </Link>
           </div>
         </div>
       </header>
+      <div style={{ textAlign: "center", backgroundColor: "#303846", color: "white" }}>
+        Leave us a Capterra review and earn a $20 giftcard! Limited to first 100 reviewers.
+        <button className={classnames(styles.buttonRev, styles.buttonX)} onClick={event => window.open("https://review.capterra.com/Feedback-Plant-an-App-207065-3163062598", "_blank")}>Review now</button>
+
+      </div>
       <main>
         {features && features.length && (
           <section className={styles.features}>
