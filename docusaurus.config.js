@@ -135,5 +135,6 @@ module.exports = {
       },
     ],
     ['@docusaurus/plugin-google-gtag'],
+    '@aldridged/docusaurus-plugin-lunr',
   ],
 };
