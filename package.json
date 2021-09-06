@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@docusaurus/core": "^2.0.0-alpha.54",
+    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.6",
+    "@docusaurus/plugin-sitemap": "^2.0.0-beta.6",
     "@docusaurus/preset-classic": "^2.0.0-alpha.54",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
