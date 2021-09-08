@@ -110,12 +110,12 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/plantanapp/documentation/edit/master'
+          'https://github.com/plantanapp/documentation/edit/master'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        sitemap: {
+        sitemap :  {
           changefreq: 'weekly',
           priority: 0.5,
           trailingSlash: false,
@@ -128,5 +128,6 @@ module.exports = {
   ],
   plugins: [
     "@cmfcmf/docusaurus-search-local"
+    
   ],
 };
