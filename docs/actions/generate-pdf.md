@@ -25,7 +25,7 @@ Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HT
 | Action Name                                       | Description                                                                                       |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
 | [Apply Tokens](/docs/actions/apply-tokens)       | Returns the HTML code that generates the PDF.|
-| [Run SQL Query](/docs/actions/run-sql)         | Execute a SQL query that returns one or more variables so that they can be used in the HTML code. |
+| [Run SQL Query](/docs/actions/run-sql-query)         | Execute a SQL query that returns one or more variables so that they can be used in the HTML code. |
 | [Server Request](/docs/actions/server-request) | Perform a HTTP request that returns one or more variables that can be used in the HTML code.     |
 
 ## `Input Parameter Reference`
@@ -181,7 +181,7 @@ JavaScript can also be executed when compiling a PDF file. The following code ge
 ### `1. Generate a PDF using HTML/CSS directly into the action`
 
 ​
-The action below generates a simple PDF with custom CSS styles for title and paragraph. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below generates a simple PDF with custom CSS styles for title and paragraph. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 ​
 
 ```json

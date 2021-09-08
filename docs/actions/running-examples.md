@@ -4,7 +4,7 @@ title: Running the examples from actions
 sidebar_label: Running examples
 ---
 
-In Plant an App, when adding Actions, there is an option to import an Action. This allows you to paste JSON that will create an action with fields and settings already configured. In the Actions section of this documentation, most Actions will include an `Examples` section where you will find a JSON code snippet that can be copied and imported in the Plant an App application so that it can be run. Below is a screenshot from the first example of the [Run SQL Query](/docs/Actions/run-sql) action:
+In Plant an App, when adding Actions, there is an option to import an Action. This allows you to paste JSON that will create an action with fields and settings already configured. In the Actions section of this documentation, most Actions will include an `Examples` section where you will find a JSON code snippet that can be copied and imported in the Plant an App application so that it can be run. Below is a screenshot from the first example of the [Run SQL Query](/docs/actions/run-sql-query) action:
 
 <img src="/img/running-examples-1.jpg" alt="Run SQL Query Example" />
 

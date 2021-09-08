@@ -12,7 +12,7 @@ sidebar_label: Users
 
 On the top of the page you have the `NEW` button that will open an pop-up.
 
-![Add User](/static/img/add-user.png)
+![Add User](/img/add-user.png)
 
 * `Email` - Must be a valid email address that will be used as the `Username` in the platform for the new user created.
 * `First Name` - First Name of the new user.

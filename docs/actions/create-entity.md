@@ -26,7 +26,7 @@ This creates an entity that can be used ONLY in the current context. This does n
 
 | Action Name | Description |
 | -- | -- |
-| [Execute Actions on Entity List](/docs/actions/execute-actions-entity-list)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
+| [Execute actions on entity list ](/docs/actions/execute-actions-on-entity-list)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
 | [Extend Entity](/docs/actions/extend-entity)   | Extends an entity with new properties. |
 
 ## `Input Parameter Reference`

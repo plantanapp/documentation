@@ -15,7 +15,7 @@ This option redirects the user to another page in the portal after the user subm
 | Action Name                                     | Description                                                                                                                  |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
 | [Redirect to URL](/docs/actions/redirect-to-url) | This option redirects the user to an external link after the user submits the form. |
-| [Send File to Download](/docs/actions/send-file-to-download) | This option redirects the user to a file in the portal to be downloaded after the user submits the form. |
+| [Send File to Download](/docs/actions/send-file-for-download) | This option redirects the user to a file in the portal to be downloaded after the user submits the form. |
 
 ## `Input Parameter Reference`
 

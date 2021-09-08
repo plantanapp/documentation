@@ -24,7 +24,8 @@ This action displays a message at the bottom of a Form, at the bottom of a Grid 
 
 | Action Name                                                                        | Description                                                                           |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Display Toast Message](/docs/actions/display-toast-message)                             | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
+| [Display Toast Message And Continue Execution ](/docs/actions/display-toast-message-and-continue-execution)                            | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
+| [Display Toast Message And Stop Execution ](/docs/actions/display-toast-message-and-stop-execution)                           | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
 | [Display Message](/docs/actions/display-message) | Displays a postback message after the form is submitted. Use this if you want the page to refresh.                    |
 
 ## `Input Parameter Reference`

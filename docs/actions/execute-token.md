@@ -27,7 +27,7 @@ This action will output a token that stores the output of a token.
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | Update form with AJAX | Form action only, it updates the fields based on the values from the tokens.       |
 | Display Message             | Form action only, shows a message after the executions of set of actions/workflow. |
-| [Run SQL Query](/docs/actions/run-sql)                 | Executes an SQL statement and captures the output.                                 |
+| [Run SQL Query](/docs/actions/run-sql-query)                 | Executes an SQL statement and captures the output.                                 |
 
 
 ## `Input Parameter Reference`
