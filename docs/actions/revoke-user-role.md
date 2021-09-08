@@ -39,7 +39,7 @@ If a role is deleted, it will simply be revoked from any user that has it.
 
 ### `1. Revoke a User Role `
 
-The action below loads the current user using [Load User](/docs/actions/load-user) action and revokes its '[Users]' role. Nothing will happen if a not assigned role is revoked. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below loads the current user using [Load User](/docs/actions/load-user) action and revokes its '[Users]' role. Nothing will happen if a not assigned role is revoked. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {
@@ -97,7 +97,7 @@ The action below loads the current user using [Load User](/docs/actions/load-use
 
 ### `2. Revoke a Role from all users`
 
-The action below loads all users using Load Entities and [Load User](/docs/actions/load-user) action and revokes the `Managers` role from every one. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below loads all users using Load Entities and [Load User](/docs/actions/load-user) action and revokes the `Managers` role from every one. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {

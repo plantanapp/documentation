@@ -87,7 +87,7 @@ The format needs to be reflected via the Content Type header that is inputted in
 ### `1. Read a JSON Array`
 
 ​
-The action below reads a list of employees from an API via GET and saves it to a variable `[Employees]`. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below reads a list of employees from an API via GET and saves it to a variable `[Employees]`. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 ​
 
 ```json
@@ -130,7 +130,7 @@ The action below reads a list of employees from an API via GET and saves it to a
 
 ### `2. Read a Web Page`
 
-The action below reads the homepage from `http://example.com/` and saves it into a variable called `[Homepage]`. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below reads the homepage from `http://example.com/` and saves it into a variable called `[Homepage]`. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 
@@ -173,7 +173,7 @@ The action below reads the homepage from `http://example.com/` and saves it into
 
 ### `3. POST a JSON Object`
 
-This action posts a new lead to a CRM system. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+This action posts a new lead to a CRM system. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 

@@ -54,7 +54,7 @@ If one of the PDFs is password protected or doesn't have read permissions, mergi
 ### `1. Merging 2 newly generated PDFs`
 
 ​
-The action below generates two PDFs, with different content, and then merges them. [Import it](/docs/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below generates two PDFs, with different content, and then merges them. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
 ​
 
 ```json

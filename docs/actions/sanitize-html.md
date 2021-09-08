@@ -19,7 +19,7 @@ This action recieves HTML input and repairs broken HTML tag syntax, removes spec
 ## `Don't use it to`
 
 - Sanitize multiple inputs at once. Use a separate action for each input.
-- To prevent SQL injection. Use Bind Tokens in your [Run SQL Query](/docs/actions/run-sql) action instead.
+- To prevent SQL injection. Use Bind Tokens in your [Run SQL Query](/docs/actions/run-sql-query) action instead.
 
 ## `Related Actions`
 
@@ -27,7 +27,7 @@ This action recieves HTML input and repairs broken HTML tag syntax, removes spec
 | ----------------------------------------------- | ---------------------------------------------------------------------------------- |
 | [Generate PDF](/docs/actions/generate-pdf)   | Uses wkhtmltopdf open source to generate PDF from HTML template. Use Sanitize HTML to remove specific tags or just make sure the HTML is complete before sending it to the pdf.       |
 | [Send Email](/docs/actions/send-email)       | Sends an email to one or multiple recipients. Use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before sending it the the email action. |
-| [Run SQL Query](/docs/actions/run-sql) | Executes an SQL statement and captures the output. Use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before saving it to your database.                               |
+| [Run SQL Query](/docs/actions/run-sql-query) | Executes an SQL statement and captures the output. Use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before saving it to your database.                               |
 | [Server Request](/docs/actions/server-request) | A low-level action that allows for any kind of HTTP request to be performed. If this action is returning HTML, use Sanitize HTML to remove scripts and make sure the HTML is cleaned up before passing it to subsequent actions.                               |
 
 ## `Input Parameter Reference`

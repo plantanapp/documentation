@@ -26,7 +26,7 @@ This creates an entity that can be used ONLY in the current context. This does n
 
 | Action Name | Description |
 | -- | -- |
-| [Execute Actions on Entity List](/docs/actions/execute-actions-entity-list)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
+| [Execute actions on entity list ](/docs/actions/execute-actions-on-entity-list)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
 | [Extend Entity](/docs/actions/extend-entity)   | Extends an entity with new properties. |
 
 ## `Input Parameter Reference`
@@ -35,5 +35,5 @@ The parameters unique to this action are listed below. [Review the common parame
 
 | Parameter| Description| Supports Tokens | Default| Required |
 | -- | -- | -- | -- | -- |
-| Entity Name | Provide a name for the entity being created. This name can be used in the [Execute Actions on Entity List](/docs/actions/execute-actions-entity-list) action to reference the items in the entity using `[EntityName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
+| Entity Name | Provide a name for the entity being created. This name can be used in the [Execute actions on entity list ](/docs/actions/execute-actions-on-entity-list) action to reference the items in the entity using `[EntityName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
 | Properties | Specify the Property Names and Values to include in the entity.  | Yes | None Specified | No |
