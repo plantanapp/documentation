@@ -17,6 +17,8 @@
   --ifm-code-font-size: 95%;
 }
 
+/*Homepage academy*/
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
@@ -37,4 +39,21 @@
 
 .hero .hero__subtitle {
     color: white;
+}
+
+/*overwrite Search default*/
+.aa-DetachedSearchButton{
+	  width: 250px !important;
+    height: 32px !important;
+    border-radius: 20px !important;
+    border-width: 1px !important;
+}
+
+:root {
+--aa-primary-color-rgb: 4,19,35 !important; 
+}
+
+.aa-Form {
+	border-radius: 20px !important;
+    height: 40px !important;
 }
