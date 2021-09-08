@@ -13,7 +13,7 @@ module.exports = {
         alt: 'Plant an App Logo',
         src: 'img/pap-logo.png',
       },
-      links: [
+      items: [
         {
           to: 'https://community.plantanapp.com/',
           label: 'Community',
@@ -104,20 +104,21 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/plantanapp/documentation/edit/master',
-            showLastUpdateAuthor: true,
-            showLastUpdateTime: true
+            'https://github.com/plantanapp/documentation/edit/master'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-          'https://github.com/plantanapp/documentation/edit/master',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true
+          'https://github.com/plantanapp/documentation/edit/master'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        sitemap :  {
+          changefreq: 'weekly',
+          priority: 0.5,
+          trailingSlash: false,
         },
       },
     ],
@@ -126,15 +127,7 @@ module.exports = {
     '/scripts/external-links.js'
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
-    ['@docusaurus/plugin-google-gtag'],
-    '@aldridged/docusaurus-plugin-lunr',
+    "@cmfcmf/docusaurus-search-local"
+    
   ],
 };
