@@ -17,33 +17,32 @@ The most important consideration is to not upgrade DNN Platform or EVOQ before t
 :::note
 For DNN Platform versions 9.3.2 and higher, we always **recommend upgrading to the latest released version of Plant an App or DNN Sharp Modules**. Listed **below are the minimum supported versions** for each supported version of DNN Platform.
 
-We also advise **upgrading to the recommended version of DNN**, which is also listed below.  Our policy is to discontinue support for DNN versions released more than one year ago.
+We also advise **upgrading to the recommended version of DNN**, which is also listed below. Our policy is to discontinue support for DNN versions released more than one year ago.
 
 To see the Evoq Content versions that correspond to the DNN Platform versions listed, please see the [DNN Software Documentation](https://www.dnnsoftware.com/docs/developers/product-versions.html).
 :::
 
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
-|-|-|-|-|
+| ----------- | ------------------------ | --------------------------- | ----- |
 | Above 9.9.1 | - | - | Not yet supported |
-| 9.9.1 | 1.13.x | 5.13.x | **Starting with DNN 9.9.0, DNN Sharp version 5.13.x or above or Plant an App 1.13.x or above is Required** DNN 9.9.1 is the recommended version.|
-| 9.8.1 | 1.9.x | 5.9.x | |
+| 9.9.1 | 1.13.x | 5.13.x | **Starting with DNN 9.9.0, DNN Sharp version 5.13.x or above or Plant an App 1.13.x or above is Required** DNN 9.9.1 is the recommended version. |
+| 9.8.1 | 1.9.x | 5.9.x |  |
 | **9.7.2** | **1.9.x** | **5.9.x** | **Starting with DNN 9.7.2, DNN Sharp version 5.9.x or above or Plant an App 1.9.x or above is Required** |
-| 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower  |
+| 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower |
 | **9.6.1** | **1.6.x** | **5.6.x** | **Minimum supported DNN version** |
-| Below 9.6.1 |  |  | Standard support no longer covers DNN Versions 9.6.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote.  |
+| Below 9.6.1 |  |  | Standard support no longer covers DNN Versions 9.6.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote. |
 
 ## `Important Notes About Upgrade Paths`
 
 1. BACKUP! Before doing any upgrade, whether to DNN Platform, Plant an App, or DNN Sharp modules, best practice dictates you should backup your site and database first. If you're not sure how to do that or need a refresher on how to perform an upgrade, review the [DNN Platform upgrade guidance](https://dnndocs.com/content/getting-started/setup/upgrades/index.html).
 2. Once your site is safely backed up, carefully consider the best path forward based on what version of DNN your site has installed currently.
-
-   :::note
-   The closer you are to current with both DNN Platform and Plant an App or DNN Sharp Modules, the smoother your upgrade is likely to go.  We highly recommended following the [DNN Platform Suggested Upgrade Path](https://dnndocs.com/content/getting-started/setup/upgrades/suggested-upgrade-path/index.html).   
-   :::
-   
-   :::note
-   If you use our URL Adapter module, please do not forget to disable it before the upgrade process begins. This way, you will get rid of any conflicts that may occur during the upgrade process, due to various module settings. You will be able to enable the module after the entire upgrade process is complete.
-   :::
+    
+    :::note
+    The closer you are to current with both DNN Platform and Plant an App or DNN Sharp Modules, the smoother your upgrade is likely to go. We highly recommended following the [DNN Platform Suggested Upgrade Path](https://dnndocs.com/content/getting-started/setup/upgrades/suggested-upgrade-path/index.html).:::
+    
+    :::note
+    If you use our URL Adapter module, please do not forget to disable it before the upgrade process begins. This way, you will get rid of any conflicts that may occur during the upgrade process, due to various module settings. You will be able to enable the module after the entire upgrade process is complete.
+    :::
 
 ### `If You have DNN 9.3.1 or Lower Installed`
 
