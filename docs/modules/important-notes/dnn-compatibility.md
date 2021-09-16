@@ -25,11 +25,11 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 | ----------- | ------------------------ | --------------------------- | ----- |
 | Above 9.9.1 | - | - | Not yet supported |
-| 9.9.1 | 1.13.x | 5.13.x | **Starting with DNN 9.9.0, DNN Sharp version 5.13.x or above or Plant an App 1.13.x or above is Required** DNN 9.9.1 is the recommended version. |
+| 9.9.1 | 1.13.x | 5.13.x | DNN 9.9.1 is the recommended version. Requires SQL Server 2012 or higher. |
 | 9.8.1 | 1.9.x | 5.9.x |  |
-| **9.7.2** | **1.9.x** | **5.9.x** | **Starting with DNN 9.7.2, DNN Sharp version 5.9.x or above or Plant an App 1.9.x or above is Required** |
+| **9.7.2** | **1.9.x** | **5.9.x** |  |
 | 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower |
-| **9.6.1** | **1.6.x** | **5.6.x** | **Minimum supported DNN version** |
+| **9.6.1** | **1.6.x** | **5.6.x** | Minimum supported DNN version. Requires SQL Server 2008 or higher. |
 | Below 9.6.1 |  |  | Standard support no longer covers DNN Versions 9.6.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote. |
 
 ## `Important Notes About Upgrade Paths`
@@ -50,8 +50,8 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 2. Upgrade all the DNN Sharp modules to the latest 5.1.x version.
 3. Upgrade to DNN 9.3.2. **DO NOT skip upgrading to 9.3.2**. It’s a required upgrade for subsequent versions of DNN to work correctly.
 
-### `Once You have DNN 9.3.2 or Above Installed`
+### `If You have DNN 9.3.2 to 9.6.2 Installed`
 
 1. First, you need to update all DNN Sharp modules to 5.9.x or higher or Plant an App 1.9.x or higher. If you do not upgrade DNN Sharp/Plant an App first, you may experience issues as DNN 9.7+ has breaking changes that are not compatible with prior versions of our products.
-2. Before upgrading the DNN to a version newer or equal to DNN 9.6+, you need to install the .NET Framework 4.7.2 (or 4.8)
-3. You are now ready to upgrade DNN directly to 9.8.0
+2. Before upgrading the DNN to a version newer or equal to DNN 9.6+, you need to install the .NET Framework 4.7.2 (or 4.8).
+3. You are now ready to upgrade DNN to versions above 9.6.2.
