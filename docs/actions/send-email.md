@@ -60,7 +60,7 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | Format                                   | Details                                                                                                                                                                                                                          |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| HTML (And replace newline with `<br />`) | To simplify the input of the email we are replacing the newlines in the `Body` of the email with the HTML tag `<br>`. While it is easier to compose the email it may have strange behaviors with some email clients like Outlook |
+| HTML (And replace newline with `<br />`) | To simplify the input of the email we are replacing the newlines in the `Body` of the email with the HTML tag `<br/>`. While it is easier to compose the email it may have strange behaviors with some email clients like Outlook |
 | Text                                     | Regular text, with no formatting options such as bold, italics, underlines, or special layout. Can include URLs, such as http:// and ftp:// options.                                                                             |
 | HTML(**Recommended**)                    | It’s the way web pages and email templates are coded so that text is formatted and images are added. What it is displayed in the HTML editor of `Body` will be the result that will be displayed in the email client             |
 
