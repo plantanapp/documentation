@@ -60,7 +60,7 @@ Examples of activities:
 
 Plant an App is designed to provide extreme flexibility by allowing custom code to be plugged directly in the application. For example, complex SQL queries can be run using the [Run SQL](/docs/actions/run-sql-query) action or C# code by using the Execute Razor action, just to name a few.
 
-Low-code Engineers step in to write the custom code. Therefore, they have prior coding experience. But, at the same time, they understand low-code and Plant an App because the code that is plugged in is likely to be connected to other things in the [Execution Context](/docs/workflow/execution-context), such as tokens produced by other actions, input parameters into the workflow or the data layer.
+Low-code Engineers step in to write the custom code. Therefore, they have prior coding experience. But, at the same time, they understand low-code and Plant an App because the code that is plugged in is likely to be connected to other things in the [Execution Context](/docs/workflows/execution-context), such as tokens produced by other actions, input parameters into the workflow or the data layer.
 
 In some cases, it's the Low-code Engineer that builds the entire application, fulfilling all the roles at once.
 
