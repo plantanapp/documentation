@@ -1,7 +1,7 @@
 ---
-id: page-management
-title: Page Management
-sidebar_label: Page Management
+id: pages
+title: Pages
+sidebar_label: Pages
 ---
 
 ## `General Description`
