@@ -26,7 +26,7 @@ This action will execute the specified actions for each item that belongs to the
 | [Create Entity](/actions/create-entity.md)   | Creates an entity in the current context to which you can load values from the current context. Use this to create the entity that will be processed with this action. |
 | [Load Entities (CSV File)](/actions/load-entities-csv-file.md)   | Creates an entity in the current context from the content of a provided CSV file. Use this to create the entity that will be processed with this action. |
 | [Load Entities (CSV)](/actions/load-entities-csv.md)   | Creates an entity in the current context from a CSV list. Use this to create the entity that will be processed with this action. |
-| [Load Entities (Excel File) XSLX ](/actions/load-entities-excel-file-xslx)   | Creates an entity in the current context from the content of a provided Excel(XLSX.md) file. Use this to create the entity that will be processed with this action. |
+| [Load Entities (Excel File) XSLX ](/actions/load-entities-excel-file-xslx.md)   | Creates an entity in the current context from the content of a provided Excel(XLSX) file. Use this to create the entity that will be processed with this action. |
 | [Load Entities (JSON)](/actions/load-entities-json.md)   | Creates an entity in the current context from the provided JSON model. Use this to create the entity that will be processed with this action. |
 | [Load Entities (SQL)](/actions/load-entities-sql.md)   | Creates an entity in the current context from the result of the provided SQL Query. Use this to create the entity that will be processed with this action. |
 
