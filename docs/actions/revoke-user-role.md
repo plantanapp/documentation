@@ -108,7 +108,7 @@ The action below loads all users using Load Entities and [Load User](/actions/lo
     "Parameters": {
         "ActionList": [
             {
-                "Title": "Load Entities (SQL)",
+                "Title": "Create List from SQL",
                 "ActionType": "LoadEntitiesFromSql",
                 "Parameters": {
                     "ConnectionString": "",
@@ -124,7 +124,7 @@ The action below loads all users using Load Entities and [Load User](/actions/lo
                 "$_isFocus": true
             },
             {
-                "Title": "Execute actions on entity list",
+                "Title": "Execute Actions for each List Entry",
                 "ActionType": "ExecuteActionsOnEntityList",
                 "Parameters": {
                     "EntityName": "UserDetails",

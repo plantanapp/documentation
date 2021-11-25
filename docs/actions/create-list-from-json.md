@@ -17,7 +17,7 @@ This creates an entity that can be used ONLY in the current context. This does n
 ## `Typical Use Cases`
 
 - Load values from a JSON response to a Server Request action into an entity.
-- Use in **`Automation`** to Load values from a JSON string passed in a token and then use Execute Actions on Entity List to run the same actions on each item in the list.
+- Use in **`Automation`** to Load values from a JSON string passed in a token and then use Execute Actions for each List Entry to run the same actions on each item in the list.
 
 ## `Don't use it to`
 
@@ -27,8 +27,8 @@ This creates an entity that can be used ONLY in the current context. This does n
 
 | Action Name | Description |
 | -- | -- |
-| [Execute actions on entity list ](/actions/execute-actions-on-entity-list.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
-| [Extend Entity](/actions/extend-entity.md)   | Extends an entity with new properties. |
+| [Execute Actions for each List Entry ](/actions/execute-actions-for-each-list-entry.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
+| [Extend Object Properties](/actions/extend-object-properties.md)   | Extends an entity with new properties. |
 
 ## `Input Parameter Reference`
 
@@ -37,5 +37,5 @@ The parameters unique to this action are listed below. [Review the common parame
 | Parameter| Description| Supports Tokens | Default| Required |
 | -- | -- | -- | -- | -- |
 | JSON Model | A JSON string that will be parsed and used to create the entity.  | Yes | `empty string` | Yes |
-| Entity Name | Provide a name for the entity being created. This name can be used in the [Execute Actions on Entity List](/actions/execute-actions-on-entity-list.md) action to reference the items in the entity using `[ListName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
+| Entity Name | Provide a name for the entity being created. This name can be used in the [Execute Actions for each List Entry](/actions/execute-actions-for-each-list-entry.md) action to reference the items in the entity using `[ListName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
 | On Error | Specify a list of actions to run on error. Otherwise, an error message is returned which will contain the underlying error if debug mode is on.  | Yes | None Specified | No |

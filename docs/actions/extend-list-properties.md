@@ -12,23 +12,23 @@ This action extends an entity in the current context with new properties.
 
 ## `Typical Use Cases`
 
-- After creating a contextual entity with any of the load entity actions, use this action to add a property such as an ID before passing to the [Execute actions on entity list ](/actions/execute-actions-on-entity-list.md) action.
+- After creating a contextual entity with any of the load entity actions, use this action to add a property such as an ID before passing to the [Execute Actions for each List Entry ](/actions/execute-actions-for-each-list-entry.md) action.
 
 ## `Don't use it to`
 
-- Create an entity. Use [Create Entity](/actions/create-entity.md) or any of the `Load List (Source)` actions instead (e.g. [Load Entities (CSV File)](/actions/load-entities-csv-file.md)).
+- Create an entity. Use [Create Entity](/actions/create-entity.md) or any of the `Load List (Source)` actions instead (e.g. [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)).
 
 ## `Related Actions`
 
 | Action Name | Description |
 | -- | -- |
 | [Create Entity](/actions/create-entity.md)   | Creates an entity in the current context to which you can load values from the current context. Use this to create the entity that will be processed with this action. |
-| [Execute actions on entity list ](/actions/execute-actions-on-entity-list.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
-| [Load Entities (CSV File)](/actions/load-entities-csv-file.md)   | Creates an entity in the current context from the content of a provided CSV file. Use this to create the entity that will be processed with this action. |
-| [Load Entities (CSV)](/actions/load-entities-csv.md)   | Creates an entity in the current context from a CSV list. Use this to create the entity that will be processed with this action. |
-| [Load Entities (Excel File) XSLX ](/actions/load-entities-excel-file-xslx.md)   | Creates an entity in the current context from the content of a provided Excel(XLSX) file. Use this to create the entity that will be processed with this action. |
-| [Load Entities (JSON)](/actions/load-entities-json.md)   | Creates an entity in the current context from the provided JSON model. Use this to create the entity that will be processed with this action. |
-| [Load Entities (SQL)](/actions/load-entities-sql.md)   | Creates an entity in the current context from the result of the provided SQL Query. Use this to create the entity that will be processed with this action. |
+| [Execute Actions for each List Entry ](/actions/execute-actions-for-each-list-entry.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
+| [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)   | Creates an entity in the current context from the content of a provided CSV file. Use this to create the entity that will be processed with this action. |
+| [Create List from a CSV source](/actions/create-list-from-a-csv-source.md)   | Creates an entity in the current context from a CSV list. Use this to create the entity that will be processed with this action. |
+| [Create List from Excel (xlsx) ](/actions/create-list-from-excel-xlsx.md)   | Creates an entity in the current context from the content of a provided Excel(XLSX) file. Use this to create the entity that will be processed with this action. |
+| [Create List from JSON](/actions/create-list-from-json.md)   | Creates an entity in the current context from the provided JSON model. Use this to create the entity that will be processed with this action. |
+| [Create List from SQL](/actions/create-list-from-sql.md)   | Creates an entity in the current context from the result of the provided SQL Query. Use this to create the entity that will be processed with this action. |
 
 ## `Input Parameter Reference`
 

@@ -28,13 +28,13 @@ This action sends an email to one or multiple recipients. It also supports sendi
 | Action Name                                                                        | Description                                                                           |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
 | [Load Users from SQL](/actions/load-users-from-sql.md)                             | Load multiple users so you can send emails to all of them at once                     |
-| Load Entities (CSV File)                   | Load emails and other data from a CSV file to compose complex emails                  |
-| Load Entities (CSV)                             | Load emails and other data from a CSV formatted text to compose complex emails        |
-| Load Entities (Excel File) XSLX     | Load emails and other data from an Excel file to compose complex emails               |
-| Load Entities (JSON)                           | Load emails and other data from a JSON formatted text to compose complex emails       |
-| Load Entities (SQL)                             | Load emails and other data from the database to compose complex emails                |
+| Create List from CSV file (obsolete)                   | Load emails and other data from a CSV file to compose complex emails                  |
+| Create List from a CSV source                             | Load emails and other data from a CSV formatted text to compose complex emails        |
+| Create List from Excel (xlsx)     | Load emails and other data from an Excel file to compose complex emails               |
+| Create List from JSON                           | Load emails and other data from a JSON formatted text to compose complex emails       |
+| Create List from SQL                             | Load emails and other data from the database to compose complex emails                |
 | [Load User](/actions/load-user.md)                                            | Load an user so you can obtain recipient information via tokens                       |
-| Execute actions on entity list | Execute a set of actions for each entity, that can help you to compose complex emails |
+| Execute Actions for each List Entry | Execute a set of actions for each entity, that can help you to compose complex emails |
 
 ## `Input Parameter Reference`
 
