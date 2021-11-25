@@ -1,0 +1,1611 @@
+{
+  "version-1.17/someSidebar": [
+    {
+      "type": "doc",
+      "id": "version-1.17/audience"
+    },
+    {
+      "type": "category",
+      "label": "Configuration",
+      "items": [
+        {
+          "type": "category",
+          "label": "General",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/general/versioning"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/roles"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/users"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/pages"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/entities"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/sql-console"
+        },
+        {
+          "type": "category",
+          "label": "Workflows",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/workflows/overview"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/workflows/execution-context"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Tokens",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/tokens/overview"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        }
+      ],
+      "collapsible": true,
+      "collapsed": true
+    },
+    {
+      "type": "category",
+      "label": "Actions",
+      "items": [
+        {
+          "type": "doc",
+          "id": "version-1.17/faq"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/actions/running-examples"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.17/actions/common-parameters"
+        },
+        {
+          "type": "category",
+          "label": "Authorize Net",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-a-simple-checkout-to-a-button"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-subscription"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/make-a-payment-with-credit-card"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/make-a-payment-with-electronic-check"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/refund-a-transaction"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-subscription"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Bluefin",
+          "items": [],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Code",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/apply-tokens"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-javascript-server"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-javascript-code-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-javascript-code-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-razor"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-token"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Communications",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-sms-via-clickatell-gateway"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Context",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/change-user"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/inject-data"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-entry-by-id"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-entry-by-user-id"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-user"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-users-from-sql"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Credential Store",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-fedex-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-github-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-group"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-hashapi-tierion-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-pushwoosh-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-stripe-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-uipath-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/dynamics-crm-test-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/find-group"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-user-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/github-test-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/test-imap-credentials"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/test-slack-webhook"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/uipath-test-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-fedex-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-github-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-hashapi-tierion-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-pushwoosh-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-stripe-credential"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-uipath-credential"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Data",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/clear-cache-item"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/import-into-database-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/repost-data"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/run-sql-query"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/save-report-in-the-database"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/server-request"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-form-data-ajax"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Datasource",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-add"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-delete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-detail-view"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-edit"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-inline-add"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-inline-edit"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-refresh"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/datasource-view"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-data-query"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Debug",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-debug-info"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-error"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-job-context"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Dnn",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/copy-file"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-file"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-folder"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "DNN Sharp",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/advanced-search"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-static-files"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/open-file-manager"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/reindex-search-boost-content"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Documents",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/convert-from-html-to-word"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/generate-pdf"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-sheet-names-from-excel-file-xlsx"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/merge-pdf"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/overlay-pdf"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/replace-tokens-in-word-document"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/save-file-to-disk"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Drawing",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-thumbnail"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Dynamic Fields",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-tags-input"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-checkbox-true-false"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-date-and-time-deprecated"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-date-time-picker"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-dropdown-with-autocomplete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-dropdown-with-checkboxes"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-hidden-field-with-custom-value"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-large-text"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-multiple-choice-with-checkboxes"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-multiple-choice-with-dropdown"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-multiple-choice-with-radio-buttons"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-number-input"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-slider"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-statictext"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-textbox"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-dynamic-field-from-json"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Dynamics CRM 365",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/find-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/read-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/read-multiple-entities"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-entity"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Email",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/neverbounce-email-verification"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-email"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/setup-neverbounce-email-verification"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/subscribe-to-campaign-monitor"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/subscribe-to-constant-contact"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/subscribe-to-mailchimp"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/unsubscribe-from-campaign-monitor"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/unsubscribe-from-constant-contact"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-mailchimp-member"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "File Management",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/alter-folder-permissions"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/convert-from-html-to-word"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/copy-file"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-file"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-folder"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-archive-file-names"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-or-create-folder"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/move-folder"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/pack-folder"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/rename-file"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/rename-folder"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/replace-tokens-in-word-document"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/save-file-to-disk"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/unpack-an-archive"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/upload-to-ftp"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Flow",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-actions-asynchronously"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-actions"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/repeat"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stop-execution"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Form State",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/auto-save-state"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/clear-state"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-state"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/save-state"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Google API",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-google-authorization-bearer-token"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Guide",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/finish-guide"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/go-to-step"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/next-step"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/previous-step"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Image",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/generate-barcode"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Lists Objects",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-list-entry"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-list-from-a-csv-source"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-list-from-csv-file-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-list-from-excel-xlsx"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-list-from-json"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-list-from-sql"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-object"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-actions-for-each-list-entry"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/extend-list-properties"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/extend-object-properties"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/paginate-list"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/remap-list"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/remove-list-entries"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/sort-list"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Logging",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-debug-message"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-error"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-event"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/log-job-context"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Marketing",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/consume-email-queue"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-email-with-subject-a-b-testing"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-tracked-email"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Message",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/display-error-message"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/display-message"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/display-toast-message-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/display-toast-message-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-dnn-message"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-plain-text-as-file-download"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Output",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/download-file"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/file-response"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/json-entity-list"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/json-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/json-object"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/raw-response"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Parsing",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-json-object"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/parse-json-into-tokens"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/parse-xml-into-json-tokens"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/regex-multiple-results"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/regex-replace"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/regex"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/sanitize-html"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Payments",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/cancel-express-checkout-subscription"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-transaction-details"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/paypal-express-checkout"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/paypal-parse-ipn-request"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Portal Management",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-existing-module"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-module"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-page"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-portal"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-module-hard"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-module-soft"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-page-hard"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-page-soft"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-portal"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/export-module-content"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/import-module-content"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-html-module"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-module"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-page"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-portal"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-html-module"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-module"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-page"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-portal"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Redirect",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/redirect-to-portal-page"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/redirect-to-url"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-file-for-download"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Role",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-role"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-role"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-role"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Salesforce",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-to-campaign-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/add-to-campaign"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-an-salesforce-entity-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-an-salesforce-entity"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/run-soql-query-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/run-soql-query"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Security",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/aes-decrypt"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/aes-encrypt"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/credential-store-encrypt"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/generate-rsa-keys"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/rsa-decrypt"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/rsa-encrypt"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/verify-dkim-dns-record"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/vies-vat-number-validator"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Serialization",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/serialize-to-csv"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/serialize-to-excel-from-entity-list-xslx"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/serialize-to-excel-from-sql"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/serialize-to-excel-from-text-xslx"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Shell",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/run-powershell-script"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Slack",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-slack-message"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "SQS Actions",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-sqs-message"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-sqs-messages"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Stripe",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/get-stripe-user-account"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-add-seller"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-checkout"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-create-customer"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-create-plan"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-create-subscription"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-direct-payment-unsafe-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-get-event-details"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-payment-through-the-platform-unsafe-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/stripe-payment-with-token-not-sca-compliant"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "Twilio",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-sms-using-twilio"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/twilio-parse-webhook-sms"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/twilio-send-response-to-sms-webhook"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "UI Actions",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/advanced-search"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/browse-data-from-listing"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/change-tab-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/change-tab-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/close-form-popup-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/close-form-popup-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/close-form-popup"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/close-tabs-popup-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/close-tabs-popup-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/close-tabs-popup"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/execute-javascript-code"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/filter-listing"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/initialize-form-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/initialize-form-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/load-static-files"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/open-file-manager"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/open-form-popup-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/open-form-popup-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/open-tabs-popup-and-continue-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/open-tabs-popup-and-stop-execution"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/refresh-listing"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/reindex-search-boost-content"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "UiPath",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/run-robot"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "User",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/authorize-user"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/clear-user-cache"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/delete-user"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/grant-user-role"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/revoke-user-role"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/unauthorize-user"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-user-profile-obsolete"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-user-profile"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/user-login"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/user-registration-obsolete"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        },
+        {
+          "type": "category",
+          "label": "User Management",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/create-auto-login-link"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/send-user-reset-password-email"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/sync-users"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/unlock-user"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/update-username"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/user-login"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/user-registration"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/actions/user-password-validation"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        }
+      ],
+      "collapsible": true,
+      "collapsed": true
+    },
+    {
+      "type": "category",
+      "label": "Modules",
+      "items": [
+        {
+          "type": "category",
+          "label": "Important Notes",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/modules/important-notes/dnn-compatibility"
+            },
+            {
+              "type": "doc",
+              "id": "version-1.17/modules/important-notes/embed-form-or-grid"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        }
+      ],
+      "collapsible": true,
+      "collapsed": true
+    },
+    {
+      "type": "category",
+      "label": "UI Compontents",
+      "items": [
+        {
+          "type": "category",
+          "label": "Form",
+          "items": [
+            {
+              "type": "doc",
+              "id": "version-1.17/modules/important-notes/secure-input"
+            }
+          ],
+          "collapsible": true,
+          "collapsed": true
+        }
+      ],
+      "collapsible": true,
+      "collapsed": true
+    }
+  ]
+}
