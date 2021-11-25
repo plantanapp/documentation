@@ -26,7 +26,7 @@ This action is usually used to refresh the grid after executing another action.
 
 | Action Name | Description|
 |-------------|------------|
-| [Filter Listing](actions/filter-listting.md) | Refresh an Listing module without page reload with the option to change sorting, pagination and filtering. |
+| [Filter Listing](actions/filter-listing.md) | Refresh an Listing module without page reload with the option to change sorting, pagination and filtering. |
 | [Data Source Refresh](actions/datasource-refresh.md) | Enable Auto-Refresh for the Listing datasource at a specified interval |
 
 ## `Alternate Method`
