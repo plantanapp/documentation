@@ -6,8 +6,7 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy",
-    "version": "docusaurus docs:version"
+    "deploy": "docusaurus deploy"
   },
   "dependencies": {
     "@cmfcmf/docusaurus-search-local": "^0.6.6",
