@@ -24,7 +24,7 @@ Merges two PDF into one.
 
 | Action Name                                   | Description                                                                                  |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [Generate PDF](/actions/generate-pdf) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/.md) open source to generate PDF from HTML template. |
+| [Generate PDF](/actions/generate-pdf.md) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HTML template. |
 
 ## `Input Parameter Reference`
 

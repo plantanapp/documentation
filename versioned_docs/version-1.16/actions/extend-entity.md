@@ -16,7 +16,7 @@ This action extends an entity in the current context with new properties.
 
 ## `Don't use it to`
 
-- Create an entity. Use [Create Entity](/actions/create-entity) or any of the `Load Entities (Source)` actions instead (e.g. [Load Entities (CSV File)](/docs/actions/load-entities-csv-file).md).
+- Create an entity. Use [Create Entity](/actions/create-entity.md) or any of the `Load Entities (Source)` actions instead (e.g. [Load Entities (CSV File)](/actions/load-entities-csv-file.md)).
 
 ## `Related Actions`
 
@@ -26,7 +26,7 @@ This action extends an entity in the current context with new properties.
 | [Execute actions on entity list ](/actions/execute-actions-on-entity-list.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
 | [Load Entities (CSV File)](/actions/load-entities-csv-file.md)   | Creates an entity in the current context from the content of a provided CSV file. Use this to create the entity that will be processed with this action. |
 | [Load Entities (CSV)](/actions/load-entities-csv.md)   | Creates an entity in the current context from a CSV list. Use this to create the entity that will be processed with this action. |
-| [Load Entities (Excel File) XSLX ](/actions/load-entities-excel-file-xslx)   | Creates an entity in the current context from the content of a provided Excel(XLSX.md) file. Use this to create the entity that will be processed with this action. |
+| [Load Entities (Excel File) XSLX ](/actions/load-entities-excel-file-xslx.md)   | Creates an entity in the current context from the content of a provided Excel(XLSX) file. Use this to create the entity that will be processed with this action. |
 | [Load Entities (JSON)](/actions/load-entities-json.md)   | Creates an entity in the current context from the provided JSON model. Use this to create the entity that will be processed with this action. |
 | [Load Entities (SQL)](/actions/load-entities-sql.md)   | Creates an entity in the current context from the result of the provided SQL Query. Use this to create the entity that will be processed with this action. |
 
