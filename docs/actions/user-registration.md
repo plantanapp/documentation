@@ -4,7 +4,7 @@ title: User Registration
 sidebar_label: User Registration
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `User Management`
 
@@ -17,18 +17,18 @@ This action will create a new user account. The form must contain a username or 
 
 ## `Don't use it to`
 
-- Update user properties. Use [Update User Profile](/docs/actions/update-user-profile) instead.
+- Update user properties. Use [Update User Profile](/actions/update-user-profile.md) instead.
 
 ## `Related Actions`
 
 | Action Name | Description |
 | -- | -- |
-| [Update User Profile](/docs/actions/update-user-profile) | Updates a user's extended profile properties. Use in conjunction with User Registration to capture all data from a registration form in the correct place in the database. |
-| [Send Email](/docs/actions/send-email) | Sends an email to one or more recipients. Use to notify a user of successful registration and provide information regarding their new account. |
+| [Update User Profile](/actions/update-user-profile.md) | Updates a user's extended profile properties. Use in conjunction with User Registration to capture all data from a registration form in the correct place in the database. |
+| [Send Email](/actions/send-email.md) | Sends an email to one or more recipients. Use to notify a user of successful registration and provide information regarding their new account. |
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |
@@ -39,6 +39,6 @@ The parameters unique to this action are listed below. [Review the common parame
 | Email | Select a form field from the dropdown to use as the Email for the new user or use expressions (`EXPR` button) to use a token. | Yes | Not Selected | No |
 | First Name | Select a form field from the dropdown to update the First Name of the user or use expressions (`EXPR` button) to use a token. | Yes | Not Selected | No |
 | Last Name | Select a form field from the dropdown to update the Last Name of the user or use expressions (`EXPR` button) to use a token. | Yes | Not Selected | No |
-| Send standard DNN registration email | When this option is enabled, our module will use the standard registration email as set in DNN. For custom emails, disable this option and add a [Send Email](/docs/actions/send-email) action. | No | false | No |
+| Send standard DNN registration email | When this option is enabled, our module will use the standard registration email as set in DNN. For custom emails, disable this option and add a [Send Email](/actions/send-email.md) action. | No | false | No |
 | Login if user already exists | When this option is enabled, instead of showing a "user already exists" error, this action will attempt to authenticate the user using the username and password provided. If authentication is successful, then subsequent actions are executed. | No | false | No |
 | Authorize users who register with this form | When **Authorize** is selected, users that successfully register with this form will also be authorized. Selecting **Inherit DNN Settings** will use the standard DNN Setting for Authorizing new users. Select **Don't Authorize** if authorization is handled later, such as after a user clicks an email verification link. | No | Not Selected | No |

@@ -17,7 +17,7 @@ On the top of the page you have the `NEW` button that will open an pop-up.
 * `Email` - Must be a valid email address that will be used as the `Username` in the platform for the new user created.
 * `First Name` - First Name of the new user.
 * `Last Name` - Last Name of the new user.
-* [Roles](/docs/roles) - Here you select which role(s) the new user will have in the platform.
+* [Roles](/roles) - Here you select which role(s.md) the new user will have in the platform.
 
 ## `Edit User`
 
@@ -36,5 +36,5 @@ In the platform each `Email` represent an `User`, you can't create 2 users with 
 Deleting an `User` from the listing button (`Trash`) will delete it permanently from the platform. This operation is irreversible.
 
 :::caution
-If you delete all the roles from an User from the listing, you will lock him away. This operation it is recoverable by an user with [Administrators Role](/docs/roles#low-level-roles).
+If you delete all the roles from an User from the listing, you will lock him away. This operation it is recoverable by an user with [Administrators Role](/roles#low-level-roles.md).
 :::

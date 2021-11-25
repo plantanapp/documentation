@@ -4,7 +4,7 @@ title: Inject Data
 sidebar_label: Inject Data
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)
+> Audience: [`Business Users`](/audience#business-users.md)
 >
 > Skill Prerequisites: `None`
 
@@ -19,15 +19,15 @@ An action that lets you create new tokens into the current execution context. Th
 
 ## `Don't use it to`
 
-- Execute the same token multiple times, in case the token contains other tokens inside - use [Apply Tokens](/docs/actions/apply-tokens) instead
+- Execute the same token multiple times, in case the token contains other tokens inside - use [Apply Tokens](/actions/apply-tokens.md) instead
 - Create a token that is used in another execution context - store the data in a hidden field, cookies or server session instead
-- Store data in [Entities](/docs/entities)
+- Store data in [Entities](/entities.md)
 
 ## `Related Actions`
 
 | Action Name                                     | Description                                                                                                                  |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [Run SQL Query](/docs/actions/run-sql-query) | Executes an SQL statement and captures the output, so you can create tokens derived from the data returned by the SQL query. |
+| [Run SQL Query](/actions/run-sql-query.md) | Executes an SQL statement and captures the output, so you can create tokens derived from the data returned by the SQL query. |
 
 ## `Input Parameter Reference`
 
@@ -46,7 +46,7 @@ An action that lets you create new tokens into the current execution context. Th
 ### `1. Inject data using Run SQL Query`
 
 ​
-The action below counts the total number of users from users database using Run SQL Query and appends the token for user experience purposes. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below counts the total number of users from users database using Run SQL Query and appends the token for user experience purposes. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 ​
 
 ```json
@@ -116,7 +116,7 @@ The action below counts the total number of users from users database using Run 
 ### `2. Generate a new token`
 
 ​
-The action below logs a debug message only if injected data is true. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below logs a debug message only if injected data is true. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 ​
 
 ```json
@@ -176,7 +176,7 @@ The action below logs a debug message only if injected data is true. [Import it]
 ### `3. Concatenate 2 tokens`
 
 ​
-The action below extract "FirstName" and "LastName" from users database and concatenate them so that "FullName" can be used in the form. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below extract "FirstName" and "LastName" from users database and concatenate them so that "FullName" can be used in the form. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 ​
 
 ```json
@@ -250,7 +250,7 @@ The action below extract "FirstName" and "LastName" from users database and conc
 ### `4. Overwrite a token`
 
 ​
-The action below creates a token with different value depending on logged in user role, the default value being admin role. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below creates a token with different value depending on logged in user role, the default value being admin role. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 ​
 
 ```json

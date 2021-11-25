@@ -4,7 +4,7 @@ title: Open Tabs Popup And Continue Execution
 sidebar_label: Open Tabs Popup And Continue Execution
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Form Builder`
 

@@ -4,7 +4,7 @@ title: Display Toast Message And Continue Execution
 sidebar_label: Display Toast Message And Continue Execution
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `HTML`
 
@@ -31,7 +31,7 @@ This action displays a simple notification/information message to a user in a sm
 
 | Action Name                                                                        | Description                                                                           |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Display Message](/docs/actions/display-message)                             | Displays a postback message after the form is submitted. Use this if you want a message with significant detail shown to the user and don't mind a page refresh.                    |
+| [Display Message](/actions/display-message.md)                             | Displays a postback message after the form is submitted. Use this if you want a message with significant detail shown to the user and don't mind a page refresh.                    |
 
 ## `Input Parameter Reference`
 

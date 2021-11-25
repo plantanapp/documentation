@@ -4,7 +4,7 @@ title: Authorize User
 sidebar_label: Authorize User
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `User Management`
 
@@ -19,10 +19,10 @@ This action Authorizes users who currently have a status of Unauthorized in the 
 
 | Action Name | Description |
 | -- | -- |
-| [Load User](/docs/actions/load-user) | Use this action to load the user(s) you wish to authorize. |
-| [Load Users From SQL](/docs/actions/load-users-from-sql) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s) you wish to authorize. |
-| [Unauthorize User](/docs/actions/unauthorize-user) | If you need to Unauthorize users, use this action instead. |
+| [Load User](/actions/load-user) | Use this action to load the user(s.md) you wish to authorize. |
+| [Load Users From SQL](/actions/load-users-from-sql) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s.md) you wish to authorize. |
+| [Unauthorize User](/actions/unauthorize-user.md) | If you need to Unauthorize users, use this action instead. |
 
 ## `Input Parameter Reference`
 
-Since this action acts on users that have been loaded into the hidden Users Context Entity, it only has [the common parameters for all actions listed here](/docs/actions/common-parameters).
+Since this action acts on users that have been loaded into the hidden Users Context Entity, it only has [the common parameters for all actions listed here](/actions/common-parameters.md).

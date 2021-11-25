@@ -4,7 +4,7 @@ title: Merge PDF
 sidebar_label: Merge PDF
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+> Audience: [`Low-code Engineers`](/audience#low-code-engineers.md)
 >
 > Skill Prerequisites: `HTML` `CSS`
 
@@ -24,7 +24,7 @@ Merges two PDF into one.
 
 | Action Name                                   | Description                                                                                  |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [Generate PDF](/docs/actions/generate-pdf) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HTML template. |
+| [Generate PDF](/actions/generate-pdf) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/.md) open source to generate PDF from HTML template. |
 
 ## `Input Parameter Reference`
 
@@ -54,7 +54,7 @@ If one of the PDFs is password protected or doesn't have read permissions, mergi
 ### `1. Merging 2 newly generated PDFs`
 
 ​
-The action below generates two PDFs, with different content, and then merges them. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below generates two PDFs, with different content, and then merges them. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 ​
 
 ```json

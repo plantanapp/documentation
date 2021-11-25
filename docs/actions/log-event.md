@@ -4,7 +4,7 @@ title: Log Event
 sidebar_label: Log Event
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `System Administration`
 
@@ -16,13 +16,13 @@ This action logs an event of the type selected to the site's Admin Logs. You can
 
 ## `Don't use it to`
 
-- Log an error - Use [Log Error](/docs/actions/log-error) instead
+- Log an error - Use [Log Error](/actions/log-error.md) instead
 
 ## `Related Actions`
 
 | Action Name | Description |
 | -- | -- |
-| [Log Error](/docs/actions/log-error) | Writes a message to Admin Logs of type **General Exception** |
+| [Log Error](/actions/log-error.md) | Writes a message to Admin Logs of type **General Exception** |
 
 ## `Input Parameter Reference`
 

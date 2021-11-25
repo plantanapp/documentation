@@ -4,7 +4,7 @@ title: Clear Cache Item
 sidebar_label: Clear Cache Item
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `System Administration`
 
@@ -14,15 +14,15 @@ ASP.NET provides a cache where all components can save data. This action, depend
 
 | Action Name                                     | Description                                                                                                                  |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [Clear User Cache](/docs/actions/clear-user-cache) |This option clears the user-level cache for users loaded into the current context when the action is called. |
+| [Clear User Cache](/actions/clear-user-cache.md) |This option clears the user-level cache for users loaded into the current context when the action is called. |
 
 ## `Don't use it to`
 
-- Clear User Cache - Use [Clear User Cache](/docs/actions/clear-user-cache) instead.
+- Clear User Cache - Use [Clear User Cache](/actions/clear-user-cache.md) instead.
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |

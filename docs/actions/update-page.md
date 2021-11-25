@@ -13,6 +13,7 @@ This action will update a DNN page.
 | Page Identifier | Leave empty to update current page. Possible values are a Tab Id, a Tab Path (a valid path is //RootPage/SubPage/AndSoOn) or a Tab Name (the first one is matched, so use this carefully). Can contain context tokens (for example [SomeTabId]) and My Tokens. | Yes | None |
 | Page Name | Specify page name. Leave empty if you don't want to update Page Name. Note that you can use a context token like [PageName] to read it from input or use My Tokens. | Yes | None |
 | Page Title | Specify page title. Leave empty if you don't want to update Page Title. Note that you can use a context token like [PageTitle] to read it from input or use My Tokens. | Yes | None |
+| Show In Menu | Determines if the page will appear in menu. For expressions, you can use tokens that return 'true'/'false' or '1'/'0' (without the quotes). Supports My Tokens . | Yes | None |
 | Parent Page (select) | The page will be moved under this page (only if text parameter is left empty). | No | None |
 | Parent Page (text) | The page will be moved under this page (this parameter has priority over the select). For example, use [Tab:TabId] to moved new page under current page. Can contain context tokens (for example [SelectPage]) and My Tokens. | Yes | None |
 | Page Description | Specify page description. Leave empty if you don't want to update Page Description. Can contain context tokens (for example [Description]) and My Tokens. | Yes | None |

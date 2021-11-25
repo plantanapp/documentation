@@ -113,7 +113,7 @@ Selecting the sortable option will make the column header of this property a lin
 
 ## `Permissions`
 
-Before setting permissions for your Entities, you will need to consider how your permission model relates to your data model and then set up [Roles](/docs/Roles) for your application. Once you have custom roles configured you will then see them on the permissions screen when creating or editing an Entity.
+Before setting permissions for your Entities, you will need to consider how your permission model relates to your data model and then set up [Roles](/Roles.md) for your application. Once you have custom roles configured you will then see them on the permissions screen when creating or editing an Entity.
 
 | Entity Permission | Description |
 | -- | -- |

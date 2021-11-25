@@ -4,7 +4,7 @@ title: Run SQL Query
 sidebar_label: Run SQL Query
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `SQL`
 

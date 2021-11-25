@@ -4,7 +4,7 @@ title: Send Email
 sidebar_label: Send Email
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)
+> Audience: [`Business Users`](/audience#business-users.md)
 >
 > Skill Prerequisites: `HTML`
 
@@ -27,13 +27,13 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | Action Name                                                                        | Description                                                                           |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Load Users from SQL](/docs/actions/load-users-from-sql)                             | Load multiple users so you can send emails to all of them at once                     |
+| [Load Users from SQL](/actions/load-users-from-sql.md)                             | Load multiple users so you can send emails to all of them at once                     |
 | Load Entities (CSV File)                   | Load emails and other data from a CSV file to compose complex emails                  |
 | Load Entities (CSV)                             | Load emails and other data from a CSV formatted text to compose complex emails        |
 | Load Entities (Excel File) XSLX     | Load emails and other data from an Excel file to compose complex emails               |
 | Load Entities (JSON)                           | Load emails and other data from a JSON formatted text to compose complex emails       |
 | Load Entities (SQL)                             | Load emails and other data from the database to compose complex emails                |
-| [Load User](/docs/actions/load-user)                                            | Load an user so you can obtain recipient information via tokens                       |
+| [Load User](/actions/load-user.md)                                            | Load an user so you can obtain recipient information via tokens                       |
 | Execute actions on entity list | Execute a set of actions for each entity, that can help you to compose complex emails |
 
 ## `Input Parameter Reference`
@@ -42,11 +42,11 @@ This action sends an email to one or multiple recipients. It also supports sendi
 | -------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ---------------------------------------- | -------- |
 | From                       | The email address from which the email(s) will be sent                                                                                                                                                                                                                    | Yes             | `Creator of the website`                 | No       |
 | To                         | Recipient(s) to send the email to. Multiple Recipients can be separated by semicolon (;)                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
-| Send email to all users    | Sends emails to all users in the context loaded by [Load Users from SQL](/docs/actions/load-users-from-sql)                                                                                                                                                                 | No              | No                                       | No       |
+| Send email to all users    | Sends emails to all users in the context loaded by [Load Users from SQL](/actions/load-users-from-sql.md)                                                                                                                                                                 | No              | No                                       | No       |
 | Reply To                   | Email address that the reply message is sent back to instead of the `From` address. Multiple recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                | Yes             | `empty string`                           | No |
 | CC                         | Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                       | Yes             | `empty string`                           |  No |
 | BCC                        | Blind Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                 | Yes             | `empty string`                           |  No |
-| Format                     | The format of the email. Check below for more [details](/docs/actions/send-email#formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />)` | No       |
+| Format                     | The format of the email. Check below for more [details](/actions/send-email#formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />.md)` | No       |
 | DNN email template to use. | Choose from a predefined email from the system                                                                                                                                                                                                                            | No              | Unset                                    | No       |
 | Subject                    | The subject of the Email                                                                                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
 | Body                       | The email content to send                                                                                                                                                                                                                                                 | Yes             | `empty string`                           | No       |
@@ -60,7 +60,7 @@ This action sends an email to one or multiple recipients. It also supports sendi
 
 | Format                                   | Details                                                                                                                                                                                                                          |
 | ---------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| HTML (And replace newline with `<br />`) | To simplify the input of the email we are replacing the newlines in the `Body` of the email with the HTML tag `<br>`. While it is easier to compose the email it may have strange behaviors with some email clients like Outlook |
+| HTML (And replace newline with `<br />`) | To simplify the input of the email we are replacing the newlines in the `Body` of the email with the HTML tag `<br/>`. While it is easier to compose the email it may have strange behaviors with some email clients like Outlook |
 | Text                                     | Regular text, with no formatting options such as bold, italics, underlines, or special layout. Can include URLs, such as http:// and ftp:// options.                                                                             |
 | HTML(**Recommended**)                    | It’s the way web pages and email templates are coded so that text is formatted and images are added. What it is displayed in the HTML editor of `Body` will be the result that will be displayed in the email client             |
 

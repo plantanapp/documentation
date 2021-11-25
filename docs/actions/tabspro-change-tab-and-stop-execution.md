@@ -4,7 +4,7 @@ title: Tabs Pro Change Tab And Stop Execution
 sidebar_label: Tabs Pro Change Tab And Stop Execution
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Form Builder`
 
@@ -19,7 +19,7 @@ This action allows you to change the active tab in a Tabs Pro module on a Form o
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |

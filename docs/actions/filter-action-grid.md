@@ -4,7 +4,7 @@ title: Filter Action Grid
 sidebar_label: Filter Action Grid
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Action Grid`
 
@@ -35,7 +35,7 @@ This action refreshes an Action Grid module without page reload (if it’s on sa
 
 | Action Name | Description|
 |-------------|------------|
-| [Refresh Action Grid ](/docs/actions/refresh-action-grid) | Refresh an Action Grid module without page reload with the option to change sorting, pagination and filtering. |
+| [Refresh Action Grid ](/actions/refresh-action-grid.md) | Refresh an Action Grid module without page reload with the option to change sorting, pagination and filtering. |
 
 
 [//]: # (Will need to verify the links once the documentation for filter and data source refersh are completed.)

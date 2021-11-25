@@ -4,7 +4,7 @@ title: Update User Profile
 sidebar_label: Update User Profile
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `User Management`
 
@@ -17,18 +17,18 @@ This action updates the profile data for a user. It updates the User Profile tha
 
 ## `Don't use it to`
 
-- Create a new user. Use [User Registration](/docs/actions/user-registration) instead.
+- Create a new user. Use [User Registration](/actions/user-registration.md) instead.
 
 ## `Related Actions`
 
 | Action Name | Description |
 | -- | -- |
-| [User Registration](/docs/actions/user-registration) | Creates a new user. Use in conjunction with Update User Profile to capture all data from a registration form in the correct place in the database. |
-| [Send Email](/docs/actions/send-email) | Sends an email to one or multiple recipients. Use to notify a user of the profile update. |
+| [User Registration](/actions/user-registration.md) | Creates a new user. Use in conjunction with Update User Profile to capture all data from a registration form in the correct place in the database. |
+| [Send Email](/actions/send-email.md) | Sends an email to one or multiple recipients. Use to notify a user of the profile update. |
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |

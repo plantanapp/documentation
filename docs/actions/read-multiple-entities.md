@@ -21,3 +21,4 @@ Retireves multiple entries from the Dynamics CRM server based on conditions with
 | Page Number |  | No | None |
 | Paging Cookie | Optional. You can pass the Paging Cookie from a previous Read Multiple action to continue the reading. | No | None |
 | Output Paging Cookie | Optional. It can be used in a future Read Multiple Entities action to retrieve paged results, when the query returns many results. | No | None |
+| Output Total Records Count | Optional. It contains the the total number of records the query returned. | No | None |

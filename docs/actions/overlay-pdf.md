@@ -4,7 +4,7 @@ title: Overlay PDF
 sidebar_label: Overlay PDF
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+> Audience: [`Low-code Engineers`](/audience#low-code-engineers.md)
 >
 > Skill Prerequisites: `HTML` `CSS`
 
@@ -16,13 +16,13 @@ Overlays two PDFs.
 
 ## `Don't use it to`
 
-- Combine 2 documents - Use [Merge PDF](/docs/actions/merge-pdf) instead.
+- Combine 2 documents - Use [Merge PDF](/actions/merge-pdf.md) instead.
 
 ## `Related Actions`
 
 | Action Name                                   | Description                                                                                  |
 | --------------------------------------------- | -------------------------------------------------------------------------------------------- |
-| [Generate PDF](/docs/actions/generate-pdf) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HTML template. |
+| [Generate PDF](/actions/generate-pdf) | Uses [wkhtmltopdf](https://wkhtmltopdf.org/.md) open source to generate PDF from HTML template. |
 
 
 
@@ -58,7 +58,7 @@ If one of the PDFs is password protected or doesn't have read permissions, mergi
 ### `1. Overlaying 2 newly generated PDFs`
 
 ​
-The action below generates two PDFs, with different content, and then overlays them. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below generates two PDFs, with different content, and then overlays them. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 ​
 
 ```json
