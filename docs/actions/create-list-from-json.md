@@ -27,8 +27,8 @@ This creates an entity that can be used ONLY in the current context. This does n
 
 | Action Name | Description |
 | -- | -- |
-| [Execute Actions for each List Entry ](/actions/execute-actions-for-each-list-entry.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
-| [Extend Object Properties](/actions/extend-object-properties.md)   | Extends an entity with new properties. |
+| [Execute Actions for each List Entry ](/actions/execute-actions-for-each-list-entry.md)   | Execute a list of actions on each item in the specified context list. Use this to process the items loaded in the list created. |
+| [Extend Object Properties](/actions/extend-object-properties.md)   | Extends a list with new properties. |
 
 ## `Input Parameter Reference`
 
@@ -37,5 +37,5 @@ The parameters unique to this action are listed below. [Review the common parame
 | Parameter| Description| Supports Tokens | Default| Required |
 | -- | -- | -- | -- | -- |
 | JSON Model | A JSON string that will be parsed and used to create the entity.  | Yes | `empty string` | Yes |
-| Entity Name | Provide a name for the entity being created. This name can be used in the [Execute Actions for each List Entry](/actions/execute-actions-for-each-list-entry.md) action to reference the items in the entity using `[ListName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
+| List Name | Provide a name for the list being created. This name can be used in the [Execute Actions for each List Entry](/actions/execute-actions-for-each-list-entry.md) action to reference the items in the list using `[ListName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
 | On Error | Specify a list of actions to run on error. Otherwise, an error message is returned which will contain the underlying error if debug mode is on.  | Yes | None Specified | No |

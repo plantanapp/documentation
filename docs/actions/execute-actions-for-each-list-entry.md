@@ -23,12 +23,12 @@ This action will execute the specified actions for each item that belongs to the
 
 | Action Name | Description |
 | -- | -- |
-| [Create Entity](/actions/create-entity.md)   | Creates an entity in the current context to which you can load values from the current context. Use this to create the entity that will be processed with this action. |
-| [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)   | Creates an entity in the current context from the content of a provided CSV file. Use this to create the entity that will be processed with this action. |
-| [Create List from a CSV source](/actions/create-list-from-a-csv-source.md)   | Creates an entity in the current context from a CSV list. Use this to create the entity that will be processed with this action. |
-| [Create List from Excel (xlsx) ](/actions/create-list-from-excel-xlsx.md)   | Creates an entity in the current context from the content of a provided Excel(XLSX) file. Use this to create the entity that will be processed with this action. |
-| [Create List from JSON](/actions/create-list-from-json.md)   | Creates an entity in the current context from the provided JSON model. Use this to create the entity that will be processed with this action. |
-| [Create List from SQL](/actions/create-list-from-sql.md)   | Creates an entity in the current context from the result of the provided SQL Query. Use this to create the entity that will be processed with this action. |
+| [Create Entity](/actions/create-entity.md)   | Creates an list in the current context to which you can load values from the current context. Use this to create the list that will be processed with this action. |
+| [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)   | Creates an list in the current context from the content of a provided CSV file. Use this to create the list that will be processed with this action. |
+| [Create List from a CSV source](/actions/create-list-from-a-csv-source.md)   | Creates an list in the current context from a CSV list. Use this to create the list that will be processed with this action. |
+| [Create List from Excel (xlsx) ](/actions/create-list-from-excel-xlsx.md)   | Creates an list in the current context from the content of a provided Excel(XLSX) file. Use this to create the list that will be processed with this action. |
+| [Create List from JSON](/actions/create-list-from-json.md)   | Creates an list in the current context from the provided JSON model. Use this to create the list that will be processed with this action. |
+| [Create List from SQL](/actions/create-list-from-sql.md)   | Creates an list in the current context from the result of the provided SQL Query. Use this to create the list that will be processed with this action. |
 
 ## `Input Parameter Reference`
 
