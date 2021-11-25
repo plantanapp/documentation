@@ -4,7 +4,7 @@ title: Send Email
 sidebar_label: Send Email
 ---
 
-> Audience: [`Business Users`](/audience#business-users.md)
+> Audience: [`Business Users`](/audience.md#business-users)
 >
 > Skill Prerequisites: `HTML`
 
@@ -46,7 +46,7 @@ This action sends an email to one or multiple recipients. It also supports sendi
 | Reply To                   | Email address that the reply message is sent back to instead of the `From` address. Multiple recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                | Yes             | `empty string`                           | No |
 | CC                         | Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                       | Yes             | `empty string`                           |  No |
 | BCC                        | Blind Carbon Copy. Multiple Recipients can be separated by a semicolon (;)  or a comma(,)                                                                                                                                                                                 | Yes             | `empty string`                           |  No |
-| Format                     | The format of the email. Check below for more [details](/actions/send-email#formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />.md)` | No       |
+| Format                     | The format of the email. Check below for more [details](/actions/send-email.md#formats)                                                                                                                                                                              | No              | `Html (And replace newline with <br />)` | No       |
 | DNN email template to use. | Choose from a predefined email from the system                                                                                                                                                                                                                            | No              | Unset                                    | No       |
 | Subject                    | The subject of the Email                                                                                                                                                                                                                                                  | Yes             | `empty string`                           | Yes      |
 | Body                       | The email content to send                                                                                                                                                                                                                                                 | Yes             | `empty string`                           | No       |

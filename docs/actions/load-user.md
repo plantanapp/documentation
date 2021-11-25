@@ -4,7 +4,7 @@ title: Load User
 sidebar_label: Load User
 ---
 
-> Audience: [`Business Users`](/audience#business-users.md)
+> Audience: [`Business Users`](/audience.md#business-users)
 >
 > Skill Prerequisites: `User management`
 

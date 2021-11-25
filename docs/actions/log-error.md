@@ -4,7 +4,7 @@ title: Log Error
 sidebar_label: Log Error
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `System Administration`
 

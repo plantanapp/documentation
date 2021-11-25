@@ -4,7 +4,7 @@ title: Common Parameters for All Actions
 sidebar_label: Common Parameters
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
 > Skill Prerequisites: `None`
 
 All actions in Plant an App have three common input parameters that are not listed in the input parameter reference for each action documented on this site. Those three parameters are listed below.

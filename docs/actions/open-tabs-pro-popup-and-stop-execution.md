@@ -4,7 +4,7 @@ title: Open Tabs Popup And Stop Execution
 sidebar_label: Open Tabs Popup And Stop Execution
 ---
 
-> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

@@ -4,7 +4,7 @@ title: Load Entities (CSV File)
 sidebar_label: Load Entities (CSV File)
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

@@ -4,7 +4,7 @@ title: Overlay PDF
 sidebar_label: Overlay PDF
 ---
 
-> Audience: [`Low-code Engineers`](/audience#low-code-engineers.md)
+> Audience: [`Low-code Engineers`](/audience.md#low-code-engineers)
 >
 > Skill Prerequisites: `HTML` `CSS`
 
@@ -58,7 +58,7 @@ If one of the PDFs is password protected or doesn't have read permissions, mergi
 ### `1. Overlaying 2 newly generated PDFs`
 
 ​
-The action below generates two PDFs, with different content, and then overlays them. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
+The action below generates two PDFs, with different content, and then overlays them. [Import it](/actions/running-examples.md#import-the-action-in-a-module) into your application to see it in action.
 ​
 
 ```json

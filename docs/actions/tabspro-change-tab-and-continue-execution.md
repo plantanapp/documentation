@@ -4,7 +4,7 @@ title: Tabs Pro Change Tab And Continue Execution
 sidebar_label: Tabs Pro Change Tab And Continue Execution
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

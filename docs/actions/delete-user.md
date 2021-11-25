@@ -4,7 +4,7 @@ title: Delete User
 sidebar_label: Delete User
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `User Management`
 

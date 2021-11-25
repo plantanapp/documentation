@@ -4,7 +4,7 @@ title: Execution Context
 sidebar_label: Execution Context
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `C#` `Data Structures` `JavaScript`
 
@@ -66,7 +66,7 @@ The `Portal` object stores data about the portal on which the action executes. T
 
 #### User
 
-The `User` object contains the data about the current user that initiated the action, but be aware that this can be altered with the [Load User](/actions/load-user) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html#DotNetNuke_Entities_Users_UserInfo.md).
+The `User` object contains the data about the current user that initiated the action, but be aware that this can be altered with the [Load User](/actions/load-user) action. It is a `User Info` object and and you can read details about it's structure [here](https://dnndocs.com/api/DotNetNuke.Entities.Users.UserInfo.html.md#DotNetNuke_Entities_Users_UserInfo).
 
 #### Users
 

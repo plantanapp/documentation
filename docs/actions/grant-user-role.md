@@ -4,7 +4,7 @@ title: Grant User Role
 sidebar_label: Grant User Role
 ---
 
-> Audience: [`Business Users`](/audience#business-users.md)
+> Audience: [`Business Users`](/audience.md#business-users)
 >
 > Skill Prerequisites: `Permission Scheme`
 
@@ -37,7 +37,7 @@ If a role is deleted, it will simply be revoked from any user that has it.
 
 ### `1. Grant a User Role`
 
-The action below registers a new user and grants it the '[Citizen Developers]' Role. If the user exists and already has the role, nothing will happen.  [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
+The action below registers a new user and grants it the '[Citizen Developers]' Role. If the user exists and already has the role, nothing will happen.  [Import it](/actions/running-examples.md#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {
@@ -143,7 +143,7 @@ The action below registers a new user and grants it the '[Citizen Developers]' R
 
 ### `2. Grant a User Role for a period of time`
 
-The action below registers a new user and grants it the '[Citizen Developers]' Role just for 30 days. If the user exists already, the old validity period will reset. For example, if the user has only 20 days left, it will have again 30 days left after the action is executed. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
+The action below registers a new user and grants it the '[Citizen Developers]' Role just for 30 days. If the user exists already, the old validity period will reset. For example, if the user has only 20 days left, it will have again 30 days left after the action is executed. [Import it](/actions/running-examples.md#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {

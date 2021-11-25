@@ -4,7 +4,7 @@ title: Send File to Download
 sidebar_label: Send File to Download
 ---
 
-> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

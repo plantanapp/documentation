@@ -4,7 +4,7 @@ title: Filter Action Grid
 sidebar_label: Filter Action Grid
 ---
 
-> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Action Grid`
 

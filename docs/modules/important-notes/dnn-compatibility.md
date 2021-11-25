@@ -4,7 +4,7 @@ title: DNN Compatibility and Upgrades
 sidebar_label: DNN Compatibility
 ---
 
-> Audience: [`System/Security Administrators`](/audience#systemsecurity-administrators.md)
+> Audience: [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 

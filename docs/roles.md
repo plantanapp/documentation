@@ -6,7 +6,7 @@ sidebar_label: Roles
 
 ## `General Description`
 
-Roles define what users can see and do in the application. Plant an App comes with a list of pre-built roles and other roles can added to define your own security logic. Roles can be added, edited or deleted, and can be setup to restrict access at a page level, component level, actions, workflows, entities or any other module specific feature that support permissions (eg: [API Calls](/Roles#api-jwt-authentification), [Search index rules](/docs/Roles#search-index-rules), etc..md).
+Roles define what users can see and do in the application. Plant an App comes with a list of pre-built roles and other roles can added to define your own security logic. Roles can be added, edited or deleted, and can be setup to restrict access at a page level, component level, actions, workflows, entities or any other module specific feature that support permissions (eg: [API Calls](/Roles#api-jwt-authentification), [Search index rules](/Roles.md#search-index-rules), etc..md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zOGVh-zEsqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

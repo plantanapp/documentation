@@ -4,7 +4,7 @@ title: Extend Entity
 sidebar_label: Extend Entity
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

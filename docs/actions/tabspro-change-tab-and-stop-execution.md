@@ -4,7 +4,7 @@ title: Tabs Pro Change Tab And Stop Execution
 sidebar_label: Tabs Pro Change Tab And Stop Execution
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

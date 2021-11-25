@@ -4,7 +4,7 @@ title: Using the Embed Option in Forms and Grids
 sidebar_label: Embed Form or Grid
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
 > Skill Prerequisites: `HTML`
 
 The `Embed` option, available for Grids under `Advanced UI Settings` and Forms under `Advanced Settings` when `Display Mode` is set to `Initially Visible`, allows the form or grid to be embedded on another site so that data can be updated and viewed on the other site. When selected, the embed code to use on the other site is automatically provided.

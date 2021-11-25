@@ -4,7 +4,7 @@ title: Redirect to URL
 sidebar_label: Redirect to URL
 ---
 
-> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 
