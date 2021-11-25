@@ -35,7 +35,7 @@ This action refreshes an Listing module without page reload (if it’s on same p
 
 | Action Name | Description|
 |-------------|------------|
-| [Refresh Listing ](/actions/refresh-action-grid.md) | Refresh an Listing module without page reload with the option to change sorting, pagination and filtering. |
+| [Refresh Listing ](/actions/refresh-listing.md) | Refresh an Listing module without page reload with the option to change sorting, pagination and filtering. |
 
 
 [//]: # (Will need to verify the links once the documentation for filter and data source refersh are completed.)
