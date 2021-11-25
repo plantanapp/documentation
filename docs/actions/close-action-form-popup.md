@@ -4,7 +4,7 @@ title: Close Form Popup
 sidebar_label: Close Form Popup
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Form Builder`
 

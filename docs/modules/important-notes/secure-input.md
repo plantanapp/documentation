@@ -4,7 +4,7 @@ title: Secure Input Option on Text Based Fields
 sidebar_label: Secure Input
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)<br/>
 > Skill Prerequisites: `HTML`
 
 Action Form 5.9.x and Plant an App 1.9.x introduces a new setting for text input fields to help secure your application against XSS attacks. This setting appears as a checkbox at the bottom of the field's general settings, directly above **Bind Expressions** and is labeled **Secure Input**. It appears on the fields listed below.

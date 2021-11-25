@@ -4,7 +4,7 @@ title: Load User
 sidebar_label: Load User
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)
+> Audience: [`Business Users`](/audience#business-users.md)
 >
 > Skill Prerequisites: `User management`
 
@@ -12,12 +12,12 @@ An action that allows altering the user which the subsequent actions refer to. T
 
 This action also supports loading multiple users by providing multiple user identifiers. The last user identifier provided will also be used as the context user under which all actions execute. Loading multiple users creates a hidden context entity that is leveraged by the following actions which support this:
 
-- [Grant Role](/docs/actions/grant-user-role)
-- [Revoke Role](/docs/actions/revoke-user-role)
+- [Grant Role](/actions/grant-user-role.md)
+- [Revoke Role](/actions/revoke-user-role.md)
 - Authorize User
 - Unauthorize User
 - Delete User
-- [Send Email](/docs/actions/send-email)
+- [Send Email](/actions/send-email.md)
 
 When used in conjunction with the actions above, the logic applies to all users that have been loaded into the context by the `Load User` action. For example, the `Grant Role` action will assign the specified role to each and every user loaded into the context.
 
@@ -31,14 +31,14 @@ Calling the `Load User` action the second time inside the same workflow will rep
 
 ## `Don't use it to`
 
-- Load multiple users by a specific condition, use [Load Users From SQL](/docs/actions/load-users-from-sql) instead
+- Load multiple users by a specific condition, use [Load Users From SQL](/actions/load-users-from-sql.md) instead
 
 ## `Related Actions`
 
 | Action Name | Description|
 |-------------|------------|
-| [Grant Role](/docs/actions/grant-user-role) | Grants the users in the context the specified roles.|
-| [Send Email](/docs/actions/send-email) | Sends an email to the users loaded in the context.|
+| [Grant Role](/actions/grant-user-role.md) | Grants the users in the context the specified roles.|
+| [Send Email](/actions/send-email.md) | Sends an email to the users loaded in the context.|
 | Update User Profile | updates user profile properties. |
 
 ## `Input Parameter Reference`

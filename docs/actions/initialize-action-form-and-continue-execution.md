@@ -4,7 +4,7 @@ title: Initialize Action Form And Continue Execution
 sidebar_label: Initialize Action Continue And Stop Execution
 ---
 
-> Audience: [`Low-code Engineers`](/docs/audience#low-code-engineers)
+> Audience: [`Low-code Engineers`](/audience#low-code-engineers.md)
 >
 > Skill Prerequisites: `HTML`
 
@@ -36,12 +36,12 @@ The page will not be refreshed when a Form is initialized.
 
 | Action Name                                       | Description                                                                                       |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [Open Action Form Popup And Continue Execution ](/docs/actions/open-action-form-popup-and-continue-execution)       | Opens a specified Form in a pop-up.|
-| [Open Action Form Popup And Stop Execution ](/docs/actions/open-action-form-popup-and-stop-execution)       | Opens a specified Form in a pop-up.|
+| [Open Action Form Popup And Continue Execution ](/actions/open-action-form-popup-and-continue-execution.md)       | Opens a specified Form in a pop-up.|
+| [Open Action Form Popup And Stop Execution ](/actions/open-action-form-popup-and-stop-execution.md)       | Opens a specified Form in a pop-up.|
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 | Parameter                  | Description                                                                                                                                                                | Supports Tokens | Default            | Required |
 | -------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------- | ------------------ | -------- |

@@ -4,7 +4,7 @@ title: Display Message
 sidebar_label: Display Message
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `HTML`
 
@@ -24,8 +24,8 @@ This action displays a postback message after a form is submitted or before it i
 
 | Action Name                                                                        | Description                                                                           |
 | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------- |
-| [Display Toast Message And Continue Execution ](/docs/actions/display-toast-message-and-continue-execution)                            | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
-| [Display Toast Message And Stop Execution ](/docs/actions/display-toast-message-and-stop-execution)                           | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
+| [Display Toast Message And Continue Execution ](/actions/display-toast-message-and-continue-execution.md)                            | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
+| [Display Toast Message And Stop Execution ](/actions/display-toast-message-and-stop-execution.md)                           | Displays a simple notification/information message to a user in a small popup. Use this to show a message that will timeout automatically and doesn't change the page layout. |
 
 ## `Input Parameter Reference`
 

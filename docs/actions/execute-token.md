@@ -4,7 +4,7 @@ title: Execute Token
 sidebar_label: Execute Token
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Tokens`
 
@@ -18,8 +18,8 @@ This action will output a token that stores the output of a token.
 
 ## `Don't use it to`
 
-- Concatenate 2 tokens - Use [Inject Data](/docs/actions/inject-data)
-- Overwrite a token - Use [Inject Data](/docs/actions/inject-data)
+- Concatenate 2 tokens - Use [Inject Data](/actions/inject-data.md)
+- Overwrite a token - Use [Inject Data](/actions/inject-data.md)
 
 ## `Related Actions`
 
@@ -27,7 +27,7 @@ This action will output a token that stores the output of a token.
 | --------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
 | Update form with AJAX | Form action only, it updates the fields based on the values from the tokens.       |
 | Display Message             | Form action only, shows a message after the executions of set of actions/workflow. |
-| [Run SQL Query](/docs/actions/run-sql-query)                 | Executes an SQL statement and captures the output.                                 |
+| [Run SQL Query](/actions/run-sql-query.md)                 | Executes an SQL statement and captures the output.                                 |
 
 
 ## `Input Parameter Reference`

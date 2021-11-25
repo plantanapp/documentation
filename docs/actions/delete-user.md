@@ -4,7 +4,7 @@ title: Delete User
 sidebar_label: Delete User
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `User Management`
 
@@ -19,12 +19,12 @@ This action deletes users loaded into the current context when the action is cal
 
 | Action Name | Description |
 | -- | -- |
-| [Load User](/docs/actions/load-user) | Use this action to load the user(s)  you wish to delete. |
-| [Load Users From SQL](/docs/actions/load-users-from-sql) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s) you wish to delete. |
+| [Load User](/actions/load-user) | Use this action to load the user(s.md)  you wish to delete. |
+| [Load Users From SQL](/actions/load-users-from-sql) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s.md) you wish to delete. |
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 :::note
 Whether or not the `Hard Delete` option listed below is selected, this action will run on all users loaded in the current context. Please consider using this action on a confirmation button (in forms), or enabling `Ask For Confirmation` (in grids).

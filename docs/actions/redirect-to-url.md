@@ -4,7 +4,7 @@ title: Redirect to URL
 sidebar_label: Redirect to URL
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Form Builder`
 
@@ -14,12 +14,12 @@ This option redirects the user to the specified link after the user submits the 
 
 | Action Name                                     | Description                                                                                                                  |
 | ----------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------- |
-| [Redirect to Portal Page](/docs/actions/redirect-to-portal-page) |This option redirects the user to another page in the portal after the user submits the form. |
-| [Send File to Download](/docs/actions/send-file-for-download) | This option redirects the user to a file in the portal to be downloaded after the user submits the form. |
+| [Redirect to Portal Page](/actions/redirect-to-portal-page.md) |This option redirects the user to another page in the portal after the user submits the form. |
+| [Send File to Download](/actions/send-file-for-download.md) | This option redirects the user to a file in the portal to be downloaded after the user submits the form. |
 
 ## `Input Parameter Reference`
 
-The parameters unique to this action are listed below. [Review the common parameters for all actions here](/docs/actions/common-parameters).
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |

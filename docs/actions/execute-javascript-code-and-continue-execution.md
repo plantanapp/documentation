@@ -4,7 +4,7 @@ title: Execute JavaScript Code And Continue Execution
 sidebar_label: Execute JavaScript Code Continue Execution
 ---
 
-> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)
+> Audience: [`Low-Code Engineer`](/audience#low-code-engineers.md)
 >
 > Skill Prerequisites: `JavaScript`
 

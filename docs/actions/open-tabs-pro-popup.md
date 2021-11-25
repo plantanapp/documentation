@@ -4,7 +4,7 @@ title: Open Tabs Popup
 sidebar_label: Open Tabs Popup
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Form Builder`
 

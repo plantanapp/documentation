@@ -4,7 +4,7 @@ title: Execute JavaScript (Server-side)
 sidebar_label: Execute JavaScript (Server)
 ---
 
-> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)
+> Audience: [`Low-Code Engineer`](/audience#low-code-engineers.md)
 >
 > Skill Prerequisites: `JavaScript`
 
@@ -81,11 +81,11 @@ The following variables are automatically created and available in the script:
 
 | Name | Description |
 |------|-------------|
-| User | Exposes information about the current user. By default, this is the user running the workflow, but it can be changed through the [Load User](/docs/actions/load-user) action for example. |
+| User | Exposes information about the current user. By default, this is the user running the workflow, but it can be changed through the [Load User](/actions/load-user.md) action for example. |
 | Page | The current page from where the workflow was triggered. In some cases, such as when running the action from a scheduler, this variable will be null. |
 | Module | The entry point from where the action was invoked. It can be a form, grid, API, a scheduled job, or another trigger or event. |
 | Global Tokens | All custom tokens that have been created in Plant an App **Tokens** will be available. Note that they always live under a namespace, so accessing them from the script needs to follow the syntax `Namespace.TokenName`. |
-| Workflow Parameters | If this action runs in a workflow, all input parameters are available as local variables. Note that if the inputs are [Entities](/docs/entities) the variables are objects that contain all the properties of the respective entity. |
+| Workflow Parameters | If this action runs in a workflow, all input parameters are available as local variables. Note that if the inputs are [Entities](/entities.md) the variables are objects that contain all the properties of the respective entity. |
 | Module Data | If this action is invoked from a form, for example, then all the submitted fields will be available as variables. The variable name is exactly the string ID of each field. Same applies for grids and APIs which have inputs as well.|
 | Context Tokens | In Plant an App, it's common that actions generate new variables that are stored in the context for subsequent actions to use. All the tokens that were created by actions previous to the `Execute Javascript` will be available as local variables. |
 
@@ -132,7 +132,7 @@ return client.DownloadString('https://example.com/api');
 ### `1. Parse Returned Value from Server Request Action`
 
 ​
-Below you will find two actions that will make a call to the HubSpot API to get the contacts in a specified list and parse them to pull out just the First Name, Last Name, and Email address of each contact. To use these actions, you need to have a [HubSpot](https://www.hubspot.com/) account and have a [HubSpot API Key](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key) saved in a Token in Plant an App. You must also have a [HubSpot List](https://knowledge.hubspot.com/lists/create-active-or-static-lists) created and know the list ID. Once you have these minimum requirements, you can [import the actions](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see them in action.
+Below you will find two actions that will make a call to the HubSpot API to get the contacts in a specified list and parse them to pull out just the First Name, Last Name, and Email address of each contact. To use these actions, you need to have a [HubSpot](https://www.hubspot.com/) account and have a [HubSpot API Key](https://knowledge.hubspot.com/integrations/how-do-i-get-my-hubspot-api-key) saved in a Token in Plant an App. You must also have a [HubSpot List](https://knowledge.hubspot.com/lists/create-active-or-static-lists) created and know the list ID. Once you have these minimum requirements, you can [import the actions](/actions/running-examples#import-the-action-in-a-module.md) into your application to see them in action.
 
 This first action is a [Server Request](server-request) to HubSpot to get a list of contacts for the specified `[ListID]`. The List ID is configured as an input parameter that you need to pass into this action by storing it in a Token named ListID. The action references a Token named `[APIKeys:HubSpot]` to pass the API key on the URL. If you have your API key stored in a token already with a different NameSpace or Token Name, you will need to adjust the token reference. The return from the API call is stored in a token called **ContactJSON** to be used in the **Execute JavaScript (Server-side)** action.
 

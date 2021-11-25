@@ -4,7 +4,7 @@ title: Refresh Action Grid
 sidebar_label: Refresh Action Grid
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
 >
 > Skill Prerequisites: `Using Action Grid`
 

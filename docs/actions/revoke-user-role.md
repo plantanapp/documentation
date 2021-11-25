@@ -4,7 +4,7 @@ title: Revoke User Role
 sidebar_label: Revoke User Role
 ---
 
-> Audience: [`Business Users`](/docs/audience#business-users)
+> Audience: [`Business Users`](/audience#business-users.md)
 >
 > Skill Prerequisites: `Permission Scheme`
 
@@ -21,7 +21,7 @@ sidebar_label: Revoke User Role
 
 | Action Name                                             | Description                                                         |
 | ------------------------------------------------------- | ------------------------------------------------------------------- |
-| [Load Users](/docs/actions/load-user)                | Can be used to revoke roles to a single user or to a list of users. |
+| [Load Users](/actions/load-user.md)                | Can be used to revoke roles to a single user or to a list of users. |
 | User Registration | Can be used to revoke roles to a newly created user.                |
 
 ## `Input Parameter Reference`
@@ -39,7 +39,7 @@ If a role is deleted, it will simply be revoked from any user that has it.
 
 ### `1. Revoke a User Role `
 
-The action below loads the current user using [Load User](/docs/actions/load-user) action and revokes its '[Users]' role. Nothing will happen if a not assigned role is revoked. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below loads the current user using [Load User](/actions/load-user) action and revokes its '[Users]' role. Nothing will happen if a not assigned role is revoked. [Import it](/docs/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 
 ```json
 {
@@ -97,7 +97,7 @@ The action below loads the current user using [Load User](/docs/actions/load-use
 
 ### `2. Revoke a Role from all users`
 
-The action below loads all users using Load Entities and [Load User](/docs/actions/load-user) action and revokes the `Managers` role from every one. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+The action below loads all users using Load Entities and [Load User](/actions/load-user) action and revokes the `Managers` role from every one. [Import it](/docs/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
 
 ```json
 {

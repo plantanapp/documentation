@@ -4,7 +4,7 @@ title: Execute JavaScript Code And Stop Execution
 sidebar_label: Execute JavaScript Code And Stop Execution
 ---
 
-> Audience: [`Low-Code Engineer`](/docs/audience#low-code-engineers)
+> Audience: [`Low-Code Engineer`](/audience#low-code-engineers.md)
 >
 > Skill Prerequisites: `JavaScript`
 
