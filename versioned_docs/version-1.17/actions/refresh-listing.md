@@ -1,18 +1,18 @@
 ---
-id: refresh-action-grid
-title: Refresh Action Grid
-sidebar_label: Refresh Action Grid
+id: refresh-listing
+title: Refresh Listing
+sidebar_label: Refresh Listing
 ---
 
 > Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
-> Skill Prerequisites: `Using Action Grid`
+> Skill Prerequisites: `Using Listing`
 
 This action is usually used to refresh the grid after executing another action.
 
 ## `Typical Use Cases`
 
-- Refresh Action Grid with updated data without reloading the entire page
+- Refresh Listing with updated data without reloading the entire page
 
 
 ## `Input Parameter Reference`
@@ -26,8 +26,8 @@ This action is usually used to refresh the grid after executing another action.
 
 | Action Name | Description|
 |-------------|------------|
-| [Filter Action Grid](actions/filter-action-grid.md) | Refresh an Action Grid module without page reload with the option to change sorting, pagination and filtering. |
-| [Data Source Refresh](actions/datasource-refresh.md) | Enable Auto-Refresh for the Action Grid datasource at a specified interval |
+| [Filter Listing](actions/filter-listing.md) | Refresh an Listing module without page reload with the option to change sorting, pagination and filtering. |
+| [Data Source Refresh](actions/datasource-refresh.md) | Enable Auto-Refresh for the Listing datasource at a specified interval |
 
 ## `Alternate Method`
 
