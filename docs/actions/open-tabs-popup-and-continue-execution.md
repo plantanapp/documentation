@@ -8,7 +8,7 @@ sidebar_label: Open Tabs Popup And Continue Execution
 >
 > Skill Prerequisites: `Using Form Builder`
 
-This action allows you to open a specified Tabs Pro from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
+This action allows you to open a specified Tabs from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
 
 ## `Actions Covered by this Document`
 
@@ -21,5 +21,5 @@ This action allows you to open a specified Tabs Pro from the same page in a popu
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | -- | -- | -- | -- | -- |
-| Select Module | Select the Tabs Pro you wish to open in a popup. Optionally, click the `EXPR` button to tokenize the selection of the Tabs Pro ID| Yes | Empty String | No |
-| QueryString Parameters | Optionally, you can enter `Name` and `Value` pairs that will be passed to the Tabs Pro being opened in the popup. The Tabs Pro in the popup can reference these values using the `[QueryString:Parameter]` token syntax. | Yes | Unset | No |
+| Select Module | Select the Tabs you wish to open in a popup. Optionally, click the `EXPR` button to tokenize the selection of the Tabs ID| Yes | Empty String | No |
+| QueryString Parameters | Optionally, you can enter `Name` and `Value` pairs that will be passed to the Tabs being opened in the popup. The Tabs in the popup can reference these values using the `[QueryString:Parameter]` token syntax. | Yes | Unset | No |

@@ -8,14 +8,14 @@ sidebar_label: Close Form Popup
 >
 > Skill Prerequisites: `Using Form Builder`
 
-This action allows you to manually trigger a close popup action for the specified Action Form. Depending on the Action selected, the remaining actions will also execute.
+This action allows you to manually trigger a close popup action for the specified Form. Depending on the Action selected, the remaining actions will also execute.
 
 ## `Actions Covered by this Document`
 
 | Action | Purpose |
 | -- | -- |
-| Close Form Popup And Continue Execution | Closes the specified Action Form popup and then continues to subsequent actions on the button and submission. |
-| Close Form Popup And Stop Execution | Closes the specified Action Form popup and then stops further execution of both subsequent actions and HTTP Post submission. |
+| Close Form Popup And Continue Execution | Closes the specified Form popup and then continues to subsequent actions on the button and submission. |
+| Close Form Popup And Stop Execution | Closes the specified Form popup and then stops further execution of both subsequent actions and HTTP Post submission. |
 
 ## `Input Parameter Reference`
 

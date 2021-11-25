@@ -28,7 +28,7 @@ IMPORTANT: The javascript code that you run using this action will execute by fo
 
 ## `Don't use it to`
 
-- Interact with other Plant an App features on the page. Use Plant an App or DNN Sharp special actions instead (e.g. `Open Action Form Popup and Stop Execution` or `Filter Action Grid`)
+- Interact with other Plant an App features on the page. Use Plant an App or DNN Sharp special actions instead (e.g. `Open Form Popup And Stop Execution` or `Filter Listing`)
 
 ## `Input Parameter Reference`
 

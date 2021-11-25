@@ -8,7 +8,7 @@ sidebar_label: Open Form Popup And Stop Execution
 >
 > Skill Prerequisites: `Using Form Builder`
 
-This action allows you to open a specified Action Form from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
+This action allows you to open a specified Form from the same page in a popup. Depending on the Action selected, the remaining actions will also execute.
 
 ## `Actions Covered by this Document`
 

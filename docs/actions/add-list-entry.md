@@ -20,7 +20,7 @@ This creates an entity that can be used ONLY in the current context. This does n
 
 ## `Don't use it to`
 
-- Create an entity that will have values loaded from another source like SQL, CSV, CSV File, etc. Use the `Load List (Source)` actions instead (e.g. [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)).
+- Create an entity that will have values loaded from another source like SQL, CSV, CSV File, etc. Use the `Create List from (Source)` actions instead (e.g. [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)).
 
 ## `Related Actions`
 

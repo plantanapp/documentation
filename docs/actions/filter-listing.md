@@ -6,13 +6,13 @@ sidebar_label: Filter Listing
 
 > Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
-> Skill Prerequisites: `Using Action Grid`
+> Skill Prerequisites: `Using Listing`
 
-This action refreshes an Action Grid module without page reload (if it’s on same page) with the option to change sorting, pagination and filtering.
+This action refreshes an Listing module without page reload (if it’s on same page) with the option to change sorting, pagination and filtering.
 
 ## `Typical Use Cases`
 
-- Use an Action Form to filter and/or sort an Action Grid
+- Use an Form to filter and/or sort an Listing
 
 
 ## `Input Parameter Reference`
@@ -35,7 +35,7 @@ This action refreshes an Action Grid module without page reload (if it’s on sa
 
 | Action Name | Description|
 |-------------|------------|
-| [Refresh Action Grid ](/actions/refresh-action-grid.md) | Refresh an Action Grid module without page reload with the option to change sorting, pagination and filtering. |
+| [Refresh Listing ](/actions/refresh-action-grid.md) | Refresh an Listing module without page reload with the option to change sorting, pagination and filtering. |
 
 
 [//]: # (Will need to verify the links once the documentation for filter and data source refersh are completed.)
