@@ -16,13 +16,13 @@ This action extends an entity in the current context with new properties.
 
 ## `Don't use it to`
 
-- Create an entity. Use [Create Entity](/actions/create-entity.md) or any of the `Load List (Source)` actions instead (e.g. [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)).
+- Create an entity. Use [Add List Entry](/actions/add-list-entry.md) or any of the `Create List from (Source)` actions instead (e.g. [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)).
 
 ## `Related Actions`
 
 | Action Name | Description |
 | -- | -- |
-| [Create Entity](/actions/create-entity.md)   | Creates an list in the current context to which you can load values from the current context. Use this to create the list that will be processed with this action. |
+| [Add List Entry](/actions/add-list-entry.md)   | Creates an list in the current context to which you can load values from the current context. Use this to create the list that will be processed with this action. |
 | [Execute Actions for each List Entry ](/actions/execute-actions-for-each-list-entry.md)   | Execute a list of actions on each item in the specified context list. Use this to process the items loaded in the list created. |
 | [Create List from CSV file (obsolete)](/actions/create-list-from-csv-file-obsolete.md)   | Creates an list in the current context from the content of a provided CSV file. Use this to create the list that will be processed with this action. |
 | [Create List from a CSV source](/actions/create-list-from-a-csv-source.md)   | Creates an list in the current context from a CSV list. Use this to create the list that will be processed with this action. |
