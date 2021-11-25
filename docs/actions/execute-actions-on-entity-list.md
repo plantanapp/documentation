@@ -4,7 +4,7 @@ title: Execute Actions on Entity List
 sidebar_label: Execute Actions on Entity List
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

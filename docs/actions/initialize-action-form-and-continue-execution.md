@@ -4,7 +4,7 @@ title: Initialize Action Form And Continue Execution
 sidebar_label: Initialize Action Continue And Stop Execution
 ---
 
-> Audience: [`Low-code Engineers`](/audience#low-code-engineers.md)
+> Audience: [`Low-code Engineers`](/audience.md#low-code-engineers)
 >
 > Skill Prerequisites: `HTML`
 

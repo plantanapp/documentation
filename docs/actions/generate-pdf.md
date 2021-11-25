@@ -4,7 +4,7 @@ title: Generate PDF
 sidebar_label: Generate PDF
 ---
 
-> Audience: [`Low-code Engineers`](/audience#low-code-engineers.md)
+> Audience: [`Low-code Engineers`](/audience.md#low-code-engineers)
 >
 > Skill Prerequisites: `HTML` `CSS`
 
@@ -181,7 +181,7 @@ JavaScript can also be executed when compiling a PDF file. The following code ge
 ### `1. Generate a PDF using HTML/CSS directly into the action`
 
 ​
-The action below generates a simple PDF with custom CSS styles for title and paragraph. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
+The action below generates a simple PDF with custom CSS styles for title and paragraph. [Import it](/actions/running-examples.md#import-the-action-in-a-module) into your application to see it in action.
 ​
 
 ```json
@@ -258,7 +258,7 @@ The action below generates a simple PDF with custom CSS styles for title and par
 
 ### `2. Generate a PDF with pictures/signatures`
 
-The action below generates a PDF that has a red title and a loaded picture. This picture can be a signature, a watermark or anything else. [Import it](/actions/running-examples#import-the-action-in-a-module.md) into your application to see it in action.
+The action below generates a PDF that has a red title and a loaded picture. This picture can be a signature, a watermark or anything else. [Import it](/actions/running-examples.md#import-the-action-in-a-module) into your application to see it in action.
 
 ```json
 {

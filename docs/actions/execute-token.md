@@ -4,7 +4,7 @@ title: Execute Token
 sidebar_label: Execute Token
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Tokens`
 

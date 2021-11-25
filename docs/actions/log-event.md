@@ -4,7 +4,7 @@ title: Log Event
 sidebar_label: Log Event
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `System Administration`
 

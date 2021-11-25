@@ -4,7 +4,7 @@ title: Update User Profile
 sidebar_label: Update User Profile
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `User Management`
 

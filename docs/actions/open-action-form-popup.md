@@ -4,7 +4,7 @@ title: Open Form Popup
 sidebar_label: Open Form Popup
 ---
 
-> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 

@@ -4,7 +4,7 @@ title: User Registration
 sidebar_label: User Registration
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `User Management`
 

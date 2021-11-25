@@ -36,5 +36,5 @@ In the platform each `Email` represent an `User`, you can't create 2 users with 
 Deleting an `User` from the listing button (`Trash`) will delete it permanently from the platform. This operation is irreversible.
 
 :::caution
-If you delete all the roles from an User from the listing, you will lock him away. This operation it is recoverable by an user with [Administrators Role](/roles#low-level-roles.md).
+If you delete all the roles from an User from the listing, you will lock him away. This operation it is recoverable by an user with [Administrators Role](/roles.md#low-level-roles).
 :::

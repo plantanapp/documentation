@@ -4,7 +4,7 @@ title: Clear Cache Item
 sidebar_label: Clear Cache Item
 ---
 
-> Audience: [`Citizen Developers`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `System Administration`
 

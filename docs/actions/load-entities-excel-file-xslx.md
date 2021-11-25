@@ -4,7 +4,7 @@ title: Load Entities (Excel File) XLSX
 sidebar_label: Load Entities (Excel File) XLSX
 ---
 
-> Audience: [`Citizen Developer`](/audience#citizen-developers.md)
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 
