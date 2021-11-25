@@ -4,7 +4,7 @@ title: Refresh Action Grid
 sidebar_label: Refresh Action Grid
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Action Grid`
 
@@ -26,8 +26,8 @@ This action is usually used to refresh the grid after executing another action.
 
 | Action Name | Description|
 |-------------|------------|
-| [Filter Action Grid](docs/actions/filter-action-grid) | Refresh an Action Grid module without page reload with the option to change sorting, pagination and filtering. |
-| [Data Source Refresh](docs/actions/datasource-refresh) | Enable Auto-Refresh for the Action Grid datasource at a specified interval |
+| [Filter Action Grid](actions/filter-action-grid.md) | Refresh an Action Grid module without page reload with the option to change sorting, pagination and filtering. |
+| [Data Source Refresh](actions/datasource-refresh.md) | Enable Auto-Refresh for the Action Grid datasource at a specified interval |
 
 ## `Alternate Method`
 
