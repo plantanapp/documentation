@@ -4,13 +4,38 @@ title: Create List from JSON
 sidebar_label: Create List from JSON
 ---
 
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
+>
+> Skill Prerequisites: `Using Form Builder`
 
-Loads the objects in the given JSON input string (JsonModel) into a list that can then be iterated, executing actions for each list entry. You can find the number of loaded list entries in the [&lt;ListName&gt;:Count] token.
+This action creates a list in the current context from a provided JSON input string (JSONModel). This could be from a form field, or other actions such as a Server Request action. You can find the number of loaded list items in the `[<ListName>:Count]` token.
 
-## Parameter Reference
-| Parameter | Description | Supports Tokens | Default |
-| -- | -- | -- | -- |
-| JSON Model | The JSON string that will be parsed. This field supports My Tokens. | Yes | None |
-| List Name | Name this list so you can reference it later by name. This field supports My Tokens. | Yes | None |
-| On Error | Define a list of actions to run on error. Otherwise, an error message is returned which will contain the underlying error if debug mode is on. | No | [] |
-| Enforce ISO DateTime | Enforces DateTime values from the JSON to be parsed as full ISO DateTtime values. | No | None |
+:::note
+This creates an entity that can be used ONLY in the current context. This does not create a [Plant an App Entity](/entities.md).
+:::
+
+## `Typical Use Cases`
+
+- Load values from a JSON response to a Server Request action into an entity.
+- Use in **`Automation`** to Load values from a JSON string passed in a token and then use Execute Actions on Entity List to run the same actions on each item in the list.
+
+## `Don't use it to`
+
+- Parse JSON. Use the `Parse JSON Into Tokens` action instead.
+
+## `Related Actions`
+
+| Action Name | Description |
+| -- | -- |
+| [Execute actions on entity list ](/actions/execute-actions-on-entity-list.md)   | Execute a list of actions on each item in the specified context entity. Use this to process the items loaded in the Entity created. |
+| [Extend Entity](/actions/extend-entity.md)   | Extends an entity with new properties. |
+
+## `Input Parameter Reference`
+
+The parameters unique to this action are listed below. [Review the common parameters for all actions here](/actions/common-parameters.md).
+
+| Parameter| Description| Supports Tokens | Default| Required |
+| -- | -- | -- | -- | -- |
+| JSON Model | A JSON string that will be parsed and used to create the entity.  | Yes | `empty string` | Yes |
+| Entity Name | Provide a name for the entity being created. This name can be used in the [Execute Actions on Entity List](/actions/execute-actions-on-entity-list.md) action to reference the items in the entity using `[ListName:PropertyName]` token syntax. | Yes | `empty string` | Yes |
+| On Error | Specify a list of actions to run on error. Otherwise, an error message is returned which will contain the underlying error if debug mode is on.  | Yes | None Specified | No |
