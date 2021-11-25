@@ -19,8 +19,8 @@ This action Authorizes users who currently have a status of Unauthorized in the 
 
 | Action Name | Description |
 | -- | -- |
-| [Load User](/actions/load-user) | Use this action to load the user(s.md) you wish to authorize. |
-| [Load Users From SQL](/actions/load-users-from-sql) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s.md) you wish to authorize. |
+| [Load User](/actions/load-user.md) | Use this action to load the user(s) you wish to authorize. |
+| [Load Users From SQL](/actions/load-users-from-sql.md) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s) you wish to authorize. |
 | [Unauthorize User](/actions/unauthorize-user.md) | If you need to Unauthorize users, use this action instead. |
 
 ## `Input Parameter Reference`

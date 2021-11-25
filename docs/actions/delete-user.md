@@ -19,8 +19,8 @@ This action deletes users loaded into the current context when the action is cal
 
 | Action Name | Description |
 | -- | -- |
-| [Load User](/actions/load-user) | Use this action to load the user(s.md)  you wish to delete. |
-| [Load Users From SQL](/actions/load-users-from-sql) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s.md) you wish to delete. |
+| [Load User](/actions/load-user.md) | Use this action to load the user(s)  you wish to delete. |
+| [Load Users From SQL](/actions/load-users-from-sql.md) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s) you wish to delete. |
 
 ## `Input Parameter Reference`
 
