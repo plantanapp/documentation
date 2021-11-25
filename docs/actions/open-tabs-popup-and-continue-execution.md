@@ -1,10 +1,10 @@
 ---
-id: open-tabs-pro-popup
-title: Open Tabs Popup
-sidebar_label: Open Tabs Popup
+id: open-tabs-popup-and-continue-execution
+title: Open Tabs Popup And Continue Execution
+sidebar_label: Open Tabs Popup And Continue Execution
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 
@@ -14,8 +14,8 @@ This action allows you to open a specified Tabs Pro from the same page in a popu
 
 | Action | Purpose |
 | -- | -- |
-| Open Tabs Pro Popup And Continue Execution | Opens the specified Tabs Pro instance and then continues to subsequent actions on the button and submission. |
-| Open Tabs Pro Popup And Stop Execution | Opens the specified Tabs Pro instance and then stops further execution of both subsequent actions and HTTP post submission. |
+| Open Tabs Popup And Continue Execution | Opens the specified Tabs instance and then continues to subsequent actions on the button and submission. |
+| Open Tabs Popup And Stop Execution | Opens the specified Tabs  instance and then stops further execution of both subsequent actions and HTTP post submission. |
 
 ## `Input Parameter Reference`
 

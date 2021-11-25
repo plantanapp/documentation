@@ -1,7 +1,7 @@
 ---
-id: tabspro-change-tab-and-continue-execution
-title: Tabs Pro Change Tab And Continue Execution
-sidebar_label: Tabs Pro Change Tab And Continue Execution
+id: change-tab-and-continue-execution
+title: Change Tab And Continue Execution
+sidebar_label: Change Tab And Continue Execution
 ---
 
 > Audience: [`Citizen Developer`](/audience.md#citizen-developers)
@@ -14,8 +14,8 @@ This action allows you to change the active tab in a Tabs Pro module on a Form o
 
 | Action | Purpose |
 | -- | -- |
-| Tabs Pro Change Tab And Continue Execution | Changes the specified Tabs Pro module to the specified tab and then continues to subsequent actions on the button and submission. |
-| Tabs Pro Change Tab And Stop Execution | Changes the specified Tabs Pro module to the specified tab and then stops further execution of both subsequent actions and HTTP Post submission. |
+| Tabs Change Tab And Continue Execution | Changes the specified Tabs module to the specified tab and then continues to subsequent actions on the button and submission. |
+| Tabs Change Tab And Stop Execution | Changes the specified Tabs module to the specified tab and then stops further execution of both subsequent actions and HTTP Post submission. |
 
 ## `Input Parameter Reference`
 

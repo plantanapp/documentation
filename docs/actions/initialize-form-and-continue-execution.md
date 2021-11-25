@@ -1,7 +1,7 @@
 ---
-id: initialize-action-form-and-stop-execution
-title: Initialize Action Form And Stop Execution
-sidebar_label: Initialize Action Form And Stop Execution
+id: initialize-form-and-continue-execution
+title: Initialize Form And Continue Execution
+sidebar_label: Initialize Form And Continue Execution
 ---
 
 > Audience: [`Low-code Engineers`](/audience.md#low-code-engineers)
@@ -20,8 +20,8 @@ The page will not be refreshed when a Form is initialized.
 
 | Action | Purpose |
 | -- | -- |
-| Initialize Action Form And Continue Execution | Initializes the specified Action Form and then continues to subsequent actions on the button and submission. |
-| Initialize Action Form And Stop Execution | Opens the specified Action Form and then stops further execution of both subsequent actions and HTTP post submission. |
+| Initialize Form And Continue Execution | Initializes the specified Form and then continues to subsequent actions on the button and submission. |
+| Initialize Form And Stop Execution | Opens the specified Form and then stops further execution of both subsequent actions and HTTP post submission. |
 
 ## `Typical Use Cases`
 

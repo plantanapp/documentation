@@ -1,7 +1,7 @@
 ---
-id: filter-action-grid
-title: Filter Action Grid
-sidebar_label: Filter Action Grid
+id: filter-listing
+title: Filter Listing
+sidebar_label: Filter Listing
 ---
 
 > Audience: [`Citizen Developers`](/audience.md#citizen-developers)

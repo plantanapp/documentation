@@ -1,10 +1,10 @@
 ---
-id: open-action-form-popup-and-stop-execution
+id: open-form-popup-and-stop-execution
 title: Open Form Popup And Stop Execution
-sidebar_label: Open Form Popup and Continue Execution
+sidebar_label: Open Form Popup And Stop Execution
 ---
 
-> Audience: [`Citizen Developers`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developers`](/audience.md#citizen-developers)
 >
 > Skill Prerequisites: `Using Form Builder`
 
@@ -14,8 +14,8 @@ This action allows you to open a specified Action Form from the same page in a p
 
 | Action | Purpose |
 | -- | -- |
-| Open Action Form Popup And Continue Execution | Opens the specified Action Form and then continues to subsequent actions on the button and submission. |
-| Open Action Form Popup And Stop Execution | Opens the specified Action Form and then stops further execution of both subsequent actions and HTTP post submission. |
+| Open Form Popup And Continue Execution | Opens the specified Form and then continues to subsequent actions on the button and submission. |
+| Open Form Popup And Stop Execution | Opens the specified Form and then stops further execution of both subsequent actions and HTTP post submission. |
 
 ## `Input Parameter Reference`
 

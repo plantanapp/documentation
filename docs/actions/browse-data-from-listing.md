@@ -1,11 +1,11 @@
 ---
-id: browse-data-from-action-grid
-title: Browse Data from Action Grid
-sidebar_label: Browse Data from Action Grid
+id: browse-data-from-listing
+title: Browse Data from Listing
+sidebar_label: Browse Data from Listing
 ---
 
 
-Opens a popup with Action Grid to select a row and pull it into form fields.
+Opens a popup with a Listing to select a row and pull it into form fields.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

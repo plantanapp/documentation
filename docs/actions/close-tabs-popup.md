@@ -1,10 +1,10 @@
 ---
-id: close-tabs-pro-popup
+id: close-tabs-popup
 title: Close Tabs Popup
 sidebar_label: Close Tabs Popup
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+> Audience: [`Citizen Developer`](audience.md#citizen-developers)
 > 
 > Skill Prerequisites: `Using Form Builder`
 
@@ -14,8 +14,8 @@ This action allows you to manually trigger a close Tabs Pro action for the speci
 
 | Action | Purpose |
 | ------ | ------- |
-| Close Tabs Pro Popup And Continue Execution | Closes the specified Tabs Pro popup and then continues to subsequent actions on the button and submission. |
-| Close Tabs Pro Popup And Stop Execution | Closes the specified Tabs Pro popup and then stops further execution of both subsequent actions and HTTP Post submission. |
+| Close Tabs Popup And Continue Execution | Closes the specified Tabs Pro popup and then continues to subsequent actions on the button and submission. |
+| Close Tabs Popup And Stop Execution | Closes the specified Tabs Pro popup and then stops further execution of both subsequent actions and HTTP Post submission. |
 
 ## `Input Parameter Reference`
 
