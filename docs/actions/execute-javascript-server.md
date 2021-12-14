@@ -1,19 +1,23 @@
 ---
 id: execute-javascript-server
 title: Execute JavaScript (Server-side)
-sidebar_label: Execute JavaScript (Server)
+sidebar_label: Execute JavaScript (Server-Side)
 ---
 
 > Audience: [`Low-Code Engineer`](/audience.md#low-code-engineers)
 >
 > Skill Prerequisites: `JavaScript`
 
-Executes JavaScript code on the server side, optionally returning variables. This action is based on the [Microsoft/ClearScript](https://github.com/Microsoft/ClearScript) library that uses the [Google V8](https://v8.dev/) engine. It is a pure JavaScript framework, so there won't be access to the window or the document object. Other than that, it brings the full flexibility of JavaScript, plus some .net helpers to help write better code, faster.
+Executes JavaScript code on the server-side, optionally returning variables. This action is based on the [Microsoft/ClearScript](https://github.com/Microsoft/ClearScript) library that uses the [Google V8](https://v8.dev/) engine. It is a pure JavaScript framework, so there won't be access to the window or the document object. Other than that, it brings the full flexibility of JavaScript, plus some .net helpers to help write better code, faster.
 
-All tokens that exist in the Execution Context when this action runs will be available inside the script as local variables. Note that JavaScript is a case-sensitive language, so variables names will be in the exact case as the token name.
+All tokens that exist in the Execution Context when this action runs will be available inside the script as local variables. Note that JavaScript is a case-sensitive language, so variable names will be in the exact case as the token name.
 
 :::note
-This action requires Microsoft Visual C++ Redistributable for Visual Studio 2019 be installed on the server to run properly. Download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+This action requires minimum Microsoft Visual C++ Redistributable for Visual Studio 2019 or latest be installed on the server to run properly. Download it from [Visual Studio Downloads](https://visualstudio.microsoft.com/downloads/).
+:::
+
+:::note
+IIS App Pool runtime (platform) needs to run under **64 bits** for this action to run. Otherwise the execution will result in an error. 
 :::
 
 ## `Input Parameter Reference`
