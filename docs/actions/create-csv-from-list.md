@@ -1,7 +1,7 @@
 ---
-id: serialize-to-csv
-title: Serialize to CSV
-sidebar_label: Serialize to CSV
+id: create-csv-from-list
+title: Create CSV from List
+sidebar_label: Create CSV from List
 ---
 
 

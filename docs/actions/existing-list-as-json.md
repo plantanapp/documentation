@@ -1,13 +1,13 @@
 ---
-id: json-entity-list
-title: JSON Entity List
-sidebar_label: JSON Entity List
+id: existing-list-as-json
+title: Existing List as JSON
+sidebar_label: Existing List as JSON
 ---
 
 Available in: APIs.
 
 
-Outputs all entities from the context that matches specified criteria.
+Outputs all list entries from the context that matches specified criteria.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

@@ -1,7 +1,7 @@
 ---
-id: get-sheet-names-from-excel-file-xlsx
-title: Get Sheet Names From Excel File XLSX
-sidebar_label: Get Sheet Names From Excel File XLSX
+id: get-excel-sheet-names
+title: Get Excel Sheet Names
+sidebar_label: Get Excel Sheet Names
 ---
 
 

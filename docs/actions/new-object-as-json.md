@@ -1,7 +1,7 @@
 ---
-id: json-object
-title: JSON Object
-sidebar_label: JSON Object
+id: new-object-as-json
+title: New Object as JSON
+sidebar_label: New Object as JSON
 ---
 
 

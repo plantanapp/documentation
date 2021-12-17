@@ -4,6 +4,8 @@ title: Advanced Search
 sidebar_label: Advanced Search
 ---
 
+Not available in: APIs.
+
 
 This action generates a search results url for SearchBoost. You can then use the url to redirect the user or/and use it how you see fit. The seach instance and results modules must be setup in advance.
 

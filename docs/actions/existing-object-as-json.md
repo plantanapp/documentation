@@ -1,13 +1,13 @@
 ---
-id: json-entity
-title: JSON Entity
-sidebar_label: JSON Entity
+id: existing-object-as-json
+title: Existing Object as JSON
+sidebar_label: Existing Object as JSON
 ---
 
 Available in: APIs.
 
 
-Outputs the first entity from the context that matches specified criteria.
+Outputs the first entry from the context list that matches specified criteria.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

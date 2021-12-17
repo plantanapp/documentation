@@ -24,7 +24,7 @@ Uses [wkhtmltopdf](https://wkhtmltopdf.org/) open source to generate PDF from HT
 
 | Action Name                                       | Description                                                                                       |
 | ------------------------------------------------- | ------------------------------------------------------------------------------------------------- |
-| [Apply Tokens](/actions/apply-tokens.md)       | Returns the HTML code that generates the PDF.|
+| [Create/Update Tokens](/actions/create-update-tokens.md)       | Returns the HTML code that generates the PDF.|
 | [Run SQL Query](/actions/run-sql-query.md)         | Execute a SQL query that returns one or more variables so that they can be used in the HTML code. |
 | [Server Request](/actions/server-request.md) | Perform a HTTP request that returns one or more variables that can be used in the HTML code.     |
 

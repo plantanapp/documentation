@@ -1,11 +1,11 @@
 ---
-id: serialize-to-excel-from-text-xslx
-title: Serialize to Excel from Text XSLX
-sidebar_label: Serialize to Excel from Text XSLX
+id: create-excel-from-csv-text
+title: Create Excel from CSV Text
+sidebar_label: Create Excel from CSV Text
 ---
 
 
-Serializes a list of entities from the context into Excel format. Requires XLSX.
+Serializes a CSV text into Excel format. Requires XLSX.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

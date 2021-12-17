@@ -1,7 +1,7 @@
 ---
-id: apply-tokens
-title: Apply Tokens
-sidebar_label: Apply Tokens
+id: create-update-tokens
+title: Create/Update Tokens
+sidebar_label: Create/Update Tokens
 ---
 
 > Audience: [`Citizen Developer`](/audience.md#citizen-developers)
@@ -12,13 +12,8 @@ This action executes multiple expressions and applies tokens on those expression
 
 ## `Typical Use Cases`
 
-* Execute a token expression (a mix of tokens and/or free text) that returns an other token expression that needs to go thru the same process
+* Execute a token expression (a mix of tokens and/or free text) that returns another token expression that needs to go thru the same process
 * Apply tokens inside a text from various sources (eg: other actions, form fields, API input parameters)
-
-## `Don't use it to`
-
-* Concatenate 2 tokens - Use [Inject Data](/actions/inject-data.md)
-* Overwrite a token - Use [Inject Data](/actions/inject-data.md)
 
 ## `Related Actions`
 
@@ -32,28 +27,26 @@ This action executes multiple expressions and applies tokens on those expression
 
 | Parameter | Description | Supports Tokens | Default | Required |
 | --------- | ----------- | --------------- | ------- | -------- |
-| Token -> Token Expression | The tokens and/or text (expression) you want to be evaluated or reevaluated | Yes | `empty string` | No |
+| Token Value | The tokens and/or text (expression) you want to be evaluated or reevaluated | Yes | `empty string` | No |
 | Number of Recursions | Specify how many times to apply tokenization. This is useful when tokens contain other tokens that also need to be replaced | Yes | 1 | No |
 
 ## `Output Parameters Reference`
 
 | Parameter | Description |
 | --------- | ----------- |
-| Token -> Store as | The token name(s) in which the response is to be stored for further use. |
+| Token Name | The token name(s) in which the response is to be stored for further use. |
 
 ## `Security`
 
 **Note that this presents a security risk when the expression has content from untrusted sources.**
 
-Tokens are powerful and can execute code that is not meant for end users to execute. This may result in unwanted behaviors or security breaches. Eg: `[User:Email(UserId=1)]` will provide the email of that user so **expressions that come directly from a user should not be used in this action**. Consider using only expressions the system manages and end users can't modify.
+Tokens are powerful and can execute code that is not meant for end-users to execute. This may result in unwanted behaviors or security breaches. Eg: `[User:Email(UserId=1)]` will provide the email of that user so **expressions that come directly from a user should not be used in this action**. Consider using only expressions the system manages and end-users can't modify.
 
 ## `What is recursion and when to use it`
 
-Recursion refers of how many times we should try to check for tokens in the expression and try to replace them.
+Recursion refers to how many times we should try to check for tokens in the expression and try to replace them.
 
-If recursion is set to 1 then this action will work as [Execute Token](/actions/execute-token.md) action. Will assign the Expression to a token.
-
-There are situation ([like example number 2](#2-apply-tokens-inside-a-template-recursion-1)) where you save a template (let's say email template). Some of the content has tokens inside to replace the First Name and Last Name. At this point you only have one copy of the template and when you need to deliver that email you only have to replace the tokens.
+There are situations ([like example number 2](#2-apply-tokens-inside-a-template-recursion-1)) where you save a template (let's say email template). Some of the content has tokens inside to replace the First Name and Last Name. At this point you only have one copy of the template and when you need to deliver that email you only have to replace the tokens.
 
 Eg. Email Template: Hi, `[User:FirstName] [User:LastName]`. Please contact me!
 
