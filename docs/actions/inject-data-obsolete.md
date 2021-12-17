@@ -19,7 +19,7 @@ An action that lets you create new tokens into the current execution context. Th
 
 ## `Don't use it to`
 
-- Execute the same token multiple times, in case the token contains other tokens inside - use [Apply Tokens](/actions/apply-tokens.md) instead
+- Execute the same token multiple times, in case the token contains other tokens inside - use [Create/Update Tokens](/docs/actions/create-update-tokens) instead
 - Create a token that is used in another execution context - store the data in a hidden field, cookies or server session instead
 - Store data in [Entities](/entities.md)
 

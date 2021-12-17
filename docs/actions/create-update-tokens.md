@@ -15,11 +15,6 @@ This action executes multiple expressions and applies tokens on those expression
 * Execute a token expression (a mix of tokens and/or free text) that returns another token expression that needs to go thru the same process
 * Apply tokens inside a text from various sources (eg: other actions, form fields, API input parameters)
 
-## `Don't use it to`
-
-* Concatenate 2 tokens - Use [Inject Data](/actions/inject-data.md)
-* Overwrite a token - Use [Inject Data](/actions/inject-data.md)
-
 ## `Related Actions`
 
 | Action Name | Description |
@@ -50,8 +45,6 @@ Tokens are powerful and can execute code that is not meant for end-users to exec
 ## `What is recursion and when to use it`
 
 Recursion refers to how many times we should try to check for tokens in the expression and try to replace them.
-
-If recursion is set to 1 then this action will work as [Execute Token](/actions/execute-token.md) action. Will assign the Expression to a token.
 
 There are situations ([like example number 2](#2-apply-tokens-inside-a-template-recursion-1)) where you save a template (let's say email template). Some of the content has tokens inside to replace the First Name and Last Name. At this point you only have one copy of the template and when you need to deliver that email you only have to replace the tokens.
 
