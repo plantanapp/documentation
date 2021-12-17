@@ -1,16 +1,16 @@
 ---
-id: serialize-to-excel-from-entity-list-xslx
-title: Serialize to Excel from entity list XSLX
-sidebar_label: Serialize to Excel from entity list XSLX
+id: create-excel-from-list
+title: Create Excel from List
+sidebar_label: Create Excel from List
 ---
 
 
-Serializes a list of entities from the context into Excel format. Requires XLSX.
+Serializes a list from the context into Excel format. Requires XLSX.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Entity Name | Determines which entities are serialized. Can contain My Tokens. | Yes | None |
+| List Name | Determines which list entries are serialized. Can contain My Tokens. | Yes | None |
 | Fields | Provide a list of fields to serialize. | No | None |
 | Include All Fields | Or select this option to serialize all fields. | No | None |
 | Remove Field Names | Remove the field names from the serialization. | No | None |

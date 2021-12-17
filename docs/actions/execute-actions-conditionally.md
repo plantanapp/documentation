@@ -1,7 +1,7 @@
 ---
-id: execute-conditionally
-title: Execute Conditionally
-sidebar_label: Execute Conditionally
+id: execute-actions-conditionally
+title: Execute Actions Conditionally
+sidebar_label: Execute Actions Conditionally
 ---
 
 Available in: PlantAnApp.

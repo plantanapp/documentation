@@ -1,7 +1,7 @@
 ---
-id: serialize-to-excel-from-sql
-title: Serialize to Excel from SQL
-sidebar_label: Serialize to Excel from SQL
+id: create-excel-from-sql-query
+title: Create Excel from SQL query 
+sidebar_label: Create Excel from SQL query 
 ---
 
 

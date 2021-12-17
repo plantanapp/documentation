@@ -4,6 +4,8 @@ title: Reindex Search Boost Content
 sidebar_label: Reindex Search Boost Content
 ---
 
+Not available in: APIs.
+
 
 This job reindexes the selected search instance.
 
