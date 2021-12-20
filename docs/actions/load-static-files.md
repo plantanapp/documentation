@@ -4,6 +4,8 @@ title: Load Static Files
 sidebar_label: Load Static Files
 ---
 
+Not available in: APIs.
+
 
 Load custom javascript or CSS file by using it's relative or absolute URL.
 

@@ -4,10 +4,11 @@ title: Secure Input Option on Text Based Fields
 sidebar_label: Secure Input
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)<br/>
+> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
+>
 > Skill Prerequisites: `HTML`
 
-Action Form 5.9.x and Plant an App 1.9.x introduces a new setting for text input fields to help secure your application against XSS attacks. This setting appears as a checkbox at the bottom of the field's general settings, directly above **Bind Expressions** and is labeled **Secure Input**. It appears on the fields listed below.
+Action Form 5.9.x and Plant an App 1.9.x introduce a new setting for text input fields to help secure your application against XSS attacks. This setting appears as a checkbox at the bottom of the field's general settings, directly above **Bind Expressions** and is labeled **Secure Input**. It appears on the fields listed below.
 
 ## `Fields Impacted`
 
@@ -54,4 +55,4 @@ When deciding whether to disable the **Secure Input** option you should consider
 
 1. Is the field on a form located on a public page, or a page where users can create an account that does not get vetted before approval? If so, **do not disable Secure Input**.
 2. Is the field used to allow users to input complex formatted HTML or javascript? If the field is being used only by trusted users, then consider disabling Secure Input.
-3. If you decide to disable Secure Input, consider adding using the [Sanitize HTML](../../actions/sanitize-html) action on your submit buttons to have more granular control over how the input will be processed.
+3. If you decide to disable Secure Input, consider adding using the [Sanitize HTML](/actions/sanitize-html.md) action on your submit buttons to have more granular control over how the input will be processed.
