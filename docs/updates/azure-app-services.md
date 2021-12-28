@@ -8,8 +8,6 @@ sidebar_label: Azure App Services
 > 
 > Skill Prerequisites: `Azure App Services`
 
---Action Description Here --
-
 ## `Steps for updating on Azure App Services `
 
 If you try to upgrade PlantAnApp when hosted on Azure AppService make sure you take the following steps:
