@@ -1,7 +1,7 @@
 ---
 id: upgrading-dnnsharp-to-plant-an-app
-title: Upgrading: DNNSharp tools to Plant an App
-sidebar_label: Upgrading: DNNSharp tools to Plant an App
+title: Upgrading - DNNSharp tools to Plant an App
+sidebar_label: Upgrading - DNNSharp tools to Plant an App
 ---
 
 # Migrate/Upgrade document
