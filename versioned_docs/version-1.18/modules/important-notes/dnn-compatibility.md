@@ -56,3 +56,15 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 1. First, you need to update all DNN Sharp modules to 5.9.x or higher or Plant an App 1.9.x or higher. If you do not upgrade DNN Sharp/Plant an App first, you may experience issues as DNN 9.7+ has breaking changes that are not compatible with prior versions of our products.
 2. Before upgrading the DNN to a version newer or equal to DNN 9.6+, you need to install the .NET Framework 4.7.2 (or 4.8).
 3. You are now ready to upgrade DNN to versions above 9.6.2.
+
+### `If You want to go higher`
+
+1. First, you need to upgrade to DNN 9.8.1 (**Only if you already have DNNSharp modules newer or equal to 5.9.x / Plant an App 1.9.x**)
+2. Update all DNNSharp modules to the latest 5.11.x, or Plant an App 1.11.x.
+    :::note
+    If you use 3rd party modules, please update them to the latest versions before continuing with the upgrade process:::
+3. Update all DNNSharp modules to the latest 5.12.x, or Plant an App 1.12.x
+4. Update all DNNSharp modules to the latest 5.13.x, or Plant an App 1.13.x
+5. Update all DNNSharp modules to the latest 5.16.x, or Plant an App 1.16.x
+6. You are now able to upgrade DNN to versions above 9.8.1 (**We recommend DNN 9.9.1 or DNN 9.10.1**)
+7. You are now able to upgrade DNNSharp modules up to 5.18.x, or Plant an App 1.18.x (*We always recommend our latest versions*)
