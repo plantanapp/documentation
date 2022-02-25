@@ -8,7 +8,7 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 
 ### `General Advice`
 
-* You may find additional helpful information on our [DNN Compatibility](/modules/important-notes/dnn-compatibility.md) page.
+* You may find additional helpful information on our [DNN Compatibility](/important-notes/dnn-compatibility.md) page.
 * Best practice - perform the upgrade on a clone to encounter and resolve issues without impacting your production site
     * Clone the site
     * Upgrade the clone per instructions
