@@ -5,7 +5,7 @@ sidebar_label: Execute Token (Obsolete)
 ---
 
 
-Executes a token. This is useful only with My Tokens, where tokens can contain business logic that generates and saves data.
+OBSOLETE - This action has been marked as obsolete. Consider using Context &gt; Create/Update Token instead. Executes a token. This is useful only with My Tokens, where tokens can contain business logic that generates and saves data.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

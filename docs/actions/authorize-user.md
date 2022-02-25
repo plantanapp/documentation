@@ -4,25 +4,9 @@ title: Authorize User
 sidebar_label: Authorize User
 ---
 
-> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
->
-> Skill Prerequisites: `User Management`
 
-This action Authorizes users who currently have a status of Unauthorized in the user database. The users must be loaded into the current context when the action is called. By default, this will be the currently logged in user unless a different user or list of users has been loaded into context. This has the same result as authorizing a user through the `Users` option on the persona bar.
+Authorizes all users loaded in current context (by default the current user).
 
-## `Typical Use Cases`
-
-- Authorize a user after they have confirmed their email address.
-- Use in a custom User Management Grid to Authorize multiple selected users.
-
-## `Related Actions`
-
-| Action Name | Description |
-| -- | -- |
-| [Load User](/actions/load-user.md) | Use this action to load the user(s) you wish to authorize. |
-| [Load Users From SQL](/actions/load-users-from-sql.md) | Use this action to load a user or users into context by running a query that returns a list of the User IDs, Emails, or user names of the user(s) you wish to authorize. |
-| [Unauthorize User](/actions/unauthorize-user.md) | If you need to Unauthorize users, use this action instead. |
-
-## `Input Parameter Reference`
-
-Since this action acts on users that have been loaded into the hidden Users Context Entity, it only has [the common parameters for all actions listed here](/actions/common-parameters.md).
+## Parameter Reference
+| Parameter | Description | Supports Tokens | Default |
+| -- | -- | -- | -- |
