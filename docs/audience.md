@@ -89,7 +89,7 @@ Extending the platform is achieved by traditional software engineers. Plant an A
 
 We understand the passion for code and we do not want to take that away.
 
-A final note. Software development teams that are not native to .NET prefer to extend the platform through Microservices. That is, build the new functionality in other languages, such as Python or Java, then expose it as an API that can be consumed by Citizen Developers through the [Server Request](/Actions/server-request.md) action or other HTTP based actions and data sources.
+A final note. Software development teams that are not native to .NET prefer to extend the platform through Microservices. That is, build the new functionality in other languages, such as Python or Java, then expose it as an API that can be consumed by Citizen Developers through the [Server Request](/actions/server-request.md) action or other HTTP based actions and data sources.
 
 Skills: `C#`, `Razor`, `HTML/CSS`, `JavaScript`, `Angular`, `IoC`, `Dependency Injection`
 
@@ -106,7 +106,7 @@ Examples of activities:
 - Implement new data sources for dropdowns, so they can be connected to data that lives in a different format on external systems
 - Implement new validation rules that can be used on inputs in places such as forms or APIs to ensure the integrity of data
 - Implement new data sources for the search engine to bring unified results from external systems as well
-- Write specific integration actions to save the hassle of Citizen Developers having to work with low-level actions such as the [Server Request](/Actions/server-request.md)
+- Write specific integration actions to save the hassle of Citizen Developers having to work with low-level actions such as the [Server Request](/actions/server-request.md)
 - Create new templates for data visualization in listing, detail or dashboard views
 - Implement new formatters that define how a specific field displays across various screens, such as inside a listing
 
