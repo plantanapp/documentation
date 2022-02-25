@@ -53,7 +53,7 @@ Examples of activities:
 - Implement the permission scheme
 - Create application screens with forms, grids, dashboards and other visualizations
 - Implement business processes through [Workflows](/workflows/wf-overview.md) and configure most of the Actions
-- Integrate with external systems by using the API Builder and the [Server Request](/Actions/server-request.md) action
+- Integrate with external systems by using the API Builder and the [Server Request ](/actions/server-request.md) action
 - Build Dashboards
   
 ## `Low-code Engineers`
@@ -74,7 +74,7 @@ Typical personas:
 
 Examples of activities:
 
-- Configure [Run SQL](/Actions/run-sql-query) actions to perform advanced SQL queries
+- Configure [Run SQL](/actions/run-sql-query.md) actions to perform advanced SQL queries
 - Implement C# scripts for custom logic and algorithms
 - Implement new visualization templates with Razor, HTML, CSS and sometimes Angular
 - Integrate with external systems at the database layer
