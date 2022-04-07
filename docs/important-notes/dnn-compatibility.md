@@ -24,9 +24,9 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 | ----------- | ------------------------ | --------------------------- | ----- |
-| Above 9.10.1 | - | - | Not yet officially supported. |
+| 9.10.2 | 1.18.x | 5.18.x | DNN 9.10.2 is the recommended version. Requires SQL Server 2012 or higher. |
 | 9.10.1 | 1.16.x | 5.16.x |  |
-| 9.9.1 | 1.13.x | 5.13.x | DNN 9.9.1 is the recommended version. Requires SQL Server 2012 or higher. |
+| 9.9.1 | 1.13.x | 5.13.x |  |
 | 9.8.1 | 1.9.x | 5.9.x |  |
 | **9.7.2** | **1.9.x** | **5.9.x** |  |
 | 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower |
@@ -66,5 +66,6 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 3. Update all DNNSharp modules to the latest 5.12.x, or Plant an App 1.12.x
 4. Update all DNNSharp modules to the latest 5.13.x, or Plant an App 1.13.x
 5. Update all DNNSharp modules to the latest 5.16.x, or Plant an App 1.16.x
-6. You are now able to upgrade DNN to versions above 9.8.1 (**We recommend DNN 9.9.1 or DNN 9.10.1**)
-7. You are now able to upgrade DNNSharp modules up to 5.18.x, or Plant an App 1.18.x (*We always recommend our latest versions*)
+6. You are now able to upgrade DNN to versions above 9.8.1 (**We recommend DNN 9.10.2**)
+7. You are now able to upgrade DNNSharp modules up to 5.18.x, or Plant an App 1.18.x.
+8. You are now able to upgrade DNNSharp modules up to 5.19.x, or Plant an App 1.19.x (*We always recommend our latest versions*)
