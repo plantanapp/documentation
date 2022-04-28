@@ -26,11 +26,15 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 | ----------- | ------------------------ | --------------------------- | ----- |
 | 9.10.2 | 1.18.x | 5.18.x | DNN 9.10.2 is the recommended version. Requires SQL Server 2012 or higher. |
 | 9.10.1 | 1.16.x | 5.16.x |  |
-| 9.9.1 | 1.13.x | 5.13.x |  |
+| **9.9.1** | 1.13.x | 5.13.x | Minimum supported DNN version. |
+
+
+| &nbsp; | &nbsp; | &nbsp; | Older versions - Upgrade path only |
+| ----------- | ------------------------ | --------------------------- | ----- |
 | 9.8.1 | 1.9.x | 5.9.x |  |
 | **9.7.2** | **1.9.x** | **5.9.x** |  |
 | 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower |
-| **9.6.1** | **1.6.x** | **5.6.x** | Minimum supported DNN version. Requires SQL Server 2008 or higher. |
+| **9.6.1** | **1.6.x** | **5.6.x** | Starting with DNN 9.6.1, SQL Server 2008 or higher is reqiured. |
 | Below 9.6.1 |  |  | Standard support no longer covers DNN Versions 9.6.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote. |
 
 ## `Important Notes About Upgrade Paths`
