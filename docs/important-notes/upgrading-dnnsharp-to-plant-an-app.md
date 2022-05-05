@@ -51,10 +51,9 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 * [ ] Install the AppBuilder version 1.12.91, which can be downloaded from our [Downloads](https://console.plantanapp.com/Downloads) page.
 * [ ] Create an administrative page (typically named Configuration).
 * [ ] Add an AppBuilder module to the Configuration page. This module is your primary way to configure Plant An App.
-* [ ] If prompted, allow App Builder to install dependencies.
+* [ ] If prompted, please allow App Builder to install dependencies. If not, please open the **Updates** tab(directly from the Configuration page) and click on the **Install dependencies** button. 
 * [ ] Upgrade the DNN to 9.9.1.
 * [ ] On the Configuration page, use the Updates feature to update to successive versions (1.13, 1.14, ...) until you are at the current version.
-
 
 ### `Known Incompatibilities`
 
