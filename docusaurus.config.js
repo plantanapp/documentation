@@ -3,6 +3,7 @@ module.exports = {
   tagline: 'Low Code Fundamentals Course is now Available',
   url: 'https://learn.plantanapp.com',
   baseUrl: '/',
+  trailingSlash: true,
   favicon: 'img/pap-logo.png',
   organizationName: 'plantanapp', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
@@ -121,8 +122,7 @@ module.exports = {
         },
         sitemap :  {
           changefreq: 'weekly',
-          priority: 0.5,
-          trailingSlash: false,
+          priority: 0.5
         },
       },
     ],
