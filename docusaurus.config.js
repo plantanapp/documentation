@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Get started with Plant an App',
+  title: 'Get started',
   tagline: 'Low Code Fundamentals Course is now Available',
   url: 'https://learn.plantanapp.com',
   baseUrl: '/',

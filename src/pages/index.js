@@ -80,7 +80,7 @@ function Home() {
           </div>
         </div>
       </header>
-      <div style={{ textAlign: "center", backgroundColor: "#303846", color: "white" }}>
+      <div style={{ textAlign: "center", display: "none", backgroundColor: "#303846", color: "white" }}>
         Leave us a Capterra review and earn a $20 giftcard! Limited to first 100 reviewers.
         <button className={classnames(styles.buttonRev, styles.buttonX)} onClick={event => window.open("https://review.capterra.com/Feedback-Plant-an-App-207065-3163062598", "_blank")}>Review now</button>
 
