@@ -7,6 +7,16 @@ module.exports = {
   organizationName: 'plantanapp', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
+     metadata: [
+       {
+         name: 'keywords', 
+         content: 'Low Code Course'
+       },
+       {
+         name: 'description', 
+         content: 'The only app development platform that gives IT teams the speed of low-code without compromising the power and flexibility of custom coding.'
+       }
+     ],
     navbar: {
       title: 'Plant An App',
       logo: {
