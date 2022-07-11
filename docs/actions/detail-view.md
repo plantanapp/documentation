@@ -5,7 +5,7 @@ sidebar_label: Detail View
 ---
 
 
-Expands an item to show all the fields, including the fields available on Detail View Only. This action is not supported by Legacy view.
+Expands an item to show all the fields, including the fields available on Detail View. This action is not supported by Legacy view.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

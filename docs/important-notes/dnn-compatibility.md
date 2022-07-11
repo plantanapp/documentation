@@ -24,13 +24,12 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 | ----------- | ------------------------ | --------------------------- | ----- |
-| 9.10.2 | 1.18.x | 5.18.x | DNN 9.10.2 is the recommended version. Requires SQL Server 2012 or higher. |
-| 9.10.1 | 1.16.x | 5.16.x |  |
+| 9.10.2 | 1.18.x | 5.18.x | DNN 9.10.2 is the recommended version.<br/>Requires SQL Server 2012 or higher.<br/>DNN 9.9.0 or higher is required for 1.20.x / 5.20.x |
+| 9.10.1 | 1.16.x | 5.16.x | DNN 9.6.1 or higher is required for 1.16.x / 5.16.x |
 | **9.9.1** | 1.13.x | 5.13.x | Minimum supported DNN version. |
 
-
-| &nbsp; | &nbsp; | &nbsp; | Older versions - Upgrade path only |
-| ----------- | ------------------------ | --------------------------- | ----- |
+|   |   |   | Older versions - Upgrade path only |
+| --- | --- | --- | ---------------------------------- |
 | 9.8.1 | 1.9.x | 5.9.x |  |
 | **9.7.2** | **1.9.x** | **5.9.x** |  |
 | 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower |
@@ -48,28 +47,4 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
     :::note
     If you use our URL Adapter module, please do not forget to disable it before the upgrade process begins. This way, you will get rid of any conflicts that may occur during the upgrade process, due to various module settings. You will be able to enable the module after the entire upgrade process is complete.
     :::
-
-### `If You have DNN 9.3.1 or Lower Installed`
-
-1. Make sure all your **DNN Sharp modules are upgraded to the latest 5.0.x version** before upgrading DNN or to DNN Sharp 5.1+ modules. Even if you already have a 5.0 version of a module installed, confirm it is the last 5.0 version that was released for the module. If you aren't sure you have the latest version of a 5.0.x module, [please contact us](https://www.dnnsharp.com/helpcenter).
-2. Upgrade all the DNN Sharp modules to the latest 5.1.x version.
-3. Upgrade to DNN 9.3.2. **DO NOT skip upgrading to 9.3.2**. It’s a required upgrade for subsequent versions of DNN to work correctly.
-
-### `If You have DNN 9.3.2 to 9.6.2 Installed`
-
-1. First, you need to update all DNN Sharp modules to 5.9.x or higher or Plant an App 1.9.x or higher. If you do not upgrade DNN Sharp/Plant an App first, you may experience issues as DNN 9.7+ has breaking changes that are not compatible with prior versions of our products.
-2. Before upgrading the DNN to a version newer or equal to DNN 9.6+, you need to install the .NET Framework 4.7.2 (or 4.8).
-3. You are now ready to upgrade DNN to versions above 9.6.2.
-
-### `If You want to go higher`
-
-1. First, you need to upgrade to DNN 9.8.1 (**Only if you already have DNNSharp modules newer or equal to 5.9.x / Plant an App 1.9.x**)
-2. Update all DNNSharp modules to the latest 5.11.x, or Plant an App 1.11.x.
-    :::note
-    If you use 3rd party modules, please update them to the latest versions before continuing with the upgrade process:::
-3. Update all DNNSharp modules to the latest 5.12.x, or Plant an App 1.12.x
-4. Update all DNNSharp modules to the latest 5.13.x, or Plant an App 1.13.x
-5. Update all DNNSharp modules to the latest 5.16.x, or Plant an App 1.16.x
-6. You are now able to upgrade DNN to versions above 9.8.1 (**We recommend DNN 9.10.2**)
-7. You are now able to upgrade DNNSharp modules up to 5.18.x, or Plant an App 1.18.x.
-8. You are now able to upgrade DNNSharp modules up to 5.19.x, or Plant an App 1.19.x (*We always recommend our latest versions*)
+3. Review and follow our [Migrate/Upgrade document](https://learn.plantanapp.com/docs/important-notes/upgrading-dnnsharp-to-plant-an-app).
