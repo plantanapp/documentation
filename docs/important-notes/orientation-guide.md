@@ -41,7 +41,7 @@ The Academy Portal provides links to introductory video (e.g. <em>[Getting Start
 
 The Low Code Fundamentals course is freely open available to everyone - simply register on the <a href="https://academy.plantanapp.com">Plant an App Academy portal</a> or click on the the `Getting Started` page button in your Plant an App configuration section.
 
-<img src="/img/config_menu_getting_started.png" alt="config_menu_getting_started.png">
+<img src="/img/config_menu_getting_started.png" alt="config_menu_getting_started.png"></img>
 
 ### `Low-Code Café`
 
@@ -62,7 +62,7 @@ You will also find the archive of recordings from [Low-Code Café](https://www.y
 
 Videos include full descriptions and timecodes with links, so you jump directly to the section you are interested in. The descriptions are also searchable within YouTube using the `Search Channel` feature (click on the magnifying glass icon next to the About tab to expand the Search Channel field ). `Subscribe` to get notified of the latest videos.
 
-<img src="/img/yt_channel.png" alt="yt_channel.png">
+<img src="/img/yt_channel.png" alt="yt_channel.png"></img>
 
 ### <a href="https://www.plantanapp.com/community/blog">`Plant an App Blog`</a>
 
@@ -86,7 +86,7 @@ When you are stuck or just wonder about the best way to proceed there are severa
 
 A support request can be raised by the registered contact for your Plant an App license through the Plant an App Console.
 
-<img src="/img/support_console.png" alt="support_console.png">
+<img src="/img/support_console.png" alt="support_console.png"></img>
 
 Your ticket will be handled by a member of our support team and all communication will remain private. Under the same section you can review your old tickets and reopen them if necessary.
 
