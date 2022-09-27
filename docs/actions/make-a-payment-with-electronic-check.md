@@ -4,29 +4,27 @@ title: Make a payment with Electronic Check
 sidebar_label: Make a payment with Electronic Check
 ---
 
+Available in: Form, Listing, APIs.
+
 
 Make a payment with Electronic Check. Authorization and Capture.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| API Login ID | Required. API Login ID and Transaction Key. These keys will authenticate requests to the payment gateway. | No | None |
-| Transaction Key | Required. API Login ID and Transaction Key. These keys will authenticate requests to the payment gateway. | No | None |
-| Credit Card Transaction Type | Credit Card Transaction Type. If the value submitted does not match a supported value, the transaction is rejected. If this field is not submitted or the value is blank, the payment gateway will process the transaction as an AUTH_CAPTURE. | No | None |
-| Go Live | Enable this option to switch to Live Mode. By default, unchecked, Test Mode, the transaction will be posted to the Authorize.Net's test server for developer accounts: https://test.authorize.net/gateway/transact.dll. | No | None |
-| Payment description | Tells what the transaction is about, for example a service name. This will appear in statements, receipts, etc. | No | None |
-| Transaction's currency | The list of accepted currency is in the AIM documentation. | No | None |
+| Bluefin Account Id | Required. Account Id and Api AccessKey. These keys will authenticate requests to the payment gateway. Can contain My Tokens. | Yes | None |
+| Bluefin API AccessKey | Required. Account Id and Api AccessKey. These keys will authenticate requests to the payment gateway. Can contain My Tokens. | Yes | None |
+| Go Live | Enable this option to switch to Live Mode. By default, unchecked, Test Mode, the transaction will be posted to the Bluefin's test server. | No | None |
 | Amount - total to pay | Amount - the total to pay in the selected currency. Can contain other context tokens, for example [TotalAmmount], and My Tokens. | Yes | None |
+| Electronic Check Transaction Type | Electronic Check Transaction Type. If the value submitted does not match a supported value, the transaction is rejected. If this field is not submitted or the value is blank, the payment gateway will process the transaction as an SALE. | No | None |
+| Token Id | Required for the CAPTURE transaction type. Is the transaction id of the AUTHORIZATION transaction that you want to capture. | No | None |
+| Payment description | Tells what the transaction is about, for example a service name. This will appear in statements, receipts, etc. | No | None |
 | Bank Aba Code | Bank Aba Code. The valid routing number of the customer's bank. | No | None |
 | Bank Aba Code | Bank Aba Code. The valid routing number of the customer's bank. | No | None |
 | Bank Acct Num | Bank Acct Num. The customer's valid bank account number | No | None |
 | Bank Acct Num | Bank Acct Num. The customer's valid bank account number | No | None |
 | Bank Acct Type | Bank Acct Type. The type of bank account. | No | None |
 | Bank Acct Type | Bank Acct Type. The type of bank account. | No | None |
-| Bank Name | Bank Name. The name of the bank that holds the customer's account. | No | None |
-| Bank Name | Bank Name. The name of the bank that holds the customer's account. | No | None |
-| Bank Acct Name | Bank Acct Name. The name associated with the bank account. | No | None |
-| Bank Acct Name | Bank Acct Name. The name associated with the bank account. | No | None |
 | eCheck Type | The type of electronic check transaction. | No | None |
 | Bank Check Number | Bank Check Number. The check number on the customer's paper check. Required only when x_echeck_type=ARC or BOC. | No | None |
 | Bank Check Number | Bank Check Number. The check number on the customer's paper check. Required only when x_echeck_type=ARC or BOC. | No | None |
@@ -34,8 +32,10 @@ Make a payment with Electronic Check. Authorization and Capture.
 | First Name | First Name | No | None |
 | Last Name | Last Name | No | None |
 | Last Name | Last Name | No | None |
-| Address | Address | No | None |
-| Address | Address | No | None |
+| Address 1 | Street address of the cardholder or bank account holder | No | None |
+| Address 1 | Street address of the cardholder or bank account holder | No | None |
+| Address 2 | Suite number or other qualifying part of the address. NOT sent to the processor | No | None |
+| Address 2 | Suite number or other qualifying part of the address. NOT sent to the processor | No | None |
 | City | City | No | None |
 | City | City | No | None |
 | State | State | No | None |
@@ -44,13 +44,12 @@ Make a payment with Electronic Check. Authorization and Capture.
 | Country | Country | No | None |
 | Postal Code | Postal Code | No | None |
 | Postal Code | Postal Code | No | None |
-| Fields | Select which extra data to pass to Authorize.Net. Map Authorize.Net's Fields to Action Form Fields or Expressions. Additional data to pass to Authorize.Net. | No | None |
-| Output Authorize.Net Response Code Token Name | Optionally provide a token name where to store the Authorize.Net Response Code generated by the transaction. For example, store Authorize.Net Response Code that is needed later in another action. | No | None |
-| Output Authorize.Net Response Reason Code Token Name | Optionally provide a token name where to store the Authorize.Net Response Reason Code generated by the transaction. For example, store Authorize.Net Response Reason Code that is needed later in another action. (useful purpose: send it to an admin) | No | None |
-| Output Authorize.Net Response Reason Text Token Name | Optionally provide a token name where to store the Authorize.Net Response Reason Text generated by the transaction. For example, store Authorize.Net Response Reason Text that is needed later in another action. | No | None |
-| Output Authorize.Net Response Authorization Code Token Name | Optionally provide a token name where to store the Authorize.Net Response Authorization Code generated by the transaction. The authorization or approval code. For example, store Authorize.Net Response Authorization Code that is needed later in another action. | No | None |
-| Output Authorize.Net Response Transaction ID Token Name | Optionally provide a token name where to store the Authorize.Net Response Transaction ID generated by the transaction. The payment gateway-assigned identification number for the transaction. For example, store Authorize.Net Response Transaction ID that is needed later in another action. | No | None |
+| Fields | Select which extra data to pass to Bluefin. Map Bluefin's Fields to Action Form Fields or Expressions. Additional data to pass to Bluefin. | No | None |
+| Output Bluefin Response Code Token Name | Optionally provide a token name where to store the Bluefin Response Code generated by the transaction. For example, store Bluefin Response Code that is needed later in another action. | No | None |
+| Output Bluefin Response Reason Code Token Name | Optionally provide a token name where to store the Bluefin Response Reason Code generated by the transaction. For example, store Bluefin Response Reason Code that is needed later in another action. (useful purpose: send it to an admin) | No | None |
+| Output Bluefin Response Authorization Code Token Name | Optionally provide a token name where to store the Bluefin Response Authorization Code generated by the transaction. The authorization or approval code. For example, store Bluefin Response Authorization Code that is needed later in another action. | No | None |
+| Output Bluefin Response Transaction ID Token Name | Optionally provide a token name where to store the Bluefin Response Transaction ID generated by the transaction. The payment gateway-assigned identification number for the transaction. For example, store Bluefin Response Transaction ID that is needed later in another action. | No | None |
+| Output the raw JSON Bluefin Response Token Name | Optionally provide a token name where to store the raw JSON output generated by the transaction. This can be parsed with 'Load Entities (JSON)', for advanced processing. | No | None |
 | On Approved | Define a list of actions that should execute when this action's result is Approved. | No | None |
 | On Declined | Define a list of actions that should execute when this action's result is Declined. | No | None |
 | On Error | Define a list of actions that should execute when this action's result is Error. | No | None |
-| On Held For Review | Define a list of actions that should execute when this action's result is Held For Review. | No | None |
