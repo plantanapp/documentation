@@ -33,7 +33,7 @@ The [DNN Sharp legacy documentation portal](https://docs.dnnsharp.com/) can also
 
 ### <a href="https://academy.plantanapp.com">`Plant an App Academy`</a>
 
-🔗<a href="https://academy.plantanapp.com">academy.plantanapp.com</a>
+🔗 **<a href="https://academy.plantanapp.com">academy.plantanapp.com</a>** 
 
 The Academy Portal provides links to introductory video (e.g. <em>[Getting Started with Plant an App](https://www.youtube.com/watch?v=zOGVh-zEsqs&list=PL67RlTAxc73ESnxFEw0i7AU7yMrmLYAyh)</em>) as well as our *Low Code Fundamentals* course.
 
@@ -41,7 +41,7 @@ The Academy Portal provides links to introductory video (e.g. <em>[Getting Start
 
 The Low Code Fundamentals course is freely open available to everyone - simply register on the <a href="https://academy.plantanapp.com">Plant an App Academy portal</a> or click on the the `Getting Started` page button in your Plant an App configuration section.
 
-<img src="/img/config_menu_getting_started.png" alt="config_menu_getting_started.png"></img>
+<img src="/img/config_menu_getting_started.png" alt="config_menu_getting_started.png">
 
 ### `Low-Code Café`
 
@@ -62,11 +62,11 @@ You will also find the archive of recordings from [Low-Code Café](https://www.y
 
 Videos include full descriptions and timecodes with links, so you jump directly to the section you are interested in. The descriptions are also searchable within YouTube using the `Search Channel` feature (click on the magnifying glass icon next to the About tab to expand the Search Channel field ). `Subscribe` to get notified of the latest videos.
 
-<img src="/img/yt_channel.png" alt="yt_channel.png"></img>
+<img src="/img/yt_channel.png" alt="yt_channel.png">
 
 ### <a href="https://www.plantanapp.com/community/blog">`Plant an App Blog`</a>
 
-🔗<a href="https://www.plantanapp.com/community/blog">plantanapp.com/community/blog</a>
+🔗 **<a href="https://www.plantanapp.com/community/blog">plantanapp.com/community/blog</a>**
 
 Check out <a href="https://www.plantanapp.com/community/blog">our blog</a> for the latest news about Plant an App along with case studies, articles, ideas, and discussions of on the wider low-code no-code landscape.
 
@@ -82,11 +82,11 @@ When you are stuck or just wonder about the best way to proceed there are severa
 
 ### <a href="https://console.plantanapp.com/Support">`Support Ticket`</a>
 
-🔗 <a href="https://console.plantanapp.com/Support">console.plantanapp.com/Support</a>
+🔗 **<a href="https://console.plantanapp.com/Support">console.plantanapp.com/Support</a>**
 
 A support request can be raised by the registered contact for your Plant an App license through the Plant an App Console.
 
-<img src="/img/support_console.png" alt="support_console.png"></img>
+<img src="/img/support_console.png" alt="support_console.png">
 
 Your ticket will be handled by a member of our support team and all communication will remain private. Under the same section you can review your old tickets and reopen them if necessary.
 
@@ -100,7 +100,7 @@ Your ticket will be handled by a member of our support team and all communicatio
 
 ### <a href="https://community.plantanapp.com/">`Through the Plant an App Community Forum`</a>
 
-🔗 <a href="https://community.plantanapp.com/">community.plantanapp.com</a>
+🔗 **<a href="https://community.plantanapp.com/">community.plantanapp.com</a>**
 
 Sign up for to the <a href="https://community.plantanapp.com/">Plant an App Community</a> to post your questions and observations to the wider Plant an App community. You can also review questions posted by your fellow community members, along with answers and discussion. Search the forum by topic or features and register for alerts on questions you are tracking.
 
@@ -114,7 +114,7 @@ Sign up for to the <a href="https://community.plantanapp.com/">Plant an App Comm
 
 ### <a href="https://community.plantanapp.com/Live-Help">`Through Live Help`</a>
 
-🔗 <a href="https://community.plantanapp.com/Live-Help">community.plantanapp.com/Live-Help</a>
+🔗 **<a href="https://community.plantanapp.com/Live-Help">community.plantanapp.com/Live-Help</a>**
 
 Our Plant an App support team holds <a href="https://community.plantanapp.com/Live-Help">virtual office hours</a> several times a week. Log in with your Plant an App Community account to book time with a Plant an App expert to discuss any aspect of Plant an App and your projects. Sessions may be recorded.
 
