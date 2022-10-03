@@ -20,7 +20,7 @@ This action will add a Date Time Picker to the specified dynamic container.
 | Disable Dates | Disable every date in the future or every date in the past. | No | none |
 | First Day of the Week |  | No | sunday |
 | Disable Weekends | Check this to disable saturdays and sundays. | No | false |
-| Inline | Displays the calendar inline. | No | false |
+| Inline | Calendar is visible without clicking inside the field. | No | false |
 | Timepicker 24 hour mode | Displays time picker in 24 hour mode without AM/PM selection when enabled. | No | false |
 | Minimum Date | The minimum date that a user can start picking from (inclusive). Format: yyyy-MM-dd. Supports Tokens. | No | None |
 | Maximum Date | The maximum date that a user can pick to (inclusive). Format: yyyy-MM-dd. Supports Tokens. | No | None |
