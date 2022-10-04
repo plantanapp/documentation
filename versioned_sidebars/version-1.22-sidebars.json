@@ -1603,6 +1603,10 @@
         {
           "type": "doc",
           "id": "version-1.22/important-notes/obsolete-features"
+        },
+        {
+          "type": "doc",
+          "id": "version-1.22/important-notes/orientation-guide"
         }
       ],
       "collapsible": true,
