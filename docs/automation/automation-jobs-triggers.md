@@ -4,7 +4,6 @@ title: Job Triggers
 sidebar_label: Job Triggers
 ---
 
----
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
 >
 > Skill Prerequisites: `None`
