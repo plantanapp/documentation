@@ -14,7 +14,7 @@ We have many ways to help you in your Plant an App journey, something to suit al
 Before you dive in, here is a brief summary of what is available.
 
 * <strong>`Discovering Plant an App`</strong>: find documentation and training on the Plant an App platform as well as inspiration on how to use it
-* <strong>`Getting Help`</strong>: how to get help and advice, both from the Plant an App staff and our growing the community
+* <strong>Getting Help</strong>: how to get help and advice, both from the Plant an App staff and our growing the community
 * <strong>`Become part of the Plant an App community`</strong>: how you can join the worldwide Plant an App community
 
 ## `Discovering Plant an App`
@@ -33,7 +33,7 @@ The [DNN Sharp legacy documentation portal](https://docs.dnnsharp.com/) can also
 
 ### <a href="https://academy.plantanapp.com">`Plant an App Academy`</a>
 
-🔗 **<a href="https://academy.plantanapp.com">academy.plantanapp.com</a>** 
+🔗 **<a href="https://academy.plantanapp.com">academy.plantanapp.com</a>**
 
 The Academy Portal provides links to introductory video (e.g. <em>[Getting Started with Plant an App](https://www.youtube.com/watch?v=zOGVh-zEsqs&list=PL67RlTAxc73ESnxFEw0i7AU7yMrmLYAyh)</em>) as well as our *Low Code Fundamentals* course.
 
@@ -93,9 +93,7 @@ Your ticket will be handled by a member of our support team and all communicatio
 |  |  |
 | --- | --- |
 | **What is it best for?** | Platform errors and issues affecting your own Plant an App instance. |
-|
 | **Who will help me?** | The Plant an App support team. |
-|
 | **Who will see the details?** | Only Plant an App staff. |
 
 ### <a href="https://community.plantanapp.com/">`Through the Plant an App Community Forum`</a>
@@ -107,9 +105,7 @@ Sign up for to the <a href="https://community.plantanapp.com/">Plant an App Comm
 |  |  |
 | --- | --- |
 | **What is it best for?** | When you are stuck, and the documentation and training materials do not answer your question; when you are wondering how need advice on how best to solve a technical challenge or what the best development approach to take When you discover an anomaly or bug; when you find a trick or tip you want to share. |
-|
 | **Who will help me?** | The Community includes Plant an App veterans and advanced user with years of real-world experience building solutions with the platform. The Plant an App support staff is also actively monitor monitoring the forum. |
-|
 | **Who will see the details?** | Contributions are visible to all Community members. While you do need to create an account, your personal details remain private. |
 
 ### <a href="https://community.plantanapp.com/Live-Help">`Through Live Help`</a>
@@ -121,9 +117,7 @@ Our Plant an App support team holds <a href="https://community.plantanapp.com/Li
 |  |  |
 | --- | --- |
 | **What is it best for?** | Discussing implementation options and approaches or interactive troubleshooting. |
-|
 | **Who will help me?** | A Plant an App support expert. |
-|
 | **Who will see the details?** | Office hours are conducted via a Zoom call that may be recorded and shared with other participants. |
 
 ### `Join the Low Code Campfire sessions`
@@ -135,9 +129,7 @@ Anyone can [register for the live session](https://us02web.zoom.us/meeting/regis
 |  |  |
 | --- | --- |
 | **What is it best for?** | Advanced and technical questions. Discussion about Plant an App administration and deployment. Contributions and ideas for the future Plant an App roadmap. |
-|
 | **Who will help me?** | Participants are invited to ask their questions of the group who then brainstorm during the event. Regular participants include Plant an App staff and veterans. |
-|
 | **Who will see the details?** | The sessions take place on Zoom and participants are encouraged to screenshare. Recordings of each session are published on YouTube. |
 
 ## `Become part of the Plant an App Community`
