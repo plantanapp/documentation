@@ -24,7 +24,7 @@ Will open a pop-up "Import Job" editor that will allow you to paste and edit an 
 
 :::info
 
-If you do not check the **`Overwrite`** box, the job will be imported with the "`_Copy`" suffix concatenated to its name.</br>
+If you do not check the **`Overwrite`** box, the job will be imported with the "`_Copy`" suffix concatenated to its name.<br />
 If the box is checked, the job will be imported as such and will replace any pre-existing job with the same name.
 
 :::
