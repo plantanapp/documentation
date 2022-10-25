@@ -4,18 +4,6 @@ title: Overview
 sidebar_label: Overview
 ---
 
----
-id: connectors
-title: Connectors
-sidebar_label: Connectors
----
-
----
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
@@ -34,7 +22,7 @@ From the same screen you can also `Test` the connection of an existing connector
 For each connector, you will need to define a Name and a Type (see below).
 
 ## `Specific settings by type`
-</br>
+
 
 ### **`Dynamics Service Credentials`**
 
