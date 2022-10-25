@@ -1,13 +1,7 @@
 ---
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
----
-id: automation
-title: Automation
-sidebar_label: Automation
+id: automation-jobs-triggers
+title: Job Triggers
+sidebar_label: Job Triggers
 ---
 
 ---

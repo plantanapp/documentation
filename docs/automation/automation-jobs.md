@@ -1,7 +1,7 @@
 ---
-id: automation
-title: Automation
-sidebar_label: Automation
+id: automation-jobs
+title: Jobs
+sidebar_label: Jobs
 ---
 
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)

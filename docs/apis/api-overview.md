@@ -1,7 +1,7 @@
 ---
-id: apis
-title: APIs
-sidebar_label: APIs
+id: api-overview
+title: Overview
+sidebar_label: Overview
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
