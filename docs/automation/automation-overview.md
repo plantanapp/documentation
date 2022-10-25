@@ -1,7 +1,7 @@
 ---
-id: automation
-title: Automation
-sidebar_label: Automation
+id: automation-overview
+title: Overview
+sidebar_label: Overview
 ---
 
 ---

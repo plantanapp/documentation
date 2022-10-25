@@ -1,19 +1,7 @@
 ---
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
----
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
----
-id: automation
-title: Automation
-sidebar_label: Automation
+id: automation-settings
+title: Settings
+sidebar_label: Settings
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)

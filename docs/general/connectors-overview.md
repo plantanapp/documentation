@@ -1,7 +1,7 @@
 ---
-id: connectors
-title: Connectors
-sidebar_label: Connectors
+id: connectors-overview
+title: Overview
+sidebar_label: Overview
 ---
 
 ---
