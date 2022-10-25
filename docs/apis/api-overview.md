@@ -23,21 +23,21 @@ The place that APIs send requests and where the resource lives, is called an End
 Plant an App allows for a highly customizable and detailed API Endpoint configuration that will enable your app to leverage the full power of APIs. The following guide will provide you with the required information regarding API Endpoint configuration on our platform.
 To configure your API Endpoints, access the `APIs` section on the left-side menu.
 
-<img src="/img/api_menu.png" alt="api_menu.png">
+<img src="/img/api_menu.png" alt="api_menu.png"></img>
 
 * If you already created an Endpoint and you want to edit its configuration, click the `Edit this Endpoint` button.
 
-<img src="/img/edit_endpoint.png" alt="edit_endpoint.png">
+<img src="/img/edit_endpoint.png" alt="edit_endpoint.png"></img>
 
 * If you have no existing Endpoints configured, click on the `LET’S DO IT!` button, or the `NEW API` button.
 
-<img src="/img/new_api-1977565935.png" alt="new_api-1977565935.png">
+<img src="/img/new_api-1977565935.png" alt="new_api-1977565935.png"></img>
 
 The following screen is the Endpoint’s configuration section that will allow you to define its basic Settings, its Input Parameters, Actions to be performed when the API is called, the way it behaves if it encounters an Error and its Security configuration.
 
 It also provides you with the possibility to `Cancel`, `Save` or `Save & Test` your configuration at any time via the buttons in the upper right section of the screen.
 
-<img src="/img/cancel_save_test.png" alt="cancel_save_test.png">
+<img src="/img/cancel_save_test.png" alt="cancel_save_test.png"></img>
 
 Note that any changes you make to your Endpoint configuration will only take effect after clicking the `Save` or `Save & Test` buttons.
 
@@ -104,7 +104,7 @@ After choosing the desired action, you will be able to configure them in detail 
 :::note
 You may add as many actions or responses as you want, but keep in mind that some of the actions might be terminal; as such, any actions, or responses found below in the execution order will not get executed. The system will detect any possibly terminal actions and signal them accordingly.
 :::
-<img src="/img/actions_below.png" alt="actions_below.png">
+<img src="/img/actions_below.png" alt="actions_below.png"></img>
 
 Please check your configuration and modify the action sequence if needed (drag and drop action).
 For each of the defined *Actions On error*, you will be provided with three possible options: `Delete` (takes effect only upon saving the configuration), `Export` (under a JSON format), and `Clone`.
@@ -136,7 +136,7 @@ After choosing the desired action, you will be able to configure them in detail 
 You may add as many actions or responses as you want, but keep in mind that some of the actions might be terminal; as such, any actions, or responses found below in the execution order will not get executed. The system will detect any possibly terminal actions and signal them accordingly.
 :::
 
-<img src="/img/actions_below.png" alt="actions_below.png">
+<img src="/img/actions_below.png" alt="actions_below.png"></img>
 
 ### `5.	Security`
 
