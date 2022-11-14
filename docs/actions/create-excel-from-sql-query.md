@@ -11,6 +11,7 @@ Serializes the result of an SQL Query into Excel format. Optimized to use with l
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
 | Other Connection String | Leave empty to use the DNN database. Also supports the name of a conneection string from the database. It will respect the Provider (ODBC, SqlClient, etc.). Can contain My Tokens. | Yes | None |
+| Query Timeout | Set a time in seconds after which a query will time out. The default is set to 10 minutes or 600 seconds. This parameter can't be negative or under 10 seconds. Can contain Tokens. | No | None |
 | SQL Query | SQL to execute. Can contain My Tokens. WARNING! We encourage using binding parameters instead of using the tokens directly on sql query. Just use @param instead of [token] and bind below values as shown: Parameter Name: param ; Parameter Value: [token]. This will keep your database safe. | Yes | None |
 | Bind Tokens | Bind the parameters above with a value or token. e.g. P. Name:param, P. Value:[token]  | No | None |
 | Add Column Names | Remove the field names from the serialization. | No | True |

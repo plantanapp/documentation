@@ -49,11 +49,13 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 * [ ] Upgrade the DNN to 9.7.2.
 * [ ] Upgrade all third-party modules to their current versions
 * [ ] Install the AppBuilder version 1.12.91, which can be downloaded from our [Downloads](https://console.plantanapp.com/Downloads) page.
-* [ ] Create an administrative page (typically named Configuration).
+* [ ] Create an administrative page (typically named "Configuration").
 * [ ] Add an AppBuilder module to the Configuration page. This module is your primary way to configure Plant An App.
-* [ ] If prompted, please allow App Builder to install dependencies. If not, please open the **Updates** tab(directly from the Configuration page) and click on the **Install dependencies** button. 
-* [ ] Upgrade the DNN to 9.9.1.
-* [ ] On the Configuration page, use the Updates feature to update to successive versions (1.13, 1.14, ...) until you are at the current version.
+* [ ] If prompted, please allow App Builder to install dependencies. If not, please open the **Updates** tab (directly from the Configuration page) and click on the **Install dependencies** button.
+* [ ] On the Configuration page, use the Updates feature to update to successive versions (1.13, 1.14, ...) until you are at version 1.19.
+* [ ] On the Configuration / Updates / Hotfixes page, install the Hotfix for AppBuilder 1.19.46 (or 1.19.53) to get the integrated DNN upgrade feature.
+* [ ] On the Configuration page, use the Updates feature to update to successive versions (1.20, 1.21, ...) until you are at the current version.
+* [ ] When the Updates feature offers higher DNN versions, install these updates. (EVOQ sites must install DNN versions manually.)
 
 ### `Known Incompatibilities`
 
