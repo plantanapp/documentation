@@ -65,7 +65,7 @@ A list of the editable parameters in the file can be found below.
 |*IdleQueueTimeToDeleteInMin*|Time in minutes after which an inactive queue (no new jobs or job updates) is deleted from memory. Default value: `10`.|
 |*KeepFinishedJobsTimeInMin*|Amount of time (in minutes) that a finished job is kept in memory. Default value: `1440` (24 hours).|
 |*LocalFilesBaseDir*|This is the Docker image folder where payload to be pushed to your SVC is stored. Modify only if specifically needed.|
-|*Origin*|Default GIT URL. Please <a href="[ www](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#about-remote-repositories)" target="_blank">see here</a> for further details.|
+|*Origin*|Default GIT URL. Please <a href="https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#about-remote-repositories" target="_blank">see here</a> for further details.|
 |*MainBranch*|Name of the SVC main branch. Modify only if specifically needed (defaults to: `main`).|
 |*CommitterUsername*|Payload committer username; will only be used if the payload doesn't specify one. Please see <a href="https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git" target="_blank">here</a> for further details.|
 |*CommitterEmail*|Payload committer email address; will only be used if the payload doesn't specify one. Please see <a href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address" target="_blank">here</a> for further details.|

@@ -52,15 +52,15 @@ Examples of activities:
 - Define the data model through the [Entities](/docs/entities)
 - Implement the permission scheme
 - Create application screens with forms, grids, dashboards and other visualizations
-- Implement business processes through [Workflows](/docs/workflows) and configure most of the Actions
+- Implement business processes through [Workflows](/workflows/wf-overview.md) and configure most of the Actions
 - Integrate with external systems by using the API Builder and the [Server Request](/docs/Actions/server-request) action
 - Build Dashboards
   
 ## `Low-code Engineers`
 
-Plant an App is designed to provide extreme flexibility by allowing custom code to be plugged directly in the application. For example, complex SQL queries can be run using the [Run SQL](/docs/Actions/run-sql) action or C# code by using the Execute Razor action, just to name a few.
+Plant an App is designed to provide extreme flexibility by allowing custom code to be plugged directly in the application. For example, complex SQL queries can be run using the [Run SQL Query](/actions/run-sql-query.md) action or C# code by using the Execute Razor action, just to name a few.
 
-Low-code Engineers step in to write the custom code. Therefore, they have prior coding experience. But, at the same time, they understand low-code and Plant an App because the code that is plugged in is likely to be connected to other things in the [Execution Context](/docs/execution-context), such as tokens produced by other actions, input parameters into the workflow or the data layer.
+Low-code Engineers step in to write the custom code. Therefore, they have prior coding experience. But, at the same time, they understand low-code and Plant an App because the code that is plugged in is likely to be connected to other things in the [Execution Context](/workflows/execution-context.md), such as tokens produced by other actions, input parameters into the workflow or the data layer.
 
 In some cases, it's the Low-code Engineer that builds the entire application, fulfilling all the roles at once.
 
@@ -74,7 +74,7 @@ Typical personas:
 
 Examples of activities:
 
-- Configure [Run SQL](/docs/Actions/run-sql) actions to perform advanced SQL queries
+- Configure [Run SQL Query](/actions/run-sql-query.md) actions to perform advanced SQL queries
 - Implement C# scripts for custom logic and algorithms
 - Implement new visualization templates with Razor, HTML, CSS and sometimes Angular
 - Integrate with external systems at the database layer
@@ -102,7 +102,7 @@ Typical personas:
 
 Examples of activities:
 
-- Implement new actions to extend what Citizen Developers can do inside [Workflows](/docs/workflows)
+- Implement new actions to extend what Citizen Developers can do inside [Workflows](/workflows/wf-overview.md)
 - Implement new data sources for dropdowns, so they can be connected to data that lives in a different format on external systems
 - Implement new validation rules that can be used on inputs in places such as forms or APIs to ensure the integrity of data
 - Implement new data sources for the search engine to bring unified results from external systems as well
@@ -129,5 +129,5 @@ Examples of activities:
 - Configure Connectors to enable communications with external systems
 - Handle deployments
 - Review access logs and controls to detect suspicious activity
-- Observe the performance of [Workflows](/docs/workflows) and identify potential issues
+- Observe the performance of [Workflows](/workflows/wf-overview.md) and identify potential issues
 - Schedule and perform platform upgrades to patch known vulnerabilities and enable additional features added in Plant an App
