@@ -26,11 +26,11 @@ At the first-time use of `Version Control`, you will be asked to provide your GI
 * [GIT Username](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git)
 * [GIT PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token), or *Personal Access Token*
 
-<img src="/img/git_connection.png" alt="git_connection.png">
+<img src="/img/git_connection.png" alt="git_connection.png"></img>
 
 After having successfully logged into your GIT/GitHub account, an initial commit will be made. To understand the concept, please [see here](https://docs.gitlab.com/ee/tutorials/make_your_first_git_commit.html). Simply click the `Initialize` button.
 
-<img src="/img/initial_commit.png" alt="initial_commit.png">
+<img src="/img/initial_commit.png" alt="initial_commit.png"></img>
 
 If the process is successful, you will be taken to the Version Control main console screen (see below).
 
@@ -63,7 +63,7 @@ Additionally, you can:
 
 * Click the "<strong>Details</strong>" button ① for each separate commit to reveal a card with all the parameters for that particular commit. Note that you are able to copy each value by clicking the "Copy" symbol.
 
-<img src="/img/version_history_commit_details.png" alt="version_history_commit_details.png">
+<img src="/img/version_history_commit_details.png" alt="version_history_commit_details.png"></img>
 
 * Search your commits by Id or keywords in the Search box ②.
 * Configure your GIT credentials ③ - [GIT URL](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories), [GIT Username](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) and [GIT PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
@@ -73,13 +73,13 @@ Additionally, you can:
 
 In this section the changes since your last commit are listed and you can select them individually (or in mass) to be included in your commit.
 
-<img src="/img/version_history_changes.png" alt="version_history_changes.png">
+<img src="/img/version_history_changes.png" alt="version_history_changes.png"></img>
 
 * The filters section ① allow you to look for a specific change according to a keyword or Id via the <strong>Search box</strong>, or to filter the displayed list of commits through the "<strong>Item Type</strong>" (type of object - variable, token, etc.) or "<strong>Change Type</strong>" (the type of action the object was subjected to) drop-down lists.
 
 Note that each type from the list is individually selectable through a checkbox. If at least a filter is applied, a "<strong>Clear All</strong>" button will appear, allowing you to remove all filters in on click.
 
-<img src="/img/version_history_changes_2.png" alt="version_history_changes_2.png">
+<img src="/img/version_history_changes_2.png" alt="version_history_changes_2.png"></img>
 
 * Select ② the changes you want to include in the next commit by checking their corresponding box in the utmost left column. Alternatively, you can select all the boxes at once by checking the box atop the column.
 * Include your changes to the commit by clicking their individual "<em>Include</em>" button ③ in the utmost right column. Alternatively, you can click the "<strong>Include Selected</strong>" button above the filters section; this will include all the selected changes to the commit at once.
@@ -88,13 +88,13 @@ Note that each type from the list is individually selectable through a checkbox.
 
 This section composes the final version commit. It also allows you to remove changes from the commit.
 
-<img src="/img/version_history_included_in_version.png" alt="version_history_included_in_version.png">
+<img src="/img/version_history_included_in_version.png" alt="version_history_included_in_version.png"></img>
 
 * The filters section ① allow you to look for a specific change according to a keyword or Id via the <strong>Search box</strong>, or to filter the displayed list of commits through the "<strong>Item Type</strong>" (type of object - variable, token, etc.) or "<strong>Change Type</strong>" (the type of action the object was subjected to) drop-down lists.
 
 Note that each type from the list is individually selectable through a checkbox. If at least a filter is applied, a "<strong>Clear All</strong>" button will appear, allowing you to remove all filters in on click.
 
-<img src="/img/version_history_changes_2.png" alt="version_history_changes_2.png">
+<img src="/img/version_history_changes_2.png" alt="version_history_changes_2.png"></img>
 
 * Select ② the changes you want to remove from the next commit by checking their corresponding box in the utmost left column. Alternatively, you can select all the boxes at once by checking the box atop the column. Then, click the "<strong>Remove Selected</strong>" button above the filters section to remove all the selected changes.
 
@@ -103,10 +103,10 @@ You can also remove changes individually, by clicking their respective "<em>Remo
 * When you are happy with the changes list to be included in the commit, click the `Commit Changes` button ④.
 * The "<strong>Stage Form</strong>" window will appear, allowing you to enter the "<em>Commit Title</em>" (mandatory) and "<em>Commit Description</em>" (optional). When done, click the `Commit` button.
 
-<img src="/img/version_history_stage_form.png" alt="version_history_stage_form.png">
+<img src="/img/version_history_stage_form.png" alt="version_history_stage_form.png"></img>
 
 * Finally, the "<strong><em>Committing</em></strong>" window will appear. You will be able to follow the stage of the operation via a progress bar.
 
-<img src="/img/version_history_committing.png" alt="version_history_committing.png">
+<img src="/img/version_history_committing.png" alt="version_history_committing.png"></img>
 
 Once the operation ends, you will be automatically taken back to the Version Control main console screen.
