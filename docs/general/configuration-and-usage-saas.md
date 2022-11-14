@@ -57,7 +57,7 @@ For each commit, you will be able to see the following parameters, listed in col
 | *CommitterEmail* | This is the GIT <em>CommitterEmail</em>; this parameter has a default value, but can also be edited if needed. Please see the "<strong>`appsettings.override.json` file configuration</strong>" section on the "<strong>MEO Server Configuration</strong>" page for more details. |
 | *CommitDate* | The date and time (of the server) when the commit was made. The format is "`MM/DD/YYYY H:MM`". |
 
-<img src="/img/version_history.png" alt="version_history.png">
+<img src="/img/version_history.png" alt="version_history.png"></img>
 
 Additionally, you can:
 
