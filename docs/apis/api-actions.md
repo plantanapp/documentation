@@ -4,12 +4,6 @@ title: API Actions
 sidebar_label: API Actions
 ---
 
----
-id: api_actions
-title: API actions
-sidebar_label: APIs actions
----
-
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`

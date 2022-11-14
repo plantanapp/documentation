@@ -4,19 +4,9 @@ title: Job Triggers
 sidebar_label: Job Triggers
 ---
 
----
-id: automation-jobs-triggers
-title: Job Triggers
-sidebar_label: Job Triggers
----
+## Automation Job Triggers
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
->
-> Skill Prerequisites: `None`
-
-## Automation Triggers
-
-A list of Automation triggers handled by Plant an App, by category.
+Below is a list of automation job triggers handled by Plant an App, by category. They are used in the <a href="https://learn.plantanapp.com/docs/next/automation/automation-jobs" target="_blank">Jobs context</a>.
 
 ## `App Events`
 |Trigger|Details|
@@ -35,7 +25,7 @@ A list of Automation triggers handled by Plant an App, by category.
 - `Skip If Running` - Checking this option will cause the automation to skip executing this Job as long as the last execution is still in progress. This ensures that the job will not have multiple instances running in parallel.  
 
 ## `Database`
-|Trigger|Details|
+|Trigger|Description and details|
 |---|---|
 |*On Database Delete*|Fires when data is deleted from a predefined table. The job is fired once for every row that was deleted. Tokens are built automatically using column names, so you can reference the deleted row values inside actions using `[ColumnName:Before]` token syntax.|
 |*On Database Insert*|Activates when data is inserted into a predefined table. The job is fired once for every row that was inserted. Tokens are built automatically using column names, so you can reference inserted values inside actions using the `[ColumnName]` token syntax.<br /> The trigger also generates a token containing a JSON object with all the row data. You can reference it by using the `[Row:JsonData]` token.<br />|
@@ -44,12 +34,12 @@ A list of Automation triggers handled by Plant an App, by category.
 
 :::caution
 
-⚠ Be careful when using a Trigger that updates and executes an Action (e.g. `Run SQL Query`) on the same table; it might recursively trigger the Action, resulting in database timeouts.
+Be careful when using a Trigger that updates and executes an Action (e.g. `Run SQL Query`) on the same table; it might recursively trigger the Action, resulting in database timeouts.
 
 :::
 
 ## `Time`
-|Trigger|Details|
+|Trigger|Description and details|
 |---|---|
 |*Cron Trigger (advanced)*|Create a time trigger using a <a href="http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html" target="_blank">Cron Expression syntax</a>. Specify time in UTC.<br />. This field supports tokens (see `Tokens` section).|
 |*One Time*|A trigger that will fire once, at a specified date and time (in UTC).|
@@ -63,7 +53,7 @@ A list of Automation triggers handled by Plant an App, by category.
 
 ## `Users`
 
-|Trigger|Details|
+|Trigger|Description and details|
 |---|---|
 |*User AutoLogin Event*|Listens to the Plant an App *AutoLogin* events. The `[User:*]` tokens can be used to identify the account that was just logged in, and the `[ImpersonatorUserId]` token to identify the user that triggered the *AutoLogin*, if any. Otherwise its value is `-1`.|
 |*User Created*|Activates when a new user is created. Tokens with user information are automatically added to the present context (such as `[UserID]`, `[Username]`, `[FirstName]`, `[LastName]`, `[Email]` or `[DisplayName]`).|

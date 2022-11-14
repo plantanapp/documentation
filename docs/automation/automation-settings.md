@@ -4,10 +4,6 @@ title: Settings
 sidebar_label: Settings
 ---
 
-> Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
-> 
-> Skill Prerequisites: `System Administration and Maintenance`
-
 ## Settings
 
 ### `SQL Dependency`
@@ -15,7 +11,7 @@ Enable or disable the use of the SQL Dependency feature. This improves the laten
 
 The total number of available threads as well as the busy threads is displayed.
 
-#### `How it works`
+#### How it works
 
 Normally, Plant an App will launch queries at short intervals to check whether a Job needs to run. Enabling the *SQL Dependency* option initializes a listener on the DB. This allows the execution call to come from the DB side. In turn, this will improve the Job trigger latency since it does not rely on launching periodic queries.
 
