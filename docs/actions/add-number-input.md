@@ -16,6 +16,7 @@ This action will add a textbox to the specified dynamic container.
 | Field Description | Give this field a description. Supports Tokens. | No | None |
 | Initial Value | Give this field an initial value. Supports Tokens. | No | None |
 | Maximum Value | Optionally set a maximum value.Supports Tokens. | No | None |
+| Minimum Value | Optionally set a minimum value.Supports Tokens. | No | None |
 | Bind Expression - Show | Dynamically show or hide this field. This must be a boolean expression. Use standard javascript boolean operators (==, !=, &#x3C;,&#x3E; , !). For example, use [PaymentMethod] == &#x27;CreditCard&#x27; to show the credit card field only when the Payment Method is set accordingly. Supports Tokens. | No | None |
 | Preserve Layout? | Check this box in order to make sure hiding/showing fields will not affect the layout of the form. | No | None |
 | Bind Expression - Value | Dynamically compute the value of this field. So when other fields change this fields updates automatically. Use standard javascript operators where needed (+, -, *, /). For example, use [FirstName] &#x27; &#x27; [LastName] to automatically fill the Display Name field. Note that once the value is edited manually, the automatic synchronization stops. Supports Tokens. | No | None |

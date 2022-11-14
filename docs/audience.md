@@ -1,65 +1,133 @@
-------
+---
+id: audience
+title: Audience
+sidebar_label: Audience
+---
 
-<!DOCTYPE html>
-<html  lang="en-US">
-<head id="Head"><meta content="text/html; charset=UTF-8" http-equiv="Content-Type" /><title>
-	404 Error Page
-</title><meta id="MetaRobots" name="robots" content="NOINDEX, NOFOLLOW" /><link href="/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=1013" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/plantanapp v2/skin.css?cdv=1013" type="text/css" rel="stylesheet"/><link href="/Portals/0/portal.css?cdv=1013" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/plantanapp v2/plugins/bootstrap/css/bootstrap.css?cdv=1013" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/plantanapp v2/plugins/node-waves/waves.css?cdv=1013" type="text/css" rel="stylesheet"/><link href="/Portals/_default/skins/plantanapp v2/css/style.css?cdv=1013" type="text/css" rel="stylesheet"/><link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin,cyrillic-ext&amp;cdv=1013" type="text/css" rel="stylesheet"/><link href="https://fonts.googleapis.com/icon?family=Material+Icons&amp;cdv=1013" type="text/css" rel="stylesheet"/><script src="/Portals/_default/skins/plantanapp v2/plugins/bootstrap/js/bootstrap.js?cdv=1013" type="text/javascript"><\/script><script src="/Portals/_default/skins/plantanapp v2/plugins/node-waves/waves.js?cdv=1013" type="text/javascript"><\/script><link rel='SHORTCUT ICON' href='/Portals/0/favicon.ico?ver=CN0n1RkiLLRNIKtyu7hVlg%3d%3d' type='image/x-icon' /><meta name="viewport" content="width=device-width,initial-scale=1" /></head>
-<body id="Body">
+Plant an App is a collaborative low-code development platform. Various roles from the team or from the stakeholder side contribute to building the application. Some will do simple changes, such as changing the body of an email that's sent by the system, while others will write code to extend the platform with new functionalities. But most of the application building happens somewhere in between these two extremes, through the low-code functionalities.
 
-    <form method="post" action="/404-Error-Page/aspxerrorpath/ /OverrideHttpStatus/404" id="Form" enctype="multipart/form-data">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="+d+AXhlabDGND2XyqGdEtGhDhzcHf/QEpp1y1bxgddQM8aQJpt1uoym7R3OtCd42yO3OlUYXab/IkxzRihhK9NyZnXs3+Gxv2dsnAg==" />
+This documentation is meant to cover all the roles that are typically involved in the development process. As you navigate through different sections, you will notice that each is marked with the appropriate audience that is intended for.
 
+As you go through each audience below, please keep in mind that this is not at all a clear separation of roles. It actually defines the minimum set of business and technical skills that would be needed to accomplish a task.
 
-<script src="/ScriptResource.axd?d=uHIkleVeDJez0PXLWtW_aluCHC1AciDX-us_Qj69QzNoEm5huNBTY-D7W6leJ0VUiiZ5Z64_J14lPOp9GricEG0OU6YxUMgu3Wtb6Z9GlM7pubDeXSs4hsYH9Wd5KVGjVaC0tw2&amp;t=ffffffffaa493ab8" type="text/javascript"><\/script>
-<script src="/ScriptResource.axd?d=Jw6tUGWnA14CLBv3obL0qvHg3s6EK8HlAqbp050L-ax-IoKeWoc7xaeOEiX9MOF1fJaeHG8a5JJxNGYxhX0wQkFyyt0omdrzNnqFHEZsvNX71ulzbKmB-as_K0OyoXZBNmunh-ymzoggI_wG0&amp;t=ffffffffaa493ab8" type="text/javascript"><\/script>
-<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
-<input type="hidden" name="__VIEWSTATEENCRYPTED" id="__VIEWSTATEENCRYPTED" value="" />
-<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="wa6A4JDugpm2u8dJ2uxNXE0P9ZphZaW4mv+QN9/303Kb4NXwA9Tqj7uPvUjoGMC70TvlD9V8TwPTQb3eR3OzkFEYdnBipZ0oLpdunkAihxl0zW0T" /><script src="/js/dnncore.js?cdv=1013" type="text/javascript"><\/script>
-<script type="text/javascript">
-//<![CDATA[
-Sys.WebForms.PageRequestManager._initialize('ScriptManager', 'Form', [], [], [], 90, '');
-//]]>
-<\/script>
+## `Business Users`
 
-        
-        
-        
+Business users usually come from the stakeholder side of a project. They have the ability to make micro-decisions regarding the application, such as what an email template should be, what fields should be captured in a form and so on. In a traditional development process, they would address their change requests to a business analyst that turns them into a specification for the developers. On Plant an App, they are able to do many changes by themselves, therefore saving a lot of back and forth.
 
-<!--CDF(Css|/Portals/_default/skins/plantanapp v2/plugins/bootstrap/css/bootstrap.css?cdv=1013|DnnPageHeaderProvider|100)-->
-<!--CDF(Css|/Portals/_default/skins/plantanapp v2/plugins/node-waves/waves.css?cdv=1013|DnnPageHeaderProvider|100)-->
-<!--CDF(Css|/Portals/_default/skins/plantanapp v2/css/style.css?cdv=1013|DnnPageHeaderProvider|100)-->
-<!--CDF(Css|https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext&cdv=1013|DnnPageHeaderProvider|100)-->
-<!--CDF(Css|https://fonts.googleapis.com/icon?family=Material+Icons&cdv=1013|DnnPageHeaderProvider|100)-->
+Skills: `decision making`, `business understanding`, `business tools savvy`
 
-<div class="four-zero-four">
-    <div class="four-zero-four-container">
-        <div class="error-code">404</div>
-        <div class="error-message">This page doesn't exist</div>
-            <main role="main" style="min-height:0px;">
-            <div id="mainContent-inner">
-                <div class="row dnnpane">
-                    <div id="dnn_ContentPane" class="col-md-12 contentPane DNNEmptyPane"></div>
-                </div>
-            </div><!-- /.mainContent-inner -->
-        </main>
-        <div class="button-place">
-            <a href="/" class="btn btn-default btn-lg waves-effect">GO TO HOMEPAGE</a>
-        </div>
-    </div>
+Typical personas:
 
-<!-- Bootstrap Core Js -->
-    <!--CDF(Javascript|/Portals/_default/skins/plantanapp v2/plugins/bootstrap/js/bootstrap.js?cdv=1013|DnnPageHeaderProvider|100)-->
+- Project Manager on the stakeholder side
+- Business Analyst on the stakeholder side
+- Small and Midsize Business Owners (SMBs)
+- Department Lead
+- Digital Transformation Leader
+- External Digital Transformation Consultant
 
-    <!-- Waves Effect Plugin Js -->
-    <!--CDF(Javascript|/Portals/_default/skins/plantanapp v2/plugins/node-waves/waves.js?cdv=1013|DnnPageHeaderProvider|100)-->
-</div>
+Examples of activities:
 
-        <input name="ScrollTop" type="hidden" id="ScrollTop" />
-        <input name="__dnnVariable" type="hidden" id="__dnnVariable" autocomplete="off" />
-        
-    </form>
-    <!--CDF(Javascript|/js/dnncore.js?cdv=1013|DnnBodyProvider|100)--><!--CDF(Css|/Resources/Shared/stylesheets/dnndefault/7.0.0/default.css?cdv=1013|DnnPageHeaderProvider|5)--><!--CDF(Css|/Portals/_default/skins/plantanapp v2/skin.css?cdv=1013|DnnPageHeaderProvider|15)--><!--CDF(Css|/Portals/0/portal.css?cdv=1013|DnnPageHeaderProvider|35)-->
-    
-</body>
-</html>
+- Change the to, from, subject or body of an email generated by the system
+- Add or remove properties in the [Entities](/docs/entities)
+- Adjust permissions for the users of the application
+- Build Dashboards
+
+## `Citizen Developers`
+
+In Plant an App, Citizen Developers do, on average, 80% of the application development. They live at the intersection of the business and technical realms. On the one hand, they work to understand the business requirements and the processes involved. At the same time, they can turn them into working software that has a data model, workflows, and application screens.
+
+Note that a Citizen Developer rarely has experience with writing code. But they are technically savvy in the sense that they understand technology. The know concepts such as what HTTP Requests are, what is the difference between back-end and front-end technologies, or how databases are structured. Often, they even know the basics of various markup and programming languages, such as HTML, CSS, SQL, or JavaScript, and can read such code for the purpose of copy-pasting and adjusting it.  
+
+Skills: `no-code`, `tech-savvy`, `data models`, `business process modeling`, `basic coding skills`
+
+Typical personas:
+
+- Technical Business Analysts
+- Fresh graduates from technical universities
+- Graduates from related online courses
+- Junior Developers
+
+Examples of activities:
+
+- Define the data model through the [Entities](/docs/entities)
+- Implement the permission scheme
+- Create application screens with forms, grids, dashboards and other visualizations
+- Implement business processes through [Workflows](/docs/workflows) and configure most of the Actions
+- Integrate with external systems by using the API Builder and the [Server Request](/docs/Actions/server-request) action
+- Build Dashboards
+  
+## `Low-code Engineers`
+
+Plant an App is designed to provide extreme flexibility by allowing custom code to be plugged directly in the application. For example, complex SQL queries can be run using the [Run SQL](/docs/Actions/run-sql) action or C# code by using the Execute Razor action, just to name a few.
+
+Low-code Engineers step in to write the custom code. Therefore, they have prior coding experience. But, at the same time, they understand low-code and Plant an App because the code that is plugged in is likely to be connected to other things in the [Execution Context](/docs/execution-context), such as tokens produced by other actions, input parameters into the workflow or the data layer.
+
+In some cases, it's the Low-code Engineer that builds the entire application, fulfilling all the roles at once.
+
+Skills: `low-code`, `coding skills`, `SQL`, `HTML/CSS`, `C#`, `JavaScript`
+
+Typical personas:
+
+- Database developers & architects
+- Back-end software engineers
+- Front-end developers
+
+Examples of activities:
+
+- Configure [Run SQL](/docs/Actions/run-sql) actions to perform advanced SQL queries
+- Implement C# scripts for custom logic and algorithms
+- Implement new visualization templates with Razor, HTML, CSS and sometimes Angular
+- Integrate with external systems at the database layer
+- Setup SQL based data sources for Grids, dropdowns
+- Parse complex data returned by API calls using the Parse JSON or Regex actions.
+
+## `Software Developers`
+
+Plant an App has over 30 extension points that developers can tap into in order to add new functionalities to the platform. For example, new actions can be created as simple as implementing a C# interface and creating its specification in a JSON configuration file. Once deployed, Citizen Developers can use the new actions inside Workflows and pass in the input required for each action. Some extension points are front-end based, such as creating new views for grids or dashboards, which are Angular based.
+
+Extending the platform is achieved by traditional software engineers. Plant an App does not try to impose a new development paradigm, nor force learning the low-code way of building software. Instead, Plant an App focuses on integrating with the tools that developers already use, such as Visual Studio or GitHub, where functionality is extended through interfaces, Dependency Injection, and configuration files that are deployed to the application for other roles to use.
+
+We understand the passion for code and we do not want to take that away.
+
+A final note. Software development teams that are not native to .NET prefer to extend the platform through Microservices. That is, build the new functionality in other languages, such as Python or Java, then expose it as an API that can be consumed by Citizen Developers through the [Server Request](/docs/Actions/server-request) action or other HTTP based actions and data sources.
+
+Skills: `C#`, `Razor`, `HTML/CSS`, `JavaScript`, `Angular`, `IoC`, `Dependency Injection`
+
+Typical personas:
+
+- C# developers
+- Front-end and Angular developers
+- Outsourcing development shops and freelancers
+- Developers on other back-end technologies such as Python or Java
+
+Examples of activities:
+
+- Implement new actions to extend what Citizen Developers can do inside [Workflows](/docs/workflows)
+- Implement new data sources for dropdowns, so they can be connected to data that lives in a different format on external systems
+- Implement new validation rules that can be used on inputs in places such as forms or APIs to ensure the integrity of data
+- Implement new data sources for the search engine to bring unified results from external systems as well
+- Write specific integration actions to save the hassle of Citizen Developers having to work with low-level actions such as the [Server Request](/docs/Actions/server-request)
+- Create new templates for data visualization in listing, detail or dashboard views
+- Implement new formatters that define how a specific field displays across various screens, such as inside a listing
+
+## `System/Security Administrators`
+
+So far, all the roles presented refer to the application development process. There are other aspects to consider which are related to configuring authentication credentials for external systems, deployments, maintenance, and auditing the performance and security aspects once the application is in production.
+
+Note that although they are presented here together, in reality, these tasks fall across different individuals and teams.
+
+Skills: `Security`, `DevOps`, `System Administration`, `Maintenace`, `Auditing`
+
+Typical personas:
+
+- System administrators
+- Security administrators
+- Audit and compliance
+
+Examples of activities:
+
+- Configure Connectors to enable communications with external systems
+- Handle deployments
+- Review access logs and controls to detect suspicious activity
+- Observe the performance of [Workflows](/docs/workflows) and identify potential issues
+- Schedule and perform platform upgrades to patch known vulnerabilities and enable additional features added in Plant an App
