@@ -4,10 +4,6 @@ title: Jobs
 sidebar_label: Jobs
 ---
 
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
->
-> Skill Prerequisites: `None`
-
 ## Jobs
 
 In Plant an App, Automations are executed as ***Jobs***, which contain ***Triggers*** and ***Actions***. A Trigger is an event that will start executing all the Actions assigned to the Job. As such, a Job is a combination of Triggers and Actions.
@@ -33,19 +29,19 @@ The same main page shows your full Jobs list and allows you to `Run`, `Edit` and
 
 <img src="/img/job_options.png" alt="job_options.png"></img>
 
-The *Additional options* button enable you to `Clone`, `Export` (as JSON file), and `Delete` each Job, as well as checking its execution `History` (see the "`Job History`" section).
+The *Additional options* button enable you to `Clone`, `Export` (as JSON file), and `Delete` each Job, as well as checking its execution `History` (see the job "`History`" page of this section).
 
 Clicking the Job name will expand its view and provide you details about its last execution (and if it was successful), when the next run is scheduled and how many `Triggers` and `Actions` it contains.
 
 <img src="/img/job_quick_details.png" alt="job_quick_details.png"></img>
 
-## `New Job configuration`
+## New Job configuration
 
 ### `1. Settings`
 
 Main configuration fields for each Job.
 
-|Field|Notes|
+| Field | Notes |
 |---|---|
 |*Name*|Mandatory; please choose a unique name for every job in order to uniquely identify it.|
 |*Context Portal*|Defaults to the current portal; this settings affects the result of the `[Portal:*]` tokens.|
@@ -91,7 +87,7 @@ There are four types of Triggers you can define in Plant an App:
 - `Time` - time based triggers
 - `Users` - user-related triggers (creation, login, etc.) 
 
-For detailed information about the Triggers types, configuration and use, please see the **`Automation Triggers`** page.
+For detailed information about the Triggers types, configuration and use, please see the <a href="https://learn.plantanapp.com/docs/next/automation/automation-jobs-triggers" target="_blank">Job Triggers</a> page of this section.
 
 
 ### `3. Actions`

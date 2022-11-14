@@ -86,9 +86,9 @@ This section defines the actions that will get executed when the API is called. 
 
 This section defines the actions that will run when an error occurs during the API execution. Three options are available:
 
---	**`ADD`** (add a specific action)
---	**`IMPORT`** (import a predefined action)
---	**`ADD RESPONSE`** (add a response)
+**`ADD`** (add a specific action)
+**`IMPORT`** (import a predefined action)
+**`ADD RESPONSE`** (add a response)
 
 * The `ADD` button offers a wide array of Actions that can be undertaken by your API. Please see the full <a href="https://learn.plantanapp.com/docs/faq">Action list</a> that are available.
 
@@ -113,9 +113,9 @@ For each of the defined *Actions On error*, you will be provided with three poss
 
 This section defines the actions that will run when an error occurs during the API execution. Three options are available:
 
---	***ADD*** (add a specific action)
---	***IMPORT*** (import a predefined action)
---	***ADD RESPONSE*** (add a response)
+**`ADD`** (add a specific action)
+**`IMPORT`** (import a predefined action)
+**`ADD RESPONSE`** (add a response)
 
 * The `ADD` button offers a wide array of actions that can be undertaken by your API. Please see the full <a href="https://learn.plantanapp.com/docs/faq">Action list detailed here</a>.
 
@@ -124,13 +124,10 @@ After choosing the desired action, you will be able to configure them in detail 
 * The `IMPORT` button will allow you to import a predefined action written in the [JSON](https://www.json.org/json-en.html) format. Click it and paste or write the action in the field that pops-up.
 <br/>
 * The `ADD RESPONSE` button enables you to define responses to your API’s actions. Three options are presented:
-<br/>
     * **Output** – type of actions that will output result; available outputs are JSON (list or object), a file download based on your identifier or raw response (unformatted). Please see [here](https://learn.plantanapp.com/docs/faq) for a full list and supported parameters for the Output actions.
-<br/>
     * **Flow** – stop the execution.
-<br/>
     * **Redirect** – use redirect (a forward from one URL address to a new one) actions; redirect to a Portal, URL or to a file download are available. Please see here for a full list and supported parameters for the Redirect actions.
-<br/>
+
 
 :::note
 You may add as many actions or responses as you want, but keep in mind that some of the actions might be terminal; as such, any actions, or responses found below in the execution order will not get executed. The system will detect any possibly terminal actions and signal them accordingly.
@@ -145,18 +142,19 @@ This section provides you with security settings for your API. There are two set
 **`- Cross Domain Policy`**
 The cross-domain policy will define the domain(s) where your API will be accessible from. Choose one of the four settings:
 
-* ***Public*** – no restrictions (anywhere).
-* ***Only domains associated with current portal*** – access granted to domains linked to the one you are in.
-* ***All domains registered in this DNN instance*** – access will be granted only to domains registered with the present [DNN platform](https://docs.dnncommunity.org/content/features/general/dnn/index.html) installation.
-* ***Restricted to specific domains*** – if you choose this option, only allowed domains will be able to access the API; you will need to list them specifically in the “Allowed domains” field that appears.
+|Policy|Description|
+|---|---|
+|*Public*|No restrictions (i.e. access from anywhere).|
+|*Only domains associated with current portal*|Access granted to domains linked to the one you are in.|
+|*All domains registered in this DNN instance*|Access will be granted only to domains registered with the present [DNN platform](https://docs.dnncommunity.org/content/features/general/dnn/index.html) installation.|
+|*Restricted to specific domains*|If you choose this option, only allowed domains will be able to access the API; you will need to list them specifically in the “`Allowed domains`” field that appears.|
 
 **`- Access`**
 In this section, you will define the access security to the API. There are four options:
 
-* ***Public access*** – free access.
-* ***JWT Access*** – access to the API is regulated by a [JSON Web Token](https://jwt.io/introduction).
-
-If you choose this option, you will also need to define [OAuth](https://oauth.net/2/) Scopes (a mechanism in OAuth to limit an application's access to a user's account). You can also Validate the audience of the token. You can find out more about this setting, [here](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3).
-
-* ***Restricted to API Keys…*** – this access method needs an [API Key](https://www.fortinet.com/resources/cyberglossary/api-key) to be issued from the <em>APIs section > Security > API KEYS</em>. If multiple keys are issued, you can select them individually.
-* ***Private (only from ‘Execute API method’ action)*** – this makes your API private (accessible only locally, invoked without using HTTP).
+|Access|Description|
+|---|---|
+|*Public access*|Free access.|
+|*JWT Access*|Access to the API is regulated by a [JSON Web Token](https://jwt.io/introduction). If you choose this option, you will also need to define [OAuth](https://oauth.net/2/) Scopes (a mechanism in OAuth to limit an application's access to a user's account). You can also Validate the audience of the token. You can find out more about this setting, [here](https://datatracker.ietf.org/doc/html/rfc7519#section-4.1.3).|
+|*Restricted to API Keys…*|This access method needs an [API Key](https://www.fortinet.com/resources/cyberglossary/api-key) to be issued from the ***APIs section > Security > API KEYS***. If multiple keys are issued, you can select them individually.|
+|*Private (only from ‘Execute API method’ action)*|This makes your API private (accessible only locally, invoked without using HTTP).|

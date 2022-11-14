@@ -4,28 +4,6 @@ title: History
 sidebar_label: History
 ---
 
----
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
----
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
----
-id: automation
-title: Automation
-sidebar_label: Automation
----
-
-> Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
-> 
-> Skill Prerequisites: `None`
-
 ## History
 
 The history of job executions is accessible through the **`History`** button in the upper part of the Automation section menu.
@@ -38,13 +16,13 @@ The logged parameters for each execution are:
 
 <img src="/img/automation-history-main_2.png" alt="automation-history-main_2.png"></img>
 
-* **`Job ID`** \- the Job's ID \(unique and automatically generated when creating a job\)\.
-* **`Job Name`** \- customized name that has been defined for each Job\.
-* **`Date`** \- the date when the job ran \(local time\, `MM:dd:yyyy` format).
-* **`Start Time`** \- job start time \(local time\, `h:mm:ss` format).
-* **`End Time`** \- job end time \(local time\, `h:mm:ss` format).
-* **`Duration`** \- job execution duration time \(in seconds\, with 3 decimals\)\.
-* **`Status`** \- job status \(either `Running`, `Success` or `Failed`).
+* `Job ID`: the Job's ID (unique and automatically generated when creating a job).
+* `Job Name`: customized name that has been defined for each Job.
+* `Date`: the date when the job ran (local time, `MM:dd:yyyy` format).
+* `Start Time`: job start time (local time, `h:mm:ss` format).
+* `End Time`: job end time (local time, `h:mm:ss` format).
+* `Duration`: job execution duration time (in seconds, with 3 decimals).
+* `Status`: job status (either `Running`, `Success` or `Failed`).
 
 The jobs list can be ordered according to each of the parameters above. A `Refresh` button is also present, which allows a History reload.
 
@@ -58,10 +36,10 @@ Each job entry is expandable by clicking the `Details` button (to collapse back,
 
 The Details section will provide you with further information about each job:
 
-* `Report ID` \- the history log's unique ID for this particular event\.
-* `Job ID` \- the ID of the job that was run\.
-* `Trigger ID` \- the ID of the trigger that caused this particular job to execute\.
-* `Data` \- this field is used when the `Debug Mode` box is checked in the job's settings (see the **Jobs** \> **Settings** page).
+* `Report ID`: the history log's unique ID for this particular event.
+* `Job ID`: the ID of the job that was run.
+* `Trigger ID`: the ID of the trigger that caused this particular job to execute.
+* `Data`: this field is used when the `Debug Mode` box is checked in the job's settings (see the **Jobs** > **Settings** page).
 
 ### `Search and Filters`
 
@@ -75,7 +53,7 @@ This filtering field accepts alphanumeric characters and will display all job en
 
 We recommend being as specific as possible in order to get the best results.
 
-To cancel the filter, simply click the "X" button next to it.
+To cancel the filter, simply click the "**X**" button next to it.
 
 <img src="/img/history-filters_2.png" alt="history-filters_2.png"></img>
 
@@ -91,7 +69,7 @@ Specific filters are available to refine your search. Each filter lists all the 
 
 <img src="/img/history-filters_3.png" alt="history-filters_3.png"></img>
 
-| Filter | Notes |
+| Filter | Description|
 | ------ | ----- |
 | *Job ID* | Allows to filter Jobs according to their unique numeric ID. |
 | *Job Name* | Filters Jobs according to their customized name. |
