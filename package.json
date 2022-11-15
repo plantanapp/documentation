@@ -10,12 +10,12 @@
     "version": "docusaurus docs:version"
   },
   "dependencies": {
-    "@cmfcmf/docusaurus-search-local": "^0.6.6",
-    "@docusaurus/core": "^2.0.0-beta.6",
-    "@docusaurus/mdx-loader": "^2.0.0-beta.6",
-    "@docusaurus/plugin-google-gtag": "^2.0.0-beta.6",
-    "@docusaurus/plugin-sitemap": "^2.0.0-beta.6",
-    "@docusaurus/preset-classic": "^2.0.0-beta.6",
+    "@cmfcmf/docusaurus-search-local": "^0.11.0",
+    "@docusaurus/core": "^2.2.0",
+    "@docusaurus/mdx-loader": "^2.2.0",
+    "@docusaurus/plugin-google-gtag": "^2.2.0",
+    "@docusaurus/plugin-sitemap": "^2.2.0",
+    "@docusaurus/preset-classic": "^2.2.0",
     "@mdx-js/react": "^1.6.22",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
