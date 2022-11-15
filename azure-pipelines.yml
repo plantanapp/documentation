@@ -15,8 +15,6 @@ stages:
             inputs:
               versionSpec: "19.x"
             displayName: "Install Node.js"
-            env:
-              NODE_OPTIONS: --openssl-legacy-provider
           - script: |
               npm ci
               npm run build
