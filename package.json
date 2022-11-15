@@ -6,14 +6,17 @@
     "start": "docusaurus start",
     "build": "docusaurus build",
     "swizzle": "docusaurus swizzle",
-    "deploy": "docusaurus deploy"
+    "deploy": "docusaurus deploy",
+    "version": "docusaurus docs:version"
   },
   "dependencies": {
-    "@aldridged/docusaurus-plugin-lunr": "^1.0.0-alpha.10",
-    "@docusaurus/core": "^2.0.0-alpha.54",
+    "@cmfcmf/docusaurus-search-local": "^0.6.6",
+    "@docusaurus/core": "^2.0.0-beta.6",
+    "@docusaurus/mdx-loader": "^2.0.0-beta.6",
     "@docusaurus/plugin-google-gtag": "^2.0.0-beta.6",
     "@docusaurus/plugin-sitemap": "^2.0.0-beta.6",
-    "@docusaurus/preset-classic": "^2.0.0-alpha.54",
+    "@docusaurus/preset-classic": "^2.0.0-beta.6",
+    "@mdx-js/react": "^1.6.22",
     "classnames": "^2.2.6",
     "react": "^16.8.4",
     "react-dom": "^16.8.4"

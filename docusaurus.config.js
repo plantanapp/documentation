@@ -1,5 +1,5 @@
 module.exports = {
-  title: 'Get started with Plant an App',
+  title: 'Get started',
   tagline: 'Low Code Fundamentals Course is now Available',
   url: 'https://learn.plantanapp.com',
   baseUrl: '/',
@@ -7,13 +7,23 @@ module.exports = {
   organizationName: 'plantanapp', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
   themeConfig: {
+     metadata: [
+       {
+         name: 'keywords', 
+         content: 'Low Code Course'
+       },
+       {
+         name: 'description', 
+         content: 'The only app development platform that gives IT teams the speed of low-code without compromising the power and flexibility of custom coding.'
+       }
+     ],
     navbar: {
       title: 'Plant An App',
       logo: {
         alt: 'Plant an App Logo',
         src: 'img/pap-logo.png',
       },
-      links: [
+      items: [
         {
           to: 'https://community.plantanapp.com/',
           label: 'Community',
@@ -38,6 +48,10 @@ module.exports = {
         {
           href: 'https://github.com/plantanapp/documentation',
           label: 'GitHub',
+          position: 'right',
+        },
+        {
+          type: 'docsVersionDropdown',
           position: 'right',
         },
       ],
@@ -104,20 +118,21 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/plantanapp/documentation/edit/master',
-            showLastUpdateAuthor: true,
-            showLastUpdateTime: true
+            'https://github.com/plantanapp/documentation/edit/master'
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-          'https://github.com/plantanapp/documentation/edit/master',
-          showLastUpdateAuthor: true,
-          showLastUpdateTime: true
+          'https://github.com/plantanapp/documentation/edit/master'
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        sitemap :  {
+          changefreq: 'weekly',
+          priority: 0.5,
+          trailingSlash: false,
         },
       },
     ],
@@ -126,15 +141,7 @@ module.exports = {
     '/scripts/external-links.js'
   ],
   plugins: [
-    [
-      '@docusaurus/plugin-sitemap',
-      {
-        changefreq: 'weekly',
-        priority: 0.5,
-        trailingSlash: false,
-      },
-    ],
-    ['@docusaurus/plugin-google-gtag'],
-    '@aldridged/docusaurus-plugin-lunr',
+    "@cmfcmf/docusaurus-search-local"
+    
   ],
 };

@@ -7,7 +7,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary: #009688;
   --ifm-color-primary-dark: rgb(33, 175, 144);
   --ifm-color-primary-darker: rgb(31, 165, 136);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -16,6 +16,8 @@
   --ifm-color-primary-lightest: rgb(146, 224, 208);
   --ifm-code-font-size: 95%;
 }
+
+/*Homepage academy*/
 
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
@@ -37,4 +39,21 @@
 
 .hero .hero__subtitle {
     color: white;
+}
+
+/*overwrite Search default*/
+.aa-DetachedSearchButton{
+	  width: 250px !important;
+    height: 32px !important;
+    border-radius: 20px !important;
+    border-width: 1px !important;
+}
+
+:root {
+--aa-primary-color-rgb: 4,19,35 !important; 
+}
+
+.aa-Form {
+	border-radius: 20px !important;
+    height: 40px !important;
 }
