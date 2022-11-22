@@ -1,24 +1,22 @@
 ---
 id: configuration-and-usage-saas
-title: Version Control (SaaS)
-sidebar_label: Version Control (SaaS)
+title: Configuration and Usage
+sidebar_label: Configuration and Usage
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 
-## Version Control (SaaS)
-
 This section covers the setup and usage of the Version Control feature for the cloud/SaaS version of Plant an App.
 
 For the self-hosted/on-premises version of Plant an App, this feature requires a different setup and configuration; please see the `Version Control (on-prem)` page of this section.
 
-### Prerequisites
+## Prerequisites
 
 To use Version Control, you will first need to setup a GIT or [GitHub account](https://docs.github.com/en/get-started/onboarding/getting-started-with-your-github-account).
 
-### Configuration
+## Configuration
 
 At the first-time use of `Version Control`, you will be asked to provide your GIT/GitHub connection credentials:
 
@@ -34,7 +32,7 @@ After having successfully logged into your GIT/GitHub account, an initial commit
 
 If the process is successful, you will be taken to the Version Control main console screen (see below).
 
-### Usage
+## Usage
 
 Once the Setup and Configuration steps above are completed, `Version Control` is ready to use. Accessing it will bring you directly to the Version Control main console screen which contains three sections:
 
@@ -42,7 +40,7 @@ Once the Setup and Configuration steps above are completed, `Version Control` is
 * `Changes`
 * `Included In Version`
 
-#### **Version History**
+### **Version History**
 
 This section lists the history of your commits along with various information about each one of them.
 
@@ -69,7 +67,7 @@ Additionally, you can:
 * Configure your GIT credentials ③ - [GIT URL](https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories), [GIT Username](https://docs.github.com/en/get-started/getting-started-with-git/setting-your-username-in-git) and [GIT PAT](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).
 * Navigate through the commit pages and set the number of commit items to be displayed by page ④.
 
-#### **Changes**
+### **Changes**
 
 In this section the changes since your last commit are listed and you can select them individually (or in mass) to be included in your commit.
 
@@ -84,7 +82,7 @@ Note that each type from the list is individually selectable through a checkbox.
 * Select ② the changes you want to include in the next commit by checking their corresponding box in the utmost left column. Alternatively, you can select all the boxes at once by checking the box atop the column.
 * Include your changes to the commit by clicking their individual "<em>Include</em>" button ③ in the utmost right column. Alternatively, you can click the "<strong>Include Selected</strong>" button above the filters section; this will include all the selected changes to the commit at once.
 
-#### **Included In Version**
+### **Included In Version**
 
 This section composes the final version commit. It also allows you to remove changes from the commit.
 

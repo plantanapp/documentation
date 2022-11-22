@@ -1,10 +1,8 @@
 ---
 id: automation-jobs
-title: Jobs
+title: Automation Jobs
 sidebar_label: Jobs
 ---
-
-## Jobs
 
 In Plant an App, Automations are executed as ***Jobs***, which contain ***Triggers*** and ***Actions***. A Trigger is an event that will start executing all the Actions assigned to the Job. As such, a Job is a combination of Triggers and Actions.
 

@@ -1,16 +1,16 @@
 ---
 id: welcome
-title: Welcome
-sidebar_label: Welcome
+title: Welcome!
+sidebar_label: Welcome!
 ---
 
-## Welcome to the Plant an App Documentation Portal!
+## The Plant an App Documentation Portal
 
 Here you will find guides, information and details about how to use and configure Plant an App.
 
 The documentation structure follows the `Configuration` menu from your Plant an App. As such, you will find the different documentation categories in the menu to the left of the page.
 
-As our product evolves constantly, so does our documentation. As we strive to provide you with the most detailed guides and relevant information for your Plant an App journey, you will notice that our Documentation Portal structure and content evolves from one version to the next. To check the  documentation relevant to your specific version, please use the drop-down list in the upper right bar of your screen.
+As our product evolves constantly, so does our documentation. As we strive to provide you with the most detailed guides and relevant information for your Plant an App journey, you will notice that our Documentation Portal structure and content changes from one version to the next. To check the  documentation relevant to your specific version, please use the drop-down list in the upper right bar of your screen.
 
 <img src="/img/version_bar.png" alt="version_bar.png" ></img>
 

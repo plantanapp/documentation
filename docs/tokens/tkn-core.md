@@ -4,11 +4,9 @@ title: Core Tokens
 sidebar_label: Core Tokens 
 ---
 
-## Core Tokens
-
 These are standard, Plant an App-specific tokens. 
 
-Below is a list of all *Core Tokens*, along with a description of the information each one them binds. Further information regarding accepted ***Values***, case ***Usage*** and usage ***Examples*** can be found directly in the Plant an App interface, under **Configuration** > **Tokens** > **Core Tokens**.
+Below is a list of all *Core Tokens*, along with a description of the information each one them binds. Further information regarding accepted ***Values***, case ***Usage*** and usage ***Examples*** can be found directly **in the Plant an App interface**, under **Configuration** > **Tokens** > **Core Tokens**.
 
 |Token|Description and information|
 |---|---|

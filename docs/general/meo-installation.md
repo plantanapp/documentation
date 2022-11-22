@@ -1,18 +1,16 @@
 ---
 id: meo-installation
-title: MEO Server setup and installation
-sidebar_label: MEO Server setup and installation
+title: MEO Server Setup and Installation
+sidebar_label: MEO Server Setup and Installation
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 
-## Initial MEO Server Setup and installation
-
 This section will guide you through the MEO installation process.
 
-### Installation Package
+## Installation Package
 The MEO installation package is structured in four different files:
 
 1. `RunPlantanapp.ps1`
@@ -28,7 +26,7 @@ The MEO installation package is structured in four different files:
 
 The `env` file contains the installation configuration of the Multi-Environment Orchestrator (see below).
 
-#### **`env` file specific configuration**
+-  **`env` file specific configuration**
 
 The following parameters need to be configured before the installation:
 
@@ -48,13 +46,13 @@ The following parameters need to be configured before the installation:
 |*LogsFolder*|**Mandatory Parameter**. Define the MEO log folder. The path can be local or remote, but it must be accessible from the MEO server.|
 
 
-### Installation
+## Installation
 
 The installation process involves running the `RunPlantanapp.ps1` (no arguments) script in PowerShell once the above configuration is completed.
 
 The script will download and install MEO as a Docker container image (an executable package that includes everything needed to run the application - code, runtime, system tools, system libraries and settings) in a <a href="https://www.docker.com/resources/what-container/)" target="_blank">Docker container</a>.
 
-### MEO status control
+## MEO status control
 
 The `RunPlantanapp.ps1` script also allows you to control the status of the  Multi-Environment Orchestrator. The following arguments are available:
 
@@ -63,7 +61,7 @@ The `RunPlantanapp.ps1` script also allows you to control the status of the  Mul
 |*-Start*|Starts the MEO Docker container.|
 |*-Stop*|Stops the MEO Docker container.|
 |*-Reset*|Removes the MEO Docker container and the app folders, redownloads the Docker image and starts MEO.|
-|*-PermanentlyRemove*|⚠ Removes the MEO docker container and the app  folders.|
+|*-PermanentlyRemove*|⚠ Removes the MEO Docker container and the app  folders.|
 
 :::note
 

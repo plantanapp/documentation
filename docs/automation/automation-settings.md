@@ -4,9 +4,8 @@ title: Settings
 sidebar_label: Settings
 ---
 
-## Settings
-
 ### `SQL Dependency`
+
 Enable or disable the use of the SQL Dependency feature. This improves the latency of Database Triggers.
 
 The total number of available threads as well as the busy threads is displayed.

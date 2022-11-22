@@ -1,18 +1,16 @@
 ---
 id: meo-prerequisites-and-setup
-title: MEO Prerequisites and setup
-sidebar_label: Prerequisites and setup
+title: MEO Prerequisites and Setup
+sidebar_label: MEO Prerequisites and Setup
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 
-## Prerequisites and Setup
-
 This section lists the prerequisites and configuration necessary for installing the Multi-Environment Orchestrator on your Plant an App environment.
 
-### Hardware and Software requirements
+## Hardware and Software requirements
 
 | Hardware requirement | Details |
 | -------------------- | ------- |
@@ -35,13 +33,13 @@ The *Internet connection* requirement is not mandatory. The application kit can 
 | *Web Server (IIS)* | It might be found under “Internet Information Services” on latest Windows versions. |
 | *VCS (Version Control System) Repository account* | Supports GIT-based versioning systems (such as GitHub) that uses a PAT (<a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">Personal Access Token</a>) for authentication. |
 
-### Database setup
+## Database setup
 
 Two Databases must be created, one for each MEO component: the **Identity Provider** and the <strong>Environment Orchestrator</strong>.
 
 Each DB must be provided with a **`db_owner`** user and subsequent `username` and `password`.
 
-### IIS Site Setup
+### IIS Site setup
 
 Since MEO is a webserver that communicates in HTTP/S, you will need to setup a dedicated site for it in [Microsoft IIS](https://www.iis.net/).
 

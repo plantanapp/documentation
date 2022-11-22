@@ -8,8 +8,6 @@ sidebar_label: MEO Server Configuration
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 
-## MEO Server Configuration
-
 This section covers the backend/server configuration of the Multi-Environment Orchestrator. Configuration is split between the `env` file (basic, mandatory configuration) and the `appsettings.override.json` (advanced, optional configuration).
 
 :::info
@@ -18,7 +16,7 @@ For the MEO client side/UI interface configuration that covers topics such as th
 
 :::
 
-### **`env`** file configuration
+## **`env`** file configuration
 
 The `env` file contains the mandatory configuration of the Multi-Environment Orchestrator.
 
@@ -47,11 +45,11 @@ If the contents of the `env` file are modified, a MEO restart is required in ord
 
 `RunPlantanapp.ps1 -Start`
 
-For more information about the `RunPlantanapp.ps1` control script, please see the following section:  ***Initial MEO Server setup and installation*** > ***MEO status control***.
+For more information about the `RunPlantanapp.ps1` control script, please see the following section:  ***MEO Server setup and installation*** > ***MEO status control***.
 
 :::
 
-### **`appsettings.override.json`** file configuration
+## **`appsettings.override.json`** file configuration
 
 This is an advanced configuration file that allows certain application parameters  from the appsettings.json file found on the MEO Docker image to be ovewritten. Only modify this file if specifically required to. 
 
@@ -80,6 +78,6 @@ If the contents of the `appsettings.override.json` file are modified, a MEO rest
 
 `RunPlantanapp.ps1 -Start`
 
-For more information about the `RunPlantanapp.ps1` control script, please see the following section:  ***Initial MEO Server setup and installation*** > ***MEO status control***.
+For more information about the `RunPlantanapp.ps1` control script, please see the following section: <a href="  https://learn.plantanapp.com/docs/next/general/meo-installation#meo-status-control" target="_blank">*MEO Server setup and installation* > *MEO status control*</a>.
 
 :::

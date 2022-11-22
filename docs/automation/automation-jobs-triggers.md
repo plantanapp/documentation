@@ -1,14 +1,13 @@
 ---
 id: automation-jobs-triggers
-title: Job Triggers
+title: Automation Job Triggers
 sidebar_label: Job Triggers
 ---
-
-## Automation Job Triggers
 
 Below is a list of automation job triggers handled by Plant an App, by category. They are used in the <a href="https://learn.plantanapp.com/docs/next/automation/automation-jobs" target="_blank">Jobs context</a>.
 
 ## `App Events`
+
 |Trigger|Details|
 |---|---|
 |*App End*|Activated when an application is shutdown by IIS.|
@@ -18,13 +17,15 @@ Below is a list of automation job triggers handled by Plant an App, by category.
 |*Begin Request*|This trigger fires at the beginning of every request.|
 |*End Request*|This trigger fires at the end of every request.|
 
-### ***`App Idle`*** triggers specific parameters
+### **`App Idle`** triggers specific parameters
+
 - `CPU Idle Threshold` - Allows definition of a CPU consumption percentage under which it will be considered at idle. Supported range: 20% (min) to 60% (max). This field supports tokens (see `Tokens` section).
 - `Ideal CPU Frequency` - Defines the frequency with which this trigger fires if the CPU is at idle. Minimum frequency is 1 second. This field supports tokens (see `Tokens` section).
 - `Maximum delay` - Specify the number of seconds that this trigger will wait if the CPU is busy at the moment of the *Ideal Frequency* (see above). The default and minimum value is 1 second. The trigger will always fire at the end of this period regardless of CPU load. This field supports This field supports tokens (see `Tokens` section).
 - `Skip If Running` - Checking this option will cause the automation to skip executing this Job as long as the last execution is still in progress. This ensures that the job will not have multiple instances running in parallel.  
 
 ## `Database`
+
 |Trigger|Description and details|
 |---|---|
 |*On Database Delete*|Fires when data is deleted from a predefined table. The job is fired once for every row that was deleted. Tokens are built automatically using column names, so you can reference the deleted row values inside actions using `[ColumnName:Before]` token syntax.|
@@ -39,6 +40,7 @@ Be careful when using a Trigger that updates and executes an Action (e.g. `Run S
 :::
 
 ## `Time`
+
 |Trigger|Description and details|
 |---|---|
 |*Cron Trigger (advanced)*|Create a time trigger using a <a href="http://www.quartz-scheduler.org/documentation/quartz-2.3.0/tutorials/crontrigger.html" target="_blank">Cron Expression syntax</a>. Specify time in UTC.<br />. This field supports tokens (see `Tokens` section).|
@@ -46,7 +48,8 @@ Be careful when using a Trigger that updates and executes an Action (e.g. `Run S
 |*Repeat Daily*|A trigger that fires every day at the specified time (in UTC).|
 |*Repeat on Interval*|Create a trigger that will fire regularly, at a predefined interval. Set the `First Run` date and time (in UTC - the subsequent run times will be calculated from this reference point), the repeat `Interval` (integer) and the repeat time unit (*Seconds*, *Minutes*, *Hours* or *Days*).|
 
-### ***`Time`*** triggers specific parameters
+### **`Time`** triggers specific parameters
+
 - `Skip If Running` - Checking this option will cause the automation to skip executing this Job as long as the last execution is still in progress. This ensures that the job will not have multiple instances running in parallel (does not apply to the `One Time` Trigger). 
 - `On Misfire` - Determines what should be done if the precise time when the trigger should have been fired was missed, for example because all other threads were busy with other jobs. The two possible values are: `Run Now` or `Do Nothing`.
 
