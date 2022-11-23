@@ -78,6 +78,6 @@ If the contents of the `appsettings.override.json` file are modified, a MEO rest
 
 `RunPlantanapp.ps1 -Start`
 
-For more information about the `RunPlantanapp.ps1` control script, please see the following section: <a href="  https://learn.plantanapp.com/docs/next/general/meo-installation#meo-status-control" target="_blank">*MEO Server setup and installation* > *MEO status control*</a>.
+For more information about the `RunPlantanapp.ps1` control script, please see the following section: [*MEO Server setup and installation* > *MEO status control*](/general/meo-installation.md#meo-status-control).
 
 :::
