@@ -153,7 +153,7 @@ The `Cancel` button will discard all the changes made since the last save.
 
 Found in the lower part of the main page, this feature allows you to test your tokens and check their output on-the-spot. You can expand it by clicking the "`<> Test Tokens`" bar in the bottom of the main page.
 
-<img src="/img/tokens_test.png" alt="tokens_test.png">
+<img src="/img/tokens_test.png" alt="tokens_test.png"></img>
 
 
 To test your token, simply type it in the `Input your tokens` field and click the "▷" button. The result of the token will be displayed in the "Output" field to the right.
