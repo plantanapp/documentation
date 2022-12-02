@@ -39,13 +39,11 @@ The following parameters need to be configured ***before the installation proces
 
 :::note
 
-If the contents of the `env` file are modified, a MEO restart is required in order for the changes to take effect. Please run the Stop and Start commands in succession:
+If the contents of the `env` file are modified, a MEO restart is required in order for the changes to take effect:
 
-`RunPlantanapp.ps1 -Stop`
+`RunPlantanapp.ps1 -Restart`
 
-`RunPlantanapp.ps1 -Start`
-
-For more information about the `RunPlantanapp.ps1` control script, please see the following section:  ***MEO Server setup and installation*** > ***MEO status control***.
+For more information about the `RunPlantanapp.ps1` control script, please see the following section: <a href="https://learn.plantanapp.com/docs/general/meo-installation#meo-status-control" target="_blank">*MEO Server setup and installation* > *MEO status control*</a>.
 
 :::
 
@@ -72,12 +70,10 @@ A list of the editable parameters in the file can be found below.
 
 :::note
 
-If the contents of the `appsettings.override.json` file are modified, a MEO restart is required in order for the changes to take effect. Please run the Stop and Start commands in succession:
+If the contents of the `appsettings.override.json` file are modified, a MEO restart is required in order for the changes to take effect:
 
-`RunPlantanapp.ps1 -Stop`
+`RunPlantanapp.ps1 -Restart`
 
-`RunPlantanapp.ps1 -Start`
-
-For more information about the `RunPlantanapp.ps1` control script, please see the following section: [*MEO Server setup and installation* > *MEO status control*](/general/meo-installation.md#meo-status-control).
+For more information about the `RunPlantanapp.ps1` control script, please see the following section: <a href="https://learn.plantanapp.com/docs/general/meo-installation#meo-status-control" target="_blank">*MEO Server setup and installation* > *MEO status control*</a>.
 
 :::

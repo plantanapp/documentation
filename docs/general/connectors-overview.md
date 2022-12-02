@@ -1,7 +1,7 @@
 ---
 id: connectors-overview
-title: Connectors Overview
-sidebar_label: Overview
+title: Connectors Overview and usage
+sidebar_label: Overview and usage
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)

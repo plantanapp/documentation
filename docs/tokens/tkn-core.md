@@ -63,7 +63,7 @@ Below is a list of all *Core Tokens*, along with a description of the informatio
 |*If*|Compares two variables and displays `True` if they are equal. This token is particularly useful in `Condition` fields.|
 |*String*|Evaluates a string and replaces a predefined expression with the specified value(s).|
 |*Debug*|Provides access to debugging functions (dumps all parameters on screen).|
-|*FreeGeoIp*|Provides geographical information based on IP through the free <a href="https://ipstack.com/" target="_blank">freegeoip.net </a> service. Accepts IPv4 and IPv6.|
+|*FreeGeoIp*|Provides geographical information based on IP address. Accepts IPv4 and IPv6.|
 |*Response*|Modifies the HTTP response to include headers and sets page title. Accepts tokens as values.|
 |*Pluralization*|Helper tokens for content pluralization (allows to define plural values for specific words or expressions).|
 |*Localization*|Helper tokens for content localization. Retrieves localization information from the browser. Accepted values: `BrowserCultureCode`, `BrowserLanguageCode`, `BrowserCountryCode`.|
