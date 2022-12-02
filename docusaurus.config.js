@@ -31,7 +31,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/audience',
+          to: 'docs/general/welcome',
           activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
