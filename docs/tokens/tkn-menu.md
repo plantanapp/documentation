@@ -4,7 +4,7 @@ title: Tokens Menu
 sidebar_label: Tokens Menu
 ---
 
-## Tokens menu
+# Tokens menu
 
 The main page of the `Tokens` section allows you to:
 
@@ -13,9 +13,9 @@ The main page of the `Tokens` section allows you to:
 * See your <em>Custom Tokens</em>, by namespace.
 * [Export/import tokens](#export-and-import-tokens) (as JSON).
 * Alter the [Security and Debugging settings](#settings-security-and-debugging) for your tokens.
-* [Test your tokens](#test-tokens-section).
+* [Test your tokens](#test-tokens-feature).
 
-### `Core Tokens`
+## `Core Tokens`
 
 The full list of available Core Tokens in Plant an App is displayed by clicking the `Core Tokens` button; this will expand the list.
 
@@ -29,32 +29,34 @@ Selecting a specific Core Token from the list will provide details about it on t
 
 <img src="/img/core_tkn4.png" alt="core_tkn4.png"></img>
 
-For a general detailed list of the available Core Tokens in Plant an App, please see the "<strong>Core Tokens</strong>" page.
+For a general detailed list of the available Core Tokens in Plant an App, please see the "<a href="https://learn.plantanapp.com/docs/tokens/tkn-core" target="_blank">Core Tokens</a>" page.
 
-Note that clicking a specific token from the list will open a dedicated associated tab on the main screen. This will happen for every different token you select from the list. You can then easily navigate between the tabs and close them separately by clicking the "<strong>X</strong>" button.
+Note that clicking a specific token from the list will open a dedicated associated tab on the main screen. This will happen for every different namespace you select from the list. You can then easily navigate between the tabs and close them separately by clicking the "<strong>X</strong>" button.
 
 <img src="/img/core_tkn3.png" alt="core_tkn3.png"></img>
 
-### Namespaces and custom tokens
+## Namespaces and custom tokens
 
-### Export and import tokens
+Other than core tokens, Plant an App allows you to create customized tokens and group them into specific, custom namespaces. We have a complete documentation section about this specific topic - please see the "<a href="https://learn.plantanapp.com/docs/tokens/custom-tokens-and-namespaces" target="_blank">Custom Tokens and Namespaces</a>" page.
+
+## Export and import tokens
 
 Allows you to export and import tokens as a JSON.
 
-#### **Export token**
+### **Export token**
 
 1. Click the `Export tokens` button.
     <img src="/img/tkn_exp1.png" alt="tkn_exp1.png"></img>
 2. Check the box(es) next to the token(s) you want to export.
     <img src="/img/tkn_exp2.png" alt="tkn_exp2.png"></img>
-    Note that you can select individual tokens from a namespace, or the namespace as a whole - case in which all the tokens in the given namespace will be exported.
+    Note that you can select individual tokens from a namespace, or the namespace as a whole - in which case all the tokens in the given namespace will be exported.
     In the example above, a specific token from one namespace is selected for export (<em>MyToken2</em>), as well a namespace (<em>Namespace2</em>) in full. Notice the different type of selection icons. You also have the `Select All` and `Deselect All` buttons to help you with multiple, large selections.
 3. Click the `Export` button. You will be presented with your tokens selected for export as a JSON. You can then click the `Copy` button and subsequently paste the selection to a file or field.
     <img src="/img/tkn_exp3.png" alt="tkn_exp3.png"></img>
 
 Once finished, simply click the `Cancel` button or anywhere outside the export window to automatically close it.
 
-#### **Import token**
+### **Import token**
 
 1. Click the `Import tokens` button.
     <img src="/img/tkn_imp1.png" alt="tkn_imp1.png"></img>
@@ -73,7 +75,7 @@ In this section you can change settings related to the security aspects of your 
 
 <img src="/img/tkn_sett.png" alt="tkn_sett.png"></img>
 
-#### `Security`
+### `Security`
 
 You can access the security settings of your tokens by expanding the "Security" section of the **General Settings** window. This will give you access to two toggle-based settings:
 
@@ -113,7 +115,7 @@ You will need to click the `Save` button (lower right corner of the **General Se
 
 :::
 
-#### `Debugging`
+### `Debugging`
 
 You can expand the token debugging feature by clicking on the "Debugging" section of the **General Settings** window.
 

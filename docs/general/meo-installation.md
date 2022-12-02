@@ -58,13 +58,22 @@ The `RunPlantanapp.ps1` script also allows you to control the status of the  Mul
 
 |Parameter|Information|
 |---|---|
-|*-Start*|Starts the MEO Docker container.|
-|*-Stop*|Stops the MEO Docker container.|
+|*-Start*|Starts the MEO Docker containers.|
+|*-Stop*|Stops the MEO Docker containers.|
 |*-Reset*|Removes the MEO Docker container and the app folders, redownloads the Docker image and starts MEO.|
-|*-PermanentlyRemove*|⚠ Removes the MEO Docker container and the app  folders.|
+|*-PermanentlyRemove*|⚠ Removes the MEO Docker containers and the app  folders.
+|*-Update*|Pulls the latest image from the Plant an App repository (needs an internet connection) and updates the Docker containers. It does not delete any data.|
+|*-Restart*|Stops and then starts the Docker containers. It does not delete any data.|
+|*-PinToTag*|⚠ Used for debugging. Pulls the image with the specified tag and updates the Docker containers. Please do not use this command unless specifically needed or demanded by the Plant an App team.|
 
-:::note
+:::info
 
-If run without arguments (after the installation), the `RunPlantanapp.ps1` script will just check if there is a new MEO Docker image to download, and if so will download and install it.
+A few examples of MEO server commands:
+
+`PS> .\RunPlantanapp.ps1 -Start` 
+
+`PS> .\RunPlantanapp.ps1 -Stop`
+
+`PS> .\RunPlantanapp.ps1 -Reset`
 
 :::

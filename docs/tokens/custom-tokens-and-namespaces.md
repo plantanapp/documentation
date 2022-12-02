@@ -155,13 +155,8 @@ Found in the lower part of the main page, this feature allows you to test your t
 
 <img src="/img/tokens_test.png" alt="tokens_test.png"></img>
 
-:::tip
 
-You can also save and test directly your token by using the `Save & Test` button from the token editor. Note that this will directly return its value on a pop-up dialog in the lower part of the window.
-
-:::
-
-To test your token, simply type it in the `Input your tokens` field and click the ▷ button. The result of the token will be displayed in the "Output" field to the right.
+To test your token, simply type it in the `Input your tokens` field and click the "▷" button. The result of the token will be displayed in the "Output" field to the right.
 
 :::tip
 
