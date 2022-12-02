@@ -5,7 +5,8 @@
 /build
 
 # Generated files
-.docusaurus
+.docusaurus/*
+!.docusaurus/docusaurus.config.js
 .cache-loader
 
 # Misc
