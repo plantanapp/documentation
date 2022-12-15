@@ -4,6 +4,8 @@
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 trigger:
   - develop
+pr:
+  - develop
 stages:
   - stage: Build
     jobs:
