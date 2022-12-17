@@ -1,0 +1,61 @@
+# Node.js with React
+# Build a Node.js project that uses React.
+# Add steps that analyze code, save build artifacts, deploy, and more:
+# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
+trigger:
+  - develop
+pr:
+  - develop
+stages:
+  - stage: Build
+    jobs:
+      - job: Build
+        pool:
+          vmImage: "ubuntu-latest"
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "19.x"
+            displayName: "Install Node.js"
+          - script: |
+              npm ci
+              npm run build
+            displayName: "npm install and build"
+          - task: CopyFiles@2
+            inputs:
+              SourceFolder: "build/"
+              Contents: "**"
+              TargetFolder: "$(Build.ArtifactStagingDirectory)"
+          - task: PublishBuildArtifacts@1
+            inputs:
+              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
+              ArtifactName: "drop"
+              publishLocation: "Container"
+  - stage: Deployment
+    displayName: Deploy to S3
+    dependsOn: Build
+    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) # do not run the deploy for PR builds
+    jobs:
+      - deployment:
+        pool:
+          vmImage: "ubuntu-latest"
+        environment: dev
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
+                  inputs:
+                    awsCredentials: "s3-learn.plantanapp.com"
+                    regionName: "us-east-1"
+                    bucketName: "learn-dev.plantanapp.com"
+                    sourceFolder: "$(Pipeline.Workspace)/drop/"
+                    globExpressions: "**"
+                - task: AWSCLI@1
+                  inputs:
+                    awsCredentials: "s3-learn.plantanapp.com"
+                    regionName: "us-east-1"
+                    awsCommand: "cloudfront"
+                    awsSubCommand: "create-invalidation"
+                    awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
+                  displayName: "Invalidate CloudFront Cache"

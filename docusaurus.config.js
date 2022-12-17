@@ -6,7 +6,7 @@ module.exports = {
   favicon: 'img/pap-logo.png',
   organizationName: 'plantanapp', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
-  trailingSlash: false,
+  trailingSlash: undefined,
   themeConfig: {
      metadata: [
        {
