@@ -5,7 +5,7 @@ sidebar_label: Get SQS Messages
 ---
 
 
-Load first 10 SQS messages into an entity.
+Load first 10 SQS messages into a list.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
@@ -14,4 +14,4 @@ Load first 10 SQS messages into an entity.
 | SQS Access Key | Access key for SQS. Can contain contextual tokens (for example [Email]) and My Tokens. | Yes | None |
 | S3 Secret Key | Secret key for SQS. Can contain contextual tokens (for example [Email]) and My Tokens. | Yes | None |
 | SQS Queue Name |  | No | None |
-| Entity Name | The name of the entity where the results will be stored. | No | None |
+| List Name | The name of the list where the results will be stored. | No | None |

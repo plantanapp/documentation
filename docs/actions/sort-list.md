@@ -5,7 +5,7 @@ sidebar_label: Sort List
 ---
 
 
-Generates a new entity list from the source with the items sorted.
+Generates a new list from the source with the items sorted.
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

@@ -14,7 +14,7 @@ Create a payment through your Stripe platform using the Checkout feature. Read t
 | -- | -- | -- | -- |
 | API Credentials | Select the Stripe API credential that you want to use. | No | None |
 | Publishable API Key | Input the publishable API key obtained from your stripe platform. This is used on the client side to initiate requests. Can contain My Tokens. | Yes | None |
-| Entity Name | Name of an entity that contains the items for the checkout. Can contain My Tokens. | Yes | None |
+| List Name | Name of a list that contains the items for the checkout. Can contain My Tokens. | Yes | None |
 | Reference Id | A unique string to reference the Checkout Session. This can be a customer ID, a cart ID, or similar. It is included in the webhook call and can be used to fulfill the purchase.If you leave this empty, the action will generate a unique key to correctly identify the transaction webhook.Can contain My Tokens. | Yes | None |
 | Customer Email | The email address used to create the customer object. If you already know your customer’s email address, use this attribute to prefill it on Checkout. Can contain My Tokens. | Yes | None |
 | Payment Type | Set the payment type to one time payments, which will charge the client directly. Find more about payment types in our documentation. | No | None |

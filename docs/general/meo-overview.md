@@ -16,7 +16,7 @@ MEO has two components: the **`Environment Orchestrator`** itself, and an **`Ide
 - The `Environment Orchestrator` is the main component and acts like a link between your Plant an App instances or environments and your VCS repository and is responsible with the environment orchestration (see [`Functional Architecture`](#functional-architecture), below).
 - The `Identity Provider` that handles the authentication between your Plant an App instances or environments and the Environment Orchestrator. 
 
-## Techincal Architecture
+## Technical Architecture
 
 MEO is a Windows application that runs in a <a href="https://www.docker.com/resources/what-container/" target="_blank">Docker container</a>.  
 

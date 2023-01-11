@@ -10,7 +10,7 @@ Serializes a list of entities from the context into CSV (Comma Separated Values)
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Entity Name | Determines which entities are serialized. Can contain My Tokens. | Yes | None |
+| List Name | Name of the list that will be serialized to CSV. Can contain tokens. | No | None |
 | Fields | Provide a list of fields to serialize. | No | None |
 | Include All Fields | Or, select this option to serialize all fields. | No | None |
 | Remove Field Names | Remove the field names from the serialization. | No | None |

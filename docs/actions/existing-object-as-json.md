@@ -12,7 +12,7 @@ Outputs the first entry from the context list that matches specified criteria.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Entity Name | Name of entity to serialize. Can contain context tokens, for example [FieldId], and My Tokens. | Yes | None |
+| List Name | Name of the list to serialize. Can contain context tokens, for example [FieldId], and My Tokens. | Yes | None |
 | Http code | The http code that will be returned. Can contain context tokens, for example [FieldId], and My Tokens. | Yes | None |
 | Criteria | Provide criteria to determine which entries are removed.  | No | None |
 | HTTP Headers | Can contain context tokens, for example [FieldId], and My Tokens. | Yes | None |

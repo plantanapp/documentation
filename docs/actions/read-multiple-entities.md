@@ -5,7 +5,7 @@ sidebar_label: Read Multiple Entities
 ---
 
 
-Retireves multiple entries from the Dynamics CRM server based on conditions with ability to order the results. The resulting Dynamics CRM entities are mapped into a DnnSharp Entity List. This Entity List can be use in further "Execute Actions on Entity List" actions that will iterate throught the list and execute the Action List provided on each entity.For entity attributes of type EntityReference (e.g. Customer, Lookup, Owner) additional tokens will be created to expose the name and logical name of the reference. Tokens are: [&lt;EntityPropertyName&gt;:Id], [&lt;EntityPropertyName&gt;:Name] and [&lt;EntityPropertyName&gt;:LogicalName]
+Retrieves multiple entries from the Dynamics CRM server based on conditions with ability to order the results. The resulting Dynamics CRM entities are mapped into a DnnSharp List. This list can be use in further 'Execute Actions for each List Entry' actions that will iterate through the list and execute the Action List provided on each list.For entity attributes of type EntityReference (e.g. Customer, Lookup, Owner) additional tokens will be created to expose the name and logical name of the reference. Tokens are: [&lt;EntityPropertyName&gt;:Id], [&lt;EntityPropertyName&gt;:Name] and [&lt;EntityPropertyName&gt;:LogicalName]
 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |

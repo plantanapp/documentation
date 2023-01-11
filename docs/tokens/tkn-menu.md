@@ -13,7 +13,7 @@ The main page of the `Tokens` section allows you to:
 * See your <em>Custom Tokens</em>, by namespace.
 * [Export/import tokens](#export-and-import-tokens) (as JSON).
 * Alter the [Security and Debugging settings](#settings-security-and-debugging) for your tokens.
-* [Test your tokens](#test-tokens-feature).
+* [Test your tokens](#test-tokens-feature) to see what values they return.
 
 ## `Core Tokens`
 
@@ -45,25 +45,32 @@ Allows you to export and import tokens as a JSON.
 
 ### **Export token**
 
-1. Click the `Export tokens` button.
-    <img src="/img/tkn_exp1.png" alt="tkn_exp1.png"></img>
-2. Check the box(es) next to the token(s) you want to export.
-    <img src="/img/tkn_exp2.png" alt="tkn_exp2.png"></img>
-    Note that you can select individual tokens from a namespace, or the namespace as a whole - in which case all the tokens in the given namespace will be exported.
-    In the example above, a specific token from one namespace is selected for export (<em>MyToken2</em>), as well a namespace (<em>Namespace2</em>) in full. Notice the different type of selection icons. You also have the `Select All` and `Deselect All` buttons to help you with multiple, large selections.
+1. Click the `Export tokens` button.</br>
+<img src="/img/tkn_exp1.png" alt="tkn_exp1.png"></img></br>
+2. Check the box(es) next to the token(s) you want to export.</br>
+
+<img src="/img/tkn_exp2.png" alt="tkn_exp2.png"></img></br>
+Note that you can select individual tokens from a namespace, or the namespace as a whole - in which case all the tokens in the given namespace will be exported. In the example above, a specific token from one namespace is selected for export (<em>MyToken2</em>), as well a namespace (<em>Namespace2</em>) in full. Notice the different type of selection icons. You also have the `Select All` and `Deselect All` buttons to help you with multiple, large selections.
+
 3. Click the `Export` button. You will be presented with your tokens selected for export as a JSON. You can then click the `Copy` button and subsequently paste the selection to a file or field.
-    <img src="/img/tkn_exp3.png" alt="tkn_exp3.png"></img>
+
+<img src="/img/tkn_exp3.png" alt="tkn_exp3.png"></img>
 
 Once finished, simply click the `Cancel` button or anywhere outside the export window to automatically close it.
 
 ### **Import token**
 
 1. Click the `Import tokens` button.
-    <img src="/img/tkn_imp1.png" alt="tkn_imp1.png"></img>
+
+<img src="/img/tkn_imp1.png" alt="tkn_imp1.png"></img>
+
 2. Paste the token(s)/namespace(s) you want to import, as a JSON, in the field that is presented and click `Import`.
-    <img src="/img/tkn_imp2.png" alt="tkn_imp2.png"></img>
+
+<img src="/img/tkn_imp2.png" alt="tkn_imp2.png"></img>
+
 3. A message confirming the success of the import process should be displayed in the lower right corner of your window.
-    <img src="/img/tkn_imp3.png" alt="tkn_imp3.png"></img>
+
+<img src="/img/tkn_imp3.png" alt="tkn_imp3.png"></img>
 
 Note that the import field contains an automatic validator that will detect any syntax problems that would prevent the proper interpretation (and thus the import) of your token(s) or namespace(s). The line(s) where a syntax problem is detected are marked accordingly and a tooltip will give you a brief explanation of the issue. See an example below:
 
