@@ -77,7 +77,7 @@ Further refinement and improvements in <a href="https://learn.plantanapp.com/doc
   - Listings: scripts now also work on Bootstrap 5 card and Calendar views
   - Long action names are now saved correctly
   - Added a time-out parameter for SQL queries 
-  - "`Free GeoIP`" service works again for Geo IP location Tokens (see <a href="[ www](https://learn.plantanapp.com/docs/tokens/tkn-core)" target="_blank">Core Tokens</a>)
+  - "`Free GeoIP`" service works again for Geo IP location Tokens (see [Core Tokens](https://learn.plantanapp.com/docs/tokens/tkn-core))
   - Improved visualization when deleting a role
   - Corrected buttons dropping out of group buttons
   - Replaced SQL 2016 commands with version compatible with SQL 2012
