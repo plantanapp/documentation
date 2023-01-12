@@ -1,7 +1,7 @@
 ---
 id: forms-events
-title: Forms: Events
-sidebar_label: Forms: Events
+title: Forms":" Events
+sidebar_label: Forms":" Events
 ---
 
 It is very important to understand when and and 

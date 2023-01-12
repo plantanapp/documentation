@@ -18,7 +18,7 @@ When adding dynamic fields to a version 3 dynamic container, each new field will
 
 To illustrate, let's take two dynamic field containers ("Monday" and "Tuesday") and subsequent dynamic fields (selectable hourly intervals). While the containers will be displayed on different rows, their respective fields will be displayed horizontally, on unique columns:
 
-<img src="/img/bs3-dynamic-fields.png" alt="bs3-dynamic-fields.png">
+<img src="/img/bs3-dynamic-fields.png" alt="bs3-dynamic-fields.png"></img>
 
 This will happen regardless of what is defined under the "`Layout`" section of the Form Builder (see the "`Layout`" section on the "<strong>Forms: Main Menu and Usage</strong>" page). As such, even if the dynamic fields are set to be displayed on different lines, they will be displayed as columns regardless.
 
@@ -28,7 +28,7 @@ When adding dynamic fields to a Bootstrap 5 dynamic container, each new field is
 
 Taking the same example as above, with two dynamic field containers ("Monday" and "Tuesday") and subsequent dynamic fields (selectable hourly intervals), they will be displayed vertically, as follows:
 
-<img src="/img/bs5-dynamic-fields.png" alt="bs5-dynamic-fields.png">
+<img src="/img/bs5-dynamic-fields.png" alt="bs5-dynamic-fields.png"></img>
 
 This is considered to be a more logical behavior and has thus been adopted as the default behavior in BS5.
 
@@ -50,23 +50,23 @@ The different translation are stored in a "Resource File", which location change
 
 The Localization path is dependent on the Bootstrap 3 or 5 used in your Form Builder (see the "`UI & Layout`" section on the "<strong>Forms: Settings</strong>" page). To access the localization settings for a specific language, go to your "<strong>Site Settings</strong>" > "<strong>Languages</strong>" tab and click the "Languages" button.
 
-<img src="/img/site-settings-languages .png" alt="site-settings-languages .png">
+<img src="/img/site-settings-languages .png" alt="site-settings-languages .png"></img>
 
 * The "Bootstrap 5" template Resource File gets localized from:
 
 `LocalResources / DesktopModules / MVC / DnnSharp / ActionForm / App_LocalResources / Main`
 
-<img src="/img/bs5-ressource-file.png" alt="bs5-ressource-file.png">
+<img src="/img/bs5-ressource-file.png" alt="bs5-ressource-file.png"></img>
 
 * The "Bootstrap 3 (Obsolete)" template Resource File gets localized from:
 
 `Local Resources / DesktopModules / DnnSharp / ActionForm / App_LocalResources / Form`
 
-<img src="/img/bs3-ressource-file.png" alt="bs3-ressource-file.png">
+<img src="/img/bs3-ressource-file.png" alt="bs3-ressource-file.png"></img>
 
 As such, when migrating from BS3 to BS5, please make sure that:
 
 1. You update the Localization from the new path
 2. Go to "<strong>Servers</strong>" and click "`Clear Cache`"
 
-<img src="/img/bs5-localization-clear-cache.png" alt="bs5-localization-clear-cache.png">
+<img src="/img/bs5-localization-clear-cache.png" alt="bs5-localization-clear-cache.png"></img>

@@ -1,7 +1,7 @@
 ---
-id: forms-fields-types-subtypes-and-buttons
-title: Fields: Overview and settings
-sidebar_label: Fields: Overview and settings
+id: fields-overview-and-settings
+title: Fields":" Overview and settings
+sidebar_label: Fields":" Overview and settings
 ---
 
 This page details the Field types and subtypes available in the **Form Builder** and provides information about how you can use them in your web form.
@@ -16,7 +16,7 @@ There are common parameters to all field subtypes as well as specific ones.
 
 ## Common Parameters
 
-Those are are the first parameters that you need to provide when creating or editing a Field and are common to all Field types. They are listed and explained below.
+Those are the first parameters that you need to provide when creating or editing a Field and are common to all Field types. They are listed and explained below.
 
 | Parameter | Description and information |
 |---|---|

@@ -1,7 +1,7 @@
 ---
 id: fields-types
-title: Fields: Types
-sidebar_label: Fields: Types
+title: Fields":" Types
+sidebar_label: Fields":" Types
 ---
 
 ## Overview
