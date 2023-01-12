@@ -1,9 +1,8 @@
 ---
 id: fields-overview-and-settings
-title: Fields":" Overview and settings
-sidebar_label: Fields":" Overview and settings
+title: Fields - Overview and settings
+sidebar_label: Fields - Overview and settings
 ---
-
 
 This page details the Field types and subtypes available in the **Form Builder** and provides information about how you can use them in your web form.
 
