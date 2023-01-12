@@ -72,7 +72,7 @@ If you choose to use HTTPS rather than HTTP, you will also need to provide a TLS
 
 :::info
 
-For detailed information about all the parameters in the `.env` file, please see the <a href=" https://learn.plantanapp.com/docs/general/meo-configuration#env-file-configuration" target="_blank">"`env` file configuration"</a> section.
+For detailed information about all the parameters in the `.env` file, please see the ["`env` file configuration"](/general/meo-configuration.md#env-file-configuration) section.
 
 :::
 
