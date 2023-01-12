@@ -14,7 +14,7 @@ Remember that if you are unable to find a specific Field/Button type to suit you
 
 Note that the Form Builder will automatically detect duplicate Fields and/or Fields with the same ID and will label them with the "<strong><em>Duplicate ID</em></strong>" tag.
 
-<img src="/img/forms-field-duplicate.png" alt="forms-field-duplicate.png">
+<img src="/img/forms-field-duplicate.png" alt="forms-field-duplicate.png"></img>
 
 :::caution
 

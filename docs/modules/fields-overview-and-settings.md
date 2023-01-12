@@ -4,6 +4,7 @@ title: Fields":" Overview and settings
 sidebar_label: Fields":" Overview and settings
 ---
 
+
 This page details the Field types and subtypes available in the **Form Builder** and provides information about how you can use them in your web form.
 
 There are common parameters to all field subtypes as well as specific ones. 
@@ -27,7 +28,7 @@ Those are the first parameters that you need to provide when creating or editing
 |*Enable Conditionally*|Enable or disable this field according to the evaluation of a [boolean expression](https://en.wikipedia.org/wiki/Boolean_expression), *at the Form page loading stage*. Note that you can also achieve this dynamically (enable/disable this field according to local user actions, after the page is loaded) by altering the "*Enable*" field in the ["`Bind Expressions`"](#common-configuration-sections) section (see below).|
 |*Short Description*|Free text area to describe the use of the field. Note that this can be displayed to the user as well, by checking the "`Show Tooltips`" option in the ***Settings*** > ***Advanced Settings*** section.|
 |*Custom Attributes*|You can add custom HTML attributes to be inserted onto the field's [HTML tag](https://en.wikipedia.org/wiki/HTML_element#Syntax) (`input`,`select`,etc.) and can be used by [javascript libraries](https://www.javascripting.com/) or CSS. You can add as many custom attributes as you want; you can remove them individually by cliking the adjacent "🗑" (*trash can*) icon.|
-|*Other Options*|`Enable` - on/off switch that allows you to enable or disable the field statically.</br>`Disable auto complete` - on/off switch that allows you to enable or disable the [autocomplete feature](https://en.wikipedia.org/wiki/Autocomplete) for this field.|
+|*Other Options*|`Enable` - on/off switch that allows you to enable or disable the field statically.<br />`Disable auto complete` - on/off switch that allows you to enable or disable the [autocomplete feature](https://en.wikipedia.org/wiki/Autocomplete) for this field.|
 
 :::info
 
@@ -54,11 +55,11 @@ This is very useful when you want to show and apply different Form settings acco
 
 | Parameter | Description and information |
 |---|---|
-|*Show*|Dynamically show or hide this field according to the evaluation of a [boolean expression](https://en.wikipedia.org/wiki/Boolean_expression). For example, show the credit card field only when the relevant payment method is selected: `[PaymentMethod] == 'CreditCard'`. </br>**Note**: you can achieve a similar result statically, at the Form page loading stage via the "*Show Conditionally*" parameter (see the ["`Common Parameters`"](#common-parameters) section above).|
-|*Enable*|Dynamically enable or disable this field according to the evaluation of a [boolean expression](https://en.wikipedia.org/wiki/Boolean_expression). For example, enable the credit card field only when the relevant payment method is selected: `[PaymentMethod] == 'CreditCard'`. </br>**Note**: you can achieve a similar result statically, at the Form page loading stage via the "*Enable Conditionally*" parameter (see the ["`Common Parameters`"](#common-parameters) section above).|
+|*Show*|Dynamically show or hide this field according to the evaluation of a [boolean expression](https://en.wikipedia.org/wiki/Boolean_expression). For example, show the credit card field only when the relevant payment method is selected: `[PaymentMethod] == 'CreditCard'`. <br />**Note**: you can achieve a similar result statically, at the Form page loading stage via the "*Show Conditionally*" parameter (see the ["`Common Parameters`"](#common-parameters) section above).|
+|*Enable*|Dynamically enable or disable this field according to the evaluation of a [boolean expression](https://en.wikipedia.org/wiki/Boolean_expression). For example, enable the credit card field only when the relevant payment method is selected: `[PaymentMethod] == 'CreditCard'`. <br />**Note**: you can achieve a similar result statically, at the Form page loading stage via the "*Enable Conditionally*" parameter (see the ["`Common Parameters`"](#common-parameters) section above).|
 |*Preserve Layout*|Enable this option to preserve the visual layout of the Form when fields are disabled/hidden by using the two options above.|
 |*Value*|Dynamically compute the value of this field. So when other fields change this fields updates automatically. Use standard javascript operators where needed (`+`, `-`, `*`, `/`). For example, use `[FirstName] + ' ' + [LastName]` to automatically fill the "Display Name" field. Note that once the value is edited manually, the automatic synchronization stops.|
-|*On Change/Click*|Define re-evaluation behavior to bind some code to be executed when a button is clicked or a field value changes. This allows for more advanced scenarios compared to the other bindings and you can use the full [JavaScript](https://javascript.info/) capabilities, including conditions, loops and other capabilities. </br> Since |
+|*On Change/Click*|Define re-evaluation behavior to bind some code to be executed when a button is clicked or a field value changes. This allows for more advanced scenarios compared to the other bindings and you can use the full [JavaScript](https://javascript.info/) capabilities, including conditions, loops and other capabilities. <br /> Since |
 
 :::note
 
