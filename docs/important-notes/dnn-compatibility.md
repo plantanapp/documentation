@@ -15,21 +15,22 @@ The most important consideration is to not upgrade DNN Platform or EVOQ before t
 ## `Compatibility Matrix`
 
 :::note
-For DNN Platform versions 9.3.2 and higher, we always **recommend upgrading to the latest released version of Plant an App or DNN Sharp Modules**. Listed **below are the minimum supported versions** for each supported version of DNN Platform.
+For DNN Platform versions 9.3.2 and higher, we always <strong>recommend upgrading to the latest released version of Plant an App or DNN Sharp Modules</strong>. Listed **below are the minimum supported versions** for each supported version of DNN Platform.
 
-We also advise **upgrading to the recommended version of DNN**, which is also listed below. Our policy is to discontinue support for DNN versions released more than one year ago.
+We also advise <strong>upgrading to the recommended version of DNN</strong>, which is also listed below. Our policy is to discontinue support for DNN versions released more than one year ago.
 
 To see the Evoq Content versions that correspond to the DNN Platform versions listed, please see the [DNN Software Documentation](https://www.dnnsoftware.com/docs/developers/product-versions.html).
 :::
 
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 | ----------- | ------------------------ | --------------------------- | ----- |
-| 9.11.0 | 1.23.x | 5.23.x | DNN 9.11.0 is the recommended version.|
+| 9.11.0 | 1.23.x | 5.23.x | DNN 9.11.0 is the recommended version.<br/>DNN 9.11 will not work with Plant an App versions below 1.23.x / 5.23.x |
 | 9.10.2 | 1.18.x | 5.18.x | Requires SQL Server 2012 or higher.<br/>DNN 9.9.0 or higher is required for 1.20.x / 5.20.x |
 | 9.10.1 | 1.16.x | 5.16.x | DNN 9.6.1 or higher is required for 1.16.x / 5.16.x |
 | **9.9.1** | 1.13.x | 5.13.x | Minimum supported DNN version. |
 
-### Older versions - Upgrade path only 
+### Older versions - Upgrade path only
+
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 | ----------- | ------------------------ | --------------------------- | ----- |
 | 9.8.1 | 1.9.x | 5.9.x |  |
@@ -42,10 +43,10 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 
 1. BACKUP! Before doing any upgrade, whether to DNN Platform, Plant an App, or DNN Sharp modules, best practice dictates you should backup your site and database first. If you're not sure how to do that or need a refresher on how to perform an upgrade, review the [DNN Platform upgrade guidance](https://dnndocs.com/content/getting-started/setup/upgrades/index.html).
 2. Once your site is safely backed up, carefully consider the best path forward based on what version of DNN your site has installed currently.
-    
+<br/>
     :::note
     The closer you are to current with both DNN Platform and Plant an App or DNN Sharp Modules, the smoother your upgrade is likely to go. We highly recommended following the [DNN Platform Suggested Upgrade Path](https://dnndocs.com/content/getting-started/setup/upgrades/suggested-upgrade-path/index.html).:::
-    
+<br/>
     :::note
     If you use our URL Adapter module, please do not forget to disable it before the upgrade process begins. This way, you will get rid of any conflicts that may occur during the upgrade process, due to various module settings. You will be able to enable the module after the entire upgrade process is complete.
     :::

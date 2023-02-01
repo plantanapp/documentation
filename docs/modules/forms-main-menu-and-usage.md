@@ -1,6 +1,6 @@
 ---
 id: forms-main-menu-and-usage
-title: Forms":" Main Menu and Usage
+title: Forms - Main Menu and Usage
 sidebar_label: Main Menu and Usage
 ---
 
