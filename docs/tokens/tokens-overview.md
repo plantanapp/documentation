@@ -1,5 +1,5 @@
 ---
-id: tkn-overview
+id: tokens-overview
 title: Tokens Overview
 sidebar_label: Overview
 ---
