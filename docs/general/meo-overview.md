@@ -18,7 +18,8 @@ MEO has two components: the **`Environment Orchestrator`** itself, and an **`Ide
 
 ## Techincal Architecture
 
-MEO is a server application that runs in a <a href="https://www.docker.com/resources/what-container/" target="_blank">Linux Docker container</a>. It can be installed and run both on Windows and Linux-based operating systems (see the "<a href="[ www](https://learn.plantanapp.com/docs/general/meo-prerequisites-and-setup#hardware-and-software-requirements)" target="_blank">MEO Hardware and Software requirements</a>" section for further information).
+MEO is a server application that runs in a <a href="https://www.docker.com/resources/what-container/" target="_blank">Linux Docker container</a>. It can be installed and run both on Windows and Linux-based operating systems (see the "[MEO Hardware and Software requirements](/general/meo-configuration.md#env-file-configuration)" section for further information).
+
 
 The `Environment Orchestrator` component is connected and communicates with your Plant an App instance(s) on one side, and with your Version Control System on the other. The connection and configuration of the VSC repository is stored on a dedicated MEO Database.
 
