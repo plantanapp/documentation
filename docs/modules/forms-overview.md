@@ -1,6 +1,6 @@
 ---
 id: forms-overview
-title: Forms":" Overview
+title: Forms - Overview
 sidebar_label: Overview
 ---
 

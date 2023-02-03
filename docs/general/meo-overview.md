@@ -8,7 +8,7 @@ sidebar_label: What is MEO? (Multi-Environment Orchestrator)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 
-## Overview and Description
+## Description
 
 The Multi-Environment Orchestrator (MEO) is a tool that allows the management, backup and audit of your different Plant an App instances or environments by leveraging the use of a <a href="https://git-scm.com/" target="_blank">**GIT**</a>-based <a href="https://en.wikipedia.org/wiki/Version_control" target="_blank">Version Control System</a> such as <a href="https://github.com/" target="_blank">GitHub</a>.
 
@@ -16,9 +16,10 @@ MEO has two components: the **`Environment Orchestrator`** itself, and an **`Ide
 - The `Environment Orchestrator` is the main component and acts like a link between your Plant an App instances or environments and your VCS repository and is responsible with the environment orchestration (see [`Functional Architecture`](#functional-architecture), below).
 - The `Identity Provider` that handles the authentication between your Plant an App instances or environments and the Environment Orchestrator. 
 
-## Technical Architecture
+## Techincal Architecture
 
-MEO is a Windows application that runs in a <a href="https://www.docker.com/resources/what-container/" target="_blank">Docker container</a>.  
+MEO is a server application that runs in a <a href="https://www.docker.com/resources/what-container/" target="_blank">Linux Docker container</a>. It can be installed and run both on Windows and Linux-based operating systems (see the "[MEO Hardware and Software requirements](/general/meo-configuration.md#env-file-configuration)" section for further information).
+
 
 The `Environment Orchestrator` component is connected and communicates with your Plant an App instance(s) on one side, and with your Version Control System on the other. The connection and configuration of the VSC repository is stored on a dedicated MEO Database.
 
