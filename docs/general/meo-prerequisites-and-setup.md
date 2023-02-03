@@ -28,8 +28,9 @@ An outbound connection is also required to recover the MEO installation files fr
 
 | Software requirement | Version and notes |
 | -------------------- | ----------------- |
-| *Operating System* | Windows Server 2019 or 2022. |
+| *Operating System* | MEO can be installed both on Windows and Linux-based operating systems:<br />- **Windows**: 10, 11, or Server 2019.<br />- **Linux**: any distro that can run Docker and its Compose plugin (see below). |
 | *Docker* | Version 20.10 or later. |
+| *Docker Compose* |This is a Docker plugin. Depending on your Operating System, it will come either bundled with Docker, or will need to be installed separately. Please see <a href="https://docs.docker.com/compose/install/#scenario-two-install-the-compose-plugin" target="_blank">the official Docker documentation</a> for more information.|
 | *MS SQL Server* | 2014 or higher; Express/WebEdition/Standard/Enterprise editions. |
 | *VCS (Version Control System) Repository account* | Supports GIT-based versioning systems (such as GitHub) that uses a PAT (<a href="https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html">Personal Access Token</a>) for authentication. |
 

@@ -131,13 +131,13 @@ This is a list of the [regex](https://en.wikipedia.org/wiki/Regular_expression) 
 |`No Whitespace`| No spaces accepted.|
 |`Password` |Password input/definition validator; expects 7 or more alphanumeric characters.|
 |`Phone (###) ###-####`|US-type phone format.|
-|`Positive Floating Point Number`|Positive whole number with a decimal point, including zero.|
-|`Positive Integer Number`|Positive integers, including zero.|
-|`Strictly Positive Floating Point Number`|Whole numbers with a decimal point, strictly greater than zero.|
-|`Strictly Positive Integer Number`|Integers, strictly greater than zero.|
+|`Positive Floating Point Number`| Positive whole number with a decimal point, including zero.|
+|`Positive Integer Number`| Positive integers, including zero.|
+|`Strictly Positive Floating Point Number`| Whole numbers with a decimal point, strictly greater than zero.|
+|`Strictly Positive Integer Number`| Integers, strictly greater than zero.|
 |`Strip HTML`|The Form validation will strip entered data of HTML tags.|
-|`User exists (by email)`|Checks if the user email address exists in the instance.|
-|`Username is Available`|Checks the availability of the username in the instance.|
+|`User exists (by email)`| Checks if the user email address exists in the instance.|
+|`Username is Available`| Checks the availability of the username in the instance.|
 |`Username is Available (excluding current user)`|Checks the availability of the username in the instance and excludes the current user.|
 |`Visa Card Number`|16-digit, starting with "`4`", no spaces.|
 |`Web Address`| Requires URL format-type input: "`x.y`", where `x` is at least one alphanumeric character long, and `y` is at least one letter long.|
