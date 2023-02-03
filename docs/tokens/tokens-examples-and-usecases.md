@@ -1,6 +1,6 @@
 ---
 id: examples-and-usecases
-title: Token usage: Examples and Usecases
+title: Token usage - Examples and Usecases
 sidebar_label: Examples and Usecases
 ---
 
