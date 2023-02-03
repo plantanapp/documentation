@@ -1,5 +1,5 @@
 ---
-id: jwt-access
+id: json-web-token-access
 title: JWT Access
 sidebar_label: JWT Access
 ---
