@@ -122,13 +122,6 @@
         },
         {
           "type": "category",
-          "label": "Bluefin",
-          "items": [],
-          "collapsible": true,
-          "collapsed": true
-        },
-        {
-          "type": "category",
           "label": "Code",
           "items": [
             {

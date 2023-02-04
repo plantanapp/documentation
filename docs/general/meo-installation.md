@@ -1,72 +1,127 @@
 ---
 id: meo-installation
-title: MEO Server setup and installation
-sidebar_label: MEO Server setup and installation
+title: MEO Server Setup and Installation
+sidebar_label: MEO Server Setup and Installation
 ---
 
 > Audience: Citizen devs [`System/Security Administrators`](/docs/audience#systemsecurity-administrators)
 > 
 > Skill Prerequisites: `System Administration and Maintenance`
 
-## Initial MEO Server Setup and installation
-
 This section will guide you through the MEO installation process.
 
-### Installation Package
-The MEO installation package is structured in four different files:
+## Downloading the MEO installation package
 
-1. `RunPlantanapp.ps1`
-2. `docker-compose.yml`
-3. `appsettings.override.json`
-4. `env`
+Please download the required MEO version from the following repository:
 
-`RunPlantanapp.ps1` is a PowerShell script that will handle the download of the MEO Docker image from our AWS repository and the install itself. It is also used to control the status of the MEO server (see [`MEO status control`](#meo-status-control), below). **Do not modify its content!**
+    https://github.com/plantanapp/meo-setup/releases
 
-`docker-compose.yml` is a file that defines the services needed by the Docker container to run the MEO app. **Do not modify its content!**
+Make sure that you download the same release version as your Plant an App installation. For example, if your Plant an App instance is on version **1.24**, download the latest release for that version: "**1.24.x**" (you can download older "1.24.y" versions as well, but we always recommend installing the latest available version).
 
-`appsettings.override.json` is a configuration file that allows to set specific server parameters (advanced). A typical MEO deployment does not require altering this file. Please see the **MEO Server Configuration** > **appsettings.override.json file configuration** page for details. 
+Each release comes in two types of archives:
 
-The `env` file contains the installation configuration of the Multi-Environment Orchestrator (see below).
+- If you want to install MEO on a Windows server, download the "`.zip`" archive
+- If you want to install on Linux, download the "`.tar.gz`" archive
 
-#### **`env` file specific configuration**
+## Installation process
 
-The following parameters need to be configured before the installation:
+Transfer the archive downloaded at the step above to the server where MEO will be installed and decompress it.
 
-|Parameter|Description|
-|---|---|
-|*http_port*|Define the IIS HTTP port. Note that this needs to have a value even if HTTP is not used (but rather HTTPS)!|
-|*https_port*|Define the IIS HTTPS port. Note that this port will only be used if the ***HttpsRedirect*** parameter is set to `true`. Also note that this parameter needs to have a value even if HTTPS is not used (but rather HTTP with no TLS)!|
-|*MultiEnvGitDataEncKey*|Define the Encryption key; must be a 32 characters (**fixed!**) <a href="https://www.ascii-code.com/" target="_blank">ASCII printable</a> ASCII printable string.|
-|*MultiEnvDbConnection*|Define the connection string to the **MEO Environment Orchestrator** (*address, DB name, user ID and password*).|
-|*MultiEnvAuthDbConnection*|Define the connection string to the **MEO Identity Provider** (*address, DB name, user ID and password*).|
-|*HttpsRedirect*|Activate (`true`) or deactivate (`false`) the use of HTTPS.|
-|*HttpsCertFolder*|Path to the TLS certificate; if *HttpsRedirect* is set to `false`, must be defined as: "`./`". |
-|*HttpsCertFileName*|The TLS certificate filename; must be empty if  *HttpsRedirect* is set to: `false`.|
-|*HttpsCertPassword*|TLS certificate password; must be empty if  *HttpsRedirect* is set to: `false`.|
-|*AppConfigFolder*|Path to the folder of the `appsettings.override.json` file allows to define specific advanced parameters; if not used, set value to "`./`" (see the **MEO Server Configuration** > **appsettings.override.json file configuration** page for more information).|
-|*RepoFolder*|**Mandatory Parameter**. Define the MEO repository folder; it will be used to store the file structure of your Plant an App apps. The path can be local or remote, but it must be accessible from the MEO server.|
-|*LogsFolder*|**Mandatory Parameter**. Define the MEO log folder. The path can be local or remote, but it must be accessible from the MEO server.|
+### Installation Package contents
 
+The MEO installation package contains two different files:
 
-### Installation
+1. `docker-compose.yml` - a file that defines the services needed by the Docker container to run the MEO server application. **Note: we do not recommend modifying the content of this file. Do so at your own risk.**
 
-The installation process involves running the `RunPlantanapp.ps1` (no arguments) script in PowerShell once the above configuration is completed.
+2. `.env` - file that contains the installation configuration of the Multi-Environment Orchestrator ([see below](#env-file-setup)).
 
-The script will download and install MEO as a Docker container image (an executable package that includes everything needed to run the application - code, runtime, system tools, system libraries and settings) in a <a href="https://www.docker.com/resources/what-container/)" target="_blank">Docker container</a>.
+### `.env` file setup
 
-### MEO status control
+Open the `.env`; it contains the following list of parameters:
 
-The `RunPlantanapp.ps1` script also allows you to control the status of the  Multi-Environment Orchestrator. The following arguments are available:
+    MULTI_ENV_DOCKER_TAG=[MEO version]
+    http_port=8080
+    https_port=8081
+    MultiEnvGitDataEncKey=[key]
+    MultiEnvDbConnection=Data Source=[host];Initial Catalog=MultiEnv;User Id=[user];Password=[pass];
+    MultiEnvAuthDbConnection=Data Source=[host];Initial Catalog=MultiEnvAuth;User Id=[user];Password=[pass];
+    HttpsRedirect=false
+    HttpsCertFolder=./
+    HttpsCertFileName=
+    HttpsCertPassword=
+    AppConfigFolder=./
+    RepoFolder=[path]
+    LogsFolder=[path]
+    SqlUseManagedNetworkingOnWindows=false
 
-|Parameter|Information|
-|---|---|
-|*-Start*|Starts the MEO Docker container.|
-|*-Stop*|Stops the MEO Docker container.|
-|*-Reset*|Removes the MEO Docker container and the app folders, redownloads the Docker image and starts MEO.|
-|*-PermanentlyRemove*|⚠ Removes the MEO docker container and the app  folders.|
+The following mandatory parameters need to be defined/customized according to your environment *before* [running the installation](#installing-meo) itself.
+
+- `http_port`/`https_port` - Define the HTTP or HTTPS port which is mapped on the MEO host machine and allows it to communicate with the Plant an App machine. Make sure that the Plant an App server machine can communicate with the MEO server machine on the specified port. Please see the <a href="https://learn.plantanapp.com/docs/general/meo-prerequisites-and-setup" target="_blank">MEO Prerequisites</a> page for information regarding whether you should choose HTTP or HTTPS.
+- `MultiEnvGitDataEncKey` - Define the Encryption key; must be a 32 characters (**fixed length!**) <a href="https://www.ascii-code.com/" target="_blank">ASCII printable</a> string.
+- `MultiEnvDbConnection` - Define the connection string to the **MEO Environment Orchestrator** database (*address, DB name, user ID and password*).
+- `MultiEnvAuthDbConnection` - Define the connection string to the **MEO Identity Provider** database (*address, DB name, user ID and password*).
+- `RepoFolder` - Define the MEO repository folder; it will be used to store the file structure of your Plant an App apps. The path can be local or remote, but it must be accessible from the MEO server.
+- `LogsFolder` - Define the MEO log folder. The path can be local or remote, but it must be accessible from the MEO server.
 
 :::note
 
-If run without arguments (after the installation), the `RunPlantanapp.ps1` script will just check if there is a new MEO Docker image to download, and if so will download and install it.
+If you choose to use HTTPS rather than HTTP, you will also need to provide a TLS certificate to encrypt the connection and subsequently provide values for the following parameters:
+
+- `HttpsRedirect`
+- `HttpsCertFolder`
+- `HttpsCertFileName`
+- `HttpsCertPassword`
 
 :::
+
+
+:::info
+
+For detailed information about all the parameters in the `.env` file, please see the "[`.env` file configuration](/general/meo-configuration.md#env-file-configuration)" section. 
+
+
+:::
+
+### Installing MEO
+
+First, make sure that Docker is started and that it [**runs in Linux mode**](https://learn.microsoft.com/en-us/virtualization/windowscontainers/quick-start/quick-start-windows-10-linux#run-your-first-linux-container) (⚠) - even if you are installing MEO on Windows.
+
+Once the `.env` file configuration above is complete and Docker runs in Linux container mode, please run the `docker-compose` command with the "**up -d**" argument, as follows:
+
+- Windows
+
+    > .\docker-compose up -d
+
+- Linux**:
+
+    > ./docker-compose up -d
+
+This will install MEO as a Docker container image (an executable package that includes everything needed to run the application - code, runtime, system tools, system libraries and settings) in a <a href="https://www.docker.com/resources/what-container/)" target="_blank">Docker container</a>.
+
+****Important note**: according to your Linux distribution, the Docker Compose command might vary. Please check the <a href="https://docs.docker.com/engine/reference/commandline/compose/" target="_blank">official Docker Compose documentation</a>.
+
+## MEO Uninstall
+
+If you want to uninstall the MEO server's Docker container, please run the same command, with the "**down**" argument:
+
+- Windows
+
+    > .\docker-compose down
+
+- Linux**:
+
+    > ./docker-compose down
+
+****Important note**: according to your Linux distribution, the Docker Compose command might vary. Please check the <a href="https://docs.docker.com/engine/reference/commandline/compose/" target="_blank">official Docker Compose documentation</a>.
+
+## MEO Update/Reinstall
+
+Updating (or reinstalling) the MEO server version involves uninstalling and then reinstalling the Docker container image.
+
+The process steps are:
+
+1. Backup your MEO "`.env`" file to a different location.
+2. [Uninstall MEO](#meo-uninstall).
+3. [Download the new MEO package](#downloading-the-meo-installation-package).
+4. [Configure the new "`.env`" file](#env-file-setup) with the parameter values from your previous ".env" file (backed-up at point #1).
+5. [Install MEO](#installing-meo).

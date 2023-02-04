@@ -134,13 +134,6 @@
         },
         {
           "type": "category",
-          "label": "Bluefin",
-          "items": [],
-          "collapsible": true,
-          "collapsed": true
-        },
-        {
-          "type": "category",
           "label": "Code",
           "items": [
             {
@@ -1185,13 +1178,6 @@
         },
         {
           "type": "category",
-          "label": "Role",
-          "items": [],
-          "collapsible": true,
-          "collapsed": true
-        },
-        {
-          "type": "category",
           "label": "Salesforce",
           "items": [
             {
@@ -1271,20 +1257,6 @@
               "id": "version-1.19/actions/vies-vat-number-validator"
             }
           ],
-          "collapsible": true,
-          "collapsed": true
-        },
-        {
-          "type": "category",
-          "label": "Serialization",
-          "items": [],
-          "collapsible": true,
-          "collapsed": true
-        },
-        {
-          "type": "category",
-          "label": "Shell",
-          "items": [],
           "collapsible": true,
           "collapsed": true
         },

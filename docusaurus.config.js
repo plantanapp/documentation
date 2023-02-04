@@ -6,6 +6,7 @@ module.exports = {
   favicon: 'img/pap-logo.png',
   organizationName: 'plantanapp', // Usually your GitHub org/user name.
   projectName: 'documentation', // Usually your repo name.
+  trailingSlash: undefined,
   themeConfig: {
      metadata: [
        {
@@ -30,7 +31,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/audience',
+          to: 'docs/general/welcome',
           activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
@@ -104,11 +105,7 @@ module.exports = {
         },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} Plant an App, Inc.`,
-    },
-    gtag: {
-      trackingID: 'G-1MFCQQZSNK',
-      anonymizeIP: true,
-    },
+    }
   },
   presets: [
     [
@@ -132,7 +129,10 @@ module.exports = {
         sitemap :  {
           changefreq: 'weekly',
           priority: 0.5,
-          trailingSlash: false,
+        },
+        gtag: {
+          trackingID: 'G-1MFCQQZSNK',
+          anonymizeIP: true,
         },
       },
     ],
@@ -142,6 +142,5 @@ module.exports = {
   ],
   plugins: [
     "@cmfcmf/docusaurus-search-local"
-    
   ],
 };
