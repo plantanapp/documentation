@@ -41,7 +41,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/next/general/welcome',
+          to: 'docs/current/general/welcome',
           activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
@@ -130,6 +130,7 @@ module.exports = {
               current: {
                 label: `${getNextVersionName()} (Current)`,
                 banner: "none",
+                path: "/current"
               },
             },
         },
