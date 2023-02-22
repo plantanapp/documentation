@@ -1,3 +1,13 @@
+const versions = require('./versions.json');
+
+function getNextVersionName() {
+
+  const lastReleasedVersion = versions[0];
+
+  return lastReleasedVersion.split('.')[0] + '.' + (parseInt(lastReleasedVersion.split('.')[1]) + 1)
+
+}
+
 module.exports = {
   title: 'Get started',
   tagline: 'Low Code Fundamentals Course is now Available',
@@ -31,7 +41,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/general/welcome',
+          to: 'docs/current/general/welcome',
           activeBasePath: 'docs',
           label: 'Documentation',
           position: 'left',
@@ -115,7 +125,14 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/plantanapp/documentation/edit/master'
+            'https://github.com/plantanapp/documentation/edit/master',
+          versions: {
+              current: {
+                label: `${getNextVersionName()} (Current)`,
+                banner: "none",
+                path: "/current"
+              },
+            },
         },
         blog: {
           showReadingTime: true,
