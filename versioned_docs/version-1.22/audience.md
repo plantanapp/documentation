@@ -131,3 +131,4 @@ Examples of activities:
 - Review access logs and controls to detect suspicious activity
 - Observe the performance of [Workflows](/workflows/wf-overview.md) and identify potential issues
 - Schedule and perform platform upgrades to patch known vulnerabilities and enable additional features added in Plant an App
+
