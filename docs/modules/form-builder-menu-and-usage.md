@@ -1,7 +1,7 @@
 ---
 id: forms-main-menu-and-usage
-title: Forms - Main Menu and Usage
-sidebar_label: Main Menu and Usage
+title: Form Builder - Main Menu and Usage
+sidebar_label: Form Builder
 ---
 
 # Working with the `Form Builder`

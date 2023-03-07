@@ -1,7 +1,7 @@
 ---
 id: tokens-escape-special-characters
 title: Tokens - Escape Special Characters
-sidebar_label: Tokens - Escape Special Characters
+sidebar_label: Escape Special Characters
 ---
 
 When invoking a token, there are some special characters that determine the syntax. These characters are: `[, ]` and `|`.
@@ -32,4 +32,6 @@ This will now correctly display: "*I’m user `<MyUsername>`, but I’d prefer t
 
 Let's take the following token: `[User:UserName|I'm user {0} and I'm currently on [Tab:TabName] page]`
 
-It will dispaly: "I’m user MyUsername and I’m currently on Home page". We now have a nested token `[Tab:TabName]` that Plant an App will replace with a value. If we wanted the text `[Tab:TabName]` to be displayed on the screen, we would have escaped the special characters by using their HTML codes described above.
+It will display: "I’m user MyUsername and I’m currently on Home page". We now have a nested token `[Tab:TabName]` that Plant an App will replace with a value. If we wanted the text `[Tab:TabName]` to be displayed on the screen, we would have escaped the special characters by using their HTML codes described above.
+
+<br /><br /><a href="#top">Back to the top of the page</a>
