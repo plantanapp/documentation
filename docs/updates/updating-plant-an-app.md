@@ -131,3 +131,5 @@ Open the ["Add-ons" tab](#add-ons) and simply click the "`Install`" button adjac
 Once installed, it will be impossible to uninstall an add-on.
 
 :::
+
+<br /><br /><a href="#top">Back to the top of the page</a>

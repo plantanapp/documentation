@@ -1,6 +1,6 @@
 ---
 id: forms-settings
-title: Forms":" Settings
+title: Forms - Settings
 sidebar_label: Settings
 ---
 
