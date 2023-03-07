@@ -1,7 +1,7 @@
 ---
 id: tokens-escape-special-characters
 title: Tokens - Escape Special Characters
-sidebar_label: Tokens - Escape Special Characters
+sidebar_label: Escape Special Characters
 ---
 
 When invoking a token, there are some special characters that determine the syntax. These characters are: `[, ]` and `|`.
