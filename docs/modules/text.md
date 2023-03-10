@@ -79,7 +79,7 @@ This field allows users to input a phone number while auto-detecting the country
 | ----- | --------------------------- |
 | *Initial Value* | Define the initial phone number that will show in the field (optional). Supports Tokens. |
 | *Initial Country* | Set the initial, two letter country code (please [see here](https://countrycode.org/) for a full list). You will need to set this parameter only if you use the "Initial Value" (see above). This field supports Tokens.<br />Setting an initial country is required to remove the flag (see next parameter). A new checkbox will only appear after setting an initial country. |
-| *Remove Flag* | If checked, the phone field will be displayed without the flags dropdown and the initial country code will be used.The fields load initially having an initial value. |
+| *Remove Flag* | If checked, the phone field will be displayed without the flags dropdown and the initial country code will be used. The fields load initially having an initial value. |
 | *Preferred Countries* | The countries to be shown at the top of the country dropdown. Input comma-separated values (e.g., `UnitedKingdom;France;Germany`). This field supports Tokens. |
 | *Placeholder Option* | Select an option for placeholder. |
 | *International Mode* | Check this to enable "international mode", which shows the countries dial codes' in the input. Leaving this off provides a better experience for national sites. |
@@ -117,7 +117,7 @@ Will display a [Trumbowyg](https://alex-d.github.io/Trumbowyg/) editor field in 
 | *Language* | Select the language for the button titles (English is default). |
 | *Button Groups* | You can group the buttons set above. Format:<br />Name: `<group name>`<br />Value: `<enter the buttons' codes sepparated by a space>`.|
 | *Button Dropdowns* | Create new button dropdowns to use in the 'Buttons' list. For each, define its `Icon`, `Name`, and actions (`Buttons`). For more information, please see the [Trumbowyg documentation](https://alex-d.github.io/Trumbowyg/documentation/#button-pane).|
-| *Semantic* | Generates a better, more semantic-oriented HTML syntax.<br />Examples: "`em`" instead of *`i`*, `strong` intsead of *`b`*, etc. |
+| *Semantic* | Generates a better, more semantic-oriented HTML syntax.<br />Examples: "`em`" instead of *`i`*, `strong` instead of *`b`*, etc. |
 | *Dark theme* | Changes the color scheme of the editor to "Dark". |
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 | *Allow Tokens* | If checked, will allow the use of tokens (the tokens entered by the users in the field will be replaced with their values). Use with care. |
@@ -224,4 +224,4 @@ This field type is obsolete and will be soon removed. Please use the [Rich Text 
 
 :::
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

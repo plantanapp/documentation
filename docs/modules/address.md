@@ -4,13 +4,21 @@ title: Address
 sidebar_label: Address
 ---
 
-## **Address**
-
 This type of field allows you to define address and location-specific data types, such as countries, regions, Google Places and so on.
 
-### **Country**
+- [**Country**](#country)
+- [**Google Maps**](#google-maps)
+- [**Google Places**](#google-places)
+- [**Region**](#region)
+- [**US State**](#us-state)
+
+Note that only the field-specific parameters will be listed below. Please <a href="https://learn.plantanapp.com/docs/modules/fields-overview-and-settings#common-parameters" target="_blank">see here</a> for a list of **common parameters** to all fields and <a href="https://learn.plantanapp.com/docs/modules/fields-overview-and-settings#common-configuration-sections-bind-expressions-ui-settings-validation" target="_blank">here</a> for the **common configuration** elements to all fields.
+
+## **Country**
 
 Creates a "<em>Country</em>" selection dropdown list in the Form, populated with all the World's countries.
+
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -18,11 +26,13 @@ Creates a "<em>Country</em>" selection dropdown list in the Form, populated with
 | *Initial Value* | It is possible to select an initial value for this field; note that you can pull data for this parameter from various sources via <a href="https://learn.plantanapp.com/docs/tokens/custom-tokens-and-namespaces">tokens</a>. |
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-### **Google Maps**
+## **Google Maps**
 
 <img src="/img/google_maps_multiple_markers.png" alt="google_maps_multiple_markers.png" ></img>
 
 Inserts a Google Maps snippet in the Form, for which you can define the following specific parameters.
+
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -37,11 +47,13 @@ Inserts a Google Maps snippet in the Form, for which you can define the followin
 <img src="/img/google_map_circle.png" alt="google_map_circle.png" ></img>
 
 
-### **Google Places**
+## **Google Places**
 
 <img src="/img/google_places_field.png" alt="google_places_field.png" ></img>
 
-Creates a "Google Places" selection Field in the Form, for which you can define the following specific parameters:
+Creates a "Google Places" selection Field in the Form.
+
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -53,9 +65,11 @@ Creates a "Google Places" selection Field in the Form, for which you can define 
 | *Component Restrictions* | Enter [country codes](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) that allow you to restrict the Google Places search results for this field; up to five such code are supported, with codes separated by a comma. |
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-### **Region**
+## **Region**
 
 Creates a "<em>Region</em>" selection dropdown list in the Form.
+
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -65,12 +79,16 @@ Creates a "<em>Region</em>" selection dropdown list in the Form.
 | *Other textbox* | Checking this box will introduce a new option titled "<strong>Other</strong>" in the "<em>Region</em>" dropdown list that will show an empty textbox. The textbox will allow the user introduce a custom region (for regions that are not in the "<em>Region</em>" list). |
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-### **US State**
+## **US State**
 
 Creates a "<em>US State</em>" selection dropdown list in the Form, populated with all the states in the United States.
+
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
 | *Title When No Selection* | Allows you to select a default text for the field, when no selection is (yet) made. |
 | *Initial Value* | It is possible to select an initial value for this field; note that you can pull data for this parameter from various sources via <a href="https://learn.plantanapp.com/docs/tokens/custom-tokens-and-namespaces">tokens</a>. |
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

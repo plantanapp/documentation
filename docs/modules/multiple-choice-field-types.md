@@ -1,7 +1,7 @@
 ---
 id: forms-fields-datasources
-title: Forms: Fields Datasources
-sidebar_label: Forms: Fields Datasources
+title: Forms - Fields Datasources
+sidebar_label: Fields Datasources
 ---
 
 Below is a descriptive list of the available Multiple Choice Fields in the `Form Builder` and their specific parameters. These fields allow for a multiple value selection from the user.

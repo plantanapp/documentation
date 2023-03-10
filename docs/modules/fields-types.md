@@ -39,3 +39,5 @@ Here is a list of the Field types available to add to your Form.
 - **`User`** - user attributes fields (e-mail address, username)
 
 Note that these are mere categories of Fields and that each type has an extensive list of field sub-types with their own configurable parameters. For a full list of those, please see the subsequent pages.
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>
