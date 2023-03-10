@@ -47,13 +47,13 @@ The image resulting from this field can:
 |*Output Type*|Determines the type of the image to be returned (e.g. .PNG or .JPEG).|
 |*Hide Select Image Button*|Hide/show the image select button below the canvas via a token.|
 |*Reset Button*|Checkbox; if enabled, shows the "Reset" button below the canvas. The reset button resets the crop box and image to default values.|
-|*Drag Mode*|Choose the dragging mode of the cropper - either create a new crop box (`Crop`) or move the canvas (`Move`).</br> **Note**: if you do not want the form user to have the ability to resize the cropping area, this setting should be set to *Move* and the "*Resizable Crop Box*" checkbox (see below) needs to be disabled.|
+|*Drag Mode*|Choose the dragging mode of the cropper - either create a new crop box (`Crop`) or move the canvas (`Move`).<br /> **Note**: if you do not want the form user to have the ability to resize the cropping area, this setting should be set to *Move* and the "*Resizable Crop Box*" checkbox (see below) needs to be disabled.|
 |*Resizable Crop Box*|Checkbox; enable to resize the crop box by dragging (the aspect ratio is defined by width and height). When disabled, the resulting image will use the crop box width and height defined below.|
 |*Crop Box Width*|Define the crop box width in [px](https://www.w3.org/Style/Examples/007/units.en.html#units) (Integer number).|
 |*Crop Box Height*|Define the crop box height in [px](https://www.w3.org/Style/Examples/007/units.en.html#units) (Integer number).|
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-## Progess Bar
+## Progress Bar
 
 Allows you to insert a progress bar into your Form, that can be used to indicate the progress of an operation to the user.
 
