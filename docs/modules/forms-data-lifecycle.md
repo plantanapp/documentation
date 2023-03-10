@@ -1,5 +1,5 @@
 ---
-id: life-cycle
+id: forms-data-lifecycle
 title: Forms - Data Lifecycle
 sidebar_label: Data Lifecycle
 ---

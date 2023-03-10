@@ -1,5 +1,5 @@
 ---
-id: forms-main-menu-and-usage
+id: form-builder-menu-and-usage
 title: Form Builder - Main Menu and Usage
 sidebar_label: Form Builder
 ---

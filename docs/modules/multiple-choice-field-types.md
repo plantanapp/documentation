@@ -1,5 +1,5 @@
 ---
-id: forms-fields-datasources
+id: multiple-choice-field-types
 title: Forms - Fields Datasources
 sidebar_label: Fields Datasources
 ---

@@ -1,5 +1,5 @@
 ---
-id: hidden-data
+id: hidden-data-and-dynamic-fields
 title: Hidden Data and Dynamic Fields
 sidebar_label: Hidden Data and Dynamic Fields
 ---

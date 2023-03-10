@@ -1,5 +1,5 @@
 ---
-id: Buttons
+id: buttons
 title: Buttons
 sidebar_label: Buttons
 ---

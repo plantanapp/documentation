@@ -1,5 +1,5 @@
 ---
-id: multiple-choice
+id: multiple-choice-and-datasources
 title: Multiple Choice and Datasources
 sidebar_label: Multiple Choice and Datasources
 ---
