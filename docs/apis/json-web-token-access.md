@@ -92,3 +92,5 @@ header.payload.signature
 Available as tokens: "`[ApiKeyName]`" and "`[ApiKeyValue]`".
 
 API looks in multiple places for the presence of the API Key: the `Authorization HTTP header` or the `Query String`, `POSTed data`, `Cookies` for a parameter named `apikey`. If the API runs on the client side on the same site, the API key will not be required if the current user is Administrator.
+
+<br /><br /><a href="#top">Back to the top of the page</a>
