@@ -4,7 +4,6 @@ title: Life Cycle
 sidebar_label: Life Cycle
 ---
 
-
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
 > 
 > Skill Prerequisites: `Actions`
