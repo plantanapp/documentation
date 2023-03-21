@@ -193,3 +193,5 @@ To accelerate and ease the Form's creation, we've created specific, predefined f
 Those fields are type-specific, meaning that they have specific parameters that make sense only in a predefined context. For example, such parameters as "*Date Format*" or "*First Day of the Week*" only make sense for a `Date and Time Picker` field type.
 
 For a complete list and information about those field types and their subtypes as well as their specific parameters, please see the subsequent page - "**Fields: Types list**".
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

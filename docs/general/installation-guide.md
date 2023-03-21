@@ -281,4 +281,4 @@ Using the `.\RunPlantanapp.ps1` command alone will show you a help text of all t
 
 6. Open a web browser and access your new app by typing "`http://<localhost>`" (or its `<IP address>` or `<DNS>`, depending on how you deployed it) in the address bar.
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

@@ -50,4 +50,4 @@ Install this add-on and wait for the site to come back online. Then, please foll
 
 That's it! You can now use Plant an App Components on the site.
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

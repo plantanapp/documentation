@@ -78,4 +78,4 @@ To be usable, the output of the API should be a valid JSON list (an array of obj
 
 As for all datasources, the `Server Request` datasource is also based on a "`Text`|`Value`" system for which you will have to name the JSON properties as "Text/Value" or specify in the multiple choice field settings which JSON property to be used as Text and which one to be used as Value (see example above).
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

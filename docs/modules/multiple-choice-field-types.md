@@ -168,4 +168,4 @@ This field type is obsolete and will be soon removed. Please use [Group Radio Bo
 :::
 
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

@@ -56,3 +56,5 @@ When deciding whether to disable the **Secure Input** option you should consider
 1. Is the field on a form located on a public page, or a page where users can create an account that does not get vetted before approval? If so, **do not disable Secure Input**.
 2. Is the field used to allow users to input complex formatted HTML or javascript? If the field is being used only by trusted users, then consider disabling Secure Input.
 3. If you decide to disable Secure Input, consider adding using the [Sanitize HTML](actions/sanitize-html.md) action on your submit buttons to have more granular control over how the input will be processed.
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

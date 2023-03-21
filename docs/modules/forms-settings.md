@@ -86,3 +86,5 @@ Alter those settings if you encounter display compatibility issues.
 |*Include FontAwesome*|Uncheck this option if you want to prevent [FontAwesome](https://fontawesome.com/) from being loaded on the page.|
 |*Include AngularJS*|Uncheck this option if [Angular](https://angular.io/start) 1.3.0 or higher is already loaded on the page to avoid conflicts.|
 |*Submit hidden fields*|Turn on this option to make the form submit all the fields, even if they are conditionally hidden (defined in the "**`Fields`**" section).|
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

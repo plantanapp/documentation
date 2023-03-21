@@ -101,3 +101,5 @@ If you want to display a message which informs the form user about the details o
 Where `[Upload]` is the title of the Single File Upload field.
 
 :::
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

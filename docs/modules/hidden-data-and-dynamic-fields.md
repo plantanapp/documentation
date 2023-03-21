@@ -61,4 +61,4 @@ At the configuration level, this field type just <a href="https://learn.plantana
 | ----- | --------------------------- |
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

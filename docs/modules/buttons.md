@@ -84,4 +84,4 @@ Although it is listed as a `Button`, the "Saving Animation" should be considered
 | *Stretch Horizontally* | Turn on this option to have the progress bar animation stretch horizontally to occupy full available width. |
 
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

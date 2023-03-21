@@ -222,4 +222,4 @@ This field type is obsolete and will be soon removed. Please use one of the fiel
 
 :::
 
-<br /><br /><a href="#top">Back to the top of the page</a>
+<br /><br /><a href="#top">Back to the top &#10548;</a>

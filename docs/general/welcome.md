@@ -16,7 +16,13 @@ When you access the portal, you will always be presented with the documentation 
 
 To check the documentation for an older release, please select the desired version from the drop-down list located in the upper part of the screen.
 
-<img src="/img/version_bar.png" alt="version_bar.png" ></img>
+<img src="/img/doc-version-select.png" alt="doc-version-select.png" ></img>
+
+:::note
+
+Only the last five versions of the product documentation are kept available for selection in the drop-down list. If you need documentation for an older product version, please <a href="https://learn.plantanapp.com/docs/current/important-notes/orientation-guide#getting-help" target="_blank">**contact us**</a>.
+
+:::
 
 For an overview of what has been introduced, improved and fixed in each version, check the <a href="https://learn.plantanapp.com/docs/current/category/release-notes" target="_blank">`Release Notes`</a> section.
 

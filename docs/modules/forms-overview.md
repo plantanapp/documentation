@@ -87,3 +87,5 @@ The upper section of the Form Builder also contains miscellaneous control button
 After you **`Save`** your changes, make sure that you also hit the "`🗘`" (<em>Refresh</em>) button to be able to see them in the Form you've created/modified.
 
 :::
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>
