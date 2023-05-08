@@ -99,6 +99,6 @@ The 1.25 release automatically fixes the following bugs:
 - Connector groups will be removed in version `1.26`.
 - The old "MyTokens" parsers functionality will be removed in version `1.26`.
 
-For a comprehensive list of obsolete features, actions, or addons, please refer to the <a href="Obsolete Features" target="_blank">https://learn.plantanapp.com/docs/current/important-notes/obsolete-features.</a>documentation page.
+For a comprehensive list of obsolete features, actions, or addons, please refer to the[Obsolete Features](https://learn.plantanapp.com/docs/current/important-notes/obsolete-features) documentation page.
 
 <br /><br /><a href="#top">Back to the top &#10548;</a>
