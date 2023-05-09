@@ -81,3 +81,5 @@ Further refinement and improvements in <a href="https://learn.plantanapp.com/doc
   - Improved visualization when deleting a role
   - Corrected buttons dropping out of group buttons
   - Replaced SQL 2016 commands with version compatible with SQL 2012
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

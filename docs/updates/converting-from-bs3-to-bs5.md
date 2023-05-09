@@ -70,3 +70,5 @@ As such, when migrating from BS3 to BS5, please make sure that:
 2. Go to "<strong>Servers</strong>" and click "`Clear Cache`"
 
 <img src="/img/bs5-localization-clear-cache.png" alt="bs5-localization-clear-cache.png"></img>
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

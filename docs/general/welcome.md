@@ -6,19 +6,27 @@ sidebar_label: Welcome!
 
 ## The Plant an App Documentation Portal
 
-Here you will find guides, information and details about how to use and configure Plant an App.
+Here you will find guides, information and details about how to use and configure Plant an App and make your low-code app building easy and enjoyable.
 
-The documentation structure follows the `Configuration` menu from your Plant an App. As such, you will find the different documentation categories in the menu to the left of the page.
+To help you navigate and easily find the information you need, the documentation sections mimic the `Configuration` menu design from your Plant an App instance - you will find them to the left of the screen.
 
-As our product evolves constantly, so does our documentation. As we strive to provide you with the most detailed guides and relevant information for your Plant an App journey, you will notice that our Documentation Portal structure and content changes from one version to the next. To check the  documentation relevant to your specific version, please use the drop-down list in the upper right bar of your screen.
+Our product evolves constantly and so does our documentation. As we strive to provide you with the most detailed guides and relevant information for your Plant an App journey, you will notice that our Documentation structure and content changes from one version to the next in order to better reflect the platform's changes and improvements.
 
-<img src="/img/version_bar.png" alt="version_bar.png" ></img>
+When you access the portal, you will always be presented with the documentation corresponding to the latest release of Plant an App: "`Current`".
 
-Notice the "**Next**" version entry; it allows you to take a peek into the next version's documentation and learn about upcoming features and improvements.
+To check the documentation for an older release, please select the desired version from the drop-down list located in the upper part of the screen.
 
-To see what's new and improved in each version, check the `Release Notes` section.
+<img src="/img/doc-version-select.png" alt="doc-version-select.png" ></img>
 
-Searching by keywords is possible through the Search box.
+:::note
+
+Only the last five versions of the product documentation are kept available for selection in the drop-down list. If you need documentation for an older product version, please <a href="https://learn.plantanapp.com/docs/current/important-notes/orientation-guide#getting-help" target="_blank">**contact us**</a>.
+
+:::
+
+For an overview of what has been introduced, improved and fixed in each version, check the <a href="https://learn.plantanapp.com/docs/current/category/release-notes" target="_blank">`Release Notes`</a> section.
+
+To find specific information, searching by keywords is possible through the Search box.
 
 <img src="/img/search_bar.png" alt="search_bar.png" ></img>
 
@@ -26,4 +34,6 @@ Finally, you can also switch between the Light and Dark themes for the portal vi
 
 <img src="/img/dark_mode.png" alt="dark_mode.png" ></img>
 
-That's it. Enjoy your Plant an App experience!
+That's it. Happy app building!
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

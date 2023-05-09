@@ -41,3 +41,5 @@ A feature that will help you write your custom tokens in (default) value or cond
 ## Bug Fixes
 
 Fixed missing material icons in Entity > Detail page and edit-module buttons.
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

@@ -1,7 +1,7 @@
 ---
-id: life-cycle
-title: Life Cycle
-sidebar_label: Life Cycle
+id: forms-data-lifecycle
+title: Forms - Data Lifecycle
+sidebar_label: Data Lifecycle
 ---
 
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)

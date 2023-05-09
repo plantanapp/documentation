@@ -39,3 +39,5 @@ When using this layer, Plant an App will cache the token response once for every
 Works similarly as the strategy above, except for the fact that the cache will be cleared when the server session expires or ends. 
 
 - **When is it useful?** When you want your user-dependent tokens values to be cleared when ending the session. 
+
+<br /><br /><a href="#top">Back to the top of the page</a>
