@@ -66,13 +66,35 @@ The IntelliSense and autocomplete features have undergone minor UX enhancements:
 
 A version control / MEO version is also available for the 1.25 release.
 
+
 ## Breaking Changes
 
-- XLS templates in Search/SearchBoost are no longer functional.
-- *Whitespace* and *dash* characters are no longer supported in APIs.
-- The InfoBox/Guides feature has undergone significant upgrades and now requires a BS5 skin. It can no longer be used with BS3 skins.
-- The "`PlantAnApp`" skin is being phased out.
-- Existing pages that use the PlantAnApp skin will be replaced with the Pagebuilder "`default`" skin variant (BS3). For login pages that use this skin, the "login no menu" skin variant will be used. In a future release, the complete package reference will be removed.
+- XSL templates in Searchboost no longer work, please replace the input and output templates before upgrading to version 1.25.
+- Whitespace and dash characters in APIs no longer work.
+- Infobox/Guides have had a major upgrade and now need a BS5 skin and can no longer be used with BS3 skins.
+- The `PlantAnApp` skin is being phased out. On existing pages that use the PlantAnApp skin, it will be replaced with the Pagebuilder "`default`"  skin variant (BS3). For login pages that use this skin, the "login no menu" skin variant will be used. In a future release, the complete package reference will be removed.
+- End of Life add-ons/modules:
+  - DnnSharp.BlockchainSecurity
+  - SharpCdn
+  - DnnSharp.SocialMedia
+  - HtmlLight
+  - DnnSharp.SearchBoost.DmxIntegration
+  - DnnSharp.SearchBoost.LiveTabsIntegration
+  - DnnSharp.Hotcakes
+  - DnnSharp.SimpleIoT
+  - DnnSharp.CheckVAT
+  - DnnSharp.DundasBI
+  - DnnSharp.XmlAdd-on
+  - DnnSharp.PaylineData
+  - PlatiOnline
+  - DnnSharp.Bluefin
+  - Remote Management
+  - System Monitor Add-on
+  - My Action Form Uniqueizer
+  
+These add-ons/modules have a high probability of breaking your installation, so please remove them before upgrading.
+
+
 
 ## Bug Fixes
 
