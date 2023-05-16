@@ -91,6 +91,7 @@ A version control / MEO version is also available for the 1.25 release.
   - Remote Management
   - System Monitor Add-on
   - My Action Form Uniqueizer
+  - DNNSharp.UserManagement
   
 These add-ons/modules have a high probability of breaking your installation, so please remove them before upgrading.
 
