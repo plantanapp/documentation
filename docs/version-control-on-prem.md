@@ -30,7 +30,7 @@ To use Version Control, you will also need to setup a GIT or [GitHub account](ht
 
 We have devised the following documentation sections to describe how to install and use MEO as part of the **`Version Control`** function of Pant an App:
 
-1. <a href="https://learn.plantanapp.com/docs/general/meo-overview" target="_blank">**What is MEO? (Multi-Environment Orchestrator)**</a> - a general description and overview of the server.
+1. [**What is MEO? (Multi-Environment Orchestrator)**](/general/meo-overview.md) - a general description and overview of the server.
 2. <a href="https://learn.plantanapp.com/docs/general/meo-prerequisites-and-setup" target="_blank">**MEO Prerequisites and Setup**</a> - a list of technical prerequisites for deploying the server.
 3. <a href="https://learn.plantanapp.com/docs/general/meo-installation" target="_blank">**MEO Server Setup and Installation**</a> - covers the installation steps of the server.
 4. <a href="https://learn.plantanapp.com/docs/general/meo-configuration" target="_blank">**MEO Server Configuration**</a> - provides details on how to configure the server.
