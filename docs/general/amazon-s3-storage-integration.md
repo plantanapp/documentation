@@ -4,28 +4,7 @@ title: Amazon S3 Storage Integration
 sidebar_label: Amazon S3 Storage Integration
 ---
 
-> Audience: [`FillHere`](audience.md#FillHere)
-> 
-> Skill Prerequisites: `Administrators`
-
-The purpose of integrating Amazon S3 storage with Plant an App is to offload file and media asset management to a scalable, reliable, and secure cloud storage service, improving scalability, performance, security, and cost-effectiveness while enabling content distribution.
-
-## `Typical Use Cases`
-
-The typical use case for integrating Amazon S3 storage with Plant an App is to offload the storage and management of files and media assets to a scalable, reliable, and secure cloud storage service. This integration enables users to:
-
-1. **Improve scalability**: As the number of files and media assets grows, traditional file storage systems may face performance and capacity issues. Amazon S3 provides virtually unlimited storage capacity, ensuring that the application can scale smoothly as the storage needs increase.
-2. **Enhance performance**: Amazon S3 offers high-speed data transfer rates and low latency, which can improve the performance of file uploads, downloads, and access in the application.
-3. **Increase security**: Amazon S3 provides advanced security features, such as data encryption, access control policies, and versioning, to help protect and manage the files and media assets stored in the cloud.
-4. **Reduce costs**: By offloading file storage to Amazon S3, organizations can save on storage infrastructure and maintenance costs, and leverage the pay-as-you-go pricing model of Amazon S3.
-5. **Enable content distribution**: The integration between Plant an App and Amazon S3 can be used to serve static files, such as images, videos, and documents, directly from the S3 bucket through a content delivery network (CDN) like Amazon CloudFront. This can improve the performance and user experience of the application, especially for users distributed across different geographical locations.
-
-## `Related Video`
-
-[Click here for a step-by-step video on using Amazon S3 Storage Integration](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EWcs9HCiwhRMnvNa65IJNK8B5dVz7LhBACvdUnXjyFc24g?e=I3XuYI)
----
-
-> Audience: [`Administrators`](audience.md#FillHere)
+> Audience: [`Administrators`](audience.md#systemsecurity-administrators)
 >
 > Skill Prerequisites: `Administrators`
 
