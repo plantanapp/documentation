@@ -25,7 +25,6 @@ The typical use case for integrating Amazon S3 storage with Plant an App is to o
 [Click here for a step-by-step video on using Amazon S3 Storage Integration](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EWcs9HCiwhRMnvNa65IJNK8B5dVz7LhBACvdUnXjyFc24g?e=I3XuYI)
 ---
 
-
 > Audience: [`Administrators`](audience.md#FillHere)
 >
 > Skill Prerequisites: `Administrators`
