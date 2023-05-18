@@ -79,4 +79,3 @@ This example demonstrates how to use the Chat action to get a response from the 
 ```
 
 This will send a message to the OpenAI API asking for help with a printer problem. The API response will be stored in the `AIResponse` token.
-|
