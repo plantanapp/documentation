@@ -36,14 +36,14 @@ Already introduced in 1.24 as hotfix, it enables users to extract pages or secti
 
 <img src="/img/125-release-listings.png" alt="125-release-listings.png" ></img>
 
-### Validation in Actions for `API’s` and `Automation`
+### Validation in Actions for `APIs` and `Automation`
 
 The recently introduced action stack in APIs and Automation now includes additional mandatory validation measures. The following validations are now performed:
 
 - Combined validation (for instance, either value or checkbox in the <a href="https://learn.plantanapp.com/docs/current/actions/send-email" target="_blank">`Send Email`</a> action)
 - All Actions now undergo mandatory field validation; these validation checks can help Low-code engineers to avoid overlooking required parameters.
 
-### UI improvements on `API's` and `Automation`
+### UI improvements on `APIs` and `Automation`
 
 The IntelliSense and autocomplete features have undergone minor UX enhancements:
 - List spacing has been improved.
@@ -122,6 +122,6 @@ The 1.25 release automatically fixes the following bugs:
 - Connector groups will be removed in version `1.26`.
 - The old "MyTokens" parsers functionality will be removed in version `1.26`.
 
-For a comprehensive list of obsolete features, actions, or addons, please refer to the[Obsolete Features](https://learn.plantanapp.com/docs/current/important-notes/obsolete-features) documentation page.
+For a comprehensive list of obsolete features, actions, or addons, please refer to the [Obsolete Features](https://learn.plantanapp.com/docs/current/important-notes/obsolete-features) documentation page.
 
 <br /><br /><a href="#top">Back to the top &#10548;</a>

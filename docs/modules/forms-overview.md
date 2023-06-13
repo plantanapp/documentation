@@ -24,7 +24,8 @@ Upon clicking or launching the Form, the following steps are loaded in successio
 3. **Default values are loaded**
     At this stage, the Form Builder injects the Tokens into the context, initializing them with the defined default values. If during the `PreInit` phase you’ve loaded data with the same name as a Form Field, it will get overwritten by that Field's default value. If you want that value to persist, move the action in the `Init` event (see step #5, below).
 4. **Load existing entry**
-    If a parameter named entry is present in the query string, the `Form Builder` will try to find a matching entry in the internal reports table. If it finds one, it loads its value into the interface, overwriting all values that were computed so far. This is how the the `Grid` integration works.
+    If a parameter named entry is present in the query string, the `Form Builder` will try to find a matching entry in the internal reports table. If it finds one, it loads its value into the interface, overwriting all values that were computed so far. This is how the the `Grid` integration works. Also, upon submitting a form, the [_EditUrl] token becomes available, this token contains a link to the submitted entry url, by appending the querystring variable 'entry' (with guid value) to the url of the form page. This token can e.g. be used to email a link to the submission.
+
 5. **`Init` actions are executed**
     This is the final stage of the Form's initialization process. Anything you inject into the context at this point will overwrite existing data - adding an SQL Action and matching its columns to Field names for example. Those are also defined in the "<strong>`Events`</strong>" section of the Form Builder (see the "`Events`" section on the "<strong>Forms: Events</strong>" page).
 
