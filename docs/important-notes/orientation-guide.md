@@ -39,7 +39,7 @@ The Low Code Fundamentals course is freely open available to everyone - simply r
 
 ### **Low-Code Café**
 
-Our team holds a weekly live presentation to introduce s a different facet of the Plant an App platform – be it new and or enhanced features, integrations with third-party services, customizing Plant an App, and more. To attend part to the Low-Code Café, please [register here](https://us02web.zoom.us/webinar/register/WN_Y0OUx5njQFatTEMCk3B0yg).
+Our team holds a bi-weekly live presentation to introduce s a different facet of the Plant an App platform – be it new and or enhanced features, integrations with third-party services, customizing Plant an App, and more. To attend part to the Low-Code Café, please [register here](https://us02web.zoom.us/webinar/register/WN_Y0OUx5njQFatTEMCk3B0yg).
 
 The full Low-Code Café session archive (going back to episode 1, in July 2020) is available on the dedicated [YouTube playlist](https://www.youtube.com/playlist?list=PL67RlTAxc73EADPcPrLHLGaVu4zXOGuyi). Videos include full descriptions and timecodes with links, enabling you to jump directly to the section you are interested in. The descriptions are also searchable within YouTube.
 

@@ -69,6 +69,8 @@ A version control / MEO version is also available for the 1.25 release.
 
 ## Breaking Changes
 
+- Custom validator files need to be converted and adhere to the new json structure. (see [Custom Validators](#custom-validators))
+- Switching from the "BS3 legacy engine" template to the "BS3" template requires you to change the location of your localization files (if you have any).
 - XSL templates in Searchboost no longer work, please replace the input and output templates before upgrading to version 1.25.
 - Whitespace and dash characters in APIs no longer work.
 - Infobox/Guides have had a major upgrade and now need a BS5 skin and can no longer be used with BS3 skins.
@@ -123,5 +125,26 @@ The 1.25 release automatically fixes the following bugs:
 - The old "MyTokens" parsers functionality will be removed in version `1.26`.
 
 For a comprehensive list of obsolete features, actions, or addons, please refer to the [Obsolete Features](https://learn.plantanapp.com/docs/current/important-notes/obsolete-features) documentation page.
+
+## Custom Validators
+Custom Validators have been changed from an XML to a JSON format. Use the following procedure to convert custom validations from XML format to JSON format during the upgrading process for the Plant An App system version 1.25.
+
+This procedure was demonstrated in a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EWbH_5_39_lEj1ft3HstWxMBFY4vdIMi-GWyeEwjVN2SLA?e=q7YaCn).
+
+### Step-by-step guide
+
+1. [00:00:48] Locate the folder containing custom validators in the file system at the path: `DesktopModules\DNNSharp\ActionForm\Config\Validators`.
+2. [00:02:58] Copy the XML content from the file.
+3. [00:03:03] Use a tool like [freeformatter.com](https://www.freeformatter.com/xml-to-json-converter.html) to convert the XML content to JSON format. Paste the XML content into the converter, then click "Convert to JSON."
+4. [00:03:29] Copy the JSON output.
+5. [00:04:06] Save the edited file as a JSON file in the Validators folder.
+6. [00:04:20] Paste the JSON content into the new file.
+7. [00:04:32] Change the "Type" property to "TypeStr."
+8. [00:04:53] Change the "Params" property to "ValidatorParams."
+9. [00:05:20] Change the "JsValidator" property to "JsValidatorName."  Save the file.
+10. [00:06:32] Go to the site settings, clear the cache, and restart the application to apply the changes.
+11. [00:07:16] Test the custom validation on the website to ensure it works correctly.
+
+By following these steps, you can successfully convert your custom validations from XML format to JSON format and activate them in the Plant An App system. Happy low-coding!
 
 <br /><br /><a href="#top">Back to the top &#10548;</a>
