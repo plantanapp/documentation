@@ -152,9 +152,9 @@ If your file contains only one validator, the freeformatter tool will not format
 [
   {
     "Title": "Phone +1 plus 7 or 10 digit",
-    "Type": "avt.ActionForm.Core.Validation.ValidatorRegex, avt.ActionForm.Core",
-    "JsValidator": "phone710",
-    "Params": {
+    "TypeStr": "avt.ActionForm.Core.Validation.ValidatorRegex, avt.ActionForm.Core",
+    "JsValidatorName": "phone710",
+    "ValidatorParams": {
       "Regex": "^(\\+1\\s?)?[\\s.-]?\\(?(\\d{3})?\\)?[\\s.-]?(\\d{3})[\\s.-]?(\\d{4})$"
     },
     "ErrorMessage": {
