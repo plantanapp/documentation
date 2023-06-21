@@ -145,6 +145,26 @@ This procedure was demonstrated in a [video](https://plantanapp-my.sharepoint.co
 10. [00:06:32] Go to the site settings, clear the cache, and restart the application to apply the changes.
 11. [00:07:16] Test the custom validation on the website to ensure it works correctly.
 
+#### Important Note
+
+If your file contains only one validator, the freeformatter tool will not format it as an array and will also retain the Validation element.  You should ensure that the final form of the JSON file should be an array with no "Validation" element:
+```
+[
+  {
+    "Title": "Phone +1 plus 7 or 10 digit",
+    "Type": "avt.ActionForm.Core.Validation.ValidatorRegex, avt.ActionForm.Core",
+    "JsValidator": "phone710",
+    "Params": {
+      "Regex": "^(\\+1\\s?)?[\\s.-]?\\(?(\\d{3})?\\)?[\\s.-]?(\\d{3})[\\s.-]?(\\d{4})$"
+    },
+    "ErrorMessage": {
+      "key": "validation.phone710",
+      "default": "Phone number must be in 7 or 10 digit format and may include a +1 prefix."
+    }
+  }
+]
+```
+
 By following these steps, you can successfully convert your custom validations from XML format to JSON format and activate them in the Plant An App system. Happy low-coding!
 
 <br /><br /><a href="#top">Back to the top &#10548;</a>
