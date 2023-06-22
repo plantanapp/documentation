@@ -26,7 +26,7 @@ These are a stack of actions defined under the Form Events section. At this stag
 At this stage, Action Form injects the form tokens into the context, initializing them with the default values. If during the PreInit phase you’ve loaded data with a name the same as a form field, it will get overwritten by the field default value. If you want that to stick, move the action in the Init event.
 
 4) **Load existing entry**
-If a parameter named entry is present in the query string, Action Form will try to find a matching entry in the internal reports table. If it finds one, it loads its value into the interface, overwriting all values that were computed so far. This is how the Action Grid integration works.
+If a parameter named entry is present in the query string, Action Form will try to find a matching entry in the internal reports table. If it finds one, it loads its value into the interface, overwriting all values that were computed so far. This is how the Action Grid integration works. Also, upon submitting a form, the [_EditUrl] token becomes available, this token contains a link to the submitted entry url, by appending the querystring variable 'entry' (with guid value) to the url of the form page. This token can e.g. be used to email a link to the submission.
 
 5) **Init actions are executed.**
 This is the final stage of initialization. Anything you inject into the context at this point will overwrite existing data. For example, add an SQL Action and match columns to field names.
