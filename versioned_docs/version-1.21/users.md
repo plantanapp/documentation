@@ -17,7 +17,7 @@ On the top of the page you have the `NEW` button that will open an pop-up.
 * `Email` - Must be a valid email address that will be used as the `Username` in the platform for the new user created.
 * `First Name` - First Name of the new user.
 * `Last Name` - Last Name of the new user.
-* [Roles](/roles.md) - Here you select which role(s.md) the new user will have in the platform.
+* [Roles](/roles.md) - Here you select which role the new user will have in the platform.
 
 ## `Edit User`
 
