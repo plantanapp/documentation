@@ -41,7 +41,7 @@ This action uses OpenAI to generate a summary of the given content.
 
 ## `About "Detail Level"`
 [](#inlinedoc-detail-level)
-The selection of a summarization Detail Level results in specific instructions being passed to OpenAI to guid the summarization.
+The selection of a summarization Detail Level results in specific instructions being passed to OpenAI to guide the summarization.
 
 | Detail Level | Instructions to OpenAI |
 |---|---|
