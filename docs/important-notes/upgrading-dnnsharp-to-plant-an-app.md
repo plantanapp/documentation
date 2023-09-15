@@ -60,3 +60,12 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 ### `Known Incompatibilities`
 
 * [ ] Some versions of 2sxc content are incompatible with AppBuilder version 1.12.91. Install the latest version of 2sxc before installing AppBuilder.
+
+
+
+### `Yellow screen errors / DLL incompatibilities`
+
+* When upgrading or updating modules 'left over' dll's can cause a yellow screen of death, the site is broken and can't be accessed anymore. The LCE must then access the file system by Remote Desktop connection, FTP (or some control panel file system tool). 
+* In many cases this type of problem occur when a module has been deleted (through DNN extensions page), but the files were kept that is (when the remove files checkbox has not been checked).
+* Finding which dll is the culprit can be difficult. The error message may give some information. For avt.xxxx.dll or dnnsharp.xxxx.dll we advise to check the version number. It should match the other dll's 
+
