@@ -250,3 +250,5 @@ This example will result in the "`my argument is: arg value`" string.
     [Namespace:Token(Format="arg0 is {0}, arg1 is {1}", Arg0="arg0 value", arg1="arg1 value")]  
 
 This will return the "`arg0 is arg0 value, arg1 is arg1 value`" string.
+
+<br /><br /><a href="#top">Back to the top of the page</a>

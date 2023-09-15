@@ -4,18 +4,21 @@ title: Files
 sidebar_label: Files
 ---
 
-## **Files**
-
 This type of field allows you to define a file uploader in your Form and finetune its usage. There are three types of `Files` fields:
+
 - [`File Manager`](#file-manager) (interface for managing attached files)
 - [`Single File Uploader`](#single-file-upload) (allows a single file upload)
 - [`Multi File Uploader`](#multi-file-upload) (allows multiple files upload)
 
-### File manager
+Note that only the field-specific parameters will be listed below. Please <a href="https://learn.plantanapp.com/docs/modules/fields-overview-and-settings#common-parameters" target="_blank">see here</a> for a list of **common parameters** to all fields and <a href="https://learn.plantanapp.com/docs/modules/fields-overview-and-settings#common-configuration-sections-bind-expressions-ui-settings-validation" target="_blank">here</a> for the **common configuration** elements to all fields.
+
+## File manager
 
 This field gives you the ability to browse files from the Plant an App File Manager, as well as uploading new files to the selected folder via its too tabs: `Upload` and `Browse Files`. It supports *Single* and *Multiple* file uploads (see parameters below). The files retrieved from the server can be filtered by their extension. If this is used to upload images, they can be resized in the browser before being uploading them to the server. This way you can save bandwidth and speed-up the upload process. This field can also be used as a "helper field" when the "*`Display in Popup`*" option (see below) is enabled. You can both upload files and select existing files, and when the modal is committed, you will have access to the selected files and the files in the upload queue using the Callback setting.
 
 >ss file-manager-upload
+
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -40,13 +43,13 @@ This field gives you the ability to browse files from the Plant an App File Mana
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 |*For Each File*|Allows you to execute actions on each uploaded file. Please see <a href="https://learn.plantanapp.com/docs/faq" target="_blank">a list of available Actions</a> in Plant an App.<br /> The following tokens are available for those actions: `[FileName]`, `[RelativeUrl]`, `[AbsoluteUrl]`, `[FilePath]` (physical path), `[LinkClick]`, `[Stream]` ([file stream](https://learn.microsoft.com/en-us/sql/relational-databases/blob/filestream-sql-server?view=sql-server-ver16), for uploading into a database for example), `[Base64]`, `[FileSize]`, `[FileSizeB]` (in bytes), `[FileSizeKB]` (in kilobytes), `[FileSizeMB]` (in megabytes), `[FileSizeGB]` (in gigabytes), `[MimeType]` ([see here](https://en.wikipedia.org/wiki/Media_type) for Mime Types), `[FileId]`, `[FolderId]`, `[FolderPath]`, `[FileExtension]`. Also creates the `[FileOrThumbnailNameAndExtension]` token; this token contains the file name and extension, but if the field is used in a create thumbnail action it will be overwritten with then thumbnail value.|
 
-### Multi File Upload
+## Multi File Upload
 
 This field is a File Upload widget with multiple file selection, drag-and-drop support and progress bar.
 
 >ss multi-file-upload
 
-Available parameters:
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -61,13 +64,13 @@ Available parameters:
 |*Handle Duplicates*|Define how the file upload duplicates will be handled: `Rename` or `Overwrite`.|
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-### Single File Upload
+## Single File Upload
 
 This field is a File Upload widget with single file selection, drag-and-drop support and progress bar.
 
 >ss single-file-upload
 
-Available parameters:
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -98,3 +101,5 @@ If you want to display a message which informs the form user about the details o
 Where `[Upload]` is the title of the Single File Upload field.
 
 :::
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

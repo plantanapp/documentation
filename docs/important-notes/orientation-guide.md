@@ -1,29 +1,23 @@
 ---
 id: orientation-guide
-title: Orientation guide
-sidebar_label: Orientation guide
+title: Welcome to Plant an App!
+sidebar_label: Orientation Guide
 ---
-
-> Audience: `Everyone`
-> 
-> Skill Prerequisites: `None`
-
-## Welcome to Plant an App!
 
 We have many ways to help you in your Plant an App journey, something to suit all learning styles.
 Before you dive in, here is a brief summary of what is available.
 
-* <strong>`Discovering Plant an App`</strong>: find documentation and training on the Plant an App platform as well as inspiration on how to use it
-* <strong>Getting Help</strong>: how to get help and advice, both from the Plant an App staff and our growing the community
-* <strong>`Become part of the Plant an App community`</strong>: how you can join the worldwide Plant an App community
+* [**Discovering Plant an App**](#discovering-plant-an-app): find documentation and training on the Plant an App platform as well as inspiration on how to use it
+* [**Getting Help**](#getting-help): how to get help and advice, both from the Plant an App staff and our growing the community
+* [**Become part of the Plant an App community**](#become-part-of-the-plant-an-app-community): how you can join the worldwide Plant an App community
 
-## `Discovering Plant an App`
+## Discovering Plant an App
 
 Plant an App is an extensive platform whose capabilities grow and evolve continuously. As such, we offer a number of ways for you to discover what you can do with Plant an App and get familiar with our platform.
 
-### <a href="https://learn.plantanapp.com/docs/audience">`Plant an App Documentation`</a>
+### <a href="https://learn.plantanapp.com/docs/current/general/welcome" target="_blank">**Plant an App Documentation**</a>
 
-🔗 **<a href="https://learn.plantanapp.com/docs/audience">learn.plantanapp.com</a>**
+🔗 **<a href="https://learn.plantanapp.com/docs/current/general/welcome">learn.plantanapp.com</a>**
 
 The central documentation portal provides a structured and searchable collection of information of all aspects of Plant an App, from installation and upgrades to actions and entities, to integrations with a wide range of third- party services e.g., Slack, Authorise.NET, Google, etc.
 
@@ -31,7 +25,7 @@ The Plant an App platform also includes extensive documentation within the devel
 
 The [DNN Sharp legacy documentation portal](https://docs.dnnsharp.com/) can also be viable source of information. Note however that this documentation is not maintained by our team. As such, many of the options and procedures have evolved since the move to Plant an App.
 
-### <a href="https://academy.plantanapp.com">`Plant an App Academy`</a>
+### <a href="https://academy.plantanapp.com" target="_blank">**Plant an App Academy**</a>
 
 🔗 **<a href="https://academy.plantanapp.com">academy.plantanapp.com</a>**
 
@@ -43,13 +37,13 @@ The Low Code Fundamentals course is freely open available to everyone - simply r
 
 <img src="/img/config_menu_getting_started.png" alt="config_menu_getting_started.png"></img>
 
-### `Low-Code Café`
+### **Low-Code Café**
 
-Our team holds a weekly live presentation to introduce s a different facet of the Plant an App platform – be it new and or enhanced features, integrations with third-party services, customizing Plant an App, and more. To attend part to the Low-Code Café, please [register here](https://us02web.zoom.us/webinar/register/WN_Y0OUx5njQFatTEMCk3B0yg).
+Our team holds a bi-weekly live presentation to introduce s a different facet of the Plant an App platform – be it new and or enhanced features, integrations with third-party services, customizing Plant an App, and more. To attend part to the Low-Code Café, please [register here](https://us02web.zoom.us/webinar/register/WN_Y0OUx5njQFatTEMCk3B0yg).
 
 The full Low-Code Café session archive (going back to episode 1, in July 2020) is available on the dedicated [YouTube playlist](https://www.youtube.com/playlist?list=PL67RlTAxc73EADPcPrLHLGaVu4zXOGuyi). Videos include full descriptions and timecodes with links, enabling you to jump directly to the section you are interested in. The descriptions are also searchable within YouTube.
 
-### [`The Plant an App YouTube Channel`](https://www.youtube.com/channel/UC7wl5WsqwdQTx_pGDhrY-3g)
+### [**The Plant an App YouTube Channel**](https://www.youtube.com/channel/UC7wl5WsqwdQTx_pGDhrY-3g)
 
 Our [YouTube channel](https://www.youtube.com/channel/UC7wl5WsqwdQTx_pGDhrY-3g) hosts a wide range of videos including:
 
@@ -64,25 +58,25 @@ Videos include full descriptions and timecodes with links, so you jump directly 
 
 <img src="/img/yt_channel.png" alt="yt_channel.png"></img>
 
-### <a href="https://www.plantanapp.com/community/blog">`Plant an App Blog`</a>
+### <a href="https://www.plantanapp.com/community/blog" target="_blank">**Plant an App Blog**</a>
 
-🔗 **<a href="https://www.plantanapp.com/community/blog">plantanapp.com/community/blog</a>**
+🔗 <a href="https://www.plantanapp.com/community/blog" target="_blank">**https://www.plantanapp.com/community/blog**</a>
 
 Check out <a href="https://www.plantanapp.com/community/blog">our blog</a> for the latest news about Plant an App along with case studies, articles, ideas, and discussions of on the wider low-code no-code landscape.
 
-### [`Plant an App on LinkedIn`](https://www.linkedin.com/company/plantanapp/)
+### [**Plant an App on LinkedIn**](https://www.linkedin.com/company/plantanapp/)
 
 🔗<strong>[linkedin.com/company/plantanapp](https://www.linkedin.com/company/plantanapp/)</strong>
 
 [Follow us on LinkedIn](https://www.linkedin.com/company/plantanapp/) to learn about new partnerships, courses, case studies and stay up to date with Plant an App.
 
-## `Getting Help`
+## Getting Help
 
 When you are stuck or just wonder about the best way to proceed there are several ways to reach out for help. There are several ways to get help with Plant an App.
 
-### <a href="https://console.plantanapp.com/Support">`Support Ticket`</a>
+### <a href="https://console.plantanapp.com/Support" target="_blank">**Open a Support Ticket**</a>
 
-🔗 **<a href="https://console.plantanapp.com/Support">console.plantanapp.com/Support</a>**
+🔗 <a href="https://console.plantanapp.com/Support" target="_blank">**https://console.plantanapp.com/support**</a>
 
 A support request can be raised by the registered contact for your Plant an App license through the Plant an App Console.
 
@@ -90,49 +84,85 @@ A support request can be raised by the registered contact for your Plant an App 
 
 Your ticket will be handled by a member of our support team and all communication will remain private. Under the same section you can review your old tickets and reopen them if necessary.
 
-|  |  |
-| --- | --- |
-| **What is it best for?** | Platform errors and issues affecting your own Plant an App instance. |
-| **Who will help me?** | The Plant an App support team. |
-| **Who will see the details?** | Only Plant an App staff. |
+<table>
+  <tr>
+    <td><b>What is it best for?</b></td>
+    <td>Platform errors and issues affecting your own Plant an App instance.</td>
+  </tr>
+  <tr>
+    <td><b>Who will help me?</b></td>
+    <td>The Plant an App support team.</td>
+  </tr>
+    <tr>
+    <td><b>Who will see the details?</b></td>
+    <td>Only the Plant an App staff.</td>
+  </tr>
+</table>
 
-### <a href="https://community.plantanapp.com/">`Through the Plant an App Community Forum`</a>
+### <a href="https://community.plantanapp.com/" target="_blank">**Through the Plant an App Community Forum**</a>
 
-🔗 **<a href="https://community.plantanapp.com/">community.plantanapp.com</a>**
+🔗 <a href="https://community.plantanapp.com/" target="_blank">**https://community.plantanapp.com**</a>
 
-Sign up for to the <a href="https://community.plantanapp.com/">Plant an App Community</a> to post your questions and observations to the wider Plant an App community. You can also review questions posted by your fellow community members, along with answers and discussion. Search the forum by topic or features and register for alerts on questions you are tracking.
+Sign up for to the <a href="https://community.plantanapp.com/" target="_blank">Plant an App Community</a> to post your questions and observations to the wider Plant an App community. You can also review questions posted by your fellow community members, along with answers and discussion. Search the forum by topic or features and register for alerts on questions you are tracking.
 
-|  |  |
-| --- | --- |
-| **What is it best for?** | When you are stuck, and the documentation and training materials do not answer your question; when you are wondering how need advice on how best to solve a technical challenge or what the best development approach to take When you discover an anomaly or bug; when you find a trick or tip you want to share. |
-| **Who will help me?** | The Community includes Plant an App veterans and advanced user with years of real-world experience building solutions with the platform. The Plant an App support staff is also actively monitor monitoring the forum. |
-| **Who will see the details?** | Contributions are visible to all Community members. While you do need to create an account, your personal details remain private. |
+<table>
+  <tr>
+    <td><b>What is it best for?</b></td>
+    <td>When you are stuck, and the documentation and training materials do not answer your question; when you are wondering how need advice on how best to solve a technical challenge or what the best development approach to take When you discover an anomaly or bug; when you find a trick or tip you want to share.</td>
+  </tr>
+  <tr>
+    <td><b>Who will help me?</b></td>
+    <td>The Community includes Plant an App veterans and advanced user with years of real-world experience building solutions with the platform. The Plant an App support staff is also actively monitor monitoring the forum.</td>
+  </tr>
+    <tr>
+    <td><b>Who will see the details?</b></td>
+    <td>Contributions are visible to all Community members. While you do need to create an account, your personal details remain private.</td>
+  </tr>
+</table>
 
-### <a href="https://community.plantanapp.com/Live-Help">`Through Live Help`</a>
+### <a href="https://community.plantanapp.com/Live-Help" target="_blank">**Through Live Help**</a>
 
 🔗 **<a href="https://community.plantanapp.com/Live-Help">community.plantanapp.com/Live-Help</a>**
 
 Our Plant an App support team holds <a href="https://community.plantanapp.com/Live-Help">virtual office hours</a> several times a week. Log in with your Plant an App Community account to book time with a Plant an App expert to discuss any aspect of Plant an App and your projects. Sessions may be recorded.
 
-|  |  |
-| --- | --- |
-| **What is it best for?** | Discussing implementation options and approaches or interactive troubleshooting. |
-| **Who will help me?** | A Plant an App support expert. |
-| **Who will see the details?** | Office hours are conducted via a Zoom call that may be recorded and shared with other participants. |
+<table>
+  <tr>
+    <td><b>What is it best for?</b></td>
+    <td>Discussing implementation options and approaches or interactive troubleshooting.</td>
+  </tr>
+  <tr>
+    <td><b>Who will help me?</b></td>
+    <td>A Plant an App support expert.</td>
+  </tr>
+    <tr>
+    <td><b>Who will see the details?</b></td>
+    <td>Office hours are conducted via a Zoom call that may be recorded and shared with other participants. </td>
+  </tr>
+</table>
 
-### `Join the Low Code Campfire sessions`
+### **Join the "Low Code Campfire" sessions**
 
 This is a weekly live community event that Plant an App experts host and where they are joined by Plant an App veterans as well as by the less experienced. Anyone can ask questions and share their experiences of Plant an App while other participants will contribute suggestions and brainstorm solutions. The group also holds regular discussions of feature requests and the future direction of the Plant an App platform.
 
 Anyone can [register for the live session](https://us02web.zoom.us/meeting/register/tZAqfu2rqTgtG9yVpLeC_fWGZWjKztUX3S2_) or watch the recording on the [dedicated YouTube playlist](https://www.youtube.com/playlist?list=PL67RlTAxc73FrdF2_oXlirJVUeTsGdAZA). A code of conduct applies to all participants.
 
-|  |  |
-| --- | --- |
-| **What is it best for?** | Advanced and technical questions. Discussion about Plant an App administration and deployment. Contributions and ideas for the future Plant an App roadmap. |
-| **Who will help me?** | Participants are invited to ask their questions of the group who then brainstorm during the event. Regular participants include Plant an App staff and veterans. |
-| **Who will see the details?** | The sessions take place on Zoom and participants are encouraged to screenshare. Recordings of each session are published on YouTube. |
+<table>
+  <tr>
+    <td><b>What is it best for?</b></td>
+    <td>Advanced and technical questions. Discussion about Plant an App administration and deployment. Contributions and ideas for the future Plant an App roadmap.</td>
+  </tr>
+  <tr>
+    <td><b>Who will help me?</b></td>
+    <td>Participants are invited to ask their questions of the group who then brainstorm during the event. Regular participants include Plant an App staff and veterans.</td>
+  </tr>
+    <tr>
+    <td><b>Who will see the details?</b></td>
+    <td>The sessions take place on Zoom and participants are encouraged to screenshare. Recordings of each session are published on YouTube.</td>
+  </tr>
+</table>
 
-## `Become part of the Plant an App Community`
+## Become part of the Plant an App Community
 
 There are several opportunities to join fellow Plant an App users around the world and contribute to the Community.
 
@@ -140,3 +170,5 @@ There are several opportunities to join fellow Plant an App users around the wor
 * Join the weekly [Low-code Café](https://us02web.zoom.us/webinar/register/WN_Y0OUx5njQFatTEMCk3B0yg)
 * Become one of the regular [Low-code Campfire](https://us02web.zoom.us/meeting/register/tZAqfu2rqTgtG9yVpLeC_fWGZWjKztUX3S2_) crew
 * Contribute your <a href="https://community.plantanapp.com/Feature-Requests">Feature Requests</a> and comment on others’ requests
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

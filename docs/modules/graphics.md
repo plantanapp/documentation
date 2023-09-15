@@ -4,22 +4,26 @@ title: Graphics
 sidebar_label: Graphics
 ---
 
-## **Graphics**
-
 The Fields under this section allow you to upload and manipulate images and graphical elements to be inserted into your form.
 
-### Display Image
+- [Display Image](#display-image)
+- [Image Editor](#image-editor)
+- [Progess Bar](#progess-bar)
+
+Note that only the field-specific parameters will be listed below. Please <a href="https://learn.plantanapp.com/docs/modules/fields-overview-and-settings#common-parameters" target="_blank">see here</a> for a list of **common parameters** to all fields and <a href="https://learn.plantanapp.com/docs/modules/fields-overview-and-settings#common-configuration-sections-bind-expressions-ui-settings-validation" target="_blank">here</a> for the **common configuration** elements to all fields.
+
+## Display Image
 
 This Field type enables the display of an image - either hosted on the Plan an App portal or from an external URL.
 
-Available parameters:
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
 |*Image*|Choose an image from the Plant an App portal. The drop-down list is automatically populated with all the available images.|
 |*Image URL*|Alternatively, load an image from an external URL. If provided, this setting will take precedence over the "*Image*" parameter above. This field supports Tokens.|
 
-### Image Editor
+## Image Editor
 
 This field inserts an image editor canvas in the form that allows for the ability to crop the selected area of an image and submit the data in [base64 format](https://en.wikipedia.org/wiki/Base64).
 
@@ -35,7 +39,7 @@ The image resulting from this field can:
 - Be saved directly to the database in base64 format.
 - Saved to disk with the help of the ["`Save file to disk`"](https://learn.plantanapp.com/docs/actions/save-file-to-disk) action by setting the input mode to: "Base64 image content".
 
-Available parameters:
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -49,7 +53,7 @@ Available parameters:
 |*Crop Box Height*|Define the crop box height in [px](https://www.w3.org/Style/Examples/007/units.en.html#units) (Integer number).|
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
-### Progress Bar
+## Progress Bar
 
 Allows you to insert a progress bar into your Form, that can be used to indicate the progress of an operation to the user.
 
@@ -64,7 +68,7 @@ How to quickly create a **Progress Bar** for your Form:
 
 :::
 
-Parameters list:
+- Specific parameters
 
 | Field | Description and information |
 | ----- | --------------------------- |
@@ -80,3 +84,5 @@ Parameters list:
 |*Animation*|Animation type on value change. Choose between `bounce` and `easeInOut.`|
 |*Animation Duration*|Time in milliseconds. Disable with `-1`. Supports Tokens so you can pull data from various sources such as user profile.|
 |*Change color on value*|Set threshold for color change when it reaches a specific value. Multiple steps can be added. This color change applies to the *Value* figure, not to the progress bar.|
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>

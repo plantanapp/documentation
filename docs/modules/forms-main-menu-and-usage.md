@@ -1,7 +1,7 @@
 ---
 id: forms-main-menu-and-usage
-title: Forms - Main Menu and Usage
-sidebar_label: Main Menu and Usage
+title: Form Builder - Main Menu and Usage
+sidebar_label: Form Builder
 ---
 
 # Working with the `Form Builder`
@@ -143,4 +143,6 @@ More details about these options can be found in the "**`Forms: Events`**" page.
 
 ## **`Settings`**
 
-In this section you can finetune interface parameters and define advanced and compatibility settings relating to your form. Please see the "**`Form: Settings`**" page in this section for detailed information.  
+In this section you can finetune interface parameters and define advanced and compatibility settings relating to your form. Please see the "**`Form: Settings`**" page in this section for detailed information.
+
+<br /><br /><a href="#top">Back to the top &#10548;</a>
