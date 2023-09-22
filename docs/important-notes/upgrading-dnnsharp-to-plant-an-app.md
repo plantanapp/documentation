@@ -60,3 +60,16 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 ### `Known Incompatibilities`
 
 * [ ] Some versions of 2sxc content are incompatible with AppBuilder version 1.12.91. Install the latest version of 2sxc before installing AppBuilder.
+
+
+
+
+### `Upgrades Resulting in Crashed Sites`
+
+* Please note that the current versions of our Dynamic Link Libraries (DLLs) are coded as 05.xx.xx.   For example, if you are installing Plant an App version 1.25, the DLLs present in the BIN folder should be of version 05.25.xx.  Any previous versions that might still be residing in your extensions list or within the BIN directory should be regarded with caution.  
+
+* To resolved a Crashed Site after installing an update to Plant an App, ensure it's not conflicting with any outdated DLLs present on your site. When you perform alterations like module updates or upgrades, leftover DLLs may cause severe errors, such as complete site breakage, preventing your access to it. 
+
+* This issue often arises when a module has been removed via the DNN extensions page, but its associated files were not deleted (typically because the 'remove files' box was not ticked). 
+
+* Identifying which DLL is causing the havoc can be complex. However, you may extract some clues from the error message. If you come across DLLs such as avt.xxxx.dll or dnnsharp.xxxx.dll we recommend scrutinizing their version number to confirm they are in harmony with the rest.
