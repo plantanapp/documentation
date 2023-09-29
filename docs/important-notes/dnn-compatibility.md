@@ -15,9 +15,9 @@ The most important consideration is to not upgrade DNN Platform or EVOQ before t
 ## `Compatibility Matrix`
 
 :::note
-For DNN Platform versions 9.3.2 and higher, we always <strong>recommend upgrading to the latest released version of Plant an App or DNN Sharp Modules</strong>. Listed **below are the minimum supported versions** for each supported version of DNN Platform.
+<strong>We recommend upgrading to the latest released version of Plant an App or DNN Sharp Modules</strong>. Listed **below are the minimum supported versions** for each supported version of DNN Platform.
 
-We also advise <strong>upgrading to the recommended version of DNN</strong>, which is also listed below. Our policy is to discontinue support for DNN versions released more than one year ago.
+We also advise <strong>upgrading to the recommended version of DNN</strong>, which is also listed below. Our policy is to discontinue support for our modules when used on DNN versions released more than one year ago.
 
 To see the Evoq Content versions that correspond to the DNN Platform versions listed, please see the [DNN Software Documentation](https://www.dnnsoftware.com/docs/developers/product-versions.html).
 :::
@@ -33,13 +33,15 @@ To see the Evoq Content versions that correspond to the DNN Platform versions li
 
 ### Older versions - Upgrade path only
 
+No support is offered for the DNN Platform or our modules when DNN is below the Minimum Supported version.
+
 | DNN Version | Min Plant an App Version | Min DNNSharp Module Version | Notes |
 | ----------- | ------------------------ | --------------------------- | ----- |
 | 9.8.1 | 1.9.x | 5.9.x |  |
 | **9.7.2** | **1.9.x** | **5.9.x** |  |
 | 9.6.2 | 1.6.x | 5.6.x | DNN Version 9.6.2 is not recommended. This is the max DNN version compatible with DNN Sharp 5.8.x and lower or Plant an App 1.8.x and lower |
 | **9.6.1** | **1.6.x** | **5.6.x** | Starting with DNN 9.6.1, SQL Server 2008 or higher is reqiured. |
-| Below 9.6.1 |  |  | Standard support no longer covers DNN Versions 9.6.1 and lower. It will only be provided under separate commercial support agreements. Contact us for a quote. |
+| Below 9.6.1 |  |  | Not supported.|
 
 ## `Important Notes About Upgrade Paths`
 
