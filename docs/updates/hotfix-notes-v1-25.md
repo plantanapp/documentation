@@ -12,7 +12,7 @@ sidebar_label: Hotfix Notes v1.25
 
 ### Users on AppBuilder (AB) version 1.25.99 or Lower
 - **Verify your current AB version**: Before attempting to upgrade, identify your current version of AppBuilder.
-- **Manually upgrade to AB 5.25.102 or higher**: If you're on AB 1.25.99, you must manually download and install at least AB 5.25.102 to move past the AB 1.25.100 version barrier.  Contact [support](https://console.plantanapp.com/Support) for to request the download and for instructions on how to install it.
+- **Manually upgrade to AB 5.25.105 or higher**: If you're on AB 1.25.99, you must manually download and install at least AB 5.25.102 to move past the AB 1.25.100 version barrier.  Contact [support](https://console.plantanapp.com/Support) for to request the download and for instructions on how to install it.
 - **Install the latest AppBuilder hotfix**: After upgrading past AB 1.25.100, make sure to further update to the latest available hotfix.
 
 ### Users on AppBuilder Versions Between AB 1.25.105 and AB 1.25.143
