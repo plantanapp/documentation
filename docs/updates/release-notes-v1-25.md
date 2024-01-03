@@ -95,7 +95,15 @@ A version control / MEO version is also available for the 1.25 release.
   - My Action Form Uniqueizer
   - DNNSharp.UserManagement
   
-These add-ons/modules have a high probability of breaking your installation, so please remove them before upgrading.
+  These add-ons/modules have a high probability of breaking your installation, so please remove them before upgrading.
+
+- DatePicker "On Change/Click" behavior change (JavaScript)
+  - The JavaScript used to impact DatePickers has changed and simplified.  If your Low-Code uses JavaScript to manipulate a DatePicker, the JavaScript may need to be updated.
+  - For example, if you copy the value of "Picker1" to "Picker2" in an "On Change/Click" event, the correct syntax is now
+    ```
+    var Picker1Lib = scope.controls.Picker1.getLibrary(); 
+	[Picker2] =     Picker1Lib.selectedDates[0].toISOString(); 
+    ```
 
 
 
