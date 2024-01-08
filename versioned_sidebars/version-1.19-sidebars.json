@@ -1,8 +1,8 @@
 {
-  "version-1.19/someSidebar": [
+  "someSidebar": [
     {
       "type": "doc",
-      "id": "version-1.19/audience"
+      "id": "audience"
     },
     {
       "type": "category",
@@ -14,7 +14,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/general/versioning"
+              "id": "general/versioning"
             }
           ],
           "collapsible": true,
@@ -22,23 +22,23 @@
         },
         {
           "type": "doc",
-          "id": "version-1.19/roles"
+          "id": "roles"
         },
         {
           "type": "doc",
-          "id": "version-1.19/users"
+          "id": "users"
         },
         {
           "type": "doc",
-          "id": "version-1.19/pages"
+          "id": "pages"
         },
         {
           "type": "doc",
-          "id": "version-1.19/entities"
+          "id": "entities"
         },
         {
           "type": "doc",
-          "id": "version-1.19/sql-console"
+          "id": "sql-console"
         },
         {
           "type": "category",
@@ -46,11 +46,11 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/workflows/wf-overview"
+              "id": "workflows/wf-overview"
             },
             {
               "type": "doc",
-              "id": "version-1.19/workflows/execution-context"
+              "id": "workflows/execution-context"
             }
           ],
           "collapsible": true,
@@ -62,7 +62,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/tokens/tkn-overview"
+              "id": "tokens/tkn-overview"
             }
           ],
           "collapsible": true,
@@ -74,7 +74,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/updates/azure-app-services"
+              "id": "updates/azure-app-services"
             }
           ],
           "collapsible": true,
@@ -90,15 +90,15 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-1.19/faq"
+          "id": "faq"
         },
         {
           "type": "doc",
-          "id": "version-1.19/actions/running-examples"
+          "id": "actions/running-examples"
         },
         {
           "type": "doc",
-          "id": "version-1.19/actions/common-parameters"
+          "id": "actions/common-parameters"
         },
         {
           "type": "category",
@@ -106,27 +106,27 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-a-simple-checkout-to-a-button"
+              "id": "actions/add-a-simple-checkout-to-a-button"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-subscription"
+              "id": "actions/create-subscription"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/make-a-payment-with-credit-card"
+              "id": "actions/make-a-payment-with-credit-card"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/make-a-payment-with-electronic-check"
+              "id": "actions/make-a-payment-with-electronic-check"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/refund-a-transaction"
+              "id": "actions/refund-a-transaction"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-subscription"
+              "id": "actions/update-subscription"
             }
           ],
           "collapsible": true,
@@ -138,35 +138,35 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-javascript-server"
+              "id": "actions/execute-javascript-server"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-javascript-code-and-continue-execution"
+              "id": "actions/execute-javascript-code-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-javascript-code-and-stop-execution"
+              "id": "actions/execute-javascript-code-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-powershell-script"
+              "id": "actions/execute-powershell-script"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-razor"
+              "id": "actions/execute-razor"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-token-obsolete"
+              "id": "actions/execute-token-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/run-executable"
+              "id": "actions/run-executable"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/run-powershell-script"
+              "id": "actions/run-powershell-script"
             }
           ],
           "collapsible": true,
@@ -178,7 +178,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-sms-via-clickatell-gateway"
+              "id": "actions/send-sms-via-clickatell-gateway"
             }
           ],
           "collapsible": true,
@@ -190,31 +190,31 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/change-user"
+              "id": "actions/change-user"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-update-tokens"
+              "id": "actions/create-update-tokens"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/inject-data-obsolete"
+              "id": "actions/inject-data-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-entry-by-id"
+              "id": "actions/load-entry-by-id"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-entry-by-user-id"
+              "id": "actions/load-entry-by-user-id"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-user"
+              "id": "actions/load-user"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-users-from-sql"
+              "id": "actions/load-users-from-sql"
             }
           ],
           "collapsible": true,
@@ -226,95 +226,95 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-fedex-credential"
+              "id": "actions/add-fedex-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-github-credential"
+              "id": "actions/add-github-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-group"
+              "id": "actions/add-group"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-hashapi-tierion-credential"
+              "id": "actions/add-hashapi-tierion-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-pushwoosh-credential"
+              "id": "actions/add-pushwoosh-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-stripe-credential"
+              "id": "actions/add-stripe-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-uipath-credential"
+              "id": "actions/add-uipath-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-credential"
+              "id": "actions/delete-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/dynamics-crm-test-credential"
+              "id": "actions/dynamics-crm-test-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/find-group"
+              "id": "actions/find-group"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-credential"
+              "id": "actions/get-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-user-credential"
+              "id": "actions/get-user-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/github-test-credential"
+              "id": "actions/github-test-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/smtp-test-credential"
+              "id": "actions/smtp-test-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/test-imap-credentials"
+              "id": "actions/test-imap-credentials"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/test-slack-webhook"
+              "id": "actions/test-slack-webhook"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/uipath-test-credential"
+              "id": "actions/uipath-test-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-fedex-credential"
+              "id": "actions/update-fedex-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-github-credential"
+              "id": "actions/update-github-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-hashapi-tierion-credential"
+              "id": "actions/update-hashapi-tierion-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-pushwoosh-credential"
+              "id": "actions/update-pushwoosh-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-stripe-credential"
+              "id": "actions/update-stripe-credential"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-uipath-credential"
+              "id": "actions/update-uipath-credential"
             }
           ],
           "collapsible": true,
@@ -326,27 +326,27 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/clear-cache-item"
+              "id": "actions/clear-cache-item"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/repost-data"
+              "id": "actions/repost-data"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/run-sql-query"
+              "id": "actions/run-sql-query"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/save-report-in-the-database"
+              "id": "actions/save-report-in-the-database"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/server-request"
+              "id": "actions/server-request"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-form-data-ajax"
+              "id": "actions/update-form-data-ajax"
             }
           ],
           "collapsible": true,
@@ -358,47 +358,47 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/custom-detail-view"
+              "id": "actions/custom-detail-view"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-add"
+              "id": "actions/datasource-add"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-delete"
+              "id": "actions/datasource-delete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-detail-view"
+              "id": "actions/datasource-detail-view"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-edit"
+              "id": "actions/datasource-edit"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-inline-add"
+              "id": "actions/datasource-inline-add"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-inline-edit"
+              "id": "actions/datasource-inline-edit"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-refresh"
+              "id": "actions/datasource-refresh"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/datasource-view"
+              "id": "actions/datasource-view"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/detail-view"
+              "id": "actions/detail-view"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-data-query"
+              "id": "actions/get-data-query"
             }
           ],
           "collapsible": true,
@@ -410,15 +410,15 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-debug-info"
+              "id": "actions/log-debug-info"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-error"
+              "id": "actions/log-error"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-job-context"
+              "id": "actions/log-job-context"
             }
           ],
           "collapsible": true,
@@ -430,15 +430,15 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/copy-file"
+              "id": "actions/copy-file"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-file"
+              "id": "actions/delete-file"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-folder"
+              "id": "actions/delete-folder"
             }
           ],
           "collapsible": true,
@@ -450,19 +450,19 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/advanced-search"
+              "id": "actions/advanced-search"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-static-files"
+              "id": "actions/load-static-files"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/open-file-manager"
+              "id": "actions/open-file-manager"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/reindex-search-boost-content"
+              "id": "actions/reindex-search-boost-content"
             }
           ],
           "collapsible": true,
@@ -474,47 +474,47 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/convert-from-html-to-word"
+              "id": "actions/convert-from-html-to-word"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-csv-from-list"
+              "id": "actions/create-csv-from-list"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-excel-from-csv-text"
+              "id": "actions/create-excel-from-csv-text"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-excel-from-list"
+              "id": "actions/create-excel-from-list"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-excel-from-sql-query"
+              "id": "actions/create-excel-from-sql-query"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/generate-pdf"
+              "id": "actions/generate-pdf"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-excel-sheet-names"
+              "id": "actions/get-excel-sheet-names"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/merge-pdf"
+              "id": "actions/merge-pdf"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/overlay-pdf"
+              "id": "actions/overlay-pdf"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/replace-tokens-in-word-document"
+              "id": "actions/replace-tokens-in-word-document"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/save-file-to-disk"
+              "id": "actions/save-file-to-disk"
             }
           ],
           "collapsible": true,
@@ -526,7 +526,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-thumbnail"
+              "id": "actions/create-thumbnail"
             }
           ],
           "collapsible": true,
@@ -538,67 +538,67 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-tags-input"
+              "id": "actions/add-tags-input"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-checkbox-true-false"
+              "id": "actions/add-checkbox-true-false"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-date-and-time-deprecated"
+              "id": "actions/add-date-and-time-deprecated"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-date-time-picker"
+              "id": "actions/add-date-time-picker"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-dropdown-with-autocomplete"
+              "id": "actions/add-dropdown-with-autocomplete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-dropdown-with-checkboxes"
+              "id": "actions/add-dropdown-with-checkboxes"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-hidden-field-with-custom-value"
+              "id": "actions/add-hidden-field-with-custom-value"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-large-text"
+              "id": "actions/add-large-text"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-multiple-choice-with-checkboxes"
+              "id": "actions/add-multiple-choice-with-checkboxes"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-multiple-choice-with-dropdown"
+              "id": "actions/add-multiple-choice-with-dropdown"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-multiple-choice-with-radio-buttons"
+              "id": "actions/add-multiple-choice-with-radio-buttons"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-number-input"
+              "id": "actions/add-number-input"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-slider"
+              "id": "actions/add-slider"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-statictext"
+              "id": "actions/add-statictext"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-textbox"
+              "id": "actions/add-textbox"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-dynamic-field-from-json"
+              "id": "actions/load-dynamic-field-from-json"
             }
           ],
           "collapsible": true,
@@ -610,27 +610,27 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-entity"
+              "id": "actions/create-entity"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-entity"
+              "id": "actions/delete-entity"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/find-entity"
+              "id": "actions/find-entity"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/read-entity"
+              "id": "actions/read-entity"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/read-multiple-entities"
+              "id": "actions/read-multiple-entities"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-entity"
+              "id": "actions/update-entity"
             }
           ],
           "collapsible": true,
@@ -642,51 +642,51 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/consume-email-queue"
+              "id": "actions/consume-email-queue"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/neverbounce-email-verification"
+              "id": "actions/neverbounce-email-verification"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-email-with-subject-a-b-testing"
+              "id": "actions/send-email-with-subject-a-b-testing"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-email"
+              "id": "actions/send-email"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-tracked-email"
+              "id": "actions/send-tracked-email"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/setup-neverbounce-email-verification"
+              "id": "actions/setup-neverbounce-email-verification"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/subscribe-to-campaign-monitor"
+              "id": "actions/subscribe-to-campaign-monitor"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/subscribe-to-constant-contact"
+              "id": "actions/subscribe-to-constant-contact"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/subscribe-to-mailchimp"
+              "id": "actions/subscribe-to-mailchimp"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/unsubscribe-from-campaign-monitor"
+              "id": "actions/unsubscribe-from-campaign-monitor"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/unsubscribe-from-constant-contact"
+              "id": "actions/unsubscribe-from-constant-contact"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-mailchimp-member"
+              "id": "actions/update-mailchimp-member"
             }
           ],
           "collapsible": true,
@@ -698,63 +698,63 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/alter-folder-permissions"
+              "id": "actions/alter-folder-permissions"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/convert-from-html-to-word"
+              "id": "actions/convert-from-html-to-word"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/copy-file"
+              "id": "actions/copy-file"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-file"
+              "id": "actions/delete-file"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-folder"
+              "id": "actions/delete-folder"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-archive-file-names"
+              "id": "actions/get-archive-file-names"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-or-create-folder"
+              "id": "actions/get-or-create-folder"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/move-folder"
+              "id": "actions/move-folder"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/pack-folder"
+              "id": "actions/pack-folder"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/rename-file"
+              "id": "actions/rename-file"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/rename-folder"
+              "id": "actions/rename-folder"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/replace-tokens-in-word-document"
+              "id": "actions/replace-tokens-in-word-document"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/save-file-to-disk"
+              "id": "actions/save-file-to-disk"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/unpack-an-archive"
+              "id": "actions/unpack-an-archive"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/upload-to-ftp"
+              "id": "actions/upload-to-ftp"
             }
           ],
           "collapsible": true,
@@ -766,23 +766,23 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-actions-asynchronously"
+              "id": "actions/execute-actions-asynchronously"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-actions-conditionally"
+              "id": "actions/execute-actions-conditionally"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-actions"
+              "id": "actions/execute-actions"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/repeat"
+              "id": "actions/repeat"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stop-execution"
+              "id": "actions/stop-execution"
             }
           ],
           "collapsible": true,
@@ -794,19 +794,19 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/auto-save-state"
+              "id": "actions/auto-save-state"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/clear-state"
+              "id": "actions/clear-state"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-state"
+              "id": "actions/load-state"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/save-state"
+              "id": "actions/save-state"
             }
           ],
           "collapsible": true,
@@ -818,7 +818,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-google-authorization-bearer-token"
+              "id": "actions/get-google-authorization-bearer-token"
             }
           ],
           "collapsible": true,
@@ -830,19 +830,19 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/finish-guide"
+              "id": "actions/finish-guide"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/go-to-step"
+              "id": "actions/go-to-step"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/next-step"
+              "id": "actions/next-step"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/previous-step"
+              "id": "actions/previous-step"
             }
           ],
           "collapsible": true,
@@ -854,7 +854,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/generate-barcode"
+              "id": "actions/generate-barcode"
             }
           ],
           "collapsible": true,
@@ -866,59 +866,59 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-list-entry"
+              "id": "actions/add-list-entry"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-list-from-a-csv-source"
+              "id": "actions/create-list-from-a-csv-source"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-list-from-csv-file-obsolete"
+              "id": "actions/create-list-from-csv-file-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-list-from-excel-xlsx"
+              "id": "actions/create-list-from-excel-xlsx"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-list-from-json"
+              "id": "actions/create-list-from-json"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-list-from-sql"
+              "id": "actions/create-list-from-sql"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-object"
+              "id": "actions/create-object"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-actions-for-each-list-entry"
+              "id": "actions/execute-actions-for-each-list-entry"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/extend-list-properties"
+              "id": "actions/extend-list-properties"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/extend-object-properties"
+              "id": "actions/extend-object-properties"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/paginate-list"
+              "id": "actions/paginate-list"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/remap-list"
+              "id": "actions/remap-list"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/remove-list-entries"
+              "id": "actions/remove-list-entries"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/sort-list"
+              "id": "actions/sort-list"
             }
           ],
           "collapsible": true,
@@ -930,19 +930,19 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-debug-message"
+              "id": "actions/log-debug-message"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-error"
+              "id": "actions/log-error"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-event"
+              "id": "actions/log-event"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/log-job-context"
+              "id": "actions/log-job-context"
             }
           ],
           "collapsible": true,
@@ -954,27 +954,27 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/display-error-message"
+              "id": "actions/display-error-message"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/display-message"
+              "id": "actions/display-message"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/display-toast-message-and-continue-execution"
+              "id": "actions/display-toast-message-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/display-toast-message-and-stop-execution"
+              "id": "actions/display-toast-message-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-dnn-message"
+              "id": "actions/send-dnn-message"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-plain-text-as-file-download"
+              "id": "actions/send-plain-text-as-file-download"
             }
           ],
           "collapsible": true,
@@ -986,27 +986,27 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/download-file"
+              "id": "actions/download-file"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/existing-list-as-json"
+              "id": "actions/existing-list-as-json"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/existing-object-as-json"
+              "id": "actions/existing-object-as-json"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/file-response"
+              "id": "actions/file-response"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/new-object-as-json"
+              "id": "actions/new-object-as-json"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/raw-response"
+              "id": "actions/raw-response"
             }
           ],
           "collapsible": true,
@@ -1018,31 +1018,31 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-json-object"
+              "id": "actions/create-json-object"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/parse-json-into-tokens"
+              "id": "actions/parse-json-into-tokens"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/parse-xml-into-json-tokens"
+              "id": "actions/parse-xml-into-json-tokens"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/regex-multiple-results"
+              "id": "actions/regex-multiple-results"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/regex-replace"
+              "id": "actions/regex-replace"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/regex"
+              "id": "actions/regex"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/sanitize-html"
+              "id": "actions/sanitize-html"
             }
           ],
           "collapsible": true,
@@ -1054,19 +1054,19 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/cancel-express-checkout-subscription"
+              "id": "actions/cancel-express-checkout-subscription"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-transaction-details"
+              "id": "actions/get-transaction-details"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/paypal-express-checkout"
+              "id": "actions/paypal-express-checkout"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/paypal-parse-ipn-request"
+              "id": "actions/paypal-parse-ipn-request"
             }
           ],
           "collapsible": true,
@@ -1078,79 +1078,79 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-existing-module"
+              "id": "actions/add-existing-module"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-module"
+              "id": "actions/add-module"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-page"
+              "id": "actions/create-page"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-portal"
+              "id": "actions/create-portal"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-module-hard"
+              "id": "actions/delete-module-hard"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-module-soft"
+              "id": "actions/delete-module-soft"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-page-hard"
+              "id": "actions/delete-page-hard"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-page-soft"
+              "id": "actions/delete-page-soft"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-portal"
+              "id": "actions/delete-portal"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/export-module-content"
+              "id": "actions/export-module-content"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/import-module-content"
+              "id": "actions/import-module-content"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-html-module"
+              "id": "actions/load-html-module"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-module"
+              "id": "actions/load-module"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-page"
+              "id": "actions/load-page"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-portal"
+              "id": "actions/load-portal"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-html-module"
+              "id": "actions/update-html-module"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-module"
+              "id": "actions/update-module"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-page"
+              "id": "actions/update-page"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-portal"
+              "id": "actions/update-portal"
             }
           ],
           "collapsible": true,
@@ -1162,15 +1162,15 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/redirect-to-portal-page"
+              "id": "actions/redirect-to-portal-page"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/redirect-to-url"
+              "id": "actions/redirect-to-url"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-file-for-download"
+              "id": "actions/send-file-for-download"
             }
           ],
           "collapsible": true,
@@ -1182,27 +1182,27 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-to-campaign-obsolete"
+              "id": "actions/add-to-campaign-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/add-to-campaign"
+              "id": "actions/add-to-campaign"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-an-salesforce-entity-obsolete"
+              "id": "actions/create-an-salesforce-entity-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-an-salesforce-entity"
+              "id": "actions/create-an-salesforce-entity"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/run-soql-query-obsolete"
+              "id": "actions/run-soql-query-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/run-soql-query"
+              "id": "actions/run-soql-query"
             }
           ],
           "collapsible": true,
@@ -1214,47 +1214,47 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/aes-decrypt"
+              "id": "actions/aes-decrypt"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/aes-encrypt"
+              "id": "actions/aes-encrypt"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-role"
+              "id": "actions/create-role"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/credential-store-encrypt"
+              "id": "actions/credential-store-encrypt"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-role"
+              "id": "actions/delete-role"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/generate-rsa-keys"
+              "id": "actions/generate-rsa-keys"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/rsa-decrypt"
+              "id": "actions/rsa-decrypt"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/rsa-encrypt"
+              "id": "actions/rsa-encrypt"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-role"
+              "id": "actions/update-role"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/verify-dkim-dns-record"
+              "id": "actions/verify-dkim-dns-record"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/vies-vat-number-validator"
+              "id": "actions/vies-vat-number-validator"
             }
           ],
           "collapsible": true,
@@ -1266,7 +1266,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-slack-message"
+              "id": "actions/send-slack-message"
             }
           ],
           "collapsible": true,
@@ -1278,11 +1278,11 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-sqs-message"
+              "id": "actions/delete-sqs-message"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-sqs-messages"
+              "id": "actions/get-sqs-messages"
             }
           ],
           "collapsible": true,
@@ -1294,43 +1294,43 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/get-stripe-user-account"
+              "id": "actions/get-stripe-user-account"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-add-seller"
+              "id": "actions/stripe-add-seller"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-checkout"
+              "id": "actions/stripe-checkout"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-create-customer"
+              "id": "actions/stripe-create-customer"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-create-plan"
+              "id": "actions/stripe-create-plan"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-create-subscription"
+              "id": "actions/stripe-create-subscription"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-direct-payment-unsafe-obsolete"
+              "id": "actions/stripe-direct-payment-unsafe-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-get-event-details"
+              "id": "actions/stripe-get-event-details"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-payment-through-the-platform-unsafe-obsolete"
+              "id": "actions/stripe-payment-through-the-platform-unsafe-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/stripe-payment-with-token-not-sca-compliant"
+              "id": "actions/stripe-payment-with-token-not-sca-compliant"
             }
           ],
           "collapsible": true,
@@ -1342,15 +1342,15 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-sms-using-twilio"
+              "id": "actions/send-sms-using-twilio"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/twilio-parse-webhook-sms"
+              "id": "actions/twilio-parse-webhook-sms"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/twilio-send-response-to-sms-webhook"
+              "id": "actions/twilio-send-response-to-sms-webhook"
             }
           ],
           "collapsible": true,
@@ -1362,99 +1362,99 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/advanced-search"
+              "id": "actions/advanced-search"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/browse-data-from-listing"
+              "id": "actions/browse-data-from-listing"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/change-tab-and-continue-execution"
+              "id": "actions/change-tab-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/change-tab-and-stop-execution"
+              "id": "actions/change-tab-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/close-form-popup-and-continue-execution"
+              "id": "actions/close-form-popup-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/close-form-popup-and-stop-execution"
+              "id": "actions/close-form-popup-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/close-tabs-popup-and-continue-execution"
+              "id": "actions/close-tabs-popup-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/close-tabs-popup-and-stop-execution"
+              "id": "actions/close-tabs-popup-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/execute-javascript-code"
+              "id": "actions/execute-javascript-code"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/filter-listing"
+              "id": "actions/filter-listing"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/hide-listing-and-continue-execution"
+              "id": "actions/hide-listing-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/hide-listing-and-stop-execution"
+              "id": "actions/hide-listing-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/initialize-form-and-continue-execution"
+              "id": "actions/initialize-form-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/initialize-form-and-stop-execution"
+              "id": "actions/initialize-form-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/load-static-files"
+              "id": "actions/load-static-files"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/open-file-manager"
+              "id": "actions/open-file-manager"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/open-form-popup-and-continue-execution"
+              "id": "actions/open-form-popup-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/open-form-popup-and-stop-execution"
+              "id": "actions/open-form-popup-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/open-tabs-popup-and-continue-execution"
+              "id": "actions/open-tabs-popup-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/open-tabs-popup-and-stop-execution"
+              "id": "actions/open-tabs-popup-and-stop-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/refresh-listing"
+              "id": "actions/refresh-listing"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/reindex-search-boost-content"
+              "id": "actions/reindex-search-boost-content"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/show-listing-and-continue-execution"
+              "id": "actions/show-listing-and-continue-execution"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/show-listing-and-stop-execution"
+              "id": "actions/show-listing-and-stop-execution"
             }
           ],
           "collapsible": true,
@@ -1466,7 +1466,7 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/run-robot"
+              "id": "actions/run-robot"
             }
           ],
           "collapsible": true,
@@ -1478,75 +1478,75 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/actions/authorize-user"
+              "id": "actions/authorize-user"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/clear-user-cache"
+              "id": "actions/clear-user-cache"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/create-auto-login-link"
+              "id": "actions/create-auto-login-link"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/delete-user"
+              "id": "actions/delete-user"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/grant-user-role"
+              "id": "actions/grant-user-role"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/revoke-user-role"
+              "id": "actions/revoke-user-role"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/send-user-reset-password-email"
+              "id": "actions/send-user-reset-password-email"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/sync-users"
+              "id": "actions/sync-users"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/unauthorize-user"
+              "id": "actions/unauthorize-user"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/unlock-user"
+              "id": "actions/unlock-user"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-user-profile"
+              "id": "actions/update-user-profile"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/update-username"
+              "id": "actions/update-username"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/user-login-obsolete"
+              "id": "actions/user-login-obsolete"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/user-login"
+              "id": "actions/user-login"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/user-registration"
+              "id": "actions/user-registration"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/user-reset-password"
+              "id": "actions/user-reset-password"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/user-password-validation"
+              "id": "actions/user-password-validation"
             },
             {
               "type": "doc",
-              "id": "version-1.19/actions/validate-user-reset-password"
+              "id": "actions/validate-user-reset-password"
             }
           ],
           "collapsible": true,
@@ -1562,19 +1562,19 @@
       "items": [
         {
           "type": "doc",
-          "id": "version-1.19/important-notes/dnn-compatibility"
+          "id": "important-notes/dnn-compatibility"
         },
         {
           "type": "doc",
-          "id": "version-1.19/important-notes/upgrading-dnnsharp-to-plant-an-app"
+          "id": "important-notes/upgrading-dnnsharp-to-plant-an-app"
         },
         {
           "type": "doc",
-          "id": "version-1.19/important-notes/embed-form-or-grid"
+          "id": "important-notes/embed-form-or-grid"
         },
         {
           "type": "doc",
-          "id": "version-1.19/important-notes/obsolete-features"
+          "id": "important-notes/obsolete-features"
         }
       ],
       "collapsible": true,
@@ -1590,11 +1590,11 @@
           "items": [
             {
               "type": "doc",
-              "id": "version-1.19/modules/secure-input"
+              "id": "modules/secure-input"
             },
             {
               "type": "doc",
-              "id": "version-1.19/modules/life-cycle"
+              "id": "modules/life-cycle"
             }
           ],
           "collapsible": true,
