@@ -40,6 +40,7 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 
 ### `Upgrade steps`
 
+* [ ] If MyTokens is installed, ensure that all Namespaces conform to the naming rules: "Must start with a letter and contain only alphanumerical characters."  Namespaces that do not conform will cause errors during later steps.
 * [ ] Upgrade all the products to the latest 5.1.x.
 * [ ] Upgrade the DNN to 9.3.2.
 * [ ] Upgrade all the products to the latest 5.6.x.
