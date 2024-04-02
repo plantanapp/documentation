@@ -4,7 +4,7 @@ title: IP Whitelist
 sidebar_label: IP Whitelist
 ---
 
-# IP Whitelist for PlantAnApp Services
+# IP Whitelist for PlantAnApp  Services
 
 (rev March 28, 2024 - version 1.25)
 
@@ -17,7 +17,7 @@ For those using PlantanApp (PaA) and encountering issues due to tightened networ
 - `dl.dnnsharp.com`
 - `dl.plantanapp.com`
 - `services.plantanapp.com`
-- `console.plantanapp.com`
+- `console.plantanapp.com` 
 
 These domains are used for different aspects of the PlantanApp service, including downloading necessary components and accessing the administration console.
 
