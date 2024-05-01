@@ -83,4 +83,35 @@ This is a generic workaround guide, based on the assumption that the interaction
 
 If you still encounter issues after following the steps above, please contact the support team.
 
+## Inconsistencies between Plant an App and DNN360Menu 
+
+During the upgrade process to the Plant an App affected versions, a critical issue has been identified concerning the DNN360Menu module. This problem mainly revolves around a database trigger associated with the DNN360Menu, which can lead to upgrade failures or operational disruptions post-upgrade.
+
+The trigger in question attempts to interact with the Tabs table when deleting old admin pages, causing unexpected behaviors and errors that prevent the completion of the upgrade procedure.
+
+### Description
+
+The presence of the DNN360Menu trigger can cause severe complications during the upgrade process, potentially resulting in:
+
+- The website not loading post-upgrade.
+- System instability and data inconsistencies.
+
+Given these impacts, it’s essential for DNN administrators to perform specific pre-upgrade checks and configurations to avoid these issues.
+
+### Affected versions:
+
+- Plant an App: **v1.20** and higher
+- DNN360Menu: All versions
+
+### Workaround
+
+To mitigate the issue with DNN360Menu and ensure a successful Plant an App upgrade, you should:
+
+### 1. **Disable the Problematic Trigger**
+   Before installing any upgrade or hotfix, access your database tools to disable or delete the trigger associated with the DNN360Menu module on the Tabs table. This will prevent the trigger from interfering during the upgrade process.
+
+### 2. **Perform the upgrade**
+
+### 3. **Re-enable the Problematic Trigger**
+   
 :::
