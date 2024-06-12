@@ -6,14 +6,14 @@ sidebar_label: Release Notes v1.26
 
 Overview:
 
-- [Breaking Change](#Breaking-Change)
-- [Feature](#Feature)
-- [Enhancement](#Enhancement)
-- [Bug Fix](#Bug-Fix)
-- [Security](#Security)
-- [Performance](#Performance)
-- [Cosmetic](#Cosmetic)
-- [Obsolete](#Obsolete)
+- [Breaking Change](#breaking-change)
+- [Feature](#feature)
+- [Enhancement](#enhancement)
+- [Bug Fix](#bug-fix)
+- [Security](#security)
+- [Performance](#performance)
+- [Cosmetic](#cosmetic)
+- [Obsolete](#obsolete)
 
 ## Breaking Change
 
@@ -28,10 +28,6 @@ The Legacy Endpoint in the API Builder UI has been removed due to security conce
 ### Removal of 'Open in Separate Page' Option for Forms
 
 We have removed the 'Open in Separate Page' option from the Form settings list as it was no longer functioning effectively since version 1.23. The code and form control associated with this feature have also been eliminated. Please ensure to select 'Initially Visible' as the default setting since it may appear blank currently.
-
-### Old API Endpoint UI Removed
-
-We've removed the old API Endpoint UI in our latest update to reduce technical debt. All APIs have been migrated and are now accessible via the Configuration/API screen. Key changes include: namespaces for individual modules, removal of the switch banner between UIs, removal of legacy code, and ensuring modules are replaced with the appropriate library to avoid duplicates.
 
 ## Feature
 
@@ -474,4 +470,3 @@ We've identified that the LinkClick token can cause issues when used with unsecu
 ### Obsolete Forms Features
 
 We've marked obsolete functionality within the Forms module of our platform. This update includes enhancements and corrections for several components such as 'Reports', 'Connected Forms', 'Manual Layout', and 'Group Validator'. This reflects features that will not be ported into the new Form Builder that is under development but corresponding features will exist to achieve the same outcome.
-
