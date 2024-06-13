@@ -11,4 +11,4 @@ sidebar_label: DNN Compatibility-auto
 
 ## `Plant an App compatibility Matrix`
 
-[Integrations:BuildInternalReleases]
+This is Radu test radu.niculcea@plantanapp.com
