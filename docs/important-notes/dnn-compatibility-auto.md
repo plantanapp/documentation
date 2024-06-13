@@ -11,4 +11,10 @@ sidebar_label: DNN Compatibility-auto
 
 ## `Plant an App compatibility Matrix`
 
-This is Radu test radu.niculcea@plantanapp.com
+
+| Plant an app Version | Minimum DNN Version | Maximum DNN Version |
+| -------------------- | ------------------- | --------------------|
+| 1.26 | 9.9.1 | 9.11.2 |
+                | 1.25 | 9.9.0 | 9.11.2 |
+                | 1.24 | 9.9.0 | 9.11.2 |
+                
