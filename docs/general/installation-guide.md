@@ -16,6 +16,13 @@ If you are using our SaaS offering, you do not need to go through this guide, as
 
 ## System Requirements
 
+### General Requirements
+
+| Requirement | Description |
+|---|---|
+| **Internet access** | Required to initially download all product components and to retrieve product updates. |
+| **Access to our CDN** | Necessary to whitelist specific domains and enable TLS Ciphers. Details can be found in the Getting Started / IP Whitelist topic. |
+
 ### Software Requirements 
 
 | Required software | Version/Notes |
