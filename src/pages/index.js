@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <a href="https://www.youtube.com/plantanapp" title="Watch a Video" target="_blank">Watch a Video</a>,
+    title: <a href="https://www.youtube.com/plantanapp" title="Plant an App on YouTube" target="_blank">Watch a Video</a>,
     imageUrl: 'img/undraw_youtube_tutorial.svg',
     description: (
       <>
