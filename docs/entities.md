@@ -43,15 +43,29 @@ When creating an Entity, the first tab will present you with some General settin
 
 | Setting | Description |
 | -- | -- |
-| Name | You must define both a singular and plural value for the Entity name and these values must be unique. The singular value will be used (with spaces and special characters removed) as the SQL table name for your Entity and anywhere a singular value is appropriate in the UI. The plural value will be used as the name of the page that is created and anywhere a plural value is appropriate in the UI. |
+| Name | You must define both a singular and plural value for the Entity name and these values must be unique. **Caution:** Avoid using MS SQL Reserved Words. Refer to [Reserved Keywords (Transact-SQL)](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/reserved-keywords-transact-sql?view=sql-server-ver15). The singular value will be used (with spaces and special characters removed) as the SQL table name for your Entity and anywhere a singular value is appropriate in the UI. The plural value will be used as the name of the page that is created and anywhere a plural value is appropriate in the UI. |
 | Icon | You may select a custom icon for the Entity that will appear on Entry detail pages, the Entity tab in Configuration, and other places in the UI. If you do not select one, the 'Table' icon will be used. |
 | Enable Indexing | If you enable indexing, entries in your entity will be automatically indexed and will be returned in results for the default site search. |
 | Display In Menu | This determines whether the page that is created for the Entity will appear in the main site menu. If you turn this off, you will likely need to create links to the page in your UI for users to access the Entity. |
 | Include Dashboard | Enable this setting if you want to include a KPI Dashboard on the primary listing page generated for this Entity. The first time you set it, an empty Dashboard will be generated and added. Subsequent toggles of this setting will only show or hide it for non-developer users, but it will not be deleted. |
+| API Access | Provides automatically generate API Endpoints to Create, Read, Update, and Delete records for the Entity. Enable this setting to generate Get, Post, Put, and Delete endpoints for the entity.  Disable it to remove the automatically generated endpoints. |
 | Parent Page | This determines where in the site hierarchy the page will be located. If you do not specify a parent page, the page will be located at the site root. Even if you choose to not display the page in the menu, you should still place the page correctly in the site hierarchy as this also impacts the URL for your page. |
 | Display After | Set the location of the page in relation to other pages under the same Parent Page. The items available in the dropdown update based on the page selected in the Parent Page setting. You can choose to display the page last, first, or after one of the existing pages. This setting impacts the ordering of the site menu. |
 
 ## `Entity Properties`
+
+### `Property Settings`
+
+| Setting | Description |
+| -- | -- |
+| Name | The column name in the SQL table.  **Caution:** Avoid using MS SQL Reserved Words. Refer to [Reserved Keywords (Transact-SQL)](https://learn.microsoft.com/en-us/sql/t-sql/language-elements/reserved-keywords-transact-sql?view=sql-server-ver15).  |
+| Type | Choose from the Primitive, Entity, or List of Entities Property types |
+| Default Value | When adding a Required property to an existing entity, the selected default value will be applied to existing records |
+| Required | Selecting the Required option for a Property sets the required validation on the associated form field, but it also sets the associated database column to 'not null'. This is important to keep in mind if you plan on adding any direct insert or update queries on this Entity to your application. |
+| Searchable | Selecting the Searchable option determines whether the property will be searched when you using the Entity's grid search field and when using the application main search. |
+| Filterable | If the Filterable option is selected, the associated column in the Entity's grid will have a dropdown in the column header allowing the grid to be filtered by a selected value. This also will add an index key for the associated column in the database table. |
+| Sortable | Selecting the sortable option will make the column header of this property a link that will sort the column by its values when clicked. This also will add an index key for the associated column in the database table. |
+
 
 ### `Property Types`
 
@@ -93,23 +107,9 @@ If you want an entry in the Parent Entity to be related to just one entry in the
 
 However, if you want any entry from the Parent Entity to be able to be related to one or more entries from the Child Entity, then choose List of Entities. When you choose this option a new table is created that stores relationships between entries in the Parent and Child Entities.
 
-### `Other Property Settings`
+### `Display Name`
 
-#### `Required`
-
-Selecting the Required option for a Property sets the required validation on the associated form field, but it also sets the associated database column to 'not null'. This is important to keep in mind if you plan on adding any direct insert or update queries on this Entity to your application.
-
-#### `Searchable`
-
-Selecting the Searchable option determines whether the property will be searched when you using the Entity's grid search field and when using the application main search.
-
-#### `Filterable`
-
-If the Filterable option is selected, the associated column in the Entity's grid will have a dropdown in the column header allowing the grid to be filtered by a selected value. This also will add an index key for the associated column in the database table.
-
-#### `Sortable`
-
-Selecting the sortable option will make the column header of this property a link that will sort the column by its values when clicked. This also will add an index key for the associated column in the database table.
+Choose one Property Name from the dropdown.  This property will be used in the 'Assets Created' as the primary display property.  For example, this property will be used in a listing to hyperlink to the detail record.
 
 ## `Permissions`
 
