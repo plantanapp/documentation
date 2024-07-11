@@ -8,7 +8,7 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: <>Watch a Video</>,
+    title: <a href="https://www.youtube.com/plantanapp" title="Plant an App on YouTube" target="_blank">Watch a Video</a>,
     imageUrl: 'img/undraw_youtube_tutorial.svg',
     description: (
       <>
@@ -20,18 +20,17 @@ const features = [
     ),
   },
   {
-    title: <>Read the Details</>,
+    title: <a href="/docs/current/general/welcome" title="Documentation">Get Help</a>,
     imageUrl: 'img/undraw_online_reading.svg',
     description: (
       <>
-        Start here if you are the kind of person that just wants to dive into the details. We recommend you begin by learning about the
-        different <a href="docs/audience" title="Audience">Audiences</a> our documentation targets. From there, you should learn about <a href="docs/entities" title="Entities">Entities</a>, the heart of your application.
+        Start <a href="/docs/current/general/welcome" title="Documentation">here</a> for an overview of the many resources available to you for getting to know Plant an app.
 
       </>
     ),
   },
   {
-    title: <>Learn From Others</>,
+    title: <a href="https://community.plantanapp.com/" title="Plant an App Community Portal" target="_blank">Learn From Others</a>,
     imageUrl: 'img/undraw_Group_chat.svg',
     description: (
       <>
