@@ -32,29 +32,7 @@ Examples of activities:
 - Adjust permissions for the users of the application
 - Build Dashboards
 
-## `Citizen Developers`
 
-In Plant an App, Citizen Developers do, on average, 80% of the application development. They live at the intersection of the business and technical realms. On the one hand, they work to understand the business requirements and the processes involved. At the same time, they can turn them into working software that has a data model, workflows, and application screens.
-
-Note that a Citizen Developer rarely has experience with writing code. But they are technically savvy in the sense that they understand technology. The know concepts such as what HTTP Requests are, what is the difference between back-end and front-end technologies, or how databases are structured. Often, they even know the basics of various markup and programming languages, such as HTML, CSS, SQL, or JavaScript, and can read such code for the purpose of copy-pasting and adjusting it.  
-
-Skills: `no-code`, `tech-savvy`, `data models`, `business process modeling`, `basic coding skills`
-
-Typical personas:
-
-- Technical Business Analysts
-- Fresh graduates from technical universities
-- Graduates from related online courses
-- Junior Developers
-
-Examples of activities:
-
-- Define the data model through the [Entities](/docs/entities)
-- Implement the permission scheme
-- Create application screens with forms, grids, dashboards and other visualizations
-- Implement business processes through [Workflows](/workflows/wf-overview.md) and configure most of the Actions
-- Integrate with external systems by using the API Builder and the [Server Request](/docs/Actions/server-request) action
-- Build Dashboards
   
 ## `Low-code Engineers`
 
@@ -83,13 +61,13 @@ Examples of activities:
 
 ## `Software Developers`
 
-Plant an App has over 30 extension points that developers can tap into in order to add new functionalities to the platform. For example, new actions can be created as simple as implementing a C# interface and creating its specification in a JSON configuration file. Once deployed, Citizen Developers can use the new actions inside Workflows and pass in the input required for each action. Some extension points are front-end based, such as creating new views for grids or dashboards, which are Angular based.
+Plant an App has over 30 extension points that developers can tap into in order to add new functionalities to the platform. For example, new actions can be created as simple as implementing a C# interface and creating its specification in a JSON configuration file. Once deployed, Low-Code Engineers can use the new actions inside Workflows and pass in the input required for each action. Some extension points are front-end based, such as creating new views for grids or dashboards, which are Angular based.
 
 Extending the platform is achieved by traditional software engineers. Plant an App does not try to impose a new development paradigm, nor force learning the low-code way of building software. Instead, Plant an App focuses on integrating with the tools that developers already use, such as Visual Studio or GitHub, where functionality is extended through interfaces, Dependency Injection, and configuration files that are deployed to the application for other roles to use.
 
 We understand the passion for code and we do not want to take that away.
 
-A final note. Software development teams that are not native to .NET prefer to extend the platform through Microservices. That is, build the new functionality in other languages, such as Python or Java, then expose it as an API that can be consumed by Citizen Developers through the [Server Request](/docs/Actions/server-request) action or other HTTP based actions and data sources.
+A final note. Software development teams that are not native to .NET prefer to extend the platform through Microservices. That is, build the new functionality in other languages, such as Python or Java, then expose it as an API that can be consumed by Low-Code Engineers through the [Server Request](/docs/Actions/server-request) action or other HTTP based actions and data sources.
 
 Skills: `C#`, `Razor`, `HTML/CSS`, `JavaScript`, `Angular`, `IoC`, `Dependency Injection`
 
@@ -102,11 +80,11 @@ Typical personas:
 
 Examples of activities:
 
-- Implement new actions to extend what Citizen Developers can do inside [Workflows](/workflows/wf-overview.md)
+- Implement new actions to extend what Low-Code Engineers can do inside [Workflows](/workflows/wf-overview.md)
 - Implement new data sources for dropdowns, so they can be connected to data that lives in a different format on external systems
 - Implement new validation rules that can be used on inputs in places such as forms or APIs to ensure the integrity of data
 - Implement new data sources for the search engine to bring unified results from external systems as well
-- Write specific integration actions to save the hassle of Citizen Developers having to work with low-level actions such as the [Server Request](/docs/Actions/server-request)
+- Write specific integration actions to save the hassle of Low-Code Engineers having to work with low-level actions such as the [Server Request](/docs/Actions/server-request)
 - Create new templates for data visualization in listing, detail or dashboard views
 - Implement new formatters that define how a specific field displays across various screens, such as inside a listing
 

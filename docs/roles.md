@@ -54,12 +54,25 @@ In the user grid find the role you want to delete and click in the delete icon (
 
 ## `Built-In Roles`
 
+### `Low-Code Engineer`
+
+This is the primary role that should be assigned to developers of your Low-Code application.  
+
+This role is intended for users who are responsible for managing application settings, creating application screens, and developing business logic and flows associated with the applications. Users in this role are deeply involved in the overall development and maintenance of the application.  This role can't be edited or deleted.
+
 ### `Admin`
+
+> Warning: This role has been deprecated and is unmaintained.
+> Consider using the Low-Code Engineer role instead.
 
 It's intended for users that need to manage the application settings and can also manage users in the Built-In roles. People in this role are involved in the development of the application. This role can't be edited or deleted.
 
 
 ### `Citizen Developers`
+
+> Warning: This role has been deprecated and is unmaintained.
+> Consider using the Low-Code Engineer role instead.
+
 
 It's intended for users that need to manage the application settings, like creating the application screens and the business logic/flows associated with them. People in this role are involved in the development of the application. This role can't be edited or deleted.
 
