@@ -24,8 +24,8 @@ const features = [
     imageUrl: 'img/undraw_online_reading.svg',
     description: (
       <>
-        Start <a href="/docs/current/general/welcome" title="Documentation">here</a> for an overview of the many resources available to you for getting to know Plant an app.
-
+        <p>Start <a href="/docs/current/general/welcome" title="Documentation">here</a> for an overview of the many resources available to you for getting to know Plant an app.</p>
+        <a href="/docs/current/general/welcome" title="Documentation">Help Resources Overview</a>
       </>
     ),
   },
