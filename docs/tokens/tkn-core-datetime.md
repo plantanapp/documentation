@@ -5,59 +5,44 @@ sidebar_label: DateTime
 ---
 
 > Audience: [`Low-Code Developers`](audience.md#top)
->
+> 
 > Skill Prerequisites: `None`
 
 Returns `DateTime` information in a variety of formats
 
-
 ## `Typical Use Cases`
 
-- Display the current date and time to a user
-- Format the date in a specific format
-- Initialize a form field
-- Compute a relative date
+* Display the current date and time to a user
+* Format the date in a specific format
+* Initialize a form field
+* Compute a relative date
 
 # [DateTime:\<Value\>]
 
->The examples below assume the current UTC time is 7/3/2023 11:29:47 PM
+> The examples below assume the current UTC time is 7/3/2023 11:29:47 PM
 
 | Example | Output | Notes |
-| ---------------- | ----------------------------------------------- | --------------- |
-|[DateTime:Now] | 7/3/2023 6:29 PM | Assumes the user's preferred time zone is US Central Time
-|[DateTime:Now\|dddd, MMMM d, yyyy \a\t hh:mm:ss tt] |Monday, July 3, 2023 at 06:29:47 PM| Assumes the user's preferred time zone is US Central Time
-|[DateTime:UTC] | 7/3/2023 11:29 PM
-|[DateTime:Iso] | 2023-07-03T23:29:47.8663226+00:00
-|[DateTime:Current] | Monday, July 3, 2023
-|[DateTime:System] | 7/3/2023 11:29 PM
-|[DateTime:Unix] | 1688426987
-|[DateTime:Relative(add="-7 days")] | 6/26/2023 11:29:47 PM| Supports days/weeks/months/years
-|[DateTime:Week(Offset=1)] | Monday July 10 - Sunday July 16|Offset is 1 week into the future
-|[DateTime:WeekUS(Offset=1)] | Sunday July 9 - Saturday July 15|Offset is 1 week into the future
-
-
-
-
-
-
-
-
-
-
-
-
+| ------- | ------ | ----- |
+| [DateTime:Now] | 7/3/2023 6:29 PM | Assumes the user's preferred time zone is US Central Time |
+| \[DateTime:Now\|dddd\, MMMM d\, yyyy \\a\\t hh:mm:ss tt\] | Monday, July 3, 2023 at 06:29:47 PM | An optional formatting string can be used to format the output on any date. |
+| [DateTime:UTC] | 7/3/2023 11:29 PM |
+| [DateTime:Iso] | 2023-07-03T23:29:47.8663226+00:00 |
+| [DateTime:Current] | Monday, July 3, 2023 |
+| [DateTime:System] | 7/3/2023 11:29 PM |
+| [DateTime:Unix] | 1688426987 |
+| [DateTime:Relative(add="-7 days")] | 6/26/2023 11:29:47 PM | Supports seconds, minutes, hours, days, weeks, months or years. Computation is based on the current time. |
+| [DateTime:Relative(add="6 days",RelativeTo="12/25/2025")] | 12/31/2025 12:00:00 AM | The computation is based on the optional RelativeTo date when specified. |
+| \[DateTime:Relative\(add="6 days"\,RelativeTo="12/25/2025"\)\|yyyy\-MM\-dd hh:mm tt\] | 2025-12-31 12:00 AM | An optional formatting string can be used to format the output on any date. |
+| [DateTime:Week(Offset=1)] | Monday July 10 - Sunday July 16 | Offset is 1 week into the future |
+| [DateTime:WeekUS(Offset=1)] | Sunday July 9 - Saturday July 15 | Offset is 1 week into the future |
 
 ### Special Notes
 
 The `DateTime:Now` token will give varying outputs depending on both user context and the site settings.
 
-
-1. If a user context is given: This output will be adjusted to the User Profile's Preferred Time Zone. 
-
-   This situation occurs (1) when there is a logged-in user, or (2) when actions are being executed and the Load User action has been implemented to modify the context to a different user.
-
-2. If no user context is given: The output aligns with the Settings / Site Settings / Site Time Zone. 
-
-   For instance, this case would be valid when you establish an automation job that doesn't have a defined context user, and there's no load user action being implemented.
-
-
+1. If a user context is given: This output will be adjusted to the User Profile's Preferred Time Zone.
+<br/>
+    This situation occurs (1) when there is a logged-in user, or (2) when actions are being executed and the Load User action has been implemented to modify the context to a different user.
+2. If no user context is given: The output aligns with the Settings / Site Settings / Site Time Zone.
+<br/>
+    For instance, this case would be valid when you establish an automation job that doesn't have a defined context user, and there's no load user action being implemented.
