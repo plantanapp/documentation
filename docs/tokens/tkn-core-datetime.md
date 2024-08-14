@@ -17,7 +17,7 @@ Returns `DateTime` information in a variety of formats
 * Initialize a form field
 * Compute a relative date
 
-# [DateTime:\<Value>]
+# [DateTime:\<Value\>]
 
 > The examples below assume the current UTC time is 7/3/2023 11:29:47 PM
 
