@@ -19,6 +19,8 @@ OpenLDAP integration is essential for many organizations that rely on LDAP-based
 
 Before you can authenticate users against an OpenLDAP server, you need to set up a connector in Plant an App. This connector will contain the necessary credentials and server information for interacting with your LDAP server.
 
+![OpenLDAP Connector](/Portals/0/img/OpenLDAP_Configure_Connector.PNG)
+
 #### Steps to Create OpenLDAP Connector:
 
 1. **Navigate to the Connectors Configuration:**
@@ -41,6 +43,9 @@ Before you can authenticate users against an OpenLDAP server, you need to set up
 ### Using the UserLogin (OpenLdap) Action
 
 With the connector set up, you can now use the UserLogin (OpenLdap) action to authenticate users. This action validates user credentials against the LDAP server, and if successful, logs the user into the Plant an App platform.
+
+![OpenLDAP Connector](/Portals/0/img/OpenLDAP_Action.PNG)
+
 
 #### Steps to Use UserLogin (OpenLdap) Action:
 
