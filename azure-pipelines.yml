@@ -37,7 +37,7 @@ stages:
       - deployment:
         pool:
           vmImage: "ubuntu-latest"
-        environment: dev
+        environment: docs-dev
         strategy:
           runOnce:
             deploy:
