@@ -14,8 +14,8 @@ The installation process of [**2sxc**](https://2sxc.org/) (versions 13.x (LTS) t
 
 ### Affected versions:
 
-- Plant an App: **v1.20** to **v1.22**
-- 2sxc: **13.x** (LTS) to **14.10**
+- Plant an App: **v1.20** to **v1.27**
+- 2sxc: **13.x** (LTS) to **18.x**
 
 ### Workaround
 
@@ -44,7 +44,7 @@ Before proceeding with the workaround, make sure that you:
         Microsoft.Extensions.Logging
         Microsoft.Extensions.Options
 
-2. For each of the assemblies above (⚠), check the value of the "`bindingRedirect oldVersion`"; it should read: "`0.0.0.0-2.1.1.0`". If it is different, modify this value manually.
+2. For each of the assemblies above (⚠) where there is a `bindingRedirect` tag and the `newVersion` is 2.1.1.0, check the value of the "`bindingRedirect oldVersion`" property; it should read: "`0.0.0.0-2.1.1.0`". If it is different, modify this value manually.
 
 For example, if for an assembly in the list above you have the following value:
 
@@ -56,7 +56,7 @@ Please modify it to:
 
 Repeat the action for all the assemblies identified at point #1 and save the `web.config` file.
 
-3. If the `newVersion` tag is set to "`2.2.0.0`", it will also need to be modified to: "`2.1.1.0`", as depicted above. After this change, a new binding redirect needs to be added, which will point to the PlantAnApp DLL. You can add this anywhere in the `web.config` file between the dependent assemblies, although it would be preferable to group it together with the others. 
+3. If the `newVersion` tag is set to "`2.2.0.0`" AND there isn't a second `bindingRedirect` tag within the `dependentAssembly` (see below), then it will also need to be modified to: "`2.1.1.0`", as depicted above. After this change, a new binding redirect needs to be added, which will point to the PlantAnApp DLL. You can add this anywhere in the `web.config` file between the dependent assemblies, although it would be preferable to group it together with the others. 
 
 This is the snippet that needs to be added:
 
@@ -65,7 +65,7 @@ This is the snippet that needs to be added:
         <codeBase version="2.2.0.0" href="bin\PlantAnApp_Core\Microsoft.Extensions.Configuration.Abstractions" />
         </dependentAssembly>
 
-If both "2.2.0.0" and "2.1.1.0" codebase tags are present, the modification is not necessarry, as both assembly versions can coexist. For example:
+If both "2.2.0.0" and "2.1.1.0" `bindingRedirect` tags are present within the `dependentAssembly` tag, the modification is not necessary, as both assembly versions can coexist. For example:
 
     <dependentAssembly xmlns="urn:schemas-microsoft-com:asm.v1">
         <assemblyIdentity name="Microsoft.Extensions.Configuration.Abstractions" publicKeyToken="adb9793829ddae60" />
