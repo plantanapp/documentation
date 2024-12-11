@@ -10,7 +10,7 @@ There are known compatibility issues between Plant an App and some third-party d
 
 ### Description
 
-The installation process of [**2sxc**](https://2sxc.org/) (versions 13.x (LTS) through 14.10) in combination with plant an App v1.20 to v1.22 will fail. The cause has been identified as an incompatibility in assembly references in the `web.config` file and possibly missing assemblies within the `bin` folder.
+The installation process of [**2sxc**](https://2sxc.org/) (versions 13.x (LTS) through 18.3) in combination with plant an App v1.20 to v1.27 will fail. The cause has been identified as an incompatibility in assembly references in the `web.config` file and possibly missing assemblies within the `bin` folder.
 
 ### Affected versions:
 
