@@ -2,39 +2,7 @@
 # Build a Node.js project that uses React.
 # Add steps that analyze code, save build artifacts, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
-trigger:
-  - develop
-pr:
-  - develop
-stages:
-  - stage: Build
-    jobs:
-      - job: Build
-        pool:
-          vmImage: "ubuntu-latest"
-        steps:
-          - task: NodeTool@0
-            inputs:
-              versionSpec: "20.x"
-            displayName: "Install Node.js"
-          - script: |
-              npm ci
-              npm run build
-            displayName: "npm install and build"
-          - task: CopyFiles@2
-            inputs:
-              SourceFolder: "build/"
-              Contents: "**"
-              TargetFolder: "$(Build.ArtifactStagingDirectory)"
-          - task: PublishBuildArtifacts@1
-            inputs:
-              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-              ArtifactName: "drop"
-              publishLocation: "Container"
-  - stage: Deployment
-    displayName: Deploy to S3
-    dependsOn: Build
-    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) # do not run the deploy for PR builds
+
     jobs:
       - deployment:
         pool:
