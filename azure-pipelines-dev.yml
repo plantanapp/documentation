@@ -17,7 +17,7 @@
                     awsCredentials: "s3-autodoc.plantanapp.com"
                     regionName: "us-east-1"
                     bucketName: "learn-dev.plantanapp.com"
-                    sourceFolder: "$(Pipeline.Workspace)/drop/"
+                    sourceFolder: "./"
                     globExpressions: "**"
                     logRequest: true
                     logResponse: true
