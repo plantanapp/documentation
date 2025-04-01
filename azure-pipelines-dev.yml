@@ -46,14 +46,16 @@ stages:
               steps:
                 - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
                   inputs:
-                    awsCredentials: "s3-learn.plantanapp.com"
+                    awsCredentials: "s3-autodoc.plantanapp.com"
                     regionName: "us-east-1"
                     bucketName: "learn-dev.plantanapp.com"
                     sourceFolder: "$(Pipeline.Workspace)/drop/"
                     globExpressions: "**"
+                    logRequest: true
+                    logResponse: true
                 - task: AWSCLI@1
                   inputs:
-                    awsCredentials: "s3-learn.plantanapp.com"
+                    awsCredentials: "s3-autodoc.plantanapp.com"
                     regionName: "us-east-1"
                     awsCommand: "cloudfront"
                     awsSubCommand: "create-invalidation"
