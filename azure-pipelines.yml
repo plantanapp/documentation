@@ -9,7 +9,7 @@ pr: none
 variables:
   vmImageName: "ubuntu-latest"
   branchName: variables["Build.SourceBranchName"]
-  targetEnvironment: '$[eq($(branchName), "master") ? "learn.plantanapp.com": "learn-dev.plantanapp.com"]'
+  targetEnvironment: iif(eq(variables["Build.SourceBranchName"], "master") ? "learn.plantanapp.com", "learn-dev.plantanapp.com")
   bucketName: $(targetEnvironment)
   regionName: "us-east-1"
   awsCredentials: "s3-learn.plantanapp.com"
@@ -60,9 +60,11 @@ stages:
     condition: succeeded()
     jobs:
       - deployment: DeployArtifactsToS3
-        displayName: Deploy artifacts to $(targetEnvironment) S3
+        displayName: Deploy artifacts to S3
         pool:
           vmImage: $(vmImageName)
+        environment:
+          name: 'docs'
         strategy:
           runOnce:
             deploy:
@@ -71,7 +73,7 @@ stages:
                   displayName: Upload artifacts to $(targetEnvironment) S3
                   inputs:
                     awsCredentials: $(awsCredentials)
-                    regionName: $(regionName)
+                    regionName: "us-east-1"
                     bucketName: $(bucketName)
                     sourceFolder: "$(Pipeline.Workspace)/$(artifactFolderName)/"
                     globExpressions: "**"
@@ -80,7 +82,7 @@ stages:
                   displayName: Invalidate CloudFront Cache
                   inputs:
                     awsCredentials: $(awsCredentials)
-                    regionName: $(regionName)
+                    regionName: "us-east-1"
                     awsCommand: "cloudfront"
                     awsSubCommand: "create-invalidation"
                     awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
