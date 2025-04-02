@@ -9,7 +9,6 @@ pr: none
 variables:
   vmImageName: "ubuntu-latest"
   branchName: variables["Build.SourceBranchName"]
-  targetEnvironment: iif(eq(variables["Build.SourceBranchName"], "master") ? "learn.plantanapp.com", "learn-dev.plantanapp.com")
   bucketName: $(targetEnvironment)
   regionName: "us-east-1"
   awsCredentials: "s3-learn.plantanapp.com"
@@ -58,6 +57,14 @@ stages:
     displayName: Deploy to S3
     dependsOn: Build
     condition: succeeded()
+    variables:
+      - name: targetEnvironment
+        ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
+          value: "learn.plantanapp.com"
+        ${{ else }}:
+          value: "learn-dev.plantanapp.com"
+      - name: buketName
+        value: $(targetEnvironment)
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
