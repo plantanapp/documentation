@@ -22,7 +22,7 @@ stages:
       - job: Build
         displayName: Build
         pool:
-          vmImage: $(vmImage)
+          vmImage: $(vmImageName)
         steps:
           - task: NodeTool@0
             displayName: Install Node.js
