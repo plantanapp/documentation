@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+variables:
+  myVar1: iif(eq(variables["Build.SourceBranchName"], "master") ? "learn.plantanapp.com", "learn-dev.plantanapp.com")
+
+
+steps:
+- script: |
+    echo "myVar1: $(myVar1)"
+    echo $(myVar1)
+  displayName: 'Log Variables'
