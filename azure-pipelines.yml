@@ -55,7 +55,7 @@ stages:
               publishLocation: "Container"
 
   - stage: Deploy
-    displayName: Deploy to S3 for $(targetEnvironment)
+    displayName: Deploy to S3
     dependsOn: Build
     condition: succeeded()
     jobs:
