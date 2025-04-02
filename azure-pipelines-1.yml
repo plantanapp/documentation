@@ -5,7 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- name: env
+- name: myVar1
   ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
     value: "learn.plantanapp.com"
   ${{ else }}:
