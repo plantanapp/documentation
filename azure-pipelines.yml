@@ -1,59 +1,88 @@
-# Node.js with React
-# Build a Node.js project that uses React..
-# Add steps that analyze code, save build artifacts, deploy, and more:
-# https://docs.microsoft.com/azure/devops/pipelines/languages/javascript
 trigger:
-  - master
+  branches:
+    include:
+      - master
+      - develop
+
+pr: none
+
+variables:
+  vmImageName: "ubuntu-latest"
+  branchName: variables["Build.SourceBranchName"]
+  targetEnvironment: iif(eq(variables["Build.SourceBranchName"], "master") ? "learn.plantanapp.com", "learn-dev.plantanapp.com")
+  bucketName: $(targetEnvironment)
+  regionName: "us-east-1"
+  awsCredentials: "s3-learn.plantanapp.com"
+  artifactFolderName: "doc"
+
 stages:
   - stage: Build
+    displayName: Build stage
     jobs:
       - job: Build
+        displayName: Build
         pool:
-          vmImage: "ubuntu-latest"
+          vmImage: $(vmImageName)
         steps:
           - task: NodeTool@0
+            displayName: Install Node.js
             inputs:
               versionSpec: "20.x"
-            displayName: "Install Node.js"
-          - script: |
-              npm ci
-              npm run build
-            displayName: "npm install and build"
+
+          - task: Npm@1
+            displayName: Install packages
+            inputs:
+              command: "install"
+
+          - task: Npm@1
+            displayName: Build docusaurus
+            inputs:
+              command: "custom"
+              customCommand: "run build"
+
           - task: CopyFiles@2
+            displayName: Copy docusaurus files to $(Build.ArtifactStagingDirectory)
             inputs:
               SourceFolder: "build/"
               Contents: "**"
-              TargetFolder: "$(Build.ArtifactStagingDirectory)"
+              TargetFolder: $(Build.ArtifactStagingDirectory)
+
           - task: PublishBuildArtifacts@1
+            displayName: Publish build artifacts to $(artifactFolderName)
             inputs:
-              PathtoPublish: "$(Build.ArtifactStagingDirectory)"
-              ArtifactName: "drop"
+              PathtoPublish: $(Build.ArtifactStagingDirectory)
+              ArtifactName: $(artifactFolderName)
               publishLocation: "Container"
-  - stage: Deployment
+
+  - stage: Deploy
     displayName: Deploy to S3
     dependsOn: Build
-    condition: and(succeeded(), ne(variables['Build.Reason'], 'PullRequest')) # do not run the deploy for PR builds
+    condition: succeeded()
     jobs:
-      - deployment:
+      - deployment: DeployArtifactsToS3
+        displayName: Deploy artifacts to S3
         pool:
-          vmImage: "ubuntu-latest"
-        environment: docs-dev
+          vmImage: $(vmImageName)
+        environment:
+          name: 'docs'
         strategy:
           runOnce:
             deploy:
               steps:
                 - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
+                  displayName: Upload artifacts to $(targetEnvironment) S3
                   inputs:
-                    awsCredentials: 's3-learn.plantanapp.com'
+                    awsCredentials: $(awsCredentials)
                     regionName: "us-east-1"
-                    bucketName: "learn.plantanapp.com"
-                    sourceFolder: "$(Pipeline.Workspace)/drop/"
+                    bucketName: $(bucketName)
+                    sourceFolder: "$(Pipeline.Workspace)/$(artifactFolderName)/"
                     globExpressions: "**"
+
                 - task: AWSCLI@1
+                  displayName: Invalidate CloudFront Cache
                   inputs:
-                    awsCredentials: 's3-learn.plantanapp.com'
-                    regionName: 'us-east-1'
-                    awsCommand: 'cloudfront'
-                    awsSubCommand: 'create-invalidation'
+                    awsCredentials: $(awsCredentials)
+                    regionName: "us-east-1"
+                    awsCommand: "cloudfront"
+                    awsSubCommand: "create-invalidation"
                     awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
-                  displayName: "Invalidate CloudFront Cache"
