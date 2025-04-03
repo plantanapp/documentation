@@ -11,8 +11,8 @@ variables:
   branchName: variables["Build.SourceBranchName"]
   awsCredentials: "s3-learn.plantanapp.com"
   artifactFolderName: "doc"
-  isDev:  $[eq(variables['Build.SourceBranch'], 'develop')]
-  isProd:  $[eq(variables['Build.SourceBranch'], 'master')]
+  isDev:  $[eq(variables['Build.SourceBranch'], 'refs/heads/develop')]
+  isProd:  $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
 
 stages:
   - stage: Build
@@ -56,7 +56,7 @@ stages:
   - stage: DevDeploy
     displayName: Deploy to Dev S3
     dependsOn: Build
-    condition: and(succeeded(), eq(variables.isDev, 'true'))
+    condition: and(succeeded(), variables.isDev)
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
@@ -89,7 +89,7 @@ stages:
   - stage: ProdDeploy
     displayName: Deploy to Prod S3
     dependsOn: Build
-    condition: and(succeeded(), eq(variables.isProd, 'true')) 
+    condition: and(succeeded(), variables.isProd) 
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
