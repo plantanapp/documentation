@@ -12,4 +12,4 @@ This job reindexes the selected search instance.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Behavior | Can contain context tokens (for example [ContextTokenName]) and My Tokens. | No | None |
+| Behavior | Can contain context tokens (for example [ContextTokenName]) and Tokens. | No | None |

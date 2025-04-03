@@ -10,5 +10,5 @@ This action saves all the submitted data in the server session so it can be load
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Key | Select a key to save under. Note that the scope is global, data can be shared between any two Action Forms. Supports My Tokens | No | None |
+| Key | Select a key to save under. Note that the scope is global, data can be shared between any two Action Forms. Supports Tokens | No | None |
 | Save Location | Select where to store the saved data. Session data is lost after a period of inactivity, usually around 20 minutes. Browser cookies usually last longer. | No | None |

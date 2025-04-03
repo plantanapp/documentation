@@ -10,6 +10,6 @@ This action lets you output raw content, for example text, HTML or JSON. Make su
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Content | Content to output to browser.Supports context tokens (such as [InputField]) and My Tokens | Yes | None |
-| Http code | The http code that will be returned. Can contain context tokens, for example [FieldId], and My Tokens. | Yes | None |
-| HTTP Headers | Can contain context tokens, for example [FieldId], and My Tokens. | Yes | None |
+| Content | Content to output to browser.Supports context tokens (such as [InputField]) and Tokens | No | None |
+| Http code | The http code that will be returned. Can contain context tokens, for example [FieldId], and Tokens. | No | None |
+| HTTP Headers | Can contain context tokens, for example [FieldId], and Tokens. | No | None |

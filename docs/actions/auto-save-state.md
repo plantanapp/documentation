@@ -10,4 +10,4 @@ Add this action to Init event to auto save form state in browser cookies. Load i
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Key | Select a key to save under. Note that the scope is global, data can be shared between any two Action Forms. Important! This is saved in cookies. So, when using LoadState action, make sure to load from cookies. Supports My Tokens | Yes | None |
+| Key | Select a key to save under. Note that the scope is global, data can be shared between any two Action Forms. Important! This is saved in cookies. So, when using LoadState action, make sure to load from cookies. Supports Tokens | No | None |

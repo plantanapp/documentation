@@ -11,7 +11,7 @@ Deletes a message from a SQS Queue.
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
 | SQS Region Endpoint | The Region Endpoint for the SQS Queue. The list of endpoints can be found here. | No | None |
-| SQS Access Key | Access key for SQS. Can contain contextual tokens (for example [Email]) and My Tokens. | Yes | None |
-| S3 Secret Key | Secret key for SQS. Can contain contextual tokens (for example [Email]) and My Tokens. | Yes | None |
+| SQS Access Key | Access key for SQS. Can contain contextual tokens (for example [Email]) and Tokens. | No | None |
+| S3 Secret Key | Secret key for SQS. Can contain contextual tokens (for example [Email]) and Tokens. | No | None |
 | SQS Queue Name |  | No | None |
 | SQS Message ReceiptHandle |  | No | None |

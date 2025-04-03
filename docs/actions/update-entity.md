@@ -10,7 +10,7 @@ sidebar_label: Update Entity
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Credentials |  | No | None |
+| Connector |  | No | None |
 | Logical Name |  | No | None |
 | Entity Guid |  | No | None |
-| Entity Attributes | The value fields supports My Tokens. | Yes | None |
+| Entity Attributes | The value fields supports Tokens. | No | None |

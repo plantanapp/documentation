@@ -12,6 +12,6 @@ This action automatically verifies and outputs the event received by API Endpoin
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Raw Json Input | The raw input received by API Endpoint. Can contain My Tokens. | Yes | None |
+| Raw Json Input | The raw input received by API Endpoint. Can contain Tokens. | No | None |
 | Event Type Output Token | The name of the token in which the event type will be stored. | No | None |
 | Event JSON Output Token | The name of the token in which the event JSON will be stored. | No | None |

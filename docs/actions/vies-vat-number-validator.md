@@ -10,6 +10,6 @@ This action will validate a VAT Number based on the country code and VAT number.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Trader Country Code | Required. The Country Code of the trader that is verified. Supports My Tokens. | Yes | None |
-| Vat Number | Required. The VAT Number of the trader that is verified. Supports My Tokens. | Yes | None |
+| Trader Country Code | Required. The Country Code of the trader that is verified. Supports Tokens. | No | None |
+| Vat Number | Required. The VAT Number of the trader that is verified. Supports Tokens. | No | None |
 | Output Token | Output Token Name | No | None |

@@ -10,5 +10,5 @@ Clears previously saved state.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Key | Select a key to clear. Supports My Tokens | Yes | None |
+| Key | Select a key to clear. Supports Tokens | No | None |
 | Storage Location | Select what storage to clear. Session data is lost after a period of inactivity, usually around 20 minutes. Browser cookies usually last longer. | No | None |

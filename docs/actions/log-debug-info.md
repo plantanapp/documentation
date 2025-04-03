@@ -10,4 +10,4 @@ Logs a debug message into the log files. Note that the logging must be enabled f
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Message | The message to log. Supports module tokens and My Tokens. | Yes | None |
+| Message | The message to log. Supports module tokens and Tokens. | No | None |

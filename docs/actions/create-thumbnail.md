@@ -12,9 +12,9 @@ sidebar_label: Create Thumbnail
 | -- | -- | -- | -- |
 | Image | On a button: Link this action to a Single File Upload field. On a multifile upload: Use expr to offer a file path (Example: the [AbsoluteUrl] token) | No | None |
 | Output Folder | Folder where thumbnails will be put. | No | None |
-| Name | Thumbnail name. Can contain My Tokens. | Yes | None |
-| Width | This is the width of the image. Can contain My Tokens. | Yes | None |
-| Height | This is the height of the image. Can contain My Tokens. | Yes | None |
+| Name | Thumbnail name. Can contain Tokens. | No | None |
+| Width | This is the width of the image. Can contain Tokens. | No | None |
+| Height | This is the height of the image. Can contain Tokens. | No | None |
 | Crop |  | No | None |
 | Stretch |  | No | None |
 | Horizontal |  | No | Center |
