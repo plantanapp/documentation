@@ -9,12 +9,10 @@ pr: none
 variables:
   vmImageName: "ubuntu-latest"
   branchName: variables["Build.SourceBranchName"]
-  bucketName: $(targetEnvironment)
-  regionName: "us-east-1"
   awsCredentials: "s3-learn.plantanapp.com"
   artifactFolderName: "doc"
-  deployOnDev: eq($(branchName), 'develop')
-  deployOnProd: eq($(branchName), 'master')
+  isDev:  $[eq(variables['Build.SourceBranch'], 'develop')]
+  isProd:  $[eq(variables['Build.SourceBranch'], 'master')]
 
 stages:
   - stage: Build
@@ -58,7 +56,7 @@ stages:
   - stage: DevDeploy
     displayName: Deploy to Dev S3
     dependsOn: Build
-    condition: and(succeeded(), eq(variables.deployOnDev, true))
+    condition: and(succeeded(), eq(variables.isDev, 'true'))
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
@@ -91,7 +89,7 @@ stages:
   - stage: ProdDeploy
     displayName: Deploy to Prod S3
     dependsOn: Build
-    condition: and(succeeded(), eq(variables.deployOnProd, true)) 
+    condition: and(succeeded(), eq(variables.isProd, 'true')) 
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
