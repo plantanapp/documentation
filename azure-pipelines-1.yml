@@ -5,15 +5,11 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-- name: myVar1
-  ${{ if eq(variables['Build.SourceBranchName'], 'master') }}:
-    value: "learn.plantanapp.com"
-  ${{ else }}:
-    value: "learn-dev.plantanapp.com"
-
+  deployOnDev: eq($(branchName), 'develop')
+  deployOnProd: eq($(branchName), 'master')
 
 steps:
 - script: |
-    echo "myVar1: $(myVar1)"
-    echo $(myVar1)
+    echo $(deployOnProd)
+    echo $(deployOnDev)
   displayName: 'Log Variables'
