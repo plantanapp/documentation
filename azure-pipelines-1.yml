@@ -11,7 +11,7 @@ variables:
 steps:
 - script: |
     echo $(isDev)
-    echo variables.isDev
+    echo eq(variables.isDev, 'true')
     echo $(isProd)
-    echo variables.isProd
+    echo eq(variables.isProd, 'true')
   displayName: 'Log Variables'
