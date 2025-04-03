@@ -5,11 +5,13 @@ pool:
   vmImage: 'ubuntu-latest'
 
 variables:
-  deployOnDev: eq($(branchName), 'develop')
-  deployOnProd: eq($(branchName), 'master')
+  isDev:  $[eq(variables['Build.SourceBranch'], 'develop')]
+  isProd:  $[eq(variables['Build.SourceBranch'], 'master')]
 
 steps:
 - script: |
-    echo $(deployOnProd)
-    echo $(deployOnDev)
+    echo $(isDev)
+    echo variables.isDev
+    echo $(isProd)
+    echo variables.isProd
   displayName: 'Log Variables'
