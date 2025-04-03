@@ -56,7 +56,7 @@ stages:
   - stage: DevDeploy
     displayName: Deploy to Dev S3
     dependsOn: Build
-    condition: and(succeeded(), variables.isDev)
+    condition: and(succeeded(), eq(variables.isDev, true))
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
@@ -89,7 +89,7 @@ stages:
   - stage: ProdDeploy
     displayName: Deploy to Prod S3
     dependsOn: Build
-    condition: and(succeeded(), variables.isProd) 
+    condition: and(succeeded(), eq(variables.isProd, true)) 
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
