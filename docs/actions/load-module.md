@@ -10,8 +10,8 @@ This action will load a DNN module into current context.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Page Identifier | Identifies the page that contains the module. Leave empty to load a module from current page current page. Possible values are a Tab Id, a Tab Path (a valid path is //RootPage//SubPage//AndSoOn) or a Tab Name (the first one is matched, so use this carefully). Can contain context tokens (for example [SomeTabId]) and My Tokens. | Yes | None |
-| Module Identifier | Identifies the module to load. Possible values are a Module Id or a Module Name. These are matched against the Page above. Can contain context tokens (for example [SomeModuleId]) and My Tokens. | Yes | None |
+| Page Identifier | Identifies the page that contains the module. Leave empty to load a module from current page current page. Possible values are a Tab Id, a Tab Path (a valid path is //RootPage//SubPage//AndSoOn) or a Tab Name (the first one is matched, so use this carefully). Can contain context tokens (for example [SomeTabId]) and Tokens. | No | None |
+| Module Identifier | Identifies the module to load. Possible values are a Module Id or a Module Name. These are matched against the Page above. Can contain context tokens (for example [SomeModuleId]) and Tokens. | No | None |
 | Store Module Title in | If specified, this is a field name or a token name that will receive the module title. Use of square brackets is optional. | No | None |
 | Store Display Container in | If specified, this is a field name or a token name that will receive the Display Container setting. Use of square brackets is optional. | No | None |
 | Store Enable Print in | If specified, this is a field name or a token name that will receive the Enable Print setting. Use of square brackets is optional. | No | None |

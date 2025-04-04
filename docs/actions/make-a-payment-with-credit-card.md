@@ -16,7 +16,7 @@ Make a payment with Credit Card. Authorization and Capture.
 | Go Live | Enable this option to switch to Live Mode. By default, unchecked, Test Mode, the transaction will be posted to the Authorize.Net's test server for developer accounts: https://test.authorize.net/gateway/transact.dll. | No | None |
 | Payment description | Tells what the transaction is about, for example a service name. This will appear in statements, receipts, etc. | No | None |
 | Transaction's currency | The list of accepted currency is in the AIM documentation. | No | None |
-| Amount - total to pay | Amount - the total to pay in the selected currency. Can contain other context tokens, for example [TotalAmmount], and My Tokens. | Yes | None |
+| Amount - total to pay | Amount - the total to pay in the selected currency. Can contain other context tokens, for example [TotalAmmount], and Tokens. | No | None |
 | Credit Card Number | Credit Card Number | No | None |
 | Credit Card Number | Credit Card Number | No | None |
 | Credit Card CCV | Credit Card CCV. This field is required if the merchant would like to use the Card Code Verification (CCV) security feature. | No | None |

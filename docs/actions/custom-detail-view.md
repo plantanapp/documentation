@@ -11,5 +11,5 @@ Expands an item to show additional information.
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
 | Display Mode | Details can be shown in modal or in sidebar. This setting is not supported by the Legacy view. | No | RightSidebar |
-| Title | Displayed at the top of the detail view. Can contain item tokens (for example [FirstName]) and Tokens. This parameter is not supported by the Legacy view. | No | None |
-| Template | Can contain item tokens (for example [FirstName]) and Tokens. | No | None |
+| Title | Displayed at the top of the detail view. Can contain item tokens (for example [FieldName] and [FieldName:FormattedValue]) and Tokens. This parameter is not supported by the Legacy view. | No | None |
+| Template | Can contain item tokens (for example [FieldName] and [FieldName:FormattedValue]) and Tokens. | No | None |

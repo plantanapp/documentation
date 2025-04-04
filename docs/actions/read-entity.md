@@ -10,7 +10,7 @@ Retrieves one entity by its unique identifier (GUID).For attributes of type Enti
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Credentials |  | No | None |
+| Connector |  | No | None |
 | Logical Name |  | No | None |
 | Entity Guid |  | No | None |
 | Attribute Mapping |  | No | None |

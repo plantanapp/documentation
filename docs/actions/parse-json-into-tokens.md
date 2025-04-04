@@ -10,5 +10,5 @@ Creates tokens that follow this pattern [&lt;BaseTokenName&gt;:PropertyName]. Ba
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| JSON String | Can contain contextual tokens (for example [Email]) and My Tokens. | Yes | None |
+| JSON String | Can contain contextual tokens (for example [Email]) and Tokens. | No | None |
 | Base Token Name | This is a prefix for all tokens that are created from the JSON string. See action help text above for details. | No | None |

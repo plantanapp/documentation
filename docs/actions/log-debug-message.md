@@ -10,4 +10,4 @@ Logs a debug message in the internal logs.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Message | Debug message to log. Supports My Tokens. | Yes | None |
+| Message | Debug message to log. Supports Tokens. | No | None |

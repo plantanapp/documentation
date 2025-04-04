@@ -10,7 +10,7 @@ Add a Lead to one or more campaigns.WARNING: We changed the way we connect to th
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Credentials | Required. A valid Username, Password and Security Token must be passed to Salesforce in order to authenticate and establish a secure session. | No | None |
+| Connector | Required. A valid Username, Password and Security Token must be passed to Salesforce in order to authenticate and establish a secure session. | No | None |
 | Salesforce Entity Type | Entity, such as a Lead, a Case, a Contact, etc. | No | None |
 | Entity Id | The entity id that will be added to the campaign. Can contain Tokens. | No | None |
 | Campaign Ids | A list of campaign ids separated by commas. | No | None |

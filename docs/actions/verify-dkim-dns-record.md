@@ -10,7 +10,7 @@ sidebar_label: Verify DKIM DNS Record
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Domain | This field supports My Tokens. | Yes | None |
-| DKIM Selector | This field supports My Tokens. | Yes | None |
-| Rsa Public Key | This field supports My Tokens. | Yes | None |
+| Domain | This field supports Tokens. | No | None |
+| DKIM Selector | This field supports Tokens. | No | None |
+| Rsa Public Key | This field supports Tokens. | No | None |
 | Output Token |  | No | None |

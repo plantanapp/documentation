@@ -10,7 +10,7 @@ Retrieves multiple entries from the Dynamics CRM server based on conditions with
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Credentials |  | No | None |
+| Connector |  | No | None |
 | Context Entity Name | The name of the DnnSharp entity that will store the resulting list of Dynamics CRM entities. The values can then be accessed using some of the actions in the 'Entities' and 'Serialization' action groups. | No | None |
 | Logical Name |  | No | None |
 | Id Mapping | This specifies the name of the context token where the Id of the CRM entity will be stored. If empty, the Id will not be exposed as token. | No | None |

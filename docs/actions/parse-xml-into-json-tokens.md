@@ -10,5 +10,5 @@ This action transforms XML into JSON and then applies the same logic as Parse JS
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| XML String | Can contain contextual tokens (for example [Email]) and My Tokens. | Yes | None |
+| XML String | Can contain contextual tokens (for example [Email]) and Tokens. | No | None |
 | Base Token Name | This is a prefix for all tokens that are created from the XML string. See action help text above for details. | No | None |

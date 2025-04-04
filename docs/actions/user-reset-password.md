@@ -10,6 +10,6 @@ This action will reset a user password.
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| Username | Can contain form tokens (for example [Email]) and My Tokens. | Yes | None |
-| New Password | Can contain form tokens (for example [Email]) and My Tokens. | Yes | None |
-| Repeat Password | Can contain form tokens (for example [Email]) and My Tokens. | Yes | None |
+| Username | Can contain form tokens (for example [Email]) and Tokens. | No | None |
+| New Password | Can contain form tokens (for example [Email]) and Tokens. | No | None |
+| Repeat Password | Can contain form tokens (for example [Email]) and Tokens. | No | None |
