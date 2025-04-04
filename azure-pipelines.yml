@@ -9,15 +9,14 @@ pr: none
 variables:
   vmImageName: "ubuntu-latest"
   branchName: variables["Build.SourceBranchName"]
-  targetEnvironment: iif(eq(variables["Build.SourceBranchName"], "master") ? "learn.plantanapp.com", "learn-dev.plantanapp.com")
-  bucketName: $(targetEnvironment)
-  regionName: "us-east-1"
   awsCredentials: "s3-learn.plantanapp.com"
   artifactFolderName: "doc"
+  isDev:  $[eq(variables['Build.SourceBranch'], 'refs/heads/develop')]
+  isProd:  $[eq(variables['Build.SourceBranch'], 'refs/heads/master')]
 
 stages:
   - stage: Build
-    displayName: Build stage
+    displayName: Build
     jobs:
       - job: Build
         displayName: Build
@@ -54,10 +53,10 @@ stages:
               ArtifactName: $(artifactFolderName)
               publishLocation: "Container"
 
-  - stage: Deploy
-    displayName: Deploy to S3
+  - stage: DevDeploy
+    displayName: Deploy to Dev S3
     dependsOn: Build
-    condition: succeeded()
+    condition: and(succeeded(), eq(variables.isDev, true))
     jobs:
       - deployment: DeployArtifactsToS3
         displayName: Deploy artifacts to S3
@@ -70,11 +69,44 @@ stages:
             deploy:
               steps:
                 - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
-                  displayName: Upload artifacts to $(targetEnvironment) S3
+                  displayName: Upload artifacts to learn-dev.plantanapp.com S3
                   inputs:
                     awsCredentials: $(awsCredentials)
                     regionName: "us-east-1"
-                    bucketName: $(bucketName)
+                    bucketName: "learn-dev.plantanapp.com"
+                    sourceFolder: "$(Pipeline.Workspace)/$(artifactFolderName)/"
+                    globExpressions: "**"
+
+                - task: AWSCLI@1
+                  displayName: Invalidate CloudFront Cache
+                  inputs:
+                    awsCredentials: $(awsCredentials)
+                    regionName: "us-east-1"
+                    awsCommand: "cloudfront"
+                    awsSubCommand: "create-invalidation"
+                    awsArguments: '--distribution-id $(DistributionId) --paths "/*"'
+
+  - stage: ProdDeploy
+    displayName: Deploy to Prod S3
+    dependsOn: Build
+    condition: and(succeeded(), eq(variables.isProd, true)) 
+    jobs:
+      - deployment: DeployArtifactsToS3
+        displayName: Deploy artifacts to S3
+        pool:
+          vmImage: $(vmImageName)
+        environment:
+          name: 'docs'
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - task: AmazonWebServices.aws-vsts-tools.S3Upload.S3Upload@1
+                  displayName: Upload artifacts to learn.plantanapp.com S3
+                  inputs:
+                    awsCredentials: $(awsCredentials)
+                    regionName: "us-east-1"
+                    bucketName: "learn.plantanapp.com"
                     sourceFolder: "$(Pipeline.Workspace)/$(artifactFolderName)/"
                     globExpressions: "**"
 
