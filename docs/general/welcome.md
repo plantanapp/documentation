@@ -201,6 +201,6 @@ Finally, you can also switch between the Light and Dark themes for the portal vi
 
 <img src="/img/dark_mode.png" alt="dark_mode.png" ></img>
 
-That's it. Happy app building!
+That's it. Happy app building!!
 
 <br /><br /><a href="#top">Back to the top &#10548;</a>
