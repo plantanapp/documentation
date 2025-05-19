@@ -14,7 +14,7 @@ Plant an App is an IIS application that runs under DNN using MS SQL Server.  The
 | Plant an App Version | Released On | Support Until | Recommended DNN Version | Minimum DNN Version | Maximum DNN Version | Minimum SQL Version | Minimum .NET Framework | Notes |
 | -------------------- | ----------- | ------------- | ----------------------- | --------------------| ------------------- | ------------------- | ---------------------- | ----- |
  | 1.26 | 2024-06-14 | 2025-06-14 | 9.11.2 | 9.9.1 | 9.11.3 | SQL Server 2012 | 4.7.2 |  |
-                | 1.25 | 2023-05-11 | 2024-11-11 | 9.11.0 | 9.9.0 | 9.11.2 | SQL Server 2012 | 4.7.2 |  |
+                | 1.25 | 2023-05-11 | 2024-11-11 | 9.11.0 | 9.9.0 | 9.13.7 | SQL Server 2012 | 4.7.2 |  |
                 | 1.24 | 2023-01-10 | 2024-01-10 | 9.11.0 | 9.9.0 | 9.11.3 | SQL Server 2012 | 4.7.2 |  |
                 | 1.23 | 2022-11-21 | 2023-11-21 | 9.11.0 | 9.9.0 | 9.11.0 | SQL Server 2012 | 4.7.2 |  |
                 | 1.22 | 2022-09-23 | 2023-09-23 | 9.10.2 | 9.8.1 | 9.10.6 | SQL Server 2012 | 4.7.2 |  |
