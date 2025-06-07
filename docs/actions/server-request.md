@@ -4,216 +4,271 @@ title: Server Request
 sidebar_label: Server Request
 ---
 
+# Server Request Action
+
 > Audience: [`Citizen Developer`](/docs/audience#citizen-developers)
 > 
 > Skill Prerequisites: `HTTP Protocol` `REST APIs` `JSON` `XML`
 
-A low-level action that allows for any kind of HTTP request to be performed.
+The **Server Request** action provides an advanced way to send HTTP requests from your Plant an App applications. This low-level action enables all types of HTTP(S) requests, including support for advanced security, cookies, proxy usage, and file uploads.
 
-## `Typical Use Cases`
+In version 1.26, this action is known as **Server Request (Experimental)**.  In later versions, it is known simply as **Server Request**.
 
-* Integrate with external systems through APIs
-* Crawl web pages
-* Read sitemaps and RSS feeds
 
-## `Don't use it to`
+## When to Use
 
-* Read files or binary streams
-* Call APIs from same app system - use the Call Local API action instead
+**Typical Use Cases**
+- Integrate with external systems and APIs (for example: CRM, payment gateways)
+- Call REST, SOAP, or custom HTTP endpoints
+- Submit forms or upload files to remote servers
+- Fetch public or private web pages, sitemaps, or feeds
+- Use mutual SSL authentication for secure B2B connections
 
-## `Related Actions`
+**Don’t Use For**
+- Reading local server files directly (use file actions for that)
+- Calling APIs provided by the same Plant an App system – use "Call Local API" instead
 
-| Action Name | Description |
-| ----------- | ----------- |
-| Parse JSON | Creates tokens from JSON returned by API calls. |
-| Regex | Creates tokens by matching patterns inside the content. |
-| Execute Actions Async | Nesting other actions under the Execute Actions Async enables them to continue executing without waiting for the previous actions to finalize. <br/> Useful in the case of Server Request action when you don't want to wait for it to bring a response. |
-| Load Entities from JSON | Use this action to load an array of JSON objects returned by an API and prepare it to perform a list of actions on each object with Execute Actions on Entity List action. |
 
-## `Input Parameter Reference`
 
-| Parameter | Description | Supports Tokens | Default | Required |
-| --------- | ----------- | --------------- | ------- | -------- |
-| URL | The URL where the resource to be invoked lives. It can be relative or absolute. | Yes | `empty string` | Yes |
-| URL Token Encoding | URLs brought from tokens might contain reserved characters which have a certain meaning in wrong context for a URL part. For example, '&' is a reserved character that is used to separate individual variables within the query string.<br/> This means if we have a query string like `?color=blue&amp;brand=H&amp;M` it will not be valid, since we have the '&' character in a invalid context (`brand=H&amp;M`). URL encoding takes care of this by replacing the character '&' with it's URL encoded value of '%26', now our initial query string becomes `?color=blue&amp;brand=H%26M` which is valid. If you are using tokens to provide the URL, the option URL Encoding will make sure the URL is valid. | No | `URL Encoding` | No |
-| Enforce SSL | This will for the request to be sent to a secure version of the URL (https instead of http). This is useful for the instances in which the URL comes from a variable and you want to ensure it is secured. | No | `Unset` | No |
-| Timeout | The amount of time in seconds in which the response must come or the request fails. If nothing is provided, it will default to 100 seconds. If you don't want to wait for the request to finish (when you must leverage higher Timeout values) we suggest using Execute Actions Async. | Yes | `100` | No |
-| HTTP Method | The operations to perform against the URL.<br/> Possible values are GET, POST, PUT, DELETE, HEAD, PATCH. | No | `Unset` | Yes |
-| Data | If the HTTP Method is POST or PUT, data is allowed to be sent to the target URL. The data can take various forms, from key-value pairs to complex JSON. For the target URL to understand the format, it needs to be passed through the Content-Type header. | Yes | `empty string` | No |
-| Do not Escape Tokens in Data | By default, we escape tokens in order to not break the XML structure in the data you are trying to send. Enabling this option helps when you are trying to send XML data which comes from tokens in the request body and only takes effect if the Content-Type header is set to text/xml, application/xml or application/soap+xml. | No | `Unset` | No |
-| Disable Refer Header | By default, we append a referer header but some APIs will throw errors if this header is sent. If the resource you want to use doesn't need the referer header, enable this option. | No | `Unset` | No |
-| Headers | Additional headers to pass with the request. | Yes | `Unset` | No |
-| Use DNN Proxy Settings | Enable this option if you want to use the proxy settings you have set for your DNN instance. | No | `Unset` | No |
-| Add Current Cookies | This will add the current cookies of the session to the request. | No | `Unset` | No |
-| Ignore Errors | Any errors thrown when executing this action will be ignored. Using this option will not stop the triggering of the 'On Error' event. | No | `Unset` | No |
+## Related Actions
 
-## `Output Parameters Reference`
+| Action Name           | Description                                                        |
+|-----------------------|--------------------------------------------------------------------|
+| Parse JSON            | Extract tokens from JSON returned by Server Request or any source.  |
+| Regex                 | Extract or validate data using regular expressions.                |
+| Execute Actions Async | Run actions (such as Server Request) in a background thread.       |
+| Load Entities from JSON| Parse an array from JSON (e.g., API response) for further use.    |
 
-| Parameter | Description |
-| --------- | ----------- |
-| Cookie Container | This will name a container in which to store the cookies. If you want to use cookies from the previous Server Request actions or pass them along to other Server Requests, make sure they have the same name. |
-| Output Headers | The list of the headers which are to be retrieved from the request response. |
-| Output Token Name | The variable name in which the response payload is to be stored for further use. |
 
-## `Events Reference`
 
-| Event Name | Description |
-| ---------- | ----------- |
-| On Error | When an error is thrown during the execution of this action, it will trigger the execution of the list of actions specified for this event. |
+## Input Parameters Reference
 
-## `GET Requests`
+| Parameter              | Description                                                                                                                                      | Supports Tokens | Default            | Required                  |
+|------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------|--------------------------|
+| **URL**                | The address where to send the request. Can be an absolute or relative URL.                                                                      | Yes             | _(none)_           | Yes                       |
+| **URL Token Encoding** | Determines how tokens in the URL are replaced. - *URL Encoding*: recommended default to safely escape reserved chars. - *No Encoding*: literal. | No              | `Url Encoding`     | No                        |
+| **Enforce SSL**        | If checked, forces request to use HTTPS even if the URL is plain HTTP.                                                                          | No              | _(off)_            | No                        |
+| **Certificate**        | **Thumbprint of a client certificate** (from Windows Local Machine certificate store) for mutual SSL authentication.                             | No              | _(none)_           | No (Enterprise only)      |
+| **HTTP Method**        | One of: `GET`, `POST`, `PUT`, `PATCH`, `DELETE`, `HEAD`. Determines how data is sent.                                                           | No              | `GET`              | Yes                       |
+| **Timeout**            | How many seconds to wait for a response before stopping.                                                                                        | Yes             | `100`              | No                        |
+| **Data**               | For `POST`, `PUT`, and `PATCH`: data to send. Format depends on Content-Type. For `GET`: options for key=value lines appended as params.        | Yes             | _(none)_           | No                        |
+| **Do Not Escape Tokens** | By default, tokens are XML-escaped. Enable this only for raw XML payloads (when Content-Type is xml/soap).                                   | No              | _(off)_            | No                        |
+| **Files**              | List of form-data files by key and file identifier (file ID or path). Used for file upload in form data.                                        | Yes (both name and value) | _(none)_  | No             |
+| **File Identifiers**   | Comma-separated list of files to upload; key is computed from file name. Combines with Files above.                                             | Yes             | _(none)_           | No                        |
+| **Disable Referer Header** | By default the referer (current URL) is sent; disable this if the server rejects such headers.                                            | No              | _(off)_            | No                        |
+| **Headers**            | Additional HTTP headers to send. Typically used for `Authorization`, `Content-Type`, custom headers, etc.                                       | Yes             | _(none)_           | No                        |
+| **Use DNN Proxy Settings** | Enable to use DNN’s system-wide proxy configuration when sending this request.                                                             | No              | _(off)_            | No                        |
+| **Add Current Cookies** | If enabled, sends the current user's cookies with the request. Useful for authentication.                                                      | No              | _(off)_            | No                        |
+| **Ignore Errors**      | If enabled, errors during the request do not stop execution. ‘On Error’ events will still trigger.                                              | No              | _(off)_            | No                        |
+| **On Error**           | Actions to run if this action fails. Access the error using `[<OutputTokenName>:ErrorResponse]` and `[<OutputTokenName>:ErrorCode]` tokens.     | *(n/a)*         | _(none)_           | No                        |
+| **Cookie Container**   | Name for a cookie container to store/reuse cookies between Server Requests.                                                                     | No              | _(none)_           | No                        |
+| **Output Token Name**  | Variable to store the raw response content for later use (e.g. `[MyResponse]`).                                                                 | No              | _(none)_           | No                        |
+| **Output Headers**     | List of output tokens to retrieve specific headers. Each item is: header name → output token.                                                   | Yes (token name)| _(none)_           | No                        |
 
-GET is used to retrieve data or content. Note that although GET was not designed for sending data to the target URL, in reality that often happens through Query String parameters. These can be placed directly in the URL parameter. For example
 
-```url
-https://example.com?id=[Id]&amp;type=[Type]
-```
+### Parameter Explanations
 
-The query string parameters are supported by all HTTP Methods.
+#### **Certificate** (Enterprise Only)
 
-## `POST and PUT Requests`
+- Supply the **thumbprint** of a client certificate (from Windows Local Machine certificate store).  
+- This allows for **mutual SSL authentication** (where the server requires proof of client identity).
+- Steps:  
+  1. Install a certificate (issued by your partner or trusted CA) on your server’s Local Machine store.
+  2. Get the **thumbprint** from the certificate details (no spaces), and paste here.
+  3. The Server Request action will pick up and send this certificate when calling the external API.
+- If the certificate is not present or accessible, the action fails and logs an error.
 
-These methods allow for data to be passed to the target URL. The difference between then if often semantical. POST usually means creating new records, while PUT means updating them. This is defined by the [REST specification](https://www.w3.org/2001/sw/wiki/REST).
+#### **Files and File Identifiers**
 
-​
-The action can send data in any format. Binary content needs to be converted to Base64 first by using the Base64 token or the specific tokens that are generated by the system, for example the `[FileUpload:Base64]` token generated by the File Upload field in the forms.
+- These parameters enable **file uploads via multipart/form-data**.
+- Use for submitting files to APIs or external servers.
+- `Files`: explicit mapping of form key (field name) → file identifier (ID or path).
+- `File Identifiers`: comma-separated list; each file sent with its filename as the form key.
+- You can use both in combination; explicit **Files** take precedence where keys overlap.
 
-​
-The format needs to be reflected via the Content Type header that is inputted in the Headers section. For example, use Content-Type `application/x-www-form-urlencoded` when data is in key-value format, or `application/json` when data is a JSON object.
-​
+#### **Output Headers**
 
-## `Examples`
+- Create tokens for response headers, for further use in subsequent actions.
+- If a header is present multiple times, you may use `[MyToken:Json]` for a JSON array or `[MyToken:Csv]` for CSV.
 
-### `1. Read a JSON Array`
 
-​
-The action below reads a list of employees from an API via GET and saves it to a variable `[Employees]`. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
-​
+## Output Parameters Reference
 
-```json
-​
-{
-    "Title": "Server Request",
-    "ActionType": "PostData",
-    "Description": "Get Employees",
-    "Parameters": {
-        "URL": "http://dummy.restapiexample.com/api/v1/employees",
-        "UseSSL": "",
-        "Timeout": "",
-        "HttpMethod": {
-            "Expression": "",
-            "Value": "GET",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "Data": "",
-        "DoNotEscapeTokens": "",
-        "DisableReferer": "",
-        "Headers": "",
-        "UseDNNProxySettings": "",
-        "AddCurrentCookies": "",
-        "CookieContainerToken": "",
-        "UrlTokenContext": {
-            "Expression": "",
-            "Value": "Url",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "OutputTokenName": "Employees",
-        "OutputHeaders": "",
-        "IgnoreErrors": "",
-        "OnError": []
-    }
-}
-​
-```
+| Output                   | Description                                                                           |
+|--------------------------|---------------------------------------------------------------------------------------|
+| **Output Token Name**    | The token holding the raw response body. Access as `[YourToken]`.                     |
+| **Cookie Container**     | Stores cookies so they can be reused on a subsequent Server Request.                  |
+| **Output Headers**       | Named output tokens for response headers (supports mapping headers to token names).    |
 
-### `2. Read a Web Page`
 
-The action below reads the homepage from `http://example.com/` and saves it into a variable called `[Homepage]`. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+
+## Events Reference
+
+| Event Name     | Description                                              |
+|----------------|---------------------------------------------------------|
+| On Error       | If the request fails, trigger these actions.             |
+
+
+
+## Examples
+
+### 1. Simple GET Request with Output Token
+
+Fetch employee data and save it for further use.
 
 ```json
-
 {
-    "Title": "Server Request",
-    "ActionType": "PostData",
-    "Description": "Read homepage",
-    "Condition": null,
-    "Parameters": {
-        "URL": "http://example.com/",
-        "UseSSL": "",
-        "Timeout": "",
-        "HttpMethod": {
-            "Expression": "",
-            "Value": "GET",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "Data": "",
-        "DoNotEscapeTokens": false,
-        "DisableReferer": "",
-        "Headers": [],
-        "UseDNNProxySettings": "",
-        "AddCurrentCookies": "",
-        "CookieContainerToken": "",
-        "UrlTokenContext": {
-            "Expression": "",
-            "Value": "Url",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "OutputTokenName": "Homepage",
-        "OutputHeaders": "",
-        "IgnoreErrors": "",
-        "OnError": []
-    }
+  "URL": "http://dummy.restapiexample.com/api/v1/employees",
+  "HttpMethod": "GET",
+  "OutputTokenName": "Employees"
 }
-​
 ```
 
-### `3. POST a JSON Object`
+You can access the API response using `[Employees]`.
 
-This action posts a new lead to a CRM system. [Import it](/docs/actions/running-examples#import-the-action-in-a-module) into your application to see it in action.
+
+
+### 2. POST a JSON Object (with Auth Header)
+
+Submit a new record using JSON payload and API key.
 
 ```json
-
 {
-    "Title": "Server Request",
-    "ActionType": "PostData",
-    "Description": "Create Lead in CRM",
-    "Condition": null,
-    "Parameters": {
-        "URL": "http://dummy.restapiexample.com/api/v1/employees",
-        "UseSSL": "",
-        "Timeout": "",
-        "HttpMethod": {
-            "Expression": "",
-            "Value": "POST",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "Data": "{ \n  \"leadName\" : \"Atlanta Deal\",\n  \"leadCreationDate\" : \"2020/05/07\",\n  \"leadContactPerson\" : \"John Doe\",\n  \"leadStatusId\" : 1\n}",
-        "DoNotEscapeTokens": false,
-        "DisableReferer": "",
-        "Headers": [
-            {
-                "value": "application/json",
-                "name": "Content-Type"
-            }
-        ],
-        "UseDNNProxySettings": "",
-        "AddCurrentCookies": "",
-        "CookieContainerToken": "",
-        "UrlTokenContext": {
-            "Expression": "",
-            "Value": "Url",
-            "IsExpression": false,
-            "Parameters": {}
-        },
-        "OutputTokenName": "Response",
-        "OutputHeaders": "",
-        "IgnoreErrors": "",
-        "OnError": []
+  "URL": "https://api.example.com/objects",
+  "HttpMethod": "POST",
+  "Headers": [
+    {
+      "Name": "Content-Type",
+      "Value": "application/json"
+    },
+    {
+      "Name": "Authorization",
+      "Value": "Bearer [APIKey]"
     }
+  ],
+  "Data": "{ \"name\": \"[FirstName]\", \"age\": \"[Age]\" }",
+  "OutputTokenName": "ApiResponse"
 }
 ```
+
+
+
+### 3. Upload Files (Multipart Form Data)
+
+Upload selected files to a server.
+
+```json
+{
+  "URL": "https://example.com/api/upload",
+  "HttpMethod": "POST",
+  "Files": [
+    { "Key": "document", "Value": "[UploadedFileId]" }
+  ],
+  "Data": "description=Sales agreement",
+  "OutputTokenName": "UploadResponse"
+}
+```
+
+
+
+### 4. Request With Client Certificate (Mutual SSL)
+
+Secure B2B call using a client certificate.
+
+```json
+{
+  "URL": "https://secure.partner.com/api/data",
+  "HttpMethod": "POST",
+  "Certificate": "4EC9725E9F0D361A193EDB02AA914360A7BB30D9",
+  "Headers": [
+    { "Name": "Content-Type", "Value": "application/json" }
+  ],
+  "Data": "{ \"payload\": \"important data\" }",
+  "OutputTokenName": "PartnerApiResult"
+}
+```
+
+
+## Using the Certificate Parameter for Mutual SSL Authentication
+
+Some APIs and partner systems require that your server proves its identity by providing a client certificate as part of the HTTPS request. This is known as **Mutual SSL/TLS Authentication**. The `Certificate` parameter enables this in the Server Request action.
+
+### What does the Certificate Parameter Do?
+
+When you fill in the `Certificate` parameter:
+- The Server Request action will locate the certificate with the specified **thumbprint** in your **Windows Certificate Store (\Local Machine)**.
+- That certificate is attached to the outgoing HTTPS request, enabling **mutual authentication**.
+- The server can validate your application’s identity using that certificate.
+
+### Steps to Use a Client Certificate
+
+**1. Obtain or Create a Client Certificate**
+- You may receive a certificate from your external API provider or generate one yourself, depending on the API’s requirements.
+- The certificate must be trusted by the remote server you’re calling.
+- The certificate should be imported (with private key) to the **Local Machine** certificate store of the server hosting Plant an App/DNN.
+
+**2. Install the Certificate on Your Server**
+- Open Windows’ Certificate Manager:
+  - Press `Win + R`, type `certlm.msc`, press Enter.
+- Import the certificate (usually a `.pfx` or `.crt` with private key) into “Personal > Certificates” or another appropriate location under Local Machine.
+- Confirm the certificate is visible and correctly installed.
+
+**3. Find the Thumbprint**
+- In `certlm.msc`, locate your certificate.
+- Double-click to open it.
+- Go to the **Details** tab and scroll to the **Thumbprint** field.
+- Copy the thumbprint (it’s a long hexadecimal string - you may need to paste in Notepad to remove spaces or invisible characters).
+- Result example: `4EC9725E9F0D361A193EDB02AA914360A7BB30D9` (case-insensitive, no spaces).
+
+**4. Set up the Server Request Action**
+- Paste the thumbprint in the `Certificate` field of your action.
+- Fill other required parameters (URL, method, etc).
+- Save the action.
+
+**5. (If Needed) Check Application Pool/User Permissions**
+- Ensure your web application (IIS AppPool) has permission to access the certificate.
+- If you get access/permissions errors, you may need to set correct permissions for the certificate’s private key.
+
+**6. Test the Integration**
+- Trigger the action (via a workflow, form submission, or manually).
+- If the certificate is found and correct, the request should authenticate successfully.
+- On failure, errors such as “Certificate with thumbprint ... could not be found” or access permission problems will be logged.
+
+### Troubleshooting
+
+- **Thumbprint not found?**  
+  Double-check there are no spaces or invisible characters, the certificate is in the Local Machine store, and the thumbprint is correct.
+- **Permission denied?**  
+  Make sure the application pool identity running DNN/Plant an App has permissions to use the certificate’s private key.
+- **Request rejected by API?**  
+  Ensure the remote server is configured to **trust your certificate** for mutual SSL, and that you’re using the right certificate.
+
+### Security Considerations
+
+- Keep client certificates secure and never publicly share or email them.
+- Only install certificates required for your application’s integrations.
+- Regularly review and audit certificate usage on your infrastructure.
+
+
+
+### Example – Using Certificate Parameter
+
+```json
+{
+  "URL": "https://secure.partner.com/api/data",
+  "HttpMethod": "POST",
+  "Certificate": "4EC9725E9F0D361A193EDB02AA914360A7BB30D9",
+  "Headers": [
+    { "Name": "Content-Type", "Value": "application/json" }
+  ],
+  "Data": "{ \"payload\": \"secure info\" }"
+}
+```
+
+
+
+#### Further Reading
+
+- [Mutual TLS in APIs (Cloudflare Blog)](https://developers.cloudflare.com/ssl/reference/client-certificates/)
+- [Microsoft Docs – Manage Certificates](https://learn.microsoft.com/en-us/windows/win32/seccrypto/managing-certificates)
+- [Plant an App Docs](https://learn.plantanapp.com/docs/current/)
