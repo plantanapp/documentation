@@ -266,9 +266,3 @@ When you fill in the `Certificate` parameter:
 ```
 
 
-
-#### Further Reading
-
-- [Mutual TLS in APIs (Cloudflare Blog)](https://developers.cloudflare.com/ssl/reference/client-certificates/)
-- [Microsoft Docs – Manage Certificates](https://learn.microsoft.com/en-us/windows/win32/seccrypto/managing-certificates)
-- [Plant an App Docs](https://learn.plantanapp.com/docs/current/)
