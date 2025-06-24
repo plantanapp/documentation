@@ -10,7 +10,7 @@ The `Files` section under `Configuration` is a file management interface that al
 
 
 
-![Files Interface](/img/files_overview1.png)
+![Files Interface](/img/files_overview0.png)
 
 
 The `Files` screen also supports folder security options, advanced navigation, and file operations commonly needed in application management.
