@@ -16,6 +16,10 @@ Overview:
 * [Obsolete](#obsolete)
 
 
+
+> Revised May 26, 2025
+ 
+
 ## Breaking Change
 
 ### Minimum DNN Version Requirement Updated to 9.11.2
@@ -29,6 +33,14 @@ Starting with version 1.27, Plant an App will require SQL Server 2016 as the min
 ### Enhanced Control Over Workflow Outputs Injection into Context
 
 We've improved the Execute Workflow action's output handling. Now, outputs from a workflow are added to the context only if you assign them a token name. Previously, outputs were automatically injected without specified token names. This change prevents unintended context changes, ensuring outputs appear only when explicitly set. Note: This might break workflows relying on the old behavior.
+
+### NavXP Custom CSHTML Template Compatibility Update
+
+We have introduced a breaking change that affects custom cshtml templates which previously used "@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage". If you use custom cshtml templates, update them to use "@inherits DnnWebViewPage" instead.
+
+### Search Boost Custom CSHTML Template Compatibility Update
+
+We have introduced a breaking change that affects custom cshtml templates which previously used "@inherits DotNetNuke.Web.Razor.DotNetNukeWebPage". If you use custom cshtml templates, update them to use "@inherits DnnWebViewPage" instead.
 
 ## Feature
 
@@ -300,10 +312,6 @@ A bug that resulted in DryIoc errors being logged from database triggers when th
 
 We've resolved an issue with the Hidden Data/User ID field in the Form module causing errors in Bootstrap 5 templates.
 
-### Currency Field Supports Tokens for Initial Value and Precision
-
-We've fixed an issue where the Currency Field type in forms did not support tokens for setting the initial currency and precision values. Now, you can use tokens like [Get:CurrencyCode=USD] for initial currency and [Get:Precision=2] for precision without encountering console errors.
-
 ### Fix for Adding Actions in User Guides
 
 We resolved an issue in the User Guide Builder where users were unable to add actions to User Guides. You can now search for actions to add to a step, and select them to include in the action list effectively.
@@ -331,6 +339,10 @@ We've fixed a bug where provider actions in OpenID Connect were erroneously lock
 ### Fix for Multi Portal Licensing Activation Failure
 
 We resolved an activation failure caused by the license file exceeding character limits. A new Exchange Code mechanism ensures smooth activation. Please update to the latest MPL module version and clear the cache, as it may affect the licensing version used.
+
+### Tokens Import Namespace Fix
+
+We've resolved an issue where Tokens failed to import namespaces correctly, which was causing errors during system upgrades. This fix ensures that after upgrading, the namespaces are imported successfully and are part of the appropriate namespace, preventing related errors from being logged.
 
 ### Fix for Update Username Action Error
 
