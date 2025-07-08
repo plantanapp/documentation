@@ -6,7 +6,22 @@ sidebar_label: Third-party modules compatibility
 
 # Compatibility Issues with Plant an App and Third-Party Modules
 
-There are known compatibility issues between Plant an App and some third-party modules. Until these issues are resolved natively, we provide workarounds to help you use these modules without problems.
+## ⚠️ Warning: Impact of Third-Party Module Installation in DNN
+
+Installing third-party modules in a DNN (DotNetNuke) environment can introduce DLL conflicts and unwanted changes to your configuration files, such as `web.config`. These changes can break existing functionality or prevent critical operations, such as license activation.
+
+**Case Example:**  
+After installing a community Azure Active Directory authentication provider, core Microsoft Identity libraries were overwritten and aggressive binding redirects were added. This triggered license validation failures and system outages until original dependencies and configurations were restored. 
+
+### Best Practices to Prevent Production Outages
+
+- **Always back up** the file system and SQL database before installing any third-party module or extension.  Having a backup that you are willing to revert to provides a fail-safe restoration point.
+- **Test installations** in a staging or development environment that matches production before deploying to live systems.
+
+
+By following these guidelines, you can significantly reduce the risk of downtime and system conflicts when enhancing your DNN installation with additional modules.
+
+Known incompatibilities are discussed below.
 
 ## Inconsistencies between Plant an App and 2sxc Modules
 
@@ -81,3 +96,35 @@ Add the following line to the assemblies section in `web.config`:
 
 ```xml
 <add assembly="netstandard, Version=2.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51" />
+```
+
+
+## Incompatibilities between Plant an App and DNN Azure Active Directory Provider
+
+### Description
+
+Installing the community "DNN Azure Active Directory provider" (version **4.4.6**) can cause license activation failures and potentially block Plant an App from running properly. The provider adds binding redirects in `web.config` that force incompatible version usage. This breaks key cryptographic operations and prevents Plant an App from validating its license.
+
+### Affected Versions
+
+- Plant an App: **Likely all versions** (confirmed on **v1.25**)
+- DNN Azure Active Directory Provider: **4.4.6**
+
+### Workaround/Resolution
+
+To restore service if this occurs:
+
+1. **Identify Changed Files:**  
+   Compare your `/bin` folder and `web.config` to a backup taken before the Azure AD provider was installed.
+2. **Restore Plant an App Dependencies:**  
+   Copy back the original versions of Microsoft Identity DLLs required by Plant an App (i.e., "Microsoft.IdentityModel.JsonWebTokens.dll") and undo any aggressive binding redirects (0.0.0.0-32767.32767.32767.32767) that force use of the new DLLs added by the Azure AD provider.
+3. **App Restart:**  
+   Restart the application to ensure the restored libraries and configurations are picked up.
+4. **Test and Monitor:**  
+   Verify that license activation and all Plant an App features work as expected.
+
+### Preventative Guidance
+
+- Do **not** install the DNN Azure Active Directory provider version 4.4.6 (or similar authentication extensions) in production without extensive staging tests and full system backups.
+- Closely analyze and manually vet all changes to `/bin` and `web.config` resulting from authentication or identity extensions.
+- If Azure AD functionality is required, consider housing it on a separate DNN instance, or work with Plant an App support for an alternative solution.
