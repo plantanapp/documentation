@@ -6,9 +6,9 @@ sidebar_label: Styling
 
 # Styling Listings
 
-> Audience: [`UI Designers`, `Power Users`, `App Builders`](audience.md#ui-designers-power-users-app-builders)
+> Audience: `UI Designers`, `Power Users`, `App Builders`
 >
-> Skill Prerequisites: [`Basic CSS`, `Understanding of Tokens`](prerequisites.md#css-tokens)
+> Skill Prerequisites: `Basic CSS`, `Understanding of Tokens`
 > 
 >Available beginning in version 1.27 as a hotfix
 
