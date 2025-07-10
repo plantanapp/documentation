@@ -53,7 +53,6 @@ This action sends an email to one or more recipients, including attachments if n
 | DNN email template to use. | Choose from predefined email templates (subject & body) from the system.                                                                                                                                                            | No            | Unset                                    | No       |
 | Subject                    | The subject line for the email. Can contain tokens.                                                                                                                                                                                 | Yes           | empty string                             | Yes      |
 | Body                       | The content of the email. Can include tokens. For templates, leave empty.                                                                                                                                                           | Yes           | empty string                             | No       |
-| Headers                    | Appends custom headers to the email. Supports tokens. **Note:** Headers are not processed in OAuth Compatible mode.                                                                           | Yes           | Unset                                    | No       |
 | Attach Portal Files        | Select existing files from the file system as attachments.                                                                                                                                    | No            | Unset                                    | No       |
 | Attach Field #             | Form-only parameter. Lets you attach up to 5 file uploads (from form fields) to the email.                                                                                                   | No            | Unset                                    | No       |
 | Attach from Token          | Compute attachment file path from token. Supports file ID, path, portal-relative path, or URL. Multiple separated by semicolons.                                                              | Yes           | empty string                             | No       |
@@ -116,7 +115,6 @@ All examples below are equivalent to their classic email action versions—simpl
             "Parameters": {}
         },
         "Body": "<p>Dear Customer,</p><p>Thank you for choosing us.</p>",
-        "Headers": "",
         "PortalFiles": "",
         "FileField1": {
             "Expression": "",
@@ -178,7 +176,6 @@ All examples below are equivalent to their classic email action versions—simpl
             "Parameters": {}
         },
         "Body": "<p>Dear [User:FirstName] [User:LastName],</p><p>This is an example email with tokens.</p>",
-        "Headers": "",
         "PortalFiles": "",
         "FileField1": {
             "Expression": "",
@@ -243,7 +240,6 @@ All examples below are equivalent to their classic email action versions—simpl
                     "Format": { "Value": "Html" },
                     "DnnEmailTemplate": { "Value": "" },
                     "Body": "<p>Dear Customers,</p><p>This is an example using tokens. The email was sent to: user1@plantanapp.com; user2@plantanapp.com; [User:Email]</p>",
-                    "Headers": "",
                     "PortalFiles": "",
                     "FileField1": { "Value": "" },
                     "FileField2": { "Value": "" },
@@ -288,7 +284,6 @@ All examples below are equivalent to their classic email action versions—simpl
                     "Format": { "Value": "Html" },
                     "DnnEmailTemplate": { "Value": "" },
                     "Body": "<p>Dear Customers,</p><p>This is an example.</p>",
-                    "Headers": "",
                     "PortalFiles": "",
                     "FileField1": { "Value": "" },
                     "FileField2": { "Value": "" },
@@ -333,7 +328,6 @@ All examples below are equivalent to their classic email action versions—simpl
                                 "Subject": "Created date for [UserDetails:Username]",
                                 "Format": { "Value": "Html" },
                                 "Body": "<p>The user: [UserDetails:Firstname] [UserDetails:Lastname] was created on date [UserDetails:CreatedOnDate]</p>",
-                                "Headers": "",
                                 "PortalFiles": "",
                                 "FileField1": { "Value": "" },
                                 "FileField2": { "Value": "" },
