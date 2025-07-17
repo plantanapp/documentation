@@ -19,6 +19,8 @@ This article presents a series of fully working **Razor Script (experimental)** 
 **Description:**
 This script lists all properties of the current DNN Module object, displaying both their names and values in a table. It also provides simple examples of how to access and print specific module properties.
 
+> Warning: The Module object is not available in the Test Tokens window.  To view Module properties, you must place this token in a module displayed on your site.
+
 ```csharp
 @inherits PlantAnApp.Tokens.Core.RazorTokenBase
 
