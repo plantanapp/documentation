@@ -4,182 +4,252 @@ title: Overview
 sidebar_label: Overview
 ---
 
+
 ## `General Description`
 
 A workflow consists of an orchestrated and repeatable pattern of activity, enabled by the systematic organization of resources into processes that transform materials, provide services, or process information. It can be depicted as a sequence of operations, the work of a person or group, the work of an organization of staff, or one or more simple or complex mechanisms.
 
-From a more abstract or higher-level perspective, workflows may be considered a view or representation of real work. The flow being described may refer to a document, service, or product that is being transferred from one step to another.
+From a higher-level perspective, workflows may be considered a view or representation of real work. The flow being described may refer to a document, service, or product that is being transferred from one step to another.
 
-Workflows may be viewed as one fundamental building block to be combined with other parts of an organization's structure such as information technology, teams, projects, and hierarchies.
+Workflows are a fundamental building block, combining with other organizational structures such as information technology, teams, projects, and hierarchies.
 
-In Plant an App we have lists of actions of various types to be performed in a sequence, optionally with conditional logic. Additionally, creating a workflow itself adds to that list of actions allowing one workflow to call another.
+In Plant an App, workflows are composed of sequences of actions, which can be enhanced by conditional logic. Workflows can call each other, supporting modular and reusable logic.
 
 ## `Type of Workflows`
+- Business logic (defined in Workflows in the admin part)
+- UI Logic (used mostly for logic inside forms, grids, APIs, scheduled jobs, or guides)
+- While business logic can be defined inline, prefer using dedicated workflows for clarity and maintainability.
 
-* Business logic (defined in Workflows in the admin part)
-* UI Logic (used mostly for UI logic inside forms, grids, APIs, scheduled jobs or, guides)
-* Though business logic can also be defined inline, it's not a good practice.
+****
 
 ## `BPMN Overview`
 
 ### `Description`
 
-[`Business Process Model and Notation (BPMN)`](http://www.bpmn.org/) is a graphical representation for specifying business processes in a business process model.
+[`Business Process Model and Notation (BPMN)`](http://www.bpmn.org/) is a graphical notation for defining business processes.
 
-Originally developed by the Business Process Management Initiative (BPMI), BPMN has been maintained by the Object Management Group (OMG) since the two organizations merged in 2005. Version 2.0 of BPMN was released in January 2011, at which point the name was amended to Business Process Model and Notation to reflect the introduction of execution semantics, which were introduced alongside the existing notational and diagramming elements. Though it is an OMG specification, BPMN is also ratified as ISO 19510. The latest version is BPMN 2.0.2, published in January 2014.
+BPMN is maintained by the Object Management Group (OMG) and is an ISO standard (ISO 19510). Version 2.0.2 is the latest.
 
 ### `How we use it`
 
-In Plant an App we currently use only this subset of modules:
-
-* Start
-* Exclusive Gateway
-* Activities
-* End
+Plant an App uses a selected subset of BPMN modules:
+- **Start**
+- **Exclusive Gateway**
+- **Activities**
+- **End**
 
 #### `Start`
-
-Each business process has some form of initiating event. In BPMN terminology, it is called a start event. It is the first event of the process.
+The initiating event of every business process.
 
 #### `Exclusive Gateway`
-
-An exclusive gateway or XOR gateway is used to model a decision in a process definition.
-
-When the execution of a workflow arrives at this gateway, all outgoing sequence flows are evaluated in the order in which they are defined. The first sequence flow whose condition evaluates to `true` is selected for propagating the token flow.
-
-* In general, in BPMN 2.0, all sequence flows whose conditions evaluate to true are selected to continue in a parallel way. When using an exclusive gateway, only one sequence flow is selected.
-* When multiple sequence flows have conditions that evaluate to true, only the first one defined is selected to continue the process.
-* If no sequence flow can be selected, an exception will be thrown. To ensure a sequence flow will always be selected, have no condition on one of your flows. No condition will always evaluate to true.
+Used to model decisions. When the workflow reaches an Exclusive Gateway, outgoing conditions are evaluated in order, and the first that returns `true` is selected. Only a single path is followed per gateway; if no condition matches, an exception is thrown.
 
 #### `Activities`
-
-Activities are the building blocks of BPMN 2.0, there would be no business process without them. In Plant an App we use activities as **Actions** which helps us build the flow model.
+Correspond to **Actions** in Plant an App.
 
 #### `End`
-
-In business process modeling, every process has an ending. In BPMN, every path in every process must lead to an end event. Every process starts with a start event, moves through activities and gateways, and then reaches an end. When a business process model reaches an end event, it is complete. When a subprocess reaches an end event, the process flow returns to the parent process.
+Marks the completion of each process path.
 
 ### `Difference`
 
-The main difference between BMPN.io and PlantAnApp Workflows is that we create an executable model in our platform, not only the visual part (flowcharts). When you create a Workflow, you make a sequence of actions created behind an entire model. For example, creating a user, assigning platform roles, creating invoices for a purchase, etc.
-
-From a technical perspective, a Workflow can be considered a reusable method.
+Unlike generic flowchart tools, Plant an App workflows are executable models: each component not only represents logic but also executes it. Workflows are reusable methods.
 
 ![Workflow](/img/Workflow.png)
 
-## `Workflows (Business logic)`
+****
 
-### `Scope isolation`
+## `Workflows (Business Logic)`
 
-A Workflow has an isolated scope, which means that it will not have access to the context variables from where the workflow was executed. All the values that are required for the workflow to work need to be passed as input parameters.
+### `Scope Isolation`
 
-Data must explicitly come in as input parameters, but this concept also applies to output parameters. To set variables in the context where the workflow was executed, you will have to specify explicitly what comes out as output parameters. Data can also come into the execution context of the workflow from sources other than the input parameters. For example, `Run SQL Query` or `Server Request`.
+A workflow is executed in an isolated scope. Access to the calling context’s variables is only possible via **Input Parameters**. All required values must be passed explicitly.
 
-If the data is stored locally (e.g., Entities) the variables can be passed in using input parameters and use other actions to pull external data into the execution context. It is recommended to keep the actions inside the workflow when external data is required, and not outside the workflow. Managing one workflow is easier than preparing the input variables each time before the execution of the workflow resulting in less code to maintain.
+Similarly, only **Output Parameters** are passed back to the context that called the workflow. To expose results, explicitly define output parameters. 
+
+You can also pull in data as needed within the workflow (e.g., using actions such as `Run SQL Query` or `Server Request`), but managing inputs/outputs within the workflow itself leads to cleaner, more maintainable logic.
 
 ### `Input Parameters`
 
 #### `Naming Constraints`
-
-Only Alphanumeric characters are allowed (A-Z+0-9, case insensitive), and no white spaces.
+Alphanumeric only (A-Z, 0-9), case-insensitive. No spaces.
 
 #### `Types`
-
-There are 2 types of input parameters: **Primitive** and **Entities**.
-
-Primitive input parameters will restrict the variables that come in to be of the selected data type (e.g., Number) or validate them to be in the right format (e.g., Email). The token will contain the exact value that was passed.
-
-Entities' input parameters need to be passed as Id's of the Entities (integers). The workflow will validate if the specified row of the entity exists. The tokens generated will contain data from that entire row.
+- **Primitive**: Restricts format or type (e.g., Number, Email).
+- **Entity**: Expects Entity Row IDs. Workflow will validate the existence of the row and provide access to all of its properties.
 
 Examples:
-
-* `[InputParams]` - Display Name
-* `[InputParams:Id]` - id of the record
-* `[InputParams:<PropertyName>]` - gives access to entity properties value
+- `[InputParams]` - Display Name
+- `[InputParams:Id]` - record ID
+- `[InputParams:<PropertyName>]` - Entity property value
 
 *Input parameters are optional.*
 
+#### `Descriptions`
+Each Input Parameter supports a description. **As of v1.27, these descriptions are shown in the Workflow Test Run dialog.** This improves usability by explaining the purpose of inputs during testing and when called as actions elsewhere. If the workflow uses a contract, the contract-defined parameter descriptions are also shown.
+
 ### `Output Parameters`
 
-Naming Constraints
+#### `Naming Constraints`
+Same as input parameters. Specify a name and value; the value can be a token or free text (e.g., `[Entity:Property]`, `[MyValue]`).
 
-Only Alphanumeric characters are allowed (A-Z+0-9, case insensitive), and no white spaces. You will need to specify the name of the output variable and the value of it. The output values can be either a free text or a token from inside the workflow execution context. (e.g., `[Entity:Property]` or `[MyValue]`). Those values will be passed back to the context where the Workflow was executed.
+#### `Descriptions`
+**As of v1.27, Output Parameter descriptions are shown in the Workflow Test Run dialog and when calling the workflow.**
+
+#### `Explicit Output Wiring`
+**Breaking change in v1.27:**  
+Workflow Outputs are now only added to the caller's context if an Output Token is explicitly specified when calling the workflow (e.g., assigning to a named variable in the action configuration or workflow contract). Outputs will NOT automatically appear in context with the default workflow output names.  
+*If any existing logic relies on implicit output mapping, it must be revised to use explicit output assignment.*
+
+****
 
 ### `Process`
 
 #### `What Are Actions?`
 
-Actions are blocks of code that are packed and ready to use in a workflow. Various actions out of the box can interact with the stored data (Run SQL query, Read Entity), external data (Server Request), deliver messages (Send Email), business logic (Execute JavaScript (Server)), or modules themselves (Execute JavaScript and Stop Execution, Refresh Grid).  They only need parameters/configurations to work and deliver business logic. Usually, actions need some input parameters based on which they will execute their specific code. Some of the actions also have output tokens, resulting from the code being executed, that can be used in the next actions. This will give you the ability to create complex flows and obtain your custom business logic. When the workflow ends, you can attach the output tokens from the actions to the workflow's output parameters.
+Blocks of pre-built logic (e.g., Run SQL query, Send Email). Actions require parameters and can optionally return tokens, which can be used in subsequent actions.
 
 #### `How to Add an Action to a Workflow`
 
-An Action can be added from the top bar in the workflow interface using the `Add Action` button or the [Import](#importing-an-action-configuration) button.
+Use the `Add Action` button or the `Import` button in the UI. Alternatively, use the contextual buttons beside existing actions.
 
-Alternatively, you can add a new action from the small icon set next to an existing action (or start block) when it is selected. The icon for the new action is the rectangle.
+#### `How to Configure Actions`
 
-For both options, a popup will open and show the list of available actions. You can search on the top for a specific action or browse the list by expanding the categories. After you choose an action by clicking on it, the configuration popup will show. Click on `Save` at the bottom of the popup to save the action after you configure it. Configuring the action is not required at this point and it can be saved blank.
-
-#### `How to Configure Them`
-
-After you add an action you can click on it and a small icon set will appear on the right. The Action settings button is the wrench. By clicking it, the  settings popup will show and you may start configuring the action. When you are done, click on `Save` at the bottom of the popup to save the action.
+After adding, click on the action and open settings (wrench icon). Edit and click `Apply` (previously `Save`).  
+- **Action Pop-up Behavior Update (v1.27):**  
+  - The action editor is now modal: pressing `Esc` or clicking outside is disabled.  
+  - Actions in progress are only saved to the BPMN if the user clicks `Apply`.  
+  - There is a `Cancel` button that discards changes and closes the pop-up.
 
 #### `How to Access Input Parameters`
 
-Input parameters can be accessed as tokens directly in the actions (e.g., [MyParam]). Keep in mind that the entities' input parameters are expanded and you can access all the data of the entity (e.g., `[MyEntityParam:Property]` or `[MyEntityParam:Id]`)
+Tokens with names matching the parameter names (e.g., `[MyParam]`) are accessible in actions. For entity inputs, access properties like `[MyEntityParam:Property]`.
 
 #### `How to Access Other Data Through Actions or Tokens`
 
-Other data can be accessed with specific actions that read data from different sources. For example, you can read other entities' data based on a Server Request. This data comes into the execution context without being specified as an input parameter. Some actions in this category include `Run SQL Query`, `Server Request`, and `Read Entity`. Data also can come from Plant an App Tokens by passing some of the input parameters to the token. For example, it can bring back HTML code that can be used in a `Generate PDF` action to obtain a PDF document.
+Use actions to fetch additional data (e.g., `Read Entity`, `Server Request`). Tokens created this way are available throughout the workflow execution context.
 
 #### `Importing an Action Configuration`
 
-You can also import an already configured action into a workflow to save time. To import an action, locate and select the desired action and then click the `Export` button. Copy the JSON presented in the popup. Then, in the workflow in which the action will be imported, click the `Import` button. The first time you perform this action, your browser will likely ask you to allow Plant an App access to your clipboard. The notification may look like this:
-
-<img src="/img/clipboard-access.png" alt="Clipboard Access Request" />
-
-If the content of the clipboard is not valid code **OR** if your browser has denied access to the clipboard, a pop-up titled `Import Actions` will appear. If access to the clipboard has been denied, the `Action or Array of Actions` box will be empty and you can paste your code into it. Otherwise, it will be populated with the invalid code text from the clipboard as seen below:
-
-<img src="/img/import_wrong.gif" alt="Import Wrong Example" />
-
-:::note
-Multiple actions can be imported individually, or, if they are in an `Execute Actions` action, then the `Import Action` will see it as a single action and you will find the other actions inside the `Execute Actions` action after import.
-:::
+You can import or export actions as JSON. Select, export, copy, and then import via the UI. Imported actions appear either individually or within an `Execute Actions` container, depending on how they were exported.
 
 #### `Execution Context`
 
-The tokens available in the execution of a workflow are the input parameters and all the other output tokens that were generated from the action of the workflow.
-Those tokens are available from the start of the execution of the workflow until the end. For more details read the [Execution Context](execution-context) article.
+Tokens available comprise both input parameters and outputs from actions within the workflow.
 
 #### `Validation`
 
-The workflow builder comes with built-in validation to keep workflow building easy and without errors. You can find the errors, if any, in the workflow builder interface at the bottom of the page or as an 'x' in a red circle near each action that has an error. Hovering over each error will describe the issue.
+The builder offers real-time validation, showing errors on the interface and providing details on hover.
 
 ![Workflow](/img/wf_error.jpg)
 
-### `Testing workflows`
+****
 
-After creating a Workflow, it can be tested using the `Test Workflow` button that looks like a play button in the right column of the workflow listing, on the line of the workflow you want to test.
+### `Testing Workflows`
 
-If the workflow doesn't have input parameters configured in its settings, the `Prepare Test` pop-up will appear with a message stating "No parameters are required to execute this workflow". Clicking the `Run` button will execute the workflow and, at the bottom of the page, a message will appear displaying how long it took for the workflow to execute. If output parameters have been set, they will be displayed there also, with the returned values.
+After creating a workflow, you can run test executions using the **Test Workflow** button.
 
-If the workflow does have input parameters, the pop-up will instead contain the input parameter(s) name(s) and an empty field for each one. You have to provide values for the input parameters to run the test. Once the `Run` button is clicked and the workflow executes, it will return a success message and output parameter values, if any.
+- **Parameter Descriptions:**  
+  Both input and output parameter descriptions are visibly shown in the test pop-up (including contract-based workflows).
+- **Input Value Persistence:**  
+  The Save and Test dialog now **remembers your previously entered input values** for each workflow, per browser. When reopening the test pop-up or after page reloads, the most recent values are pre-filled for user convenience.  
+  - Values are associated per workflow and parameter name.
+  - If a parameter is renamed or deleted, its stored value does not load.
+- **UI/UX Enhancements:**  
+  - Elements are now visually aligned, including type, required status, and delete button.
+  - Descriptions and content align horizontally for multi-line or long text.
+  - Hovering over parameter rows highlights them with a gray background for clarity and focus.
+- **Entity Input Parameter Search:**  
+  - The entity parameter dropdown search refreshes correctly (Bug 7763 fixed).
 
-If the workflow has any error, the error message will be displayed at the bottom of the page.
+****
 
 ### `Cloning Workflows`
 
-A workflow can be duplicated and edited if there is an existing workflow that has logic similar to what is needed in a new workflow. In the main Workflow list, at the end of the row where the Workflow buttons are located, the last button (when hovered, the tooltip label is **'Duplicate'**) will immediately create a new workflow named with the name of the duplicated workflow appended with **'Copy'** (e.g. 'Send Email to User Copy'). If the same (original) workflow is duplicated again, the name will have **'Copy 2'** appended. The number will increment again as many times as the original workflow is duplicated.
+Workflows can be duplicated. The clone inherits all parameters and logic but should be renamed and edited for new use cases.
 
-After cloning a workflow, it will have exactly the same **Input Parameters**, **Process Flow**, and **Output Parameters** as the original workflow and will function the same. It should be edited to create a new process with the desired outcome and renamed appropriately.
+****
 
 ## `UI Logic`
 
-After you create the Workflow, you have a powerful tool on your hands and can now integrate it in different scenarios. It can be used as an action called `Execute [Name of Workflow]`, which calls it and executes its logic.  Workflow actions are available on every product that supports the ability to execute an action, such as Forms, Listings, Automation, API, and Guides.
+After creating a workflow, you can call it as an action (using `Execute [Name of Workflow]`) wherever actions are supported—Forms, Listings, Automation, APIs, and Guides.
 
-You can use a workflow after you finish the frontend Actions (e.g., closing a form from a pop-up, refreshing a listing grid). You then call the `Workflow` to run the special logic and use the `Output` returned in the subsequent actions.
+Outputs from workflows—**now only available via explicit output token assignment**—can be referenced in subsequent actions.
 
-Common examples:
+Common uses:
+- Generating PDFs, Excel exports, automated reports, etc.
 
-* A form that collects data from a user and on a button click generates a PDF with a graph based on the user's responses.
-* From a grid, on an item button, if you want to generate an Excel that contains the data from that row.
-* In Automation, use a workflow to send a report on a specific day of the week based on the last week's activity.
+****
+
+## `User Interface & Workflow Builder Usability Improvements in v1.27`
+
+### New Workflow UI is the Default
+
+- Upon first accessing the Workflow screen, the new Workflow Builder is the default.
+- **Switching between UIs:**  
+  - Old UI displays:  
+    "You are currently on the legacy Workflow Builder. We advise to switch to the new UI."  
+    Button: `Switch to New Builder`
+  - New UI displays:  
+    "If you experience issues on the new Workflow Builder, switch to the Legacy UI."  
+    Button: `Switch to Legacy Builder`
+
+### UX/Visual Enhancements
+
+- **Condition Labels:** Always visible and fully shown.
+- **Token Autocomplete:** Improved for conditional gateway conditions.
+- **Parallel Gateway Labels:** Now display as "Start Parallelization" and "End Parallelization".
+- **Consistent White Editor Background:** BPMN area styling matches other editors.
+- **BPMN Interaction:** Undo/Redo and copy-paste through keyboard are disabled to avoid unrecoverable errors.
+- **Add/Import/Export Buttons:** Moved to a toolbar, visible only on the Process screen (mirrors Automation UX).
+- **Title/Label Ellipsis:**  
+  - When workflow/action titles are too long, ellipsis is used. Hover to view the full title.
+- **Workflow Listing:**  
+  - Buttons never wrap to two lines.  
+  - Edit button is now a link (`<a>`) supporting middle/ctrl+click to open in new tab.
+  - Filter Namespace X button and autocomplete are fixed.
+- **Parameter Layout:**  
+  Titles, textboxes, types, checkboxes, default values, and descriptions align on the same baseline.
+- **Parameter Row Hover:**  
+  Gray background highlight on parameter hover, consistent with General Settings UX.
+- **Deletion UI:**  
+  Delete buttons are now center aligned.
+- **Relabeling:**  
+  Fields now follow the updated static label layout.
+- **Error Messaging:**  
+  When deleting branches and conditions in an Exclusive Gateway, you will get this message:  
+  **"An Exclusive Gateway branch is missing a condition. If you are deleting an entire branch, make sure the branch is fully deleted; the branch may still exist between the Split and the Merge."**  
+
+### Change Detection and Save Workflow Buttons
+
+- The UI now **detects unsaved changes reliably**. This includes changes in actions, gateways, layout, and conditions.
+- **Buttons:**
+  - Back
+  - Save (disabled if no changes)
+  - Test (runs on current saved version; if unsaved changes exist, prompts to Save or test on previous version)
+- **Leaving With Unsaved Changes:**  
+  Any attempt to leave—via navigation, left menu, browser refresh, back button, or closing the tab—triggers the Unsaved Changes prompt if appropriate.
+
+### Action Editor Modal (Pop-up) Improvements
+
+- Can only be closed by clicking `Apply` (to keep changes) or `Cancel` (to discard).
+- Cancel does **not** save changes; changes are only kept when Apply is clicked.
+- `Esc` and clicking outside do nothing.
+
+****
+
+## `Potential Breaking Changes`
+
+**Workflow Output Context Injection**
+- Outputs from called workflows are not auto-inserted into the calling context anymore.  
+- You must assign outputs explicitly by naming the Output Token for each output you wish to propagate.
+- Review any existing workflows that may rely on the previous (implicit) output mapping logic and update them as needed.
+
+****
+
+
+## `Related Improvements and Fixed Bugs`
+
+- Enhanced error messages for workflow branches and conditions.
+- Fixed UI glitches and parameter search bugs.
+- Standardized style, hover, and text alignment across all workflow-related interfaces.
+
