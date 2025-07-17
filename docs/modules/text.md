@@ -9,7 +9,6 @@ A common and versatile field in creating Forms, the **`Text`** field has several
 - [Currency](#currency)
 - [Large Text](#large-text)
 - [Number](#number)
-- [Phone](#phone)
 - [Rich Text Editor (`CKEditor`)](#rich-text-editor-ckeditor)
 - [Rich Text Editor (`Trumbowyg`)](#rich-text-editor-trumbowyg)
 - [Static Text](#static-text)
@@ -69,23 +68,6 @@ A field that allows the user to insert positive and negative numbers (not fracti
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
 
-## Phone
-
-This field allows users to input a phone number while auto-detecting the country and showing its flag. Validation is integrated by default. On submit, it will generate the `[<FieldName>]` token (which yields the value).
-
-- Specific parameters
-
-| Field | Description and information |
-| ----- | --------------------------- |
-| *Initial Value* | Define the initial phone number that will show in the field (optional). Supports Tokens. |
-| *Initial Country* | Set the initial, two letter country code (please [see here](https://countrycode.org/) for a full list). You will need to set this parameter only if you use the "Initial Value" (see above). This field supports Tokens.<br />Setting an initial country is required to remove the flag (see next parameter). A new checkbox will only appear after setting an initial country. |
-| *Remove Flag* | If checked, the phone field will be displayed without the flags dropdown and the initial country code will be used. The fields load initially having an initial value. |
-| *Preferred Countries* | The countries to be shown at the top of the country dropdown. Input comma-separated values (e.g., `UnitedKingdom;France;Germany`). This field supports Tokens. |
-| *Placeholder Option* | Select an option for placeholder. |
-| *International Mode* | Check this to enable "international mode", which shows the countries dial codes' in the input. Leaving this off provides a better experience for national sites. |
-| *Validation* | Uncheck this option to disable phone field's own validation. |
-| *Readonly* | Make the field read-only (non-editable). |
-| *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
 
 ## Rich Text Editor (`CKEditor`)

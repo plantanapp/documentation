@@ -12,6 +12,13 @@ sidebar_label: Script Examples
 
 This article presents a series of fully working **Razor Script (experimental)** examples, each with a detailed description. These samples are ready for you to use as-is or adapt for your Plant an App project. Each script demonstrates different aspects of the Razor context available in this token type.
 
+
+## How to Use These Examples
+
+* Copy any example and use it as a **Razor Script (experimental)** token in Plant an App.
+* If you want to test a TokenParameters example, make sure you invoke the token with the expected parameters set.
+* Use the reflection/dump property scripts to explore the underlying DNN objects and discover available data fields for custom logic and display.
+
 ****
 
 ## 1. Working with the Module Object
@@ -366,10 +373,3 @@ The value of <b>@@TokenParameters.Category</b>: <code>@category</code>
 </p>
 ```
 
-****
-
-## How to Use These Examples
-
-* Copy any example and use it as a **Razor Script (experimental)** token in Plant an App.
-* If you want to test a TokenParameters example, make sure you invoke the token with the expected parameters set.
-* Use the reflection/dump property scripts to explore the underlying DNN objects and discover available data fields for custom logic and display.
