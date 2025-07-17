@@ -14,7 +14,7 @@ Plant an App is an IIS application that runs under DNN using MS SQL Server.  The
 | Plant an App Version | Released On | Support Until | Recommended DNN Version | Minimum DNN Version | Maximum DNN Version | Minimum SQL Version | Minimum .NET Framework | Notes |
 | -------------------- | ----------- | ------------- | ----------------------- | --------------------| ------------------- | ------------------- | ---------------------- | ----- |
  | 1.27 | 2025-06-16 | 2026-06-16 | 9.13.7 | 9.11.2 | 9.13.7 | SQL Server 2016 | 4.7.2 |  |
-                | 1.26 | 2024-06-14 | 2025-12-31 | 9.11.2 | 9.9.1 | 9.11.3 | SQL Server 2012 | 4.7.2 |  |
+                | 1.26 | 2024-06-14 | 2025-12-31 | 9.11.2 | 9.9.1 | 9.13.7 | SQL Server 2012 | 4.7.2 |  |
                 | 1.25 | 2023-05-11 | 2024-11-11 | 9.11.0 | 9.9.0 | 9.11.3 | SQL Server 2012 | 4.7.2 |  |
                 | 1.24 | 2023-01-10 | 2024-01-10 | 9.11.0 | 9.9.0 | 9.11.3 | SQL Server 2012 | 4.7.2 |  |
                 | 1.23 | 2022-11-21 | 2023-11-21 | 9.11.0 | 9.9.0 | 9.11.0 | SQL Server 2012 | 4.7.2 |  |
@@ -44,4 +44,4 @@ Typical uses of this chart include setting up and keeping your system aligned wi
   - Make a maintenance plan to upgrade systems promptly once a new version of Plant an App is released, factoring in the versions that are nearing their "Support Until" date.
 - Migrating an Existing System - see the [Migrate/Upgrade document](https://learn.plantanapp.com/docs/current/important-notes/upgrading-dnnsharp-to-plant-an-app) 
 
-Page updated - Thursday, July 10, 2025 at 02:28:47 PM.
+Page updated - Thursday, July 17, 2025 at 01:32:16 PM.

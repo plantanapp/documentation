@@ -65,7 +65,11 @@ Will popup one or more term agreement popups. Those can either lead to a specifi
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
 
-## Group Radio Boxes
+## Group Radio Boxes (Obsolete)
+
+> This field type was marked as obsolete in version 1.27.
+> It does not work with Bootstrap 5.  
+> As an alternative, consider using Radio Boxes fields with Horizontal layout.
 
 This field will group Multiple choice (with radio boxes) fields in order to make them act like a Radio Buttons Grid. This field will only render the selected Multiple choice fields as a grid by displaying each of them on a row and using the "`Item text`" (from the datasource) as the column title.
 

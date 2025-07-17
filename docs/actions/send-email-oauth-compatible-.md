@@ -91,7 +91,7 @@ All examples below are equivalent to their classic email action versions—simpl
 ```json
 {
     "Title": "Send Email",
-    "ActionType": "SendMail",
+    "ActionType": "SendMailOAuth",
     "Description": "Simple example, confirmation email (OAuth compatible)",
     "Parameters": {
         "From": "support@plantanapp.com",
@@ -152,7 +152,7 @@ All examples below are equivalent to their classic email action versions—simpl
 ```json
 {
     "Title": "Send Email",
-    "ActionType": "SendMail",
+    "ActionType": "SendMailOAuth",
     "Description": "Email with tokenized values (OAuth compatible)",
     "Parameters": {
         "From": "[User:Email]",
@@ -227,7 +227,7 @@ All examples below are equivalent to their classic email action versions—simpl
             },
             {
                 "Title": "Send Email",
-                "ActionType": "SendMail",
+                "ActionType": "SendMailOAuth",
                 "Parameters": {
                     "From": "The Sender <support@plantanapp.com>",
                     "DetermineEmail": "",
@@ -272,7 +272,7 @@ All examples below are equivalent to their classic email action versions—simpl
             },
             {
                 "Title": "Send Email",
-                "ActionType": "SendMail",
+                "ActionType": "SendMailOAuth",
                 "Parameters": {
                     "From": "support@plantanapp.com",
                     "To": "",
@@ -321,7 +321,7 @@ All examples below are equivalent to their classic email action versions—simpl
                     "ActionList": [
                         {
                             "Title": "Send Email",
-                            "ActionType": "SendMail",
+                            "ActionType": "SendMailOAuth",
                             "Parameters": {
                                 "From": "support@plantanapp.com",
                                 "To": "[UserDetails:Email]",
