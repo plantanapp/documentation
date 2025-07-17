@@ -212,15 +212,6 @@ Razor code executes on the server with broad access to system and application ob
 
 ****
 
-## Related Articles
-
-| Article | Description |
-|----------------------------------------------|------------------------------------------------------|
-| [Tokens Overview](/tokens.md) | Learn about Plant an App Tokens |
-| [Apply Tokens Action](/actions/apply-tokens.md) | Using tokens and expressions inside actions |
-| [Legacy Razor Tokens](/tokens/razor-tokens.md) | The old Razor token type (for migration/reference) |
-
-****
 
 ## Migrating from Legacy Razor Tokens
 
