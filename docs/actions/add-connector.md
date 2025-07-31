@@ -139,3 +139,5 @@ You can skip the Properties grid and use only JSON.
 - **Properties missing?** Double-check for naming mismatches between grid and JSON.
 - **Token not set?** The `EntryId Token Name` must be provided and referenced without square brackets for storage (e.g., `StripeCredentialId`, not `[StripeCredentialId]`, but referenced as `[StripeCredentialId]` later).
 
+****
+Revised 06/16/2025
