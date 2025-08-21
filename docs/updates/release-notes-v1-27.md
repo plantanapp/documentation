@@ -14,6 +14,7 @@ Overview:
 * [Performance](#performance)
 * [Cosmetic](#cosmetic)
 * [Obsolete](#obsolete)
+* [Known Issues](#known-issues)
 
 
 
@@ -425,3 +426,30 @@ The HTTP Request Token type is now marked as obsolete. Users are encouraged to u
 ### Reports action "Save report in the Database" Marked as Obsolete
 
 We have marked the Reports feature in the Form Builder as obsolete. This change is part of our effort to set clear expectations for our users, particularly those transitioning from old DNN Sharp products. As these features are no longer supported, we recommend exploring alternative solutions or reaching out to our support team for guidance.
+
+## Known Issues
+
+### [DateTime:Convert] token TimeZone parameter is case sensitive (Issue 10037)
+
+At Plant an App version 1.27.401, the TimeZone parameter is case sensitive; in prior versions it was not.  The following token will return an error:
+
+>[DateTime:Convert(Value="2020-02-05T06:30:00+00:00", TimeZone="central standard time")]
+> Could not determine a TimeZone from the provided value. Supported values: 'UserTime', 'PortalTime', or any TimeZoneId (from https://dotnetfiddle.net/YSoAkY)
+Parameter name: timezone
+
+The following token will return a correct value as expected:
+
+>[DateTime:Convert(Value="2020-02-05T06:30:00+00:00", TimeZone="Central Standard Time")]
+>2/5/2020 12:30:00 AM -06:00
+
+This will be addressed in a hotfix to version 1.27.
+
+### Context Tokens can be created with spaces in the name (Issue 10040)
+
+At Plant an App version 1.27.401 and earlier, context tokens could be created with spaces and other special characters via the Create/Update Tokens action, as well as any action that creates a token:
+
+>[Current Invoice]
+
+Starting in version 1.28, tokens must start with a letter and contain only alphanumerical characters or underscore, which are the same naming rules as for the creation of Custom Tokens.
+
+>[Current_Invoice]

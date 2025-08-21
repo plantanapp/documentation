@@ -34,7 +34,8 @@ This action executes multiple expressions and applies tokens on those expression
 
 | Parameter | Description |
 | --------- | ----------- |
-| Token Name | The token name(s) in which the response is to be stored for further use. |
+| Token Name | The token name(s) in which the response is to be stored for further use. Must start with a letter and contain only alphanumerical characters or underscore.
+ |
 
 ## `Security`
 
