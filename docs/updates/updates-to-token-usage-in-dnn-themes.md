@@ -20,26 +20,26 @@ With the upcoming Plant an App release 1.28, significant changes are being made 
 
 In version 1.28, the methods previously used to integrate tokens in DNN themes will be replaced with a new streamlined approach. This update is essential to ensure compatibility and improve the performance of themes. Understanding these changes and proactively updating your themes can prevent the pages from rendering errors post-upgrade.
 
-### Current Methods (Obsolete in 1.28)
+### Current Methods that will not be available in 1.28
 
-Currently, tokens in themes can be embedded using one of these methods:
+In version 1.27 and lower, tokens in themes can be embedded using one of these methods:
 
 1. Using the Skin Object:
 
    ```html
    <%@ Register TagPrefix="MyTokens" Namespace="avt.MyTokens.Core" Assembly="avt.MyTokens.Core" %>
-   <mytokens:tokenize>
-     Hi [User:Email]
-   </mytokens:tokenize>
+   <MyTokens:Tokenize runat="server">
+     Hi [User:FirstName]
+   </MyTokens:Tokenize>
    ```
 
 2. Alternative Skin Object:
 
    ```html
-   <%@ Register TagPrefix="paa" TagName="Token" Src="~/DesktopModules/DnnSharp/MyTokens/SkinObjectReplacer.ascx" %>
-   <paa:token>
-     <content>Hi [User:Email]</content>
-   </paa:token>
+   <%@ Register TagPrefix="Paa" TagName="Token" Src="~/DesktopModules/DnnSharp/MyTokens/SkinObjectReplacer.ascx" %>
+   <Paa:Token>
+     <content>Hi [User:FirstName]</content>
+   </Paa:Token>
    ```
 
 ### New Method in 1.28
@@ -48,9 +48,9 @@ Starting from version 1.28, the following updated method will replace both of th
 
 ```html
 <%@ Register TagPrefix="PaaTokens" Namespace="PlantAnApp.Dnn.Tokens.Controls" Assembly="PlantAnApp.Dnn" %>
-<paatokens:apply>
-  Hi [User:Email]
-</paatokens:apply>
+<PaaTokens:Apply>
+  Hi [User:FirstName]
+</PaaTokens:Apply>
 ```
 
 This change is meant to streamline token integration and enhance system performance.
@@ -82,4 +82,4 @@ This change is meant to streamline token integration and enhance system performa
 
 The move to a single, consistent method of token integration in DNN themes aligns with Plant an App's broader goals of system-wide consistency and enhanced performance. Preparing for this change will ensure a seamless transition with minimal disruptions to your applications.
 
-Revised 09/03/2025
+Revised 09/04/2025 (10055)
