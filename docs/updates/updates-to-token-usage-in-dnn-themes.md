@@ -37,23 +37,24 @@ In version 1.27 and lower, tokens in themes can be embedded using one of these m
 
    ```html
    <%@ Register TagPrefix="Paa" TagName="Token" Src="~/DesktopModules/DnnSharp/MyTokens/SkinObjectReplacer.ascx" %>
-   <Paa:Token>
+   <Paa:Token runat="server">
      <content>Hi [User:FirstName]</content>
    </Paa:Token>
    ```
 
 ### New Method in 1.28
 
-Starting from version 1.28, the following updated method will replace both of the older methods:
+Starting from version 1.28, the following updated method will **replace** both of the older methods:
 
 ```html
 <%@ Register TagPrefix="PaaTokens" Namespace="PlantAnApp.Dnn.Tokens.Controls" Assembly="PlantAnApp.Dnn" %>
-<PaaTokens:Apply>
+<PaaTokens:Apply runat="server">
   Hi [User:FirstName]
 </PaaTokens:Apply>
 ```
 
-This change is meant to streamline token integration and enhance system performance.
+This change is available in version 1.27.418 and higher.  At your option you can convert your pages to this method before upgrade to 1.28.
+
 
 ****
 
@@ -62,17 +63,19 @@ This change is meant to streamline token integration and enhance system performa
 1. **Identify Affected Themes:**
    - Review your DNN themes and locate any use of the current token methods as outlined above. This will help you identify parts of your themes that need updating.
 
-2. **Plan for Updates:**
-   - Prepare to update the themes with the new method immediately after upgrading to version 1.28. This will minimize downtime and prevent errors when browsing affected pages.
+2. **Complete the Updates:**
+   - **Do it in advance (recommended)**
+     - Complete the theme update early - it will work starting at version 1.27.418 or higher.
+     - Plan to test each impacted theme after the 1.28 upgrade.
+   - **Do it during the 1.28 upgrade**
+     - Prepare to update the themes with the new method immediately after upgrading to version 1.28. 
 
-3. **Testing:**
-   - Although the new method will not function prior to the 1.28 upgrade, mark the affected themes, so they are ready for testing post-upgrade.
 
 ****
 
 ## Key Considerations
 
-- **Preemptive Steps:** While immediate changes in version 1.27 aren't necessary, proactively identifying and planning updates for your themes can mitigate challenges post-1.28 upgrade.
+
 - **Theme Errors:** Following the upgrade, DNN themes that haven’t been updated will display errors for pages using the older methods.
 - **Ease of Transition:** The change from the old to the new method should be straightforward for administrators and developers familiar with modifying themes.
 
@@ -82,4 +85,4 @@ This change is meant to streamline token integration and enhance system performa
 
 The move to a single, consistent method of token integration in DNN themes aligns with Plant an App's broader goals of system-wide consistency and enhanced performance. Preparing for this change will ensure a seamless transition with minimal disruptions to your applications.
 
-Revised 09/04/2025 (10055)
+Revised 09/08/2025 (10055)
