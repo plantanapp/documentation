@@ -8,102 +8,109 @@ sidebar_label: Tokens - Migrate Portal Specific Namespaces to Global Namespaces
 >
 > Skill Prerequisites: `Tokens`, `Namespaces`
 
-# How to Migrate Portal Specific Namespaces to Global Namespaces in Plant an App
+# How to Resolve Namespace Conflicts and Migrate to Global Namespaces in Plant an App
 
-**Release: 1.27 — Portal specific Namespaces are Obsolete and will be removed in a future version**  
-[Watch the video demonstration here](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EXyE4sVH6SlPqz6CDJsLyv4Bc57k0whPp8cUAxSlFThYxg?e=1Zxb2Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+**Release: 1.27 — Portal specific Namespaces are Obsolete and will be removed in a future version.**  
+[Watch the video demonstration here](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EXyE4sVH6SlPqz6CDJsLyv4Bc57k0whPp8cUAxSlFThYxg?e=1Zxb2Y&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ****
 
 ## Overview
 
-Starting in Plant an App release 1.27, you may notice a **warning in configuration tokens**:  
-> “Portal specific namespaces are obsolete and will be removed in a future version.”
+In Plant an App release 1.27, you may observe the following warning in configuration tokens:  
+> “Portal specific namespaces are obsolete and will be removed in a future version. Read more.”
 
-This article will walk you through:
-- Why this change is happening
-- How to identify affected namespaces
-- How to migrate portal-specific namespaces to global
-
+This message indicates a need to transition from portal-specific namespaces to global namespaces. This article will guide you through:
+- Why this change is necessary
+- How to resolve namespace conflicts
+- How to migrate to global namespaces when no conflicts exist
 
 ****
 
 ## Why are Portal Specific Namespaces Obsolete?
 
-Portal-specific namespaces were originally available for DNN Sharp / DNN sites, which allows multiple "portals" (sites) on a single installation, each potentially with unique tokens. In the unified Plant an App environment, the assumption is "one system" where **all tokens are available globally** for consistency and predictability.
+Originally designed for DNN Sharp / DNN sites, portal-specific namespaces allowed for multiple "portals" in a single installation, each with potentially unique tokens. With the unified Plant an App environment, the expectation is a cohesive system where **all tokens are globally available** for consistency and predictability.
 
-If you previously used the feature where the same token name exists differently in separate portals, you will need to update your setup.
-
-****
-
-## Identifying Portal-Specific Namespaces
-
-When you open the **Tokens > Namespaces** screen, any portal-specific namespace will show a warning. Global namespaces will not display this message.
-
+If you previously utilized tokens with the same name but different definitions across portals, you'll need to reconcile these setups.
 
 ****
 
-## How to Migrate: Step-by-Step
+## Identifying Portal-Specific Namespaces and Conflicts
 
-### 1. Navigate to Namespaces Settings
+Navigate to **Configuration > Tokens** to inspect your namespaces. Portal-specific namespaces display a warning:
 
-1. Go to **Configuration** > **Tokens** 
-2. Locate namespaces with the **portal-specific warning message**.
+> Portal specific Namespaces are Obsolete and will be removed in a future version. Read more.
 
-<img src="/img/v127_tokens_namespace_warning_message.PNG" alt="v127 tokens namespace warning message"></img>
+![v127 tokens namespace warning message](/img/v127_tokens_namespace_warning_message.PNG)
 
-****
-
-### 2. Open the Namespace for Editing
-
-1. Click the **View Namespace** button, then click  the **Edit** button in the top right of the Namespace.
-2. In the edit window, look for the "**Available on all portals**" switch.
-
-<img src="/img/v127_tokens_view_namespace.PNG" alt="View the NameSpace"></img>
-
-<img src="/img/v127_tokens_namespace_switch.PNG" alt="View the NameSpace"></img>
+For each marked namespace, investigate for conflicts. Conflicting cases arise when tokens with the same name contain different definitions across portals.
 
 ****
+
+## Resolving Namespace Conflicts: Step-by-Step
+
+### 1. Open the Namespace for Editing
+
+- Go to Configuration > Tokens
+- Identify namespaces with warnings
+- Click the **View Namespace** button, followed by **Edit**
+
+![v127 tokens view namespace](/img/v127_tokens_view_namespace.PNG)
+
+### 2. Evaluate Token Definitions Across Portals
+
+- Examine token definitions within the namespace across all portals
+- **If definitions match** across portals:
+  - Proceed to delete redundant token entries on sub-portals
+  - Ensure the main portal contains the correct definition
 
 ### 3. Enable Global Availability
 
-1. **Turn ON** the "Available on all portals" switch.
-2. Click **Update** or **Save**.
+- On the main portal, turn on the "Available on all portals" switch
+- Click **Update** to complete the migration to a global namespace.
 
-This action makes all contained tokens **global**, removing the warning.
+![v127 tokens namespace switch](/img/v127_tokens_namespace_switch.PNG)
 
-****
+### 4. Different Definitions
 
-### 4. Repeat for Each Portal-Specific Namespace
+**If definitions differ**:
+- Rename tokens on one or multiple portals to resolve conflicts
+- Ensure the main portal holds the primary token definition
+- Repeat until all conflicts are eliminated
 
-If multiple namespaces have the warning, repeat Steps 2-3 for each one.
+### 5. Consolidate and Delete
 
-Once updated, **editing the namespace again will no longer let you revert to portal-specific**—this behavior is being retired.
+- After resolving definitions, 
+  - Merge unique tokens into a single global namespace
+  - Delete old portal-specific namespaces
+
+Once updated, portal-specific setup can no longer be configured, aligning with Plant an App's goal of a unified namespace environment.
 
 ****
 
 ## Key Considerations
 
-- **Conflict Risk:** If you previously had tokens with the same name but different values in multiple portals, you must consolidate or rename as necessary.
-- **One System:** All tokens/namespaces will be available everywhere, including in tokens, workflows, and entities.
+- **Conflict Resolution:** If conflicting token definitions exist, reconcile these by renaming and reconfiguring as necessary.
+- **Unified System:** All tokens/namespaces must be available everywhere, ensuring consistent functionality.
 
 ****
 
 ## FAQ
 
-**Q: What happens if I do nothing?**  
-A: In the future, portal-specific namespaces will stop working. Tokens may not resolve as expected, leading to possible application errors.
+**Q: What happens if I take no action?**  
+A: Future updates will render portal-specific namespaces non-functional, potentially causing application errors where tokens don't resolve correctly.
 
 **Q: Is this change reversible?**  
-A: No, after making a namespace global, you cannot convert it back to portal-specific.
+A: No, once a namespace is global, it cannot be returned to a portal-specific state.
 
 ****
 
 ## Summary
 
-Transitioning to global namespaces ensures consistency and aligns with Plant an App's unified system vision.  
-**Enable “Available on all portals” for all namespaces with warnings to future-proof your configuration!**
+Moving to global namespaces ensures Uniformity and aligns Plant an App with a single-system vision.  
+Resolve namespace conflicts and migrate to global namespaces to secure your configuration against future platform updates.  
+
+For more details, [see the video walkthrough](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EXyE4sVH6SlPqz6CDJsLyv4Bc57k0whPp8cUAxSlFThYxg?e=1Zxb2Y&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
 ****
-
-For more details, [see the video walkthrough](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EXyE4sVH6SlPqz6CDJsLyv4Bc57k0whPp8cUAxSlFThYxg?e=1Zxb2Y&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
+Revised 09/12/2025
