@@ -1,23 +1,23 @@
 ---
-id: using-tokens-in-dnn-themes
-title: Using Tokens in DNN Themes
-sidebar_label: Using Tokens in DNN Themes
+id:using-tokens-in-themes
+title: Using Tokens in Themes
+sidebar_label: Using Tokens in Themes
 ---
 
-# Use Tokens in DNN Themes
+# Use Tokens in Themes
 
 **Audience:** [`Developers`, `Administrators`, `Citizen Developer`]  
-**Skill Prerequisites:** `Tokens`, `Themes`, `DNN`
+**Skill Prerequisites:** `Tokens`, `Themes`, `Platform`
 
 ## Overview
 
-Plant an App version 1.27.418 (and above) introduces an updated method for embedding tokens directly into DNN themes. This new approach is designed to simplify the integration and enhance the performance of your themes. Tokens can dynamically insert content, such as user information or the current date, into your page themes.
+Plant an App version 1.27.418 (and above) introduces an updated method for embedding tokens directly into themes. This new approach is designed to simplify the integration and enhance the performance of your themes. Tokens can dynamically insert content, such as user information or the current date, into your page themes.
 
 ****
 
-## How to Embed Tokens in DNN Themes
+## How to Embed Tokens in Themes
 
-To integrate tokens into your DNN themes using the updated approach provided by Plant an App, follow the instructions below. This method allows you to display dynamic information across your themes seamlessly.
+To integrate tokens into your themes using the updated approach provided by Plant an App, follow the instructions below. This method allows you to display dynamic information across your themes seamlessly.
 
 ### Embedding Tokens
 
@@ -61,6 +61,6 @@ When this code is integrated into a theme, every page utilizing this theme will 
 
 ## Conclusion
 
-Embedding tokens within your DNN themes is now streamlined and efficient with the new method introduced in Plant an App version 1.28. This powerful capability allows you to seamlessly inject dynamic content, enhancing user experience and providing up-to-date information across your applications.
+Embedding tokens within your themes is now streamlined and efficient with the new method introduced in Plant an App version 1.28. This powerful capability allows you to seamlessly inject dynamic content, enhancing user experience and providing up-to-date information across your applications.
 
-Revised 09/08/2025
+Revised 09/16/2025

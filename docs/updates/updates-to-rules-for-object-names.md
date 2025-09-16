@@ -12,7 +12,7 @@ sidebar_label: Updates to Rules for Object Names
 
 ## Overview
 
-Starting with Plant an App version 1.28, new naming conventions are being enforced for core platform components, including Workflows, Automation Jobs, APIs, and Namespaces. This update improves consistency and clarity across the platform while minimizing the risk of issues related to incompatible or ambiguous names. This article explains the new rules, outlines the user experience you can expect, and provides key guidance for administrators and developers.
+Starting with Plant an App version 1.27.340, new naming conventions are being enforced for core platform components, including Workflows, Automation Jobs, APIs, and Namespaces. This update improves consistency and clarity across the platform while minimizing the risk of issues related to incompatible or ambiguous names. This article explains the new rules, outlines the user experience you can expect, and provides key guidance for administrators and developers.
 
 ****
 
