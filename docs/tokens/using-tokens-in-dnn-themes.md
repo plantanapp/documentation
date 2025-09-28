@@ -1,5 +1,5 @@
 ---
-id:using-tokens-in-dnn-themes
+id: using-tokens-in-dnn-themes
 title: Using Tokens in DNN Themes
 sidebar_label: Using Tokens in DNN Themes
 ---
