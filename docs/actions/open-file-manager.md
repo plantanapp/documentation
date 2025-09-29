@@ -4,6 +4,8 @@ title: Open File Manager
 sidebar_label: Open File Manager
 ---
 
+Not available in: APIs.
+
 Requires: AFORM version above 03.09.550.
 
 
