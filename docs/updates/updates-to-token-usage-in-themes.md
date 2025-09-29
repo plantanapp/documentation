@@ -1,7 +1,7 @@
 ---
-id: updates-to-token-usage-in-dnn-themes
-title: Updates to Token Usage in DNN Themes
-sidebar_label: Updates to Token Usage in DNN Themes
+id: updates-to-token-usage-in-themes
+title: Updates to Token Usage in Themes
+sidebar_label: Updates to Token Usage in Themes
 ---
 
 # Preparing for Upcoming Changes in Token Usage in Page Themes

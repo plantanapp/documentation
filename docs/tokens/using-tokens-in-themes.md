@@ -4,7 +4,7 @@ title: Using Tokens in Themes
 sidebar_label: Using Tokens in Themes
 ---
 
-# Use Tokens in Themes
+# Using Tokens in Themes
 
 **Audience:** [`Developers`, `Administrators`, `Citizen Developer`]  
 **Skill Prerequisites:** `Tokens`, `Themes`, `Platform`
