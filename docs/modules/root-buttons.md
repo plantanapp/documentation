@@ -14,9 +14,9 @@ Root buttons in Plant an App provide robust functionality for executing actions 
 
 ## Typical Use Cases
 
-- Batch update the status of multiple entries in one action.
-- Execute a complex workflow across all listed items.
-- Export or manipulate data in bulk based on user selections.
+* Batch update the status of multiple entries in one action.
+* Execute a complex workflow across all listed items.
+* Export or manipulate data in bulk based on user selections.
 
 ## Related Resources
 Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oDihBnhg7fQmh_Y8BquB84pIUsTH1ymVH9WyHeQ?e=F9wCKj&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) that demonstrates the powerful capabilities of Buttons in Listings.
@@ -87,6 +87,16 @@ The following are available in the Actions, Per Item Actions, and Final Actions:
 - A built-in token named `[Ids:JsonArray]` also provides the IDs of ALL selected items. For example: `["74","54"]`.
 - A built-in List named **ActionGridEntry** includes all records from the listing after Search and Filters are applied.
 - A built-in List named **ActionGridEntry:Selected** includes only the selected items from **ActionGridEntry**.
+
+### Using Special Lists and Tokens
+
+* Export visible Selected Records
+  * Use a `Create Excel from List` action; for the List Name enter **ActionGridEntry:Selected**
+* Count the total number of Selected Records
+  * Use a `Create List from JSON` action; 
+      * for the JSON Model enter **[Ids:JsonArray]**
+      * for the List Name enter **MyList**
+      * the token **[MyList:Count]** now has the total number of items in the List.
 
 ## Considerations
 
