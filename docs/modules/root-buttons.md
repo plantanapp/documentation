@@ -4,6 +4,7 @@ title: Root Buttons
 sidebar_label: Root Buttons
 ---
 
+
 # Utilizing Root Buttons in Plant an App
 
 > Audience: [`Citizen Developer`](/audience.md#citizen-developers)
@@ -44,7 +45,7 @@ Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oD
 
 ## Key Features
 
-1. **Convenient Bulk Operations:** Root buttons allow for bulk actions to seamlessly manipulate or process multiple data entries.
+1. **Convenient Bulk Operations:** Root buttons allow for bulk actions to seamlessly manipulate or process multiple data entries. 
 
 2. **Robust Control with Conditions:** Use conditions and permissions to control when and how buttons are displayed and executed.
 
@@ -77,26 +78,9 @@ You have a list of applicants and wish to update their status to "Reviewed" in b
 2. The "Mark as Reviewed" button is clicked.
 3. Each selected applicant's status is updated to "Reviewed".
 
+																																					   
+
 <img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png">
-
-## Special Lists and Tokens Available
-
-The following are available in the Actions, Per Item Actions, and Final Actions:
-
-- A built-in token named `[Ids:CommaDelimited]` provides the IDs of ALL selected items. For example: `74,54`.
-- A built-in token named `[Ids:JsonArray]` also provides the IDs of ALL selected items. For example: `["74","54"]`.
-- A built-in List named **ActionGridEntry** includes all records from the listing after Search and Filters are applied.
-- A built-in List named **ActionGridEntry:Selected** includes only the selected items from **ActionGridEntry**.
-
-### Using Special Lists and Tokens
-
-* Export visible Selected Records
-  * Use a `Create Excel from List` action; for the List Name enter **ActionGridEntry:Selected**
-* Count the total number of Selected Records
-  * Use a `Create List from JSON` action; 
-      * for the JSON Model enter **[Ids:JsonArray]**
-      * for the List Name enter **MyList**
-      * the token **[MyList:Count]** now has the total number of items in the List.
 
 ## Considerations
 
@@ -107,4 +91,4 @@ Root buttons are an advanced feature, offering control and flexibility in handli
 
 **** 
 
-Revised 10/07/2025
+Revised 10/06/2025
