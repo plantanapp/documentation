@@ -14,9 +14,9 @@ Root buttons in Plant an App provide robust functionality for executing actions 
 
 ## Typical Use Cases
 
-* Batch update the status of multiple entries in one action.
-* Execute a complex workflow across all listed items.
-* Export or manipulate data in bulk based on user selections.
+- Batch update the status of multiple entries in one action.
+- Execute a complex workflow across all listed items.
+- Export or manipulate data in bulk based on user selections.
 
 ## Related Resources
 Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oDihBnhg7fQmh_Y8BquB84pIUsTH1ymVH9WyHeQ?e=F9wCKj&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) that demonstrates the powerful capabilities of Buttons in Listings.
@@ -44,7 +44,7 @@ Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oD
 
 ## Key Features
 
-1. **Convenient Bulk Operations:** Root buttons allow for bulk actions to seamlessly manipulate or process multiple data entries. 
+1. **Convenient Bulk Operations:** Root buttons allow for bulk actions to seamlessly manipulate or process multiple data entries.
 
 2. **Robust Control with Conditions:** Use conditions and permissions to control when and how buttons are displayed and executed.
 
@@ -54,7 +54,7 @@ Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oD
 
 5. **Structured Actions Execution:** Through per-item actions, actions are executed for each selected item, ensuring precision in operations.
 
-<img src="/img/Root_Button_example_configuration.png" alt="config_menu_getting_started.png"></img>
+<img src="/img/Root_Button_example_configuration.png" alt="config_menu_getting_started.png">
 
 ## Security
 
@@ -77,8 +77,16 @@ You have a list of applicants and wish to update their status to "Reviewed" in b
 2. The "Mark as Reviewed" button is clicked.
 3. Each selected applicant's status is updated to "Reviewed".
 
+<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png">
 
-<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png"></img>
+## Special Lists and Tokens Available
+
+The following are available in the Actions, Per Item Actions, and Final Actions:
+
+- A built-in token named `[Ids:CommaDelimited]` provides the IDs of ALL selected items. For example: `74,54`.
+- A built-in token named `[Ids:JsonArray]` also provides the IDs of ALL selected items. For example: `["74","54"]`.
+- A built-in List named **ActionGridEntry** includes all records from the listing after Search and Filters are applied.
+- A built-in List named **ActionGridEntry:Selected** includes only the selected items from **ActionGridEntry**.
 
 ## Considerations
 
@@ -89,4 +97,4 @@ Root buttons are an advanced feature, offering control and flexibility in handli
 
 **** 
 
-Revised 10/06/2025
+Revised 10/07/2025
