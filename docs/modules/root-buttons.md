@@ -4,7 +4,6 @@ title: Root Buttons
 sidebar_label: Root Buttons
 ---
 
-
 # Utilizing Root Buttons in Plant an App
 
 > Audience: [`Citizen Developer`](/audience.md#citizen-developers)
@@ -80,7 +79,7 @@ You have a list of applicants and wish to update their status to "Reviewed" in b
 
 																																					   
 
-<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png">
+<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png"> </img>
 
 ## Considerations
 
