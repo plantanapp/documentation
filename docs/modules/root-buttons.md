@@ -54,7 +54,7 @@ Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oD
 
 5. **Structured Actions Execution:** Through per-item actions, actions are executed for each selected item, ensuring precision in operations.
 
-<img src="/img/Root_Button_example_configuration.png" alt="config_menu_getting_started.png"></img>
+<img src="/img/Root_Button_example_configuration.png" alt="config_menu_getting_started.png" />
 
 ## Security
 
@@ -79,7 +79,7 @@ You have a list of applicants and wish to update their status to "Reviewed" in b
 
 																																					   
 
-<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png"> </img>
+<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png" />
 
 ## Considerations
 
