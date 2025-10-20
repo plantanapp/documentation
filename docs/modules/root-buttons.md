@@ -18,8 +18,20 @@ Root buttons in Plant an App provide robust functionality for executing actions 
 * Execute a complex workflow across all listed items.
 * Export or manipulate data in bulk based on user selections.
 
+## Special Lists and Tokens
+
+The following are available in the Actions, Per Item Actions, and Final Actions:
+
+* A built-in token named `[Ids:CommaDelimited]` provides the ids of ALL selected items. For example: `74,54`
+* A built-in token named `[Ids:JsonArray]` also provides the ids of ALL selected items. For example: `["74","54"]`
+* A built-in List named **ActionGridEntry** includes all records from the listing after Search and Filters are applied.
+* A built-in List named **ActionGridEntry:Selected** includes only the selected items from **ActionGridEntry**.
+
+These special lists and tokens offer more precise control for handling and processing multiple records efficiently using Plant an App's root buttons.
+
 ## Related Resources
-Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oDihBnhg7fQmh_Y8BquB84pIUsTH1ymVH9WyHeQ?e=F9wCKj&amp;nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) that demonstrates the powerful capabilities of Buttons in Listings.
+
+Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oDihBnhg7fQmh_Y8BquB84pIUsTH1ymVH9WyHeQ?e=F9wCKj&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D) that demonstrates the powerful capabilities of Buttons in Listings.
 
 ## Input Parameter Reference
 
@@ -54,7 +66,7 @@ Watch a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EUIHP_5oD
 
 5. **Structured Actions Execution:** Through per-item actions, actions are executed for each selected item, ensuring precision in operations.
 
-<img src="/img/Root_Button_example_configuration.png" alt="config_menu_getting_started.png" />
+<img src="/img/Root_Button_example_configuration.png" alt="config_menu_getting_started.png">
 
 ## Security
 
@@ -77,9 +89,7 @@ You have a list of applicants and wish to update their status to "Reviewed" in b
 2. The "Mark as Reviewed" button is clicked.
 3. Each selected applicant's status is updated to "Reviewed".
 
-																																					   
-
-<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png" />
+<img src="/img/Root_Button_example_illustration.png" alt="config_menu_getting_started.png">
 
 ## Considerations
 
@@ -88,6 +98,6 @@ You have a list of applicants and wish to update their status to "Reviewed" in b
 
 Root buttons are an advanced feature, offering control and flexibility in handling actions that affect multiple data items. They are an essential tool for efficient data operations in Plant an App.
 
-**** 
+****
 
-Revised 10/06/2025
+Revised 10/20/2025
