@@ -30,7 +30,7 @@ Watch a [video](https://www.loom.com/share/1aa6544806ea4316923e3468458d71fe) of 
    - Add a reference to `PlantAnApp.Abstractions.dll`:
      - Right-click your project in Visual Studio.
      - Select `Add -> Select Assembly Reference...`.
-     - Search for `Plantanapp.Abstractions` and click "OK".<br /><img src="/img/ver_128_migrating_actions_VS_Add_Assembly.png" alt="ver_128_migrating_actions_VS_Add_Assembly.png"></img><br /><img src="/img/ver_128_migrating_actions_abstractions.png" alt="ver_128_migrating_actions_abstractions.png"></img>
+     - Search for `Plantanapp.Abstractions` and click "OK".<br /><img src="/img/ver_128_migrating_actions_VS_Add_Assembly.png" alt="ver_128_migrating_actions_VS_Add_Assembly.PNG"></img><br /><img src="/img/ver_128_migrating_actions_abstractions.png" alt="ver_128_migrating_actions_abstractions.PNG"></img>
 
    - If your action uses `IActionResult`, also add a reference to `PlantAnApp.Actions.dll`.
 
@@ -61,18 +61,18 @@ Watch a [video](https://www.loom.com/share/1aa6544806ea4316923e3468458d71fe) of 
 To fully modernize your migrated actions, consider the following steps:
 
 1. **Switch to `IAction`**:  
-   Transition from `IActionImpl` to `IAction`.<br /><img src="/img/ver_128_migrating_actions_switch_to_IAction.png" alt="ver_128_migrating_actions_switch_to_IAction.png"></img>
+   Transition from `IActionImpl` to `IAction`.<br /><img src="/img/ver_128_migrating_actions_switch_to_IAction.PNG" alt="ver_128_migrating_actions_switch_to_IAction.png"></img>
 
 
 2. **Use Dependency Injection**:  
-   Implement dependency injection through constructor parameters instead of `IoCInjectable`.<br /><img src="/img/ver_128_migrating_actions_di_through_constructor.png" alt="ver_128_migrating_actions_di_through_constructor.png"></img>
+   Implement dependency injection through constructor parameters instead of `IoCInjectable`.<br /><img src="/img/ver_128_migrating_actions_di_through_constructor.PNG" alt="ver_128_migrating_actions_di_through_constructor.png"></img>
 
 3. **Remove Obsolete Code**:  
-   - Remove `IoCInjectable` from inheritance.<br /><img src="/img/ver_128_migrating_actions_remove_IoCInjectable.png" alt="ver_128_migrating_actions_remove_IoCInjectable.png"></img>
+   - Remove `IoCInjectable` from inheritance.<br /><img src="/img/ver_128_migrating_actions_remove_IoCInjectable.PNG" alt="ver_128_migrating_actions_remove_IoCInjectable.png"></img>
    
-   - Discard `[IoCService]` decorator.<br /><img src="/img/ver_128_migrating_actions_remove_IoCService_Decorator.png" alt="ver_128_migrating_actions_remove_IoCService_Decorator.png"></img>
+   - Discard `[IoCService]` decorator.<br /><img src="/img/ver_128_migrating_actions_remove_IoCService_Decorator.PNG" alt="ver_128_migrating_actions_remove_IoCService_Decorator.png"></img>
 
-   - Ensure you add a parameterized constructor to facilitate dependency injection.<br /><img src="/img/ver_128_migrating_actions_parameterized_constructor.png" alt="ver_128_migrating_actions_parameterized_constructor.png"></img>
+   - Ensure you add a parameterized constructor to facilitate dependency injection.<br /><img src="/img/ver_128_migrating_actions_parameterized_constructor.PNG" alt="ver_128_migrating_actions_parameterized_constructor.png"></img>
 
 
 
