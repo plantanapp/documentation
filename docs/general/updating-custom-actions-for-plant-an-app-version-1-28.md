@@ -64,13 +64,16 @@ To fully modernize your migrated actions, consider the following steps:
    Transition from `IActionImpl` to `IAction`.<br /><img src="/img/ver_128_migrating_actions_switch_to_IAction.PNG" alt="ver_128_migrating_actions_switch_to_IAction.PNG"></img>
 
 
-2. **Use Dependency Injection**:  
-   Implement dependency injection through constructor parameters instead of `IoCInjectable`.<br /><img src="/img/ver_128_migrating_actions_di_through_constructor.PNG" alt="ver_128_migrating_actions_di_through_constructor.PNG"></img>
+2. **Update Dependency Injection**:  
+   Implement dependency injection through constructor parameters instead of `IoCInjectable`.  Example of code to modernize:
+<img src="/img/ver_128_migrating_actions_di_through_constructor.PNG" alt="ver_128_migrating_actions_di_through_constructor.PNG"></img>
 
-3. **Remove Obsolete Code**:  
-   - Remove `IoCInjectable` from inheritance.<br /><img src="/img/ver_128_migrating_actions_remove_IoCInjectable.PNG" alt="ver_128_migrating_actions_remove_IoCInjectable.PNG"></img>
+- **Remove Obsolete Code**:  
+   - Remove `IoCInjectable` from inheritance.
+ <img src="/img/ver_128_migrating_actions_remove_IoCInjectable.PNG" alt="ver_128_migrating_actions_remove_IoCInjectable.PNG"></img>
    
-   - Discard `[IoCService]` decorator.<br /><img src="/img/ver_128_migrating_actions_remove_IoCService_Decorator.PNG" alt="ver_128_migrating_actions_remove_IoCService_Decorator.PNG"></img>
+   - Discard `[IoCService]` decorator.
+   <img src="/img/ver_128_migrating_actions_remove_IoCService_Decorator.PNG" alt="ver_128_migrating_actions_remove_IoCService_Decorator.PNG"></img>
 
    - Ensure you add a parameterized constructor to facilitate dependency injection.<br /><img src="/img/ver_128_migrating_actions_parameterized_constructor.PNG" alt="ver_128_migrating_actions_parameterized_constructor.PNG"></img>
 
