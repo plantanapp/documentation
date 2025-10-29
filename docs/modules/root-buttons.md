@@ -24,11 +24,10 @@ The following are available in the Actions, Per Item Actions, and Final Actions:
 
 * A built-in token named `[Ids:CommaDelimited]` provides the ids of ALL selected items. For example: `74,54`
 * A built-in token named `[Ids:JsonArray]` also provides the ids of ALL selected items. For example: `["74","54"]`
-* A built-in List named **ActionGridEntry** includes records from the listing subject to Settings
-    * `Settings > Sync with URL` 
-        * If selected, the Search and Filters are applied to the list
-        * Otherwise, all records are included
+* A built-in List named **ActionGridEntry** includes all records from the listing after Search and Filters are applied.
 * A built-in List named **ActionGridEntry:Selected** includes only the selected items from **ActionGridEntry**.
+
+> Known Bug: If  `Settings > Sync with URL` is not selected, the **ActionGridEntry** contains all records from the listing (Search and Filters are not applied).  Your application should not rely on this behavior, as it will be corrected in future versions.
 
 These special lists and tokens offer more precise control for handling and processing multiple records efficiently using Plant an App's root buttons.
 
