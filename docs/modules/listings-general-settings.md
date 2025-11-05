@@ -4,135 +4,131 @@ title: Listings General Settings
 sidebar_label: General Settings
 ---
 
-Those settings allow yout to configure the display appearance of the data Grid. The "Settings" tab is accessible through the Grid Editor (`Listing`). Multiple settings are available and are listed below.
+# Listing Control Settings in Plant an App
 
-### Show Conditionally
-Define a condition to be evaluated and for the Grid to be displayed. This is a server side expression (C# and Tokens - for example: `[HasRole:Administrator|true]`); when "false", the Grid will be hidden.
+> Audience: [`Citizen Developer`](/audience.md#citizen-developers)
+>
+> Skill Prerequisites: `Tokens`
 
-### Display Title
-When checked, the module title is displayed at the beginning of the top button bar.
+Explore the variety of settings available to configure the display appearance of the data Grid in Plant an App. Access the "Settings" tab through the Grid Editor (`Listing`) to discover the multitude of settings that can be utilized to personalize your data presentation. This guide will provide a detailed overview of each setting, describing its impact on the grid's appearance and functionality.
 
-### Display Mode
-Choose whether this grid appears initially on the page or if it should be opened programmatically. Possible values:
-   - `Initially Visible` - default, displays the grid as is.
-   - `In Popup` - opens the Grid in a popup page; has [specific parameters](#popup-specific-parameters). You can:
+For an insightful demonstration of these features, explore [this detailed video on YouTube](https://youtu.be/6-M4horNyy8?si=3Uj2mPVZN16A4crd).
 
-     - Open the popup by calling the API (`dnnsf.api.actionGrid.showGridPopup(420`)) or by using <a href="https://learn.plantanapp.com/docs/current/category/actions" target="_blank">**Actions**</a>;
-     - Close the popup by calling the API (`dnnsf.api.actionGrid.hideGridPopup(420)`)
-   - `Manual` - grid will be shown after manual action; you can:
+### `Show Conditionally`
+Define a condition using a server-side expression (C# and Tokens) to determine if the Grid should be displayed. For example, `[HasRole:Administrator|true]` shows the grid only for administrators. If the condition evaluates to "false," the grid will be hidden.
 
-     - Open the popup by calling the API (`dnnsf.api.actionGrid.showGridPopup(420`));
-     - Close the popup by calling the API (`dnnsf.api.actionGrid.hideGridPopup(420)`)
+### `Display Title`
+Enable this option to display the module title at the beginning of the top button bar. Unchecking it hides the title, reducing screen clutter.
 
-#### Popup-specific parameters
-   - *Popup Width* - define the popup window width (numeric field)
-   - *Width Coordinate* - define the popup window width unit ([px](https://www.w3.org/Style/Examples/007/units.en.html#units), percentage, or [vw](https://www.w3.org/Style/Examples/007/units.en.html#future))
-   - *Popup Name* - This will be displayed as modal title. Supports Tokens.
+### `Display Mode`
+Choose one of the following display modes for the grid:
+- **Initially Visible**: The grid is displayed as is by default.
+- **In Popup**: The grid appears in a popup page. Open the popup using the API (`dnnsf.api.actionGrid.showGridPopup(moduleId)`) or through Plant an App actions; close it with `dnnsf.api.actionGrid.hideGridPopup(moduleId)`.
+- **Manual**: The grid will appear only after a manual action. Use JavaScript API calls to control its visibility.
 
-### Enable Row Tooltip
-If checked, allows you to configure a tooltip row that will be displayed with your Grid.
-- Specific parameters:
+**Popup-specific parameters**:
+- **Popup Width**: Define the width of the popup (in numeric units).
+- **Width Coordinate**: Choose the unit for width: px, %, or vw.
+- **Popup Name**: Displayed as the modal title. Supports Tokens.
 
-| Parameter | Description and Notes | Supports Tokens/HTML |
-|---|---|---|
-| *Tooltip Title* | Define tooltip title. | &#x2705; |
-| *Tooltip Content* | Editor field. Define the contents of your tooltip.  | &#x2705; |
-| *Tooltip Placement* | Possible values: `Top`, `Left`, `Right`, `Bottom`. The placement is only applied when the page layout allows it. Otherwise, the tooltip is displays in the direction that is most visible to the user. | &#10060; |
-| *Tooltip Height(px)* | In [px](https://www.w3.org/Style/Examples/007/units.en.html#units). Accepts only integer values between 0-500. For default adjusting set it to: `0`. | &#10060; |
-| *Tooltip Width(px)* | In [px](https://www.w3.org/Style/Examples/007/units.en.html#units). Accepts only integer values between 0-500. For default adjusting set it to: `0`. | &#10060; |
-| *Tooltip Data Trigger* | Action the triggers the tooltip; mouse `Click` or mouse `Hover`. | &#10060; |
-| *Icon* | Choose the tooltip icon. Uses [Font Awesome version 6.2 classes](https://fontawesome.com/v6/search?o=r&m=free) to label the button with icons (`fa-*shortcode*`). You can use 4 different styles - Solid (`fas`), Regular (`far`), Light (`fal`) and Brands (`fab`). Example:`(fas fa-*shortcode*)`. | &#10060; |
-| *Icon Position* | Tooltip icon position in regards to the cusrosor: `Right` or `Left`. | &#10060; |
-| *Visible in edit mode* | If checked, enables the option so that the tooltips be displayed in the grid, in inline edit mode. | &#10060; |
+### `Enable Row Tooltip`
+Activate this setting to configure tooltips for grid rows. You can define various parameters such as title, content, and placement.
 
-### Message for empty grid
-Define the message to be displayed when the returned data grid is empty. Supports Tokens & HTML.
+- **Tooltip Title**: Define the title for the tooltip. Supports Tokens.
+- **Tooltip Content**: Specify the content within the tooltip. Supports Tokens.
+- **Tooltip Placement**: Set the direction of the tooltip (Top, Left, Right, Bottom), with automatic adjustments for visibility.
+- **Tooltip Height (px)** and **Tooltip Width (px)**: Set dimensions in pixels—adjust for defaults using '0'.
+- **Tooltip Data Trigger**: Choose the event that triggers the tooltip; options include `Click` or `Hover`.
+- **Icon**: Choose an icon using [Font Awesome classes](https://fontawesome.com/v6/search?o=r&m=free).
+- **Icon Position**: Specify the icon's position relative to the cursor: `Right` or `Left`.
+- **Visible in edit mode**: Enable to display tooltips in the grid while in edit mode.
 
-### Hide empty grid
-If this is enabled, Listing will be invisible if there is no data to be shown.
+### `Message for Empty Grid`
+Customize the message displayed when the grid returns no data. This supports both Tokens and HTML.
 
-### Enable Search
-Check to enable the Search field (default). If search is disabled, the search box is hidden, even if there are fields marked as searchable.
+### `Hide Empty Grid`
+Enable this to make the grid invisible if there is no data to display, conserving space.
 
-#### Show data on search
-Check to only display data when the user has provided the search terms.
+### `Enable Search`
+Activate this to show the Search field. If disabled, the search box is hidden, even if there are fields marked as searchable.
 
-#### Search Placeholder
-The text is displayed in the search input field before the user enters a value. The "`search.placeholder`" parameter value from the `.resx` file will be used if this field is empty. This field supports Tokens.
+### `Exact Search`
+When enabled, the search incorporates only exact character matches (case-insensitive) for precise filtering.
 
-### Search Delay
-Define the delay after the Grid starts the search request, in milliseconds. Accepts values between `0` and `3000`.
+### `Show Data on Search`
+Enable this to only display data after the user provides search terms, optimizing resource usage for large datasets.
 
-### Enable Filters
-If checked (default), will display the filter buttons and dropdowns. Note that if disabled, the filters are hidden, even if there are fields marked as filterable.
+### `Search Placeholder`
+Define the placeholder text before user input. Defaults to the "search.placeholder" parameter. Supports Tokens.
 
-### Sync with URL
-Enable this option to sync URL with current sort, pagination and filters. Useful for navigating back using browser button, bookmarking, sharing and integrating with other modules.
+### `Search Delay`
+Set the delay in milliseconds (0-3000) before initiating a search request, influencing performance—lower values search faster but consume more resources.
 
-#### Query String Prefix
-If there are multiple listing modules on the page, the prefix helps differentiate which parameters reflect to this module. Otherwise, the 2 modules will use the same parameters, which could result in unwanted behavior. The url will change from: `<yourapp>.com/?page=1`, to: `<yourapp>.com/<prefix>page=1`
+### `Enable Filters`
+Enable to display filter buttons and dropdowns. If disabled, filters are hidden regardless of filterable fields.
 
-### Lock into Edit Mode
-Check this box in order for the Grid to always display in inline edit mode. Note that item itself and the Grid button will not be available when this option is enabled.
+### `Sync with URL`
+Enable to synchronize the URL with current sorting, pagination, and filtering states, useful for navigation, bookmarking, and sharing.
 
-### Include FontAwesome
-Allow the use of [Font Awesome version 6.2 classes](https://fontawesome.com/v6/search?o=r&m=free) icons. Enabled by default; uncheck to prevent Font Awesome from being loaded on the page.
+### `Query String Prefix`
+Differentiate between multiple listing modules on a page, ensuring parameter separation in the URL.
 
-### Debug Mode
-Check this box to log detailed debug information in the `<PortalHome>/Logs/ActionGrid` folder.
+### `Lock into Edit Mode`
+Enable this to keep the grid in inline edit mode continuously. Note that item and grid buttons are unavailable when this is active.
 
-### Root CSS Classes
-Allows you to add custom CSS classes (attributes used to define a group of HTML elements in order to apply unique styling and formatting to those elements with CSS) to further refine the form display. You can load multiple such classes, separating them with a space. This field also supports Tokens.
+### `Include FontAwesome`
+Checked by default to use [Font Awesome](https://fontawesome.com/v6/search?o=r&m=free) icons. Uncheck to prevent it from loading on the page.
 
-### Refresh when a modal/popup is closed
-Check this option box to refresh this Listing when a [Boostrap modal](https://getbootstrap.com/docs/5.2/components/modal/) is closed.
+### `Debug Mode`
+Enable this to log extensive debug information into the `PortalHome/Logs/ActionGrid` folder for troubleshooting.
 
-### Show loading animation
-Uncheck to hide the CSS loading animation of the Listing; enabled by default.
+### `Root CSS Classes`
+Input custom CSS classes to apply bespoke styling across forms. They are separated by spaces and support Tokens.
+
+### `Refresh When a Modal/Popup is Closed`
+Enable this to refresh the Listing when a [Bootstrap modal](https://getbootstrap.com/docs/5.2/components/modal/) is shut.
+
+### `Show Loading Animation`
+Unchecked to disable the CSS loading animation of the Listing; enabled by default.
 
 ## Advanced UI Settings
-These are advanced UI configuration settings that allow you to further refine your data Grid display.
+These configurations refine your grid's UI presentation further.
 
 ### Additional HTML Header
-HTML editor that allows you to create a specific, custom header for your data Grid. Supports Tokens.
+Use the HTML editor to fashion a unique header for your grid.
 
 ### On Init Javascript
-Javascript editor in which you can define a script to be executed on data Init (see the way data is loaded in Plant an App <a href="https://learn.plantanapp.com/docs/current/modules/forms-overview#stages-of-data-load-and-execution" target="_blank">here</a>). Gives access to the `settings` JS variable. Supports Tokens.
+Utilize JavaScript for actions during data initialization, with access to the `settings` variable. Supports Tokens.
 
 ### On DataSource Load/Refresh Javascript
-Javascript editor in which you can define a script to be executed on data Load or Refresh (see the way data is loaded in Plant an App <a href="https://learn.plantanapp.com/docs/current/modules/forms-overview#stages-of-data-load-and-execution" target="_blank">here</a>). Gives access to the `settings` and `resultSet` JS variable. Supports Tokens.
+Inject JavaScript for execution on data load or refresh, utilizing the `settings` and `resultSet` variables.
 
 ### Embed
-Checking this box will generate an embeddable code snippet that will allow you to integrate your data Grid on external pages. Note that this has limitations; reade more about it <a href="https://learn.plantanapp.com/docs/modules/important-notes/embed-form-or-grid/" target="_blank">here</a>.
-
-:::caution
-
-The "Popup" functionality will not work in embedded Grids (i.e., for "Open a Form in Popup", "Open fileManager in Popup", etc.).
-
-:::
+Enable to generate embeddable scripts for data grid integration on external pages. Note the incapability to operate "Popup" functions within embedded grids.
 
 ## Tabs Integration
-Settings linked to the data Grid integration in the Plant an App **Tabs** module.
+Use these settings when integrating the data grid within the Plant an App **Tabs** module.
 
 ### Load When Tab Is Activated
-Check this box to initialize when the Tab is active.
+Initialize when its associated tab is activated.
 
 ### Refresh Grid When Tab Is Activated
-Check this box to refresh the data Grid when the Tab is active.
+Refresh the grid each time its associated tab is activated.
 
-### Trigger loading animation
-Check this box to trigger the Tabs loading animation from Listing.
+### Trigger Loading Animation
+Enable this to prompt loading animations from the Listing.
 
 ## Javascript APIs
-API call reference that allows you to interact with the data Grid from inside the web browser. They are loaded through the `actiongrid.js` file.
+Interact with the data Grid using API calls directly through the web browser:
 
-- **`dnnsf.api.actionGrid.refresh(moduleId, delay)`** - Forces a data refresh from back-end; the delay is set in milliseconds.
-- **`dnnsf.api.actionGrid.showGridOrPopup(moduleId, modalSettings, clearGridQueryString)`** - Shows Grid set: "Manual" or "In Popup".
-- **`dnnsf.api.actionGrid.showGrid(moduleId, clearGridQueryString)`** - Shows Grid set to: "Manual"; "`clearGridQueryString`" is boolean.
--** **`dnnsf.api.actionGrid.showGridPopup(moduleId, modalSettings, clearGridQueryString)`**** - Display: "In Popup"; `modalSettings` is an object consisting of modal settings from Bootstrap 3; `clearGridQueryString` is boolean.
-- **`dnnsf.api.actionGrid.hideGridOrPopup(moduleId)`** - Hides grid display, "Manual" or "In Popup".
-- **`dnnsf.api.actionGrid.hideGrid(moduleId)`** - Hides grid display: "Manual"
-- **`dnnsf.api.actionGrid.hideGridPopup(moduleId)`** - Hides grid display: "In Popup"
-- **`dnnsf.api.actionGrid.clearGridQueryString(moduleId)`** - This method will look for parameters in the URL that contains the predefined `moduleId`, deletes them and replaces the URL.
+- **`dnnsf.api.actionGrid.refresh(moduleId, delay)`** - Refresh data post delay (milliseconds).
+- **`dnnsf.api.actionGrid.showGridOrPopup(moduleId, modalSettings, clearGridQueryString)`** - Control grid visibility: Manual/In Popup.
+- **`dnnsf.api.actionGrid.showGrid(moduleId, clearGridQueryString)`** - Show Manual mode grid.
+- **`dnnsf.api.actionGrid.showGridPopup(moduleId, modalSettings, clearGridQueryString)`** - Display Popups with specific settings.
+- **`dnnsf.api.actionGrid.hideGridOrPopup(moduleId)`** - Hide Manual/In Popup grids.
+- **`dnnsf.api.actionGrid.hideGrid(moduleId)`** - Conceal Manual grids.
+- **`dnnsf.api.actionGrid.hideGridPopup(moduleId)`** - Conceal Popup grids.
+- **`dnnsf.api.actionGrid.clearGridQueryString(moduleId)`** - Erase and replace URL parameters containing the module ID.
 
-<br /><br /><a href="#top">Back to the top &#10548;</a>
+
+Revised 11/03/2025
