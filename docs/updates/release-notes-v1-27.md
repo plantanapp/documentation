@@ -18,8 +18,7 @@ Overview:
 
 
 
-> Revised May 27, 2025
- 
+
 
 ## Breaking Change
 
@@ -442,14 +441,19 @@ The following token will return a correct value as expected:
 >[DateTime:Convert(Value="2020-02-05T06:30:00+00:00", TimeZone="Central Standard Time")]
 >2/5/2020 12:30:00 AM -06:00
 
-This will be addressed in a hotfix to version 1.27.
+This was addressed in a hotfix to Token Builder at version 1.27.61.
 
-### Context Tokens can be created with spaces in the name (Issue 10040)
+### Obsolete behavior: Context Tokens can be created with spaces in the name (Issue 10040)
 
-At Plant an App version 1.27.401 and earlier, context tokens could be created with spaces and other special characters via the Create/Update Tokens action, as well as any action that creates a token:
+At Plant an App version 1.27 and earlier, context tokens could be created with spaces and other special characters via the Create/Update Tokens action, as well as any action that creates a token:
 
 >[Current Invoice]
 
-Starting in version 1.28, tokens must start with a letter and contain only alphanumerical characters or underscore, which are the same naming rules as for the creation of Custom Tokens.
+This behavior should be considered **Obsolete**.  In future versions, tokens will be required to start with a letter and contain only alphanumerical characters or underscore, which are the same naming rules as for the creation of Custom Tokens.
 
 >[Current_Invoice]
+
+As a best practice, you should begin using the new naming rules now and update any existing tokens that contain spaces or special characters.
+
+
+Revised 11/18/2025
