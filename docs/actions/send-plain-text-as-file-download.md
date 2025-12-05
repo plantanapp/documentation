@@ -12,7 +12,7 @@ Takes the specified plain text contents and passes them to the browser for user 
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| File name | Optionally provide name for the file. Leave blank to use current page name. Supports Tokens | No | None |
+| File name | Optionally provide name for the file. Leave blank to use current page name. If an extension is provided in the filename, the File Type dropdown below will be ignored. Supports Tokens | No | None |
 | File Type | This is the content type of the file. Supports Tokens | No | None |
 | Headers | Additional HTTP headers to pass | No | None |
 | Force download | Check if you want the browser to automatically start the file download. | No | None |

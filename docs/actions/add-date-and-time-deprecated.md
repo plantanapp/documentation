@@ -14,6 +14,7 @@ This action will add a slider to the specified dynamic container.
 | Field Id | Required. Give this field an id so you can reference it later. Supports Tokens. | No | None |
 | Field Title | Give this field an title/name which is a label. Supports Tokens. | No | None |
 | Field Description | Give this field a description. Supports Tokens. | No | None |
+| Enable Conditionally | This boolean expression is used to determine if this field will be enabled (accepting input) in the form. If specified, this field overrides the Enabled flag below. It supports C# syntax. A common example [SomeField] == "Some Value" or [SomeField].IndexOf("something") == 0.. This field supports Tokens. | No | None |
 | Initial Value | Give this field an initial value. Supports Tokens. | No | None |
 | DateTime Picker Type | Choose a picker type. If dynamic, input as expression, one of following values:"MM/dd/yyyy" for Date,"HH:mm" for Time,"MM/dd/yyyy HH:mm" for both Date and Time.Supports Tokens. | No | MM/dd/yyyy HH:mm |
 | DateTime Format | Optionally, provide a custom date/time format, the default format is MM/dd/yyyy HH:mm. Leave empty to take the server locale default format. Supports Tokens. | No | None |

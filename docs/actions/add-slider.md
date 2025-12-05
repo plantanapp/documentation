@@ -13,6 +13,7 @@ This action will add a slider to the specified dynamic container.
 | Container Id | This is the Container Id to place this textbox into. Eg. Add a Dynamic Field Container having id DynamicFieldContainer. "DynamicFieldContainer" is the ID of the field. Supports Tokens. | No | None |
 | Field Id | Required. Give this field an id so you can reference it later. Supports Tokens. | No | None |
 | Field Title | Give this field an title/name which is a label. Supports Tokens. | No | None |
+| Enable Conditionally | This boolean expression is used to determine if this field will be enabled (accepting input) in the form. If specified, this field overrides the Enabled flag below. It supports C# syntax. A common example [SomeField] == "Some Value" or [SomeField].IndexOf("something") == 0.. This field supports Tokens. | No | None |
 | Field Description | Give this field a description. Supports Tokens. | No | None |
 | Initial Value | Give this field an initial value. Supports Tokens. | No | None |
 | Start Text | Give this field a Start Text. Supports Tokens. | No | None |

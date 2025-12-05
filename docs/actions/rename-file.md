@@ -10,6 +10,6 @@ Renames a file
 ## Parameter Reference
 | Parameter | Description | Supports Tokens | Default |
 | -- | -- | -- | -- |
-| File | The file to be renamed.You must provide the entire path relative to 'Portals\&lt;PortalID&gt;' and the file extension. The Field accepts MyTokens. | No | None |
-| Rename to | The new file name | No | None |
+| File | The file to be renamed. It can be: The file ID (Example: 77), the file path (Example: Images/Cars/Ford.jpg), the file path from current portal (Example: Portals/0/Images/Cars/Ford.jpg), a LinkClick expression, or the full physical path. Supports Tokens. | No | None |
+| Rename to | The new file name. Should not contain a path. File extension will be applied automatically. (Example: Invoice) Supports Tokens. | No | None |
 | Ignore Errors |  | No | None |

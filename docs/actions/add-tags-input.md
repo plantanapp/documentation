@@ -14,6 +14,7 @@ This action will add a tags input field to the specified dynamic container.
 | Field Id | Required. Give this field an id so you can reference it later. Supports Tokens. | No | None |
 | Field Description | Give this field a description. Supports Tokens. | No | None |
 | Field Title | Give this field an title/name which is a label. Supports Tokens. | No | None |
+| Enable Conditionally | This boolean expression is used to determine if this field will be enabled (accepting input) in the form. If specified, this field overrides the Enabled flag below. It supports C# syntax. A common example [SomeField] == "Some Value" or [SomeField].IndexOf("something") == 0.. This field supports Tokens. | No | None |
 | Data Source | Required. Choose from existing data sources to bring items from | No | None |
 | Tokenize Datasource Parameters | Tokenize the parameters of the datasource when generating the field. (Otherwise the tokenization happens when the initialization process ends.) If you are generating fields using tokens from an 'Execute Actions for each List Entry' the token replacement will happen after all initialization actions so tokens used in datasource parameters (eg. SQL Query with a query containing tokens from current context) might not be replaced correctly. | No | True |
 | Initial Tags | Comma delimited list with tags to load into the control initially. Supports Tokens so you can pull data from various sources such as user profile. | No | None |

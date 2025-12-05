@@ -14,6 +14,7 @@ This action will add a Dropdown with Checkboxes to the specified dynamic contain
 | Field Id | Required. Give this field an id so you can reference it later. Supports Tokens. | No | None |
 | Field Title | Give this field an title/name which is a label. Supports Tokens. | No | None |
 | Field Description | Give this field a description. Supports Tokens. | No | None |
+| Enable Conditionally | This boolean expression is used to determine if this field will be enabled (accepting input) in the form. If specified, this field overrides the Enabled flag below. It supports C# syntax. A common example [SomeField] == "Some Value" or [SomeField].IndexOf("something") == 0.. This field supports Tokens. | No | None |
 | Initial Value | Give this field an initial value. Supports Tokens. | No | None |
 | Link To | Link this to another multi-select field that when changed will cause this control to update with different items. For example, imagine Category and Subcategory selection. When this option is used, prefix each item below with the name of the parent category like this: "Value Of Parent Item/This Item"Also, you can input more field IDs separated by comma in order to link this to multiple multi-select fields.Supports Tokens. | No | None |
 | Data Source | Required. Choose from existing data sources to bring items from | No | None |

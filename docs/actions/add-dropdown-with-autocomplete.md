@@ -14,6 +14,7 @@ This action will add a Dropdown with Autocomplete to the specified dynamic conta
 | Field Id | Required. Give this field an id so you can reference it later. Supports Tokens. | No | None |
 | Field Title | Give this field an title/name which is a label. Supports Tokens. | No | None |
 | Field Description | Give this field a description. Supports Tokens. | No | None |
+| Enable Conditionally | This boolean expression is used to determine if this field will be enabled (accepting input) in the form. If specified, this field overrides the Enabled flag below. It supports C# syntax. A common example [SomeField] == "Some Value" or [SomeField].IndexOf("something") == 0.. This field supports Tokens. | No | None |
 | Initial Value | Give this field an initial value. Supports Tokens. | No | None |
 | Message for no results | Supports HTML and Supports Tokens. | No | No results found |
 | Data Source | Required. Choose from existing data sources to bring items from | No | None |
