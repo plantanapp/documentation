@@ -104,6 +104,11 @@ The support for 'else' syntax in tokens, such as [My:Token|format|elsepart], has
 The option to enable inline scripts for evaluating razor tokens has been removed. This change is implemented to encourage the use of more robust Razor actions or Tokens instead of having scattered razor snippets.
 ### Removal of Random Token Source
 The random token source, previously utilizing the syntax [Random:Value1,Value2,ValueN], has been removed. This decision was made to ensure consistency and robustness within the platform.
+### Recursive token replacement in Parameters needs to be explicit
+Tokens used as parameters, default values, or within formatters will now expand only once, rather than recursively expanding nested tokens. This change makes token behavior more consistent and easier to understand.
+
+If your application relies on advanced scenarios where tokens return other tokens in these contexts, please review and test your configurations to ensure everything works as expected after the update. Most users will not be affected, but testing is recommended if you use this feature.
+
 ## Bug Fix
 ### Resolved Issue with Creating Tokens with Spaces in Names
 Previously, creating tokens with spaces in their names through the Tokens menu was not allowed, whereas contextual tokens did allow spaces. This update resolves inconsistencies across different modules when creating tokens with spaces in their name.
