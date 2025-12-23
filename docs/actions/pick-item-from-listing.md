@@ -30,6 +30,10 @@ The `Pick Item from Listing` action allows you to open a listing in a popup to s
 
 This action does not have direct output parameters. Instead, selected listing values are directly mapped to specified form fields.
 
+## `Configuring the Listing Module`
+
+The Listing Module must be configured with the Data Table view enabled and displayed by default (it must be the top-most enabled view).
+
 ## `Learn More`
 See this at work on the [Campfire Website](https://campfire.plantanapp.com/Contributions/Dale-Warner/2025/08/Pick-Item-from-Listing).  See a [video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/EWwYBbQIpwJArBtPJPHsCNMBTfJD3U30nEZIgKBwAD2dzw?e=YhXWhs&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifSwicGxheWJhY2tPcHRpb25zIjp7InN0YXJ0VGltZUluU2Vjb25kcyI6NDAuMzF9fQ%3D%3D) showing how to use this action.
 
@@ -57,4 +61,4 @@ Assume you want a seamless way to filter and search through contributions. The l
 
 By facilitating easy selection from a listing, this method ensures data is complete and user-friendly.
 
-Revised 08/08/2025
+Revised 12/11/2025
