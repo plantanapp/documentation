@@ -18,7 +18,6 @@ This action sends an email to one or more recipients, including attachments if n
 
 - Send email notifications to individuals or groups
 - Send confirmation or alert emails after form submissions
-- Schedule newsletters or campaigns via [BeeFree](https://beefree.io/) template integration
 - Automate mass or transactional emails using modern SMTP connectors (OAuth2)
 
 ## `Don't use it to`
