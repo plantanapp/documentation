@@ -6,6 +6,9 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 
 # Migrate/Upgrade document
 
+## Important Note
+> The procedure below is out-of-date.  It may be useful to install Plant an App on very old systems that have not been updated.  However, the Plant an App Installer was developed after this procedure was written, which simplifies bringing older sites up to date quickly.  Please see the [Downloads](http://console.plantanapp.com/downloads) page or contact support for more information.
+
 ### `General Advice`
 
 * You may find additional helpful information on our [DNN Compatibility](/important-notes/compatibility.md) page.
@@ -74,3 +77,5 @@ sidebar_label: Upgrading - DNNSharp tools to Plant an App
 * This issue often arises when a module has been removed via the DNN extensions page, but its associated files were not deleted (typically because the 'remove files' box was not ticked). 
 
 * Identifying which DLL is causing the havoc can be complex. However, you may extract some clues from the error message. If you come across DLLs such as avt.xxxx.dll or dnnsharp.xxxx.dll we recommend scrutinizing their version number to confirm they are in harmony with the rest.
+
+Revised 12/30/2025

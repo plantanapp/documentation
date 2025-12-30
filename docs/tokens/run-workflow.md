@@ -55,8 +55,6 @@ From version 1.28 onward, Plant an App allows you to export and import workflow 
 
 To explore this Workflow Tokens further, you can watch the video explaining the process: [Workflow Tokens Video](https://plantanapp-my.sharepoint.com/:v:/p/dale_warner/IQB2FTSwKgTaTJ_0ktieBr9kAYJRW6a4fCPpdxqtPr5WwE0?e=jtpgay&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D)
 
-### `Examples`
-
 
 
 ### `Security Considerations`
