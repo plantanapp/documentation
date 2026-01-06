@@ -12,6 +12,9 @@ The support option in the Plant an App platform is designed to assist users in a
 
 ## `Support Menu Features`
 
+<img src="/img/managing_support.png" alt="managing_support.png" ></img>
+
+
 The support option on the main menu allows users to:
 
 1. **Create New Tickets**: When you encounter an issue or have a question, you can create a new support ticket. This initiates a request with the support center staff who will assist you in resolving your queries. The support team is committed to responding within the Service Level Agreement (SLA) response time targets. For more details, refer to the "About Service Levels" topic on the support page.

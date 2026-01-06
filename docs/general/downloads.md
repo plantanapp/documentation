@@ -24,6 +24,9 @@ To access the Downloads menu, the user must be assigned the **DNN Sharp User** r
 
 ## `Using the Downloads Menu`
 
+<img src="/img/managing_downloads.png" alt="managing_downloads.png" ></img>
+
+
 Once access is granted, the Downloads menu provides options to:
 
 - **Download the Installer**: This allows users to install Plant an App on their desired platform. 

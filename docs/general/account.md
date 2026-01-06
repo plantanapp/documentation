@@ -18,6 +18,8 @@ Upon logging into your account on Plant an App, you will find the Account option
 
 ### `Subscriptions Tab`
 
+<img src="/img/managing_account_subscriptions.png" alt="managing_account_subscriptions.png" ></img>
+
 The Subscriptions tab offers a detailed view and management capabilities for your active and past subscriptions. Key features include:
 
 1. **Purchase Button**: Allows you to initiate the purchase of additional subscriptions. Clicking this will open a form to contact sales, who will then reach out to discuss your subscription needs.
@@ -41,6 +43,9 @@ The Subscriptions tab offers a detailed view and management capabilities for you
     - If a subscription is associated with apps, the **Apps** button redirects you to the My Apps page, showcasing only the apps tied to that specific subscription.
 
 ### `Members Tab`
+
+<img src="/img/managing_account_members.png" alt="managing_account_members.png" ></img>
+
 
 The Members tab provides a snapshot of all users linked to your account and their respective roles, categorized as owner, admin, or user.
 

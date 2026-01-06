@@ -12,7 +12,10 @@ sidebar_label: My Apps
 
 The "My Apps" section in Plant an App provides a overview and management interface for applications associated with your account. This feature is accessible from the main account menu under the "My Apps" option. Upon selection, you'll be greeted with a tabbed interface designed to streamline app management.
 
-### `1. Tabbed Interface Overview`
+### `1. My Apps Overview`
+
+<img src="/img/managing_myliveapps.png" alt="managing_myliveapps.png" ></img>
+
 
 - **My Live Apps**: This is the default tab where all currently active applications are displayed. Each entry shows the app’s name, the associated URLs, and whether the app is set for production or other environments like development. Subscribers will also find information about the app's subscription plan, next renewal date, and creator details.
 
