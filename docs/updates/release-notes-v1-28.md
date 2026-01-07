@@ -4,6 +4,9 @@ title: Release Notes v1.28
 sidebar_label: Release Notes v1.28
 ---
 
+# `Beta - Release Candidate 3`
+>Version 1.28 is currently a Beta Release Candidate (RC) and is not approved for production use. Release notes for beta versions are published publicly to inform beta testers and preview upcoming features. The authoritative release status for installation and production readiness is always indicated in the Plant an App Console and on our [Compatibility](https://learn.plantanapp.com/docs/current/important-notes/compatibility) page.
+
 Plant an App 1.28 is one of our most significant releases yet, delivering major improvements to platform reliability, performance, and long-term scalability. This version introduces several foundational upgrades—including a fully unified Action Engine, a rebuilt Token Engine, and an all-new upgrade experience—designed to make every part of the platform more consistent, predictable, and easier to work with. These enhancements not only streamline daily development but also prepare your applications for the future of Plant an App.
 
 This release also marks the debut of Forms 2.0 as a feature preview—a completely reimagined, modernized form engine built with security, flexibility. Alongside this, version 1.28 includes broad UI refinements, new developer capabilities, and a large collection of stability improvements and bug fixes. The platform is now fully compatible with DNN 10, and this release delivers several critical security fixes, making it an essential upgrade for any production environment.
