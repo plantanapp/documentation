@@ -90,6 +90,19 @@ Plant an App Version 1.28 has been tested and is fully compatible with DNN 10.
 We've improved the logging system for the Form module to provide clearer information when actions fail to execute. The logs now include details such as the action index, ID, and name, which will make troubleshooting much easier.
 ### Improved Input Handling for Large Text Properties in Entity Actions
 We've updated the way large text properties are handled in entity actions within the Entity Builder. Instead of generating code editor inputs, which might have been inconsistent with other parts of the product, these properties now render as text area inputs.
+
+### Enhanced Token Import/Export with GUIDs for Run Workflow
+
+The export and import mechanism for Run Workflow tokens has been improved by switching from workflow IDs to GUIDs. This ensures workflows are correctly mapped across environments, preventing issues caused by ID mismatches when moving apps between instances.
+
+### Redirection Actions Hidden in OpenID Connect
+
+All redirection-related actions have been hidden when using OpenID Connect authentication. Due to limited control over redirect behavior in the current implementation, these actions could lead to unpredictable results. For custom redirection logic, use session or cookie variables and handle redirects after login.
+
+### Removed Error Logging in APIs That Already Handle Errors
+
+When an API endpoint includes custom logic in the On Error section, the platform will no longer automatically log the same error. This change reduces duplicate entries and keeps the Admin Log cleaner and more relevant.
+
 ## Breaking Change
 ### For Pro-Code Developers: Updated IAction Interface
 As part of the Action Engine unification in Plant an App 1.28, the underlying interfaces for building custom actions have been modernized. Custom actions must now use the updated IAction interface, which has been moved to the new PlantAnApp.Actions.dll and now supports built-in dependency injection for cleaner, more maintainable implementations.
@@ -112,7 +125,30 @@ Tokens used as parameters, default values, or within formatters will now expand 
 
 If your application relies on advanced scenarios where tokens return other tokens in these contexts, please review and test your configurations to ensure everything works as expected after the update. Most users will not be affected, but testing is recommended if you use this feature.
 
+### Razor Token Cache Key Update
+
+The cache key format used for Razor token results has changed in version 1.28. Custom Razor scripts that read directly from the runtime cache must be updated to use the new key prefix:
+paa:tokens:results.*
+Scripts relying on the previous avt.MyTokens.Token.* format should be reviewed to ensure compatibility.
+
+### BeeFree Email Editor Integration Removed
+
+The BeeFree email editor integration has been fully deprecated and removed from the platform. Customers using BeeFree must migrate to the Markdown editor or another supported email editing option before or after upgrading to 1.28.
+
+### Browse Data from Listing Action Replaced
+
+The obsolete Browse Data from Listing action has been removed and automatically replaced with Pick Item from Listing. The new action currently requires the Data Table view to be enabled. Listings configured exclusively with Card, Calendar, or other views may fail to load until the Data Table view is enabled.
+
+### Removal of “Login if User Already Exists” Registration Option
+
+The option to automatically log in a user if they already exist during registration has been removed. This aligns registration behavior with standard authentication practices and avoids confusion caused by failed login attempts during registration.
+
+### Theme Token Integration Changes
+
+Legacy theme integrations using MyTokens skin objects have been removed. Themes must now use the supported PaaTokens:Apply control to render tokens correctly. Themes not updated before or during the 1.28 upgrade may fail to render and throw errors.
+
 ## Bug Fix
+
 ### Resolved Issue with Creating Tokens with Spaces in Names
 Previously, creating tokens with spaces in their names through the Tokens menu was not allowed, whereas contextual tokens did allow spaces. This update resolves inconsistencies across different modules when creating tokens with spaces in their name.
 ### Fixed Automation Job Deletion Error with Active Triggers
@@ -135,6 +171,26 @@ Resolved an issue where the button in a form would remain in a 'Please wait' sta
 We've fixed an issue where tokens specified in the Default Value parameter in the Token Info section weren't being expanded as expected. Now, if a token returns no result, any tokens defined within the Default Value field will be fully evaluated and expanded.
 ### Fix for Hidden Tabs Taking Up Space in Full Width Mode
 In the Tabs Builder module, when using Full Width mode, hidden tabs were incorrectly taking up space, causing layout gaps. This issue has been resolved, ensuring that hidden tabs no longer occupy space, thereby maintaining a cleaner and more organized layout.
+
+### Low-Code Pages Use Consistent Container Settings
+
+Low-Code system pages such as Users and Pages now consistently use the Page Builder – No Card, No Title container, ensuring predictable layouts and preventing unwanted container overrides.
+
+### Low-Code Users Listing Displays Correct Email Address
+
+The email column in the Low-Code Users listing now correctly displays the user’s email address instead of the username, improving clarity and consistency with expectations.
+
+### Disabled Actions Remain Disabled After Import
+
+Fixed an issue where disabled actions in Automations or APIs were unintentionally re-enabled after import. Disabled actions now retain their state correctly.
+
+### Tokens in Default Value Are Now Fully Expanded
+
+Resolved an issue where tokens inside the Default Value field were not evaluated if the main token returned no result. Default Value tokens are now fully expanded as expected.
+
+### Edit Module iframe z-index Issue Fixed
+
+Fixed a rendering issue where the Edit Module iframe could appear above browser extensions due to an excessively high z-index.
 
 ## Maintenance
 ### Workflow Builder Legacy UI Removed
