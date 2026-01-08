@@ -197,3 +197,6 @@ Fixed a rendering issue where the Edit Module iframe could appear above browser 
 The new UI has been matured over the past 3 releases providing a much better user experience.
 ### Angular Updated to Latest Version
 We've upgraded Angular to the latest version to harden the security of the platform and provide up-to-date developer experience.
+
+
+Revised Jan 8, 2026
