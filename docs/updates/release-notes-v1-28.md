@@ -4,8 +4,7 @@ title: Release Notes v1.28
 sidebar_label: Release Notes v1.28
 ---
 
-# `Beta - Release Candidate 3`
->Version 1.28 is currently a Beta Release Candidate (RC) and is not approved for production use. Release notes for beta versions are published publicly to inform beta testers and preview upcoming features. The authoritative release status for installation and production readiness is always indicated in the Plant an App Console and on our [Compatibility](https://learn.plantanapp.com/docs/current/important-notes/compatibility) page.
+>Version 1.28 was released for production use on Jan 12, 2026.
 
 Plant an App 1.28 is one of our most significant releases yet, delivering major improvements to platform reliability, performance, and long-term scalability. This version introduces several foundational upgrades—including a fully unified Action Engine, a rebuilt Token Engine, and an all-new upgrade experience—designed to make every part of the platform more consistent, predictable, and easier to work with. These enhancements not only streamline daily development but also prepare your applications for the future of Plant an App.
 
@@ -199,4 +198,4 @@ The new UI has been matured over the past 3 releases providing a much better use
 We've upgraded Angular to the latest version to harden the security of the platform and provide up-to-date developer experience.
 
 
-Revised Jan 8, 2026
+Revised Jan 12, 2026
