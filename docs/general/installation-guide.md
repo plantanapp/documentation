@@ -135,7 +135,7 @@ The **FTP Server** role is not mandatory to run Plant an App, but recommended.
 
 5. Create a new database on the SQL Server (the name is irrelevant).
 
-6. On the new database, create an SQL login user with `db_owner` membership.
+6. On the new database, create a SQL login user with `db_owner` membership.  See [Defining the SQL User for DNN + Plant an App](/docs/current/general/defining-the-sql-user) for detailed instructions and requirements.
 
 7. Open the site's `web.config` file and look for the "**`SiteSqlServer`**" key in the "`<connectionStrings>`" section; set its value to:
 
