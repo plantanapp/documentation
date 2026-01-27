@@ -45,4 +45,4 @@ Typical uses of this chart include setting up and keeping your system aligned wi
   - Make a maintenance plan to upgrade systems promptly once a new version of Plant an App is released, factoring in the versions that are nearing their "Support Until" date.
 - Migrating an Existing System - see the [Migrate/Upgrade document](https://learn.plantanapp.com/docs/current/important-notes/upgrading-dnnsharp-to-plant-an-app) 
 
-Page updated - Friday, January 16, 2026 at 12:20:41 PM.
+Page updated - Tuesday, January 27, 2026 at 11:54:02 AM.
