@@ -4,132 +4,248 @@ title: Updating Plant an App
 sidebar_label: Updating Plant an App
 ---
 
-> Audience: Anyone
 
-## Updating Plant an App
+> **Audience:** Anyone
 
-This section covers the Update process in Plant an App. As there are several types of components, it is important to understand the difference between them in order to know *what* to update and *how*.
+Updating Plant an App
+---------------------
 
-If you are already familiar with Plant an App and you just want a quick overview of the process, you can skip directly to the [Quick upgrade and update guide](#quick-upgrade-and-update-guide).
+This article explains how to keep your **Plant an App** environment up to date. Because Plant an App includes multiple components (core platform, hotfixes, add-ons, and optional DNN upgrades), it’s important to understand _what_ can be updated and _in what order_.
+Following the guidance below will help you apply updates safely, minimize downtime, and avoid common upgrade blockers.
 
-To access the "Update" section, please select it from the Configuration Menu to the left. Starting with version 1.24 of Plant an App, the Update section UI contains four tabs:
+Overview of Update Tabs
+-----------------------
 
-* [Overview](#overview)
-* [Hotfixes](#hotfixes)
-* [Changelog](#changelog)
-* [Add-ons](#add-ons)
+To access updates, open the **Configuration** menu and select **Updates**.  
+Starting with version **1.28**, the Updates screen includes four tabs:
+*   [Overview](https://chatgpt.com/c/6983a3fe-c924-832b-b707-4f37da2361c2#overview)
+    
+*   [Cumulative Hotfixes](https://chatgpt.com/c/6983a3fe-c924-832b-b707-4f37da2361c2#cumulative-hotfixes)
+    
+*   [Changelog](https://chatgpt.com/c/6983a3fe-c924-832b-b707-4f37da2361c2#changelog)
+    
+*   [Add-ons](https://chatgpt.com/c/6983a3fe-c924-832b-b707-4f37da2361c2#add-ons)
 
-<img src="/img/updates-main.png" alt="updates-main.png" ></img>
+<img src="/img/202602-updates-main.png" alt="202602-updates-main.png" ></img>
+    
 
-The contents of these tabs will be detailed below.
+* * *
 
-:::note
-
-The legacy UI for this section has a similar layout, with small differences. While not identical, it has basically the same functionalities as the ones described here. 
-
-:::
-
-<!-- omit in toc -->
 ### Overview
 
-This is the default tab when accessing the "Updates" section. It provides you with general information about your current Plant an App version, the different modules that are installed and their own respective versions. 
+The **Overview** tab is the default landing page for Updates. It displays:
+*   Your currently installed Plant an App version
+    
+*   All installed modules and components
+    
+*   The version number for each module
+    
+This list is informational and can be exported to **`.xlsx`** format by clicking the **`…`** (horizontal ellipsis) in the top-right corner and selecting **Export**.
+If a newer **major Plant an App version** is available, a button labeled  
+**Update to version `<version>`** will appear next to your current version. Selecting this button initiates the major version upgrade workflow (after confirmation).
+A **Search Box** at the top of the list allows quick filtering of installed modules.
 
-The list of modules presented here is informative and can be exported in `.xslx` format by clicking the "`…`" (horizontal ellipsis) button in the utmost right part of the window, and then selecting "`Export`".
+* * *
 
-<img src="/img/updates-export.png" alt="updates-export.png" ></img>
+### Cumulative Hotfixes
 
-If there is a new Plant an App version available to install, it will show-up as a button next to your present version information, titled "**Update Available `<version>` Get Version**". Clicking the button will (after confirmation) start the Plant an App version upgrade.
+The **Cumulative Hotfixes** tab lists all hotfixes available for your currently installed Plant an App version.
+Cumulative hotfixes bundle multiple fixes together and are designed to simplify maintenance. Rather than installing individual fixes, you install the **most recent cumulative hotfix**, which automatically includes all previous fixes.
 
-If your current Plant an App version is the latest available, the "`(Latest)`" suffix will be displayed next to the version number.
 
-:::note
+> Watch an example [video](https://youtu.be/2Orrt5BbmUY?si=NoUOfT_wdRIymgQB) of Cumulative Hotfixes being installed.
 
-You are only able to update your Plant an App version to the next consecutive release. If you are (for example) two releases behind and would like to update to the latest version available, you will need to do so through two successive update processes.
+Key characteristics:
+*   **Cumulative behavior**: Installing the latest hotfix applies _all earlier hotfixes_
+    
+*   **Version-specific**: Only hotfixes compatible with your current major version are shown
+    
+*   **Mandatory before major upgrades**: All cumulative hotfixes must be installed before a major version update can proceed
+    
 
-:::
+#### Installing Cumulative Hotfixes
 
-There is also a "Search Box" that allows you to quickly search through the list of installed components modules. 
+1.  **Navigate to Updates**
+    *   Open **Configuration → Updates**
+        
+    *   Select the **Cumulative Hotfixes** tab
 
-### Hotfixes
+<img src="/img/202602-updates-cumulative.png" alt="202602-updates-cumulative.png" ></img>
+        
+2.  **Check for Updates**
+    *   Click **Check for Updates** to refresh the list and ensure all available cumulative hotfixes are shown
+        
+3.  **Select the Latest Hotfix**
+    *   If multiple cumulative hotfixes are listed, select one (usually the **most recent one**)
+        
+    *   Installing the latest hotfix automatically installs all previous fixes
+        
+4.  **Review Hotfix Contents**
+    *   Select the hotfix to view its contents
+        
+    *   Hover over the **information (`i`) icon** to see detailed descriptions of each fix included
+        
+    *   You can scroll through the list to review all fixes contained in the cumulative package
 
-This tab lists the available hotfixes for your present Plant an App version as well as general information about each of them.
+<img src="/img/202602-updates-cumulative-contents.png" alt="202602-updates-cumulative-contents.png" ></img>
 
-- `Date` - shows the release date of the fix
-- `Change Type` - displays the typology of the fix (*Product Enhancement*, *Bug Fix*, *Known Issue*)
-- `Feature Type` - shows what sections/modules/categories of the platform are impacted by the hotfix
-- `Version` - the version of the hotfix; multiple versions of the fix in question may be available and you can select which one you wish to install (see below).
+        
+5.  **Prepare the Update**
+    *   Click **Prepare Update**
+        
+    *   The installation screen will be displayed
+        
+6.  **Acknowledge Required Confirmations**
+    *   Confirm that:
+        *   All users will be locked out once the update begins
+            
+        *   Unsaved work may be lost
+            
+    *   Confirm that you have a **current backup**, or explicitly accept the risk of proceeding without one  
+        (a documentation link is provided for backup guidance)
 
-By clicking the "`…`" (horizontal ellipsis) button to the utmost right of every hotfix and then selecting "`Install Specific Version`", you will have access to a list of the various versions of the fix in question (if available) for the present version of Plant an App. This feature is useful if you want to install a specific version of the fix and not necessarily the latest one. Note that the hotfixes are cumulative (the version you install will contain the features of all previous versions).
+<img src="/img/202602-updates-cumulative-start.png" alt="202602-updates-cumulative-start.png" ></img>
 
-- `Details` - clicking this button will expand a section that will give you more information about the hotfix, as well as a list of the available versions for it (you can collapse-it by clicking the "`X`" button)
-- `Install` - allows you to directly install the hotfix in question (to the latest available version); note that you can also install multiple fixes at once by selecting them via their respective checkbox and then clicking the "`Install selected Hotfixes <number of selected fixes>`" button.
+        
+7.  **Start the Installation**
+    *   Select both confirmation checkboxes
+        
+    *   Click **Start**
+        
+8.  **Monitor Installation**
+    *   The update duration varies depending on system size and hotfix content
+        
+    *   Progress indicators will be shown during installation
+        
+9.  **Complete and Verify**
+    *   When finished, click **Continue**
+        
+    *   You will be returned to the Updates screen
+        
+    *   Revisit **Cumulative Hotfixes** and click **Check for Updates** again
+        
+    *   Successfully installed cumulative hotfixes will no longer be listed
+        
+At this point, your system is fully patched for the current major version.
 
-Finally, there is also a "Search Box" that allows you to quickly search through the list of available hotfixes. 
-
-#### Hotfix categories
-
-The hotfix category is listed on a column next to the "Version", and represents their importance. There are three categories of hotfixes:
-
-1. **`Regular`** : normal hotfixes which have been put in place for a specific problem; it is not required to install those if they do not fix a problem that you are confronted with (see the "`Details`" section of the hotfix)
-2. **`Recommended`** : general purpose hotfixes for which the installation is recommended
-3. **`Critical`** : they fix important or critical issues; we strongly advise to install them
-
-:::note
-
-When you upgrade your Plant an App version ([see the section above](#overview)), all the available hotfixes relative to the previous version will be installed. 
-
-:::
+* * *
 
 ### Changelog
 
-This tab acts as an audit log that aggregates information about what elements have been updated (`Change Type` column), when (`Date` column), what platform component is affected by the update (`Feature Type` column) and to which version (`Version` column) - as well as some information about the updates themselves.
+The **Changelog** tab provides a historical audit of changes applied to your environment.
+Each entry includes:
+*   **Change Type** – e.g., Product Enhancement, Bug Fix
+    
+*   **Release Date**
+    
+*   **Feature Type** – impacted modules or platform areas
+    
+*   **Version**
+    
+You can filter entries using the **Feature Type** dropdown or refine results using the **Search Box**.
 
-You can easily filter through this table via the "`Feature Type`" drop-down-list button (that allows you to select for display the type(s) of platform components that have been affected), as well as via the adjacent "Search Box". 
+* * *
 
 ### Add-ons
 
-Here you will find the different add-ons available to install for the present Plant an App version, as well as their respective version. Simply install the one(s) you need by clicking the adjacent "`Install`" button.
+The **Add-ons** tab displays all add-ons available for your current Plant an App version.
+*   **Buy** – Purchase and install add-ons that are not currently licensed
+    
+*   **Install** – Immediately install add-ons already included with your license
+    
+Add-ons become available or unavailable depending on your installed version and licensing.
 
-:::note
+* * *
 
-Once installed, it will be impossible to uninstall an add-on.
+Installing a Major Version Update
+---------------------------------
 
-:::
+A **major version update** upgrades the core Plant an App platform (for example, from **1.27 → 1.28**). This process may also optionally include an upgrade to the underlying **DNN** version.
 
-## Quick upgrade and update guide
+> Watch an example [video](https://youtu.be/LmvKktFx9sY?si=h1nNGtQutgM1YhdS) of a Major Version Update being installed.
 
-This is a quick guide for those that are familiar with Plant an App. You can always check the sections above for more details.
 
-### Update your Plant an App version
+### Prerequisites
 
-This is done via the ["Overview" tab](#overview). If a new version is available, it will show-up as a button with the "**Get Version**" label; clicking it will automatically start the version upgrade process.
+Before a major version update can begin:
+*   **All cumulative hotfixes must be installed**
+    
+*   If any hotfixes are missing, the system will block the upgrade and prompt you to install them first
+    
 
-:::note
+### Major Version Update Process
 
-You are only able to update your Plant an App version to the next consecutive release. If you are (for example) two releases behind and would like to update to the latest version available, you will need to do so through two successive update processes.
+1.  **Navigate to Updates**
+    *   Open **Configuration → Updates**
+        
+    *   Confirm your current version on the **Overview** tab
+        
+2.  **Install Any Required Hotfixes**
+    *   If prompted, install all cumulative hotfixes
+        
+    *   Once complete, return to the Updates screen
+        
+3.  **Start the Major Update**
+    *   Click **Update to version `<version>`**
+        
+    *   Review the release notes
 
-:::
+<img src="/img/202602-updates-major-start.png" alt="202602-updates-major-start.png" ></img>
 
-### Install Hotfixes
+        
+4.  **DNN Upgrade Prompt**
+    *   If a newer, recommended DNN version is available, you will be prompted to choose:
+        *   **Yes** – Upgrade Plant an App _and_ DNN together
+            
+        *   **No** – Upgrade Plant an App only
+            
+        *   **Cancel** – Exit without making changes
 
-Go to the ["Hotfixes" tab](#hotfixes), select the hotfix(es) you want to install via the checkbox on the left and click the the "`Install selected Hotfixes <number of selected fixes>`" button; you can also click the "`Install`" button on the left for each individual hotfix.
+<img src="/img/202602-updates-major-options.png" alt="202602-updates-major-options.png" ></img>
 
-The "`…`" (horizontal ellipsis) button will allow you to select a specific hotfix version to install (if multiple are available).
+            
+5.  **Prepare the Update**
+    *   After selection, the update is prepared
+        
+    *   If a DNN upgrade is included, the DNN installer will automatically run
+        
+6.  **Monitor Upgrade Progress**
+    *   The DNN installer will display step-by-step progress
+        
+    *   You can scroll to review completed actions and security checks
+        
+7.  **Complete the Upgrade**
+    *   When prompted, click **Click here to access your site**
+        
+    *   You will be returned to your Plant an App environment
+        
+8.  **Verify Installation**
+    *   Return to **Configuration → Updates**
+        
+    *   Confirm the new version is displayed on the Overview tab
+        
 
-:::note
+* * *
 
-When you upgrade your Plant an App version ([see the section above](#update-your-plant-an-app-version)), all the available hotfixes relative to the previous version will be installed. 
+### Best Practices
 
-:::
+*   **Always back up before updates**, especially major version upgrades
+    
+*   **Use a staging environment** for heavily trafficked or mission-critical systems
+    
+*   **Schedule downtime** and inform users before starting updates
+    
+*   **Install hotfixes regularly** to reduce risk during major upgrades
+    
 
-### Install Add-ons
+Additional Considerations
+-------------------------
 
-Open the ["Add-ons" tab](#add-ons) and simply click the "`Install`" button adjacent to the add-on(s) you wish to install.
+*   **Beta versions** should never be installed in production environments
+    
+*   **Support assistance** is available for staging setup, backups, or upgrade planning
+    
+By following this process, you ensure your Plant an App system stays secure, stable, and fully supported.
 
-:::note
+**Revised 02/04/2026**
 
-Once installed, it will be impossible to uninstall an add-on.
-
-:::
-
-<br /><br /><a href="#top">Back to the top of the page</a>
