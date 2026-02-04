@@ -22,6 +22,18 @@ For each connector, you will need to define a Name and a Type (see below).
 
 ## Specific settings by type
 
+### **`Database Connection`**
+
+This connector type allows Plant an App to establish an outbound connection to a SQL database using a standard ADO.NET connection string. It is typically used when Actions or workflows need to execute queries or commands against an external or reference database.
+
+| Type                | Notes                                                                                                                                                                                                                                                                                                                                                                            |
+| ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *Connector Name*    | Logical name for the connector. This can be any descriptive value and is used to reference the connector within the platform.                                                                                                                                                                                                                                                    |
+| *Connection String* | Can be either:<br/><br/>• The **name** of a connection defined in the `<connectionStrings>` section of `web.config`, **or**<br/>• A full ADO.NET connection string specified inline, equivalent to what would be used in `web.config`.<br/><br/>Example:<br/><code>Data Source=(local);Initial Catalog=NAD1;User ID=theUserId;Password=thePassword;Connection Timeout=300</code> |
+
+> **Note:** When providing an inline connection string, ensure the credentials and permissions allow the required read and/or write operations. The connection is tested using the configured values at save or test time.
+
+
 
 ### **`Dynamics Service Credentials`**
 
@@ -70,3 +82,6 @@ For each connector, you will need to define a Name and a Type (see below).
 |*Tenant Name*|Specify the UiPath tenant name to authenticate upon.|
 |*Username or Email*|-|
 |*Password*|-|
+
+
+Revised 02/04/2026
