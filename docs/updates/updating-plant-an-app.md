@@ -4,7 +4,6 @@ title: Updating Plant an App
 sidebar_label: Updating Plant an App
 ---
 
-
 > **Audience:** Anyone
 
 Updating Plant an App
@@ -248,4 +247,3 @@ Additional Considerations
 By following this process, you ensure your Plant an App system stays secure, stable, and fully supported.
 
 **Revised 02/04/2026**
-
