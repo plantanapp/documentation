@@ -6,14 +6,12 @@ sidebar_label: Updating Plant an App
 
 > **Audience:** Anyone
 
-Updating Plant an App
----------------------
+# Updating Plant an App
 
 This article explains how to keep your **Plant an App** environment up to date. Because Plant an App includes multiple components (core platform, hotfixes, add-ons, and optional DNN upgrades), it’s important to understand _what_ can be updated and _in what order_.
 Following the guidance below will help you apply updates safely, minimize downtime, and avoid common upgrade blockers.
 
-Overview of Update Tabs
------------------------
+# Overview of Update Tabs
 
 To access updates, open the **Configuration** menu and select **Updates**.  
 Starting with version **1.28**, the Updates screen includes four tabs:
@@ -156,8 +154,7 @@ Add-ons become available or unavailable depending on your installed version and 
 
 * * *
 
-Installing a Major Version Update
----------------------------------
+# Installing a Major Version Update
 
 A **major version update** upgrades the core Plant an App platform (for example, from **1.27 → 1.28**). This process may also optionally include an upgrade to the underlying **DNN** version.
 
@@ -237,8 +234,7 @@ Before a major version update can begin:
 *   **Install hotfixes regularly** to reduce risk during major upgrades
     
 
-Additional Considerations
--------------------------
+# Additional Considerations
 
 *   **Beta versions** should never be installed in production environments
     
