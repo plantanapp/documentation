@@ -4,11 +4,11 @@ title: Understanding Custom Index Behavior
 sidebar_label: Understanding Custom Index Behavior
 ---
 
-> **Audience:** Administrators, Developers
-> **Skill Prerequisites:** Basic familiarity with Entities and SQL Server
-> **Applies To:** DNN installations running Plant an App  
-> **Purpose:** Explain how custom indexes behave when Entity fields are modified and how to safely remove fields that participate in custom indexes.
-> **When you would use this:** Use this guidance when modifying entity fields or designing indexes to improve query performance.
+>  Audience: Administrators Developers
+>  Skill Prerequisites: Basic familiarity with Entities and SQL Server
+>  Applies To: DNN installations running Plant an App
+>  Purpose: Explain how custom indexes behave when Entity fields are modified and how to safely remove fields that participate in custom indexes.
+
 
 
 ****
