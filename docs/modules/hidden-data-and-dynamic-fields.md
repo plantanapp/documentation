@@ -10,7 +10,7 @@ Hidden data fields are similar to text fields, but are not displayed by the clie
 
 :::info
 
-While "Hidden fields" are invisible by default, they will show up if the user/page visitor selects the “View Source” option in the browser. Hidden fields are therefore meant just for passing information *to* and *from* forms transparently.
+**Important:** Hidden fields are not secure. Although they are invisible in the UI, their values are still present in the page markup and can be viewed, modified, or intercepted using standard browser tools (such as View Source or developer tools).  
 
 :::
 
@@ -62,3 +62,5 @@ At the configuration level, this field type just <a href="https://learn.plantana
 | *Save to Report* | Checking this box automatically saves the value from this Field into the database, under the `avtActionForm_Reports` table. |
 
 <br /><br /><a href="#top">Back to the top &#10548;</a>
+
+**Revised:** 03/20/2026
