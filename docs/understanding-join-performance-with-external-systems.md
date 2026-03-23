@@ -97,10 +97,13 @@ This mismatch introduces:
 
 * implicit data type conversion
 * reduced ability to use indexes efficiently
-* non-sargable join conditions
+* joins that force SQL Server to scan data instead of using indexes
 * inconsistent execution plans
 
+
 As a result, SQL Server may not be able to perform efficient index seeks on the external table.
+
+**Learn More:** See the topic `Viewing Execution Plans and Query Statistics`, below.
 
 * * * *
 
@@ -191,6 +194,82 @@ This pattern may provide limited benefit when:
 
 * * * *
 
+
+
+## Viewing Execution Plans and Query Statistics
+
+When evaluating join performance, it is important to observe how SQL Server is actually executing your query. SQL Server Management Studio (SSMS) provides tools to inspect both the execution plan and runtime statistics.
+
+### Enable Execution Plan
+
+In SSMS:
+
+* Click **Include Actual Execution Plan** (or press `Ctrl + M`)
+* Execute your query
+
+After execution, a new **Execution Plan** tab will appear.
+
+This shows:
+
+* how SQL Server processed the query
+* whether indexes were used (seek vs scan)
+* join types (nested loops, hash join, merge join)
+* estimated vs actual row counts
+
+### Enable Runtime Statistics
+
+You can also enable detailed runtime metrics using:
+
+```sql
+SET STATISTICS IO ON;
+SET STATISTICS TIME ON;
+```
+
+Then execute your query.
+
+These settings output additional information in the **Messages** tab.
+
+### What to Look For
+
+#### Logical Reads (IO)
+
+From `SET STATISTICS IO`:
+
+* Number of pages read per table
+* High values often indicate inefficient access (e.g., scans instead of seeks)
+
+#### CPU Time and Elapsed Time
+
+From `SET STATISTICS TIME`:
+
+* CPU time shows processing cost
+* Elapsed time shows total duration
+
+#### Join Behavior
+
+In the execution plan:
+
+* **Index Seek** → efficient, targeted access
+* **Index Scan / Table Scan** → less efficient, full data traversal
+* **Nested Loops** → efficient for small result sets
+* **Hash Join** → often used for larger, less selective joins
+
+### Why This Matters
+
+When data types are mismatched in join conditions:
+
+* SQL Server may introduce implicit conversions
+* Indexes may not be used effectively
+* Execution plans may shift as data volume changes
+
+By reviewing execution plans and statistics, you can:
+
+* confirm whether indexes are being used
+* detect inefficient scans or excessive reads
+* validate that your join strategy scales as expected
+
+* * * *
+
 ## Summary
 
 When integrating Plant an App entities with external systems:
@@ -209,4 +288,4 @@ See the `Creating and Maintaining a Mapping Table` topic for practical examples.
 
 * * * *
 
-**Revision Date:** 2026-03-17
+**Revision Date:** 2026-03-23

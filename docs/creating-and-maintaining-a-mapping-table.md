@@ -4,6 +4,7 @@ title: Creating and Maintaining a Mapping Table
 sidebar_label: Creating and Maintaining a Mapping Table
 ---
 
+
 # Creating and Maintaining a Mapping Table
 
 **Audience**
@@ -13,24 +14,30 @@ Plant an App Administrators, Developers, and SQL-savvy Implementers
 Basic SQL knowledge, familiarity with Plant an App entities, understanding of joins and indexing concepts
 
 **Applies To**
-Plant an App applications integrating with external CRM systems using shared identifiers
+Plant an App applications integrating with external SQL-based systems using shared identifiers
 
 **Purpose**
-To provide a practical, reliable approach for creating and maintaining a mapping table that enables efficient joins between Plant an App entities and external systems
+To provide a practical and reliable approach for creating and maintaining a mapping table that supports efficient and flexible joins between Plant an App entities and external systems
 
 * * * *
 
 ## Overview
 
-When integrating Plant an App with an external CRM, a mapping table can be introduced to align data types and enable efficient joins.
+As discussed in *Understanding Join Performance with External Systems*, differences in data types between Plant an App and external systems can lead to inefficient joins and inconsistent performance.
+
+A mapping table resolves this by:
+
+* aligning data types with the external system
+* enabling index-friendly joins
+* providing a stable and predictable execution path
 
 This article focuses on:
 
-* How to design the mapping table
-* How to populate it from a Plant an App entity
-* How to maintain it over time as data changes
+* designing the mapping table
+* populating it from a Plant an App entity
+* maintaining it over time as data changes
 
-The goal is to ensure the mapping table remains accurate and performant as records are added, updated, or removed.
+Unlike simplified approaches that store a single representative row per identifier, this pattern maintains a **complete mapping** between external identifiers and all related Plant an App records.
 
 * * * *
 
@@ -42,70 +49,70 @@ The goal is to ensure the mapping table remains accurate and performant as recor
 CREATE TABLE dbo.ContactId_Map (
     ContactId nchar(12) NOT NULL,
     ContactHistoryId int NOT NULL,
-    CONSTRAINT PK_ContactId_Map PRIMARY KEY CLUSTERED (ContactId)
+    CONSTRAINT PK_ContactId_Map 
+        PRIMARY KEY CLUSTERED (ContactId, ContactHistoryId)
 );
 ```
 
 ### Key Design Points
 
-* `ContactId` uses `nchar(12)` to match the external CRM
-* This column is the **primary key** and is indexed
-* `ContactHistoryId` provides a reference back to the Plant an App entity
+* `ContactId` uses `nchar(12)` to match the external system exactly
+* `ContactHistoryId` references the Plant an App entity record
+* The table contains **one row per ContactHistory record**
+* The composite primary key enforces uniqueness and supports efficient joins
 
 ### Indexing Strategy
 
-* Clustered Primary Key on `ContactId`
+* Clustered Primary Key on `(ContactId, ContactHistoryId)`
 * Optional: nonclustered index on `ContactHistoryId` if reverse lookups are required
 
 ### Data Type Alignment
 
 It is critical that:
 
-* The mapping table uses the **same data type and length** as the external system
-* This ensures joins remain fully sargable and index-friendly
+* the mapping table uses the **same data type and length** as the external system
+* joins between mapping and external tables remain fully sargable
 
 * * * *
 
 ## Initial Population from ContactHistory
 
-The mapping table should be populated using data from the Plant an App entity.
+The mapping table should include **every ContactHistory record**, not a representative subset.
 
-### Insert Distinct ContactIds
+### Insert All Mappings
 
 ```sql
 INSERT INTO dbo.ContactId_Map (ContactId, ContactHistoryId)
-SELECT DISTINCT
+SELECT
     CAST(ch.ContactId AS nchar(12)),
-    MIN(ch.Id)
+    ch.Id
 FROM app.ContactHistory ch
-WHERE ch.ContactId IS NOT NULL
-GROUP BY CAST(ch.ContactId AS nchar(12));
+WHERE ch.ContactId IS NOT NULL;
 ```
 
 ### Notes
 
+* Each ContactHistory row produces one mapping row
 * `CAST` ensures alignment with `nchar(12)`
-* `MIN(ch.Id)` selects a representative record per ContactId
-* `DISTINCT` / `GROUP BY` prevents duplicates
+* No aggregation is performed—this preserves the full relationship
 
 * * * *
 
 ## Ongoing Maintenance Pattern (Recommended)
 
-To handle inserts, updates, and deletes reliably, use a **rebuild-and-sync pattern**.
+To keep the mapping table synchronized with the source data, use a **rebuild-and-sync pattern**.
 
-This avoids complexity and ensures consistency.
+This ensures the table reflects all inserts, updates, and deletes without complex per-row logic.
 
 ### Step 1: Rebuild a Staging Set
 
 ```sql
 SELECT
     CAST(ch.ContactId AS nchar(12)) AS ContactId,
-    MIN(ch.Id) AS ContactHistoryId
+    ch.Id AS ContactHistoryId
 INTO #ContactId_Stage
 FROM app.ContactHistory ch
-WHERE ch.ContactId IS NOT NULL
-GROUP BY CAST(ch.ContactId AS nchar(12));
+WHERE ch.ContactId IS NOT NULL;
 ```
 
 ### Step 2: Synchronize Mapping Table
@@ -114,9 +121,7 @@ GROUP BY CAST(ch.ContactId AS nchar(12));
 MERGE dbo.ContactId_Map AS target
 USING #ContactId_Stage AS source
 ON target.ContactId = source.ContactId
-
-WHEN MATCHED AND target.ContactHistoryId <> source.ContactHistoryId THEN
-    UPDATE SET ContactHistoryId = source.ContactHistoryId
+   AND target.ContactHistoryId = source.ContactHistoryId
 
 WHEN NOT MATCHED BY TARGET THEN
     INSERT (ContactId, ContactHistoryId)
@@ -128,10 +133,10 @@ WHEN NOT MATCHED BY SOURCE THEN
 
 ### Why This Pattern Works
 
-* Handles **adds, changes, and deletes** in one operation
-* Keeps mapping table fully synchronized with source data
-* Avoids incremental drift over time
-* Simplifies logic compared to per-row maintenance
+* Maintains a **complete one-to-many mapping**
+* Handles inserts and deletes in a single operation
+* Avoids drift over time
+* Keeps logic simple and predictable
 
 * * * *
 
@@ -141,23 +146,23 @@ The synchronization process should be executed automatically.
 
 ### General Approach
 
-Configure an automation job that runs when database changes occur, such as:
+Run the synchronization as a batch operation when data changes occur, such as:
 
-* Inserts into `app.ContactHistory`
-* Updates to `ContactId`
-* Deletes of records
+* inserts into `app.ContactHistory`
+* updates to `ContactId`
+* deletes of records
 
 ### Implementation Guidance
 
-* Trigger the synchronization process based on database activity (A/C/D events)
-* Ensure the job runs frequently enough to keep the mapping table current
-* Avoid running per-row; instead, execute as a batch operation
+* Trigger via scheduled job or workflow
+* Avoid per-row execution; use batch processing
+* Run frequently enough to keep mappings current
 
 This ensures:
 
-* Consistent performance
-* Minimal overhead during user operations
-* Reliable alignment between tables
+* minimal impact on user operations
+* consistent performance
+* reliable alignment between systems
 
 * * * *
 
@@ -165,18 +170,18 @@ This ensures:
 
 ### Expected Size
 
-* One row per unique `ContactId`
-* Typically much smaller than the source table
+* One row per ContactHistory record
+* Similar in size to the source table
 
 ### Efficiency
 
-* Narrow fixed-length key (`nchar(12)`) improves index performance
-* Joins through the mapping table remain efficient even as data grows
+* Narrow fixed-length key (`nchar(12)`) supports efficient indexing
+* Joins through the mapping table remain predictable and scalable
 
 ### Stability
 
-* Eliminates variability caused by data type mismatches
-* Produces consistent execution plans
+* Eliminates implicit conversions in join predicates
+* Produces consistent execution plans across workloads
 
 * * * *
 
@@ -185,28 +190,29 @@ This ensures:
 ### Verify Population
 
 ```sql
-SELECT COUNT(DISTINCT ContactId) FROM app.ContactHistory;
+SELECT COUNT(*) FROM app.ContactHistory WHERE ContactId IS NOT NULL;
 SELECT COUNT(*) FROM dbo.ContactId_Map;
 ```
 
-These values should closely align.
+Counts should closely align.
 
 ### Identify Missing Entries
 
 ```sql
-SELECT ch.ContactId
+SELECT ch.Id, ch.ContactId
 FROM app.ContactHistory ch
 LEFT JOIN dbo.ContactId_Map m
-    ON CAST(ch.ContactId AS nchar(12)) = m.ContactId
-WHERE m.ContactId IS NULL;
+    ON ch.Id = m.ContactHistoryId
+WHERE ch.ContactId IS NOT NULL
+  AND m.ContactHistoryId IS NULL;
 ```
 
 ### Detect Duplicates (Should Not Exist)
 
 ```sql
-SELECT ContactId, COUNT(*)
+SELECT ContactId, ContactHistoryId, COUNT(*)
 FROM dbo.ContactId_Map
-GROUP BY ContactId
+GROUP BY ContactId, ContactHistoryId
 HAVING COUNT(*) > 1;
 ```
 
@@ -214,30 +220,30 @@ HAVING COUNT(*) > 1;
 
 ## Example End-to-End Flow
 
-1. A new ContactHistory record is created
-2. The automation job runs
-3. The mapping table is synchronized
+1. A ContactHistory record is created, updated, or deleted
+2. The synchronization job runs
+3. The mapping table is rebuilt and synchronized
 4. Queries join through `ContactId_Map`
-5. CRM data is retrieved efficiently
+5. External data is retrieved efficiently and consistently
 
 * * * *
 
 ## Summary
 
-A mapping table provides a simple and effective way to maintain performant joins between Plant an App entities and external systems.
+A mapping table provides a reliable way to maintain performant joins between Plant an App entities and external systems.
 
 By:
 
-* aligning data types
-* rebuilding and synchronizing consistently
-* and automating maintenance
+* storing a complete mapping of all related records
+* aligning data types with the external system
+* synchronizing using a rebuild-and-sync pattern
 
 you ensure:
 
-* predictable performance
-* accurate data relationships
-* and scalability as your system grows
+* correct one-to-many relationships
+* predictable query performance
+* scalability as data volumes grow
 
 * * * *
 
-**Revision Date:** 2026-03-17
+**Revision Date:** 2026-03-23
