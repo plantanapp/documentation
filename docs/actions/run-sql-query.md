@@ -10,7 +10,7 @@ sidebar_label: Run SQL Query
 
 This action executes a SQL statement, optionally capturing the output for use in subsequent actions. By default, it targets the SQL Server instance of the application, however, it is not restricted to SQL Server and can run against any database which supports ODBC connections. 
 
-A recent enhancement introduces transaction support to the SQL execution process, ensuring a safer and more consistent outcome by automatically rolling back any changes if an error occurs within a script. Previously, executing multiple SQL statements sequentially would commit changes until an error was encountered, potentially leaving partial updates in the database. This change enhances data integrity and reliability, though it may affect systems that expected the previous behavior. Users should be aware that unsuccessful scripts no longer leave intermediate database alterations intact.
+A recent enhancement introduces optional transaction support to the SQL execution process, ensuring a safer and more consistent outcome by automatically rolling back any changes if an error occurs within a script. Previously, executing multiple SQL statements sequentially would commit changes until an error was encountered, potentially leaving partial updates in the database. This change enhances data integrity and reliability, though it may affect systems that expected the previous behavior. Users should be aware that unsuccessful scripts no longer leave intermediate database alterations intact.  `Use Transactions` defaults to ON.
 
 ## `Typical Use Cases`
 
@@ -25,6 +25,22 @@ A recent enhancement introduces transaction support to the SQL execution process
 * Query entities - use entity specific actions instead
 * Update system tables - it might have unwanted effects on functionality, use specific actions instead
 
+## `Transaction Behavior`
+
+The Run SQL action can automatically wrap SQL execution inside a database transaction.
+
+When transactions are enabled:
+
+* All SQL statements execute as a single unit of work
+* If any statement fails, all previous changes are automatically rolled back
+* This helps prevent partial updates and improves data consistency
+
+When transactions are disabled:
+
+* SQL statements execute without transaction protection
+* Earlier statements may remain committed even if a later statement fails
+* Certain SQL commands that are not allowed inside transactions (such as `SHRINK DATABASE`) can be executed
+
 ## `Input Parameter Reference`
 
 | Parameter | Description | Supports Tokens | Default | Required |
@@ -32,6 +48,7 @@ A recent enhancement introduces transaction support to the SQL execution process
 | Database | Select a database for connection. If left unselected, the main application database will be used. | No | `Application database` | No |
 | Override Connection String | The connection string to the database. Use this field to override the default connection string. | Yes | `Application database` | No |
 | Query Timeout | This parameter determines how long in seconds it takes until a timeout happens if the database doesn't respond. It doesn't accept values under 10 seconds. Defaults to 600 seconds. | Yes | `600` | No |
+|Use Transactions|When enabled, the SQL script is executed within a database transaction to ensure data integrity. If the script fails, all changes are rolled back. Turn this OFF to run commands not allowed in transactions (e.g., SHRINK DATABASE), risk of partial updates and deadlocks.|No|ON|No|
 | SQL Query | The SQL query you want to execute on the database. It's recommended to use the `Bind Tokens` parameter to avoid potential SQL injection. | Yes | `Unset` | Yes |
 | Bind Tokens | Allows using tokens as variables in the SQL Query to avoid SQL injection. References the variable in the SQL Query as `@VariableName`. | Yes | `Unset` | No |
 | Show Errors | Enables showing the original SQL error if something goes wrong. | No | `Unset` | No |

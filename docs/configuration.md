@@ -12,6 +12,9 @@ The Configuration Menu is the central hub for managing and configuring various f
 
 ### Typical Features in the Configuration Menu
 
+1. **Dashboard**
+   - Provides a comprehensive view of system health alerts.
+  
 1. **General Settings**
    - Access site-wide settings, including application name and licensing details. You can manage your license and update various general configurations from this tab.
 
@@ -77,4 +80,4 @@ The Knowledge AI Assistant remains active as you transition through different pa
 
 By leveraging the Configuration Menu and Knowledge AI Assistant, administrators and developers can efficiently manage Plant an App, fostering a robust and dynamic application environment.
 
-Revised 09/05/2025
+Revised 05/12/2026
